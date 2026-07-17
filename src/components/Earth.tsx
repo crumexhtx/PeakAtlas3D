@@ -17,7 +17,6 @@ export function Earth() {
         specularMap={specularMap}
         specular={0x333322}
         shininess={12}
-        bumpScale={0.05}
       />
     </mesh>
   )
