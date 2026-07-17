@@ -1,20 +1,36 @@
 # PeakAtlas3D
 
-Hybrid Civilization-inspired 3D globe of ~100 prominent mountain peaks worldwide, with surrounding town and amenity details.
+3D peak atlas powered by Mapbox: browse flagged summits on a world globe, then open a terrain profile page for each mountain.
 
 ## Features
 
-- Interactive Earth globe (real albedo + topographic normal maps)
-- Gold peak markers with fly-to camera on click or search
-- Detail sidebar: elevation, range, nearest town, hotels, food, trails
-- Terrain filters: Peaks / Towns / Trails
-- Zoom and Reset Camera controls
-- Dark Civ-style HUD (gold accents, display typography)
+- Mapbox globe with country-flag peak markers
+- Peak pages with Mapbox Terrain-DEM (pitched 3D relief)
+- Peak dossier: description, elevation, prominence, difficulty, first ascent, coordinates
+- Browse by country, range, and minimum elevation
+- Imperial / metric unit toggle
+- Collapsible nearby town context (for later expansion)
 
 ## Stack
 
 - Vite + React + TypeScript
-- Three.js via `@react-three/fiber` and `@react-three/drei`
+- Mapbox GL JS via `react-map-gl`
+- React Router
+
+## Setup
+
+1. Create a public Mapbox token (`pk.…`) at [account.mapbox.com/access-tokens](https://account.mapbox.com/access-tokens/).
+2. Copy env example and add your token:
+
+```bash
+cp .env.example .env
+```
+
+```env
+VITE_MAPBOX_TOKEN=pk.your_public_token_here
+```
+
+Never put secret (`sk.…`) tokens in the frontend.
 
 ## Run locally
 
@@ -27,13 +43,19 @@ Open the URL Vite prints (usually `http://localhost:5173`).
 
 ## Scripts
 
-| Command        | Description              |
-|----------------|--------------------------|
-| `npm run dev`  | Start development server |
-| `npm run build`| Production build         |
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Production build |
 | `npm run preview` | Preview production build |
-| `npm run lint` | Lint with oxlint         |
+| `npm run lint` | Lint with oxlint |
 
 ## Data
 
-Peak data lives in [`src/data/peaks.json`](src/data/peaks.json) — curated static entries (no API keys). Hotels and food are illustrative lists for the MVP.
+Peak data lives in [`src/data/peaks.json`](src/data/peaks.json). Hotels/food under nearby context remain illustrative MVP lists.
+
+To regenerate enriched peak fields after editing the curated map:
+
+```bash
+node scripts/enrich-peaks.mjs
+```

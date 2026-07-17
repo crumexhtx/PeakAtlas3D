@@ -1,36 +1,34 @@
-import type { Peak } from '../types/peak'
+import type { Peak, PeakBrowseFilters, UnitSystem } from '../types/peak'
 
-export const EARTH_RADIUS = 2
+const FT_PER_M = 3.280839895
+const MI_PER_KM = 0.621371192
 
-/** Convert geographic lat/lon (degrees) to a point on a sphere. */
-export function latLonToVector3(
-  lat: number,
-  lon: number,
-  radius = EARTH_RADIUS,
-): [number, number, number] {
-  const phi = (90 - lat) * (Math.PI / 180)
-  const theta = (lon + 180) * (Math.PI / 180)
-  const x = -(radius * Math.sin(phi) * Math.cos(theta))
-  const z = radius * Math.sin(phi) * Math.sin(theta)
-  const y = radius * Math.cos(phi)
-  return [x, y, z]
+export function ftToM(ft: number): number {
+  return ft / FT_PER_M
 }
 
-/** Camera position slightly outside the peak, looking toward Earth center. */
-export function cameraFocusForPeak(
-  lat: number,
-  lon: number,
-  distance = EARTH_RADIUS * 1.55,
-): {
-  position: [number, number, number]
-  target: [number, number, number]
-} {
-  const position = latLonToVector3(lat, lon, distance)
-  return { position, target: [0, 0, 0] }
+export function miToKm(mi: number): number {
+  return mi / MI_PER_KM
 }
 
-export function formatElevation(ft: number): string {
+export function formatElevation(ft: number, units: UnitSystem = 'imperial'): string {
+  if (units === 'metric') {
+    return `${Math.round(ftToM(ft)).toLocaleString('en-US')} m`
+  }
   return `${ft.toLocaleString('en-US')} ft`
+}
+
+export function formatDistance(miles: number, units: UnitSystem = 'imperial'): string {
+  if (units === 'metric') {
+    return `${miToKm(miles).toFixed(1)} km`
+  }
+  return `${miles.toFixed(1)} miles`
+}
+
+export function formatCoordinates(lat: number, lon: number): string {
+  const latHem = lat >= 0 ? 'N' : 'S'
+  const lonHem = lon >= 0 ? 'E' : 'W'
+  return `${Math.abs(lat).toFixed(4)}° ${latHem}, ${Math.abs(lon).toFixed(4)}° ${lonHem}`
 }
 
 export function searchPeaks(peaks: Peak[], query: string): Peak[] {
@@ -41,7 +39,21 @@ export function searchPeaks(peaks: Peak[], query: string): Peak[] {
       p.name.toLowerCase().includes(q) ||
       p.range.toLowerCase().includes(q) ||
       p.country.toLowerCase().includes(q) ||
+      p.difficulty.toLowerCase().includes(q) ||
       p.nearestTown.name.toLowerCase().includes(q) ||
       p.nearestTown.region.toLowerCase().includes(q),
   )
+}
+
+export function filterPeaks(peaks: Peak[], browse: PeakBrowseFilters): Peak[] {
+  return peaks.filter((p) => {
+    if (browse.country && p.country !== browse.country) return false
+    if (browse.range && p.range !== browse.range) return false
+    if (browse.minElevationFt > 0 && p.elevationFt < browse.minElevationFt) return false
+    return true
+  })
+}
+
+export function uniqueSorted(values: string[]): string[] {
+  return [...new Set(values)].sort((a, b) => a.localeCompare(b))
 }
