@@ -35,7 +35,7 @@ export function HomePage() {
 
   return (
     <div className="app-shell">
-      <AppHeader peaks={visiblePeaks} onSelectPeak={openPeak} />
+      <AppHeader peaks={peaks} onSelectPeak={openPeak} />
 
       <div className="map-stage">
         <WorldMap peaks={visiblePeaks} onSelectPeak={openPeak} />
