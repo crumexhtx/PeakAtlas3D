@@ -11,6 +11,9 @@ export const TERRAIN_SOURCE = {
   maxzoom: 14,
 }
 
+export const HERO_TERRAIN_EXAGGERATION = 1.45
+export const ORBIT_TERRAIN_EXAGGERATION = 1.28
+
 export function hasMapboxToken(): boolean {
   return Boolean(MAPBOX_TOKEN && MAPBOX_TOKEN.startsWith('pk.'))
 }

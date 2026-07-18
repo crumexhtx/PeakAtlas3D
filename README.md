@@ -4,7 +4,8 @@
 
 ## Features
 
-- Mapbox globe with country-flag peak markers
+- Mapbox globe with one flag per country; click to zoom in and reveal peak flags
+- Country panel: peak count, highest summit, ranges, and peak list
 - Peak pages with Mapbox Terrain-DEM (pitched 3D relief)
 - Peak dossier: description, elevation, prominence, difficulty, first ascent, coordinates
 - Browse by country, range, and minimum elevation

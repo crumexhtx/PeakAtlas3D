@@ -12,6 +12,14 @@ export type Amenity = {
   rating?: number
 }
 
+/** Curated Commons (or similar) still used in the peak dossier. */
+export type PeakPhoto = {
+  url: string
+  credit: string
+  license: string
+  sourceUrl: string
+}
+
 export type Peak = {
   id: string
   name: string
@@ -28,6 +36,21 @@ export type Peak = {
   firstAscent: string
   /** Plain-language difficulty for atlas browsing. */
   difficulty: string
+  /** Alternate / local names used in search and the dossier. */
+  aliases?: string[]
+  /** Typical climbing or visiting window (plain language). */
+  bestSeason?: string
+  /** One-line hook for why the peak matters in the atlas. */
+  whyNotable?: string
+  /** Up to two summit / approach stills with attribution (dossier rotates them). */
+  photos?: PeakPhoto[]
+  /** @deprecated Prefer `photos[0]`; kept for older enriched rows. */
+  photo?: PeakPhoto
+  /**
+   * Closest towns/cities for map pins + dossier context (2–3, nearest first).
+   * `nearestTown` mirrors the first entry for older sample amenity copy.
+   */
+  nearbyPlaces: Town[]
   nearestTown: Town
   hotels: Amenity[]
   food: Amenity[]

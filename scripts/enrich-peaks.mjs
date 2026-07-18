@@ -754,24 +754,6 @@ if (missing.length) {
   process.exit(1)
 }
 
-// Keep a stable field order for readability.
-const ordered = peaks.map((p) => ({
-  id: p.id,
-  name: p.name,
-  lat: p.lat,
-  lon: p.lon,
-  elevationFt: p.elevationFt,
-  prominenceFt: p.prominenceFt,
-  range: p.range,
-  country: p.country,
-  description: p.description,
-  firstAscent: p.firstAscent,
-  difficulty: p.difficulty,
-  nearestTown: p.nearestTown,
-  hotels: p.hotels,
-  food: p.food,
-  ...(p.trails ? { trails: p.trails } : {}),
-}))
-
-writeFileSync(path, `${JSON.stringify(ordered, null, 2)}\n`)
-console.log(`Enriched ${ordered.length} peaks.`)
+// Merge curated fields in place — never strip photos / nearbyPlaces / content.
+writeFileSync(path, `${JSON.stringify(peaks, null, 2)}\n`)
+console.log(`Enriched ${peaks.length} peaks (photos & extra fields preserved).`)

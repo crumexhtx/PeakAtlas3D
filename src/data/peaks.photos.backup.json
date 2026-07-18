@@ -70,7 +70,21 @@
       "credit": "Dllu",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Rainier_from_the_Silver_Queen_Peak.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Mount_Rainier_from_the_Silver_Queen_Peak.jpg/960px-Mount_Rainier_from_the_Silver_Queen_Peak.jpg",
+        "credit": "Dllu",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Rainier_from_the_Silver_Queen_Peak.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Rainier_Aerial_West_Close_Washington_Mar23_R16_07149.jpg/960px-Rainier_Aerial_West_Close_Washington_Mar23_R16_07149.jpg",
+        "credit": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, bu…",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rainier_Aerial_West_Close_Washington_Mar23_R16_07149.jpg"
+      }
+    ]
   },
   {
     "id": "shasta",
@@ -157,7 +171,21 @@
       "credit": "Frank Schulenburg",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_face_of_Mount_Shasta_at_sunset-2175.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/North_face_of_Mount_Shasta_at_sunset-2175.jpg/960px-North_face_of_Mount_Shasta_at_sunset-2175.jpg",
+        "credit": "Frank Schulenburg",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_face_of_Mount_Shasta_at_sunset-2175.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Shasta_Mountain.jpg/960px-Shasta_Mountain.jpg",
+        "credit": "Mark Falkowski",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shasta_Mountain.jpg"
+      }
+    ]
   },
   {
     "id": "hood",
@@ -230,7 +258,21 @@
       "credit": "Walter Siegmund (talk)",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Hood_2619s.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Mount_Hood_2619s.jpg/960px-Mount_Hood_2619s.jpg",
+        "credit": "Walter Siegmund (talk)",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Hood_2619s.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Oregon_Mount_Hood_from_Trillium_Lake_2024.jpg/960px-Oregon_Mount_Hood_from_Trillium_Lake_2024.jpg",
+        "credit": "Kevin Crosby",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oregon_Mount_Hood_from_Trillium_Lake_2024.jpg"
+      }
+    ]
   },
   {
     "id": "baker",
@@ -313,11 +355,25 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Mount_Baker_Helichrysum_stuhlmannii.jpg/960px-Mount_Baker_Helichrysum_stuhlmannii.jpg",
-      "credit": "Rafał Kozubek",
-      "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Baker_Helichrysum_stuhlmannii.jpg"
-    }
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Mount_baker_washington.jpg/960px-Mount_baker_washington.jpg",
+      "credit": "Ken McGee, USGS",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_baker_washington.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Mount_baker_washington.jpg/960px-Mount_baker_washington.jpg",
+        "credit": "Ken McGee, USGS",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_baker_washington.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Mount_Baker_from_Keep_Kool_Butte.jpeg/960px-Mount_Baker_from_Keep_Kool_Butte.jpeg",
+        "credit": "Unknown",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Baker_from_Keep_Kool_Butte.jpeg"
+      }
+    ]
   },
   {
     "id": "adams",
@@ -404,7 +460,21 @@
       "credit": "Joe Mabel",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Adams_from_Crystal_Mountain_01.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mount_Adams_from_Crystal_Mountain_01.jpg/960px-Mount_Adams_from_Crystal_Mountain_01.jpg",
+        "credit": "Joe Mabel",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Adams_from_Crystal_Mountain_01.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mt._Adams%2C_Washington_%281419062186%29.jpg/960px-Mt._Adams%2C_Washington_%281419062186%29.jpg",
+        "credit": "Ron Reiring from Inland Empire of Southern California, USA",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Adams,_Washington_(1419062186).jpg"
+      }
+    ]
   },
   {
     "id": "denali",
@@ -477,7 +547,21 @@
       "credit": "Heinrich C. Berann",
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heinrich_Berann_NPS_Panorama_of_Denali_without_labels.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Heinrich_Berann_NPS_Panorama_of_Denali_without_labels.jpg/960px-Heinrich_Berann_NPS_Panorama_of_Denali_without_labels.jpg",
+        "credit": "Heinrich C. Berann",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heinrich_Berann_NPS_Panorama_of_Denali_without_labels.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Parque_nacional_y_reserva_Denali%2C_Alaska%2C_Estados_Unidos%2C_2017-08-29%2C_DD_63-73_PAN.jpg/960px-Parque_nacional_y_reserva_Denali%2C_Alaska%2C_Estados_Unidos%2C_2017-08-29%2C_DD_63-73_PAN.jpg",
+        "credit": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_nacional_y_reserva_Denali,_Alaska,_Estados_Unidos,_2017-08-29,_DD_63-73_PAN.jpg"
+      }
+    ]
   },
   {
     "id": "elbert",
@@ -564,7 +648,21 @@
       "credit": "Khoshhat",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Elbert_Trail.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Mount_Elbert_Trail.jpg/960px-Mount_Elbert_Trail.jpg",
+        "credit": "Khoshhat",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Elbert_Trail.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Mount_Elbert_Fogy_Day.jpg/960px-Mount_Elbert_Fogy_Day.jpg",
+        "credit": "Khoshhat",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Elbert_Fogy_Day.jpg"
+      }
+    ]
   },
   {
     "id": "whitney",
@@ -651,7 +749,21 @@
       "credit": "Gamut (talk · contribs)",
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Whitney_behind_Owens_Valley.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mount_Whitney_behind_Owens_Valley.jpg/960px-Mount_Whitney_behind_Owens_Valley.jpg",
+        "credit": "Gamut (talk · contribs)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Whitney_behind_Owens_Valley.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Lone_Pine_Alabama_Hills_Mt_Whitney_2018-04-07_California_02.jpg/960px-Lone_Pine_Alabama_Hills_Mt_Whitney_2018-04-07_California_02.jpg",
+        "credit": "Agnieszka Kwiecień, Nova",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lone_Pine_Alabama_Hills_Mt_Whitney_2018-04-07_California_02.jpg"
+      }
+    ]
   },
   {
     "id": "longs",
@@ -738,7 +850,21 @@
       "credit": "OKJaguar",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Longs_Peak_from_the_Dream_Lake_trail_at_sunrise,_Rocky_Mountain_National_Park,_Colorado,_USA.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Longs_Peak_from_the_Dream_Lake_trail_at_sunrise%2C_Rocky_Mountain_National_Park%2C_Colorado%2C_USA.jpg/960px-Longs_Peak_from_the_Dream_Lake_trail_at_sunrise%2C_Rocky_Mountain_National_Park%2C_Colorado%2C_USA.jpg",
+        "credit": "OKJaguar",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Longs_Peak_from_the_Dream_Lake_trail_at_sunrise,_Rocky_Mountain_National_Park,_Colorado,_USA.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Long%27s_Peak_from_Mont_Alto%2C_Colorado-LCCN2008678209.tif/lossy-page1-960px-Long%27s_Peak_from_Mont_Alto%2C_Colorado-LCCN2008678209.tif.jpg",
+        "credit": "Unknown",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Long%27s_Peak_from_Mont_Alto,_Colorado-LCCN2008678209.tif"
+      }
+    ]
   },
   {
     "id": "pikes",
@@ -825,7 +951,21 @@
       "credit": "Mike McBey",
       "license": "CC BY 2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Windy_Point,_Pikes_Peak,_Colorado_(43308222552).jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Windy_Point%2C_Pikes_Peak%2C_Colorado_%2843308222552%29.jpg/960px-Windy_Point%2C_Pikes_Peak%2C_Colorado_%2843308222552%29.jpg",
+        "credit": "Mike McBey",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Windy_Point,_Pikes_Peak,_Colorado_(43308222552).jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Colorado_Springs_from_Pikes_Peak.jpg/960px-Colorado_Springs_from_Pikes_Peak.jpg",
+        "credit": "John Doe(s not like green beans)",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colorado_Springs_from_Pikes_Peak.jpg"
+      }
+    ]
   },
   {
     "id": "gannett",
@@ -912,7 +1052,15 @@
       "credit": "Matthias Nonnenmacher",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wind_River_Range_Gannett_Peak_Green_River_Basin_Wy_PICT0033_19941023.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Wind_River_Range_Gannett_Peak_Green_River_Basin_Wy_PICT0033_19941023.jpg/960px-Wind_River_Range_Gannett_Peak_Green_River_Basin_Wy_PICT0033_19941023.jpg",
+        "credit": "Matthias Nonnenmacher",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wind_River_Range_Gannett_Peak_Green_River_Basin_Wy_PICT0033_19941023.jpg"
+      }
+    ]
   },
   {
     "id": "granitet",
@@ -995,11 +1143,25 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Ergaki%2C_Peak_Molodezhnyy%2C_Sayan_Mountains%2C_Russia.jpg/960px-Ergaki%2C_Peak_Molodezhnyy%2C_Sayan_Mountains%2C_Russia.jpg",
-      "credit": "Vyacheslav Argenberg",
-      "license": "CC BY 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ergaki,_Peak_Molodezhnyy,_Sayan_Mountains,_Russia.jpg"
-    }
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Granite_Peak_Montana_2.jpg/960px-Granite_Peak_Montana_2.jpg",
+      "credit": "jfisher2167",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Granite_Peak_Montana_2.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Granite_Peak_Montana_2.jpg/960px-Granite_Peak_Montana_2.jpg",
+        "credit": "jfisher2167",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Granite_Peak_Montana_2.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Montana_-_Granite_Peak_-_NARA_-_23941971.jpg/960px-Montana_-_Granite_Peak_-_NARA_-_23941971.jpg",
+        "credit": "Unknown authorUnknown author or not provided",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montana_-_Granite_Peak_-_NARA_-_23941971.jpg"
+      }
+    ]
   },
   {
     "id": "kings",
@@ -1082,11 +1244,25 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Sligo%2C_Benbulbin._A_Peak_on_Kings_Mountain_-_geograph.org.uk_-_2066593.jpg/960px-Sligo%2C_Benbulbin._A_Peak_on_Kings_Mountain_-_geograph.org.uk_-_2066593.jpg",
-      "credit": "Michael Murtagh",
-      "license": "CC BY-SA 2.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sligo,_Benbulbin._A_Peak_on_Kings_Mountain_-_geograph.org.uk_-_2066593.jpg"
-    }
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Kings_Peak%2C_Uinta_Mountains%2C_Duchesne_County%2C_Utah%2C_USA_01.jpg/960px-Kings_Peak%2C_Uinta_Mountains%2C_Duchesne_County%2C_Utah%2C_USA_01.jpg",
+      "credit": "John Sowell",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kings_Peak,_Uinta_Mountains,_Duchesne_County,_Utah,_USA_01.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Kings_Peak%2C_Uinta_Mountains%2C_Duchesne_County%2C_Utah%2C_USA_01.jpg/960px-Kings_Peak%2C_Uinta_Mountains%2C_Duchesne_County%2C_Utah%2C_USA_01.jpg",
+        "credit": "John Sowell",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kings_Peak,_Uinta_Mountains,_Duchesne_County,_Utah,_USA_01.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kings_Peak%2C_Uinta_Mountains%2C_Duchesne_County%2C_Utah%2C_USA_02.jpg/960px-Kings_Peak%2C_Uinta_Mountains%2C_Duchesne_County%2C_Utah%2C_USA_02.jpg",
+        "credit": "John Sowell",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kings_Peak,_Uinta_Mountains,_Duchesne_County,_Utah,_USA_02.jpg"
+      }
+    ]
   },
   {
     "id": "humphreys",
@@ -1159,7 +1335,21 @@
       "credit": "US Forestry Service/Deborah Lee Soltesz",
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humphreys_Peak,_San_Francisco_Peaks.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Humphreys_Peak%2C_San_Francisco_Peaks.jpg/960px-Humphreys_Peak%2C_San_Francisco_Peaks.jpg",
+        "credit": "US Forestry Service/Deborah Lee Soltesz",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humphreys_Peak,_San_Francisco_Peaks.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/HumphreysPeak.jpg/960px-HumphreysPeak.jpg",
+        "credit": "JohnIngraham",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:HumphreysPeak.jpg"
+      }
+    ]
   },
   {
     "id": "guadalupe",
@@ -1246,7 +1436,21 @@
       "credit": "Fredlyfish4",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guadalupe_Peak_from_Bowl_Trail.JPG"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Guadalupe_Peak_from_Bowl_Trail.JPG/960px-Guadalupe_Peak_from_Bowl_Trail.JPG",
+        "credit": "Fredlyfish4",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guadalupe_Peak_from_Bowl_Trail.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Texas_-_Guadalupe_Peak_-_NARA_-_68149389.jpg/960px-Texas_-_Guadalupe_Peak_-_NARA_-_68149389.jpg",
+        "credit": "Unknown authorUnknown author or not provided",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Texas_-_Guadalupe_Peak_-_NARA_-_68149389.jpg"
+      }
+    ]
   },
   {
     "id": "robson",
@@ -1333,7 +1537,21 @@
       "credit": "The Cosmonaut",
       "license": "CC BY-SA 2.5 ca",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Robson_panorama.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Mount_Robson_panorama.jpg/960px-Mount_Robson_panorama.jpg",
+        "credit": "The Cosmonaut",
+        "license": "CC BY-SA 2.5 ca",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Robson_panorama.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Time_zone_crossing_sign_-_Mount_Robson_Provincial_Park%2C_British_Columbia%2C_Canada_-_July_1990.jpg/960px-Time_zone_crossing_sign_-_Mount_Robson_Provincial_Park%2C_British_Columbia%2C_Canada_-_July_1990.jpg",
+        "credit": "Giorgio Galeotti",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Time_zone_crossing_sign_-_Mount_Robson_Provincial_Park,_British_Columbia,_Canada_-_July_1990.jpg"
+      }
+    ]
   },
   {
     "id": "logan",
@@ -1402,11 +1620,25 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Mount_Logan_in_foreground%2C_Goode_Mountain_in_main_view_%283c068edc-0266-4e12-a598-5968a2adefa5%29.tif/lossy-page1-960px-Mount_Logan_in_foreground%2C_Goode_Mountain_in_main_view_%283c068edc-0266-4e12-a598-5968a2adefa5%29.tif.jpg",
-      "credit": "NPS Photo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mount_Logan.jpg/960px-Mount_Logan.jpg",
+      "credit": "Gerald Holdsworth",
       "license": "Public domain",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Logan_in_foreground,_Goode_Mountain_in_main_view_(3c068edc-0266-4e12-a598-5968a2adefa5).tif"
-    }
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Logan.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mount_Logan.jpg/960px-Mount_Logan.jpg",
+        "credit": "Gerald Holdsworth",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Logan.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mount_Logan_Knife_ridge%2C_east_ridge_by_Christian_Stangl_%28flickr%29.jpg/960px-Mount_Logan_Knife_ridge%2C_east_ridge_by_Christian_Stangl_%28flickr%29.jpg",
+        "credit": "Christian Stangl",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Logan_Knife_ridge,_east_ridge_by_Christian_Stangl_(flickr).jpg"
+      }
+    ]
   },
   {
     "id": "waddington",
@@ -1479,7 +1711,21 @@
       "credit": "Shawn from Airdrie, Canada",
       "license": "CC BY-SA 2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Waddington_(250499056).jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Mount_Waddington_%28250499056%29.jpg/960px-Mount_Waddington_%28250499056%29.jpg",
+        "credit": "Shawn from Airdrie, Canada",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Waddington_(250499056).jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Mount_Waddington.jpg/960px-Mount_Waddington.jpg",
+        "credit": "Kevin Teague (kteague)",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Waddington.jpg"
+      }
+    ]
   },
   {
     "id": "columbia",
@@ -1555,11 +1801,25 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mount_Sir_Donald_panorama.jpg/960px-Mount_Sir_Donald_panorama.jpg",
-      "credit": "The Cosmonaut",
-      "license": "CC BY-SA 2.5 ca",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Sir_Donald_panorama.jpg"
-    }
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Mt._Columbia_from_Columbia_Icefield_bivy_for_the_Twins_et_al.jpg/960px-Mt._Columbia_from_Columbia_Icefield_bivy_for_the_Twins_et_al.jpg",
+      "credit": "BrettA343",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Columbia_from_Columbia_Icefield_bivy_for_the_Twins_et_al.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Mt._Columbia_from_Columbia_Icefield_bivy_for_the_Twins_et_al.jpg/960px-Mt._Columbia_from_Columbia_Icefield_bivy_for_the_Twins_et_al.jpg",
+        "credit": "BrettA343",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Columbia_from_Columbia_Icefield_bivy_for_the_Twins_et_al.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Columbia_Icefield_viewed_from_the_Columbia_Icefield_Discovery_Centre.jpg/960px-Columbia_Icefield_viewed_from_the_Columbia_Icefield_Discovery_Centre.jpg",
+        "credit": "Ethan Sahagun",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Columbia_Icefield_viewed_from_the_Columbia_Icefield_Discovery_Centre.jpg"
+      }
+    ]
   },
   {
     "id": "assini",
@@ -1646,7 +1906,21 @@
       "credit": "Dominic Ngo",
       "license": "CC BY 2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Assiniboine_2017.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mt._Assiniboine_2017.jpg/960px-Mt._Assiniboine_2017.jpg",
+        "credit": "Dominic Ngo",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Assiniboine_2017.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Mount_Assiniboine_and_Lake_Alberta_-_DPLA_-_1bd1636b444c524205746113d9a5503d.jpg/960px-Mount_Assiniboine_and_Lake_Alberta_-_DPLA_-_1bd1636b444c524205746113d9a5503d.jpg",
+        "credit": "Department of the Interior. National Park Service. (3/2/1934)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Assiniboine_and_Lake_Alberta_-_DPLA_-_1bd1636b444c524205746113d9a5503d.jpg"
+      }
+    ]
   },
   {
     "id": "orizaba",
@@ -1715,11 +1989,25 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Volc%C3%A1n_Citlalt%C3%A9petl..jpg/960px-Volc%C3%A1n_Citlalt%C3%A9petl..jpg",
-      "credit": "Jesús Zavala",
-      "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volc%C3%A1n_Citlalt%C3%A9petl..jpg"
-    }
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pico_de_Orizaba_desde_Aljojuca_Puebla_-_panoramio.jpg/960px-Pico_de_Orizaba_desde_Aljojuca_Puebla_-_panoramio.jpg",
+      "credit": "panza.rayada",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pico_de_Orizaba_desde_Aljojuca_Puebla_-_panoramio.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pico_de_Orizaba_desde_Aljojuca_Puebla_-_panoramio.jpg/960px-Pico_de_Orizaba_desde_Aljojuca_Puebla_-_panoramio.jpg",
+        "credit": "panza.rayada",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pico_de_Orizaba_desde_Aljojuca_Puebla_-_panoramio.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/El_Pico_de_Orizaba_%28s._XIX%29_de_Rugendas_en_el_MIB_01.jpg/960px-El_Pico_de_Orizaba_%28s._XIX%29_de_Rugendas_en_el_MIB_01.jpg",
+        "credit": "Luis Alvaz",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_Pico_de_Orizaba_(s._XIX)_de_Rugendas_en_el_MIB_01.jpg"
+      }
+    ]
   },
   {
     "id": "popo",
@@ -1806,7 +2094,21 @@
       "credit": "Óscar Badillo Pérez",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volcanes_Popocat%C3%A9petl_e_Iztaccihuatl.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Volcanes_Popocat%C3%A9petl_e_Iztaccihuatl.jpg/960px-Volcanes_Popocat%C3%A9petl_e_Iztaccihuatl.jpg",
+        "credit": "Óscar Badillo Pérez",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volcanes_Popocat%C3%A9petl_e_Iztaccihuatl.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/PICT0270_The_Popocatepetl_Mountain_in_Mexico.jpg/960px-PICT0270_The_Popocatepetl_Mountain_in_Mexico.jpg",
+        "credit": "Sergio V. Rodriguez",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:PICT0270_The_Popocatepetl_Mountain_in_Mexico.jpg"
+      }
+    ]
   },
   {
     "id": "aconcagua",
@@ -1893,7 +2195,21 @@
       "credit": "Kinosmosis",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pilar_solar_detr%C3%A1s_del_Monte_Aconcagua._Solar_pillar_behind_Mount_Aconcagua.png"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pilar_solar_detr%C3%A1s_del_Monte_Aconcagua._Solar_pillar_behind_Mount_Aconcagua.png/960px-Pilar_solar_detr%C3%A1s_del_Monte_Aconcagua._Solar_pillar_behind_Mount_Aconcagua.png",
+        "credit": "Kinosmosis",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pilar_solar_detr%C3%A1s_del_Monte_Aconcagua._Solar_pillar_behind_Mount_Aconcagua.png"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Aconcagua_%28Mendoza%29_2022-11_%282%29.jpg/960px-Aconcagua_%28Mendoza%29_2022-11_%282%29.jpg",
+        "credit": "Mauricio V. Genta",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aconcagua_(Mendoza)_2022-11_(2).jpg"
+      }
+    ]
   },
   {
     "id": "huascaran",
@@ -1966,7 +2282,21 @@
       "credit": "Maël Martin",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nevado_Huascar%C3%A1n_son_base_nublada.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nevado_Huascar%C3%A1n_son_base_nublada.jpg/960px-Nevado_Huascar%C3%A1n_son_base_nublada.jpg",
+        "credit": "Maël Martin",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nevado_Huascar%C3%A1n_son_base_nublada.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Chimbote_y_el_Huascar%C3%A1n.JPG/960px-Chimbote_y_el_Huascar%C3%A1n.JPG",
+        "credit": "Ed Pax",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chimbote_y_el_Huascar%C3%A1n.JPG"
+      }
+    ]
   },
   {
     "id": "illimani",
@@ -2053,7 +2383,21 @@
       "credit": "Hernan Payrumani",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illimani_La_Paz_April_2014.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Illimani_La_Paz_April_2014.jpg/960px-Illimani_La_Paz_April_2014.jpg",
+        "credit": "Hernan Payrumani",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illimani_La_Paz_April_2014.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Bolivia%2C_La_Paz%3B_Illimani_in_background_LCCN2016821765_%28cropped%29.tif/lossy-page1-960px-Bolivia%2C_La_Paz%3B_Illimani_in_background_LCCN2016821765_%28cropped%29.tif.jpg",
+        "credit": "National Photo Company Collection",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bolivia,_La_Paz;_Illimani_in_background_LCCN2016821765_(cropped).tif"
+      }
+    ]
   },
   {
     "id": "chimborazo",
@@ -2140,7 +2484,21 @@
       "credit": "Bernard Gagnon",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chimborazo_01.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Chimborazo_01.jpg/960px-Chimborazo_01.jpg",
+        "credit": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chimborazo_01.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Licto_Chimborazo_seen_from_Molobog.jpg/960px-Licto_Chimborazo_seen_from_Molobog.jpg",
+        "credit": "Ymblanter",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Licto_Chimborazo_seen_from_Molobog.jpg"
+      }
+    ]
   },
   {
     "id": "cotopaxi",
@@ -2227,7 +2585,21 @@
       "credit": "Ymblanter",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cotopaxi_National_Park_Mountains_seen_from_the_visitor_center.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cotopaxi_National_Park_Mountains_seen_from_the_visitor_center.jpg/960px-Cotopaxi_National_Park_Mountains_seen_from_the_visitor_center.jpg",
+        "credit": "Ymblanter",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cotopaxi_National_Park_Mountains_seen_from_the_visitor_center.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Cotopaxi_National_Park_Cotopaxi_seen_from_the_trail_around_Laguna_de_Limpiopungo_04.jpg/960px-Cotopaxi_National_Park_Cotopaxi_seen_from_the_trail_around_Laguna_de_Limpiopungo_04.jpg",
+        "credit": "Ymblanter",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cotopaxi_National_Park_Cotopaxi_seen_from_the_trail_around_Laguna_de_Limpiopungo_04.jpg"
+      }
+    ]
   },
   {
     "id": "fitzroy",
@@ -2300,7 +2672,21 @@
       "credit": "Gagea",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fitz_Roy_and_reflect_in_Laguna_Capri_(sunrise).JPG"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Fitz_Roy_and_reflect_in_Laguna_Capri_%28sunrise%29.JPG/960px-Fitz_Roy_and_reflect_in_Laguna_Capri_%28sunrise%29.JPG",
+        "credit": "Gagea",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fitz_Roy_and_reflect_in_Laguna_Capri_(sunrise).JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Fitz_Roy_group_-_east_face.JPG/960px-Fitz_Roy_group_-_east_face.JPG",
+        "credit": "Gagea",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fitz_Roy_group_-_east_face.JPG"
+      }
+    ]
   },
   {
     "id": "torres",
@@ -2387,7 +2773,21 @@
       "credit": "Martin St-Amant (S23678)",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Torres_del_Paine_-_Janvier_2010.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Torres_del_Paine_-_Janvier_2010.jpg/960px-Torres_del_Paine_-_Janvier_2010.jpg",
+        "credit": "Martin St-Amant (S23678)",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Torres_del_Paine_-_Janvier_2010.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Parque_Nacional_Torres_del_Paine_-_XII_Region_de_Magallanes_y_la_Antartica_Chilena_-_Laguna_Cisnes_-_Almirante_Nieto.jpg/960px-Parque_Nacional_Torres_del_Paine_-_XII_Region_de_Magallanes_y_la_Antartica_Chilena_-_Laguna_Cisnes_-_Almirante_Nieto.jpg",
+        "credit": "Ferna.mf",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_Torres_del_Paine_-_XII_Region_de_Magallanes_y_la_Antartica_Chilena_-_Laguna_Cisnes_-_Almirante_Nieto.jpg"
+      }
+    ]
   },
   {
     "id": "sajama",
@@ -2474,7 +2874,21 @@
       "credit": "Thespacechaser",
       "license": "CC0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nevado_Sajama_volcano_viewed_from_Bolivia.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nevado_Sajama_volcano_viewed_from_Bolivia.jpg/960px-Nevado_Sajama_volcano_viewed_from_Bolivia.jpg",
+        "credit": "Thespacechaser",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nevado_Sajama_volcano_viewed_from_Bolivia.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Sajama_coronado_por_estrellas.jpg/960px-Sajama_coronado_por_estrellas.jpg",
+        "credit": "W. Alejandro Valdez Valenzuela",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sajama_coronado_por_estrellas.jpg"
+      }
+    ]
   },
   {
     "id": "ausangate",
@@ -2561,7 +2975,21 @@
       "credit": "Ausangateperu",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ausangate_Peru.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ausangate_Peru.jpg/960px-Ausangate_Peru.jpg",
+        "credit": "Ausangateperu",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ausangate_Peru.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Nevado_Ausangate_desde_el_sitio_arqueol%C3%B3gico_de_Rumiwasi_03.jpg/960px-Nevado_Ausangate_desde_el_sitio_arqueol%C3%B3gico_de_Rumiwasi_03.jpg",
+        "credit": "Carlo Brescia",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nevado_Ausangate_desde_el_sitio_arqueol%C3%B3gico_de_Rumiwasi_03.jpg"
+      }
+    ]
   },
   {
     "id": "montblanc",
@@ -2648,7 +3076,21 @@
       "credit": "Capricorn4049 & Staublex",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Blanc_Panorama_beschriftet.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mont_Blanc_Panorama_beschriftet.jpg/960px-Mont_Blanc_Panorama_beschriftet.jpg",
+        "credit": "Capricorn4049 & Staublex",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Blanc_Panorama_beschriftet.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mont_Blanc_from_Les_Arcs_1950.jpg/960px-Mont_Blanc_from_Les_Arcs_1950.jpg",
+        "credit": "Dmitry A. Mottl",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Blanc_from_Les_Arcs_1950.jpg"
+      }
+    ]
   },
   {
     "id": "matterhorn",
@@ -2721,7 +3163,21 @@
       "credit": "NOTE: This image is a panorama  consisting of multiple frames that were merge…",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg/960px-CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg",
+        "credit": "NOTE: This image is a panorama  consisting of multiple frames that were merge…",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/008_Milky_way_aligned_with_the_Matterhorn_reflecting_in_Stellisee_Photo_by_Giles_Laurent.jpg/960px-008_Milky_way_aligned_with_the_Matterhorn_reflecting_in_Stellisee_Photo_by_Giles_Laurent.jpg",
+        "credit": "Giles Laurent",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:008_Milky_way_aligned_with_the_Matterhorn_reflecting_in_Stellisee_Photo_by_Giles_Laurent.jpg"
+      }
+    ]
   },
   {
     "id": "jungfrau",
@@ -2808,7 +3264,21 @@
       "credit": "Ank kumar",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eiger,_M%C3%B6nch_and_Jungfrau,_Swiss_Skyline,_Birg,_Schilthorn_(Ank_Kumar)_04.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Eiger%2C_M%C3%B6nch_and_Jungfrau%2C_Swiss_Skyline%2C_Birg%2C_Schilthorn_%28Ank_Kumar%29_04.jpg/960px-Eiger%2C_M%C3%B6nch_and_Jungfrau%2C_Swiss_Skyline%2C_Birg%2C_Schilthorn_%28Ank_Kumar%29_04.jpg",
+        "credit": "Ank kumar",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eiger,_M%C3%B6nch_and_Jungfrau,_Swiss_Skyline,_Birg,_Schilthorn_(Ank_Kumar)_04.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/141008Jungfrau%2C_Bern%2C_Switzerland22.jpg/960px-141008Jungfrau%2C_Bern%2C_Switzerland22.jpg",
+        "credit": "최광모",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:141008Jungfrau,_Bern,_Switzerland22.jpg"
+      }
+    ]
   },
   {
     "id": "eiger",
@@ -2881,7 +3351,21 @@
       "credit": "Giles Laurent",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:048_Eiger_at_end_of_Sunset_Photo_by_Giles_Laurent.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/048_Eiger_at_end_of_Sunset_Photo_by_Giles_Laurent.jpg/960px-048_Eiger_at_end_of_Sunset_Photo_by_Giles_Laurent.jpg",
+        "credit": "Giles Laurent",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:048_Eiger_at_end_of_Sunset_Photo_by_Giles_Laurent.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bern_Church_of_the_Holy_Ghost_Spire_with_Eiger_M%C3%B6nch_Jungfrau_2019-10-16_18-50.jpg/960px-Bern_Church_of_the_Holy_Ghost_Spire_with_Eiger_M%C3%B6nch_Jungfrau_2019-10-16_18-50.jpg",
+        "credit": "Axel Tschentscher",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bern_Church_of_the_Holy_Ghost_Spire_with_Eiger_M%C3%B6nch_Jungfrau_2019-10-16_18-50.jpg"
+      }
+    ]
   },
   {
     "id": "grossglockner",
@@ -2950,11 +3434,25 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/30.10.2021_-_Der_traurige_Rest_des_Gletschers_am_Gro%C3%9Fglockner._05.jpg/960px-30.10.2021_-_Der_traurige_Rest_des_Gletschers_am_Gro%C3%9Fglockner._05.jpg",
-      "credit": "Holger Uwe Schmitt",
-      "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:30.10.2021_-_Der_traurige_Rest_des_Gletschers_am_Gro%C3%9Fglockner._05.jpg"
-    }
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pasterzenabsturz_and_Grossglockner%2C_Carinthia%2C_Austro-Hungary-LCCN2002710724.jpg/960px-Pasterzenabsturz_and_Grossglockner%2C_Carinthia%2C_Austro-Hungary-LCCN2002710724.jpg",
+      "credit": "Photochrom Print Collection",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pasterzenabsturz_and_Grossglockner,_Carinthia,_Austro-Hungary-LCCN2002710724.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pasterzenabsturz_and_Grossglockner%2C_Carinthia%2C_Austro-Hungary-LCCN2002710724.jpg/960px-Pasterzenabsturz_and_Grossglockner%2C_Carinthia%2C_Austro-Hungary-LCCN2002710724.jpg",
+        "credit": "Photochrom Print Collection",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pasterzenabsturz_and_Grossglockner,_Carinthia,_Austro-Hungary-LCCN2002710724.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Pasterzenabsturz_and_Grossglockner_Carinthia_Austro-Hungary.jpg",
+        "credit": "Snapshots Of  The Past",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pasterzenabsturz_and_Grossglockner_Carinthia_Austro-Hungary.jpg"
+      }
+    ]
   },
   {
     "id": "triglav",
@@ -3041,7 +3539,21 @@
       "credit": "Javier Sanchez Portero from Santa Cruz de Tenerife, España",
       "license": "CC BY-SA 2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Triglav_y_Valle_de_Vrata_(14202569306)_(2).jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Triglav_y_Valle_de_Vrata_%2814202569306%29_%282%29.jpg/960px-Triglav_y_Valle_de_Vrata_%2814202569306%29_%282%29.jpg",
+        "credit": "Javier Sanchez Portero from Santa Cruz de Tenerife, España",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Triglav_y_Valle_de_Vrata_(14202569306)_(2).jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Triglav_in_Rjavina_-_iz_balona_-_2023-07-08.jpg/960px-Triglav_in_Rjavina_-_iz_balona_-_2023-07-08.jpg",
+        "credit": "TadejM",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Triglav_in_Rjavina_-_iz_balona_-_2023-07-08.jpg"
+      }
+    ]
   },
   {
     "id": "ortles",
@@ -3128,7 +3640,21 @@
       "credit": "Plentn",
       "license": "CC0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6nigsspitze,_Zebr%C3%B9_und_Ortler_von_der_Madritschspitze.JPG"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/K%C3%B6nigsspitze%2C_Zebr%C3%B9_und_Ortler_von_der_Madritschspitze.JPG/960px-K%C3%B6nigsspitze%2C_Zebr%C3%B9_und_Ortler_von_der_Madritschspitze.JPG",
+        "credit": "Plentn",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6nigsspitze,_Zebr%C3%B9_und_Ortler_von_der_Madritschspitze.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ortler_Territory%2C_Stilfserjoch_%28i.e.%2C_Stilfer_Joch%29%2C_with_Ortler_and_Ortlerferner%2C_Tyrol%2C_Austro-Hungary-LCCN2002711081.jpg/960px-Ortler_Territory%2C_Stilfserjoch_%28i.e.%2C_Stilfer_Joch%29%2C_with_Ortler_and_Ortlerferner%2C_Tyrol%2C_Austro-Hungary-LCCN2002711081.jpg",
+        "credit": "Photochrom Print Collection",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ortler_Territory,_Stilfserjoch_(i.e.,_Stilfer_Joch),_with_Ortler_and_Ortlerferner,_Tyrol,_Austro-Hungary-LCCN2002711081.jpg"
+      }
+    ]
   },
   {
     "id": "marmolada",
@@ -3215,7 +3741,21 @@
       "credit": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but …",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Civetta_Monte_Pore_Marmolada.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Civetta_Monte_Pore_Marmolada.jpg/960px-Civetta_Monte_Pore_Marmolada.jpg",
+        "credit": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but …",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Civetta_Monte_Pore_Marmolada.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Passo_Sella_-_Citt%C3%A0_dei_Sassi_-_Sella_-_Marmolada.jpg/960px-Passo_Sella_-_Citt%C3%A0_dei_Sassi_-_Sella_-_Marmolada.jpg",
+        "credit": "H. Zell",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Passo_Sella_-_Citt%C3%A0_dei_Sassi_-_Sella_-_Marmolada.jpg"
+      }
+    ]
   },
   {
     "id": "barreuils",
@@ -3302,7 +3842,21 @@
       "credit": "Rémih",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roche_Violette_Barre_des_%C3%89crins_@_Col_du_Mottet.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Roche_Violette_Barre_des_%C3%89crins_%40_Col_du_Mottet.jpg/960px-Roche_Violette_Barre_des_%C3%89crins_%40_Col_du_Mottet.jpg",
+        "credit": "Rémih",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roche_Violette_Barre_des_%C3%89crins_@_Col_du_Mottet.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Gezicht_op_de_besneeuwde_toppen_van_bergen_in_Ecrins_Col_et_dome_de_neiges_des_Ecrins_%28titel_op_object%29%2C_RP-F-2001-7-1104B-19.jpg/960px-Gezicht_op_de_besneeuwde_toppen_van_bergen_in_Ecrins_Col_et_dome_de_neiges_des_Ecrins_%28titel_op_object%29%2C_RP-F-2001-7-1104B-19.jpg",
+        "credit": "Rijksmuseum",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gezicht_op_de_besneeuwde_toppen_van_bergen_in_Ecrins_Col_et_dome_de_neiges_des_Ecrins_(titel_op_object),_RP-F-2001-7-1104B-19.jpg"
+      }
+    ]
   },
   {
     "id": "elbrus",
@@ -3385,11 +3939,25 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/%D0%91%D0%B5%D1%88%D1%82%D0%B0%D1%83_%D0%B8_%D0%AD%D0%BB%D1%8C%D0%B1%D1%80%D1%83%D1%81_%D1%81_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A0%D0%B0%D0%B7%D0%B2%D0%B0%D0%BB%D0%BA%D0%B0.jpg/960px-%D0%91%D0%B5%D1%88%D1%82%D0%B0%D1%83_%D0%B8_%D0%AD%D0%BB%D1%8C%D0%B1%D1%80%D1%83%D1%81_%D1%81_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A0%D0%B0%D0%B7%D0%B2%D0%B0%D0%BB%D0%BA%D0%B0.jpg",
-      "credit": "Ganzikov",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Enel_Lepik._T%C3%B5us_Elbrusele_2009.jpg/960px-Enel_Lepik._T%C3%B5us_Elbrusele_2009.jpg",
+      "credit": "Jaan Künnap",
       "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%B5%D1%88%D1%82%D0%B0%D1%83_%D0%B8_%D0%AD%D0%BB%D1%8C%D0%B1%D1%80%D1%83%D1%81_%D1%81_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A0%D0%B0%D0%B7%D0%B2%D0%B0%D0%BB%D0%BA%D0%B0.jpg"
-    }
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enel_Lepik._T%C3%B5us_Elbrusele_2009.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Enel_Lepik._T%C3%B5us_Elbrusele_2009.jpg/960px-Enel_Lepik._T%C3%B5us_Elbrusele_2009.jpg",
+        "credit": "Jaan Künnap",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enel_Lepik._T%C3%B5us_Elbrusele_2009.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Elbrussky_District%2C_Kabardino-Balkaria%2C_Russia_-_panoramio_%284%29.jpg/960px-Elbrussky_District%2C_Kabardino-Balkaria%2C_Russia_-_panoramio_%284%29.jpg",
+        "credit": "Andrey Tyumenev",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elbrussky_District,_Kabardino-Balkaria,_Russia_-_panoramio_(4).jpg"
+      }
+    ]
   },
   {
     "id": "kazbek",
@@ -3458,11 +4026,25 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Kazbeg_Panorama.jpg/960px-Kazbeg_Panorama.jpg",
-      "credit": "Philipp Weigell",
-      "license": "CC BY 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kazbeg_Panorama.jpg"
-    }
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Kazbegi%2C_Gergeti_Trinity_Church_and_Mt_Kazbek_%2835959311351%29.jpg/960px-Kazbegi%2C_Gergeti_Trinity_Church_and_Mt_Kazbek_%2835959311351%29.jpg",
+      "credit": "Arian Zwegers from Brussels, Belgium",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kazbegi,_Gergeti_Trinity_Church_and_Mt_Kazbek_(35959311351).jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Kazbegi%2C_Gergeti_Trinity_Church_and_Mt_Kazbek_%2835959311351%29.jpg/960px-Kazbegi%2C_Gergeti_Trinity_Church_and_Mt_Kazbek_%2835959311351%29.jpg",
+        "credit": "Arian Zwegers from Brussels, Belgium",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kazbegi,_Gergeti_Trinity_Church_and_Mt_Kazbek_(35959311351).jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/%22Kazbegi%22%2C_Mount_Kazbek_range_under_heavy_clouds_in_rays_of_setting_sun.jpg/960px-%22Kazbegi%22%2C_Mount_Kazbek_range_under_heavy_clouds_in_rays_of_setting_sun.jpg",
+        "credit": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22Kazbegi%22,_Mount_Kazbek_range_under_heavy_clouds_in_rays_of_setting_sun.jpg"
+      }
+    ]
   },
   {
     "id": "damavand",
@@ -3549,7 +4131,21 @@
       "credit": "Mahak sz",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Damavand_Mountain_Mahak_photos.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Damavand_Mountain_Mahak_photos.jpg/960px-Damavand_Mountain_Mahak_photos.jpg",
+        "credit": "Mahak sz",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Damavand_Mountain_Mahak_photos.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Mazandaran_Province%2C_Mount_Damavand_-_W_Rte%2C_Iran_-_panoramio.jpg/960px-Mazandaran_Province%2C_Mount_Damavand_-_W_Rte%2C_Iran_-_panoramio.jpg",
+        "credit": "Mehrdad Sarhangi",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazandaran_Province,_Mount_Damavand_-_W_Rte,_Iran_-_panoramio.jpg"
+      }
+    ]
   },
   {
     "id": "ararat",
@@ -3636,7 +4232,21 @@
       "credit": "Սէրուժ Ուրիշեան (Serouj Ourishian)",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Ararat_and_the_Yerevan_skyline.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Mount_Ararat_and_the_Yerevan_skyline.jpg/960px-Mount_Ararat_and_the_Yerevan_skyline.jpg",
+        "credit": "Սէրուժ Ուրիշեան (Serouj Ourishian)",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Ararat_and_the_Yerevan_skyline.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mount_Ararat_from_A%C4%9Fr%C4%B1_Province_%281%29.jpg/960px-Mount_Ararat_from_A%C4%9Fr%C4%B1_Province_%281%29.jpg",
+        "credit": "Radosław Botev",
+        "license": "CC BY 3.0 pl",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Ararat_from_A%C4%9Fr%C4%B1_Province_(1).jpg"
+      }
+    ]
   },
   {
     "id": "kilimanjaro",
@@ -3726,7 +4336,21 @@
       "credit": "Fazrenar",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Mocha_Kilimanjaro.JPG"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Mountain_Mocha_Kilimanjaro.JPG/960px-Mountain_Mocha_Kilimanjaro.JPG",
+        "credit": "Fazrenar",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Mocha_Kilimanjaro.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Climbers_Barranco_Wall_Kilimanjaro_Tanzania.jpg/960px-Climbers_Barranco_Wall_Kilimanjaro_Tanzania.jpg",
+        "credit": "Altezzatravel",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Climbers_Barranco_Wall_Kilimanjaro_Tanzania.jpg"
+      }
+    ]
   },
   {
     "id": "kenya",
@@ -3813,7 +4437,21 @@
       "credit": "Galkey",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Kenya_Peaks.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mount_Kenya_Peaks.jpg/960px-Mount_Kenya_Peaks.jpg",
+        "credit": "Galkey",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Kenya_Peaks.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Southern_White_Rhinos%2C_Ol_Pejeta_Conservancy%2C_Kenya_%2844968104354%29.jpg/960px-Southern_White_Rhinos%2C_Ol_Pejeta_Conservancy%2C_Kenya_%2844968104354%29.jpg",
+        "credit": "Ray in Manila",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Southern_White_Rhinos,_Ol_Pejeta_Conservancy,_Kenya_(44968104354).jpg"
+      }
+    ]
   },
   {
     "id": "toubkal",
@@ -3900,7 +4538,21 @@
       "credit": "Kurinurm",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jebel_Toubkal_and_a_group_of_hikers.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Jebel_Toubkal_and_a_group_of_hikers.jpg/960px-Jebel_Toubkal_and_a_group_of_hikers.jpg",
+        "credit": "Kurinurm",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jebel_Toubkal_and_a_group_of_hikers.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/View_from_Toubkal_west_flank.jpg/960px-View_from_Toubkal_west_flank.jpg",
+        "credit": "ThartmannWiki",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Toubkal_west_flank.jpg"
+      }
+    ]
   },
   {
     "id": "rasdashen",
@@ -3987,7 +4639,21 @@
       "credit": "Yonas Kidane",
       "license": "CC BY-SA 2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ras_Dashen_and_Tekeze_River.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Ras_Dashen_and_Tekeze_River.jpg/960px-Ras_Dashen_and_Tekeze_River.jpg",
+        "credit": "Yonas Kidane",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ras_Dashen_and_Tekeze_River.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Ras_Dashen%2C_Ethiopia.jpg/960px-Ras_Dashen%2C_Ethiopia.jpg",
+        "credit": "Yonas Kidane",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ras_Dashen,_Ethiopia.jpg"
+      }
+    ]
   },
   {
     "id": "table",
@@ -4074,7 +4740,21 @@
       "credit": "Dietmar Rabich",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Table_Mountain_--_2024_--_2762%2B64%2B66%2B68%2B70%2B72.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2762%2B64%2B66%2B68%2B70%2B72.jpg/960px-Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2762%2B64%2B66%2B68%2B70%2B72.jpg",
+        "credit": "Dietmar Rabich",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Table_Mountain_--_2024_--_2762%2B64%2B66%2B68%2B70%2B72.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Cape_Town_Table_Mountain.jpg/960px-Cape_Town_Table_Mountain.jpg",
+        "credit": "Matthiasmullie",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Town_Table_Mountain.jpg"
+      }
+    ]
   },
   {
     "id": "meru",
@@ -4147,7 +4827,21 @@
       "credit": "AmyAbroad",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hikers_on_Mount_Meru_Tanzania.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hikers_on_Mount_Meru_Tanzania.jpg/960px-Hikers_on_Mount_Meru_Tanzania.jpg",
+        "credit": "AmyAbroad",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hikers_on_Mount_Meru_Tanzania.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Arusha_Airport_with_Mount_Meru_back_ground.jpg/960px-Arusha_Airport_with_Mount_Meru_back_ground.jpg",
+        "credit": "Mchome",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arusha_Airport_with_Mount_Meru_back_ground.jpg"
+      }
+    ]
   },
   {
     "id": "everest",
@@ -4234,7 +4928,21 @@
       "credit": "User:Ggia",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:20110810_North_Face_of_Everest_Tibet_China_Panoramic.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/20110810_North_Face_of_Everest_Tibet_China_Panoramic.jpg/960px-20110810_North_Face_of_Everest_Tibet_China_Panoramic.jpg",
+        "credit": "User:Ggia",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:20110810_North_Face_of_Everest_Tibet_China_Panoramic.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/A_Majestic_Wonder_of_Nature_-_Mount_Everest.jpg/960px-A_Majestic_Wonder_of_Nature_-_Mount_Everest.jpg",
+        "credit": "Sunuwargr",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Majestic_Wonder_of_Nature_-_Mount_Everest.jpg"
+      }
+    ]
   },
   {
     "id": "k2",
@@ -4321,7 +5029,21 @@
       "credit": "8848hehe",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gipfel_K2_3.00_Uhr.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Gipfel_K2_3.00_Uhr.jpg/960px-Gipfel_K2_3.00_Uhr.jpg",
+        "credit": "8848hehe",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gipfel_K2_3.00_Uhr.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Meherban_Karim_K2.jpg/960px-Meherban_Karim_K2.jpg",
+        "credit": "Ibrar Shimshali",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meherban_Karim_K2.jpg"
+      }
+    ]
   },
   {
     "id": "kangchen",
@@ -4408,7 +5130,21 @@
       "credit": "Istiakuddin Ahmed",
       "license": "CC BY 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_kangchenjunga.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/The_kangchenjunga.jpg/960px-The_kangchenjunga.jpg",
+        "credit": "Istiakuddin Ahmed",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_kangchenjunga.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Kangchenjunga_Nepal.jpg/960px-Kangchenjunga_Nepal.jpg",
+        "credit": "Bruno Rijsman",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kangchenjunga_Nepal.jpg"
+      }
+    ]
   },
   {
     "id": "lhotse",
@@ -4495,7 +5231,21 @@
       "credit": "Gozitano",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Everest,_Lhotse_et_Ama_Dablam.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Everest%2C_Lhotse_et_Ama_Dablam.jpg/960px-Everest%2C_Lhotse_et_Ama_Dablam.jpg",
+        "credit": "Gozitano",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Everest,_Lhotse_et_Ama_Dablam.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Amphu_Lapsta_pass%2C_Everest-Lhotse-Cho_Polu-Baruntse_-_panoramio.jpg/960px-Amphu_Lapsta_pass%2C_Everest-Lhotse-Cho_Polu-Baruntse_-_panoramio.jpg",
+        "credit": "Александр Пушкин",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amphu_Lapsta_pass,_Everest-Lhotse-Cho_Polu-Baruntse_-_panoramio.jpg"
+      }
+    ]
   },
   {
     "id": "makalu",
@@ -4582,7 +5332,21 @@
       "credit": "Craig Taylor",
       "license": "CC BY-SA 2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Makalu_and_Chamlang.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Makalu_and_Chamlang.jpg/960px-Makalu_and_Chamlang.jpg",
+        "credit": "Craig Taylor",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Makalu_and_Chamlang.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Mt.Makalu_Area_10.jpg/960px-Mt.Makalu_Area_10.jpg",
+        "credit": "Indra Rai",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt.Makalu_Area_10.jpg"
+      }
+    ]
   },
   {
     "id": "chooyu",
@@ -4669,7 +5433,21 @@
       "credit": "Mark Horrell",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cho_Oyu.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Cho_Oyu.jpg/960px-Cho_Oyu.jpg",
+        "credit": "Mark Horrell",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cho_Oyu.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/%28_TIBET_HIMALAYA_CHO-OYU_8201mts%29.jpg/960px-%28_TIBET_HIMALAYA_CHO-OYU_8201mts%29.jpg",
+        "credit": "PORSCHE 911 MADRID",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:(_TIBET_HIMALAYA_CHO-OYU_8201mts).jpg"
+      }
+    ]
   },
   {
     "id": "dhaula",
@@ -4742,7 +5520,21 @@
       "credit": "Kuber Rana Magar",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dhaulagiri_Mountrain_Range_from_Poon_Hill.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dhaulagiri_Mountrain_Range_from_Poon_Hill.jpg/960px-Dhaulagiri_Mountrain_Range_from_Poon_Hill.jpg",
+        "credit": "Kuber Rana Magar",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dhaulagiri_Mountrain_Range_from_Poon_Hill.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Kowang%2C_Dhaulagiri_Himal%2C_Kali_Gandaki_Valley%2C_Nepal.jpg/960px-Kowang%2C_Dhaulagiri_Himal%2C_Kali_Gandaki_Valley%2C_Nepal.jpg",
+        "credit": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kowang,_Dhaulagiri_Himal,_Kali_Gandaki_Valley,_Nepal.jpg"
+      }
+    ]
   },
   {
     "id": "manaslu",
@@ -4829,7 +5621,21 @@
       "credit": "Samdesherpa",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manaslu_range.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Manaslu_range.jpg/960px-Manaslu_range.jpg",
+        "credit": "Samdesherpa",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manaslu_range.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Budhi_Gandaki%2C_Yaru_Bagar_to_Jagat%2C_Gorkha_District%2C_Manaslu_Trek%2C_Nepal_%2832019507937%29.jpg/960px-Budhi_Gandaki%2C_Yaru_Bagar_to_Jagat%2C_Gorkha_District%2C_Manaslu_Trek%2C_Nepal_%2832019507937%29.jpg",
+        "credit": "Jay Ramji from UK",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Budhi_Gandaki,_Yaru_Bagar_to_Jagat,_Gorkha_District,_Manaslu_Trek,_Nepal_(32019507937).jpg"
+      }
+    ]
   },
   {
     "id": "nanga",
@@ -4916,7 +5722,21 @@
       "credit": "Tahsin Anwar Ali",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nanga_Parbat_The_Killer_Mountain.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Nanga_Parbat_The_Killer_Mountain.jpg/960px-Nanga_Parbat_The_Killer_Mountain.jpg",
+        "credit": "Tahsin Anwar Ali",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nanga_Parbat_The_Killer_Mountain.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Nanga_Parbat%2C_Gilgit-Baltistan%2C_berg%2C_Nanga_Parbat%2C_0964.b.1055.tif/lossy-page1-960px-Nanga_Parbat%2C_Gilgit-Baltistan%2C_berg%2C_Nanga_Parbat%2C_0964.b.1055.tif.jpg",
+        "credit": "John Törnquist",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nanga_Parbat,_Gilgit-Baltistan,_berg,_Nanga_Parbat,_0964.b.1055.tif"
+      }
+    ]
   },
   {
     "id": "annapurna",
@@ -4989,7 +5809,21 @@
       "credit": "Bijay Chaurasia",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annapurna_Massif-IMG_5221-Pano.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Annapurna_Massif-IMG_5221-Pano.jpg/960px-Annapurna_Massif-IMG_5221-Pano.jpg",
+        "credit": "Bijay Chaurasia",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annapurna_Massif-IMG_5221-Pano.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/ISS042-E-263195_-_View_of_Nepal_-_Annapurna_Himal_-_Khangsar_Kang_-_Tilicho_Peak_-_Nilgiri_North_-_Manang_Valley_-_Khatung_Kang_-_Thorong_La_-_Kali_Gandaki_Valley_-_Chulu_-_Pisang_Peak_%28cropped%29.jpg/960px-thumbnail.jpg",
+        "credit": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ISS042-E-263195_-_View_of_Nepal_-_Annapurna_Himal_-_Khangsar_Kang_-_Tilicho_Peak_-_Nilgiri_North_-_Manang_Valley_-_Khatung_Kang_-_Thorong_La_-_Kali_Gandaki_Valley_-_Chulu_-_Pisang_Peak_(cropped).jpg"
+      }
+    ]
   },
   {
     "id": "gasherbrum1",
@@ -5076,7 +5910,21 @@
       "credit": "Romanterik",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomas_Petrecek_-_Gasherbrum_I_-_summit_2013.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tomas_Petrecek_-_Gasherbrum_I_-_summit_2013.jpg/960px-Tomas_Petrecek_-_Gasherbrum_I_-_summit_2013.jpg",
+        "credit": "Romanterik",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomas_Petrecek_-_Gasherbrum_I_-_summit_2013.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Tom%C3%A1%C5%A1_Petre%C4%8Dek_-_Expedice_Gasherbrum_I.jpg/960px-Tom%C3%A1%C5%A1_Petre%C4%8Dek_-_Expedice_Gasherbrum_I.jpg",
+        "credit": "Romanterik",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tom%C3%A1%C5%A1_Petre%C4%8Dek_-_Expedice_Gasherbrum_I.jpg"
+      }
+    ]
   },
   {
     "id": "broadpeak",
@@ -5163,7 +6011,21 @@
       "credit": "Sallahuddin shah",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Broad_Peak_-_Gasherbrum_IV.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Broad_Peak_-_Gasherbrum_IV.jpg/960px-Broad_Peak_-_Gasherbrum_IV.jpg",
+        "credit": "Sallahuddin shah",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Broad_Peak_-_Gasherbrum_IV.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Broad_Peak_and_Gasherbrum_IV.jpg/960px-Broad_Peak_and_Gasherbrum_IV.jpg",
+        "credit": "Black Zero",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Broad_Peak_and_Gasherbrum_IV.jpg"
+      }
+    ]
   },
   {
     "id": "gasherbrum2",
@@ -5236,7 +6098,21 @@
       "credit": "Ertly",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gasherbrum_II_summit_stone_Serhan_Pocan.JPG"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Gasherbrum_II_summit_stone_Serhan_Pocan.JPG/960px-Gasherbrum_II_summit_stone_Serhan_Pocan.JPG",
+        "credit": "Ertly",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gasherbrum_II_summit_stone_Serhan_Pocan.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Vladyslav-Terzyul-Gasherbrum_II.jpg/960px-Vladyslav-Terzyul-Gasherbrum_II.jpg",
+        "credit": "Sierrafox-ua",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vladyslav-Terzyul-Gasherbrum_II.jpg"
+      }
+    ]
   },
   {
     "id": "shishapangma",
@@ -5319,11 +6195,25 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Summit_of_peak_Kyungya_Ri_%286506m%29.jpg/960px-Summit_of_peak_Kyungya_Ri_%286506m%29.jpg",
-      "credit": "Iamthanes",
-      "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Summit_of_peak_Kyungya_Ri_(6506m).jpg"
-    }
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/ISS061-E-148224_-_View_of_China_-_Tibet_-_Tingri_hill_%28Gangga_Town%29_-_Bum_Chu_-_Gongbapu_valley_-_Melungtse_-_Shishapangma_-_Reqiang_peaks_-_Matsang_Tsangpo_valley_-_Labuche_Himal_%28cropped%29.jpg/960px-thumbnail.jpg",
+      "credit": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ISS061-E-148224_-_View_of_China_-_Tibet_-_Tingri_hill_(Gangga_Town)_-_Bum_Chu_-_Gongbapu_valley_-_Melungtse_-_Shishapangma_-_Reqiang_peaks_-_Matsang_Tsangpo_valley_-_Labuche_Himal_(cropped).jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/ISS061-E-148224_-_View_of_China_-_Tibet_-_Tingri_hill_%28Gangga_Town%29_-_Bum_Chu_-_Gongbapu_valley_-_Melungtse_-_Shishapangma_-_Reqiang_peaks_-_Matsang_Tsangpo_valley_-_Labuche_Himal_%28cropped%29.jpg/960px-thumbnail.jpg",
+        "credit": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ISS061-E-148224_-_View_of_China_-_Tibet_-_Tingri_hill_(Gangga_Town)_-_Bum_Chu_-_Gongbapu_valley_-_Melungtse_-_Shishapangma_-_Reqiang_peaks_-_Matsang_Tsangpo_valley_-_Labuche_Himal_(cropped).jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/8%2C013m_Shishapangma_Tibet_China_%E8%A5%BF%E8%97%8F_%E5%B8%8C%E5%A4%8F%E9%82%A6%E9%A9%AC%E5%B3%B0_-_panoramio.jpg/960px-8%2C013m_Shishapangma_Tibet_China_%E8%A5%BF%E8%97%8F_%E5%B8%8C%E5%A4%8F%E9%82%A6%E9%A9%AC%E5%B3%B0_-_panoramio.jpg",
+        "credit": "Hiroki Ogawa",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:8,013m_Shishapangma_Tibet_China_%E8%A5%BF%E8%97%8F_%E5%B8%8C%E5%A4%8F%E9%82%A6%E9%A9%AC%E5%B3%B0_-_panoramio.jpg"
+      }
+    ]
   },
   {
     "id": "ama",
@@ -5410,7 +6300,21 @@
       "credit": "Prasan Shrestha",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ama_dablam_base_camp_glacier.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ama_dablam_base_camp_glacier.jpg/960px-Ama_dablam_base_camp_glacier.jpg",
+        "credit": "Prasan Shrestha",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ama_dablam_base_camp_glacier.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Everest_panorama_from_Kala_Patthar.jpg/960px-Everest_panorama_from_Kala_Patthar.jpg",
+        "credit": "Markrosenrosen",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Everest_panorama_from_Kala_Patthar.jpg"
+      }
+    ]
   },
   {
     "id": "island",
@@ -5483,7 +6387,21 @@
       "credit": "Doc James",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:SummitIslandPeak.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/SummitIslandPeak.jpg/960px-SummitIslandPeak.jpg",
+        "credit": "Doc James",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SummitIslandPeak.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Makalu_from_Island_Peak.jpg/960px-Makalu_from_Island_Peak.jpg",
+        "credit": "mckaysavage [3]",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Makalu_from_Island_Peak.jpg"
+      }
+    ]
   },
   {
     "id": "stok",
@@ -5570,7 +6488,21 @@
       "credit": "Shailendra hillman",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stok_Kangri_Highest_trekking_In_India_.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Stok_Kangri_Highest_trekking_In_India_.jpg/960px-Stok_Kangri_Highest_trekking_In_India_.jpg",
+        "credit": "Shailendra hillman",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stok_Kangri_Highest_trekking_In_India_.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/My_First_High_Altitude_Practice_Climb_-_Stok_Kangri_-_Leh%2C_Ladakh.jpg/960px-My_First_High_Altitude_Practice_Climb_-_Stok_Kangri_-_Leh%2C_Ladakh.jpg",
+        "credit": "Jaahnavi Sriperambuduru",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:My_First_High_Altitude_Practice_Climb_-_Stok_Kangri_-_Leh,_Ladakh.jpg"
+      }
+    ]
   },
   {
     "id": "nanda",
@@ -5657,7 +6589,21 @@
       "credit": "Ashwani Kumar",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nanda_Devi_peak.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Nanda_Devi_peak.jpg/960px-Nanda_Devi_peak.jpg",
+        "credit": "Ashwani Kumar",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nanda_Devi_peak.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/SDRF_Uttarakhand_search_%26_rescue_course_at_Auli%2C_Nanda_Devi_Institute_of_Adventure_Sports.jpg/960px-SDRF_Uttarakhand_search_%26_rescue_course_at_Auli%2C_Nanda_Devi_Institute_of_Adventure_Sports.jpg",
+        "credit": "nanda devi institute of adventure sports and outdoor education",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SDRF_Uttarakhand_search_%26_rescue_course_at_Auli,_Nanda_Devi_Institute_of_Adventure_Sports.jpg"
+      }
+    ]
   },
   {
     "id": "trisul",
@@ -5744,7 +6690,21 @@
       "credit": "Yash Soorma",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trisul_1.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Trisul_1.jpg/960px-Trisul_1.jpg",
+        "credit": "Yash Soorma",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trisul_1.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Trisul_peak_from_bedni_bugyal.jpg/960px-Trisul_peak_from_bedni_bugyal.jpg",
+        "credit": "Yash Soorma",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trisul_peak_from_bedni_bugyal.jpg"
+      }
+    ]
   },
   {
     "id": "fuji",
@@ -5831,7 +6791,21 @@
       "credit": "Romain Guy from San Francisco, USA",
       "license": "CC0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_at_sunset,_March_2025.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Mount_Fuji_at_sunset%2C_March_2025.jpg/960px-Mount_Fuji_at_sunset%2C_March_2025.jpg",
+        "credit": "Romain Guy from San Francisco, USA",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_at_sunset,_March_2025.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/View_towards_Mount_Fuji_from_Arakurayama_Sengen_Park_in_Fujiyoshida%2C_Yamanashi%2C_Japan%2C_2024_May_-_2.jpg/960px-View_towards_Mount_Fuji_from_Arakurayama_Sengen_Park_in_Fujiyoshida%2C_Yamanashi%2C_Japan%2C_2024_May_-_2.jpg",
+        "credit": "Ximonic (Simo Räsänen)",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_towards_Mount_Fuji_from_Arakurayama_Sengen_Park_in_Fujiyoshida,_Yamanashi,_Japan,_2024_May_-_2.jpg"
+      }
+    ]
   },
   {
     "id": "yari",
@@ -5918,7 +6892,21 @@
       "credit": "Alpsdake",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Yari_from_Mount_Jonen.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Mount_Yari_from_Mount_Jonen.jpg/960px-Mount_Yari_from_Mount_Jonen.jpg",
+        "credit": "Alpsdake",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Yari_from_Mount_Jonen.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Mount_Yari_from_Mount_Jii.jpg/960px-Mount_Yari_from_Mount_Jii.jpg",
+        "credit": "Alpsdake",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Yari_from_Mount_Jii.jpg"
+      }
+    ]
   },
   {
     "id": "hallasan",
@@ -6005,7 +6993,21 @@
       "credit": "Basile Morin",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wooden_staircase_along_Yeongsil_Trail_with_the_mountains_of_Hallasan_Park_Jeju_Island_South_Korea.jpg"
-    }
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wooden_staircase_along_Yeongsil_Trail_with_the_mountains_of_Hallasan_Park_Jeju_Island_South_Korea.jpg/960px-Wooden_staircase_along_Yeongsil_Trail_with_the_mountains_of_Hallasan_Park_Jeju_Island_South_Korea.jpg",
+        "credit": "Basile Morin",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wooden_staircase_along_Yeongsil_Trail_with_the_mountains_of_Hallasan_Park_Jeju_Island_South_Korea.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Green_vegetation_on_the_low_cloud-swept_relief_in_Hallasan_National_Park_Jeju_South_Korea.jpg/960px-Green_vegetation_on_the_low_cloud-swept_relief_in_Hallasan_National_Park_Jeju_South_Korea.jpg",
+        "credit": "Basile Morin",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Green_vegetation_on_the_low_cloud-swept_relief_in_Hallasan_National_Park_Jeju_South_Korea.jpg"
+      }
+    ]
   },
   {
     "id": "cook",
@@ -6088,11 +7090,25 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Mueller_Hut_with_Mt_Sefton_and_Aoraki_%28Mt_Cook%29_during_the_sunrise.jpg/960px-Mueller_Hut_with_Mt_Sefton_and_Aoraki_%28Mt_Cook%29_during_the_sunrise.jpg",
-      "credit": "Michal Klajban",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mount_Cook_from_Kea_Point_03.jpg/960px-Mount_Cook_from_Kea_Point_03.jpg",
+      "credit": "Krzysztof Golik",
       "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mueller_Hut_with_Mt_Sefton_and_Aoraki_(Mt_Cook)_during_the_sunrise.jpg"
-    }
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Cook_from_Kea_Point_03.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mount_Cook_from_Kea_Point_03.jpg/960px-Mount_Cook_from_Kea_Point_03.jpg",
+        "credit": "Krzysztof Golik",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Cook_from_Kea_Point_03.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/00_1286_New_Zealand_Alps_-_Mount_Cook_%28M%C4%81ori_%22Aoraki%22%29.jpg/960px-00_1286_New_Zealand_Alps_-_Mount_Cook_%28M%C4%81ori_%22Aoraki%22%29.jpg",
+        "credit": "W. Bulach",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:00_1286_New_Zealand_Alps_-_Mount_Cook_(M%C4%81ori_%22Aoraki%22).jpg"
+      }
+    ]
   },
   {
     "id": "aspiring",
@@ -6158,27 +7174,27 @@
         "route": "SH6",
         "lat": -44.7,
         "lon": 169.13
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Coprosma_lucida_in_Mount_Aspiring_National_Park_02.jpg/960px-Coprosma_lucida_in_Mount_Aspiring_National_Park_02.jpg",
+        "credit": "Krzysztof Golik",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coprosma_lucida_in_Mount_Aspiring_National_Park_02.jpg"
       },
       {
-        "name": "Wānaka",
-        "region": "New Zealand",
-        "distanceMiles": 29.4,
-        "lat": -44.6941691,
-        "lon": 169.1364637
-      },
-      {
-        "name": "Lake Hāwea",
-        "region": "New Zealand",
-        "distanceMiles": 30.8,
-        "lat": -44.6126727,
-        "lon": 169.2640547
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mount_Aspiring%2C_Otago%2C_New_Zealand%2C_22_July_2005.jpg/960px-Mount_Aspiring%2C_Otago%2C_New_Zealand%2C_22_July_2005.jpg",
+        "credit": "Phillip Capper from Wellington, New Zealand",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Aspiring,_Otago,_New_Zealand,_22_July_2005.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Through_south_Westland%2C_a_journey_to_the_Haast_and_Mount_Aspiring%2C_New_Zealand_%281911%29_%2814783491925%29.jpg/960px-Through_south_Westland%2C_a_journey_to_the_Haast_and_Mount_Aspiring%2C_New_Zealand_%281911%29_%2814783491925%29.jpg",
-      "credit": "Internet Archive Book Images",
-      "license": "No restrictions",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Through_south_Westland,_a_journey_to_the_Haast_and_Mount_Aspiring,_New_Zealand_(1911)_(14783491925).jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Coprosma_lucida_in_Mount_Aspiring_National_Park_02.jpg/960px-Coprosma_lucida_in_Mount_Aspiring_National_Park_02.jpg",
+      "credit": "Krzysztof Golik",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coprosma_lucida_in_Mount_Aspiring_National_Park_02.jpg"
     }
   },
   {
@@ -6245,27 +7261,27 @@
         "route": "SH80",
         "lat": -43.74,
         "lon": 170.1
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mt_Tasman_helicopter_view_from_SE_above_Grand_Plateau_NZ_Fri_Nov_28_2008_crop.jpg/960px-Mt_Tasman_helicopter_view_from_SE_above_Grand_Plateau_NZ_Fri_Nov_28_2008_crop.jpg",
+        "credit": "Asmdorje",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Tasman_helicopter_view_from_SE_above_Grand_Plateau_NZ_Fri_Nov_28_2008_crop.jpg"
       },
       {
-        "name": "Fox Glacier",
-        "region": "New Zealand",
-        "distanceMiles": 10,
-        "lat": -43.4644665,
-        "lon": 170.0177191
-      },
-      {
-        "name": "Aoraki / Mount Cook",
-        "region": "New Zealand",
-        "distanceMiles": 12,
-        "lat": -43.7349453,
-        "lon": 170.0977232
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mt_Haast%2C_Mt_Lendenfeld%2C_Mt_Tasman_and_Torres_Peak_NZ_helicopter_view_from_NW_Fri_Nov_28_2008.jpg/960px-Mt_Haast%2C_Mt_Lendenfeld%2C_Mt_Tasman_and_Torres_Peak_NZ_helicopter_view_from_NW_Fri_Nov_28_2008.jpg",
+        "credit": "Asmdorje",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Haast,_Mt_Lendenfeld,_Mt_Tasman_and_Torres_Peak_NZ_helicopter_view_from_NW_Fri_Nov_28_2008.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Mount_Tasman_and_Mount_Cook_in_morning_light.jpg/960px-Mount_Tasman_and_Mount_Cook_in_morning_light.jpg",
-      "credit": "Pseudopanax at English Wikipedia",
-      "license": "Public domain",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Tasman_and_Mount_Cook_in_morning_light.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mt_Tasman_helicopter_view_from_SE_above_Grand_Plateau_NZ_Fri_Nov_28_2008_crop.jpg/960px-Mt_Tasman_helicopter_view_from_SE_above_Grand_Plateau_NZ_Fri_Nov_28_2008_crop.jpg",
+      "credit": "Asmdorje",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Tasman_helicopter_view_from_SE_above_Grand_Plateau_NZ_Fri_Nov_28_2008_crop.jpg"
     }
   },
   {
@@ -6332,20 +7348,20 @@
         "route": "Alpine Way",
         "lat": -36.5,
         "lon": 148.3
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mount_Kosciuszko_Summit_360_panorama.jpg/960px-Mount_Kosciuszko_Summit_360_panorama.jpg",
+        "credit": "Toby Hudson",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Kosciuszko_Summit_360_panorama.jpg"
       },
       {
-        "name": "Perisher Valley",
-        "region": "Australia",
-        "distanceMiles": 8.9,
-        "lat": -36.4056476,
-        "lon": 148.4106631
-      },
-      {
-        "name": "Khancoban",
-        "region": "Australia",
-        "distanceMiles": 18.2,
-        "lat": -36.2147218,
-        "lon": 148.1337598
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/South_east_from_mt_kosciuszko_summit_nsw_australia.jpg/960px-South_east_from_mt_kosciuszko_summit_nsw_australia.jpg",
+        "credit": "2mthswinter",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:South_east_from_mt_kosciuszko_summit_nsw_australia.jpg"
       }
     ],
     "photo": {
@@ -6421,6 +7437,20 @@
         "lon": 148.62
       }
     ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Guerard_Mount_Townsend_1863.jpg/960px-Guerard_Mount_Townsend_1863.jpg",
+        "credit": "Eugene von Guerard",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guerard_Mount_Townsend_1863.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Glacial_Rocks_near_Mount_Townsend%2C_Mount_Kosciusko_%28Kosciuszko%29_%28NSW%29_%2825031271428%29.jpg/960px-Glacial_Rocks_near_Mount_Townsend%2C_Mount_Kosciusko_%28Kosciuszko%29_%28NSW%29_%2825031271428%29.jpg",
+        "credit": "State Archives NSW from Australia",
+        "license": "No restrictions",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glacial_Rocks_near_Mount_Townsend,_Mount_Kosciusko_(Kosciuszko)_(NSW)_(25031271428).jpg"
+      }
+    ],
     "photo": {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Guerard_Mount_Townsend_1863.jpg/960px-Guerard_Mount_Townsend_1863.jpg",
       "credit": "Eugene von Guerard",
@@ -6492,27 +7522,27 @@
         "route": "Rv15",
         "lat": 61.84,
         "lon": 8.57
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/433_Paa_Galdh%C3%B8piggen%2C_Jotunheimen_-_no-nb_digifoto_20160524_00112_blds_06540.jpg/960px-433_Paa_Galdh%C3%B8piggen%2C_Jotunheimen_-_no-nb_digifoto_20160524_00112_blds_06540.jpg",
+        "credit": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:433_Paa_Galdh%C3%B8piggen,_Jotunheimen_-_no-nb_digifoto_20160524_00112_blds_06540.jpg"
       },
       {
-        "name": "Bismo",
-        "region": "Norway",
-        "distanceMiles": 17.2,
-        "lat": 61.8843655,
-        "lon": 8.2664114
-      },
-      {
-        "name": "Garmo",
-        "region": "Norway",
-        "distanceMiles": 21.8,
-        "lat": 61.8485622,
-        "lon": 8.8053587
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Svellnosbrean_and_Galdh%C3%B8piggen_in_Jotunheimen.jpg/960px-Svellnosbrean_and_Galdh%C3%B8piggen_in_Jotunheimen.jpg",
+        "credit": "Frankemann",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Svellnosbrean_and_Galdh%C3%B8piggen_in_Jotunheimen.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Svellnosbrean_and_Galdh%C3%B8piggen_in_Jotunheimen.jpg/960px-Svellnosbrean_and_Galdh%C3%B8piggen_in_Jotunheimen.jpg",
-      "credit": "Frankemann",
-      "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Svellnosbrean_and_Galdh%C3%B8piggen_in_Jotunheimen.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/433_Paa_Galdh%C3%B8piggen%2C_Jotunheimen_-_no-nb_digifoto_20160524_00112_blds_06540.jpg/960px-433_Paa_Galdh%C3%B8piggen%2C_Jotunheimen_-_no-nb_digifoto_20160524_00112_blds_06540.jpg",
+      "credit": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:433_Paa_Galdh%C3%B8piggen,_Jotunheimen_-_no-nb_digifoto_20160524_00112_blds_06540.jpg"
     }
   },
   {
@@ -6579,27 +7609,27 @@
         "route": "E10",
         "lat": 67.86,
         "lon": 20.23
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Kebnekaise_western_passage_JS90.jpg/960px-Kebnekaise_western_passage_JS90.jpg",
+        "credit": "Johan Schagerström",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kebnekaise_western_passage_JS90.jpg"
       },
       {
-        "name": "Nikkaluokta",
-        "region": "Sweden",
-        "distanceMiles": 13.2,
-        "lat": 67.8513592,
-        "lon": 19.0154235
-      },
-      {
-        "name": "Narvik",
-        "region": "Sweden",
-        "distanceMiles": 46.5,
-        "lat": 68.4383796,
-        "lon": 17.4271978
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Kebnekaise_generalstabskartan.png/960px-Kebnekaise_generalstabskartan.png",
+        "credit": "Lantmäteriet",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kebnekaise_generalstabskartan.png"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Storglaci%C3%A4ren_with_Kebnekaise_behind_2022-08-25_18.jpg/960px-Storglaci%C3%A4ren_with_Kebnekaise_behind_2022-08-25_18.jpg",
-      "credit": "Leonhard Lenz",
-      "license": "CC0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Storglaci%C3%A4ren_with_Kebnekaise_behind_2022-08-25_18.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Kebnekaise_western_passage_JS90.jpg/960px-Kebnekaise_western_passage_JS90.jpg",
+      "credit": "Johan Schagerström",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kebnekaise_western_passage_JS90.jpg"
     }
   },
   {
@@ -6666,27 +7696,27 @@
         "route": "E8",
         "lat": 69.05,
         "lon": 20.8
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Boundary_stone_%28Haltitunturi%29.jpg/960px-Boundary_stone_%28Haltitunturi%29.jpg",
+        "credit": "Lothar Sowada",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boundary_stone_(Haltitunturi).jpg"
       },
       {
-        "name": "Biertavárri - Birtavarre - Pirttavaara",
-        "region": "Finland/Norway",
-        "distanceMiles": 16.9,
-        "lat": 69.4949552,
-        "lon": 20.8319007
-      },
-      {
-        "name": "Ruollaluokta - Trollvik",
-        "region": "Finland/Norway",
-        "distanceMiles": 19.6,
-        "lat": 69.5248275,
-        "lon": 20.7614052
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Top_of_Halti_fjeld_-_Finland_-_07-09-2006.jpg/960px-Top_of_Halti_fjeld_-_Finland_-_07-09-2006.jpg",
+        "credit": "Ppntori",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Top_of_Halti_fjeld_-_Finland_-_07-09-2006.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Ararat_mountain.jpg/960px-Ararat_mountain.jpg",
-      "credit": "Shushan.Asatryan",
-      "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ararat_mountain.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Boundary_stone_%28Haltitunturi%29.jpg/960px-Boundary_stone_%28Haltitunturi%29.jpg",
+      "credit": "Lothar Sowada",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boundary_stone_(Haltitunturi).jpg"
     }
   },
   {
@@ -6755,11 +7785,25 @@
         "lon": 23.6
       }
     ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Plaque_sur_station_m%C3%A9t%C3%A9o_Musala.JPG/960px-Plaque_sur_station_m%C3%A9t%C3%A9o_Musala.JPG",
+        "credit": "Hubertgui",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaque_sur_station_m%C3%A9t%C3%A9o_Musala.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Musala_peak.jpg/960px-Musala_peak.jpg",
+        "credit": "Biser Todorov",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musala_peak.jpg"
+      }
+    ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Musala_peak.jpg/960px-Musala_peak.jpg",
-      "credit": "Biser Todorov",
-      "license": "CC BY 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musala_peak.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Plaque_sur_station_m%C3%A9t%C3%A9o_Musala.JPG/960px-Plaque_sur_station_m%C3%A9t%C3%A9o_Musala.JPG",
+      "credit": "Hubertgui",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaque_sur_station_m%C3%A9t%C3%A9o_Musala.JPG"
     }
   },
   {
@@ -6826,27 +7870,27 @@
         "route": "EO1",
         "lat": 40.1,
         "lon": 22.5
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Panorama_of_the_east_coast_of_Greece_from_the_slope_of_Mount_Olympus.jpg/960px-Panorama_of_the_east_coast_of_Greece_from_the_slope_of_Mount_Olympus.jpg",
+        "credit": "Ynnarski",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panorama_of_the_east_coast_of_Greece_from_the_slope_of_Mount_Olympus.jpg"
       },
       {
-        "name": "Κοκκινοπηλός",
-        "region": "Greece",
-        "distanceMiles": 5.7,
-        "lat": 40.0968815,
-        "lon": 22.2527089
-      },
-      {
-        "name": "Πύθιο",
-        "region": "Greece",
-        "distanceMiles": 6.8,
-        "lat": 40.0653823,
-        "lon": 22.232506
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/The_sacred_springs_of_Ancient_Dion_with_Mount_Olympus_in_the_background%2C_Dion_%286930181030%29.jpg/960px-The_sacred_springs_of_Ancient_Dion_with_Mount_Olympus_in_the_background%2C_Dion_%286930181030%29.jpg",
+        "credit": "Carole Raddato from FRANKFURT, Germany",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_sacred_springs_of_Ancient_Dion_with_Mount_Olympus_in_the_background,_Dion_(6930181030).jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Mount_Olympus%2C_Lake_St_Clair_national_park%2C_Tasmania%2C_Australia.jpg/960px-Mount_Olympus%2C_Lake_St_Clair_national_park%2C_Tasmania%2C_Australia.jpg",
-      "credit": "BDoecke",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Panorama_of_the_east_coast_of_Greece_from_the_slope_of_Mount_Olympus.jpg/960px-Panorama_of_the_east_coast_of_Greece_from_the_slope_of_Mount_Olympus.jpg",
+      "credit": "Ynnarski",
       "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Olympus,_Lake_St_Clair_national_park,_Tasmania,_Australia.jpg"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panorama_of_the_east_coast_of_Greece_from_the_slope_of_Mount_Olympus.jpg"
     }
   },
   {
@@ -6913,27 +7957,27 @@
         "route": "A-4132",
         "lat": 36.96,
         "lon": -3.36
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/VG_n%C2%BA_102763_IGN_Mulhac%C3%A9n_I.jpg/960px-VG_n%C2%BA_102763_IGN_Mulhac%C3%A9n_I.jpg",
+        "credit": "Caçavertex",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:VG_n%C2%BA_102763_IGN_Mulhac%C3%A9n_I.jpg"
       },
       {
-        "name": "Trevélez",
-        "region": "Spain",
-        "distanceMiles": 4.3,
-        "lat": 37.0023983,
-        "lon": -3.2665989
-      },
-      {
-        "name": "Bubión",
-        "region": "Spain",
-        "distanceMiles": 7.6,
-        "lat": 36.9488544,
-        "lon": -3.3570047
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/El_Mulhac%C3%A9n_desde_el_Veleta.JPG/960px-El_Mulhac%C3%A9n_desde_el_Veleta.JPG",
+        "credit": "Miguel Ángel Hontanilla Pozo",
+        "license": "CC BY-SA 3.0 es",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_Mulhac%C3%A9n_desde_el_Veleta.JPG"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/1880-03-08%2C_La_Ilustraci%C3%B3n_Espa%C3%B1ola_y_Americana%2C_Enlace_geod%C3%A9sico_entre_los_continentes_europeo_y_africano.%E2%80%94%28v%C3%A9rtices_espa%C3%B1oles%29.jpg/960px-1880-03-08%2C_La_Ilustraci%C3%B3n_Espa%C3%B1ola_y_Americana%2C_Enlace_geod%C3%A9sico_entre_los_continentes_europeo_y_africano.%E2%80%94%28v%C3%A9rtices_espa%C3%B1oles%29.jpg",
-      "credit": "Manuel Nao / Bernardo Rico",
-      "license": "Public domain",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1880-03-08,_La_Ilustraci%C3%B3n_Espa%C3%B1ola_y_Americana,_Enlace_geod%C3%A9sico_entre_los_continentes_europeo_y_africano.%E2%80%94(v%C3%A9rtices_espa%C3%B1oles).jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/VG_n%C2%BA_102763_IGN_Mulhac%C3%A9n_I.jpg/960px-VG_n%C2%BA_102763_IGN_Mulhac%C3%A9n_I.jpg",
+      "credit": "Caçavertex",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:VG_n%C2%BA_102763_IGN_Mulhac%C3%A9n_I.jpg"
     }
   },
   {
@@ -7000,27 +8044,27 @@
         "route": "TF-21",
         "lat": 28.16,
         "lon": -16.64
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Vista_del_Parque_nacional_Garajonay_hacia_Tenerife_y_el_Teide_1138_1.jpg/960px-Vista_del_Parque_nacional_Garajonay_hacia_Tenerife_y_el_Teide_1138_1.jpg",
+        "credit": "Stefan Koehler MD",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_del_Parque_nacional_Garajonay_hacia_Tenerife_y_el_Teide_1138_1.jpg"
       },
       {
-        "name": "La Guancha",
-        "region": "Spain",
-        "distanceMiles": 7,
-        "lat": 28.3738326,
-        "lon": -16.6515762
-      },
-      {
-        "name": "Santa Bárbara",
-        "region": "Spain",
-        "distanceMiles": 7.3,
-        "lat": 28.3691298,
-        "lon": -16.6911567
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/At_Tenerife_2022_148_-_Teide_peak.jpg/960px-At_Tenerife_2022_148_-_Teide_peak.jpg",
+        "credit": "Photograph by Mike Peel (www.mikepeel.net).",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:At_Tenerife_2022_148_-_Teide_peak.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Teide_von_Nordosten_%28Zuschnitt_1%29.jpg/960px-Teide_von_Nordosten_%28Zuschnitt_1%29.jpg",
-      "credit": "Thomas Wolf, www.foto-tw.de",
-      "license": "CC BY-SA 3.0 de",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teide_von_Nordosten_(Zuschnitt_1).jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Vista_del_Parque_nacional_Garajonay_hacia_Tenerife_y_el_Teide_1138_1.jpg/960px-Vista_del_Parque_nacional_Garajonay_hacia_Tenerife_y_el_Teide_1138_1.jpg",
+      "credit": "Stefan Koehler MD",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_del_Parque_nacional_Garajonay_hacia_Tenerife_y_el_Teide_1138_1.jpg"
     }
   },
   {
@@ -7087,27 +8131,27 @@
         "route": "Mex-115",
         "lat": 19.12,
         "lon": -98.77
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Iztacc%C3%ADhuatl_desde_una_autopista_en_el_Estado_de_M%C3%A9xico_04.jpg/960px-Iztacc%C3%ADhuatl_desde_una_autopista_en_el_Estado_de_M%C3%A9xico_04.jpg",
+        "credit": "Luis Alvaz",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iztacc%C3%ADhuatl_desde_una_autopista_en_el_Estado_de_M%C3%A9xico_04.jpg"
       },
       {
-        "name": "IVN1",
-        "region": "Mexico",
-        "distanceMiles": 7.1,
-        "lat": 19.1198661,
-        "lon": -98.7315411
-      },
-      {
-        "name": "San Rafael",
-        "region": "Mexico",
-        "distanceMiles": 7.8,
-        "lat": 19.2094385,
-        "lon": -98.7570624
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Iztacc%C3%ADhuatl_desde_una_autopista_en_el_Estado_de_M%C3%A9xico_05.jpg/960px-Iztacc%C3%ADhuatl_desde_una_autopista_en_el_Estado_de_M%C3%A9xico_05.jpg",
+        "credit": "Luis Alvaz",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iztacc%C3%ADhuatl_desde_una_autopista_en_el_Estado_de_M%C3%A9xico_05.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Volcanes_Popocat%C3%A9petl_e_Iztaccihuatl.jpg/960px-Volcanes_Popocat%C3%A9petl_e_Iztaccihuatl.jpg",
-      "credit": "Óscar Badillo Pérez",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Iztacc%C3%ADhuatl_desde_una_autopista_en_el_Estado_de_M%C3%A9xico_04.jpg/960px-Iztacc%C3%ADhuatl_desde_una_autopista_en_el_Estado_de_M%C3%A9xico_04.jpg",
+      "credit": "Luis Alvaz",
       "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volcanes_Popocat%C3%A9petl_e_Iztaccihuatl.jpg"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iztacc%C3%ADhuatl_desde_una_autopista_en_el_Estado_de_M%C3%A9xico_04.jpg"
     }
   },
   {
@@ -7176,11 +8220,25 @@
         "lon": -68.65
       }
     ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ancohuma%2BIllampu.JPG/960px-Ancohuma%2BIllampu.JPG",
+        "credit": "Maurice Chédel",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ancohuma%2BIllampu.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/ILLAMPU.jpg/960px-ILLAMPU.jpg",
+        "credit": "Los Wikikis",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ILLAMPU.jpg"
+      }
+    ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Illampu-from-Ancohuma.JPG/960px-Illampu-from-Ancohuma.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ancohuma%2BIllampu.JPG/960px-Ancohuma%2BIllampu.JPG",
       "credit": "Maurice Chédel",
       "license": "CC BY 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illampu-from-Ancohuma.JPG"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ancohuma%2BIllampu.JPG"
     }
   },
   {
@@ -7247,27 +8305,27 @@
         "route": "PE-3N",
         "lat": -9.05,
         "lon": -77.81
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Alpamayo_12.jpg/960px-Alpamayo_12.jpg",
+        "credit": "Frank R 1981",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alpamayo_12.jpg"
       },
       {
-        "name": "Cashapampa",
-        "region": "Peru",
-        "distanceMiles": 10.1,
-        "lat": -8.9572619,
-        "lon": -77.7776927
-      },
-      {
-        "name": "Hualcayan",
-        "region": "Peru",
-        "distanceMiles": 10.2,
-        "lat": -8.8981232,
-        "lon": -77.8019825
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Alpamayo.jpg/960px-Alpamayo.jpg",
+        "credit": "Brad MeringBaltimore, MD, United States",
+        "license": "Copyrighted free use",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alpamayo.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Climber_in_Peru.JPG/960px-Climber_in_Peru.JPG",
-      "credit": "KSszilas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Alpamayo_12.jpg/960px-Alpamayo_12.jpg",
+      "credit": "Frank R 1981",
       "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Climber_in_Peru.JPG"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alpamayo_12.jpg"
     }
   },
   {
@@ -7334,27 +8392,27 @@
         "route": "Ruta 3",
         "lat": -16.5,
         "lon": -68.12
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Der_Huayna_Potosi_erhebt_sich_hinter_La_Paz.jpg/960px-Der_Huayna_Potosi_erhebt_sich_hinter_La_Paz.jpg",
+        "credit": "Lunaloop",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Der_Huayna_Potosi_erhebt_sich_hinter_La_Paz.jpg"
       },
       {
-        "name": "Alto Milluni",
-        "region": "La Paz",
-        "distanceMiles": 4.1,
-        "lat": -16.323235,
-        "lon": -68.1502685
-      },
-      {
-        "name": "Cañaviri",
-        "region": "Nuestra Señora de La Paz",
-        "distanceMiles": 6.4,
-        "lat": -16.1736776,
-        "lon": -68.1358225
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Nevado_Huayna_Potos%C3%AD_-_La_Paz_Bolivia.jpg/960px-Nevado_Huayna_Potos%C3%AD_-_La_Paz_Bolivia.jpg",
+        "credit": "Robeltran",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nevado_Huayna_Potos%C3%AD_-_La_Paz_Bolivia.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/La_Cara_Oeste_del_Huayna_Potos%C3%AD.jpg/960px-La_Cara_Oeste_del_Huayna_Potos%C3%AD.jpg",
-      "credit": "Soletocesar",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Der_Huayna_Potosi_erhebt_sich_hinter_La_Paz.jpg/960px-Der_Huayna_Potosi_erhebt_sich_hinter_La_Paz.jpg",
+      "credit": "Lunaloop",
       "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Cara_Oeste_del_Huayna_Potos%C3%AD.jpg"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Der_Huayna_Potosi_erhebt_sich_hinter_La_Paz.jpg"
     }
   },
   {
@@ -7423,11 +8481,25 @@
         "lon": -82.85
       }
     ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Vinson_Massif_from_space.jpg/960px-Vinson_Massif_from_space.jpg",
+        "credit": "NASA",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vinson_Massif_from_space.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Vinson_Massif-_Antarctica%E2%80%99s_highest_peak_%28Copernicus_2026-02-28%29.png/960px-Vinson_Massif-_Antarctica%E2%80%99s_highest_peak_%28Copernicus_2026-02-28%29.png",
+        "credit": "European Union, Copernicus Sentinel-2 imagery",
+        "license": "Attribution",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vinson_Massif-_Antarctica%E2%80%99s_highest_peak_(Copernicus_2026-02-28).png"
+      }
+    ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Vinson_Massif-_Antarctica%E2%80%99s_highest_peak_%28Copernicus_2026-02-28%29.png/960px-Vinson_Massif-_Antarctica%E2%80%99s_highest_peak_%28Copernicus_2026-02-28%29.png",
-      "credit": "European Union, Copernicus Sentinel-2 imagery",
-      "license": "Attribution",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vinson_Massif-_Antarctica%E2%80%99s_highest_peak_(Copernicus_2026-02-28).png"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Vinson_Massif_from_space.jpg/960px-Vinson_Massif_from_space.jpg",
+      "credit": "NASA",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vinson_Massif_from_space.jpg"
     }
   },
   {
@@ -7495,7 +8567,27 @@
         "lat": -77.85,
         "lon": 166.67
       }
-    ]
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sidley_oli_2014324_lrg.jpg/960px-Sidley_oli_2014324_lrg.jpg",
+        "credit": "NASA Earth Observatory image by Jesse Allen, using Landsat data from the U.S.…",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sidley_oli_2014324_lrg.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/C77124s1_Ant.Map_Mount_Sidley.jpg/960px-C77124s1_Ant.Map_Mount_Sidley.jpg",
+        "credit": "USGS",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:C77124s1_Ant.Map_Mount_Sidley.jpg"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sidley_oli_2014324_lrg.jpg/960px-Sidley_oli_2014324_lrg.jpg",
+      "credit": "NASA Earth Observatory image by Jesse Allen, using Landsat data from the U.S.…",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sidley_oli_2014324_lrg.jpg"
+    }
   },
   {
     "id": "mitchell",
@@ -7561,27 +8653,27 @@
         "route": "NC-128",
         "lat": 35.92,
         "lon": -82.3
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/North_Carolina_Highway_128_in_Mount_Mitchell_State_Park.jpg/960px-North_Carolina_Highway_128_in_Mount_Mitchell_State_Park.jpg",
+        "credit": "DiscoA340",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Carolina_Highway_128_in_Mount_Mitchell_State_Park.jpg"
       },
       {
-        "name": "Montreat",
-        "region": "USA",
-        "distanceMiles": 8.6,
-        "lat": 35.6442841,
-        "lon": -82.3028972
-      },
-      {
-        "name": "Old Fort",
-        "region": "USA",
-        "distanceMiles": 10.5,
-        "lat": 35.6293365,
-        "lon": -82.1810827
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/North_Carolina_Highway_128_in_Mount_Mitchell_State_Park_2.jpg/960px-North_Carolina_Highway_128_in_Mount_Mitchell_State_Park_2.jpg",
+        "credit": "DiscoA340",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Carolina_Highway_128_in_Mount_Mitchell_State_Park_2.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Mount_Mitchell_and_Mount_Craig_from_Black_Mountains_Overlook%2C_October_2016.jpg/960px-Mount_Mitchell_and_Mount_Craig_from_Black_Mountains_Overlook%2C_October_2016.jpg",
-      "credit": "Thomson200",
-      "license": "CC0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Mitchell_and_Mount_Craig_from_Black_Mountains_Overlook,_October_2016.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/North_Carolina_Highway_128_in_Mount_Mitchell_State_Park.jpg/960px-North_Carolina_Highway_128_in_Mount_Mitchell_State_Park.jpg",
+      "credit": "DiscoA340",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Carolina_Highway_128_in_Mount_Mitchell_State_Park.jpg"
     }
   },
   {
@@ -7648,27 +8740,27 @@
         "route": "Baxter Park Rd",
         "lat": 45.66,
         "lon": -68.71
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Mt_katahdin%2C_located_in_Baxter_State_Park%2C_the_highest_mountain_in_the_state_of_Maine.jpg/960px-Mt_katahdin%2C_located_in_Baxter_State_Park%2C_the_highest_mountain_in_the_state_of_Maine.jpg",
+        "credit": "Carol Boldt",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_katahdin,_located_in_Baxter_State_Park,_the_highest_mountain_in_the_state_of_Maine.jpg"
       },
       {
-        "name": "Mount Chase",
-        "region": "USA",
-        "distanceMiles": 21.7,
-        "lat": 46.0650727,
-        "lon": -68.5330007
-      },
-      {
-        "name": "Patten",
-        "region": "USA",
-        "distanceMiles": 23.6,
-        "lat": 45.9960683,
-        "lon": -68.4473498
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mount_Katahdin_as_seen_from_South_Twin_Lake_image_3.jpg/960px-Mount_Katahdin_as_seen_from_South_Twin_Lake_image_3.jpg",
+        "credit": "DrStew82",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Katahdin_as_seen_from_South_Twin_Lake_image_3.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Mount_Katahdin.jpg/960px-Mount_Katahdin.jpg",
-      "credit": "Michael Sipos",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Mt_katahdin%2C_located_in_Baxter_State_Park%2C_the_highest_mountain_in_the_state_of_Maine.jpg/960px-Mt_katahdin%2C_located_in_Baxter_State_Park%2C_the_highest_mountain_in_the_state_of_Maine.jpg",
+      "credit": "Carol Boldt",
       "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Katahdin.jpg"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_katahdin,_located_in_Baxter_State_Park,_the_highest_mountain_in_the_state_of_Maine.jpg"
     }
   },
   {
@@ -7736,7 +8828,27 @@
         "lat": 44.28,
         "lon": -73.98
       }
-    ]
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Marcy_from_Table_Top.jpg/960px-Marcy_from_Table_Top.jpg",
+        "credit": "Dclemens1971",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marcy_from_Table_Top.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mount_Marcy_viewed_from_Mount_Skylight_in_summer.png/960px-Mount_Marcy_viewed_from_Mount_Skylight_in_summer.png",
+        "credit": "Rocfan275",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Marcy_viewed_from_Mount_Skylight_in_summer.png"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Marcy_from_Table_Top.jpg/960px-Marcy_from_Table_Top.jpg",
+      "credit": "Dclemens1971",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marcy_from_Table_Top.jpg"
+    }
   },
   {
     "id": "washington",
@@ -7803,7 +8915,27 @@
         "lat": 44.39,
         "lon": -71.17
       }
-    ]
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/2016-09-03_16_29_17_View_north_from_the_northeast_side_of_the_summit_of_Mount_Washington_in_Sargent%27s_Purchase_Township%2C_Coos_County%2C_New_Hampshire.jpg/960px-2016-09-03_16_29_17_View_north_from_the_northeast_side_of_the_summit_of_Mount_Washington_in_Sargent%27s_Purchase_Township%2C_Coos_County%2C_New_Hampshire.jpg",
+        "credit": "Famartin",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016-09-03_16_29_17_View_north_from_the_northeast_side_of_the_summit_of_Mount_Washington_in_Sargent%27s_Purchase_Township,_Coos_County,_New_Hampshire.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/2016-09-03_16_29_19_View_northeast_from_the_northeast_side_of_the_summit_of_Mount_Washington_in_Sargent%27s_Purchase_Township%2C_Coos_County%2C_New_Hampshire.jpg/960px-2016-09-03_16_29_19_View_northeast_from_the_northeast_side_of_the_summit_of_Mount_Washington_in_Sargent%27s_Purchase_Township%2C_Coos_County%2C_New_Hampshire.jpg",
+        "credit": "Famartin",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016-09-03_16_29_19_View_northeast_from_the_northeast_side_of_the_summit_of_Mount_Washington_in_Sargent%27s_Purchase_Township,_Coos_County,_New_Hampshire.jpg"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/2016-09-03_16_29_17_View_north_from_the_northeast_side_of_the_summit_of_Mount_Washington_in_Sargent%27s_Purchase_Township%2C_Coos_County%2C_New_Hampshire.jpg/960px-2016-09-03_16_29_17_View_north_from_the_northeast_side_of_the_summit_of_Mount_Washington_in_Sargent%27s_Purchase_Township%2C_Coos_County%2C_New_Hampshire.jpg",
+      "credit": "Famartin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016-09-03_16_29_17_View_north_from_the_northeast_side_of_the_summit_of_Mount_Washington_in_Sargent%27s_Purchase_Township,_Coos_County,_New_Hampshire.jpg"
+    }
   },
   {
     "id": "timpanogos",
@@ -7870,7 +9002,27 @@
         "lat": 40.4,
         "lon": -111.6
       }
-    ]
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Mount_Timpanogos_Utah_Temple.jpg/960px-Mount_Timpanogos_Utah_Temple.jpg",
+        "credit": "Eliza Aldous",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Timpanogos_Utah_Temple.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Photo_of_Mount_Timpanogos_Utah_Temple.jpg/960px-Photo_of_Mount_Timpanogos_Utah_Temple.jpg",
+        "credit": "Eliza Aldous",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Photo_of_Mount_Timpanogos_Utah_Temple.jpg"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Mount_Timpanogos_Utah_Temple.jpg/960px-Mount_Timpanogos_Utah_Temple.jpg",
+      "credit": "Eliza Aldous",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Timpanogos_Utah_Temple.jpg"
+    }
   },
   {
     "id": "lonepeak",
@@ -7937,7 +9089,27 @@
         "lat": 40.52,
         "lon": -111.86
       }
-    ]
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lone_Peak_Summit_in_the_Winter.jpg/960px-Lone_Peak_Summit_in_the_Winter.jpg",
+        "credit": "Derrellwilliams",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lone_Peak_Summit_in_the_Winter.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lone_Peak_South_Summit_and_Question_Mark_Wall.jpg/960px-Lone_Peak_South_Summit_and_Question_Mark_Wall.jpg",
+        "credit": "Derrellwilliams",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lone_Peak_South_Summit_and_Question_Mark_Wall.jpg"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lone_Peak_Summit_in_the_Winter.jpg/960px-Lone_Peak_Summit_in_the_Winter.jpg",
+      "credit": "Derrellwilliams",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lone_Peak_Summit_in_the_Winter.jpg"
+    }
   },
   {
     "id": "grandteton",
@@ -8004,7 +9176,27 @@
         "lat": 43.48,
         "lon": -110.76
       }
-    ]
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Chapel_of_the_Sacred_Heart_%28Grand_Teton_National_Park%2C_WY%29_-_statue_Christ_showing_His_Sacred_Heart.jpg/960px-Chapel_of_the_Sacred_Heart_%28Grand_Teton_National_Park%2C_WY%29_-_statue_Christ_showing_His_Sacred_Heart.jpg",
+        "credit": "Nheyob",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chapel_of_the_Sacred_Heart_(Grand_Teton_National_Park,_WY)_-_statue_Christ_showing_His_Sacred_Heart.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/960px-Adams_The_Tetons_and_the_Snake_River.jpg",
+        "credit": "Ansel Adams",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adams_The_Tetons_and_the_Snake_River.jpg"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Chapel_of_the_Sacred_Heart_%28Grand_Teton_National_Park%2C_WY%29_-_statue_Christ_showing_His_Sacred_Heart.jpg/960px-Chapel_of_the_Sacred_Heart_%28Grand_Teton_National_Park%2C_WY%29_-_statue_Christ_showing_His_Sacred_Heart.jpg",
+      "credit": "Nheyob",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chapel_of_the_Sacred_Heart_(Grand_Teton_National_Park,_WY)_-_statue_Christ_showing_His_Sacred_Heart.jpg"
+    }
   },
   {
     "id": "moran",
@@ -8071,7 +9263,27 @@
         "lat": 43.84,
         "lon": -110.51
       }
-    ]
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/2025-05-30-225649_USA_Wyoming_Moran_2059.6-Pano.jpg/960px-2025-05-30-225649_USA_Wyoming_Moran_2059.6-Pano.jpg",
+        "credit": "Hansueli Krapf",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025-05-30-225649_USA_Wyoming_Moran_2059.6-Pano.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/2025-05-30-210742_USA_Wyoming_Moran_2045.8.jpg/960px-2025-05-30-210742_USA_Wyoming_Moran_2045.8.jpg",
+        "credit": "Hansueli Krapf",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025-05-30-210742_USA_Wyoming_Moran_2045.8.jpg"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/2025-05-30-225649_USA_Wyoming_Moran_2059.6-Pano.jpg/960px-2025-05-30-225649_USA_Wyoming_Moran_2059.6-Pano.jpg",
+      "credit": "Hansueli Krapf",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025-05-30-225649_USA_Wyoming_Moran_2059.6-Pano.jpg"
+    }
   },
   {
     "id": "cloudpeak",
@@ -8138,7 +9350,27 @@
         "lat": 44.35,
         "lon": -106.7
       }
-    ]
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/View_east_from_the_summit_of_Cloud_Peak%2C_Big_Horn_Mountains%2C_Wyoming%2C_USA.jpg/960px-View_east_from_the_summit_of_Cloud_Peak%2C_Big_Horn_Mountains%2C_Wyoming%2C_USA.jpg",
+        "credit": "PJsg1011",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_east_from_the_summit_of_Cloud_Peak,_Big_Horn_Mountains,_Wyoming,_USA.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cloud_Peak_from_near_Tensleep_WY2.jpg/960px-Cloud_Peak_from_near_Tensleep_WY2.jpg",
+        "credit": "Acroterion",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cloud_Peak_from_near_Tensleep_WY2.jpg"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/View_east_from_the_summit_of_Cloud_Peak%2C_Big_Horn_Mountains%2C_Wyoming%2C_USA.jpg/960px-View_east_from_the_summit_of_Cloud_Peak%2C_Big_Horn_Mountains%2C_Wyoming%2C_USA.jpg",
+      "credit": "PJsg1011",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_east_from_the_summit_of_Cloud_Peak,_Big_Horn_Mountains,_Wyoming,_USA.jpg"
+    }
   },
   {
     "id": "blanca",
@@ -8205,7 +9437,27 @@
         "lat": 37.47,
         "lon": -105.87
       }
-    ]
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/CO_Blanca_Peak_400166_1967_24000_geo_%28TIF%29.tif/lossy-page1-960px-CO_Blanca_Peak_400166_1967_24000_geo_%28TIF%29.tif.jpg",
+        "credit": "USGS",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CO_Blanca_Peak_400166_1967_24000_geo_(TIF).tif"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/CO_Blanca_Peak_400169_1967_24000_geo_%28TIF%29.tif/lossy-page1-960px-CO_Blanca_Peak_400169_1967_24000_geo_%28TIF%29.tif.jpg",
+        "credit": "USGS",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CO_Blanca_Peak_400169_1967_24000_geo_(TIF).tif"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/CO_Blanca_Peak_400166_1967_24000_geo_%28TIF%29.tif/lossy-page1-960px-CO_Blanca_Peak_400166_1967_24000_geo_%28TIF%29.tif.jpg",
+      "credit": "USGS",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CO_Blanca_Peak_400166_1967_24000_geo_(TIF).tif"
+    }
   },
   {
     "id": "crestone",
@@ -8272,7 +9524,27 @@
         "lat": 37.99,
         "lon": -105.7
       }
-    ]
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/CO_Crestone_Peak_400728_1967_24000_geo_%28TIF%29.tif/lossy-page1-960px-CO_Crestone_Peak_400728_1967_24000_geo_%28TIF%29.tif.jpg",
+        "credit": "USGS",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CO_Crestone_Peak_400728_1967_24000_geo_(TIF).tif"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CO_Crestone_Peak_400729_1967_24000_geo_%28TIF%29.tif/lossy-page1-960px-CO_Crestone_Peak_400729_1967_24000_geo_%28TIF%29.tif.jpg",
+        "credit": "USGS",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CO_Crestone_Peak_400729_1967_24000_geo_(TIF).tif"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/CO_Crestone_Peak_400728_1967_24000_geo_%28TIF%29.tif/lossy-page1-960px-CO_Crestone_Peak_400728_1967_24000_geo_%28TIF%29.tif.jpg",
+      "credit": "USGS",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CO_Crestone_Peak_400728_1967_24000_geo_(TIF).tif"
+    }
   },
   {
     "id": "capitol",
@@ -8339,7 +9611,27 @@
         "lat": 39.19,
         "lon": -106.82
       }
-    ]
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Capitol_Peak_CO_arete.jpg/960px-Capitol_Peak_CO_arete.jpg",
+        "credit": "Xpda",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capitol_Peak_CO_arete.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mt._Daly_and_Capitol_Peak.jpg/960px-Mt._Daly_and_Capitol_Peak.jpg",
+        "credit": "lamblukas",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Daly_and_Capitol_Peak.jpg"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Capitol_Peak_CO_arete.jpg/960px-Capitol_Peak_CO_arete.jpg",
+      "credit": "Xpda",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capitol_Peak_CO_arete.jpg"
+    }
   },
   {
     "id": "pyramid",
@@ -8406,6 +9698,26 @@
         "lat": 39.19,
         "lon": -106.82
       }
-    ]
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Aspen_Highlands_Highlands_Pyramid_Peak.jpg/960px-Aspen_Highlands_Highlands_Pyramid_Peak.jpg",
+        "credit": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but …",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_Highlands_Pyramid_Peak.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Pyramid_Peak_%28Rio_Blanco_County%2C_Colorado%29.JPG/960px-Pyramid_Peak_%28Rio_Blanco_County%2C_Colorado%29.JPG",
+        "credit": "Jeffrey Beall",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyramid_Peak_(Rio_Blanco_County,_Colorado).JPG"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Aspen_Highlands_Highlands_Pyramid_Peak.jpg/960px-Aspen_Highlands_Highlands_Pyramid_Peak.jpg",
+      "credit": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but …",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_Highlands_Pyramid_Peak.jpg"
+    }
   }
 ]

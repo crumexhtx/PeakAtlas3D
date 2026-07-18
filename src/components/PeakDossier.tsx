@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import type { Peak } from '../types/peak'
 import {
   formatCoordinates,
@@ -7,18 +7,33 @@ import {
 } from '../lib/geo'
 import { flagUrl } from '../lib/countries'
 import { useUnits } from '../context/UnitsContext'
+import { PeakPhotoGallery } from './PeakPhotoGallery'
 
 type PeakDossierProps = {
   peak: Peak
+}
+
+function peakPhotos(peak: Peak) {
+  if (peak.photos?.length) return peak.photos
+  if (peak.photo?.url) return [peak.photo]
+  return []
 }
 
 export function PeakDossier({ peak }: PeakDossierProps) {
   const { units } = useUnits()
   const [showNearby, setShowNearby] = useState(false)
   const flag = flagUrl(peak.country, 40)
+  const photos = useMemo(() => peakPhotos(peak), [peak])
+  const nearby = peak.nearbyPlaces?.length
+    ? peak.nearbyPlaces
+    : peak.nearestTown
+      ? [peak.nearestTown]
+      : []
 
   return (
     <aside className="peak-dossier">
+      <PeakPhotoGallery name={peak.name} photos={photos} />
+
       <div className="dossier-top">
         {flag && (
           <img src={flag} alt="" className="dossier-flag" width={36} height={24} />
@@ -26,11 +41,18 @@ export function PeakDossier({ peak }: PeakDossierProps) {
         <div>
           <p className="dossier-eyebrow">{peak.country}</p>
           <h1 className="dossier-title">{peak.name}</h1>
-          <p className="dossier-subtitle">
-            {peak.range}
-          </p>
+          <p className="dossier-subtitle">{peak.range}</p>
+          {peak.aliases && peak.aliases.length > 0 && (
+            <p className="dossier-aliases">
+              Also known as {peak.aliases.join(' · ')}
+            </p>
+          )}
         </div>
       </div>
+
+      {peak.whyNotable && (
+        <p className="peak-why-notable">{peak.whyNotable}</p>
+      )}
 
       <p className="peak-description">{peak.description}</p>
 
@@ -49,6 +71,12 @@ export function PeakDossier({ peak }: PeakDossierProps) {
             <dt>Difficulty</dt>
             <dd>{peak.difficulty}</dd>
           </div>
+          {peak.bestSeason && (
+            <div>
+              <dt>Best season</dt>
+              <dd>{peak.bestSeason}</dd>
+            </div>
+          )}
           <div>
             <dt>First ascent</dt>
             <dd>{peak.firstAscent}</dd>
@@ -59,6 +87,22 @@ export function PeakDossier({ peak }: PeakDossierProps) {
           </div>
         </dl>
       </section>
+
+      {nearby.length > 0 && (
+        <section className="info-block">
+          <h2 className="info-heading">Closest places</h2>
+          <ul className="nearby-places-list">
+            {nearby.map((place) => (
+              <li key={`${place.name}-${place.lat}`}>
+                <span className="nearby-places-name">{place.name}</span>
+                <span className="nearby-places-meta">
+                  {place.region} · {formatDistance(place.distanceMiles, units)}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {peak.trails && peak.trails.length > 0 && (
         <section className="info-block">
@@ -78,15 +122,14 @@ export function PeakDossier({ peak }: PeakDossierProps) {
           aria-expanded={showNearby}
           onClick={() => setShowNearby((v) => !v)}
         >
-          <span>Nearby context</span>
+          <span>Lodging & food (sample)</span>
           <span aria-hidden="true">{showNearby ? '−' : '+'}</span>
         </button>
 
         {showNearby && (
           <div className="nearby-panel">
             <p className="nearby-summary">
-              {peak.nearestTown.name}, {peak.nearestTown.region} ·{' '}
-              {formatDistance(peak.nearestTown.distanceMiles, units)}
+              Gate town: {peak.nearestTown.name}, {peak.nearestTown.region}
               {peak.nearestTown.route ? ` via ${peak.nearestTown.route}` : ''}
             </p>
             <h3 className="sub-heading">Sample lodging</h3>

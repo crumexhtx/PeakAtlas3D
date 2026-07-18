@@ -1,54 +1,79 @@
-import { useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { AppHeader } from '../components/AppHeader'
+import { useMemo } from 'react'
 import { BrowseBar } from '../components/BrowseBar'
-import { WorldMap } from '../components/WorldMap'
+import { CountryPanel } from '../components/CountryPanel'
+import { useAtlas } from '../context/AtlasContext'
 import { peaks } from '../data/catalog'
 import { useUnits } from '../context/UnitsContext'
+import { buildCountrySummaries } from '../lib/countries'
 import { filterPeaks, uniqueSorted } from '../lib/geo'
-import type { Peak, PeakBrowseFilters } from '../types/peak'
-
-const initialBrowse: PeakBrowseFilters = {
-  country: '',
-  range: '',
-  minElevationFt: 0,
-}
 
 export function HomePage() {
-  const navigate = useNavigate()
   const { units } = useUnits()
-  const [browse, setBrowse] = useState<PeakBrowseFilters>(initialBrowse)
+  const {
+    browse,
+    selectedCountry,
+    mapPeaks,
+    setBrowse,
+    clearCountry,
+    openPeak,
+  } = useAtlas()
 
   const countries = useMemo(() => uniqueSorted(peaks.map((p) => p.country)), [])
+
   const ranges = useMemo(() => {
-    const scoped = browse.country
-      ? peaks.filter((p) => p.country === browse.country)
+    const scoped = selectedCountry
+      ? peaks.filter((p) => p.country === selectedCountry)
       : peaks
     return uniqueSorted(scoped.map((p) => p.range))
-  }, [browse.country])
+  }, [selectedCountry])
 
-  const visiblePeaks = useMemo(() => filterPeaks(peaks, browse), [browse])
+  const allCountrySummaries = useMemo(() => buildCountrySummaries(peaks), [])
 
-  function openPeak(peak: Peak) {
-    navigate(`/peak/${peak.id}`)
-  }
+  const worldCountryCount = useMemo(
+    () => buildCountrySummaries(mapPeaks).length,
+    [mapPeaks],
+  )
+
+  const selectedSummary = useMemo(
+    () =>
+      selectedCountry
+        ? (allCountrySummaries.find((c) => c.name === selectedCountry) ?? null)
+        : null,
+    [allCountrySummaries, selectedCountry],
+  )
+
+  const countryPeakList = useMemo(() => {
+    if (!selectedCountry) return []
+    return filterPeaks(peaks, browse)
+  }, [browse, selectedCountry])
 
   return (
-    <div className="app-shell">
-      <AppHeader peaks={peaks} onSelectPeak={openPeak} />
-
-      <div className="map-stage">
-        <WorldMap peaks={visiblePeaks} onSelectPeak={openPeak} />
-        <BrowseBar
-          browse={browse}
-          countries={countries}
-          ranges={ranges}
-          units={units}
-          visibleCount={visiblePeaks.length}
-          totalCount={peaks.length}
-          onBrowseChange={setBrowse}
+    <>
+      {selectedSummary && (
+        <CountryPanel
+          country={selectedSummary}
+          peaks={countryPeakList}
+          onClose={clearCountry}
+          onOpenPeak={openPeak}
         />
-      </div>
-    </div>
+      )}
+
+      <BrowseBar
+        browse={browse}
+        countries={countries}
+        ranges={ranges}
+        units={units}
+        visibleCount={
+          selectedCountry ? countryPeakList.length : worldCountryCount
+        }
+        totalCount={
+          selectedCountry
+            ? (selectedSummary?.peakCount ?? 0)
+            : countries.length
+        }
+        countLabel={selectedCountry ? 'peaks' : 'countries'}
+        onBrowseChange={setBrowse}
+      />
+    </>
   )
 }

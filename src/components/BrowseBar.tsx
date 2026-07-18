@@ -7,6 +7,7 @@ type BrowseBarProps = {
   units: UnitSystem
   visibleCount: number
   totalCount: number
+  countLabel?: string
   onBrowseChange: (next: PeakBrowseFilters) => void
 }
 
@@ -25,10 +26,11 @@ export function BrowseBar({
   units,
   visibleCount,
   totalCount,
+  countLabel = 'peaks',
   onBrowseChange,
 }: BrowseBarProps) {
   return (
-    <div className="browse-bar" role="group" aria-label="Browse peaks">
+    <div className="browse-bar" role="group" aria-label="Browse atlas">
       <label className="control-field">
         <span className="sr-only">Country</span>
         <select
@@ -53,6 +55,7 @@ export function BrowseBar({
           className="control-select"
           value={browse.range}
           onChange={(e) => onBrowseChange({ ...browse, range: e.target.value })}
+          disabled={!browse.country}
         >
           <option value="">All ranges</option>
           {ranges.map((range) => (
@@ -89,8 +92,8 @@ export function BrowseBar({
 
       <p className="result-count">
         {visibleCount === totalCount
-          ? `${totalCount} peaks`
-          : `${visibleCount} / ${totalCount} peaks`}
+          ? `${totalCount} ${countLabel}`
+          : `${visibleCount} / ${totalCount} ${countLabel}`}
       </p>
     </div>
   )

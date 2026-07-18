@@ -8,9 +8,16 @@ type AppHeaderProps = {
   peaks: Peak[]
   onSelectPeak: (peak: Peak) => void
   showBack?: boolean
+  /** Where ← Atlas / brand should return (e.g. /?country=USA). */
+  atlasHref?: string
 }
 
-export function AppHeader({ peaks, onSelectPeak, showBack = false }: AppHeaderProps) {
+export function AppHeader({
+  peaks,
+  onSelectPeak,
+  showBack = false,
+  atlasHref = '/',
+}: AppHeaderProps) {
   const { units, setUnits } = useUnits()
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
@@ -30,11 +37,11 @@ export function AppHeader({ peaks, onSelectPeak, showBack = false }: AppHeaderPr
     <header className="app-header">
       <div className="brand-row">
         {showBack && (
-          <Link to="/" className="back-link">
+          <Link to={atlasHref} className="back-link">
             ← Atlas
           </Link>
         )}
-        <Link to="/" className="brand-block">
+        <Link to={atlasHref} className="brand-block">
           <span className="brand-mark">PeakAtlas</span>
           <span className="brand-tag">3D</span>
         </Link>

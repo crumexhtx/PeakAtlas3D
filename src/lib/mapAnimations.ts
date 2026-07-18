@@ -1,7 +1,8 @@
 import type { Map as MapboxMap } from 'mapbox-gl'
 
-export const IDLE_ROTATE_DELAY_MS = 10_000
-export const IDLE_ROTATE_SPEED_DEG = 0.04
+export const IDLE_ROTATE_DELAY_MS = 6_000
+/** Degrees of longitude advanced per animation frame on the world globe. */
+export const IDLE_ROTATE_SPEED_LNG = 0.045
 
 type CameraOptions = Parameters<MapboxMap['flyTo']>[0]
 
@@ -32,6 +33,32 @@ export function waitForMoveEnd(map: MapboxMap): Promise<void> {
   })
 }
 
+/** Wait until the map goes idle (tiles settled), with a timeout fallback. */
+export function waitForMapIdle(
+  map: MapboxMap,
+  timeoutMs = 2800,
+): Promise<void> {
+  return new Promise((resolve) => {
+    let settled = false
+
+    const finish = () => {
+      if (settled) return
+      settled = true
+      window.clearTimeout(timer)
+      map.off('idle', finish)
+      resolve()
+    }
+
+    const timer = window.setTimeout(finish, timeoutMs)
+    map.once('idle', finish)
+
+    // If tiles are already ready, settle quickly after a short paint beat.
+    if (typeof map.areTilesLoaded === 'function' && map.areTilesLoaded()) {
+      window.setTimeout(finish, 120)
+    }
+  })
+}
+
 export async function flyToAsync(map: MapboxMap, options: CameraOptions) {
   map.flyTo(options)
   await waitForMoveEnd(map)
@@ -42,17 +69,85 @@ export async function easeToAsync(map: MapboxMap, options: CameraOptions) {
   await waitForMoveEnd(map)
 }
 
-/** Slow continuous bearing spin. Call cancel() to stop. */
+export function applyPeakAtmosphere(map: MapboxMap) {
+  map.setFog({
+    range: [1.0, 10],
+    color: 'rgb(150, 172, 196)',
+    'high-color': 'rgb(48, 78, 140)',
+    'horizon-blend': 0.16,
+    'space-color': 'rgb(11, 16, 32)',
+    'star-intensity': 0.12,
+  })
+}
+
+/** Soften blown-out snow / bright satellite whites without killing contrast. */
+export function softenSatelliteRaster(map: MapboxMap) {
+  const layers = map.getStyle()?.layers ?? []
+  for (const layer of layers) {
+    if (layer.type !== 'raster') continue
+    try {
+      map.setPaintProperty(layer.id, 'raster-brightness-max', 0.78)
+      map.setPaintProperty(layer.id, 'raster-brightness-min', 0.04)
+      map.setPaintProperty(layer.id, 'raster-contrast', -0.14)
+      map.setPaintProperty(layer.id, 'raster-saturation', -0.1)
+    } catch {
+      // Layer may not support every paint prop in all styles.
+    }
+  }
+}
+
+/**
+ * Padding that keeps the summit in the open map (left of the dossier on
+ * desktop, above the sheet on mobile) and a bit lower than raw geo-center,
+ * which reads high under steep pitch.
+ */
+export function peakFramePadding(): {
+  top: number
+  bottom: number
+  left: number
+  right: number
+} {
+  const narrow =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(max-width: 800px)').matches
+  if (narrow) {
+    return { top: 56, bottom: 220, left: 28, right: 28 }
+  }
+  return { top: 110, bottom: 48, left: 36, right: 300 }
+}
+
+/** Nudge look-at toward the camera so pitched terrain sits nearer mid-frame. */
+export function peakFramingCenter(
+  lon: number,
+  lat: number,
+  bearingDeg: number,
+  offsetMeters = 520,
+): [number, number] {
+  // Camera sits opposite bearing; shift center toward camera (behind the peak).
+  const backBearing = ((bearingDeg + 180) * Math.PI) / 180
+  const metersPerDegLat = 111_320
+  const metersPerDegLon = 111_320 * Math.cos((lat * Math.PI) / 180)
+  const dLat = (offsetMeters * Math.cos(backBearing)) / metersPerDegLat
+  const dLon = (offsetMeters * Math.sin(backBearing)) / metersPerDegLon
+  return [lon + dLon, lat + dLat]
+}
+
+/**
+ * Continuous globe spin by shifting center longitude.
+ * Prefer this over setBearing on a globe — bearing changes often look wrong
+ * at low zoom and can fire rotatestart (which would cancel idle timers).
+ */
 export function startIdleSpin(
   map: MapboxMap,
-  speedDeg = IDLE_ROTATE_SPEED_DEG,
+  speedLng = IDLE_ROTATE_SPEED_LNG,
 ): { cancel: () => void } {
   let frame = 0
   let active = true
 
   const tick = () => {
     if (!active) return
-    map.setBearing(map.getBearing() + speedDeg)
+    const { lng, lat } = map.getCenter()
+    map.jumpTo({ center: [lng + speedLng, lat] })
     frame = requestAnimationFrame(tick)
   }
 
@@ -64,4 +159,40 @@ export function startIdleSpin(
       cancelAnimationFrame(frame)
     },
   }
+}
+
+/**
+ * Full 360° orbit around the current center.
+ * Uses rAF + setBearing because easeTo(bearing + 360) is a no-op after Mapbox
+ * normalizes bearing into [-180, 180].
+ */
+export function orbitAsync(
+  map: MapboxMap,
+  durationMs: number,
+  shouldContinue: () => boolean = () => true,
+): Promise<void> {
+  return new Promise((resolve) => {
+    const startBearing = map.getBearing()
+    const startedAt = performance.now()
+    let frame = 0
+
+    const tick = (now: number) => {
+      if (!shouldContinue()) {
+        cancelAnimationFrame(frame)
+        resolve()
+        return
+      }
+
+      const progress = Math.min(1, (now - startedAt) / durationMs)
+      map.setBearing(startBearing + progress * 360)
+
+      if (progress < 1) {
+        frame = requestAnimationFrame(tick)
+      } else {
+        resolve()
+      }
+    }
+
+    frame = requestAnimationFrame(tick)
+  })
 }
