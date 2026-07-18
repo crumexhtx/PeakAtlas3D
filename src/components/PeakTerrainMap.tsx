@@ -30,6 +30,12 @@ const APPROACH_ZOOM = 12.4
 const APPROACH_PITCH = 68
 const SPIN_DURATION_MS = 12_000
 
+const FINAL_VIEW = {
+  zoom: APPROACH_ZOOM,
+  pitch: APPROACH_PITCH,
+  bearing: -20,
+} as const
+
 export function PeakTerrainMap({ peak }: PeakTerrainMapProps) {
   const mapRef = useRef<MapRef>(null)
   const runIdRef = useRef(0)
@@ -37,6 +43,21 @@ export function PeakTerrainMap({ peak }: PeakTerrainMapProps) {
   const [cinematic, setCinematic] = useState(() => !prefersReducedMotion())
   const [status, setStatus] = useState('Approaching summit…')
   const [mapReady, setMapReady] = useState(false)
+
+  function finishIntro() {
+    const map = mapRef.current?.getMap()
+    if (!map) return
+
+    runIdRef.current += 1
+    map.stop()
+    map.jumpTo({
+      center: [peak.lon, peak.lat],
+      ...FINAL_VIEW,
+    })
+    setMapInteractive(map, true)
+    setCinematic(false)
+    setStatus('')
+  }
 
   useEffect(() => {
     if (!mapReady) return
@@ -54,9 +75,7 @@ export function PeakTerrainMap({ peak }: PeakTerrainMapProps) {
         setCinematic(false)
         map.jumpTo({
           center: [peak.lon, peak.lat],
-          zoom: APPROACH_ZOOM,
-          pitch: APPROACH_PITCH,
-          bearing: -20,
+          ...FINAL_VIEW,
         })
         setMapInteractive(map, true)
         return
@@ -151,9 +170,14 @@ export function PeakTerrainMap({ peak }: PeakTerrainMapProps) {
       </Map>
 
       {cinematic && (
-        <div className="cinematic-overlay" aria-live="polite">
-          <p className="cinematic-status">{status}</p>
-          <p className="cinematic-hint">Controls unlock after the orbit</p>
+        <div className="cinematic-overlay">
+          <div className="cinematic-copy" aria-live="polite">
+            <p className="cinematic-status">{status}</p>
+            <p className="cinematic-hint">Controls unlock after the orbit</p>
+          </div>
+          <button type="button" className="cinematic-skip" onClick={finishIntro}>
+            Skip
+          </button>
         </div>
       )}
     </div>
