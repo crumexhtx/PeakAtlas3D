@@ -31,6 +31,7 @@ export function formatCoordinates(lat: number, lon: number): string {
   return `${Math.abs(lat).toFixed(4)}° ${latHem}, ${Math.abs(lon).toFixed(4)}° ${lonHem}`
 }
 
+/** Search mountain peaks only (name / range / country). Other place types come later. */
 export function searchPeaks(peaks: Peak[], query: string): Peak[] {
   const q = query.trim().toLowerCase()
   if (!q) return []
@@ -38,10 +39,7 @@ export function searchPeaks(peaks: Peak[], query: string): Peak[] {
     (p) =>
       p.name.toLowerCase().includes(q) ||
       p.range.toLowerCase().includes(q) ||
-      p.country.toLowerCase().includes(q) ||
-      p.difficulty.toLowerCase().includes(q) ||
-      p.nearestTown.name.toLowerCase().includes(q) ||
-      p.nearestTown.region.toLowerCase().includes(q),
+      p.country.toLowerCase().includes(q),
   )
 }
 
