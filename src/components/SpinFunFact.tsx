@@ -38,23 +38,78 @@ const HOLD_MS = 5_400
 const CARD_W = 272
 const CARD_H = 118
 const FRONT_DOT = 0.32
+const FRONT_DOT_NARROW = 0.28
+const NARROW_OVERLAY_PX = 640
 
-function placeCard(flagX: number, flagY: number, vw: number, vh: number) {
-  let cardX = flagX - CARD_W - 36
-  let cardY = flagY - CARD_H * 0.45
-  if (cardX < 12) cardX = flagX + 40
-  if (cardY < 64) cardY = 64
-  if (cardY + CARD_H > vh - 20) cardY = vh - CARD_H - 20
-  if (cardX + CARD_W > vw - 12) cardX = Math.max(12, vw - CARD_W - 12)
+type LayoutMetrics = {
+  cardW: number
+  cardH: number
+  centerR: number
+  edge: number
+  topChrome: number
+  diskFill: number
+  diskInset: number
+  frontDot: number
+}
+
+/** Desktop metrics unchanged; phones get tighter geometry for portrait maps. */
+function layoutMetrics(vw: number): LayoutMetrics {
+  const narrow = vw <= NARROW_OVERLAY_PX
+  if (!narrow) {
+    return {
+      cardW: CARD_W,
+      cardH: CARD_H,
+      centerR: CENTER_RADIUS_PX,
+      edge: EDGE_MARGIN_PX,
+      topChrome: 48,
+      diskFill: 0.88,
+      diskInset: 0.94,
+      frontDot: FRONT_DOT,
+    }
+  }
+  return {
+    cardW: Math.min(220, Math.max(160, vw - 40)),
+    cardH: 108,
+    centerR: Math.min(100, vw * 0.32),
+    edge: 16,
+    topChrome: 36,
+    // Slightly smaller fill + inset rejects void beside the limb on phones.
+    diskFill: 0.82,
+    diskInset: 0.9,
+    frontDot: FRONT_DOT_NARROW,
+  }
+}
+
+function placeCard(
+  flagX: number,
+  flagY: number,
+  vw: number,
+  vh: number,
+  cardW: number,
+  cardH: number,
+) {
+  const gap = vw <= NARROW_OVERLAY_PX ? 22 : 36
+  const topMin = vw <= NARROW_OVERLAY_PX ? 48 : 64
+  let cardX = flagX - cardW - gap
+  let cardY = flagY - cardH * 0.45
+  if (cardX < 12) cardX = flagX + gap + 4
+  if (cardY < topMin) cardY = topMin
+  if (cardY + cardH > vh - 20) cardY = vh - cardH - 20
+  if (cardX + cardW > vw - 12) cardX = Math.max(12, vw - cardW - 12)
   return { cardX, cardY }
 }
 
 /** Pixel radius of the visible globe disk in the map container. */
-function globeDiskRadiusPx(map: MapboxMap, width: number, height: number) {
+function globeDiskRadiusPx(
+  map: MapboxMap,
+  width: number,
+  height: number,
+  fill: number,
+) {
   const minSide = Math.min(width, height)
   const zoom = map.getZoom()
   // Tuned for Mapbox globe around world zoom (~1.5): disk fills most of the short side.
-  const radius = (minSide / 2) * 0.88 * Math.pow(2, zoom - 1.5)
+  const radius = (minSide / 2) * fill * Math.pow(2, zoom - 1.5)
   return Math.min(radius, minSide * 0.5)
 }
 
@@ -67,8 +122,9 @@ function projectToOverlay(
   overlay: HTMLElement,
   lon: number,
   lat: number,
+  metrics: LayoutMetrics,
 ): Point | null {
-  if (!isOnFrontHemisphere(map, lon, lat, FRONT_DOT)) return null
+  if (!isOnFrontHemisphere(map, lon, lat, metrics.frontDot)) return null
 
   const pt = map.project([lon, lat])
   if (!Number.isFinite(pt.x) || !Number.isFinite(pt.y)) return null
@@ -90,16 +146,17 @@ function projectToOverlay(
   const vh = overlay.clientHeight
   const cx = vw / 2
   const cy = vh / 2
-  const diskR = globeDiskRadiusPx(map, vw, vh) * 0.94
+  const diskR =
+    globeDiskRadiusPx(map, vw, vh, metrics.diskFill) * metrics.diskInset
 
   // Reject points that sit in the empty space beside/above/below the globe.
   if (Math.hypot(x - cx, y - cy) > diskR) return null
 
   if (
-    x < EDGE_MARGIN_PX ||
-    y < EDGE_MARGIN_PX + 48 ||
-    x > vw - EDGE_MARGIN_PX ||
-    y > vh - EDGE_MARGIN_PX
+    x < metrics.edge ||
+    y < metrics.edge + metrics.topChrome ||
+    x > vw - metrics.edge ||
+    y > vh - metrics.edge
   ) {
     return null
   }
@@ -152,13 +209,22 @@ export function SpinFunFact({
       flagY: number,
       vw: number,
       vh: number,
+      metrics: LayoutMetrics,
     ) => {
-      const { cardX, cardY } = placeCard(flagX, flagY, vw, vh)
+      const { cardX, cardY } = placeCard(
+        flagX,
+        flagY,
+        vw,
+        vh,
+        metrics.cardW,
+        metrics.cardH,
+      )
       if (cardRef.current) {
         cardRef.current.style.transform = `translate3d(${cardX}px, ${cardY}px, 0)`
+        cardRef.current.style.width = `${metrics.cardW}px`
       }
-      const tipX = cardX < flagX ? cardX + CARD_W : cardX
-      const tipY = cardY + CARD_H * 0.55
+      const tipX = cardX < flagX ? cardX + metrics.cardW : cardX
+      const tipY = cardY + metrics.cardH * 0.55
       lineRef.current?.setAttribute('x1', String(tipX))
       lineRef.current?.setAttribute('y1', String(tipY))
       lineRef.current?.setAttribute('x2', String(flagX))
@@ -182,6 +248,7 @@ export function SpinFunFact({
       vw: number,
       vh: number,
       now: number,
+      metrics: LayoutMetrics,
     ) => {
       const fact = pickRandomFact(peak, units, lastFactRef.current ?? undefined)
       lastPeakIdRef.current = peak.id
@@ -199,13 +266,14 @@ export function SpinFunFact({
         fact,
         flag: flagUrl(country.name, 40),
       })
-      applyGeometry(point.x, point.y, vw, vh)
+      applyGeometry(point.x, point.y, vw, vh, metrics)
     }
 
     const nearestPeakInCenter = (
       overlay: HTMLElement,
       cx: number,
       cy: number,
+      metrics: LayoutMetrics,
     ) => {
       let best:
         | {
@@ -220,10 +288,10 @@ export function SpinFunFact({
         if (peak.id === lastPeakIdRef.current) continue
         const country = countryByLabel.get(peak.country)
         if (!country) continue
-        const point = projectToOverlay(map, overlay, peak.lon, peak.lat)
+        const point = projectToOverlay(map, overlay, peak.lon, peak.lat, metrics)
         if (!point) continue
         const dist = Math.hypot(point.x - cx, point.y - cy)
-        if (dist > CENTER_RADIUS_PX) continue
+        if (dist > metrics.centerR) continue
         if (!best || dist < best.dist) {
           best = { peak, country, dist, point }
         }
@@ -246,25 +314,32 @@ export function SpinFunFact({
           prev.w === vw && prev.h === vh ? prev : { w: vw, h: vh },
         )
       }
+      const metrics = layoutMetrics(vw)
       const cx = vw / 2
       const cy = vh / 2
       const active = activeRef.current
 
       if (active) {
-        const point = projectToOverlay(map, overlay, active.lon, active.lat)
+        const point = projectToOverlay(
+          map,
+          overlay,
+          active.lon,
+          active.lat,
+          metrics,
+        )
         if (!point) {
           clearCallout()
         } else {
-          applyGeometry(point.x, point.y, vw, vh)
+          applyGeometry(point.x, point.y, vw, vh, metrics)
           const dist = Math.hypot(point.x - cx, point.y - cy)
           if (now >= holdUntilRef.current) {
-            if (dist > CENTER_RADIUS_PX * 1.2) {
+            if (dist > metrics.centerR * 1.2) {
               clearCallout()
             } else {
               const peak = peaks.find((p) => p.id === active.peakId)
               const country = countryByLabel.get(active.countryName)
               if (peak && country) {
-                showForPeak(peak, country, point, vw, vh, now)
+                showForPeak(peak, country, point, vw, vh, now, metrics)
               } else {
                 clearCallout()
               }
@@ -272,9 +347,9 @@ export function SpinFunFact({
           }
         }
       } else {
-        const best = nearestPeakInCenter(overlay, cx, cy)
+        const best = nearestPeakInCenter(overlay, cx, cy, metrics)
         if (best) {
-          showForPeak(best.peak, best.country, best.point, vw, vh, now)
+          showForPeak(best.peak, best.country, best.point, vw, vh, now, metrics)
         }
       }
 
