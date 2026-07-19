@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build (sitemap + Vite + prerender meta)
+        env:
+          # Public token placeholder — build must not require a real Mapbox key.
+          VITE_MAPBOX_TOKEN: pk.ci-placeholder
+          SITE_URL: https://peakatlas3d.com
+        run: npm run build
+
+      - name: Verify sitemap and prerender output
+        run: |
+          test -f public/sitemap.xml
+          test -f public/robots.txt
+          test -f dist/sitemap.xml
+          test -f dist/robots.txt
+          test -f dist/peak/rainier/index.html
+          test -f dist/about/index.html
+          grep -q "Mt. Rainier" dist/peak/rainier/index.html
+          grep -q 'property="og:url"' dist/peak/rainier/index.html
+          grep -q "Most glaciated peak" dist/peak/rainier/index.html

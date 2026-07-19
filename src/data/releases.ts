@@ -9,6 +9,19 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.2.1',
+    date: '2026-07-19',
+    title: 'Sitemap, crawlable peak meta, and CI',
+    summary:
+      'Search engines and link previews can now discover peak URLs via sitemap.xml, and each peak page ships with server-rendered title, description, and Open Graph tags at build time.',
+    highlights: [
+      'Generated sitemap.xml and robots.txt for all peaks and content pages',
+      'Build-time HTML meta prerender for /peak/:id, About, Releases, and Contact',
+      'GitHub Actions CI runs lint and production build on every PR',
+      'Random globe framing on refresh and steadier flags during idle spin',
+    ],
+  },
+  {
     version: '0.2.0',
     date: '2026-07-18',
     title: 'Honesty pass, mobile sheets, and globe polish',

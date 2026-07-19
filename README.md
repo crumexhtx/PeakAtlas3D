@@ -54,10 +54,16 @@ Open the URL Vite prints (usually `http://localhost:5173`).
 | `npm run enrich:lodging` | Refresh OSM lodging near peaks |
 | `npm run scrub:lodging` | Drop lodging farther than 50 mi from summit |
 | `npm run validate:photos:check` | Fail if peak photos look mismatched |
+| `npm run sitemap` | Regenerate `public/sitemap.xml` + `robots.txt` |
+| `npm run prerender` | Inject route meta into `dist/` (runs after Vite in `build`) |
 
 ## Data
 
 Peak data lives in [`src/data/peaks.json`](src/data/peaks.json). Peak photos include Wikimedia Commons credit, license, and source links in the dossier. Lodging is pulled from OpenStreetMap (`npm run enrich:lodging`); food entries remain sample suggestions only. Site updates are listed on `/releases`; legal/context notes are on `/about#disclaimer`.
+
+`npm run build` regenerates the sitemap, builds the SPA, then writes per-route HTML shells under `dist/` with correct titles / Open Graph tags for crawlers. Override the origin with `SITE_URL` if needed.
+
+Ongoing soft-launch tasks live in [`.github/BACKLOG.md`](.github/BACKLOG.md).
 
 To refresh OSM lodging:
 

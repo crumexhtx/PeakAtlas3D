@@ -1,58 +1,93 @@
 #!/usr/bin/env node
 /**
- * Writes public/sitemap.xml from static routes + peak pages.
- * Run via `npm run sitemap` (also hooked from `prebuild`).
+ * Write public/sitemap.xml and public/robots.txt from peaks.json + content routes.
+ *
+ * Run: npm run sitemap (also hooked from prebuild)
+ * Env: SITE_URL=https://peakatlas3d.com (optional)
  */
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-const __dirname = dirname(fileURLToPath(import.meta.url))
-const root = join(__dirname, '..')
-const SITE = 'https://peakatlas3d.com'
-
-const peaks = JSON.parse(
-  readFileSync(join(root, 'src/data/peaks.json'), 'utf8'),
+const root = join(dirname(fileURLToPath(import.meta.url)), '..')
+const peaksPath = join(root, 'src', 'data', 'peaks.json')
+const publicDir = join(root, 'public')
+const siteUrl = (process.env.SITE_URL || 'https://peakatlas3d.com').replace(
+  /\/$/,
+  '',
 )
 
+const peaks = JSON.parse(readFileSync(peaksPath, 'utf8'))
+const peakIds = peaks
+  .map((p) => p.id)
+  .filter((id) => typeof id === 'string' && id.length > 0)
+  .sort((a, b) => a.localeCompare(b))
+
+const peaksMtime = statSync(peaksPath).mtime.toISOString().slice(0, 10)
 const today = new Date().toISOString().slice(0, 10)
 
-/** @type {{ loc: string, changefreq: string, priority: string }[]} */
-const urls = [
-  { loc: '/', changefreq: 'weekly', priority: '1.0' },
-  { loc: '/about', changefreq: 'monthly', priority: '0.7' },
-  { loc: '/releases', changefreq: 'weekly', priority: '0.6' },
-  { loc: '/contact', changefreq: 'yearly', priority: '0.5' },
+/** @type {{ path: string, changefreq: string, priority: string, lastmod: string }[]} */
+const staticRoutes = [
+  { path: '/', changefreq: 'weekly', priority: '1.0', lastmod: today },
+  { path: '/about', changefreq: 'monthly', priority: '0.6', lastmod: today },
+  { path: '/releases', changefreq: 'weekly', priority: '0.7', lastmod: today },
+  { path: '/contact', changefreq: 'yearly', priority: '0.4', lastmod: today },
 ]
 
-for (const peak of peaks) {
-  if (!peak?.id) continue
-  urls.push({
-    loc: `/peak/${encodeURIComponent(peak.id)}`,
-    changefreq: 'monthly',
-    priority: '0.8',
-  })
+function escapeXml(value) {
+  return String(value)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&apos;')
 }
 
-const body = urls
-  .map(
-    (u) => `  <url>
-    <loc>${SITE}${u.loc}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>${u.changefreq}</changefreq>
-    <priority>${u.priority}</priority>
-  </url>`,
-  )
-  .join('\n')
+function urlEntry(loc, lastmod, changefreq, priority) {
+  return `  <url>
+    <loc>${escapeXml(loc)}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`
+}
 
-const xml = `<?xml version="1.0" encoding="UTF-8"?>
+const urls = [
+  ...staticRoutes.map((route) =>
+    urlEntry(
+      `${siteUrl}${route.path === '/' ? '/' : route.path}`,
+      route.lastmod,
+      route.changefreq,
+      route.priority,
+    ),
+  ),
+  ...peakIds.map((id) =>
+    urlEntry(
+      `${siteUrl}/peak/${encodeURIComponent(id)}`,
+      peaksMtime,
+      'monthly',
+      '0.8',
+    ),
+  ),
+]
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${body}
+${urls.join('\n')}
 </urlset>
 `
 
-const outDir = join(root, 'public')
-mkdirSync(outDir, { recursive: true })
-const outPath = join(outDir, 'sitemap.xml')
-writeFileSync(outPath, xml)
-console.log(`Wrote ${outPath} (${urls.length} URLs)`)
+const robots = `# PeakAtlas3D — allow full crawl.
+User-agent: *
+Allow: /
+
+Sitemap: ${siteUrl}/sitemap.xml
+`
+
+mkdirSync(publicDir, { recursive: true })
+writeFileSync(join(publicDir, 'sitemap.xml'), `${sitemap}\n`)
+writeFileSync(join(publicDir, 'robots.txt'), `${robots}\n`)
+
+console.log(
+  `Wrote sitemap (${staticRoutes.length + peakIds.length} URLs) and robots.txt → ${siteUrl}`,
+)

@@ -1,13 +1,14 @@
 {
   "name": "peakatlas3d",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "sitemap": "node scripts/generate-sitemap.mjs",
     "prebuild": "npm run sitemap",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/prerender-meta.mjs",
+    "prerender": "node scripts/prerender-meta.mjs",
     "lint": "oxlint",
     "preview": "vite preview",
     "enrich:photos-places": "node scripts/enrich-photos-places.mjs",
@@ -17,8 +18,8 @@
     "enrich:lodging": "node scripts/enrich-lodging.mjs",
     "scrub:lodging": "node scripts/scrub-lodging.mjs",
     "fix:food-encoding": "node scripts/fix-food-encoding.mjs",
-    "validate:photos": "node scripts/validate-peak-photos.mjs",
-    "validate:photos:check": "node scripts/validate-peak-photos.mjs --check"
+    "validate:photos": "node scripts/validate-fix-photos.mjs",
+    "validate:photos:check": "node scripts/validate-fix-photos.mjs --check"
   },
   "dependencies": {
     "mapbox-gl": "^3.26.0",
