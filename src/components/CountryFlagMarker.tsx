@@ -12,7 +12,7 @@ type CountryFlagMarkerProps = {
 export function CountryFlagMarker({ country, onClick }: CountryFlagMarkerProps) {
   const { current } = useMap()
   const [visible, setVisible] = useState(true)
-  const flag = flagUrl(country.name, 80)
+  const flag = flagUrl(country.name, 40)
 
   useEffect(() => {
     const map = current?.getMap()

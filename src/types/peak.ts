@@ -9,11 +9,18 @@ export type Town = {
 
 export type Amenity = {
   name: string
+  /** @deprecated Synthetic MVP ratings; omitted for OSM-sourced lodging. */
   rating?: number
   /** Lodge, Inn, Restaurant, Café, etc. */
   category?: string
   /** Short traveler-facing detail line. */
   note?: string
+  lat?: number
+  lon?: number
+  /** Data provider label, e.g. OpenStreetMap. */
+  source?: string
+  /** Canonical source page (OSM object, etc.). */
+  sourceUrl?: string
 }
 
 /** Curated Commons (or similar) still used in the peak dossier. */
