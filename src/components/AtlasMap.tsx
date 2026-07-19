@@ -60,9 +60,9 @@ type AtlasMapProps = {
 }
 
 /** Wide enough that the full globe sits in frame with space around it. */
-const WORLD_ZOOM = 0.85
+const WORLD_ZOOM = 0.7
 /** Portrait phones: still show the whole Earth; slightly tighter than desktop. */
-const WORLD_ZOOM_NARROW = 0.95
+const WORLD_ZOOM_NARROW = 0.8
 
 /** Fresh random globe framing for each full page load / refresh. */
 function createRandomWorldView() {
