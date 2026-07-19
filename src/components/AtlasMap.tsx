@@ -454,7 +454,7 @@ export function AtlasMap({
         }}
       >
         <Source id={TERRAIN_SOURCE_ID} {...TERRAIN_SOURCE} />
-        {!cinematic && <NavigationControl position="bottom-right" visualizePitch />}
+        {!cinematic && <NavigationControl position="top-left" visualizePitch />}
 
         {mode === 'world' && (
           <CountryFlagsLayer

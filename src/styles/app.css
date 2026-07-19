@@ -1507,9 +1507,10 @@ a {
   background-color: transparent !important;
 }
 
-.mapboxgl-ctrl-bottom-right {
-  margin-right: max(0.5rem, var(--safe-right)) !important;
-  margin-bottom: max(0.5rem, var(--safe-bottom)) !important;
+/* Zoom / pitch sit top-left — clear of attribution and mobile details sheets. */
+.mapboxgl-ctrl-top-left {
+  margin-top: max(0.65rem, var(--safe-top)) !important;
+  margin-left: max(0.65rem, var(--safe-left)) !important;
 }
 
 @media (max-width: 900px) {
