@@ -59,12 +59,18 @@ type AtlasMapProps = {
   funFactsEnabled?: boolean
 }
 
-/** Wide enough that the full globe sits in frame with space around it. */
-const WORLD_ZOOM = 0.7
-/** Typical phones: still show the whole Earth; slightly tighter than desktop. */
-const WORLD_ZOOM_NARROW = 0.8
-/** iPhone SE / small phones (~375px): extra margin so the full globe clears the frame. */
-const WORLD_ZOOM_SE = 0.55
+/**
+ * World framing matched to the reference phone shot: full Earth disk
+ * visible with clear margin (not clipped, not tiny).
+ */
+const WORLD_ZOOM = 0.75
+/** Tall phones — same full-disk framing as the reference screenshot. */
+const WORLD_ZOOM_NARROW = 0.75
+/**
+ * iPhone SE (~375×667): map pane is shorter after header/browse chrome,
+ * so ease out a touch vs taller phones while keeping the same look.
+ */
+const WORLD_ZOOM_SE = 0.7
 
 /** Fresh random globe framing for each full page load / refresh. */
 function createRandomWorldView() {
