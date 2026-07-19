@@ -433,6 +433,49 @@ a {
   overflow: auto;
 }
 
+/* Mobile-only attention bounce — see .details-sheet.is-nudging under 900px */
+@keyframes details-tab-nudge {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  18% {
+    transform: translateY(-12px);
+  }
+  36% {
+    transform: translateY(0);
+  }
+  52% {
+    transform: translateY(-7px);
+  }
+  68% {
+    transform: translateY(0);
+  }
+  82% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes details-chevron-wiggle {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .details-sheet.is-collapsed.is-nudging,
+  .details-sheet.is-collapsed.is-nudging .details-sheet-chevron {
+    animation: none;
+  }
+}
+
 .country-panel-shell {
   position: absolute;
   top: calc(0.85rem + var(--safe-top, 0px));
@@ -1526,6 +1569,14 @@ a {
 
   .details-sheet-chrome {
     display: flex;
+  }
+
+  .details-sheet.is-collapsed.is-nudging {
+    animation: details-tab-nudge 0.95s ease-in-out 2;
+  }
+
+  .details-sheet.is-collapsed.is-nudging .details-sheet-chevron {
+    animation: details-chevron-wiggle 0.45s ease-in-out 4;
   }
 
   .details-sheet.is-collapsed .details-sheet-body {
