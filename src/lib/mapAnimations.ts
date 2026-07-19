@@ -111,11 +111,10 @@ export function peakFramePadding(): {
     typeof window !== 'undefined' &&
     window.matchMedia('(max-width: 800px)').matches
   if (narrow) {
-    // Keep summit in the visible map above the mobile details sheet.
-    const sheet = Math.min(window.innerHeight * 0.3, 240)
+    // Collapsed details tab is short so peak flags stay visible on the map.
     return {
       top: 52,
-      bottom: Math.round(sheet + 28),
+      bottom: 96,
       left: 24,
       right: 24,
     }
@@ -134,10 +133,9 @@ export function countryFramePadding(): {
     typeof window !== 'undefined' &&
     window.matchMedia('(max-width: 800px)').matches
   if (narrow) {
-    const sheet = Math.min(window.innerHeight * 0.28, 220)
     return {
       top: 72,
-      bottom: Math.round(sheet + 72),
+      bottom: 160,
       left: 36,
       right: 36,
     }
