@@ -60,12 +60,17 @@ type AtlasMapProps = {
 }
 
 /** Wide enough that the full globe sits in frame with space around it. */
-const WORLD_ZOOM = 0.85
-/** Portrait phones: still show the whole Earth; slightly tighter than desktop. */
-const WORLD_ZOOM_NARROW = 0.95
+const WORLD_ZOOM = 0.7
+/** Typical phones: still show the whole Earth; slightly tighter than desktop. */
+const WORLD_ZOOM_NARROW = 0.8
+/** iPhone SE / small phones (~375px): extra margin so the full globe clears the frame. */
+const WORLD_ZOOM_SE = 0.55
 
 /** Fresh random globe framing for each full page load / refresh. */
 function createRandomWorldView() {
+  const se =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(max-width: 380px)').matches
   const narrow =
     typeof window !== 'undefined' &&
     window.matchMedia('(max-width: 640px)').matches
@@ -73,7 +78,7 @@ function createRandomWorldView() {
     longitude: Math.random() * 360 - 180,
     // Avoid framing mostly ocean at the poles.
     latitude: -32 + Math.random() * 64,
-    zoom: narrow ? WORLD_ZOOM_NARROW : WORLD_ZOOM,
+    zoom: se ? WORLD_ZOOM_SE : narrow ? WORLD_ZOOM_NARROW : WORLD_ZOOM,
     pitch: 0,
     bearing: 0,
   }
