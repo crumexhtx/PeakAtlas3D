@@ -19,11 +19,28 @@ function peakPhotos(peak: Peak) {
   return []
 }
 
+function isOsmAmenity(item: Amenity) {
+  return item.source === 'OpenStreetMap' && Boolean(item.sourceUrl)
+}
+
 function AmenityRow({ item }: { item: Amenity }) {
+  const sourced = isOsmAmenity(item)
+
   return (
     <li className="amenity-row">
       <div className="amenity-row-top">
-        <span className="amenity-name">{item.name}</span>
+        {sourced ? (
+          <a
+            className="amenity-name amenity-name-link"
+            href={item.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {item.name}
+          </a>
+        ) : (
+          <span className="amenity-name">{item.name}</span>
+        )}
       </div>
       {(item.category || item.note) && (
         <p className="amenity-meta">
@@ -46,6 +63,12 @@ export function PeakDossier({ peak }: PeakDossierProps) {
     : peak.nearestTown
       ? [peak.nearestTown]
       : []
+
+  const lodging = peak.hotels ?? []
+  const food = peak.food ?? []
+  const lodgingFromOsm =
+    lodging.length > 0 && lodging.every((h) => isOsmAmenity(h))
+  const hasStaySection = lodging.length > 0 || food.length > 0
 
   return (
     <aside className="peak-dossier">
@@ -133,46 +156,74 @@ export function PeakDossier({ peak }: PeakDossierProps) {
         </section>
       )}
 
-      <section className="info-block nearby-block">
-        <button
-          type="button"
-          className="nearby-toggle"
-          aria-expanded={showNearby}
-          onClick={() => setShowNearby((v) => !v)}
-        >
-          <span>Sample lodging & food</span>
-          <span aria-hidden="true">{showNearby ? '−' : '+'}</span>
-        </button>
+      {hasStaySection && (
+        <section className="info-block nearby-block">
+          <button
+            type="button"
+            className="nearby-toggle"
+            aria-expanded={showNearby}
+            onClick={() => setShowNearby((v) => !v)}
+          >
+            <span>Lodging & food</span>
+            <span aria-hidden="true">{showNearby ? '−' : '+'}</span>
+          </button>
 
-        {showNearby && (
-          <div className="nearby-panel">
-            <p className="nearby-summary">
-              Most trips stage through {peak.nearestTown.name},{' '}
-              {peak.nearestTown.region}
-              {peak.nearestTown.route ? ` via ${peak.nearestTown.route}` : ''}
-              {' · '}
-              {formatDistance(peak.nearestTown.distanceMiles, units)} from the summit
-              area.
-            </p>
-            <p className="amenity-disclaimer">
-              Sample suggestions for trip planning — not verified listings, reviews, or
-              ratings.
-            </p>
-            <h3 className="sub-heading">Sample lodging</h3>
-            <ul className="amenity-list">
-              {peak.hotels.map((h) => (
-                <AmenityRow key={h.name} item={h} />
-              ))}
-            </ul>
-            <h3 className="sub-heading">Sample food</h3>
-            <ul className="amenity-list">
-              {peak.food.map((f) => (
-                <AmenityRow key={f.name} item={f} />
-              ))}
-            </ul>
-          </div>
-        )}
-      </section>
+          {showNearby && (
+            <div className="nearby-panel">
+              <p className="nearby-summary">
+                Most trips stage through {peak.nearestTown.name},{' '}
+                {peak.nearestTown.region}
+                {peak.nearestTown.route ? ` via ${peak.nearestTown.route}` : ''}
+                {' · '}
+                {formatDistance(peak.nearestTown.distanceMiles, units)} from the summit
+                area.
+              </p>
+
+              {lodging.length > 0 && (
+                <>
+                  <h3 className="sub-heading">Lodging</h3>
+                  {lodgingFromOsm ? (
+                    <p className="amenity-disclaimer">
+                      Nearby lodging from{' '}
+                      <a
+                        href="https://www.openstreetmap.org/copyright"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        OpenStreetMap
+                      </a>
+                      . Coverage varies; always confirm availability before you travel.
+                    </p>
+                  ) : (
+                    <p className="amenity-disclaimer">
+                      Sample lodging suggestions — not verified listings or ratings.
+                    </p>
+                  )}
+                  <ul className="amenity-list">
+                    {lodging.map((h) => (
+                      <AmenityRow key={`${h.name}-${h.sourceUrl ?? ''}`} item={h} />
+                    ))}
+                  </ul>
+                </>
+              )}
+
+              {food.length > 0 && (
+                <>
+                  <h3 className="sub-heading">Sample food</h3>
+                  <p className="amenity-disclaimer">
+                    Sample food suggestions — not verified listings or ratings.
+                  </p>
+                  <ul className="amenity-list">
+                    {food.map((f) => (
+                      <AmenityRow key={f.name} item={f} />
+                    ))}
+                  </ul>
+                </>
+              )}
+            </div>
+          )}
+        </section>
+      )}
     </aside>
   )
 }

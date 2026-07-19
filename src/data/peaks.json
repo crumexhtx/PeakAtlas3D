@@ -21,22 +21,31 @@
     },
     "hotels": [
       {
-        "name": "Whittaker's Bunkhouse",
-        "rating": 4.2,
-        "category": "Hut / hostel",
-        "note": "Trusted base near Ashford for summit attempts."
-      },
-      {
         "name": "Paradise Inn",
-        "rating": 4.3,
         "category": "Hotel",
-        "note": "Convenient stay for Mt. Rainier approaches."
+        "note": "4.7 mi from summit",
+        "lat": 46.78688,
+        "lon": -121.73392,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/122743040"
       },
       {
-        "name": "Nisqually Lodge",
-        "rating": 4.4,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Ashford."
+        "name": "National Park Inn",
+        "category": "Hotel",
+        "note": "7.5 mi from summit",
+        "lat": 46.74929,
+        "lon": -121.81346,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/187894675"
+      },
+      {
+        "name": "The Cornerstone Cabin",
+        "category": "Chalet",
+        "note": "10.6 mi from summit",
+        "lat": 46.75031,
+        "lon": -121.92891,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4279368090"
       }
     ],
     "food": [
@@ -120,22 +129,31 @@
     },
     "hotels": [
       {
-        "name": "Mount Shasta Resort",
-        "rating": 4.3,
-        "category": "Lodge",
-        "note": "Trusted base near Mount Shasta for summit attempts."
+        "name": "Mt. Shasta Ski Park Beyond the Boundaries Backcountry Cabin",
+        "category": "Alpine hut",
+        "note": "4.4 mi from summit",
+        "lat": 41.34718,
+        "lon": -122.17638,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/911068164"
       },
       {
-        "name": "Best Western Tree House",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Convenient stay for Mt. Shasta approaches."
+        "name": "Basecamp Lodge",
+        "category": "Alpine hut",
+        "note": "8.2 mi from summit",
+        "lat": 41.32737,
+        "lon": -122.30856,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/13140232601"
       },
       {
-        "name": "Strawberry Valley Inn",
-        "rating": 4.5,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Mount Shasta."
+        "name": "Cold Creek Inn",
+        "category": "Motel",
+        "note": "9.0 mi from summit",
+        "lat": 41.31741,
+        "lon": -122.31722,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/759292482"
       }
     ],
     "food": [
@@ -233,22 +251,31 @@
     },
     "hotels": [
       {
-        "name": "Timberline Lodge",
-        "rating": 4.4,
-        "category": "Lodge",
-        "note": "Trusted base near Government Camp for summit attempts."
+        "name": "Silcox Hut",
+        "category": "Alpine hut",
+        "note": "2.1 mi from summit",
+        "lat": 45.3446,
+        "lon": -121.70949,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/548667995"
       },
       {
-        "name": "Mt. Hood Inn",
-        "rating": 4.5,
-        "category": "Hotel",
-        "note": "Convenient stay for Mt. Hood approaches."
+        "name": "Cloud Cap Inn",
+        "category": "Alpine hut",
+        "note": "2.9 mi from summit",
+        "lat": 45.40403,
+        "lon": -121.65449,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/293136649"
       },
       {
-        "name": "Best Western Mt. Hood",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Government Camp."
+        "name": "Tilly Jane Guard Station",
+        "category": "Chalet",
+        "note": "2.9 mi from summit",
+        "lat": 45.39922,
+        "lon": -121.64815,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/722330442"
       }
     ],
     "food": [
@@ -332,22 +359,31 @@
     },
     "hotels": [
       {
-        "name": "Mt. Baker Lodging",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Trusted base near Glacier for summit attempts."
+        "name": "Park Butte Lookout",
+        "category": "Wilderness hut",
+        "note": "4.6 mi from summit",
+        "lat": 48.71659,
+        "lon": -121.85647,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/183374038"
       },
       {
-        "name": "Snowline Inn",
-        "rating": 4.6,
-        "category": "Hotel",
-        "note": "Convenient stay for Mt. Baker approaches."
+        "name": "Mount Baker Lodge",
+        "category": "Hostel",
+        "note": "8.6 mi from summit",
+        "lat": 48.86533,
+        "lon": -121.68029,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/309280669"
       },
       {
-        "name": "Kulshan Cabin",
-        "rating": 4.7,
-        "category": "Hut / hostel",
-        "note": "Popular with climbers staging out of Glacier."
+        "name": "Blue T Lodge",
+        "category": "Motel",
+        "note": "9.3 mi from summit",
+        "lat": 48.89309,
+        "lon": -121.91877,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/433213319"
       }
     ],
     "food": [
@@ -445,22 +481,31 @@
     },
     "hotels": [
       {
+        "name": "Kelly's Trout Creek Inn",
+        "category": "Guest house",
+        "note": "14.2 mi from summit",
+        "lat": 45.99924,
+        "lon": -121.52867,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/489354732"
+      },
+      {
         "name": "Trout Lake Valley Inn",
-        "rating": 4.6,
         "category": "Hotel",
-        "note": "Trusted base near Trout Lake for summit attempts."
+        "note": "14.9 mi from summit",
+        "lat": 45.98799,
+        "lon": -121.51533,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/1209885058"
       },
       {
-        "name": "Kilckitat Lodge",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Convenient stay for Mt. Adams approaches."
-      },
-      {
-        "name": "Farmhouse Bed & Breakfast",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Trout Lake."
+        "name": "Trout Lake Cozy Cabins",
+        "category": "Hotel",
+        "note": "15.0 mi from summit",
+        "lat": 45.98641,
+        "lon": -121.51489,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/12058884001"
       }
     ],
     "food": [
@@ -558,22 +603,31 @@
     },
     "hotels": [
       {
-        "name": "Talkeetna Alaskan Lodge",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Trusted base near Talkeetna for summit attempts."
+        "name": "Gate Creek Cabins",
+        "category": "Guest house",
+        "note": "53.0 mi from summit",
+        "lat": 62.33243,
+        "lon": -150.53852,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/296129343"
       },
       {
-        "name": "Denali Overlook Inn",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Convenient stay for Denali approaches."
+        "name": "Talkeetna Roadhouse Lodge",
+        "category": "Guest house",
+        "note": "58.8 mi from summit",
+        "lat": 62.32304,
+        "lon": -150.11505,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3007011279"
       },
       {
-        "name": "Swiss Alaska Inn",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Talkeetna."
+        "name": "Talkeetna Motel",
+        "category": "Motel",
+        "note": "58.8 mi from summit",
+        "lat": 62.32214,
+        "lon": -150.11793,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4177942929"
       }
     ],
     "food": [
@@ -657,22 +711,31 @@
     },
     "hotels": [
       {
-        "name": "Delaware Hotel",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Trusted base near Leadville for summit attempts."
+        "name": "Skinner Hut",
+        "category": "Wilderness hut",
+        "note": "10.3 mi from summit",
+        "lat": 39.26605,
+        "lon": -106.46337,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/306451571"
       },
       {
-        "name": "Leadville Hostel",
-        "rating": 4.2,
-        "category": "Hut / hostel",
-        "note": "Convenient stay for Mt. Elbert approaches."
+        "name": "Betty Bear Hut",
+        "category": "Wilderness hut",
+        "note": "10.4 mi from summit",
+        "lat": 39.25611,
+        "lon": -106.52351,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/858681216"
       },
       {
-        "name": "Mountain Monarch",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Leadville."
+        "name": "Super 8 Leadville CO",
+        "category": "Motel",
+        "note": "11.2 mi from summit",
+        "lat": 39.23977,
+        "lon": -106.30704,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/480458664"
       }
     ],
     "food": [
@@ -770,22 +833,31 @@
     },
     "hotels": [
       {
-        "name": "Whitney Portal Hostel",
-        "rating": 4.2,
-        "category": "Hut / hostel",
-        "note": "Trusted base near Lone Pine for summit attempts."
+        "name": "Mount Whitney Motel",
+        "category": "Motel",
+        "note": "12.8 mi from summit",
+        "lat": 36.60729,
+        "lon": -118.06453,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/1012889239"
       },
       {
-        "name": "Dow Villa Motel",
-        "rating": 4.3,
-        "category": "Hotel",
-        "note": "Convenient stay for Mt. Whitney approaches."
+        "name": "The Portal Motel",
+        "category": "Motel",
+        "note": "12.9 mi from summit",
+        "lat": 36.60286,
+        "lon": -118.06232,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/1012888385"
       },
       {
-        "name": "Lone Pine Budget Inn",
-        "rating": 4.4,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Lone Pine."
+        "name": "Whitney Portal Hotel, Hostel and Store",
+        "category": "Motel",
+        "note": "12.9 mi from summit",
+        "lat": 36.60452,
+        "lon": -118.06257,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/925037537"
       }
     ],
     "food": [
@@ -883,22 +955,31 @@
     },
     "hotels": [
       {
-        "name": "The Stanley Hotel",
-        "rating": 4.3,
+        "name": "Cheley Colorado Camps",
+        "category": "Hostel",
+        "note": "6.8 mi from summit",
+        "lat": 40.31843,
+        "lon": -105.51648,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3476351744"
+      },
+      {
+        "name": "Taharaa Mountain Lodge",
         "category": "Hotel",
-        "note": "Trusted base near Estes Park for summit attempts."
+        "note": "7.0 mi from summit",
+        "lat": 40.33198,
+        "lon": -105.52889,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/313965079"
       },
       {
-        "name": "YMCA of the Rockies",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Convenient stay for Longs Peak approaches."
-      },
-      {
-        "name": "River Stone Resort",
-        "rating": 4.5,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Estes Park."
+        "name": "Rams Horn - Pacini’s",
+        "category": "Chalet",
+        "note": "8.2 mi from summit",
+        "lat": 40.36297,
+        "lon": -105.5524,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/11016289305"
       }
     ],
     "food": [
@@ -996,22 +1077,31 @@
     },
     "hotels": [
       {
-        "name": "Cliff House",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Trusted base near Manitou Springs for summit attempts."
+        "name": "Chipita Lodge",
+        "category": "Guest house",
+        "note": "6.1 mi from summit",
+        "lat": 38.91818,
+        "lon": -104.989,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/77930185"
       },
       {
-        "name": "Eagle Motel",
-        "rating": 4.5,
+        "name": "The fountain creek inn",
         "category": "Hotel",
-        "note": "Convenient stay for Pikes Peak approaches."
+        "note": "6.6 mi from summit",
+        "lat": 38.86267,
+        "lon": -104.92193,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/10773320205"
       },
       {
-        "name": "Avenue Hotel",
-        "rating": 4.6,
+        "name": "The Cliff House",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Manitou Springs."
+        "note": "6.8 mi from summit",
+        "lat": 38.85964,
+        "lon": -104.91738,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/37312612"
       }
     ],
     "food": [
@@ -1109,22 +1199,31 @@
     },
     "hotels": [
       {
-        "name": "Sundance Motel",
-        "rating": 4.5,
-        "category": "Hotel",
-        "note": "Trusted base near Pinedale for summit attempts."
-      },
-      {
-        "name": "River Ranch",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Convenient stay for Gannett Peak approaches."
-      },
-      {
         "name": "Lakeside Lodge",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Pinedale."
+        "category": "Motel",
+        "note": "21.5 mi from summit",
+        "lat": 42.89927,
+        "lon": -109.82697,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/386555689"
+      },
+      {
+        "name": "Teton Court Motel",
+        "category": "Motel",
+        "note": "24.2 mi from summit",
+        "lat": 42.86783,
+        "lon": -109.85937,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/396627613"
+      },
+      {
+        "name": "Gannett Peak Lodge",
+        "category": "Motel",
+        "note": "24.2 mi from summit",
+        "lat": 42.8673,
+        "lon": -109.85881,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4005021025"
       }
     ],
     "food": [
@@ -1216,22 +1315,31 @@
     },
     "hotels": [
       {
-        "name": "Yodeler Motel",
-        "rating": 4.6,
+        "name": "Blue Sky Cabins",
         "category": "Hotel",
-        "note": "Trusted base near Red Lodge for summit attempts."
+        "note": "18.2 mi from summit",
+        "lat": 45.27931,
+        "lon": -109.47192,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/1086331090"
       },
       {
-        "name": "Pollard Hotel",
-        "rating": 4.7,
-        "category": "Hotel",
-        "note": "Convenient stay for Granite Peak approaches."
+        "name": "Hancock Hut",
+        "category": "Alpine hut",
+        "note": "22.0 mi from summit",
+        "lat": 45.18001,
+        "lon": -109.35644,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/641442903"
       },
       {
-        "name": "Beartooth Hideaway",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Red Lodge."
+        "name": "Midway Chalet",
+        "category": "Alpine hut",
+        "note": "22.3 mi from summit",
+        "lat": 45.18742,
+        "lon": -109.3511,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/relation/10440620"
       }
     ],
     "food": [
@@ -1329,22 +1437,31 @@
     },
     "hotels": [
       {
-        "name": "Mountain View Motel",
-        "rating": 4.7,
-        "category": "Hotel",
-        "note": "Trusted base near Mountain View for summit attempts."
+        "name": "Country Cabins Inn",
+        "category": "Motel",
+        "note": "34.6 mi from summit",
+        "lat": 41.2765,
+        "lon": -110.3357,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/relation/12825018"
       },
       {
-        "name": "Uinta Inn",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Convenient stay for Kings Peak approaches."
+        "name": "Wagon Wheel Motel",
+        "category": "Motel",
+        "note": "37.5 mi from summit",
+        "lat": 41.31888,
+        "lon": -110.38802,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/560399343"
       },
       {
-        "name": "Flaming Gorge Lodge",
-        "rating": 4.2,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Mountain View."
+        "name": "Gateway Inn",
+        "category": "Hotel",
+        "note": "38.5 mi from summit",
+        "lat": 41.33072,
+        "lon": -110.29213,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/935275758"
       }
     ],
     "food": [
@@ -1442,22 +1559,31 @@
     },
     "hotels": [
       {
-        "name": "Little America",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Trusted base near Flagstaff for summit attempts."
+        "name": "Ski Lift Lodge & Cabins",
+        "category": "Hotel",
+        "note": "5.9 mi from summit",
+        "lat": 35.26815,
+        "lon": -111.71846,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/846422021"
       },
       {
-        "name": "Drury Inn",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Convenient stay for Humphreys Peak approaches."
+        "name": "Mountain View Inn",
+        "category": "Motel",
+        "note": "10.2 mi from summit",
+        "lat": 35.21155,
+        "lon": -111.60386,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/5400806893"
       },
       {
-        "name": "Weatherford Hotel",
-        "rating": 4.3,
+        "name": "Best Western Pony Soldier Inn & Suites",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Flagstaff."
+        "note": "10.2 mi from summit",
+        "lat": 35.21138,
+        "lon": -111.60423,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/846296798"
       }
     ],
     "food": [
@@ -1539,26 +1665,7 @@
       "lat": 31.89,
       "lon": -104.83
     },
-    "hotels": [
-      {
-        "name": "Pine Springs Visitor Area",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Trusted base near Pine Springs for summit attempts."
-      },
-      {
-        "name": "Carlsbad Hotel",
-        "rating": 4.3,
-        "category": "Hotel",
-        "note": "Convenient stay for Guadalupe Peak approaches."
-      },
-      {
-        "name": "Best Western Stevens Inn",
-        "rating": 4.4,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Pine Springs."
-      }
-    ],
+    "hotels": [],
     "food": [
       {
         "name": "Lucy’s Mexicali Restaurant",
@@ -1654,22 +1761,31 @@
     },
     "hotels": [
       {
-        "name": "Best Western Valemount",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Trusted base near Valemount for summit attempts."
-      },
-      {
         "name": "Mount Robson Lodge",
-        "rating": 4.4,
-        "category": "Lodge",
-        "note": "Convenient stay for Mt. Robson approaches."
+        "category": "Guest house",
+        "note": "10.3 mi from summit",
+        "lat": 52.99216,
+        "lon": -119.30806,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3761690912"
       },
       {
-        "name": "Alpine Inn",
-        "rating": 4.5,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Valemount."
+        "name": "Swift Creek Cabins",
+        "category": "Wilderness hut",
+        "note": "14.4 mi from summit",
+        "lat": 52.90837,
+        "lon": -119.07217,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/965446058"
+      },
+      {
+        "name": "Bearberry Meadows",
+        "category": "Guest house",
+        "note": "15.1 mi from summit",
+        "lat": 52.96678,
+        "lon": -119.43209,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/442932344"
       }
     ],
     "food": [
@@ -1767,22 +1883,31 @@
     },
     "hotels": [
       {
-        "name": "The Village Bakery Inn",
-        "rating": 4.4,
-        "category": "Hotel",
-        "note": "Trusted base near Haines Junction for summit attempts."
+        "name": "Lodge Mont Logan",
+        "category": "Alpine hut",
+        "note": "93.9 mi from summit",
+        "lat": 60.79507,
+        "lon": -137.66961,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/8202908817"
       },
       {
-        "name": "Kluane Park Inn",
-        "rating": 4.5,
-        "category": "Hotel",
-        "note": "Convenient stay for Mt. Logan approaches."
+        "name": "Cozy Corner Motel & Restaurant",
+        "category": "Motel",
+        "note": "98.7 mi from summit",
+        "lat": 60.75168,
+        "lon": -137.51363,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2460843900"
       },
       {
-        "name": "Alsek Lodge",
-        "rating": 4.6,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Haines Junction."
+        "name": "Glacier View Inn",
+        "category": "Motel",
+        "note": "98.7 mi from summit",
+        "lat": 60.75734,
+        "lon": -137.51473,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/9247109521"
       }
     ],
     "food": [
@@ -1866,22 +1991,13 @@
     },
     "hotels": [
       {
-        "name": "Chilcotin Lodge",
-        "rating": 4.5,
-        "category": "Lodge",
-        "note": "Trusted base near Tatla Lake for summit attempts."
-      },
-      {
-        "name": "Nimpo Lake Resort",
-        "rating": 4.6,
-        "category": "Lodge",
-        "note": "Convenient stay for Mt. Waddington approaches."
-      },
-      {
-        "name": "Tweedsmuir Lodge",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Tatla Lake."
+        "name": "Tatla Lake Manor / Motel",
+        "category": "Motel",
+        "note": "46.4 mi from summit",
+        "lat": 51.90488,
+        "lon": -124.60055,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/6658743487"
       }
     ],
     "food": [
@@ -1965,22 +2081,31 @@
     },
     "hotels": [
       {
-        "name": "Fairmont Jasper Park Lodge",
-        "rating": 4.6,
-        "category": "Lodge",
-        "note": "Trusted base near Jasper for summit attempts."
+        "name": "HI Mount Edith Cavell",
+        "category": "Hostel",
+        "note": "46.4 mi from summit",
+        "lat": 52.70367,
+        "lon": -118.06009,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/243722106"
       },
       {
-        "name": "Athabasca Hotel",
-        "rating": 4.7,
-        "category": "Hotel",
-        "note": "Convenient stay for Mt. Columbia approaches."
+        "name": "Becker's Chalets",
+        "category": "Chalet",
+        "note": "53.8 mi from summit",
+        "lat": 52.82947,
+        "lon": -118.05923,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/307218805"
       },
       {
-        "name": "Pyramid Lake Resort",
-        "rating": 4.8,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Jasper."
+        "name": "Alpine Village Jasper",
+        "category": "Chalet",
+        "note": "56.0 mi from summit",
+        "lat": 52.85993,
+        "lon": -118.07707,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/6633374785"
       }
     ],
     "food": [
@@ -2071,22 +2196,31 @@
     },
     "hotels": [
       {
-        "name": "Assiniboine Lodge",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Trusted base near Canmore for summit attempts."
-      },
-      {
-        "name": "Canmore Rocky Mountain Inn",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Convenient stay for Mt. Assiniboine approaches."
+        "name": "Halfway Lodge",
+        "category": "Alpine hut",
+        "note": "8.9 mi from summit",
+        "lat": 50.99117,
+        "lon": -115.58321,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3938909481"
       },
       {
         "name": "Paintbox Lodge",
-        "rating": 4.2,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Canmore."
+        "category": "Hotel",
+        "note": "19.9 mi from summit",
+        "lat": 51.09018,
+        "lon": -115.35773,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3358736031"
+      },
+      {
+        "name": "Mercer Canmore",
+        "category": "Chalet",
+        "note": "20.0 mi from summit",
+        "lat": 51.0854,
+        "lon": -115.34302,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/8804832416"
       }
     ],
     "food": [
@@ -2184,22 +2318,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Gerardo",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Trusted base near Tlachichuca for summit attempts."
+        "name": "Refugio Fausto González Gomar",
+        "category": "Alpine hut",
+        "note": "1.0 mi from summit",
+        "lat": 19.01665,
+        "lon": -97.2747,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/632649069"
       },
       {
         "name": "Refugio Piedra Grande",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Convenient stay for Pico de Orizaba approaches."
+        "category": "Alpine hut",
+        "note": "1.9 mi from summit",
+        "lat": 19.05801,
+        "lon": -97.26999,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2521692096"
       },
       {
-        "name": "Hotel Hacienda",
-        "rating": 4.3,
+        "name": "Villas pico Orizaba",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Tlachichuca."
+        "note": "4.0 mi from summit",
+        "lat": 19.00136,
+        "lon": -97.21734,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/9643749279"
       }
     ],
     "food": [
@@ -2283,22 +2426,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel San Carlos",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Trusted base near Amecameca for summit attempts."
+        "name": "Aldea Pachamama",
+        "category": "Chalet",
+        "note": "5.2 mi from summit",
+        "lat": 19.09564,
+        "lon": -98.60921,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/12999477611"
       },
       {
-        "name": "Posada Quinta",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Convenient stay for Popocatépetl approaches."
+        "name": "Cabaña",
+        "category": "Chalet",
+        "note": "5.6 mi from summit",
+        "lat": 19.102,
+        "lon": -98.61282,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/8381423996"
       },
       {
-        "name": "Hostal Amecameca",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Amecameca."
+        "name": "Refugio Apatlaco",
+        "category": "Alpine hut",
+        "note": "5.6 mi from summit",
+        "lat": 19.10339,
+        "lon": -98.62226,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/589337107"
       }
     ],
     "food": [
@@ -2396,22 +2548,31 @@
     },
     "hotels": [
       {
-        "name": "Park Hyatt Mendoza",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Trusted base near Mendoza for summit attempts."
+        "name": "Shanti Niketan",
+        "category": "Guest house",
+        "note": "68.2 mi from summit",
+        "lat": -33.0369,
+        "lon": -68.92758,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1098423009"
       },
       {
-        "name": "Hotel Aconcagua",
-        "rating": 4.4,
+        "name": "Hotel Mallorca",
         "category": "Hotel",
-        "note": "Convenient stay for Aconcagua approaches."
+        "note": "68.8 mi from summit",
+        "lat": -32.88775,
+        "lon": -68.86076,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1805069133"
       },
       {
-        "name": "Hostel Independencia",
-        "rating": 4.5,
-        "category": "Hut / hostel",
-        "note": "Popular with climbers staging out of Mendoza."
+        "name": "Postales Boutique Wine Hotels - Chacras de Coria",
+        "category": "Hotel",
+        "note": "69.3 mi from summit",
+        "lat": -32.99216,
+        "lon": -68.88743,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1376167045"
       }
     ],
     "food": [
@@ -2509,22 +2670,31 @@
     },
     "hotels": [
       {
-        "name": "Andino Club Hotel",
-        "rating": 4.4,
+        "name": "Centro Andinismo Renato Casarotto",
         "category": "Hotel",
-        "note": "Trusted base near Huaraz for summit attempts."
+        "note": "13.8 mi from summit",
+        "lat": -9.32115,
+        "lon": -77.60571,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/778164092"
       },
       {
-        "name": "Hotel El Patio",
-        "rating": 4.5,
-        "category": "Hotel",
-        "note": "Convenient stay for Huascarán approaches."
+        "name": "Refugio Llaca",
+        "category": "Alpine hut",
+        "note": "24.3 mi from summit",
+        "lat": -9.43718,
+        "lon": -77.44791,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2980584558"
       },
       {
-        "name": "La Casa de Zarela",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Huaraz."
+        "name": "Albergue La Luna",
+        "category": "Guest house",
+        "note": "26.8 mi from summit",
+        "lat": -9.50258,
+        "lon": -77.53288,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3057644181"
       }
     ],
     "food": [
@@ -2608,22 +2778,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Europa",
-        "rating": 4.5,
+        "name": "The Ritz-Carlton",
         "category": "Hotel",
-        "note": "Trusted base near La Paz for summit attempts."
+        "note": "23.8 mi from summit",
+        "lat": -16.50931,
+        "lon": -68.12484,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1446612972"
       },
       {
-        "name": "Atix Hotel",
-        "rating": 4.6,
+        "name": "John Wesley",
         "category": "Hotel",
-        "note": "Convenient stay for Illimani approaches."
+        "note": "24.5 mi from summit",
+        "lat": -16.50235,
+        "lon": -68.13264,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2038511777"
       },
       {
-        "name": "Hostal Naira",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of La Paz."
+        "name": "Onkel Inn",
+        "category": "Guest house",
+        "note": "24.6 mi from summit",
+        "lat": -16.50153,
+        "lon": -68.13472,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1893382471"
       }
     ],
     "food": [
@@ -2721,22 +2900,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Zeus",
-        "rating": 4.6,
-        "category": "Hotel",
-        "note": "Trusted base near Riobamba for summit attempts."
-      },
-      {
         "name": "Hosteria La Andaluza",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Convenient stay for Chimborazo approaches."
+        "category": "Hotel",
+        "note": "7.6 mi from summit",
+        "lat": -1.53829,
+        "lon": -78.73255,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/931485534"
       },
       {
-        "name": "Mansión Santa Isabella",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Riobamba."
+        "name": "Palermotel",
+        "category": "Motel",
+        "note": "14.3 mi from summit",
+        "lat": -1.62534,
+        "lon": -78.68143,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/966131251"
+      },
+      {
+        "name": "Hotel Marquez del Rio",
+        "category": "Hotel",
+        "note": "15.5 mi from summit",
+        "lat": -1.64265,
+        "lon": -78.67592,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2896363521"
       }
     ],
     "food": [
@@ -2834,22 +3022,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Cotopaxi",
-        "rating": 4.7,
+        "name": "Cabañas Los Volcanes",
+        "category": "Hostel",
+        "note": "12.9 mi from summit",
+        "lat": -0.75779,
+        "lon": -78.60937,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3090814370"
+      },
+      {
+        "name": "Hacienda La Cienega",
         "category": "Hotel",
-        "note": "Trusted base near Latacunga for summit attempts."
+        "note": "14.0 mi from summit",
+        "lat": -0.77193,
+        "lon": -78.6195,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/603997591"
       },
       {
-        "name": "Hosteria La Ciénega",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Convenient stay for Cotopaxi approaches."
-      },
-      {
-        "name": "Secret Garden Cotopaxi",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Latacunga."
+        "name": "Hacienda Hato Verde",
+        "category": "Hotel",
+        "note": "14.0 mi from summit",
+        "lat": -0.79192,
+        "lon": -78.60883,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/531987310"
       }
     ],
     "food": [
@@ -2947,22 +3144,31 @@
     },
     "hotels": [
       {
-        "name": "Hostería El Pilar",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Trusted base near El Chaltén for summit attempts."
+        "name": "El Pilar",
+        "category": "Hotel",
+        "note": "5.5 mi from summit",
+        "lat": -49.23594,
+        "lon": -72.9329,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/336081308"
       },
       {
-        "name": "Kau Lokken",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Convenient stay for Cerro Fitz Roy approaches."
+        "name": "Friz Roy Inn",
+        "category": "Hotel",
+        "note": "7.9 mi from summit",
+        "lat": -49.32635,
+        "lon": -72.88844,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/644666399"
       },
       {
-        "name": "Patagonia Hostería",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of El Chaltén."
+        "name": "Kaulem",
+        "category": "Hostel",
+        "note": "8.0 mi from summit",
+        "lat": -49.33048,
+        "lon": -72.89172,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/661881471"
       }
     ],
     "food": [
@@ -3046,22 +3252,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Las Torres",
-        "rating": 4.2,
+        "name": "Altiplanico",
         "category": "Hotel",
-        "note": "Trusted base near Puerto Natales for summit attempts."
+        "note": "56.2 mi from summit",
+        "lat": -51.70362,
+        "lon": -72.51117,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2584354194"
       },
       {
-        "name": "Explora Patagonia",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Convenient stay for Torres del Paine approaches."
+        "name": "Weskar Lodge",
+        "category": "Hotel",
+        "note": "56.9 mi from summit",
+        "lat": -51.71336,
+        "lon": -72.50554,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/639886709"
       },
       {
-        "name": "Hostal El Bote",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Puerto Natales."
+        "name": "Juan Ladrillero",
+        "category": "Hotel",
+        "note": "57.6 mi from summit",
+        "lat": -51.72505,
+        "lon": -72.51149,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1367982339"
       }
     ],
     "food": [
@@ -3159,22 +3374,31 @@
     },
     "hotels": [
       {
-        "name": "Tomarapi Lodge",
-        "rating": 4.3,
-        "category": "Lodge",
-        "note": "Trusted base near Sajama for summit attempts."
+        "name": "Albergue Ecoturistico Tomarapi",
+        "category": "Hostel",
+        "note": "5.9 mi from summit",
+        "lat": -18.02395,
+        "lon": -68.86944,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3275372062"
       },
       {
-        "name": "Albergue Sajama",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Convenient stay for Sajama approaches."
+        "name": "Hostal Buena Vista",
+        "category": "Guest house",
+        "note": "6.2 mi from summit",
+        "lat": -18.13506,
+        "lon": -68.97354,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/5607890205"
       },
       {
-        "name": "Hostal Estrella",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Sajama."
+        "name": "Hostal Alta Montaña",
+        "category": "Hostel",
+        "note": "6.2 mi from summit",
+        "lat": -18.13474,
+        "lon": -68.97386,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/10672010398"
       }
     ],
     "food": [
@@ -3272,22 +3496,31 @@
     },
     "hotels": [
       {
-        "name": "Mountain Lodges of Peru",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Trusted base near Cusco for summit attempts."
+        "name": "El Molle",
+        "category": "Hostel",
+        "note": "48.1 mi from summit",
+        "lat": -13.42237,
+        "lon": -71.83765,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1265174361"
       },
       {
-        "name": "Andean Cottage",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Convenient stay for Ausangate approaches."
+        "name": "Pueblo Amono",
+        "category": "Hostel",
+        "note": "48.9 mi from summit",
+        "lat": -13.53515,
+        "lon": -71.90867,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/448800108"
       },
       {
-        "name": "Casa Andina Cusco",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Cusco."
+        "name": "Hospedaje Ttica-Pata",
+        "category": "Guest house",
+        "note": "49.1 mi from summit",
+        "lat": -13.53153,
+        "lon": -71.91059,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/440521634"
       }
     ],
     "food": [
@@ -3385,22 +3618,31 @@
     },
     "hotels": [
       {
-        "name": "Hôtel Mont-Blanc",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Trusted base near Chamonix for summit attempts."
+        "name": "Rifugio Monte Bianco",
+        "category": "Alpine hut",
+        "note": "3.9 mi from summit",
+        "lat": 45.80058,
+        "lon": 6.93089,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/353085969"
       },
       {
-        "name": "Refuge du Goûter",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Convenient stay for Mont Blanc approaches."
+        "name": "Rifugio Pavillon",
+        "category": "Alpine hut",
+        "note": "4.1 mi from summit",
+        "lat": 45.82914,
+        "lon": 6.95082,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/353084898"
       },
       {
-        "name": "Club Alpin Français",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Chamonix."
+        "name": "La Vallée Blanche",
+        "category": "Hostel",
+        "note": "4.8 mi from summit",
+        "lat": 45.81851,
+        "lon": 6.96365,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/847131948"
       }
     ],
     "food": [
@@ -3498,22 +3740,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Monte Rosa",
-        "rating": 4.6,
+        "name": "Rifugio Aosta",
+        "category": "Alpine hut",
+        "note": "4.7 mi from summit",
+        "lat": 45.96955,
+        "lon": 7.56144,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/353049833"
+      },
+      {
+        "name": "Berggasthaus Trift",
+        "category": "Alpine hut",
+        "note": "4.8 mi from summit",
+        "lat": 46.03004,
+        "lon": 7.72107,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/294171060"
+      },
+      {
+        "name": "Igludorf",
         "category": "Hotel",
-        "note": "Trusted base near Zermatt for summit attempts."
-      },
-      {
-        "name": "Riffelalp Resort",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Convenient stay for Matterhorn approaches."
-      },
-      {
-        "name": "Youth Hostel Zermatt",
-        "rating": 4.8,
-        "category": "Hut / hostel",
-        "note": "Popular with climbers staging out of Zermatt."
+        "note": "5.1 mi from summit",
+        "lat": 45.98868,
+        "lon": 7.76359,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/342765056"
       }
     ],
     "food": [
@@ -3597,22 +3848,31 @@
     },
     "hotels": [
       {
-        "name": "Victoria-Jungfrau",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Trusted base near Interlaken for summit attempts."
+        "name": "Spielbodenalp",
+        "category": "Alpine hut",
+        "note": "4.3 mi from summit",
+        "lat": 46.54884,
+        "lon": 7.87391,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/454394987"
       },
       {
-        "name": "Hotel Interlaken",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Convenient stay for Jungfrau approaches."
+        "name": "Rotstockhütte",
+        "category": "Alpine hut",
+        "note": "5.9 mi from summit",
+        "lat": 46.54516,
+        "lon": 7.83832,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/454394985"
       },
       {
-        "name": "Jungfrau Lodge",
-        "rating": 4.2,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Interlaken."
+        "name": "Schynige Platte",
+        "category": "Hostel",
+        "note": "8.4 mi from summit",
+        "lat": 46.65284,
+        "lon": 7.91182,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/302366993"
       }
     ],
     "food": [
@@ -3710,22 +3970,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Eiger",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Trusted base near Grindelwald for summit attempts."
+        "name": "Jungfraublick",
+        "category": "Chalet",
+        "note": "5.1 mi from summit",
+        "lat": 46.60559,
+        "lon": 7.90628,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/472674826"
       },
       {
-        "name": "Belvedere",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Convenient stay for Eiger approaches."
+        "name": "Spielbodenalp",
+        "category": "Alpine hut",
+        "note": "6.6 mi from summit",
+        "lat": 46.54884,
+        "lon": 7.87391,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/454394987"
       },
       {
-        "name": "Bergsteigerzentrum",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Grindelwald."
+        "name": "Schynige Platte",
+        "category": "Hostel",
+        "note": "6.8 mi from summit",
+        "lat": 46.65284,
+        "lon": 7.91182,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/302366993"
       }
     ],
     "food": [
@@ -3809,22 +4078,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Nationalpark",
-        "rating": 4.2,
+        "name": "Lucknerhaus",
         "category": "Hotel",
-        "note": "Trusted base near Heiligenblut for summit attempts."
+        "note": "3.7 mi from summit",
+        "lat": 47.02085,
+        "lon": 12.68796,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/281606568"
       },
       {
-        "name": "Glocknerhof",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Convenient stay for Grossglockner approaches."
+        "name": "Elberfelder Hütte",
+        "category": "Alpine hut",
+        "note": "7.4 mi from summit",
+        "lat": 46.97789,
+        "lon": 12.76042,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/301262877"
       },
       {
-        "name": "Chalet Hotel",
-        "rating": 4.4,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Heiligenblut."
+        "name": "Doris Fleißkuchl",
+        "category": "Alpine hut",
+        "note": "8.5 mi from summit",
+        "lat": 47.05175,
+        "lon": 12.87138,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/278013256"
       }
     ],
     "food": [
@@ -3908,22 +4186,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Triglav Bled",
-        "rating": 4.3,
+        "name": "Hotel Center",
+        "category": "Chalet",
+        "note": "4.7 mi from summit",
+        "lat": 46.34464,
+        "lon": 13.92209,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/869388818"
+      },
+      {
+        "name": "Hostel pod Voglom",
         "category": "Hotel",
-        "note": "Trusted base near Bled for summit attempts."
+        "note": "7.0 mi from summit",
+        "lat": 46.2787,
+        "lon": 13.86647,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/206172704"
       },
       {
-        "name": "Vila Bled",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Convenient stay for Triglav approaches."
-      },
-      {
-        "name": "Hostel Bledec",
-        "rating": 4.5,
-        "category": "Hut / hostel",
-        "note": "Popular with climbers staging out of Bled."
+        "name": "Hotel Belveue",
+        "category": "Hotel",
+        "note": "7.5 mi from summit",
+        "lat": 46.27461,
+        "lon": 13.88435,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/206172663"
       }
     ],
     "food": [
@@ -4021,22 +4308,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Post",
-        "rating": 4.4,
+        "name": "Hotel Perego",
         "category": "Hotel",
-        "note": "Trusted base near Solda for summit attempts."
+        "note": "4.6 mi from summit",
+        "lat": 46.52857,
+        "lon": 10.45258,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/288858648"
       },
       {
-        "name": "Alpenhotel",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Convenient stay for Ortler approaches."
+        "name": "Martellerhütte - Rifugio Martello",
+        "category": "Alpine hut",
+        "note": "6.6 mi from summit",
+        "lat": 46.46964,
+        "lon": 10.67306,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/393892579"
       },
       {
-        "name": "Gampen Alm",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Solda."
+        "name": "Lyfialm - Malga Lifi",
+        "category": "Alpine hut",
+        "note": "7.5 mi from summit",
+        "lat": 46.5038,
+        "lon": 10.70299,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/298467485"
       }
     ],
     "food": [
@@ -4134,22 +4430,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Cima Belvedere",
-        "rating": 4.5,
+        "name": "Hotel Pordoi",
         "category": "Hotel",
-        "note": "Trusted base near Canazei for summit attempts."
+        "note": "4.7 mi from summit",
+        "lat": 46.48635,
+        "lon": 11.80029,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/448098224"
       },
       {
-        "name": "Villa Rosella",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Convenient stay for Marmolada approaches."
+        "name": "Garni Sirio",
+        "category": "Guest house",
+        "note": "8.3 mi from summit",
+        "lat": 46.55347,
+        "lon": 11.84614,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/287629637"
       },
       {
-        "name": "Garni Stella Alpina",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Canazei."
+        "name": "Hotel Dolasilla",
+        "category": "Hotel",
+        "note": "9.1 mi from summit",
+        "lat": 46.42079,
+        "lon": 11.67532,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/305506280"
       }
     ],
     "food": [
@@ -4247,22 +4552,31 @@
     },
     "hotels": [
       {
-        "name": "Hôtel de la Chaussée",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Trusted base near Briançon for summit attempts."
+        "name": "Chalet Refuge du Pré de Madame Carle",
+        "category": "Alpine hut",
+        "note": "2.7 mi from summit",
+        "lat": 44.91772,
+        "lon": 6.41562,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/279452438"
       },
       {
-        "name": "Refuge des Écrins",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Convenient stay for Barre des Écrins approaches."
+        "name": "Hôtel Engilberge",
+        "category": "Hotel",
+        "note": "4.8 mi from summit",
+        "lat": 44.88861,
+        "lon": 6.445,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/279480545"
       },
       {
-        "name": "Auberge de la Paix",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Briançon."
+        "name": "Chalet Hôtel d'Ailefroide",
+        "category": "Hotel",
+        "note": "4.9 mi from summit",
+        "lat": 44.88713,
+        "lon": 6.44633,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/279480539"
       }
     ],
     "food": [
@@ -4360,22 +4674,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Elbrus",
-        "rating": 4.7,
-        "category": "Hotel",
-        "note": "Trusted base near Terskol for summit attempts."
+        "name": "Приют Мария",
+        "category": "Alpine hut",
+        "note": "2.5 mi from summit",
+        "lat": 43.3154,
+        "lon": 42.45918,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1837689077"
       },
       {
-        "name": "Leaprus",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Convenient stay for Mt. Elbrus approaches."
+        "name": "ЯкПриют",
+        "category": "Alpine hut",
+        "note": "2.5 mi from summit",
+        "lat": 43.31556,
+        "lon": 42.46165,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/93720431"
       },
       {
-        "name": "Povorot",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Terskol."
+        "name": "Diesel Hut",
+        "category": "Alpine hut",
+        "note": "2.6 mi from summit",
+        "lat": 43.3139,
+        "lon": 42.45927,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4398608907"
       }
     ],
     "food": [
@@ -4473,22 +4796,31 @@
     },
     "hotels": [
       {
-        "name": "Rooms Hotel Kazbegi",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Trusted base near Stepantsminda for summit attempts."
+        "name": "ბეთლემის ქოხი 3650",
+        "category": "Alpine hut",
+        "note": "1.4 mi from summit",
+        "lat": 42.67988,
+        "lon": 44.53383,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4692548699"
       },
       {
-        "name": "Stepantsminda Hotel",
-        "rating": 4.2,
+        "name": "Red stone guest house",
         "category": "Hotel",
-        "note": "Convenient stay for Mt. Kazbek approaches."
+        "note": "6.3 mi from summit",
+        "lat": 42.66102,
+        "lon": 44.63283,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4361638090"
       },
       {
-        "name": "Bethlehemi Hut",
-        "rating": 4.3,
-        "category": "Hut / hostel",
-        "note": "Popular with climbers staging out of Stepantsminda."
+        "name": "Leo Hostel",
+        "category": "Guest house",
+        "note": "6.5 mi from summit",
+        "lat": 42.65931,
+        "lon": 44.63667,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3580639496"
       }
     ],
     "food": [
@@ -4572,22 +4904,31 @@
     },
     "hotels": [
       {
-        "name": "Polur Camp",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Trusted base near Polur for summit attempts."
+        "name": "بارگاه سوم",
+        "category": "Alpine hut",
+        "note": "1.7 mi from summit",
+        "lat": 35.93141,
+        "lon": 52.10894,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/307642862"
       },
       {
-        "name": "Damavand Shelter",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Convenient stay for Damavand approaches."
-      },
-      {
-        "name": "Lar Hotel",
-        "rating": 4.4,
+        "name": "هتل‌ شمس",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Polur."
+        "note": "5.8 mi from summit",
+        "lat": 35.90722,
+        "lon": 52.19302,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/11843751213"
+      },
+      {
+        "name": "هتل آپارتمان مشتی رضا",
+        "category": "Hotel",
+        "note": "5.9 mi from summit",
+        "lat": 35.90607,
+        "lon": 52.19567,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/12811766242"
       }
     ],
     "food": [
@@ -4685,22 +5026,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Grand",
-        "rating": 4.3,
+        "name": "Sim-er Hotel",
         "category": "Hotel",
-        "note": "Trusted base near Dogubayazit for summit attempts."
+        "note": "13.2 mi from summit",
+        "lat": 39.55675,
+        "lon": 44.13723,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2993910409"
       },
       {
-        "name": "Isfahan Hotel",
-        "rating": 4.4,
-        "category": "Hotel",
-        "note": "Convenient stay for Mt. Ararat approaches."
+        "name": "ARK hostel",
+        "category": "Hostel",
+        "note": "15.5 mi from summit",
+        "lat": 39.53791,
+        "lon": 44.09917,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/9923879718"
       },
       {
-        "name": "Ararat Hotel",
-        "rating": 4.5,
+        "name": "Yayla Palas",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Dogubayazit."
+        "note": "15.7 mi from summit",
+        "lat": 39.54653,
+        "lon": 44.0823,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4349336589"
       }
     ],
     "food": [
@@ -4798,22 +5148,31 @@
     },
     "hotels": [
       {
-        "name": "Keys Hotel",
-        "rating": 4.4,
+        "name": "Gästehaus AKO",
+        "category": "Guest house",
+        "note": "11.7 mi from summit",
+        "lat": -3.23366,
+        "lon": 37.32018,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/362805961"
+      },
+      {
+        "name": "Kilemakyaro Lodge",
         "category": "Hotel",
-        "note": "Trusted base near Moshi for summit attempts."
+        "note": "14.9 mi from summit",
+        "lat": -3.28132,
+        "lon": 37.33306,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/566937656"
       },
       {
-        "name": "Bristol Cottages",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Convenient stay for Kilimanjaro approaches."
-      },
-      {
-        "name": "Salinero Kilimanjaro",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Moshi."
+        "name": "Fukeni Church Guesthouse",
+        "category": "Guest house",
+        "note": "15.4 mi from summit",
+        "lat": -3.287,
+        "lon": 37.39308,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3855000076"
       }
     ],
     "food": [
@@ -4914,22 +5273,31 @@
     },
     "hotels": [
       {
-        "name": "Trout Tree",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Trusted base near Nanyuki for summit attempts."
-      },
-      {
         "name": "Mount Kenya Safari Club",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Convenient stay for Mt. Kenya approaches."
+        "category": "Hotel",
+        "note": "14.7 mi from summit",
+        "lat": -0.03551,
+        "lon": 37.12986,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1486116746"
       },
       {
-        "name": "Sportsman's Arms",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Nanyuki."
+        "name": "Batain’s View Campsite",
+        "category": "Hotel",
+        "note": "16.2 mi from summit",
+        "lat": -0.18032,
+        "lon": 37.07545,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3392340304"
+      },
+      {
+        "name": "Kentrout Campsite",
+        "category": "Motel",
+        "note": "17.0 mi from summit",
+        "lat": 0.08534,
+        "lon": 37.2416,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4451583901"
       }
     ],
     "food": [
@@ -5027,22 +5395,31 @@
     },
     "hotels": [
       {
-        "name": "Dar Imlil",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Trusted base near Imlil for summit attempts."
+        "name": "Refuge Tazaghart",
+        "category": "Alpine hut",
+        "note": "3.0 mi from summit",
+        "lat": 31.07599,
+        "lon": -7.96222,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1827523097"
       },
       {
-        "name": "Refuge Toubkal",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Convenient stay for Jebel Toubkal approaches."
+        "name": "Kasbah Toubkal",
+        "category": "Hotel",
+        "note": "5.1 mi from summit",
+        "lat": 31.13257,
+        "lon": -7.91903,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/87828619"
       },
       {
-        "name": "Kasbah du Toubkal",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Imlil."
+        "name": "Riad Atlas Prestige",
+        "category": "Hotel",
+        "note": "5.1 mi from summit",
+        "lat": 31.13363,
+        "lon": -7.92017,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3749647424"
       }
     ],
     "food": [
@@ -5140,22 +5517,31 @@
     },
     "hotels": [
       {
-        "name": "Simien Lodge",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Trusted base near Debark for summit attempts."
+        "name": "Muchala camp",
+        "category": "Wilderness hut",
+        "note": "21.1 mi from summit",
+        "lat": 13.27732,
+        "lon": 38.05778,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/7634715432"
       },
       {
-        "name": "Sona Hotel",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Convenient stay for Ras Dashen approaches."
+        "name": "Community Lodge",
+        "category": "Alpine hut",
+        "note": "26.0 mi from summit",
+        "lat": 13.20398,
+        "lon": 37.98336,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/5896628287"
       },
       {
-        "name": "Jano Hotel",
-        "rating": 4.2,
+        "name": "Simien Mountain Lodge",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Debark."
+        "note": "26.3 mi from summit",
+        "lat": 13.21182,
+        "lon": 37.978,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/684008540"
       }
     ],
     "food": [
@@ -5253,22 +5639,31 @@
     },
     "hotels": [
       {
-        "name": "The Table Bay",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Trusted base near Cape Town for summit attempts."
+        "name": "The Orangery",
+        "category": "Guest house",
+        "note": "1.8 mi from summit",
+        "lat": -33.93791,
+        "lon": 18.41609,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/243988600"
       },
       {
-        "name": "Mount Nelson",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Convenient stay for Table Mountain approaches."
+        "name": "Ashanti Travel Centre",
+        "category": "Guest house",
+        "note": "2.0 mi from summit",
+        "lat": -33.93341,
+        "lon": 18.41217,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/300412033"
       },
       {
-        "name": "Daddy Long Legs",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Cape Town."
+        "name": "Townhouse Hotel",
+        "category": "Hotel",
+        "note": "2.6 mi from summit",
+        "lat": -33.92614,
+        "lon": 18.42189,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/60071907"
       }
     ],
     "food": [
@@ -5366,22 +5761,31 @@
     },
     "hotels": [
       {
-        "name": "Arusha Coffee Lodge",
-        "rating": 4.2,
-        "category": "Lodge",
-        "note": "Trusted base near Arusha for summit attempts."
-      },
-      {
-        "name": "Kibo Palace",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Convenient stay for Mt. Meru approaches."
-      },
-      {
-        "name": "Impala Hotel",
-        "rating": 4.4,
+        "name": "L'Oasis",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Arusha."
+        "note": "8.2 mi from summit",
+        "lat": -3.36062,
+        "lon": 36.7084,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/478750828"
+      },
+      {
+        "name": "Snow Crest Hotel",
+        "category": "Hotel",
+        "note": "8.2 mi from summit",
+        "lat": -3.3675,
+        "lon": 36.73104,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/579564843"
+      },
+      {
+        "name": "Club Afriko",
+        "category": "Hotel",
+        "note": "8.4 mi from summit",
+        "lat": -3.36857,
+        "lon": 36.72023,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/651842556"
       }
     ],
     "food": [
@@ -5465,22 +5869,31 @@
     },
     "hotels": [
       {
-        "name": "Yetis Mountain Home",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Trusted base near Namche Bazaar for summit attempts."
+        "name": "Green Valley Lodge",
+        "category": "Guest house",
+        "note": "9.8 mi from summit",
+        "lat": 27.93965,
+        "lon": 86.7734,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1678310596"
       },
       {
-        "name": "Khumbu Lodge",
-        "rating": 4.4,
-        "category": "Lodge",
-        "note": "Convenient stay for Mt. Everest approaches."
+        "name": "Pangboche",
+        "category": "Guest house",
+        "note": "12.3 mi from summit",
+        "lat": 27.85658,
+        "lon": 86.7881,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/564109888"
       },
       {
-        "name": "Hotel Namche",
-        "rating": 4.5,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Namche Bazaar."
+        "name": "Cho La Pass Resort",
+        "category": "Guest house",
+        "note": "12.9 mi from summit",
+        "lat": 27.94063,
+        "lon": 86.71995,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/484488430"
       }
     ],
     "food": [
@@ -5578,22 +5991,31 @@
     },
     "hotels": [
       {
+        "name": "River View Hotel & Restaurant",
+        "category": "Hotel",
+        "note": "53.7 mi from summit",
+        "lat": 35.42304,
+        "lon": 75.73974,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/5009265122"
+      },
+      {
         "name": "Concordia Motel",
-        "rating": 4.4,
-        "category": "Hotel",
-        "note": "Trusted base near Skardu for summit attempts."
+        "category": "Motel",
+        "note": "63.1 mi from summit",
+        "lat": 35.29498,
+        "lon": 75.65154,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/746264669"
       },
       {
-        "name": "K2 Motel",
-        "rating": 4.5,
+        "name": "PTDC Motel",
         "category": "Hotel",
-        "note": "Convenient stay for K2 approaches."
-      },
-      {
-        "name": "Baltoro Lodge",
-        "rating": 4.6,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Skardu."
+        "note": "63.2 mi from summit",
+        "lat": 35.29581,
+        "lon": 75.64756,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3522641399"
       }
     ],
     "food": [
@@ -5691,22 +6113,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Kanchenjunga",
-        "rating": 4.5,
+        "name": "Kanchanjungha Hotel and Lodge",
         "category": "Hotel",
-        "note": "Trusted base near Taplejung for summit attempts."
+        "note": "30.8 mi from summit",
+        "lat": 27.416,
+        "lon": 87.76161,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2559586993"
       },
       {
-        "name": "Pathibhara Lodge",
-        "rating": 4.6,
-        "category": "Lodge",
-        "note": "Convenient stay for Kangchenjunga approaches."
+        "name": "Guras Hotel and Lodge",
+        "category": "Hotel",
+        "note": "30.8 mi from summit",
+        "lat": 27.41581,
+        "lon": 87.7615,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2559586981"
       },
       {
-        "name": "Yak Hotel",
-        "rating": 4.7,
+        "name": "Kirat Fastfood  Hotel and Lodge",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Taplejung."
+        "note": "30.8 mi from summit",
+        "lat": 27.41536,
+        "lon": 87.76144,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2559586997"
       }
     ],
     "food": [
@@ -5804,22 +6235,31 @@
     },
     "hotels": [
       {
-        "name": "Yetis Mountain Home",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Trusted base near Namche Bazaar for summit attempts."
+        "name": "Green Valley Lodge",
+        "category": "Guest house",
+        "note": "9.9 mi from summit",
+        "lat": 27.93965,
+        "lon": 86.7734,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1678310596"
       },
       {
-        "name": "Eco Lodge",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Convenient stay for Lhotse approaches."
+        "name": "Pangboche",
+        "category": "Guest house",
+        "note": "11.5 mi from summit",
+        "lat": 27.85658,
+        "lon": 86.7881,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/564109888"
       },
       {
-        "name": "Hotel Sherpaland",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Namche Bazaar."
+        "name": "Cho La Pass Resort",
+        "category": "Guest house",
+        "note": "13.1 mi from summit",
+        "lat": 27.94063,
+        "lon": 86.71995,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/484488430"
       }
     ],
     "food": [
@@ -5917,22 +6357,31 @@
     },
     "hotels": [
       {
-        "name": "Makalu Guest House",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Trusted base near Khandbari for summit attempts."
+        "name": "Annapurna Lodge",
+        "category": "Alpine hut",
+        "note": "33.4 mi from summit",
+        "lat": 27.4074,
+        "lon": 87.11474,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1927152461"
       },
       {
-        "name": "Arun Valley Lodge",
-        "rating": 4.8,
-        "category": "Lodge",
-        "note": "Convenient stay for Makalu approaches."
+        "name": "Kirat Lodge",
+        "category": "Alpine hut",
+        "note": "33.6 mi from summit",
+        "lat": 27.4034,
+        "lon": 87.06534,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1927152480"
       },
       {
-        "name": "Hotel Num",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Khandbari."
+        "name": "Sonam Hotel",
+        "category": "Hostel",
+        "note": "33.8 mi from summit",
+        "lat": 27.41284,
+        "lon": 86.96501,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1929099918"
       }
     ],
     "food": [
@@ -6030,22 +6479,22 @@
     },
     "hotels": [
       {
-        "name": "Snowland Hotel",
-        "rating": 4.8,
+        "name": "Snow Leopard Guest Hause",
         "category": "Hotel",
-        "note": "Trusted base near Tingri for summit attempts."
+        "note": "33.9 mi from summit",
+        "lat": 28.58423,
+        "lon": 86.62063,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/13295424708"
       },
       {
-        "name": "Tingri Guest House",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Convenient stay for Cho Oyu approaches."
-      },
-      {
-        "name": "Himalaya Hotel",
-        "rating": 4.3,
+        "name": "岗嘎宾馆",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Tingri."
+        "note": "34.0 mi from summit",
+        "lat": 28.58414,
+        "lon": 86.61657,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/6006766485"
       }
     ],
     "food": [
@@ -6143,22 +6592,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Barahi",
-        "rating": 4.2,
+        "name": "Hotel Green Land",
         "category": "Hotel",
-        "note": "Trusted base near Pokhara for summit attempts."
+        "note": "35.1 mi from summit",
+        "lat": 28.30068,
+        "lon": 83.84871,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/605254986"
       },
       {
-        "name": "Temple Tree Resort",
-        "rating": 4.3,
-        "category": "Lodge",
-        "note": "Convenient stay for Dhaulagiri approaches."
+        "name": "Lake Vision Guesthouse",
+        "category": "Guest house",
+        "note": "43.7 mi from summit",
+        "lat": 28.21955,
+        "lon": 83.95866,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/978322938"
       },
       {
-        "name": "Pokhara Grande",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Pokhara."
+        "name": "Lonely View Lodge",
+        "category": "Guest house",
+        "note": "43.8 mi from summit",
+        "lat": 28.2181,
+        "lon": 83.95923,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/520702266"
       }
     ],
     "food": [
@@ -6242,22 +6700,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Gorkha",
-        "rating": 4.3,
+        "name": "Pokhari Bhatta Hotel",
         "category": "Hotel",
-        "note": "Trusted base near Gorkha for summit attempts."
+        "note": "31.0 mi from summit",
+        "lat": 28.11106,
+        "lon": 84.66633,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4305400491"
       },
       {
-        "name": "Manaslu Guest House",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Convenient stay for Manaslu approaches."
+        "name": "Hotel Gorkha Bisauni",
+        "category": "Hotel",
+        "note": "38.5 mi from summit",
+        "lat": 27.99596,
+        "lon": 84.6251,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1461362183"
       },
       {
-        "name": "Hilltop Lodge",
-        "rating": 4.5,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Gorkha."
+        "name": "Green Park Resort",
+        "category": "Hotel",
+        "note": "43.2 mi from summit",
+        "lat": 27.94071,
+        "lon": 84.40588,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1329314640"
       }
     ],
     "food": [
@@ -6355,22 +6822,31 @@
     },
     "hotels": [
       {
-        "name": "Serena Hotel Gilgit",
-        "rating": 4.4,
+        "name": "Capital Lodge Gilgit",
+        "category": "Motel",
+        "note": "47.2 mi from summit",
+        "lat": 35.89632,
+        "lon": 74.36952,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/9769048996"
+      },
+      {
+        "name": "Tourist World (3000-5000Rs rooms)",
         "category": "Hotel",
-        "note": "Trusted base near Gilgit for summit attempts."
+        "note": "47.4 mi from summit",
+        "lat": 35.89972,
+        "lon": 74.37139,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/6914352986"
       },
       {
-        "name": "Gilgit Continental",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Convenient stay for Nanga Parbat approaches."
-      },
-      {
-        "name": "Fairy Meadows Cottages",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Gilgit."
+        "name": "Gilgit",
+        "category": "Hotel",
+        "note": "47.4 mi from summit",
+        "lat": 35.89935,
+        "lon": 74.36924,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/571786778"
       }
     ],
     "food": [
@@ -6468,22 +6944,31 @@
     },
     "hotels": [
       {
-        "name": "Fishtail Lodge",
-        "rating": 4.5,
-        "category": "Lodge",
-        "note": "Trusted base near Pokhara for summit attempts."
-      },
-      {
-        "name": "Hotel Barahi",
-        "rating": 4.6,
+        "name": "Hotel Green Land",
         "category": "Hotel",
-        "note": "Convenient stay for Annapurna I approaches."
+        "note": "20.5 mi from summit",
+        "lat": 28.30068,
+        "lon": 83.84871,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/605254986"
       },
       {
-        "name": "Lakeview Resort",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Pokhara."
+        "name": "Lake Vision Guesthouse",
+        "category": "Guest house",
+        "note": "27.3 mi from summit",
+        "lat": 28.21955,
+        "lon": 83.95866,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/978322938"
+      },
+      {
+        "name": "Lonely View Lodge",
+        "category": "Guest house",
+        "note": "27.4 mi from summit",
+        "lat": 28.2181,
+        "lon": 83.95923,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/520702266"
       }
     ],
     "food": [
@@ -6567,22 +7052,31 @@
     },
     "hotels": [
       {
+        "name": "River View Hotel & Restaurant",
+        "category": "Hotel",
+        "note": "57.7 mi from summit",
+        "lat": 35.42304,
+        "lon": 75.73974,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/5009265122"
+      },
+      {
         "name": "Concordia Motel",
-        "rating": 4.6,
-        "category": "Hotel",
-        "note": "Trusted base near Skardu for summit attempts."
+        "category": "Motel",
+        "note": "65.8 mi from summit",
+        "lat": 35.29498,
+        "lon": 75.65154,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/746264669"
       },
       {
-        "name": "Mashabrum Hotel",
-        "rating": 4.7,
+        "name": "PTDC Motel",
         "category": "Hotel",
-        "note": "Convenient stay for Gasherbrum I approaches."
-      },
-      {
-        "name": "Baltoro Base",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Skardu."
+        "note": "66.0 mi from summit",
+        "lat": 35.29581,
+        "lon": 75.64756,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3522641399"
       }
     ],
     "food": [
@@ -6680,22 +7174,31 @@
     },
     "hotels": [
       {
-        "name": "K2 Motel",
-        "rating": 4.7,
+        "name": "River View Hotel & Restaurant",
         "category": "Hotel",
-        "note": "Trusted base near Skardu for summit attempts."
+        "note": "53.7 mi from summit",
+        "lat": 35.42304,
+        "lon": 75.73974,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/5009265122"
       },
       {
         "name": "Concordia Motel",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Convenient stay for Broad Peak approaches."
+        "category": "Motel",
+        "note": "62.7 mi from summit",
+        "lat": 35.29498,
+        "lon": 75.65154,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/746264669"
       },
       {
-        "name": "Baltistan Continental",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Skardu."
+        "name": "PTDC Motel",
+        "category": "Hotel",
+        "note": "62.8 mi from summit",
+        "lat": 35.29581,
+        "lon": 75.64756,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3522641399"
       }
     ],
     "food": [
@@ -6793,22 +7296,31 @@
     },
     "hotels": [
       {
-        "name": "Mashabrum Hotel",
-        "rating": 4.8,
+        "name": "River View Hotel & Restaurant",
         "category": "Hotel",
-        "note": "Trusted base near Skardu for summit attempts."
+        "note": "56.3 mi from summit",
+        "lat": 35.42304,
+        "lon": 75.73974,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/5009265122"
       },
       {
         "name": "Concordia Motel",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Convenient stay for Gasherbrum II approaches."
+        "category": "Motel",
+        "note": "64.8 mi from summit",
+        "lat": 35.29498,
+        "lon": 75.65154,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/746264669"
       },
       {
-        "name": "Hotel Baltoro",
-        "rating": 4.3,
+        "name": "PTDC Motel",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Skardu."
+        "note": "65.0 mi from summit",
+        "lat": 35.29581,
+        "lon": 75.64756,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3522641399"
       }
     ],
     "food": [
@@ -6892,22 +7404,13 @@
     },
     "hotels": [
       {
-        "name": "Snowland Hotel",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Trusted base near Nyalam for summit attempts."
-      },
-      {
-        "name": "Nyalam Guest House",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Convenient stay for Shishapangma approaches."
-      },
-      {
-        "name": "Himalaya Hotel",
-        "rating": 4.4,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Nyalam."
+        "name": "Tatopani Family Lodge",
+        "category": "Guest house",
+        "note": "29.9 mi from summit",
+        "lat": 27.94607,
+        "lon": 85.95013,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/765033916"
       }
     ],
     "food": [
@@ -7005,22 +7508,31 @@
     },
     "hotels": [
       {
-        "name": "Yetis Mountain Home",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Trusted base near Namche Bazaar for summit attempts."
+        "name": "Pangboche",
+        "category": "Guest house",
+        "note": "4.5 mi from summit",
+        "lat": 27.85658,
+        "lon": 86.7881,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/564109888"
       },
       {
-        "name": "Ama Dablam Lodge",
-        "rating": 4.4,
-        "category": "Lodge",
-        "note": "Convenient stay for Ama Dablam approaches."
+        "name": "Hotel Himalayan",
+        "category": "Guest house",
+        "note": "6.2 mi from summit",
+        "lat": 27.83542,
+        "lon": 86.76454,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1679191775"
       },
       {
-        "name": "Hotel Sherpaland",
-        "rating": 4.5,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Namche Bazaar."
+        "name": "Lodge",
+        "category": "Guest house",
+        "note": "7.0 mi from summit",
+        "lat": 27.84562,
+        "lon": 86.74865,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/704001184"
       }
     ],
     "food": [
@@ -7118,22 +7630,31 @@
     },
     "hotels": [
       {
-        "name": "Chukhung Resort",
-        "rating": 4.4,
-        "category": "Lodge",
-        "note": "Trusted base near Chukhung for summit attempts."
+        "name": "Green Valley Lodge",
+        "category": "Guest house",
+        "note": "9.9 mi from summit",
+        "lat": 27.93965,
+        "lon": 86.7734,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1678310596"
       },
       {
-        "name": "Island Peak Hotel",
-        "rating": 4.5,
-        "category": "Hotel",
-        "note": "Convenient stay for Island Peak approaches."
+        "name": "Pangboche",
+        "category": "Guest house",
+        "note": "10.0 mi from summit",
+        "lat": 27.85658,
+        "lon": 86.7881,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/564109888"
       },
       {
-        "name": "Eco Lodge",
-        "rating": 4.6,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Chukhung."
+        "name": "Hotel Himalayan",
+        "category": "Guest house",
+        "note": "11.9 mi from summit",
+        "lat": 27.83542,
+        "lon": 86.76454,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1679191775"
       }
     ],
     "food": [
@@ -7217,22 +7738,31 @@
     },
     "hotels": [
       {
-        "name": "The Grand Dragon",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Trusted base near Leh for summit attempts."
-      },
-      {
-        "name": "Hotel Ladakh Sarai",
-        "rating": 4.6,
+        "name": "Royal Palace",
         "category": "Hotel",
-        "note": "Convenient stay for Stok Kangri approaches."
+        "note": "13.2 mi from summit",
+        "lat": 34.15418,
+        "lon": 77.57725,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1707062704"
       },
       {
-        "name": "Zostel Leh",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Leh."
+        "name": "Shenam Hotel",
+        "category": "Hotel",
+        "note": "13.5 mi from summit",
+        "lat": 34.15748,
+        "lon": 77.58044,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/912972462"
+      },
+      {
+        "name": "Mahey",
+        "category": "Guest house",
+        "note": "13.8 mi from summit",
+        "lat": 34.16421,
+        "lon": 77.57525,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/304948432"
       }
     ],
     "food": [
@@ -7330,22 +7860,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Mountain View",
-        "rating": 4.6,
+        "name": "Shepherds Lodge Devangan",
         "category": "Hotel",
-        "note": "Trusted base near Joshimath for summit attempts."
+        "note": "18.0 mi from summit",
+        "lat": 30.49478,
+        "lon": 79.70288,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/6172371417"
       },
       {
-        "name": "JM Orchid",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Convenient stay for Nanda Devi approaches."
+        "name": "Faraway Cottages, Auli",
+        "category": "Hotel",
+        "note": "25.9 mi from summit",
+        "lat": 30.53745,
+        "lon": 79.57826,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/1457118592"
       },
       {
-        "name": "Dronagiri",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Joshimath."
+        "name": "Tathatshu Ski Resort",
+        "category": "Hotel",
+        "note": "26.5 mi from summit",
+        "lat": 30.5487,
+        "lon": 79.57379,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/9779110817"
       }
     ],
     "food": [
@@ -7443,22 +7982,31 @@
     },
     "hotels": [
       {
-        "name": "Kumaon Lodge",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Trusted base near Gwaldam for summit attempts."
+        "name": "Gairuli Patal",
+        "category": "Guest house",
+        "note": "10.5 mi from summit",
+        "lat": 30.20446,
+        "lon": 79.65224,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/6520213931"
       },
       {
-        "name": "Himalayan View",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Convenient stay for Trisul approaches."
+        "name": "Home stay wan",
+        "category": "Guest house",
+        "note": "11.6 mi from summit",
+        "lat": 30.2004,
+        "lon": 79.6308,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/8304836204"
       },
       {
-        "name": "Forest Rest House",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Gwaldam."
+        "name": "Himni guest house",
+        "category": "Guest house",
+        "note": "12.3 mi from summit",
+        "lat": 30.14288,
+        "lon": 79.7136,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/8324620302"
       }
     ],
     "food": [
@@ -7556,22 +8104,31 @@
     },
     "hotels": [
       {
-        "name": "Fuji View Hotel",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Trusted base near Fujiyoshida for summit attempts."
+        "name": "頂上富士館",
+        "category": "Alpine hut",
+        "note": "0.2 mi from summit",
+        "lat": 35.35958,
+        "lon": 138.73106,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/888327858"
       },
       {
-        "name": "Kawaguchiko Station Inn",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Convenient stay for Mt. Fuji approaches."
+        "name": "銀明館",
+        "category": "Alpine hut",
+        "note": "0.2 mi from summit",
+        "lat": 35.35949,
+        "lon": 138.73105,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/888327911"
       },
       {
-        "name": "Mountain Hut 8th Station",
-        "rating": 4.3,
-        "category": "Hut / hostel",
-        "note": "Popular with climbers staging out of Fujiyoshida."
+        "name": "胸突山荘",
+        "category": "Alpine hut",
+        "note": "0.3 mi from summit",
+        "lat": 35.35665,
+        "lon": 138.73111,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/888306887"
       }
     ],
     "food": [
@@ -7669,22 +8226,31 @@
     },
     "hotels": [
       {
-        "name": "Kamikochi Imperial Hotel",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Trusted base near Kamikochi for summit attempts."
+        "name": "殺生ヒュッテ",
+        "category": "Alpine hut",
+        "note": "0.3 mi from summit",
+        "lat": 36.33864,
+        "lon": 137.65073,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1845028386"
       },
       {
-        "name": "Yarisawa Lodge",
-        "rating": 4.3,
-        "category": "Lodge",
-        "note": "Convenient stay for Mt. Yari approaches."
+        "name": "ヒュッテ大槍",
+        "category": "Alpine hut",
+        "note": "0.5 mi from summit",
+        "lat": 36.33803,
+        "lon": 137.65515,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1845028378"
       },
       {
-        "name": "Hotaka Hut",
-        "rating": 4.4,
-        "category": "Hut / hostel",
-        "note": "Popular with climbers staging out of Kamikochi."
+        "name": "槍平小屋",
+        "category": "Alpine hut",
+        "note": "1.6 mi from summit",
+        "lat": 36.32322,
+        "lon": 137.62991,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1905531190"
       }
     ],
     "food": [
@@ -7782,22 +8348,31 @@
     },
     "hotels": [
       {
-        "name": "Shilla Stay Jeju",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Trusted base near Jeju City for summit attempts."
+        "name": "청아대리조트",
+        "category": "Hotel",
+        "note": "7.5 mi from summit",
+        "lat": 33.43429,
+        "lon": 126.43277,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/368662706"
       },
       {
-        "name": "Hotel RegentMarine",
-        "rating": 4.4,
+        "name": "제주한화리조트",
         "category": "Hotel",
-        "note": "Convenient stay for Hallasan approaches."
+        "note": "8.7 mi from summit",
+        "lat": 33.44842,
+        "lon": 126.63791,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/368662740"
       },
       {
-        "name": "Benikea Hotel",
-        "rating": 4.5,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Jeju City."
+        "name": "조은모텔",
+        "category": "Motel",
+        "note": "8.8 mi from summit",
+        "lat": 33.48493,
+        "lon": 126.49266,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/368719709"
       }
     ],
     "food": [
@@ -7895,22 +8470,31 @@
     },
     "hotels": [
       {
-        "name": "The Hermitage",
-        "rating": 4.4,
-        "category": "Hotel",
-        "note": "Trusted base near Mount Cook Village for summit attempts."
+        "name": "Empress Hut",
+        "category": "Wilderness hut",
+        "note": "1.0 mi from summit",
+        "lat": -43.59471,
+        "lon": 170.12175,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/6243884680"
       },
       {
-        "name": "Aoraki Court Motel",
-        "rating": 4.5,
-        "category": "Hotel",
-        "note": "Convenient stay for Aoraki / Mt. Cook approaches."
+        "name": "Plateau Hut",
+        "category": "Wilderness hut",
+        "note": "2.3 mi from summit",
+        "lat": -43.58373,
+        "lon": 170.18411,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/712599726"
       },
       {
-        "name": "YHA Mt Cook",
-        "rating": 4.6,
-        "category": "Hut / hostel",
-        "note": "Popular with climbers staging out of Mount Cook Village."
+        "name": "Caroline Hut",
+        "category": "Wilderness hut",
+        "note": "3.2 mi from summit",
+        "lat": -43.63546,
+        "lon": 170.17111,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/717648135"
       }
     ],
     "food": [
@@ -8008,22 +8592,31 @@
     },
     "hotels": [
       {
-        "name": "Edgewater",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Trusted base near Wanaka for summit attempts."
+        "name": "Wanaka Bakpaka Hostel",
+        "category": "Hostel",
+        "note": "29.0 mi from summit",
+        "lat": -44.68942,
+        "lon": 169.13226,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/974061555"
       },
       {
-        "name": "Wanaka Homestead",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Convenient stay for Mt. Aspiring approaches."
+        "name": "Aspiring Lodge Motel",
+        "category": "Motel",
+        "note": "29.4 mi from summit",
+        "lat": -44.69683,
+        "lon": 169.13415,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4860603843"
       },
       {
-        "name": "Aspiring Lodge",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Wanaka."
+        "name": "The Brownston",
+        "category": "Hostel",
+        "note": "29.5 mi from summit",
+        "lat": -44.69692,
+        "lon": 169.13493,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2662690169"
       }
     ],
     "food": [
@@ -8107,22 +8700,31 @@
     },
     "hotels": [
       {
-        "name": "The Hermitage",
-        "rating": 4.6,
-        "category": "Hotel",
-        "note": "Trusted base near Mount Cook Village for summit attempts."
+        "name": "Plateau Hut",
+        "category": "Wilderness hut",
+        "note": "1.7 mi from summit",
+        "lat": -43.58373,
+        "lon": 170.18411,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/712599726"
       },
       {
-        "name": "Glacier Gateway Motel",
-        "rating": 4.7,
-        "category": "Hotel",
-        "note": "Convenient stay for Mt. Tasman approaches."
+        "name": "Empress Hut",
+        "category": "Wilderness hut",
+        "note": "2.7 mi from summit",
+        "lat": -43.59471,
+        "lon": 170.12175,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/6243884680"
       },
       {
-        "name": "YHA Mt Cook",
-        "rating": 4.8,
-        "category": "Hut / hostel",
-        "note": "Popular with climbers staging out of Mount Cook Village."
+        "name": "Pioneer Hut",
+        "category": "Wilderness hut",
+        "note": "2.7 mi from summit",
+        "lat": -43.5312,
+        "lon": 170.18268,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/713024597"
       }
     ],
     "food": [
@@ -8206,22 +8808,31 @@
     },
     "hotels": [
       {
+        "name": "Albury Ski Club",
+        "category": "Alpine hut",
+        "note": "4.0 mi from summit",
+        "lat": -36.50082,
+        "lon": 148.30802,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/5417535321"
+      },
+      {
+        "name": "The River Inn",
+        "category": "Hotel",
+        "note": "4.0 mi from summit",
+        "lat": -36.50015,
+        "lon": 148.31031,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2254973781"
+      },
+      {
         "name": "Thredbo Alpine Hotel",
-        "rating": 4.7,
         "category": "Hotel",
-        "note": "Trusted base near Thredbo for summit attempts."
-      },
-      {
-        "name": "Rivertree Lodge",
-        "rating": 4.8,
-        "category": "Lodge",
-        "note": "Convenient stay for Mt. Kosciuszko approaches."
-      },
-      {
-        "name": "Denman Hotel",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Thredbo."
+        "note": "4.1 mi from summit",
+        "lat": -36.50478,
+        "lon": 148.30432,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2393545170"
       }
     ],
     "food": [
@@ -8305,22 +8916,31 @@
     },
     "hotels": [
       {
-        "name": "Lake Jindabyne Hotel",
-        "rating": 4.8,
+        "name": "Perisher Hotel",
         "category": "Hotel",
-        "note": "Trusted base near Jindabyne for summit attempts."
+        "note": "8.5 mi from summit",
+        "lat": -36.40389,
+        "lon": 148.41084,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2399984198"
       },
       {
-        "name": "Banjo Paterson Inn",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Convenient stay for Mt. Townsend approaches."
+        "name": "Bullocks Hut",
+        "category": "Wilderness hut",
+        "note": "9.7 mi from summit",
+        "lat": -36.43681,
+        "lon": 148.44303,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/756645583"
       },
       {
-        "name": "Discovery Parks",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Jindabyne."
+        "name": "Pipers Creek Aquaduct Shelter",
+        "category": "Wilderness hut",
+        "note": "10.0 mi from summit",
+        "lat": -36.37668,
+        "lon": 148.42591,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/756645645"
       }
     ],
     "food": [
@@ -8404,22 +9024,31 @@
     },
     "hotels": [
       {
-        "name": "Spiterstulen",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Trusted base near Lom for summit attempts."
-      },
-      {
         "name": "Juvasshytta",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Convenient stay for Galdhøpiggen approaches."
+        "category": "Alpine hut",
+        "note": "3.2 mi from summit",
+        "lat": 61.67278,
+        "lon": 8.3707,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/9809293376"
       },
       {
-        "name": "Fossheim Hotel",
-        "rating": 4.4,
+        "name": "Elveseter Hotell",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Lom."
+        "note": "4.8 mi from summit",
+        "lat": 61.7043,
+        "lon": 8.28726,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2424604385"
+      },
+      {
+        "name": "Raubergstulen Turisthytte",
+        "category": "Alpine hut",
+        "note": "6.2 mi from summit",
+        "lat": 61.71731,
+        "lon": 8.39151,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/845213343"
       }
     ],
     "food": [
@@ -8503,22 +9132,31 @@
     },
     "hotels": [
       {
-        "name": "Kebnekaise Fjällstation",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Trusted base near Kiruna for summit attempts."
+        "name": "Husky Lodge",
+        "category": "Hostel",
+        "note": "43.3 mi from summit",
+        "lat": 67.88126,
+        "lon": 20.19209,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/10315552935"
       },
       {
-        "name": "Icehotel",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Convenient stay for Kebnekaise approaches."
+        "name": "Lägenhetshotell",
+        "category": "Hotel",
+        "note": "44.2 mi from summit",
+        "lat": 67.86064,
+        "lon": 20.22483,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2356514998"
       },
       {
-        "name": "Scandic Kiruna",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Kiruna."
+        "name": "point north hostel",
+        "category": "Hostel",
+        "note": "44.2 mi from summit",
+        "lat": 67.86186,
+        "lon": 20.22515,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4045303055"
       }
     ],
     "food": [
@@ -8602,22 +9240,31 @@
     },
     "hotels": [
       {
-        "name": "Lapland Hotel Kilpis",
-        "rating": 4.4,
-        "category": "Hotel",
-        "note": "Trusted base near Kilpisjärvi for summit attempts."
+        "name": "Urtashotelli",
+        "category": "Wilderness hut",
+        "note": "7.7 mi from summit",
+        "lat": 69.20265,
+        "lon": 21.18929,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/467847165"
       },
       {
-        "name": "Halti Hut",
-        "rating": 4.5,
-        "category": "Hut / hostel",
-        "note": "Convenient stay for Halti approaches."
+        "name": "Lossujärvi autiotupa",
+        "category": "Wilderness hut",
+        "note": "9.9 mi from summit",
+        "lat": 69.20085,
+        "lon": 21.01452,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/355321729"
       },
       {
-        "name": "Tundrea",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Kilpisjärvi."
+        "name": "Meekonjärvi varaustupa",
+        "category": "Wilderness hut",
+        "note": "10.2 mi from summit",
+        "lat": 69.16202,
+        "lon": 21.34248,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/12801161903"
       }
     ],
     "food": [
@@ -8701,22 +9348,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Samokov",
-        "rating": 4.5,
-        "category": "Hotel",
-        "note": "Trusted base near Borovets for summit attempts."
+        "name": "заслон Леденото езеро",
+        "category": "Alpine hut",
+        "note": "0.3 mi from summit",
+        "lat": 42.18343,
+        "lon": 23.58868,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1216550047"
       },
       {
-        "name": "Yastrebets",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Convenient stay for Musala approaches."
+        "name": "х.Чакър войвода",
+        "category": "Alpine hut",
+        "note": "4.1 mi from summit",
+        "lat": 42.23001,
+        "lon": 23.62905,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/274090210"
       },
       {
-        "name": "Rila Hotel",
-        "rating": 4.7,
+        "name": "Borovets Hills Ski & Spa",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Borovets."
+        "note": "5.7 mi from summit",
+        "lat": 42.26141,
+        "lon": 23.58241,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3452339327"
       }
     ],
     "food": [
@@ -8800,22 +9456,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Olympus Mediterranean",
-        "rating": 4.6,
-        "category": "Hotel",
-        "note": "Trusted base near Litochoro for summit attempts."
+        "name": "Ορειβατικό Καταφύγιο Ανάγκης \"Κώστας Μιγκοτζίδης\"",
+        "category": "Alpine hut",
+        "note": "2.1 mi from summit",
+        "lat": 40.05631,
+        "lon": 22.34844,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1594357292"
       },
       {
-        "name": "Gastrea Boutique",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Convenient stay for Mt. Olympus approaches."
+        "name": "Λιβαδάκι",
+        "category": "Alpine hut",
+        "note": "4.0 mi from summit",
+        "lat": 40.06669,
+        "lon": 22.43006,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1886682762"
       },
       {
-        "name": "Refuge A",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Litochoro."
+        "name": "Κορομηλιά Δίου",
+        "category": "Alpine hut",
+        "note": "5.2 mi from summit",
+        "lat": 40.13385,
+        "lon": 22.43468,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/945674283"
       }
     ],
     "food": [
@@ -8899,22 +9564,31 @@
     },
     "hotels": [
       {
-        "name": "Finca Los Llanos",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Trusted base near Capileira for summit attempts."
+        "name": "Hotel La Fragua I",
+        "category": "Hotel",
+        "note": "4.3 mi from summit",
+        "lat": 37.00249,
+        "lon": -3.26663,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2166775058"
       },
       {
-        "name": "Hostal Pampaneira",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Convenient stay for Mulhacén approaches."
+        "name": "Hotel Telecabina",
+        "category": "Hotel",
+        "note": "5.6 mi from summit",
+        "lat": 37.09343,
+        "lon": -3.39909,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2432852559"
       },
       {
-        "name": "Refugio Poqueira",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Capileira."
+        "name": "Finca los Llanos",
+        "category": "Hotel",
+        "note": "6.8 mi from summit",
+        "lat": 36.96214,
+        "lon": -3.35745,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/33515433"
       }
     ],
     "food": [
@@ -8998,22 +9672,31 @@
     },
     "hotels": [
       {
-        "name": "Parador de Las Cañadas",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Trusted base near Vilaflor for summit attempts."
-      },
-      {
-        "name": "Hotel Spa Villalba",
-        "rating": 4.2,
+        "name": "Pensión Germán",
         "category": "Hotel",
-        "note": "Convenient stay for Teide approaches."
+        "note": "8.0 mi from summit",
+        "lat": 28.15617,
+        "lon": -16.63734,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/310424668"
       },
       {
-        "name": "Refugio Altavista",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Vilaflor."
+        "name": "El Tejar & Spa",
+        "category": "Hotel",
+        "note": "8.2 mi from summit",
+        "lat": 28.1541,
+        "lon": -16.63586,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/310424706"
+      },
+      {
+        "name": "Hotel Rural Senderos de Abona",
+        "category": "Hotel",
+        "note": "10.9 mi from summit",
+        "lat": 28.12598,
+        "lon": -16.57707,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/310010845"
       }
     ],
     "food": [
@@ -9097,22 +9780,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel San Carlos",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Trusted base near Amecameca for summit attempts."
+        "name": "Refugio Otis McAllister",
+        "category": "Alpine hut",
+        "note": "0.9 mi from summit",
+        "lat": 19.16613,
+        "lon": -98.64631,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/1221176882"
       },
       {
-        "name": "Albergue Portillo",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Convenient stay for Iztaccíhuatl approaches."
+        "name": "Refugio de los 100",
+        "category": "Alpine hut",
+        "note": "1.6 mi from summit",
+        "lat": 19.15664,
+        "lon": -98.63704,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/266213388"
       },
       {
-        "name": "Posada Iztaccíhuatl",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Amecameca."
+        "name": "La Joya",
+        "category": "Alpine hut",
+        "note": "3.2 mi from summit",
+        "lat": 19.13389,
+        "lon": -98.65164,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/9673597317"
       }
     ],
     "food": [
@@ -9196,22 +9888,31 @@
     },
     "hotels": [
       {
-        "name": "Residencial Sorata",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Trusted base near Sorata for summit attempts."
+        "name": "Hotel Toro Bravo",
+        "category": "Hotel",
+        "note": "6.9 mi from summit",
+        "lat": -15.77863,
+        "lon": -68.64649,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/9220126312"
       },
       {
-        "name": "Altai Oasis",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Convenient stay for Illampu approaches."
+        "name": "hotel",
+        "category": "Hotel",
+        "note": "7.3 mi from summit",
+        "lat": -15.77349,
+        "lon": -68.64959,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/5062842549"
       },
       {
-        "name": "Hostal Las Lomas",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Sorata."
+        "name": "Residential Sorata",
+        "category": "Hostel",
+        "note": "7.3 mi from summit",
+        "lat": -15.77261,
+        "lon": -68.64933,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1939991609"
       }
     ],
     "food": [
@@ -9295,22 +9996,31 @@
     },
     "hotels": [
       {
-        "name": "Hotel Caraz",
-        "rating": 4.4,
-        "category": "Hotel",
-        "note": "Trusted base near Caraz for summit attempts."
+        "name": "Hospedaje Cesar's",
+        "category": "Motel",
+        "note": "14.2 mi from summit",
+        "lat": -8.96209,
+        "lon": -77.84288,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/5247467622"
       },
       {
-        "name": "Los Pinos Lodge",
-        "rating": 4.5,
-        "category": "Lodge",
-        "note": "Convenient stay for Alpamayo approaches."
+        "name": "Chamana",
+        "category": "Guest house",
+        "note": "15.3 mi from summit",
+        "lat": -9.03274,
+        "lon": -77.81528,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1373669682"
       },
       {
-        "name": "Santa Cruz Lodge",
-        "rating": 4.6,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Caraz."
+        "name": "Caraz Dulzura",
+        "category": "Guest house",
+        "note": "15.6 mi from summit",
+        "lat": -9.04167,
+        "lon": -77.81158,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1373666973"
       }
     ],
     "food": [
@@ -9394,22 +10104,31 @@
     },
     "hotels": [
       {
-        "name": "Refugio Huayna Potosí",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Trusted base near La Paz for summit attempts."
+        "name": "Refugio Nuevo Llaulini",
+        "category": "Alpine hut",
+        "note": "2.3 mi from summit",
+        "lat": -16.28688,
+        "lon": -68.12992,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/946343087"
       },
       {
-        "name": "Hotel Europa",
-        "rating": 4.6,
-        "category": "Hotel",
-        "note": "Convenient stay for Huayna Potosí approaches."
+        "name": "Refugio Huayna Potosi",
+        "category": "Alpine hut",
+        "note": "2.5 mi from summit",
+        "lat": -16.28119,
+        "lon": -68.12179,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1617132841"
       },
       {
-        "name": "Hostal Naira",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of La Paz."
+        "name": "Cabaña Museo Federico Nielsen Reyes",
+        "category": "Alpine hut",
+        "note": "6.4 mi from summit",
+        "lat": -16.35356,
+        "lon": -68.13169,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1077295314"
       }
     ],
     "food": [
@@ -9491,26 +10210,7 @@
       "lat": -79.77,
       "lon": -82.85
     },
-    "hotels": [
-      {
-        "name": "Union Glacier Camp",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Trusted base near Union Glacier Camp for summit attempts."
-      },
-      {
-        "name": "Vinson Base Camp",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Convenient stay for Mt. Vinson approaches."
-      },
-      {
-        "name": "ALE Field Camp",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Union Glacier Camp."
-      }
-    ],
+    "hotels": [],
     "food": [
       {
         "name": "Camp Mess Tent",
@@ -9592,22 +10292,13 @@
     },
     "hotels": [
       {
-        "name": "McMurdo Station",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Trusted base near McMurdo Station for summit attempts."
-      },
-      {
-        "name": "Field Camp",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Convenient stay for Mt. Sidley approaches."
-      },
-      {
-        "name": "ALE Support",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of McMurdo Station."
+        "name": "Stom's porch",
+        "category": "Hotel",
+        "note": "962.7 mi from summit",
+        "lat": -77.70515,
+        "lon": 166.58356,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1412231211"
       }
     ],
     "food": [
@@ -9691,22 +10382,31 @@
     },
     "hotels": [
       {
-        "name": "NuWray Inn",
-        "rating": 4.8,
-        "category": "Hotel",
-        "note": "Trusted base near Burnsville for summit attempts."
+        "name": "Albert's Lodge at Mt. Mitchell",
+        "category": "Motel",
+        "note": "3.7 mi from summit",
+        "lat": 35.77038,
+        "lon": -82.19859,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/1080164281"
       },
       {
-        "name": "Celo Inn",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Convenient stay for Mt. Mitchell approaches."
+        "name": "Mountain Light Sanctuary",
+        "category": "Hostel",
+        "note": "6.3 mi from summit",
+        "lat": 35.7527,
+        "lon": -82.37594,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3499401427"
       },
       {
-        "name": "Parkway Cabins",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Burnsville."
+        "name": "The Celo Inn",
+        "category": "Guest house",
+        "note": "6.6 mi from summit",
+        "lat": 35.83381,
+        "lon": -82.18404,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/474079628"
       }
     ],
     "food": [
@@ -9790,22 +10490,31 @@
     },
     "hotels": [
       {
-        "name": "Baxter Park Inn",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Trusted base near Millinocket for summit attempts."
+        "name": "Big Moose Inn",
+        "category": "Guest house",
+        "note": "12.8 mi from summit",
+        "lat": 45.72924,
+        "lon": -68.83767,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4383565393"
       },
       {
-        "name": "Katahdin Inn",
-        "rating": 4.3,
-        "category": "Hotel",
-        "note": "Convenient stay for Mt. Katahdin approaches."
+        "name": "Big Mud",
+        "category": "Chalet",
+        "note": "13.2 mi from summit",
+        "lat": 45.72735,
+        "lon": -68.81987,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/594391468"
       },
       {
-        "name": "Appalachian Trail Lodge",
-        "rating": 4.4,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Millinocket."
+        "name": "Sandy Stream",
+        "category": "Chalet",
+        "note": "13.2 mi from summit",
+        "lat": 45.72727,
+        "lon": -68.82012,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/594391462"
       }
     ],
     "food": [
@@ -9889,22 +10598,31 @@
     },
     "hotels": [
       {
-        "name": "Mirror Lake Inn",
-        "rating": 4.3,
-        "category": "Hotel",
-        "note": "Trusted base near Lake Placid for summit attempts."
+        "name": "Schulte's Family Lodge",
+        "category": "Motel",
+        "note": "11.2 mi from summit",
+        "lat": 44.27029,
+        "lon": -73.97633,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4030237892"
       },
       {
-        "name": "High Peaks Resort",
-        "rating": 4.4,
-        "category": "Lodge",
-        "note": "Convenient stay for Mt. Marcy approaches."
+        "name": "Alpine Motor Inn",
+        "category": "Motel",
+        "note": "11.7 mi from summit",
+        "lat": 44.27823,
+        "lon": -73.9767,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4030265670"
       },
       {
-        "name": "ADK Loj",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Lake Placid."
+        "name": "Edelweiss Motel",
+        "category": "Motel",
+        "note": "11.8 mi from summit",
+        "lat": 44.2785,
+        "lon": -73.97916,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4030237828"
       }
     ],
     "food": [
@@ -9988,22 +10706,31 @@
     },
     "hotels": [
       {
-        "name": "AMC Highland Center",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Trusted base near Gorham for summit attempts."
+        "name": "Lakes of the Clouds Hut",
+        "category": "Alpine hut",
+        "note": "1.1 mi from summit",
+        "lat": 44.25881,
+        "lon": -71.31897,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/314789293"
       },
       {
-        "name": "Town & Country Inn",
-        "rating": 4.5,
+        "name": "Joe Dodge Lodge",
         "category": "Hotel",
-        "note": "Convenient stay for Mt. Washington approaches."
+        "note": "2.6 mi from summit",
+        "lat": 44.25717,
+        "lon": -71.25361,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/251202983"
       },
       {
-        "name": "Mt. Washington Hotel",
-        "rating": 4.6,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Gorham."
+        "name": "Madison Spring Hut",
+        "category": "Alpine hut",
+        "note": "4.1 mi from summit",
+        "lat": 44.32779,
+        "lon": -71.28317,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/314797448"
       }
     ],
     "food": [
@@ -10087,22 +10814,31 @@
     },
     "hotels": [
       {
-        "name": "Sundance Resort",
-        "rating": 4.5,
-        "category": "Lodge",
-        "note": "Trusted base near Aspen Grove for summit attempts."
+        "name": "Holiday Inn Express",
+        "category": "Hotel",
+        "note": "7.5 mi from summit",
+        "lat": 40.36035,
+        "lon": -111.78252,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/287808190"
       },
       {
-        "name": "Timpanogos Lodge",
-        "rating": 4.6,
-        "category": "Lodge",
-        "note": "Convenient stay for Mt. Timpanogos approaches."
+        "name": "5th East Hall",
+        "category": "Hotel",
+        "note": "7.5 mi from summit",
+        "lat": 40.37302,
+        "lon": -111.78673,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/12497860481"
       },
       {
-        "name": "Homestead Resort",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Aspen Grove."
+        "name": "Residence Inn Provo",
+        "category": "Hotel",
+        "note": "8.8 mi from summit",
+        "lat": 40.26419,
+        "lon": -111.66287,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/161390754"
       }
     ],
     "food": [
@@ -10186,22 +10922,31 @@
     },
     "hotels": [
       {
-        "name": "Hyatt Place Draper",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Trusted base near Draper for summit attempts."
+        "name": "Iron Blosam Lodge",
+        "category": "Hotel",
+        "note": "6.2 mi from summit",
+        "lat": 40.58077,
+        "lon": -111.66165,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/206197545"
       },
       {
-        "name": "Homewood Suites",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Convenient stay for Lone Peak approaches."
+        "name": "Inn at Snowbird",
+        "category": "Hotel",
+        "note": "6.2 mi from summit",
+        "lat": 40.58109,
+        "lon": -111.66027,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/206197544"
       },
       {
-        "name": "Little America",
-        "rating": 4.8,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Draper."
+        "name": "The Lodge at Snowbird",
+        "category": "Hotel",
+        "note": "6.3 mi from summit",
+        "lat": 40.58127,
+        "lon": -111.6591,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/152251469"
       }
     ],
     "food": [
@@ -10285,22 +11030,31 @@
     },
     "hotels": [
       {
-        "name": "Jenny Lake Lodge",
-        "rating": 4.7,
-        "category": "Lodge",
-        "note": "Trusted base near Jackson for summit attempts."
-      },
-      {
-        "name": "Wort Hotel",
-        "rating": 4.8,
+        "name": "Cody House",
         "category": "Hotel",
-        "note": "Convenient stay for Grand Teton approaches."
+        "note": "10.6 mi from summit",
+        "lat": 43.58869,
+        "lon": -110.8292,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/235170088"
       },
       {
-        "name": "The Cloudveil",
-        "rating": 4.2,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Jackson."
+        "name": "Teton Club",
+        "category": "Hotel",
+        "note": "10.7 mi from summit",
+        "lat": 43.5881,
+        "lon": -110.82913,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/235170092"
+      },
+      {
+        "name": "Alpenhof Lodge",
+        "category": "Hotel",
+        "note": "10.7 mi from summit",
+        "lat": 43.58791,
+        "lon": -110.82717,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/235170085"
       }
     ],
     "food": [
@@ -10384,22 +11138,31 @@
     },
     "hotels": [
       {
+        "name": "Jenny Lake Lodge",
+        "category": "Hotel",
+        "note": "4.4 mi from summit",
+        "lat": 43.78274,
+        "lon": -110.72467,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/9856795188"
+      },
+      {
         "name": "Signal Mountain Lodge",
-        "rating": 4.8,
-        "category": "Lodge",
-        "note": "Trusted base near Moran for summit attempts."
+        "category": "Hotel",
+        "note": "8.3 mi from summit",
+        "lat": 43.84415,
+        "lon": -110.61081,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/307078051"
       },
       {
-        "name": "Jackson Lake Lodge",
-        "rating": 4.2,
-        "category": "Lodge",
-        "note": "Convenient stay for Mt. Moran approaches."
-      },
-      {
-        "name": "Colter Bay Village",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Moran."
+        "name": "Signal Mountain Lodge",
+        "category": "Hotel",
+        "note": "8.3 mi from summit",
+        "lat": 43.84421,
+        "lon": -110.61037,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/307078052"
       }
     ],
     "food": [
@@ -10483,22 +11246,31 @@
     },
     "hotels": [
       {
-        "name": "Historic Occidental Hotel",
-        "rating": 4.2,
-        "category": "Hotel",
-        "note": "Trusted base near Buffalo for summit attempts."
+        "name": "The Lake Stop Motel",
+        "category": "Guest house",
+        "note": "21.0 mi from summit",
+        "lat": 44.44404,
+        "lon": -106.75383,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/724199598"
       },
       {
-        "name": "Super 8 Buffalo",
-        "rating": 4.3,
-        "category": "Lodging",
-        "note": "Convenient stay for Cloud Peak approaches."
+        "name": "Z Bar Cabins and Motel",
+        "category": "Motel",
+        "note": "23.2 mi from summit",
+        "lat": 44.34902,
+        "lon": -106.70894,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/relation/12828503"
       },
       {
-        "name": "Cloud Peak Inn",
-        "rating": 4.4,
-        "category": "Hotel",
-        "note": "Popular with climbers staging out of Buffalo."
+        "name": "Mountain View Motel and Campground",
+        "category": "Motel",
+        "note": "23.3 mi from summit",
+        "lat": 44.34858,
+        "lon": -106.70679,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/952715927"
       }
     ],
     "food": [
@@ -10582,22 +11354,31 @@
     },
     "hotels": [
       {
-        "name": "Comfort Inn Alamosa",
-        "rating": 4.3,
+        "name": "Days Inn by Wyndham Alamosa",
         "category": "Hotel",
-        "note": "Trusted base near Alamosa for summit attempts."
+        "note": "21.5 mi from summit",
+        "lat": 37.47357,
+        "lon": -105.85543,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/857384082"
       },
       {
-        "name": "Valley Motel",
-        "rating": 4.4,
-        "category": "Hotel",
-        "note": "Convenient stay for Blanca Peak approaches."
+        "name": "Riverside Inn of Alamosa",
+        "category": "Motel",
+        "note": "21.7 mi from summit",
+        "lat": 37.47117,
+        "lon": -105.85897,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/864510077"
       },
       {
-        "name": "Great Sand Dunes Lodge",
-        "rating": 4.5,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Alamosa."
+        "name": "40 Winks Inn",
+        "category": "Hotel",
+        "note": "22.0 mi from summit",
+        "lat": 37.47071,
+        "lon": -105.86377,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/1036669735"
       }
     ],
     "food": [
@@ -10681,22 +11462,31 @@
     },
     "hotels": [
       {
-        "name": "Crestone Mountain Zen Center",
-        "rating": 4.4,
-        "category": "Lodging",
-        "note": "Trusted base near Crestone for summit attempts."
+        "name": "Col House B & B",
+        "category": "Guest house",
+        "note": "4.8 mi from summit",
+        "lat": 37.97838,
+        "lon": -105.67159,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/913728434"
       },
       {
-        "name": "Silver Star Guesthouse",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Convenient stay for Crestone Peak approaches."
+        "name": "Sangre de Cristo Inn",
+        "category": "Hotel",
+        "note": "6.5 mi from summit",
+        "lat": 37.99503,
+        "lon": -105.69886,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/913398150"
       },
       {
-        "name": "Desert Sage",
-        "rating": 4.6,
-        "category": "Lodging",
-        "note": "Popular with climbers staging out of Crestone."
+        "name": "Crestone Casitas",
+        "category": "Hotel",
+        "note": "7.0 mi from summit",
+        "lat": 38.00033,
+        "lon": -105.70588,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/913036920"
       }
     ],
     "food": [
@@ -10780,22 +11570,31 @@
     },
     "hotels": [
       {
-        "name": "The Little Nell",
-        "rating": 4.5,
-        "category": "Lodging",
-        "note": "Trusted base near Aspen for summit attempts."
+        "name": "Stonebridge Inn",
+        "category": "Hotel",
+        "note": "8.1 mi from summit",
+        "lat": 39.20837,
+        "lon": -106.95223,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/10649928642"
       },
       {
-        "name": "Hotel Jerome",
-        "rating": 4.6,
+        "name": "One",
         "category": "Hotel",
-        "note": "Convenient stay for Capitol Peak approaches."
+        "note": "8.3 mi from summit",
+        "lat": 39.2096,
+        "lon": -106.94783,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/10649939423"
       },
       {
-        "name": "St. Regis Aspen",
-        "rating": 4.7,
+        "name": "The Inn at Aspen",
         "category": "Hotel",
-        "note": "Popular with climbers staging out of Aspen."
+        "note": "12.6 mi from summit",
+        "lat": 39.20544,
+        "lon": -106.85926,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/227729808"
       }
     ],
     "food": [
@@ -10879,22 +11678,31 @@
     },
     "hotels": [
       {
-        "name": "Limelight Hotel",
-        "rating": 4.6,
+        "name": "Stonebridge Inn",
         "category": "Hotel",
-        "note": "Trusted base near Aspen for summit attempts."
+        "note": "9.5 mi from summit",
+        "lat": 39.20837,
+        "lon": -106.95223,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/10649928642"
       },
       {
-        "name": "The Gant",
-        "rating": 4.7,
-        "category": "Lodging",
-        "note": "Convenient stay for Pyramid Peak approaches."
+        "name": "One",
+        "category": "Hotel",
+        "note": "9.5 mi from summit",
+        "lat": 39.2096,
+        "lon": -106.94783,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/10649939423"
       },
       {
-        "name": "Molly Gibson Lodge",
-        "rating": 4.8,
-        "category": "Lodge",
-        "note": "Popular with climbers staging out of Aspen."
+        "name": "The Inn at Aspen",
+        "category": "Hotel",
+        "note": "10.5 mi from summit",
+        "lat": 39.20544,
+        "lon": -106.85926,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/227729808"
       }
     ],
     "food": [

@@ -53,7 +53,13 @@ Open the URL Vite prints (usually `http://localhost:5173`).
 
 ## Data
 
-Peak data lives in [`src/data/peaks.json`](src/data/peaks.json). Peak photos include Wikimedia Commons credit, license, and source links in the dossier. Lodging/food entries are sample suggestions only — not verified listings or ratings.
+Peak data lives in [`src/data/peaks.json`](src/data/peaks.json). Peak photos include Wikimedia Commons credit, license, and source links in the dossier. Lodging is pulled from OpenStreetMap (`npm run enrich:lodging`); food entries remain sample suggestions only.
+
+To refresh OSM lodging:
+
+```bash
+npm run enrich:lodging
+```
 
 To regenerate enriched peak fields after editing the curated map:
 

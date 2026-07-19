@@ -12,6 +12,7 @@
     "enrich:photos": "node scripts/enrich-photos.mjs",
     "enrich:content": "node scripts/enrich-content.mjs",
     "enrich:amenities": "node scripts/enrich-amenities.mjs",
+    "enrich:lodging": "node scripts/enrich-lodging.mjs",
     "validate:photos": "node scripts/validate-fix-photos.mjs",
     "validate:photos:check": "node scripts/validate-fix-photos.mjs --check"
   },

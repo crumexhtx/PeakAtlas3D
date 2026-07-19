@@ -8,6 +8,12 @@ type PeakPhotoGalleryProps = {
   photos: PeakPhoto[]
 }
 
+function shortenCredit(credit: string, max = 42) {
+  const trimmed = credit.trim()
+  if (trimmed.length <= max) return trimmed
+  return `${trimmed.slice(0, max - 1)}…`
+}
+
 function PhotoCredit({ photo }: { photo: PeakPhoto }) {
   const credit = photo.credit?.trim()
   const license = photo.license?.trim()
@@ -15,21 +21,24 @@ function PhotoCredit({ photo }: { photo: PeakPhoto }) {
 
   if (!credit && !license && !sourceUrl) return null
 
+  const label = [credit ? shortenCredit(credit) : null, license].filter(Boolean).join(' · ')
+
   return (
     <figcaption className="peak-photo-credit">
-      <span className="peak-photo-credit-text">
-        {credit ? `Photo: ${credit}` : 'Photo'}
-        {license ? ` · ${license}` : ''}
-      </span>
-      {sourceUrl && (
+      {sourceUrl ? (
         <a
           className="peak-photo-credit-link"
           href={sourceUrl}
           target="_blank"
           rel="noopener noreferrer"
+          title={credit ? `${credit}${license ? ` · ${license}` : ''}` : 'Photo source'}
         >
-          Source
+          {label || 'Source'}
         </a>
+      ) : (
+        <span className="peak-photo-credit-text" title={credit || undefined}>
+          {label}
+        </span>
       )}
     </figcaption>
   )
@@ -58,10 +67,26 @@ export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryPro
 
   if (!slides.length || !active) return null
 
-  if (!multi) {
-    return (
-      <figure className="peak-photo">
-        <div className="peak-photo-stage">
+  return (
+    <figure
+      className={`peak-photo${multi ? ' peak-photo-gallery' : ''}`}
+      onMouseEnter={multi ? () => setPaused(true) : undefined}
+      onMouseLeave={multi ? () => setPaused(false) : undefined}
+    >
+      <div className="peak-photo-stage">
+        {multi ? (
+          slides.map((photo, i) => (
+            <img
+              key={photo.url}
+              src={photo.url}
+              alt={`${peakName} — view ${i + 1}`}
+              className={`peak-photo-slide ${i === index ? 'is-active' : ''}`}
+              loading={i === 0 ? 'eager' : 'lazy'}
+              decoding="async"
+              referrerPolicy="no-referrer"
+            />
+          ))
+        ) : (
           <img
             src={active.url}
             alt={`${peakName} — summit view`}
@@ -69,46 +94,25 @@ export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryPro
             decoding="async"
             referrerPolicy="no-referrer"
           />
-        </div>
+        )}
+
+        {multi && (
+          <div className="peak-photo-dots" role="group" aria-label="Choose photo">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                className={`peak-photo-dot ${i === index ? 'is-active' : ''}`}
+                aria-label={`Show photo ${i + 1}`}
+                aria-current={i === index ? 'true' : undefined}
+                onClick={() => setIndex(i)}
+              />
+            ))}
+          </div>
+        )}
+
         <PhotoCredit photo={active} />
-      </figure>
-    )
-  }
-
-  return (
-    <figure
-      className="peak-photo peak-photo-gallery"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-    >
-      <div className="peak-photo-stage">
-        {slides.map((photo, i) => (
-          <img
-            key={photo.url}
-            src={photo.url}
-            alt={`${peakName} — view ${i + 1}`}
-            className={`peak-photo-slide ${i === index ? 'is-active' : ''}`}
-            loading={i === 0 ? 'eager' : 'lazy'}
-            decoding="async"
-            referrerPolicy="no-referrer"
-          />
-        ))}
-
-        <div className="peak-photo-dots" role="group" aria-label="Choose photo">
-          {slides.map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              className={`peak-photo-dot ${i === index ? 'is-active' : ''}`}
-              aria-label={`Show photo ${i + 1}`}
-              aria-current={i === index ? 'true' : undefined}
-              onClick={() => setIndex(i)}
-            />
-          ))}
-        </div>
       </div>
-
-      <PhotoCredit photo={active} />
     </figure>
   )
 }
