@@ -19,6 +19,24 @@ function upsertMeta(
   el.setAttribute('content', content)
 }
 
+function upsertCanonical(href: string) {
+  let el = document.head.querySelector(
+    'link[rel="canonical"]',
+  ) as HTMLLinkElement | null
+  if (!el) {
+    el = document.createElement('link')
+    el.setAttribute('rel', 'canonical')
+    document.head.appendChild(el)
+  }
+  el.setAttribute('href', href)
+}
+
+function absoluteUrl(path: string) {
+  const origin =
+    typeof window !== 'undefined' ? window.location.origin : 'https://peakatlas3d.com'
+  return new URL(path, origin).toString()
+}
+
 function peakImage(peak: Peak): string | undefined {
   return peak.photos?.[0]?.url || peak.photo?.url
 }
@@ -44,9 +62,10 @@ export function applyDocumentMeta(input: {
     upsertMeta('name', 'twitter:image', input.image)
   }
 
-  if (typeof window !== 'undefined' && input.path != null) {
-    const url = new URL(input.path, window.location.origin).toString()
+  if (input.path != null) {
+    const url = absoluteUrl(input.path)
     upsertMeta('property', 'og:url', url)
+    upsertCanonical(url)
   }
 }
 
@@ -65,14 +84,13 @@ export function metaForAtlas(country: string | null) {
   }
 }
 
-export function metaForPeak(peak: Peak, country?: string | null) {
+export function metaForPeak(peak: Peak, _country?: string | null) {
   const elevation = `${peak.elevationFt.toLocaleString('en-US')} ft`
   const description =
     peak.description?.trim() ||
     `${peak.name} in the ${peak.range}, ${peak.country} — ${elevation}.`
-  const path = country
-    ? `/peak/${peak.id}?country=${encodeURIComponent(country)}`
-    : `/peak/${peak.id}`
+  // Canonicalize without ?country= so Google doesn't treat nav variants as duplicates.
+  const path = `/peak/${peak.id}`
 
   return {
     title: `${peak.name} · PeakAtlas3D`,

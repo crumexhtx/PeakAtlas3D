@@ -1,0 +1,5 @@
+# https://peakatlas3d.com — allow full crawl; see SEO starter guide sitemap tip.
+User-agent: *
+Allow: /
+
+Sitemap: https://peakatlas3d.com/sitemap.xml
