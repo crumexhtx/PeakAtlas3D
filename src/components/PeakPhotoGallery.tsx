@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { PeakPhoto } from '../types/peak'
+import { photoSrcSet, photoThumb } from '../lib/photoUrl'
 
 const ROTATE_MS = 5_500
 
@@ -78,7 +79,9 @@ export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryPro
           slides.map((photo, i) => (
             <img
               key={photo.url}
-              src={photo.url}
+              src={photoThumb(photo.url, 640)}
+              srcSet={photoSrcSet(photo.url)}
+              sizes="(max-width: 640px) 100vw, 360px"
               alt={`${peakName} — view ${i + 1}`}
               className={`peak-photo-slide ${i === index ? 'is-active' : ''}`}
               loading={i === 0 ? 'eager' : 'lazy'}
@@ -88,7 +91,9 @@ export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryPro
           ))
         ) : (
           <img
-            src={active.url}
+            src={photoThumb(active.url, 640)}
+            srcSet={photoSrcSet(active.url)}
+            sizes="(max-width: 640px) 100vw, 360px"
             alt={`${peakName} — summit view`}
             loading="eager"
             decoding="async"
