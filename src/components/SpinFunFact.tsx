@@ -5,7 +5,7 @@ import type { CountrySummary } from '../types/country'
 import { flagUrl } from '../lib/countries'
 import { isOnFrontHemisphere } from '../lib/globeVisibility'
 import { useUnits } from '../context/UnitsContext'
-import { pickRandomFact, pickRandomPeak } from '../lib/peakFacts'
+import { pickRandomFact } from '../lib/peakFacts'
 
 type SpinFunFactProps = {
   map: MapboxMap | null
@@ -21,10 +21,20 @@ type FactContent = {
   flag: string | null
 }
 
-const CENTER_RADIUS_PX = 150
+type Anchor = {
+  peakId: string
+  countryName: string
+  lon: number
+  lat: number
+}
+
+const CENTER_RADIUS_PX = 130
+const EDGE_MARGIN_PX = 28
 const HOLD_MS = 5_400
 const CARD_W = 272
 const CARD_H = 118
+/** Stronger than marker culling — avoid limb/far-side false hits. */
+const FRONT_DOT = 0.28
 
 function placeCard(flagX: number, flagY: number, vw: number, vh: number) {
   let cardX = flagX - CARD_W - 36
@@ -36,6 +46,27 @@ function placeCard(flagX: number, flagY: number, vw: number, vh: number) {
   return { cardX, cardY }
 }
 
+function projectPeak(
+  map: MapboxMap,
+  lon: number,
+  lat: number,
+  vw: number,
+  vh: number,
+) {
+  if (!isOnFrontHemisphere(map, lon, lat, FRONT_DOT)) return null
+  const pt = map.project([lon, lat])
+  if (!Number.isFinite(pt.x) || !Number.isFinite(pt.y)) return null
+  if (
+    pt.x < EDGE_MARGIN_PX ||
+    pt.y < EDGE_MARGIN_PX + 48 ||
+    pt.x > vw - EDGE_MARGIN_PX ||
+    pt.y > vh - EDGE_MARGIN_PX
+  ) {
+    return null
+  }
+  return pt
+}
+
 export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProps) {
   const { units } = useUnits()
   const [content, setContent] = useState<FactContent | null>(null)
@@ -44,31 +75,23 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
   const dotRef = useRef<SVGCircleElement | null>(null)
   const wrapRef = useRef<HTMLDivElement | null>(null)
   const holdUntilRef = useRef(0)
-  const activeCountryRef = useRef<string | null>(null)
+  const activeRef = useRef<Anchor | null>(null)
   const lastPeakIdRef = useRef<string | null>(null)
   const lastFactRef = useRef<string | null>(null)
 
-  const peaksByCountry = useMemo(() => {
-    const m = new Map<string, Peak[]>()
-    for (const country of countries) {
-      m.set(
-        country.name,
-        peaks.filter((p) => country.labels.includes(p.country)),
-      )
-    }
-    return m
-  }, [peaks, countries])
-
-  const countryByName = useMemo(() => {
+  const countryByLabel = useMemo(() => {
     const m = new Map<string, CountrySummary>()
-    for (const c of countries) m.set(c.name, c)
+    for (const country of countries) {
+      m.set(country.name, country)
+      for (const label of country.labels) m.set(label, country)
+    }
     return m
   }, [countries])
 
   useEffect(() => {
     if (!spinning || !map) {
       setContent(null)
-      activeCountryRef.current = null
+      activeRef.current = null
       holdUntilRef.current = 0
       return
     }
@@ -93,13 +116,14 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
     }
 
     const clearCallout = () => {
-      activeCountryRef.current = null
+      activeRef.current = null
       holdUntilRef.current = 0
       if (wrapRef.current) wrapRef.current.style.opacity = '0'
       setContent(null)
     }
 
-    const showForCountry = (
+    const showForPeak = (
+      peak: Peak,
       country: CountrySummary,
       x: number,
       y: number,
@@ -107,13 +131,15 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
       vh: number,
       now: number,
     ) => {
-      const countryPeaks = peaksByCountry.get(country.name) ?? []
-      const peak = pickRandomPeak(countryPeaks, lastPeakIdRef.current ?? undefined)
-      if (!peak) return
       const fact = pickRandomFact(peak, units, lastFactRef.current ?? undefined)
       lastPeakIdRef.current = peak.id
       lastFactRef.current = fact
-      activeCountryRef.current = country.name
+      activeRef.current = {
+        peakId: peak.id,
+        countryName: country.name,
+        lon: peak.lon,
+        lat: peak.lat,
+      }
       holdUntilRef.current = now + HOLD_MS
       setContent({
         countryName: country.name,
@@ -124,22 +150,28 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
       applyGeometry(x, y, vw, vh)
     }
 
-    const projectVisible = (country: CountrySummary) => {
-      if (!isOnFrontHemisphere(map, country.lon, country.lat)) return null
-      const pt = map.project([country.lon, country.lat])
-      return pt
-    }
+    const nearestPeakInCenter = (vw: number, vh: number, cx: number, cy: number) => {
+      let best:
+        | {
+            peak: Peak
+            country: CountrySummary
+            dist: number
+            x: number
+            y: number
+          }
+        | null = null
 
-    const nearestInCenter = (vw: number, vh: number, cx: number, cy: number) => {
-      let best: { country: CountrySummary; dist: number; x: number; y: number } | null =
-        null
-      for (const country of countries) {
-        const pt = projectVisible(country)
+      for (const peak of peaks) {
+        if (peak.id === lastPeakIdRef.current) continue
+        const country = countryByLabel.get(peak.country)
+        if (!country) continue
+        const pt = projectPeak(map, peak.lon, peak.lat, vw, vh)
         if (!pt) continue
-        if (pt.x < 0 || pt.y < 0 || pt.x > vw || pt.y > vh) continue
         const dist = Math.hypot(pt.x - cx, pt.y - cy)
         if (dist > CENTER_RADIUS_PX) continue
-        if (!best || dist < best.dist) best = { country, dist, x: pt.x, y: pt.y }
+        if (!best || dist < best.dist) {
+          best = { peak, country, dist, x: pt.x, y: pt.y }
+        }
       }
       return best
     }
@@ -150,32 +182,34 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
       const vh = canvas.clientHeight
       const cx = vw / 2
       const cy = vh / 2
-      const activeName = activeCountryRef.current
+      const active = activeRef.current
 
-      if (activeName) {
-        const active = countryByName.get(activeName)
-        if (!active) {
+      if (active) {
+        const pt = projectPeak(map, active.lon, active.lat, vw, vh)
+        if (!pt) {
           clearCallout()
         } else {
-          const pt = projectVisible(active)
-          if (!pt) {
-            // Rotated onto the far side of the globe — drop immediately.
-            clearCallout()
-          } else {
-            applyGeometry(pt.x, pt.y, vw, vh)
-            const dist = Math.hypot(pt.x - cx, pt.y - cy)
-            if (now >= holdUntilRef.current) {
-              if (dist > CENTER_RADIUS_PX * 1.25) {
-                clearCallout()
+          applyGeometry(pt.x, pt.y, vw, vh)
+          const dist = Math.hypot(pt.x - cx, pt.y - cy)
+          if (now >= holdUntilRef.current) {
+            if (dist > CENTER_RADIUS_PX * 1.2) {
+              clearCallout()
+            } else {
+              const peak = peaks.find((p) => p.id === active.peakId)
+              const country = countryByLabel.get(active.countryName)
+              if (peak && country) {
+                showForPeak(peak, country, pt.x, pt.y, vw, vh, now)
               } else {
-                showForCountry(active, pt.x, pt.y, vw, vh, now)
+                clearCallout()
               }
             }
           }
         }
       } else {
-        const best = nearestInCenter(vw, vh, cx, cy)
-        if (best) showForCountry(best.country, best.x, best.y, vw, vh, now)
+        const best = nearestPeakInCenter(vw, vh, cx, cy)
+        if (best) {
+          showForPeak(best.peak, best.country, best.x, best.y, vw, vh, now)
+        }
       }
 
       frame = requestAnimationFrame(tick)
@@ -183,7 +217,7 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
 
     frame = requestAnimationFrame(tick)
     return () => cancelAnimationFrame(frame)
-  }, [spinning, map, countries, peaksByCountry, countryByName, units])
+  }, [spinning, map, peaks, countryByLabel, units])
 
   if (!spinning || !content) return null
 
@@ -202,6 +236,7 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
               className="spin-fun-fact-flag"
               width={28}
               height={20}
+              referrerPolicy="no-referrer"
             />
           ) : (
             <span className="spin-fun-fact-flag-fallback" aria-hidden="true">
