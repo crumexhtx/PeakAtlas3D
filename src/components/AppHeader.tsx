@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import type { Peak } from '../types/peak'
 import { formatElevation, searchPeaks } from '../lib/geo'
@@ -100,6 +100,11 @@ export function AppHeader({
           </ul>
         )}
       </div>
+
+      <nav className="site-nav site-nav-compact" aria-label="Site">
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+      </nav>
 
       <div className="unit-toggle" role="group" aria-label="Units">
         <button

@@ -1,8 +1,11 @@
 import type { Peak } from './peak'
 
 export type CountrySummary = {
-  /** Exact country label from peak data (browse/filter key). */
+  /** Primary country label used for browse/filter (one flag on the globe). */
   name: string
+  /** All peak.country labels rolled into this flag (e.g. Nepal + Nepal/China). */
+  labels: string[]
+  /** Geographic center-of-mass for the country marker. */
   lat: number
   lon: number
   peakCount: number

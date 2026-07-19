@@ -22,29 +22,41 @@
     "hotels": [
       {
         "name": "Whittaker's Bunkhouse",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hut / hostel",
+        "note": "Trusted base near Ashford for summit attempts."
       },
       {
         "name": "Paradise Inn",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Rainier approaches."
       },
       {
         "name": "Nisqually Lodge",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Ashford."
       }
     ],
     "food": [
       {
         "name": "Copper Creek Inn",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Ashford."
       },
       {
         "name": "Scaleburgers",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Cascade Range."
       },
       {
         "name": "Wild Berry Restaurant",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -109,29 +121,41 @@
     "hotels": [
       {
         "name": "Mount Shasta Resort",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodge",
+        "note": "Trusted base near Mount Shasta for summit attempts."
       },
       {
         "name": "Best Western Tree House",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Convenient stay for Mt. Shasta approaches."
       },
       {
         "name": "Strawberry Valley Inn",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Mount Shasta."
       }
     ],
     "food": [
       {
         "name": "Lilys",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Mount Shasta."
       },
       {
         "name": "Seven Suns Coffee",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Café",
+        "note": "Local favorite after days on Cascade Range."
       },
       {
         "name": "Yaks",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -210,29 +234,41 @@
     "hotels": [
       {
         "name": "Timberline Lodge",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodge",
+        "note": "Trusted base near Government Camp for summit attempts."
       },
       {
         "name": "Mt. Hood Inn",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Hood approaches."
       },
       {
         "name": "Best Western Mt. Hood",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Government Camp."
       }
     ],
     "food": [
       {
         "name": "Cascade Dining Room",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Government Camp."
       },
       {
         "name": "Ice Axe Grill",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Pub / grill",
+        "note": "Local favorite after days on Cascade Range."
       },
       {
         "name": "Charlie's Mountain View",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -297,29 +333,41 @@
     "hotels": [
       {
         "name": "Mt. Baker Lodging",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Trusted base near Glacier for summit attempts."
       },
       {
         "name": "Snowline Inn",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Baker approaches."
       },
       {
         "name": "Kulshan Cabin",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hut / hostel",
+        "note": "Popular with climbers staging out of Glacier."
       }
     ],
     "food": [
       {
         "name": "Milano's",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Glacier."
       },
       {
         "name": "Wake 'n Bakery",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Café",
+        "note": "Local favorite after days on Cascade Range."
       },
       {
         "name": "Chair 9 Pizza",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Casual eats",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -398,29 +446,41 @@
     "hotels": [
       {
         "name": "Trout Lake Valley Inn",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Trusted base near Trout Lake for summit attempts."
       },
       {
         "name": "Kilckitat Lodge",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Convenient stay for Mt. Adams approaches."
       },
       {
         "name": "Farmhouse Bed & Breakfast",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Trout Lake."
       }
     ],
     "food": [
       {
         "name": "Cafe Contento",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Café",
+        "note": "Solid post-summit meal in Trout Lake."
       },
       {
         "name": "Trout Lake Country Store Café",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Cascade Range."
       },
       {
         "name": "Guler Mountain Homestead",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -499,29 +559,41 @@
     "hotels": [
       {
         "name": "Talkeetna Alaskan Lodge",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Trusted base near Talkeetna for summit attempts."
       },
       {
         "name": "Denali Overlook Inn",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Convenient stay for Denali approaches."
       },
       {
         "name": "Swiss Alaska Inn",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Talkeetna."
       }
     ],
     "food": [
       {
         "name": "Roadhouse",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Talkeetna."
       },
       {
         "name": "Mountain High Pizza Pie",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Casual eats",
+        "note": "Local favorite after days on Alaska Range."
       },
       {
         "name": "Wildflower Café",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -586,29 +658,41 @@
     "hotels": [
       {
         "name": "Delaware Hotel",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Trusted base near Leadville for summit attempts."
       },
       {
         "name": "Leadville Hostel",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hut / hostel",
+        "note": "Convenient stay for Mt. Elbert approaches."
       },
       {
         "name": "Mountain Monarch",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Leadville."
       }
     ],
     "food": [
       {
         "name": "Tennessee Pass Café",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Leadville."
       },
       {
         "name": "High Mountain Pies",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Sawatch Range."
       },
       {
         "name": "Silver Dollar Saloon",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -687,29 +771,41 @@
     "hotels": [
       {
         "name": "Whitney Portal Hostel",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hut / hostel",
+        "note": "Trusted base near Lone Pine for summit attempts."
       },
       {
         "name": "Dow Villa Motel",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Whitney approaches."
       },
       {
         "name": "Lone Pine Budget Inn",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Lone Pine."
       }
     ],
     "food": [
       {
         "name": "Alabama Hills Café",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Lone Pine."
       },
       {
         "name": "Seasons Restaurant",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Sierra Nevada."
       },
       {
         "name": "Mt. Whitney Restaurant",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -788,29 +884,41 @@
     "hotels": [
       {
         "name": "The Stanley Hotel",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Trusted base near Estes Park for summit attempts."
       },
       {
         "name": "YMCA of the Rockies",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Convenient stay for Longs Peak approaches."
       },
       {
         "name": "River Stone Resort",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Estes Park."
       }
     ],
     "food": [
       {
         "name": "The Nest",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Estes Park."
       },
       {
         "name": "Ed's Cantina",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Front Range."
       },
       {
         "name": "Mountain Home Café",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -859,10 +967,10 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Longs_Peak_from_the_Dream_Lake_trail_at_sunrise,_Rocky_Mountain_National_Park,_Colorado,_USA.jpg"
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Long%27s_Peak_from_Mont_Alto%2C_Colorado-LCCN2008678209.tif/lossy-page1-960px-Long%27s_Peak_from_Mont_Alto%2C_Colorado-LCCN2008678209.tif.jpg",
-        "credit": "Unknown",
-        "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Long%27s_Peak_from_Mont_Alto,_Colorado-LCCN2008678209.tif"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Meeker%2C_Longs%2C_Lady_Washington.jpg/960px-Meeker%2C_Longs%2C_Lady_Washington.jpg",
+        "credit": "mark  byzewski",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meeker,_Longs,_Lady_Washington.jpg"
       }
     ]
   },
@@ -889,29 +997,41 @@
     "hotels": [
       {
         "name": "Cliff House",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Trusted base near Manitou Springs for summit attempts."
       },
       {
         "name": "Eagle Motel",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Convenient stay for Pikes Peak approaches."
       },
       {
         "name": "Avenue Hotel",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Manitou Springs."
       }
     ],
     "food": [
       {
         "name": "Adam's Mountain Café",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Manitou Springs."
       },
       {
         "name": "The Loop",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Front Range."
       },
       {
         "name": "Manitou Bakery",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Café",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -990,29 +1110,41 @@
     "hotels": [
       {
         "name": "Sundance Motel",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Trusted base near Pinedale for summit attempts."
       },
       {
         "name": "River Ranch",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Convenient stay for Gannett Peak approaches."
       },
       {
         "name": "Lakeside Lodge",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Pinedale."
       }
     ],
     "food": [
       {
         "name": "Wind River Brewing",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Pinedale."
       },
       {
         "name": "The Place",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Wind River Range."
       },
       {
         "name": "Wrangler Cafe",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Café",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -1085,29 +1217,41 @@
     "hotels": [
       {
         "name": "Yodeler Motel",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Trusted base near Red Lodge for summit attempts."
       },
       {
         "name": "Pollard Hotel",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hotel",
+        "note": "Convenient stay for Granite Peak approaches."
       },
       {
         "name": "Beartooth Hideaway",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Red Lodge."
       }
     ],
     "food": [
       {
         "name": "Café Regis",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Red Lodge."
       },
       {
         "name": "Red Lodge Ales",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Beartooth Mountains."
       },
       {
         "name": "Bogart's",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -1186,29 +1330,41 @@
     "hotels": [
       {
         "name": "Mountain View Motel",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hotel",
+        "note": "Trusted base near Mountain View for summit attempts."
       },
       {
         "name": "Uinta Inn",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Convenient stay for Kings Peak approaches."
       },
       {
         "name": "Flaming Gorge Lodge",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Mountain View."
       }
     ],
     "food": [
       {
         "name": "Cowboy Bar & Grill",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Pub / grill",
+        "note": "Solid post-summit meal in Mountain View."
       },
       {
         "name": "Mountain View Café",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Uinta Mountains."
       },
       {
         "name": "Dutch John Resort Restaurant",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -1287,29 +1443,41 @@
     "hotels": [
       {
         "name": "Little America",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Trusted base near Flagstaff for summit attempts."
       },
       {
         "name": "Drury Inn",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Convenient stay for Humphreys Peak approaches."
       },
       {
         "name": "Weatherford Hotel",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Flagstaff."
       }
     ],
     "food": [
       {
         "name": "Criollo",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Flagstaff."
       },
       {
         "name": "Diablo Burger",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Casual eats",
+        "note": "Local favorite after days on San Francisco Peaks."
       },
       {
         "name": "Tourist Home",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -1374,29 +1542,41 @@
     "hotels": [
       {
         "name": "Pine Springs Visitor Area",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Trusted base near Pine Springs for summit attempts."
       },
       {
         "name": "Carlsbad Hotel",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Convenient stay for Guadalupe Peak approaches."
       },
       {
         "name": "Best Western Stevens Inn",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Pine Springs."
       }
     ],
     "food": [
       {
         "name": "Lucy’s Mexicali Restaurant",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Pine Springs."
       },
       {
         "name": "YellowBrix",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Guadalupe Mountains."
       },
       {
         "name": "Blue House Café",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -1432,23 +1612,23 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Guadalupe_Peak_from_Bowl_Trail.JPG/960px-Guadalupe_Peak_from_Bowl_Trail.JPG",
-      "credit": "Fredlyfish4",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Guadalupe_peak_from_top.jpg/960px-Guadalupe_peak_from_top.jpg",
+      "credit": "Jrossz71",
       "license": "CC BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guadalupe_Peak_from_Bowl_Trail.JPG"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guadalupe_peak_from_top.jpg"
     },
     "photos": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Guadalupe_Peak_from_Bowl_Trail.JPG/960px-Guadalupe_Peak_from_Bowl_Trail.JPG",
-        "credit": "Fredlyfish4",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Guadalupe_peak_from_top.jpg/960px-Guadalupe_peak_from_top.jpg",
+        "credit": "Jrossz71",
         "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guadalupe_Peak_from_Bowl_Trail.JPG"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guadalupe_peak_from_top.jpg"
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Texas_-_Guadalupe_Peak_-_NARA_-_68149389.jpg/960px-Texas_-_Guadalupe_Peak_-_NARA_-_68149389.jpg",
-        "credit": "Unknown authorUnknown author or not provided",
-        "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Texas_-_Guadalupe_Peak_-_NARA_-_68149389.jpg"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Summit_of_the_Guadalupe_Peak_DSC_5528_ad.JPG/960px-Summit_of_the_Guadalupe_Peak_DSC_5528_ad.JPG",
+        "credit": "Adavyd",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Summit_of_the_Guadalupe_Peak_DSC_5528_ad.JPG"
       }
     ]
   },
@@ -1475,29 +1655,41 @@
     "hotels": [
       {
         "name": "Best Western Valemount",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Trusted base near Valemount for summit attempts."
       },
       {
         "name": "Mount Robson Lodge",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodge",
+        "note": "Convenient stay for Mt. Robson approaches."
       },
       {
         "name": "Alpine Inn",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Valemount."
       }
     ],
     "food": [
       {
         "name": "Three Ranges Brewing",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Valemount."
       },
       {
         "name": "Sugar Shack",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Canadian Rockies."
       },
       {
         "name": "Crescent Spur Lodge",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -1533,23 +1725,23 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Mount_Robson_panorama.jpg/960px-Mount_Robson_panorama.jpg",
-      "credit": "The Cosmonaut",
-      "license": "CC BY-SA 2.5 ca",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Robson_panorama.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Mount_Robson_08122005.jpg/960px-Mount_Robson_08122005.jpg",
+      "credit": "Michael Konen",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Robson_08122005.jpg"
     },
     "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Mount_Robson_08122005.jpg/960px-Mount_Robson_08122005.jpg",
+        "credit": "Michael Konen",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Robson_08122005.jpg"
+      },
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Mount_Robson_panorama.jpg/960px-Mount_Robson_panorama.jpg",
         "credit": "The Cosmonaut",
         "license": "CC BY-SA 2.5 ca",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Robson_panorama.jpg"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Time_zone_crossing_sign_-_Mount_Robson_Provincial_Park%2C_British_Columbia%2C_Canada_-_July_1990.jpg/960px-Time_zone_crossing_sign_-_Mount_Robson_Provincial_Park%2C_British_Columbia%2C_Canada_-_July_1990.jpg",
-        "credit": "Giorgio Galeotti",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Time_zone_crossing_sign_-_Mount_Robson_Provincial_Park,_British_Columbia,_Canada_-_July_1990.jpg"
       }
     ]
   },
@@ -1576,29 +1768,41 @@
     "hotels": [
       {
         "name": "The Village Bakery Inn",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Trusted base near Haines Junction for summit attempts."
       },
       {
         "name": "Kluane Park Inn",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Logan approaches."
       },
       {
         "name": "Alsek Lodge",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Haines Junction."
       }
     ],
     "food": [
       {
         "name": "Village Bakery",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Café",
+        "note": "Solid post-summit meal in Haines Junction."
       },
       {
         "name": "Frosty's",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Saint Elias Mountains."
       },
       {
         "name": "St. Elias Café",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -1663,29 +1867,41 @@
     "hotels": [
       {
         "name": "Chilcotin Lodge",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodge",
+        "note": "Trusted base near Tatla Lake for summit attempts."
       },
       {
         "name": "Nimpo Lake Resort",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodge",
+        "note": "Convenient stay for Mt. Waddington approaches."
       },
       {
         "name": "Tweedsmuir Lodge",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Tatla Lake."
       }
     ],
     "food": [
       {
         "name": "Nimpo Lake Café",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Tatla Lake."
       },
       {
         "name": "Tatla Lake Trading Post",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Coast Mountains."
       },
       {
         "name": "Eagle's Nest",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -1750,29 +1966,41 @@
     "hotels": [
       {
         "name": "Fairmont Jasper Park Lodge",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodge",
+        "note": "Trusted base near Jasper for summit attempts."
       },
       {
         "name": "Athabasca Hotel",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Columbia approaches."
       },
       {
         "name": "Pyramid Lake Resort",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Jasper."
       }
     ],
     "food": [
       {
         "name": "Evil Dave's Grill",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Pub / grill",
+        "note": "Solid post-summit meal in Jasper."
       },
       {
         "name": "Jasper Brewing",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Canadian Rockies."
       },
       {
         "name": "Coco's Café",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -1844,29 +2072,41 @@
     "hotels": [
       {
         "name": "Assiniboine Lodge",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Trusted base near Canmore for summit attempts."
       },
       {
         "name": "Canmore Rocky Mountain Inn",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Assiniboine approaches."
       },
       {
         "name": "Paintbox Lodge",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Canmore."
       }
     ],
     "food": [
       {
         "name": "Communal Grill",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Pub / grill",
+        "note": "Solid post-summit meal in Canmore."
       },
       {
         "name": "The Trough",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Canadian Rockies."
       },
       {
         "name": "Crazyweed",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -1945,29 +2185,41 @@
     "hotels": [
       {
         "name": "Hotel Gerardo",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Trusted base near Tlachichuca for summit attempts."
       },
       {
         "name": "Refugio Piedra Grande",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Convenient stay for Pico de Orizaba approaches."
       },
       {
         "name": "Hotel Hacienda",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Tlachichuca."
       }
     ],
     "food": [
       {
         "name": "Restaurante El Mirador",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Tlachichuca."
       },
       {
         "name": "Café de la Plaza",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Trans-Mexican Volcanic Belt."
       },
       {
         "name": "Comedor Doña Rosa",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -2032,29 +2284,41 @@
     "hotels": [
       {
         "name": "Hotel San Carlos",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Trusted base near Amecameca for summit attempts."
       },
       {
         "name": "Posada Quinta",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Convenient stay for Popocatépetl approaches."
       },
       {
         "name": "Hostal Amecameca",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Amecameca."
       }
     ],
     "food": [
       {
         "name": "Cocina Azteca",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Amecameca."
       },
       {
         "name": "Café Iztaccíhuatl",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Trans-Mexican Volcanic Belt."
       },
       {
         "name": "Taquería El Volcán",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -2133,29 +2397,41 @@
     "hotels": [
       {
         "name": "Park Hyatt Mendoza",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Trusted base near Mendoza for summit attempts."
       },
       {
         "name": "Hotel Aconcagua",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Convenient stay for Aconcagua approaches."
       },
       {
         "name": "Hostel Independencia",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hut / hostel",
+        "note": "Popular with climbers staging out of Mendoza."
       }
     ],
     "food": [
       {
         "name": "Azafrán",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Mendoza."
       },
       {
         "name": "Don Mario",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Andes."
       },
       {
         "name": "Anna Bistro",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Pub / grill",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -2234,29 +2510,41 @@
     "hotels": [
       {
         "name": "Andino Club Hotel",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Trusted base near Huaraz for summit attempts."
       },
       {
         "name": "Hotel El Patio",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Convenient stay for Huascarán approaches."
       },
       {
         "name": "La Casa de Zarela",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Huaraz."
       }
     ],
     "food": [
       {
         "name": "Café Andino",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Huaraz."
       },
       {
         "name": "El Horno",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Cordillera Blanca."
       },
       {
         "name": "Trivio",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -2321,29 +2609,41 @@
     "hotels": [
       {
         "name": "Hotel Europa",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Trusted base near La Paz for summit attempts."
       },
       {
         "name": "Atix Hotel",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Convenient stay for Illimani approaches."
       },
       {
         "name": "Hostal Naira",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of La Paz."
       }
     ],
     "food": [
       {
         "name": "Gustu",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in La Paz."
       },
       {
         "name": "Popular Cocina Boliviana",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Cordillera Real."
       },
       {
         "name": "Café del Mundo",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -2379,23 +2679,23 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Illimani_La_Paz_April_2014.jpg/960px-Illimani_La_Paz_April_2014.jpg",
-      "credit": "Hernan Payrumani",
-      "license": "CC BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illimani_La_Paz_April_2014.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Illimani_with_the_full_moon_rising_overhead.jpg/960px-Illimani_with_the_full_moon_rising_overhead.jpg",
+      "credit": "candelaria herrera vasquez",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illimani_with_the_full_moon_rising_overhead.jpg"
     },
     "photos": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Illimani_La_Paz_April_2014.jpg/960px-Illimani_La_Paz_April_2014.jpg",
-        "credit": "Hernan Payrumani",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illimani_La_Paz_April_2014.jpg"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Illimani_with_the_full_moon_rising_overhead.jpg/960px-Illimani_with_the_full_moon_rising_overhead.jpg",
+        "credit": "candelaria herrera vasquez",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illimani_with_the_full_moon_rising_overhead.jpg"
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Bolivia%2C_La_Paz%3B_Illimani_in_background_LCCN2016821765_%28cropped%29.tif/lossy-page1-960px-Bolivia%2C_La_Paz%3B_Illimani_in_background_LCCN2016821765_%28cropped%29.tif.jpg",
-        "credit": "National Photo Company Collection",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Illimani_-_Cordillera_Real.jpg/960px-Illimani_-_Cordillera_Real.jpg",
+        "credit": "Jhulis",
         "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bolivia,_La_Paz;_Illimani_in_background_LCCN2016821765_(cropped).tif"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illimani_-_Cordillera_Real.jpg"
       }
     ]
   },
@@ -2422,29 +2722,41 @@
     "hotels": [
       {
         "name": "Hotel Zeus",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Trusted base near Riobamba for summit attempts."
       },
       {
         "name": "Hosteria La Andaluza",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Convenient stay for Chimborazo approaches."
       },
       {
         "name": "Mansión Santa Isabella",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Riobamba."
       }
     ],
     "food": [
       {
         "name": "El Delirio",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Riobamba."
       },
       {
         "name": "Café Bonil",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Andes."
       },
       {
         "name": "Pizzería D'Baggio",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -2523,29 +2835,41 @@
     "hotels": [
       {
         "name": "Hotel Cotopaxi",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hotel",
+        "note": "Trusted base near Latacunga for summit attempts."
       },
       {
         "name": "Hosteria La Ciénega",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Convenient stay for Cotopaxi approaches."
       },
       {
         "name": "Secret Garden Cotopaxi",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Latacunga."
       }
     ],
     "food": [
       {
         "name": "Café Zulay",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Latacunga."
       },
       {
         "name": "Pizzería Buon Giorno",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Andes."
       },
       {
         "name": "El Café de la Vuelta",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -2624,29 +2948,41 @@
     "hotels": [
       {
         "name": "Hostería El Pilar",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Trusted base near El Chaltén for summit attempts."
       },
       {
         "name": "Kau Lokken",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Convenient stay for Cerro Fitz Roy approaches."
       },
       {
         "name": "Patagonia Hostería",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of El Chaltén."
       }
     ],
     "food": [
       {
         "name": "La Tapera",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in El Chaltén."
       },
       {
         "name": "Maffía",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Patagonian Andes."
       },
       {
         "name": "Domo Blanco",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -2711,29 +3047,41 @@
     "hotels": [
       {
         "name": "Hotel Las Torres",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Trusted base near Puerto Natales for summit attempts."
       },
       {
         "name": "Explora Patagonia",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Convenient stay for Torres del Paine approaches."
       },
       {
         "name": "Hostal El Bote",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Puerto Natales."
       }
     ],
     "food": [
       {
         "name": "Africam",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Puerto Natales."
       },
       {
         "name": "Mesita Grande",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Patagonian Andes."
       },
       {
         "name": "Café Kaiken",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -2812,29 +3160,41 @@
     "hotels": [
       {
         "name": "Tomarapi Lodge",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodge",
+        "note": "Trusted base near Sajama for summit attempts."
       },
       {
         "name": "Albergue Sajama",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Convenient stay for Sajama approaches."
       },
       {
         "name": "Hostal Estrella",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Sajama."
       }
     ],
     "food": [
       {
         "name": "Comedor Tomarapi",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Sajama."
       },
       {
         "name": "Sajama Village Kitchen",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Andes."
       },
       {
         "name": "Café Andino",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -2913,29 +3273,41 @@
     "hotels": [
       {
         "name": "Mountain Lodges of Peru",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Trusted base near Cusco for summit attempts."
       },
       {
         "name": "Andean Cottage",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Convenient stay for Ausangate approaches."
       },
       {
         "name": "Casa Andina Cusco",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Cusco."
       }
     ],
     "food": [
       {
         "name": "Chicha",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Cusco."
       },
       {
         "name": "Limbus Restobar",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Cordillera Vilcanota."
       },
       {
         "name": "Green Point",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -3014,29 +3386,41 @@
     "hotels": [
       {
         "name": "Hôtel Mont-Blanc",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Trusted base near Chamonix for summit attempts."
       },
       {
         "name": "Refuge du Goûter",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Convenient stay for Mont Blanc approaches."
       },
       {
         "name": "Club Alpin Français",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Chamonix."
       }
     ],
     "food": [
       {
         "name": "La Calèche",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Chamonix."
       },
       {
         "name": "Atmosphere",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Graian Alps."
       },
       {
         "name": "Poco Loco",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -3115,29 +3499,41 @@
     "hotels": [
       {
         "name": "Hotel Monte Rosa",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Trusted base near Zermatt for summit attempts."
       },
       {
         "name": "Riffelalp Resort",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Convenient stay for Matterhorn approaches."
       },
       {
         "name": "Youth Hostel Zermatt",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hut / hostel",
+        "note": "Popular with climbers staging out of Zermatt."
       }
     ],
     "food": [
       {
         "name": "Chez Vrony",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Zermatt."
       },
       {
         "name": "Zum See",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Pennine Alps."
       },
       {
         "name": "Restaurant Matterhorn",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -3202,29 +3598,41 @@
     "hotels": [
       {
         "name": "Victoria-Jungfrau",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Trusted base near Interlaken for summit attempts."
       },
       {
         "name": "Hotel Interlaken",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Convenient stay for Jungfrau approaches."
       },
       {
         "name": "Jungfrau Lodge",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Interlaken."
       }
     ],
     "food": [
       {
         "name": "Restaurant Stella",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Interlaken."
       },
       {
         "name": "Hüsi Bierhaus",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Bernese Alps."
       },
       {
         "name": "Harder Kulm",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -3303,29 +3711,41 @@
     "hotels": [
       {
         "name": "Hotel Eiger",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Trusted base near Grindelwald for summit attempts."
       },
       {
         "name": "Belvedere",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Convenient stay for Eiger approaches."
       },
       {
         "name": "Bergsteigerzentrum",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Grindelwald."
       }
     ],
     "food": [
       {
         "name": "Memory",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Grindelwald."
       },
       {
         "name": "C & M",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Bernese Alps."
       },
       {
         "name": "Barry's",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -3390,29 +3810,41 @@
     "hotels": [
       {
         "name": "Hotel Nationalpark",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Trusted base near Heiligenblut for summit attempts."
       },
       {
         "name": "Glocknerhof",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Convenient stay for Grossglockner approaches."
       },
       {
         "name": "Chalet Hotel",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Heiligenblut."
       }
     ],
     "food": [
       {
         "name": "Restaurant Glocknerwirt",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Heiligenblut."
       },
       {
         "name": "Café Heiligenblut",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on High Tauern."
       },
       {
         "name": "Panorama Restaurant",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -3477,29 +3909,41 @@
     "hotels": [
       {
         "name": "Hotel Triglav Bled",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Trusted base near Bled for summit attempts."
       },
       {
         "name": "Vila Bled",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Convenient stay for Triglav approaches."
       },
       {
         "name": "Hostel Bledec",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hut / hostel",
+        "note": "Popular with climbers staging out of Bled."
       }
     ],
     "food": [
       {
         "name": "Gostilna Lectar",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Bled."
       },
       {
         "name": "Park Restaurant",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Julian Alps."
       },
       {
         "name": "Gostilna Bellevue",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -3578,29 +4022,41 @@
     "hotels": [
       {
         "name": "Hotel Post",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Trusted base near Solda for summit attempts."
       },
       {
         "name": "Alpenhotel",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Convenient stay for Ortler approaches."
       },
       {
         "name": "Gampen Alm",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Solda."
       }
     ],
     "food": [
       {
         "name": "Restaurant Ortler",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Solda."
       },
       {
         "name": "Pizzeria Solda",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Ortler Alps."
       },
       {
         "name": "Alm Hütte",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -3679,29 +4135,41 @@
     "hotels": [
       {
         "name": "Hotel Cima Belvedere",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Trusted base near Canazei for summit attempts."
       },
       {
         "name": "Villa Rosella",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Convenient stay for Marmolada approaches."
       },
       {
         "name": "Garni Stella Alpina",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Canazei."
       }
     ],
     "food": [
       {
         "name": "Ristorante El Paél",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Canazei."
       },
       {
         "name": "Pizzeria Duomo",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Dolomites."
       },
       {
         "name": "Bar Tommy",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Pub / grill",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -3780,29 +4248,41 @@
     "hotels": [
       {
         "name": "Hôtel de la Chaussée",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Trusted base near Briançon for summit attempts."
       },
       {
         "name": "Refuge des Écrins",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Convenient stay for Barre des Écrins approaches."
       },
       {
         "name": "Auberge de la Paix",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Briançon."
       }
     ],
     "food": [
       {
         "name": "Le Péché Gourmand",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Briançon."
       },
       {
         "name": "La Table de Spont",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Dauphiné Alps."
       },
       {
         "name": "Pizzeria Centrale",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -3881,29 +4361,41 @@
     "hotels": [
       {
         "name": "Hotel Elbrus",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hotel",
+        "note": "Trusted base near Terskol for summit attempts."
       },
       {
         "name": "Leaprus",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Convenient stay for Mt. Elbrus approaches."
       },
       {
         "name": "Povorot",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Terskol."
       }
     ],
     "food": [
       {
         "name": "Café Ai",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Terskol."
       },
       {
         "name": "Balkarian Kitchen",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Caucasus."
       },
       {
         "name": "Cheget Restaurant",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -3982,29 +4474,41 @@
     "hotels": [
       {
         "name": "Rooms Hotel Kazbegi",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Trusted base near Stepantsminda for summit attempts."
       },
       {
         "name": "Stepantsminda Hotel",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Kazbek approaches."
       },
       {
         "name": "Bethlehemi Hut",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hut / hostel",
+        "note": "Popular with climbers staging out of Stepantsminda."
       }
     ],
     "food": [
       {
         "name": "Panorama Restaurant",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Stepantsminda."
       },
       {
         "name": "Shorta",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Caucasus."
       },
       {
         "name": "Café Kogo",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -4069,29 +4573,41 @@
     "hotels": [
       {
         "name": "Polur Camp",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Trusted base near Polur for summit attempts."
       },
       {
         "name": "Damavand Shelter",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Convenient stay for Damavand approaches."
       },
       {
         "name": "Lar Hotel",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Polur."
       }
     ],
     "food": [
       {
         "name": "Polur Local Kitchen",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Polur."
       },
       {
         "name": "Alborz Café",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Alborz."
       },
       {
         "name": "Lar Lakeside Grill",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Pub / grill",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -4170,29 +4686,41 @@
     "hotels": [
       {
         "name": "Hotel Grand",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Trusted base near Dogubayazit for summit attempts."
       },
       {
         "name": "Isfahan Hotel",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Ararat approaches."
       },
       {
         "name": "Ararat Hotel",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Dogubayazit."
       }
     ],
     "food": [
       {
         "name": "Murat Camping Restaurant",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Dogubayazit."
       },
       {
         "name": "Doğu Restaurant",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Armenian Highlands."
       },
       {
         "name": "Simsek",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -4271,29 +4799,41 @@
     "hotels": [
       {
         "name": "Keys Hotel",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Trusted base near Moshi for summit attempts."
       },
       {
         "name": "Bristol Cottages",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Convenient stay for Kilimanjaro approaches."
       },
       {
         "name": "Salinero Kilimanjaro",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Moshi."
       }
     ],
     "food": [
       {
         "name": "The Coffee Shop",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Café",
+        "note": "Solid post-summit meal in Moshi."
       },
       {
         "name": "Indo Italiano",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Eastern Rift."
       },
       {
         "name": "Union Café",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -4375,29 +4915,41 @@
     "hotels": [
       {
         "name": "Trout Tree",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Trusted base near Nanyuki for summit attempts."
       },
       {
         "name": "Mount Kenya Safari Club",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Convenient stay for Mt. Kenya approaches."
       },
       {
         "name": "Sportsman's Arms",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Nanyuki."
       }
     ],
     "food": [
       {
         "name": "Barney's",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Nanyuki."
       },
       {
         "name": "Cape Chestnut",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Eastern Rift."
       },
       {
         "name": "Garden Restaurant",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -4476,29 +5028,41 @@
     "hotels": [
       {
         "name": "Dar Imlil",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Trusted base near Imlil for summit attempts."
       },
       {
         "name": "Refuge Toubkal",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Convenient stay for Jebel Toubkal approaches."
       },
       {
         "name": "Kasbah du Toubkal",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Imlil."
       }
     ],
     "food": [
       {
         "name": "Café Atlas",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Imlil."
       },
       {
         "name": "Restaurant Atlas",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on High Atlas."
       },
       {
         "name": "Café Soleil",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -4577,29 +5141,41 @@
     "hotels": [
       {
         "name": "Simien Lodge",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Trusted base near Debark for summit attempts."
       },
       {
         "name": "Sona Hotel",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Convenient stay for Ras Dashen approaches."
       },
       {
         "name": "Jano Hotel",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Debark."
       }
     ],
     "food": [
       {
         "name": "Simien Lodge Restaurant",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Debark."
       },
       {
         "name": "Debark Local Kitchen",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Simien Mountains."
       },
       {
         "name": "Sona Café",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -4678,29 +5254,41 @@
     "hotels": [
       {
         "name": "The Table Bay",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Trusted base near Cape Town for summit attempts."
       },
       {
         "name": "Mount Nelson",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Convenient stay for Table Mountain approaches."
       },
       {
         "name": "Daddy Long Legs",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Cape Town."
       }
     ],
     "food": [
       {
         "name": "The Test Kitchen",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Cape Town."
       },
       {
         "name": "Gold Restaurant",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Cape Fold Belt."
       },
       {
         "name": "Kloof Street House",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -4779,29 +5367,41 @@
     "hotels": [
       {
         "name": "Arusha Coffee Lodge",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodge",
+        "note": "Trusted base near Arusha for summit attempts."
       },
       {
         "name": "Kibo Palace",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Convenient stay for Mt. Meru approaches."
       },
       {
         "name": "Impala Hotel",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Arusha."
       }
     ],
     "food": [
       {
         "name": "Via Via",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Arusha."
       },
       {
         "name": "Fifi's",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Eastern Rift."
       },
       {
         "name": "Blue Heron",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -4866,29 +5466,41 @@
     "hotels": [
       {
         "name": "Yetis Mountain Home",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Trusted base near Namche Bazaar for summit attempts."
       },
       {
         "name": "Khumbu Lodge",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodge",
+        "note": "Convenient stay for Mt. Everest approaches."
       },
       {
         "name": "Hotel Namche",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Namche Bazaar."
       }
     ],
     "food": [
       {
         "name": "Illy Café",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Namche Bazaar."
       },
       {
         "name": "Namche Bakery",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Café",
+        "note": "Local favorite after days on Mahalangur Himal."
       },
       {
         "name": "Himalayan Java",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -4967,29 +5579,41 @@
     "hotels": [
       {
         "name": "Concordia Motel",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Trusted base near Skardu for summit attempts."
       },
       {
         "name": "K2 Motel",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Convenient stay for K2 approaches."
       },
       {
         "name": "Baltoro Lodge",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Skardu."
       }
     ],
     "food": [
       {
         "name": "Dewan-e-Khaas",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Skardu."
       },
       {
         "name": "Yak Grill",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Pub / grill",
+        "note": "Local favorite after days on Karakoram."
       },
       {
         "name": "Baltistan Café",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -5068,29 +5692,41 @@
     "hotels": [
       {
         "name": "Hotel Kanchenjunga",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Trusted base near Taplejung for summit attempts."
       },
       {
         "name": "Pathibhara Lodge",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodge",
+        "note": "Convenient stay for Kangchenjunga approaches."
       },
       {
         "name": "Yak Hotel",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Taplejung."
       }
     ],
     "food": [
       {
         "name": "Taplejung Local Kitchen",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Taplejung."
       },
       {
         "name": "Himalayan Café",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Himalaya."
       },
       {
         "name": "Yak Restaurant",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -5169,29 +5805,41 @@
     "hotels": [
       {
         "name": "Yetis Mountain Home",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Trusted base near Namche Bazaar for summit attempts."
       },
       {
         "name": "Eco Lodge",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Convenient stay for Lhotse approaches."
       },
       {
         "name": "Hotel Sherpaland",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Namche Bazaar."
       }
     ],
     "food": [
       {
         "name": "Namche Bakery",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Café",
+        "note": "Solid post-summit meal in Namche Bazaar."
       },
       {
         "name": "Café Danfé",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Mahalangur Himal."
       },
       {
         "name": "Himalayan Java",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -5270,29 +5918,41 @@
     "hotels": [
       {
         "name": "Makalu Guest House",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Trusted base near Khandbari for summit attempts."
       },
       {
         "name": "Arun Valley Lodge",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodge",
+        "note": "Convenient stay for Makalu approaches."
       },
       {
         "name": "Hotel Num",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Khandbari."
       }
     ],
     "food": [
       {
         "name": "Khandbari Kitchen",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Khandbari."
       },
       {
         "name": "Arun Café",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Mahalangur Himal."
       },
       {
         "name": "Local Dal Bhat",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -5371,29 +6031,41 @@
     "hotels": [
       {
         "name": "Snowland Hotel",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Trusted base near Tingri for summit attempts."
       },
       {
         "name": "Tingri Guest House",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Convenient stay for Cho Oyu approaches."
       },
       {
         "name": "Himalaya Hotel",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Tingri."
       }
     ],
     "food": [
       {
         "name": "Tingri Restaurant",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Tingri."
       },
       {
         "name": "Yak Hotel Kitchen",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Mahalangur Himal."
       },
       {
         "name": "Nangpa Café",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -5472,29 +6144,41 @@
     "hotels": [
       {
         "name": "Hotel Barahi",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Trusted base near Pokhara for summit attempts."
       },
       {
         "name": "Temple Tree Resort",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodge",
+        "note": "Convenient stay for Dhaulagiri approaches."
       },
       {
         "name": "Pokhara Grande",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Pokhara."
       }
     ],
     "food": [
       {
         "name": "Moondance",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Pokhara."
       },
       {
         "name": "OR2K",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Dhaulagiri Himal."
       },
       {
         "name": "Caffe Concerto",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -5559,29 +6243,41 @@
     "hotels": [
       {
         "name": "Hotel Gorkha",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Trusted base near Gorkha for summit attempts."
       },
       {
         "name": "Manaslu Guest House",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Convenient stay for Manaslu approaches."
       },
       {
         "name": "Hilltop Lodge",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Gorkha."
       }
     ],
     "food": [
       {
         "name": "Gorkha Kitchen",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Gorkha."
       },
       {
         "name": "Café Manaslu",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Mansiri Himal."
       },
       {
         "name": "Local Thakali",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -5660,29 +6356,41 @@
     "hotels": [
       {
         "name": "Serena Hotel Gilgit",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Trusted base near Gilgit for summit attempts."
       },
       {
         "name": "Gilgit Continental",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Convenient stay for Nanga Parbat approaches."
       },
       {
         "name": "Fairy Meadows Cottages",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Gilgit."
       }
     ],
     "food": [
       {
         "name": "Pathan Hotel",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Gilgit."
       },
       {
         "name": "Baig's",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Western Himalaya."
       },
       {
         "name": "River View",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -5761,29 +6469,41 @@
     "hotels": [
       {
         "name": "Fishtail Lodge",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodge",
+        "note": "Trusted base near Pokhara for summit attempts."
       },
       {
         "name": "Hotel Barahi",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Convenient stay for Annapurna I approaches."
       },
       {
         "name": "Lakeview Resort",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Pokhara."
       }
     ],
     "food": [
       {
         "name": "Moondance",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Pokhara."
       },
       {
         "name": "Freshly Baked",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Annapurna Himal."
       },
       {
         "name": "Busy Bee Café",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -5805,23 +6525,23 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Annapurna_Massif-IMG_5221-Pano.jpg/960px-Annapurna_Massif-IMG_5221-Pano.jpg",
-      "credit": "Bijay Chaurasia",
-      "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annapurna_Massif-IMG_5221-Pano.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Annapurna_Massif_Panorama.jpg/960px-Annapurna_Massif_Panorama.jpg",
+      "credit": "Dmitry A. Mottl",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annapurna_Massif_Panorama.jpg"
     },
     "photos": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Annapurna_Massif-IMG_5221-Pano.jpg/960px-Annapurna_Massif-IMG_5221-Pano.jpg",
-        "credit": "Bijay Chaurasia",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annapurna_Massif-IMG_5221-Pano.jpg"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Annapurna_Massif_Panorama.jpg/960px-Annapurna_Massif_Panorama.jpg",
+        "credit": "Dmitry A. Mottl",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annapurna_Massif_Panorama.jpg"
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/ISS042-E-263195_-_View_of_Nepal_-_Annapurna_Himal_-_Khangsar_Kang_-_Tilicho_Peak_-_Nilgiri_North_-_Manang_Valley_-_Khatung_Kang_-_Thorong_La_-_Kali_Gandaki_Valley_-_Chulu_-_Pisang_Peak_%28cropped%29.jpg/960px-thumbnail.jpg",
-        "credit": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
-        "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ISS042-E-263195_-_View_of_Nepal_-_Annapurna_Himal_-_Khangsar_Kang_-_Tilicho_Peak_-_Nilgiri_North_-_Manang_Valley_-_Khatung_Kang_-_Thorong_La_-_Kali_Gandaki_Valley_-_Chulu_-_Pisang_Peak_(cropped).jpg"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sunrise_Annapurna_Pokhara_Nepal_Feb13_DSC_1583.jpg/960px-Sunrise_Annapurna_Pokhara_Nepal_Feb13_DSC_1583.jpg",
+        "credit": "Timothy A. Gonsalves",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_Annapurna_Pokhara_Nepal_Feb13_DSC_1583.jpg"
       }
     ]
   },
@@ -5848,29 +6568,41 @@
     "hotels": [
       {
         "name": "Concordia Motel",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Trusted base near Skardu for summit attempts."
       },
       {
         "name": "Mashabrum Hotel",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hotel",
+        "note": "Convenient stay for Gasherbrum I approaches."
       },
       {
         "name": "Baltoro Base",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Skardu."
       }
     ],
     "food": [
       {
         "name": "Yak Grill",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Pub / grill",
+        "note": "Solid post-summit meal in Skardu."
       },
       {
         "name": "Dewan-e-Khaas",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Karakoram."
       },
       {
         "name": "Baltistan Café",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -5949,29 +6681,41 @@
     "hotels": [
       {
         "name": "K2 Motel",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hotel",
+        "note": "Trusted base near Skardu for summit attempts."
       },
       {
         "name": "Concordia Motel",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Convenient stay for Broad Peak approaches."
       },
       {
         "name": "Baltistan Continental",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Skardu."
       }
     ],
     "food": [
       {
         "name": "Yak Grill",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Pub / grill",
+        "note": "Solid post-summit meal in Skardu."
       },
       {
         "name": "PTDC Restaurant",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Karakoram."
       },
       {
         "name": "Local Chapli",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -6050,29 +6794,41 @@
     "hotels": [
       {
         "name": "Mashabrum Hotel",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Trusted base near Skardu for summit attempts."
       },
       {
         "name": "Concordia Motel",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Convenient stay for Gasherbrum II approaches."
       },
       {
         "name": "Hotel Baltoro",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Skardu."
       }
     ],
     "food": [
       {
         "name": "Baltistan Café",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Skardu."
       },
       {
         "name": "Yak Grill",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Pub / grill",
+        "note": "Local favorite after days on Karakoram."
       },
       {
         "name": "Dewan-e-Khaas",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -6137,29 +6893,41 @@
     "hotels": [
       {
         "name": "Snowland Hotel",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Trusted base near Nyalam for summit attempts."
       },
       {
         "name": "Nyalam Guest House",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Convenient stay for Shishapangma approaches."
       },
       {
         "name": "Himalaya Hotel",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Nyalam."
       }
     ],
     "food": [
       {
         "name": "Nyalam Restaurant",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Nyalam."
       },
       {
         "name": "Tibetan Kitchen",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Jugal Himal."
       },
       {
         "name": "Friendship Café",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -6238,29 +7006,41 @@
     "hotels": [
       {
         "name": "Yetis Mountain Home",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Trusted base near Namche Bazaar for summit attempts."
       },
       {
         "name": "Ama Dablam Lodge",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodge",
+        "note": "Convenient stay for Ama Dablam approaches."
       },
       {
         "name": "Hotel Sherpaland",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Namche Bazaar."
       }
     ],
     "food": [
       {
         "name": "Namche Bakery",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Café",
+        "note": "Solid post-summit meal in Namche Bazaar."
       },
       {
         "name": "Illy Café",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Mahalangur Himal."
       },
       {
         "name": "Himalayan Java",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -6296,23 +7076,23 @@
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ama_dablam_base_camp_glacier.jpg/960px-Ama_dablam_base_camp_glacier.jpg",
-      "credit": "Prasan Shrestha",
-      "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ama_dablam_base_camp_glacier.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ama_Dablam%2C_Nepal.jpg/960px-Ama_Dablam%2C_Nepal.jpg",
+      "credit": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ama_Dablam,_Nepal.jpg"
     },
     "photos": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ama_dablam_base_camp_glacier.jpg/960px-Ama_dablam_base_camp_glacier.jpg",
-        "credit": "Prasan Shrestha",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ama_dablam_base_camp_glacier.jpg"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ama_Dablam%2C_Nepal.jpg/960px-Ama_Dablam%2C_Nepal.jpg",
+        "credit": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ama_Dablam,_Nepal.jpg"
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Everest_panorama_from_Kala_Patthar.jpg/960px-Everest_panorama_from_Kala_Patthar.jpg",
-        "credit": "Markrosenrosen",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Everest_panorama_from_Kala_Patthar.jpg"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Ama_Dablam_and_the_Himalayas%2C_Mountains_of_Nepal.jpg/960px-Ama_Dablam_and_the_Himalayas%2C_Mountains_of_Nepal.jpg",
+        "credit": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ama_Dablam_and_the_Himalayas,_Mountains_of_Nepal.jpg"
       }
     ]
   },
@@ -6339,29 +7119,41 @@
     "hotels": [
       {
         "name": "Chukhung Resort",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodge",
+        "note": "Trusted base near Chukhung for summit attempts."
       },
       {
         "name": "Island Peak Hotel",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Convenient stay for Island Peak approaches."
       },
       {
         "name": "Eco Lodge",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Chukhung."
       }
     ],
     "food": [
       {
         "name": "Chukhung Bakery",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Café",
+        "note": "Solid post-summit meal in Chukhung."
       },
       {
         "name": "Mountain View",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Mahalangur Himal."
       },
       {
         "name": "Yak Hotel Kitchen",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -6426,29 +7218,41 @@
     "hotels": [
       {
         "name": "The Grand Dragon",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Trusted base near Leh for summit attempts."
       },
       {
         "name": "Hotel Ladakh Sarai",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Convenient stay for Stok Kangri approaches."
       },
       {
         "name": "Zostel Leh",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Leh."
       }
     ],
     "food": [
       {
         "name": "Tibetan Kitchen",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Leh."
       },
       {
         "name": "Bon Appetit",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Stok Range."
       },
       {
         "name": "Chopsticks Noodles",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -6527,29 +7331,41 @@
     "hotels": [
       {
         "name": "Hotel Mountain View",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Trusted base near Joshimath for summit attempts."
       },
       {
         "name": "JM Orchid",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Convenient stay for Nanda Devi approaches."
       },
       {
         "name": "Dronagiri",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Joshimath."
       }
     ],
     "food": [
       {
         "name": "Auli Café",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Joshimath."
       },
       {
         "name": "Café Nest",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Garhwal Himalaya."
       },
       {
         "name": "Local Garhwali",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -6628,29 +7444,41 @@
     "hotels": [
       {
         "name": "Kumaon Lodge",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Trusted base near Gwaldam for summit attempts."
       },
       {
         "name": "Himalayan View",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Convenient stay for Trisul approaches."
       },
       {
         "name": "Forest Rest House",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Gwaldam."
       }
     ],
     "food": [
       {
         "name": "Gwaldam Kitchen",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Gwaldam."
       },
       {
         "name": "Hill Café",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Garhwal Himalaya."
       },
       {
         "name": "Local Thali",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -6729,29 +7557,41 @@
     "hotels": [
       {
         "name": "Fuji View Hotel",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Trusted base near Fujiyoshida for summit attempts."
       },
       {
         "name": "Kawaguchiko Station Inn",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Fuji approaches."
       },
       {
         "name": "Mountain Hut 8th Station",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hut / hostel",
+        "note": "Popular with climbers staging out of Fujiyoshida."
       }
     ],
     "food": [
       {
         "name": "Houtou Fudou",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Fujiyoshida."
       },
       {
         "name": "Fujisan Meguri",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Fuji Volcanic Zone."
       },
       {
         "name": "Sanrokuen",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -6830,29 +7670,41 @@
     "hotels": [
       {
         "name": "Kamikochi Imperial Hotel",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Trusted base near Kamikochi for summit attempts."
       },
       {
         "name": "Yarisawa Lodge",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodge",
+        "note": "Convenient stay for Mt. Yari approaches."
       },
       {
         "name": "Hotaka Hut",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hut / hostel",
+        "note": "Popular with climbers staging out of Kamikochi."
       }
     ],
     "food": [
       {
         "name": "Kamikochi Café",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Kamikochi."
       },
       {
         "name": "Kamonji-goya",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Hida Mountains."
       },
       {
         "name": "Alpha",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -6931,29 +7783,41 @@
     "hotels": [
       {
         "name": "Shilla Stay Jeju",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Trusted base near Jeju City for summit attempts."
       },
       {
         "name": "Hotel RegentMarine",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Convenient stay for Hallasan approaches."
       },
       {
         "name": "Benikea Hotel",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Jeju City."
       }
     ],
     "food": [
       {
         "name": "Donto",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Jeju City."
       },
       {
         "name": "Black Pork Street",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Jeju Island."
       },
       {
         "name": "Café Scar",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -7032,29 +7896,41 @@
     "hotels": [
       {
         "name": "The Hermitage",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Trusted base near Mount Cook Village for summit attempts."
       },
       {
         "name": "Aoraki Court Motel",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Convenient stay for Aoraki / Mt. Cook approaches."
       },
       {
         "name": "YHA Mt Cook",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hut / hostel",
+        "note": "Popular with climbers staging out of Mount Cook Village."
       }
     ],
     "food": [
       {
         "name": "Panorama Room",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Mount Cook Village."
       },
       {
         "name": "Old Mountaineers Café",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Southern Alps."
       },
       {
         "name": "Alpine Restaurant",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -7133,29 +8009,41 @@
     "hotels": [
       {
         "name": "Edgewater",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Trusted base near Wanaka for summit attempts."
       },
       {
         "name": "Wanaka Homestead",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Convenient stay for Mt. Aspiring approaches."
       },
       {
         "name": "Aspiring Lodge",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Wanaka."
       }
     ],
     "food": [
       {
         "name": "Federal Diner",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Wanaka."
       },
       {
         "name": "Bistro Gentil",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Pub / grill",
+        "note": "Local favorite after days on Southern Alps."
       },
       {
         "name": "Kai Whakapai",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -7220,29 +8108,41 @@
     "hotels": [
       {
         "name": "The Hermitage",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Trusted base near Mount Cook Village for summit attempts."
       },
       {
         "name": "Glacier Gateway Motel",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Tasman approaches."
       },
       {
         "name": "YHA Mt Cook",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hut / hostel",
+        "note": "Popular with climbers staging out of Mount Cook Village."
       }
     ],
     "food": [
       {
         "name": "Old Mountaineers Café",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Mount Cook Village."
       },
       {
         "name": "Panorama Room",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Southern Alps."
       },
       {
         "name": "Sir Edmund Hillary Alpine Centre Café",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -7265,23 +8165,23 @@
     ],
     "photos": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mt_Tasman_helicopter_view_from_SE_above_Grand_Plateau_NZ_Fri_Nov_28_2008_crop.jpg/960px-Mt_Tasman_helicopter_view_from_SE_above_Grand_Plateau_NZ_Fri_Nov_28_2008_crop.jpg",
-        "credit": "Asmdorje",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mount_Aoraki_%28Mt._Cook%29_%26_Mount_Tasman_-_Lake_Matheson_%28New_Zealand%29.jpg",
+        "credit": "Ryancoke2020",
         "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Tasman_helicopter_view_from_SE_above_Grand_Plateau_NZ_Fri_Nov_28_2008_crop.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Aoraki_(Mt._Cook)_%26_Mount_Tasman_-_Lake_Matheson_(New_Zealand).jpg"
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mt_Haast%2C_Mt_Lendenfeld%2C_Mt_Tasman_and_Torres_Peak_NZ_helicopter_view_from_NW_Fri_Nov_28_2008.jpg/960px-Mt_Haast%2C_Mt_Lendenfeld%2C_Mt_Tasman_and_Torres_Peak_NZ_helicopter_view_from_NW_Fri_Nov_28_2008.jpg",
-        "credit": "Asmdorje",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Haast,_Mt_Lendenfeld,_Mt_Tasman_and_Torres_Peak_NZ_helicopter_view_from_NW_Fri_Nov_28_2008.jpg"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Mount_Tasman_and_Torres_Peak.jpg/960px-Mount_Tasman_and_Torres_Peak.jpg",
+        "credit": "smalljude",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Tasman_and_Torres_Peak.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mt_Tasman_helicopter_view_from_SE_above_Grand_Plateau_NZ_Fri_Nov_28_2008_crop.jpg/960px-Mt_Tasman_helicopter_view_from_SE_above_Grand_Plateau_NZ_Fri_Nov_28_2008_crop.jpg",
-      "credit": "Asmdorje",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mount_Aoraki_%28Mt._Cook%29_%26_Mount_Tasman_-_Lake_Matheson_%28New_Zealand%29.jpg",
+      "credit": "Ryancoke2020",
       "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Tasman_helicopter_view_from_SE_above_Grand_Plateau_NZ_Fri_Nov_28_2008_crop.jpg"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Aoraki_(Mt._Cook)_%26_Mount_Tasman_-_Lake_Matheson_(New_Zealand).jpg"
     }
   },
   {
@@ -7307,29 +8207,41 @@
     "hotels": [
       {
         "name": "Thredbo Alpine Hotel",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hotel",
+        "note": "Trusted base near Thredbo for summit attempts."
       },
       {
         "name": "Rivertree Lodge",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodge",
+        "note": "Convenient stay for Mt. Kosciuszko approaches."
       },
       {
         "name": "Denman Hotel",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Thredbo."
       }
     ],
     "food": [
       {
         "name": "Cascade Court",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Thredbo."
       },
       {
         "name": "The Pub",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Pub / grill",
+        "note": "Local favorite after days on Snowy Mountains."
       },
       {
         "name": "Schuss",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -7394,29 +8306,41 @@
     "hotels": [
       {
         "name": "Lake Jindabyne Hotel",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Trusted base near Jindabyne for summit attempts."
       },
       {
         "name": "Banjo Paterson Inn",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Townsend approaches."
       },
       {
         "name": "Discovery Parks",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Jindabyne."
       }
     ],
     "food": [
       {
         "name": "Café D",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Jindabyne."
       },
       {
         "name": "High Country Brewery",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Pub / grill",
+        "note": "Local favorite after days on Snowy Mountains."
       },
       {
         "name": "Station Mountain View",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -7481,29 +8405,41 @@
     "hotels": [
       {
         "name": "Spiterstulen",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Trusted base near Lom for summit attempts."
       },
       {
         "name": "Juvasshytta",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Convenient stay for Galdhøpiggen approaches."
       },
       {
         "name": "Fossheim Hotel",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Lom."
       }
     ],
     "food": [
       {
         "name": "Spiterstulen Restaurant",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Lom."
       },
       {
         "name": "Bakeriet i Lom",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Jotunheimen."
       },
       {
         "name": "Nordal Touristcenter",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -7568,29 +8504,41 @@
     "hotels": [
       {
         "name": "Kebnekaise Fjällstation",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Trusted base near Kiruna for summit attempts."
       },
       {
         "name": "Icehotel",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Convenient stay for Kebnekaise approaches."
       },
       {
         "name": "Scandic Kiruna",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Kiruna."
       }
     ],
     "food": [
       {
         "name": "Fjällstation Restaurant",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Kiruna."
       },
       {
         "name": "Camp Ripan",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Scandinavian Mountains."
       },
       {
         "name": "Thai Kitchen",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -7655,29 +8603,41 @@
     "hotels": [
       {
         "name": "Lapland Hotel Kilpis",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Trusted base near Kilpisjärvi for summit attempts."
       },
       {
         "name": "Halti Hut",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hut / hostel",
+        "note": "Convenient stay for Halti approaches."
       },
       {
         "name": "Tundrea",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Kilpisjärvi."
       }
     ],
     "food": [
       {
         "name": "Restaurant Tundrea",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Kilpisjärvi."
       },
       {
         "name": "Kilpisjärvi Café",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Scandinavian Mountains."
       },
       {
         "name": "Saana Restaurant",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -7742,29 +8702,41 @@
     "hotels": [
       {
         "name": "Hotel Samokov",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Trusted base near Borovets for summit attempts."
       },
       {
         "name": "Yastrebets",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Convenient stay for Musala approaches."
       },
       {
         "name": "Rila Hotel",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Borovets."
       }
     ],
     "food": [
       {
         "name": "Samokov Restaurant",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Borovets."
       },
       {
         "name": "Eagle's Nest",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Rila."
       },
       {
         "name": "Pizza Tempo",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Casual eats",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -7787,23 +8759,23 @@
     ],
     "photos": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Plaque_sur_station_m%C3%A9t%C3%A9o_Musala.JPG/960px-Plaque_sur_station_m%C3%A9t%C3%A9o_Musala.JPG",
-        "credit": "Hubertgui",
-        "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaque_sur_station_m%C3%A9t%C3%A9o_Musala.JPG"
-      },
-      {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Musala_peak.jpg/960px-Musala_peak.jpg",
         "credit": "Biser Todorov",
         "license": "CC BY 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musala_peak.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Musala_and_Malka_Musala.jpg/960px-Musala_and_Malka_Musala.jpg",
+        "credit": "Randona.bg",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musala_and_Malka_Musala.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Plaque_sur_station_m%C3%A9t%C3%A9o_Musala.JPG/960px-Plaque_sur_station_m%C3%A9t%C3%A9o_Musala.JPG",
-      "credit": "Hubertgui",
-      "license": "Public domain",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaque_sur_station_m%C3%A9t%C3%A9o_Musala.JPG"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Musala_peak.jpg/960px-Musala_peak.jpg",
+      "credit": "Biser Todorov",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musala_peak.jpg"
     }
   },
   {
@@ -7829,29 +8801,41 @@
     "hotels": [
       {
         "name": "Hotel Olympus Mediterranean",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Trusted base near Litochoro for summit attempts."
       },
       {
         "name": "Gastrea Boutique",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Convenient stay for Mt. Olympus approaches."
       },
       {
         "name": "Refuge A",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Litochoro."
       }
     ],
     "food": [
       {
         "name": "Pantheon",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Litochoro."
       },
       {
         "name": "Gastrodromio",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Olympus Massif."
       },
       {
         "name": "Meze Meze",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -7916,29 +8900,41 @@
     "hotels": [
       {
         "name": "Finca Los Llanos",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Trusted base near Capileira for summit attempts."
       },
       {
         "name": "Hostal Pampaneira",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Convenient stay for Mulhacén approaches."
       },
       {
         "name": "Refugio Poqueira",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Capileira."
       }
     ],
     "food": [
       {
         "name": "Bar El Tilo",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Pub / grill",
+        "note": "Solid post-summit meal in Capileira."
       },
       {
         "name": "Restaurante Casa Julio",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Sierra Nevada."
       },
       {
         "name": "Abuela Ili",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -8003,29 +8999,41 @@
     "hotels": [
       {
         "name": "Parador de Las Cañadas",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Trusted base near Vilaflor for summit attempts."
       },
       {
         "name": "Hotel Spa Villalba",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Convenient stay for Teide approaches."
       },
       {
         "name": "Refugio Altavista",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Vilaflor."
       }
     ],
     "food": [
       {
         "name": "Restaurante El Rincón",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Vilaflor."
       },
       {
         "name": "Tasca Vilaflor",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Canary Islands."
       },
       {
         "name": "Parador Restaurant",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -8090,29 +9098,41 @@
     "hotels": [
       {
         "name": "Hotel San Carlos",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Trusted base near Amecameca for summit attempts."
       },
       {
         "name": "Albergue Portillo",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Convenient stay for Iztaccíhuatl approaches."
       },
       {
         "name": "Posada Iztaccíhuatl",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Amecameca."
       }
     ],
     "food": [
       {
         "name": "Café Iztaccíhuatl",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Amecameca."
       },
       {
         "name": "Cocina Azteca",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Trans-Mexican Volcanic Belt."
       },
       {
         "name": "Taquería El Volcán",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -8177,29 +9197,41 @@
     "hotels": [
       {
         "name": "Residencial Sorata",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Trusted base near Sorata for summit attempts."
       },
       {
         "name": "Altai Oasis",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Convenient stay for Illampu approaches."
       },
       {
         "name": "Hostal Las Lomas",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Sorata."
       }
     ],
     "food": [
       {
         "name": "Café Illampu",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Sorata."
       },
       {
         "name": "Restaurant Valencia",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Cordillera Real."
       },
       {
         "name": "Altai Kitchen",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -8264,29 +9296,41 @@
     "hotels": [
       {
         "name": "Hotel Caraz",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Trusted base near Caraz for summit attempts."
       },
       {
         "name": "Los Pinos Lodge",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodge",
+        "note": "Convenient stay for Alpamayo approaches."
       },
       {
         "name": "Santa Cruz Lodge",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Caraz."
       }
     ],
     "food": [
       {
         "name": "Café de Caraz",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Caraz."
       },
       {
         "name": "La Casa de Pancha",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Cordillera Blanca."
       },
       {
         "name": "Pony's Restaurante",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -8351,29 +9395,41 @@
     "hotels": [
       {
         "name": "Refugio Huayna Potosí",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Trusted base near La Paz for summit attempts."
       },
       {
         "name": "Hotel Europa",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Convenient stay for Huayna Potosí approaches."
       },
       {
         "name": "Hostal Naira",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of La Paz."
       }
     ],
     "food": [
       {
         "name": "Gustu",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in La Paz."
       },
       {
         "name": "Popular Cocina",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Cordillera Real."
       },
       {
         "name": "Café del Mundo",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -8438,29 +9494,41 @@
     "hotels": [
       {
         "name": "Union Glacier Camp",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Trusted base near Union Glacier Camp for summit attempts."
       },
       {
         "name": "Vinson Base Camp",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Convenient stay for Mt. Vinson approaches."
       },
       {
         "name": "ALE Field Camp",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Union Glacier Camp."
       }
     ],
     "food": [
       {
         "name": "Camp Mess Tent",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Union Glacier Camp."
       },
       {
         "name": "Base Camp Kitchen",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Ellsworth Mountains."
       },
       {
         "name": "Field Rations",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -8525,29 +9593,41 @@
     "hotels": [
       {
         "name": "McMurdo Station",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Trusted base near McMurdo Station for summit attempts."
       },
       {
         "name": "Field Camp",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Convenient stay for Mt. Sidley approaches."
       },
       {
         "name": "ALE Support",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of McMurdo Station."
       }
     ],
     "food": [
       {
         "name": "Galley",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in McMurdo Station."
       },
       {
         "name": "Coffee House",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Café",
+        "note": "Local favorite after days on Executive Committee Range."
       },
       {
         "name": "Field Kitchen",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -8570,23 +9650,23 @@
     ],
     "photos": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sidley_oli_2014324_lrg.jpg/960px-Sidley_oli_2014324_lrg.jpg",
-        "credit": "NASA Earth Observatory image by Jesse Allen, using Landsat data from the U.S.…",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/MountSidleyCaldera.jpg",
+        "credit": "Unknown",
         "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sidley_oli_2014324_lrg.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountSidleyCaldera.jpg"
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/C77124s1_Ant.Map_Mount_Sidley.jpg/960px-C77124s1_Ant.Map_Mount_Sidley.jpg",
-        "credit": "USGS",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Mount_Sidley_-_Antarctica%E2%80%99s_Tallest_Volcano.jpg",
+        "credit": "Landsat 8 / NASA",
         "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:C77124s1_Ant.Map_Mount_Sidley.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Sidley_-_Antarctica%E2%80%99s_Tallest_Volcano.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sidley_oli_2014324_lrg.jpg/960px-Sidley_oli_2014324_lrg.jpg",
-      "credit": "NASA Earth Observatory image by Jesse Allen, using Landsat data from the U.S.…",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/MountSidleyCaldera.jpg",
+      "credit": "Unknown",
       "license": "Public domain",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sidley_oli_2014324_lrg.jpg"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountSidleyCaldera.jpg"
     }
   },
   {
@@ -8612,29 +9692,41 @@
     "hotels": [
       {
         "name": "NuWray Inn",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Trusted base near Burnsville for summit attempts."
       },
       {
         "name": "Celo Inn",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Mitchell approaches."
       },
       {
         "name": "Parkway Cabins",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Burnsville."
       }
     ],
     "food": [
       {
         "name": "Garden Deli",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Burnsville."
       },
       {
         "name": "Appalachian Café",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Appalachian Mountains."
       },
       {
         "name": "Burnsville Pizza",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Casual eats",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -8699,29 +9791,41 @@
     "hotels": [
       {
         "name": "Baxter Park Inn",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Trusted base near Millinocket for summit attempts."
       },
       {
         "name": "Katahdin Inn",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Katahdin approaches."
       },
       {
         "name": "Appalachian Trail Lodge",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Millinocket."
       }
     ],
     "food": [
       {
         "name": "Scootic In",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Millinocket."
       },
       {
         "name": "Appalachian Trail Café",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Appalachian Mountains."
       },
       {
         "name": "Millinocket House of Pizza",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Casual eats",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -8786,29 +9890,41 @@
     "hotels": [
       {
         "name": "Mirror Lake Inn",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Trusted base near Lake Placid for summit attempts."
       },
       {
         "name": "High Peaks Resort",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodge",
+        "note": "Convenient stay for Mt. Marcy approaches."
       },
       {
         "name": "ADK Loj",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Lake Placid."
       }
     ],
     "food": [
       {
         "name": "Lisa G's",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Lake Placid."
       },
       {
         "name": "The Cottage",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Adirondacks."
       },
       {
         "name": "Big Slide Brewery",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Pub / grill",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -8873,29 +9989,41 @@
     "hotels": [
       {
         "name": "AMC Highland Center",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Trusted base near Gorham for summit attempts."
       },
       {
         "name": "Town & Country Inn",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Hotel",
+        "note": "Convenient stay for Mt. Washington approaches."
       },
       {
         "name": "Mt. Washington Hotel",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Gorham."
       }
     ],
     "food": [
       {
         "name": "Mr. Pizza",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Casual eats",
+        "note": "Solid post-summit meal in Gorham."
       },
       {
         "name": "Libby's Bistro",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Pub / grill",
+        "note": "Local favorite after days on Presidential Range."
       },
       {
         "name": "White Mountain Café",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -8960,29 +10088,41 @@
     "hotels": [
       {
         "name": "Sundance Resort",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodge",
+        "note": "Trusted base near Aspen Grove for summit attempts."
       },
       {
         "name": "Timpanogos Lodge",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodge",
+        "note": "Convenient stay for Mt. Timpanogos approaches."
       },
       {
         "name": "Homestead Resort",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Aspen Grove."
       }
     ],
     "food": [
       {
         "name": "Foundry Grill",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Pub / grill",
+        "note": "Solid post-summit meal in Aspen Grove."
       },
       {
         "name": "Tree Room",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Wasatch Range."
       },
       {
         "name": "Café at Sundance",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -9047,29 +10187,41 @@
     "hotels": [
       {
         "name": "Hyatt Place Draper",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Trusted base near Draper for summit attempts."
       },
       {
         "name": "Homewood Suites",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Convenient stay for Lone Peak approaches."
       },
       {
         "name": "Little America",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Draper."
       }
     ],
     "food": [
       {
         "name": "Café Rio",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Draper."
       },
       {
         "name": "Lucky 13",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Wasatch Range."
       },
       {
         "name": "Wasatch Brew Pub",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Café",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -9134,29 +10286,41 @@
     "hotels": [
       {
         "name": "Jenny Lake Lodge",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodge",
+        "note": "Trusted base near Jackson for summit attempts."
       },
       {
         "name": "Wort Hotel",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Hotel",
+        "note": "Convenient stay for Grand Teton approaches."
       },
       {
         "name": "The Cloudveil",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Jackson."
       }
     ],
     "food": [
       {
         "name": "Snake River Grill",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Pub / grill",
+        "note": "Solid post-summit meal in Jackson."
       },
       {
         "name": "Persephone",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Teton Range."
       },
       {
         "name": "Bin 22",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -9179,23 +10343,23 @@
     ],
     "photos": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Chapel_of_the_Sacred_Heart_%28Grand_Teton_National_Park%2C_WY%29_-_statue_Christ_showing_His_Sacred_Heart.jpg/960px-Chapel_of_the_Sacred_Heart_%28Grand_Teton_National_Park%2C_WY%29_-_statue_Christ_showing_His_Sacred_Heart.jpg",
-        "credit": "Nheyob",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chapel_of_the_Sacred_Heart_(Grand_Teton_National_Park,_WY)_-_statue_Christ_showing_His_Sacred_Heart.jpg"
-      },
-      {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/960px-Adams_The_Tetons_and_the_Snake_River.jpg",
         "credit": "Ansel Adams",
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adams_The_Tetons_and_the_Snake_River.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Willow_Flats_area_and_Teton_Range_in_Grand_Teton_National_Park.jpg/960px-Willow_Flats_area_and_Teton_Range_in_Grand_Teton_National_Park.jpg",
+        "credit": "Michael Gäbler",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Willow_Flats_area_and_Teton_Range_in_Grand_Teton_National_Park.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Chapel_of_the_Sacred_Heart_%28Grand_Teton_National_Park%2C_WY%29_-_statue_Christ_showing_His_Sacred_Heart.jpg/960px-Chapel_of_the_Sacred_Heart_%28Grand_Teton_National_Park%2C_WY%29_-_statue_Christ_showing_His_Sacred_Heart.jpg",
-      "credit": "Nheyob",
-      "license": "CC BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chapel_of_the_Sacred_Heart_(Grand_Teton_National_Park,_WY)_-_statue_Christ_showing_His_Sacred_Heart.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/960px-Adams_The_Tetons_and_the_Snake_River.jpg",
+      "credit": "Ansel Adams",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adams_The_Tetons_and_the_Snake_River.jpg"
     }
   },
   {
@@ -9221,29 +10385,41 @@
     "hotels": [
       {
         "name": "Signal Mountain Lodge",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodge",
+        "note": "Trusted base near Moran for summit attempts."
       },
       {
         "name": "Jackson Lake Lodge",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Lodge",
+        "note": "Convenient stay for Mt. Moran approaches."
       },
       {
         "name": "Colter Bay Village",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Moran."
       }
     ],
     "food": [
       {
         "name": "Pioneer Grill",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Pub / grill",
+        "note": "Solid post-summit meal in Moran."
       },
       {
         "name": "Mural Room",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Teton Range."
       },
       {
         "name": "John Colter Café",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -9308,29 +10484,41 @@
     "hotels": [
       {
         "name": "Historic Occidental Hotel",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Hotel",
+        "note": "Trusted base near Buffalo for summit attempts."
       },
       {
         "name": "Super 8 Buffalo",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Lodging",
+        "note": "Convenient stay for Cloud Peak approaches."
       },
       {
         "name": "Cloud Peak Inn",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Buffalo."
       }
     ],
     "food": [
       {
         "name": "The Busy Bee",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Buffalo."
       },
       {
         "name": "Deerfield Lounge",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Bighorn Mountains."
       },
       {
         "name": "Boots Brown BBQ",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -9395,29 +10583,41 @@
     "hotels": [
       {
         "name": "Comfort Inn Alamosa",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Hotel",
+        "note": "Trusted base near Alamosa for summit attempts."
       },
       {
         "name": "Valley Motel",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Hotel",
+        "note": "Convenient stay for Blanca Peak approaches."
       },
       {
         "name": "Great Sand Dunes Lodge",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Alamosa."
       }
     ],
     "food": [
       {
         "name": "Milagros Coffee",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Café",
+        "note": "Solid post-summit meal in Alamosa."
       },
       {
         "name": "Calvillos",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Sangre de Cristo."
       },
       {
         "name": "San Luis Valley Brewing",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -9440,23 +10640,23 @@
     ],
     "photos": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/CO_Blanca_Peak_400166_1967_24000_geo_%28TIF%29.tif/lossy-page1-960px-CO_Blanca_Peak_400166_1967_24000_geo_%28TIF%29.tif.jpg",
-        "credit": "USGS",
-        "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CO_Blanca_Peak_400166_1967_24000_geo_(TIF).tif"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Pinus_aristata%2C_2980_m%2C_above_Zapata_Falls%2C_Blanca_Peak%2C_Colorado.jpg/960px-Pinus_aristata%2C_2980_m%2C_above_Zapata_Falls%2C_Blanca_Peak%2C_Colorado.jpg",
+        "credit": "Cbarlow",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pinus_aristata,_2980_m,_above_Zapata_Falls,_Blanca_Peak,_Colorado.jpg"
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/CO_Blanca_Peak_400169_1967_24000_geo_%28TIF%29.tif/lossy-page1-960px-CO_Blanca_Peak_400169_1967_24000_geo_%28TIF%29.tif.jpg",
-        "credit": "USGS",
-        "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CO_Blanca_Peak_400169_1967_24000_geo_(TIF).tif"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Blanca_Wetlands_and_Blanca_Peak_%2829279068390%29.jpg/960px-Blanca_Wetlands_and_Blanca_Peak_%2829279068390%29.jpg",
+        "credit": "Great Sand Dunes National Park and Preserve",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blanca_Wetlands_and_Blanca_Peak_(29279068390).jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/CO_Blanca_Peak_400166_1967_24000_geo_%28TIF%29.tif/lossy-page1-960px-CO_Blanca_Peak_400166_1967_24000_geo_%28TIF%29.tif.jpg",
-      "credit": "USGS",
-      "license": "Public domain",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CO_Blanca_Peak_400166_1967_24000_geo_(TIF).tif"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Pinus_aristata%2C_2980_m%2C_above_Zapata_Falls%2C_Blanca_Peak%2C_Colorado.jpg/960px-Pinus_aristata%2C_2980_m%2C_above_Zapata_Falls%2C_Blanca_Peak%2C_Colorado.jpg",
+      "credit": "Cbarlow",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pinus_aristata,_2980_m,_above_Zapata_Falls,_Blanca_Peak,_Colorado.jpg"
     }
   },
   {
@@ -9482,29 +10682,41 @@
     "hotels": [
       {
         "name": "Crestone Mountain Zen Center",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Lodging",
+        "note": "Trusted base near Crestone for summit attempts."
       },
       {
         "name": "Silver Star Guesthouse",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Convenient stay for Crestone Peak approaches."
       },
       {
         "name": "Desert Sage",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Lodging",
+        "note": "Popular with climbers staging out of Crestone."
       }
     ],
     "food": [
       {
         "name": "Happy Belly Bowl",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Crestone."
       },
       {
         "name": "Crestone Brewery",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Pub / grill",
+        "note": "Local favorite after days on Sangre de Cristo."
       },
       {
         "name": "Atalanta",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -9527,23 +10739,23 @@
     ],
     "photos": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/CO_Crestone_Peak_400728_1967_24000_geo_%28TIF%29.tif/lossy-page1-960px-CO_Crestone_Peak_400728_1967_24000_geo_%28TIF%29.tif.jpg",
-        "credit": "USGS",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Dunes_and_Crestone_Peaks_%2851876785104%29.jpg/960px-Dunes_and_Crestone_Peaks_%2851876785104%29.jpg",
+        "credit": "NPS/Patrick Myers",
         "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CO_Crestone_Peak_400728_1967_24000_geo_(TIF).tif"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dunes_and_Crestone_Peaks_(51876785104).jpg"
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CO_Crestone_Peak_400729_1967_24000_geo_%28TIF%29.tif/lossy-page1-960px-CO_Crestone_Peak_400729_1967_24000_geo_%28TIF%29.tif.jpg",
-        "credit": "USGS",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Star_Dune_and_Crestone_Peaks_%2851985120756%29.jpg/960px-Star_Dune_and_Crestone_Peaks_%2851985120756%29.jpg",
+        "credit": "Great Sand Dunes National Park and Preserve",
         "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CO_Crestone_Peak_400729_1967_24000_geo_(TIF).tif"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Star_Dune_and_Crestone_Peaks_(51985120756).jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/CO_Crestone_Peak_400728_1967_24000_geo_%28TIF%29.tif/lossy-page1-960px-CO_Crestone_Peak_400728_1967_24000_geo_%28TIF%29.tif.jpg",
-      "credit": "USGS",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Dunes_and_Crestone_Peaks_%2851876785104%29.jpg/960px-Dunes_and_Crestone_Peaks_%2851876785104%29.jpg",
+      "credit": "NPS/Patrick Myers",
       "license": "Public domain",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CO_Crestone_Peak_400728_1967_24000_geo_(TIF).tif"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dunes_and_Crestone_Peaks_(51876785104).jpg"
     }
   },
   {
@@ -9569,29 +10781,41 @@
     "hotels": [
       {
         "name": "The Little Nell",
-        "rating": 4.5
+        "rating": 4.5,
+        "category": "Lodging",
+        "note": "Trusted base near Aspen for summit attempts."
       },
       {
         "name": "Hotel Jerome",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Convenient stay for Capitol Peak approaches."
       },
       {
         "name": "St. Regis Aspen",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Hotel",
+        "note": "Popular with climbers staging out of Aspen."
       }
     ],
     "food": [
       {
         "name": "Cache Cache",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Aspen."
       },
       {
         "name": "Matsuhisa",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Elk Mountains."
       },
       {
         "name": "Meat & Cheese",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [
@@ -9656,29 +10880,41 @@
     "hotels": [
       {
         "name": "Limelight Hotel",
-        "rating": 4.6
+        "rating": 4.6,
+        "category": "Hotel",
+        "note": "Trusted base near Aspen for summit attempts."
       },
       {
         "name": "The Gant",
-        "rating": 4.7
+        "rating": 4.7,
+        "category": "Lodging",
+        "note": "Convenient stay for Pyramid Peak approaches."
       },
       {
         "name": "Molly Gibson Lodge",
-        "rating": 4.8
+        "rating": 4.8,
+        "category": "Lodge",
+        "note": "Popular with climbers staging out of Aspen."
       }
     ],
     "food": [
       {
         "name": "White House Tavern",
-        "rating": 4.2
+        "rating": 4.2,
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in Aspen."
       },
       {
         "name": "Ajax Tavern",
-        "rating": 4.3
+        "rating": 4.3,
+        "category": "Restaurant",
+        "note": "Local favorite after days on Elk Mountains."
       },
       {
         "name": "Peaches Café",
-        "rating": 4.4
+        "rating": 4.4,
+        "category": "Restaurant",
+        "note": "Easy refuel between approaches and rest days."
       }
     ],
     "trails": [

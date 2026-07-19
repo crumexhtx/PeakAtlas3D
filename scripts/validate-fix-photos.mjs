@@ -53,6 +53,46 @@ const CURATED_FILES = {
   gannett: [
     'File:Wind River Range Gannett Peak Green River Basin Wy PICT0033 19941023.jpg',
   ],
+  longs: [
+    'File:Longs Peak from the Dream Lake trail at sunrise, Rocky Mountain National Park, Colorado, USA.jpg',
+    'File:Meeker, Longs, Lady Washington.jpg',
+  ],
+  guadalupe: [
+    'File:Summit of the Guadalupe Peak DSC 5528 ad.JPG',
+    'File:Guadalupe peak from top.jpg',
+  ],
+  robson: [
+    'File:Mount Robson 08122005.jpg',
+    'File:Mount Robson panorama.jpg',
+  ],
+  illimani: [
+    'File:Illimani - Cordillera Real.jpg',
+    'File:Illimani with the full moon rising overhead.jpg',
+  ],
+  annapurna: [
+    'File:Annapurna Massif Panorama.jpg',
+    'File:Sunrise Annapurna Pokhara Nepal Feb13 DSC 1583.jpg',
+  ],
+  ama: [
+    'File:Ama Dablam, Nepal.jpg',
+    'File:Ama Dablam and the Himalayas, Mountains of Nepal.jpg',
+  ],
+  tasman: [
+    'File:Mount Tasman and Torres Peak.jpg',
+    'File:Mount Aoraki (Mt. Cook) & Mount Tasman - Lake Matheson (New Zealand).jpg',
+  ],
+  musala: [
+    'File:Musala peak.jpg',
+    'File:Musala and Malka Musala.jpg',
+  ],
+  sidley: [
+    'File:Mount Sidley - Antarctica’s Tallest Volcano.jpg',
+    'File:MountSidleyCaldera.jpg',
+  ],
+  grandteton: [
+    'File:Adams The Tetons and the Snake River.jpg',
+    'File:Willow Flats area and Teton Range in Grand Teton National Park.jpg',
+  ],
 }
 
 /** Peaks allowed to ship with a single validated still (Commons scarcity). */
@@ -87,7 +127,7 @@ const REQUIRE_CONTEXT = {
 }
 
 const REJECT_PATTERNS =
-  /(?:^|[^a-z])(salmon|entrance|headstone|cemetery|kentucky|ireland|sligo|benbulbin|palo duro|texas panhandle|apollo|soyuz|helichrysum|stuhlmannii|logo|flag|diagram|chart|coat of arms|location map|topo map|orthophoto|satellite image of|pdf)(?:[^a-z]|$)/i
+  /(?:^|[^a-z])(salmon|entrance|headstone|cemetery|kentucky|ireland|sligo|benbulbin|palo duro|texas panhandle|apollo|soyuz|helichrysum|stuhlmannii|logo|flag|diagram|chart|coat of arms|location map|topo map|orthophoto|satellite image of|pdf|geology|plaque|statue|chapel|museum|time zone|thumbnail\.jpg|helicopter|map_mount|24000 geo|ski area|moose in grand|barns grand)(?:[^a-z]|$)/i
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 

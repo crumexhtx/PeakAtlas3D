@@ -11,8 +11,14 @@ import type { CountrySummary } from '../types/country'
 import { FlagPeakMarker } from './FlagPeakMarker'
 import { CountryFlagMarker } from './CountryFlagMarker'
 import { NearbyPlaceMarker } from './NearbyPlaceMarker'
+import { SpinFunFact } from './SpinFunFact'
 import { useUnits } from '../context/UnitsContext'
-import { buildCountrySummaries, getCountryBounds, flagUrl } from '../lib/countries'
+import {
+  buildCountrySummaries,
+  getCountryBounds,
+  flagUrl,
+  peakMatchesCountry,
+} from '../lib/countries'
 import {
   hasMapboxToken,
   HERO_TERRAIN_EXAGGERATION,
@@ -101,19 +107,26 @@ export function AtlasMap({
   const cinematicRunRef = useRef(0)
   const onCinematicChangeRef = useRef(onCinematicChange)
   const [mapReady, setMapReady] = useState(false)
+  const [mapInstance, setMapInstance] = useState<MapboxMap | null>(null)
+  const [spinning, setSpinning] = useState(false)
   const { units } = useUnits()
 
   onCinematicChangeRef.current = onCinematicChange
 
   const countries = useMemo(() => buildCountrySummaries(peaks), [peaks])
-  const countryPeaks = useMemo(() => {
-    if (!selectedCountry) return []
-    return peaks.filter((p) => p.country === selectedCountry)
-  }, [peaks, selectedCountry])
   const selectedSummary = useMemo(
-    () => countries.find((c) => c.name === selectedCountry) ?? null,
+    () =>
+      countries.find(
+        (c) =>
+          c.name === selectedCountry ||
+          (selectedCountry != null && c.labels.includes(selectedCountry)),
+      ) ?? null,
     [countries, selectedCountry],
   )
+  const countryPeaks = useMemo(() => {
+    if (!selectedCountry) return []
+    return peaks.filter((p) => peakMatchesCountry(p, selectedCountry, countries))
+  }, [peaks, selectedCountry, countries])
   const nearbyPlaces = useMemo(() => {
     if (!activePeak) return []
     if (activePeak.nearbyPlaces?.length) return activePeak.nearbyPlaces.slice(0, 3)
@@ -130,6 +143,7 @@ export function AtlasMap({
   function stopSpin() {
     spinRef.current?.cancel()
     spinRef.current = null
+    setSpinning(false)
   }
 
   function clearIdleTimer() {
@@ -156,6 +170,7 @@ export function AtlasMap({
       idleTimerRef.current = window.setTimeout(() => {
         stopSpin()
         spinRef.current = startIdleSpin(map)
+        setSpinning(true)
       }, IDLE_ROTATE_DELAY_MS)
     }
 
@@ -417,6 +432,7 @@ export function AtlasMap({
           if (map) {
             applyPeakAtmosphere(map)
             softenSatelliteRaster(map)
+            setMapInstance(map)
           }
           setMapReady(true)
         }}
@@ -469,6 +485,15 @@ export function AtlasMap({
         <div className="map-mode-chip" aria-hidden="true">
           {selectedSummary.name} · {selectedSummary.peakCount} peaks
         </div>
+      )}
+
+      {mode === 'world' && (
+        <SpinFunFact
+          map={mapInstance}
+          spinning={spinning}
+          countries={countries}
+          peaks={peaks}
+        />
       )}
 
       {cinematic && (

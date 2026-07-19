@@ -4,8 +4,11 @@ import { CountryPanel } from '../components/CountryPanel'
 import { useAtlas } from '../context/AtlasContext'
 import { peaks } from '../data/catalog'
 import { useUnits } from '../context/UnitsContext'
-import { buildCountrySummaries } from '../lib/countries'
-import { filterPeaks, uniqueSorted } from '../lib/geo'
+import {
+  buildCountrySummaries,
+  peakMatchesCountry,
+} from '../lib/countries'
+import { uniqueSorted } from '../lib/geo'
 
 export function HomePage() {
   const { units } = useUnits()
@@ -18,16 +21,21 @@ export function HomePage() {
     openPeak,
   } = useAtlas()
 
-  const countries = useMemo(() => uniqueSorted(peaks.map((p) => p.country)), [])
+  const allCountrySummaries = useMemo(() => buildCountrySummaries(peaks), [])
+
+  const countries = useMemo(
+    () => allCountrySummaries.map((c) => c.name),
+    [allCountrySummaries],
+  )
 
   const ranges = useMemo(() => {
     const scoped = selectedCountry
-      ? peaks.filter((p) => p.country === selectedCountry)
+      ? peaks.filter((p) =>
+          peakMatchesCountry(p, selectedCountry, allCountrySummaries),
+        )
       : peaks
     return uniqueSorted(scoped.map((p) => p.range))
-  }, [selectedCountry])
-
-  const allCountrySummaries = useMemo(() => buildCountrySummaries(peaks), [])
+  }, [selectedCountry, allCountrySummaries])
 
   const worldCountryCount = useMemo(
     () => buildCountrySummaries(mapPeaks).length,
@@ -37,15 +45,28 @@ export function HomePage() {
   const selectedSummary = useMemo(
     () =>
       selectedCountry
-        ? (allCountrySummaries.find((c) => c.name === selectedCountry) ?? null)
+        ? (allCountrySummaries.find(
+            (c) =>
+              c.name === selectedCountry ||
+              c.labels.includes(selectedCountry),
+          ) ?? null)
         : null,
     [allCountrySummaries, selectedCountry],
   )
 
   const countryPeakList = useMemo(() => {
     if (!selectedCountry) return []
-    return filterPeaks(peaks, browse)
-  }, [browse, selectedCountry])
+    return peaks.filter((p) => {
+      if (!peakMatchesCountry(p, selectedCountry, allCountrySummaries)) {
+        return false
+      }
+      if (browse.range && p.range !== browse.range) return false
+      if (browse.minElevationFt > 0 && p.elevationFt < browse.minElevationFt) {
+        return false
+      }
+      return true
+    })
+  }, [browse, selectedCountry, allCountrySummaries])
 
   return (
     <>

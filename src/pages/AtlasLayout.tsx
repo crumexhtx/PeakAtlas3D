@@ -10,7 +10,10 @@ import {
   metaForAtlas,
   metaForPeak,
 } from '../lib/documentMeta'
-import { filterPeaks } from '../lib/geo'
+import {
+  buildCountrySummaries,
+  peakMatchesCountry,
+} from '../lib/countries'
 import { atlasHref, peakHref } from '../lib/routes'
 import type { Peak, PeakBrowseFilters } from '../types/peak'
 
@@ -58,10 +61,23 @@ export function AtlasLayout() {
     applyDocumentMeta(metaForAtlas(selectedCountry))
   }, [activePeak, selectedCountry])
 
+  const countrySummaries = useMemo(() => buildCountrySummaries(peaks), [])
+
   const mapPeaks = useMemo(() => {
-    if (selectedCountry) return filterPeaks(peaks, browse)
-    return filterPeaks(peaks, { ...browse, country: '' })
-  }, [browse, selectedCountry])
+    return peaks.filter((p) => {
+      if (
+        selectedCountry &&
+        !peakMatchesCountry(p, selectedCountry, countrySummaries)
+      ) {
+        return false
+      }
+      if (browse.range && p.range !== browse.range) return false
+      if (browse.minElevationFt > 0 && p.elevationFt < browse.minElevationFt) {
+        return false
+      }
+      return true
+    })
+  }, [browse, selectedCountry, countrySummaries])
 
   const syncCountryToUrl = useCallback(
     (country: string) => {

@@ -12,12 +12,11 @@ export function PeakPhotoGallery({ name, photos }: PeakPhotoGalleryProps) {
   const slides = photos.filter((p) => p?.url).slice(0, 2)
   const [index, setIndex] = useState(0)
   const multi = slides.length > 1
+  const [paused, setPaused] = useState(false)
 
   useEffect(() => {
     setIndex(0)
   }, [name])
-
-  const [paused, setPaused] = useState(false)
 
   useEffect(() => {
     if (!multi || paused) return
@@ -31,25 +30,16 @@ export function PeakPhotoGallery({ name, photos }: PeakPhotoGalleryProps) {
 
   if (!slides.length) return null
 
-  const active = slides[Math.min(index, slides.length - 1)] ?? slides[0]
-
-  // Single still: skip the fade stack (avoids opacity:0 edge cases).
   if (!multi) {
     return (
       <figure className="peak-photo">
         <img
-          src={active.url}
+          src={slides[0]!.url}
           alt={`${name} — summit view`}
           loading="eager"
           decoding="async"
           referrerPolicy="no-referrer"
         />
-        <figcaption className="peak-photo-credit">
-          <a href={active.sourceUrl} target="_blank" rel="noreferrer">
-            {active.credit}
-          </a>
-          {active.license ? ` · ${active.license}` : ''}
-        </figcaption>
       </figure>
     )
   }
@@ -74,25 +64,17 @@ export function PeakPhotoGallery({ name, photos }: PeakPhotoGalleryProps) {
         ))}
       </div>
 
-      <figcaption className="peak-photo-credit">
-        <a href={active.sourceUrl} target="_blank" rel="noreferrer">
-          {active.credit}
-        </a>
-        {active.license ? ` · ${active.license}` : ''}
-        {multi && (
-          <span className="peak-photo-dots" aria-hidden="true">
-            {slides.map((_, i) => (
-              <button
-                key={i}
-                type="button"
-                className={`peak-photo-dot ${i === index ? 'is-active' : ''}`}
-                aria-label={`Show photo ${i + 1}`}
-                onClick={() => setIndex(i)}
-              />
-            ))}
-          </span>
-        )}
-      </figcaption>
+      <div className="peak-photo-dots" aria-hidden="true">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            className={`peak-photo-dot ${i === index ? 'is-active' : ''}`}
+            aria-label={`Show photo ${i + 1}`}
+            onClick={() => setIndex(i)}
+          />
+        ))}
+      </div>
     </figure>
   )
 }

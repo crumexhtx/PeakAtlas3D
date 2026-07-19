@@ -10,6 +10,10 @@ export type Town = {
 export type Amenity = {
   name: string
   rating?: number
+  /** Lodge, Inn, Restaurant, Café, etc. */
+  category?: string
+  /** Short traveler-facing detail line. */
+  note?: string
 }
 
 /** Curated Commons (or similar) still used in the peak dossier. */
