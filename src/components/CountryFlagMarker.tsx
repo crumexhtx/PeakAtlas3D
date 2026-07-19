@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Marker, useMap } from 'react-map-gl/mapbox'
+import { Marker } from 'react-map-gl/mapbox'
 import type { CountrySummary } from '../types/country'
 import { countryToIso, flagUrl } from '../lib/countries'
-import { isOnFrontHemisphere } from '../lib/globeVisibility'
 
 type CountryFlagMarkerProps = {
   country: CountrySummary
@@ -23,13 +22,15 @@ function flagCandidates(country: string): string[] {
   return out
 }
 
+/**
+ * Country flag pin. Visibility / declutter is owned by CountryFlagsLayer so
+ * this marker stays mounted while on-screen (avoids limb flicker on spin).
+ */
 export function CountryFlagMarker({
   country,
   onClick,
   showLabel = true,
 }: CountryFlagMarkerProps) {
-  const { current } = useMap()
-  const [visible, setVisible] = useState(true)
   const candidates = flagCandidates(country.name)
   const [candidateIndex, setCandidateIndex] = useState(0)
   const [failed, setFailed] = useState(false)
@@ -39,29 +40,6 @@ export function CountryFlagMarker({
     setCandidateIndex(0)
     setFailed(false)
   }, [country.name])
-
-  useEffect(() => {
-    const map = current?.getMap()
-    if (!map) return
-
-    const update = () => {
-      setVisible(isOnFrontHemisphere(map, country.lon, country.lat, 0.08))
-    }
-
-    update()
-    map.on('move', update)
-    map.on('zoom', update)
-    map.on('pitch', update)
-    map.on('rotate', update)
-    return () => {
-      map.off('move', update)
-      map.off('zoom', update)
-      map.off('pitch', update)
-      map.off('rotate', update)
-    }
-  }, [current, country.lon, country.lat])
-
-  if (!visible) return null
 
   return (
     <Marker longitude={country.lon} latitude={country.lat} anchor="bottom">

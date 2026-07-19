@@ -6,6 +6,7 @@ import { ContactPage } from './pages/ContactPage'
 import { ContentLayout } from './pages/ContentLayout'
 import { HomePage } from './pages/HomePage'
 import { PeakPage } from './pages/PeakPage'
+import { ReleasesPage } from './pages/ReleasesPage'
 import './styles/app.css'
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
           </Route>
           <Route element={<ContentLayout />}>
             <Route path="about" element={<AboutPage />} />
+            <Route path="releases" element={<ReleasesPage />} />
             <Route path="contact" element={<ContactPage />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />

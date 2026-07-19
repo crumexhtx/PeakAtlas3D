@@ -30,14 +30,23 @@ export function AtlasHint({ visible, onActiveChange }: AtlasHintProps) {
     onActiveChange?.(active)
   }, [active, onActiveChange])
 
-  function dismiss() {
-    setDismissed(true)
+  function persistDismissed() {
     try {
       localStorage.setItem(ATLAS_HINT_STORAGE_KEY, '1')
     } catch {
       // ignore quota / private mode
     }
   }
+
+  function dismiss() {
+    setDismissed(true)
+    persistDismissed()
+  }
+
+  // Auto-hide should count as seen so the hint doesn't keep blocking UX on return.
+  useEffect(() => {
+    if (autoHidden && !dismissed) persistDismissed()
+  }, [autoHidden, dismissed])
 
   if (!active) return null
 
@@ -51,12 +60,4 @@ export function AtlasHint({ visible, onActiveChange }: AtlasHintProps) {
       </button>
     </div>
   )
-}
-
-export function isAtlasHintPending(): boolean {
-  try {
-    return localStorage.getItem(ATLAS_HINT_STORAGE_KEY) !== '1'
-  } catch {
-    return false
-  }
 }

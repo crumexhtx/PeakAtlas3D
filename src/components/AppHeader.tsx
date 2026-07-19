@@ -103,6 +103,7 @@ export function AppHeader({
 
       <nav className="site-nav site-nav-compact" aria-label="Site">
         <NavLink to="/about">About</NavLink>
+        <NavLink to="/releases">Releases</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>
 

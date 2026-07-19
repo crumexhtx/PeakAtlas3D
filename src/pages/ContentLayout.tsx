@@ -1,5 +1,6 @@
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { useEffect } from 'react'
+import { ContentDisclaimer } from '../components/ContentDisclaimer'
 import { applyDocumentMeta, metaForAtlas } from '../lib/documentMeta'
 
 export function ContentLayout() {
@@ -21,12 +22,16 @@ export function ContentLayout() {
             Atlas
           </NavLink>
           <NavLink to="/about">About</NavLink>
+          <NavLink to="/releases">Releases</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </nav>
       </header>
       <main className="content-main">
         <Outlet />
       </main>
+      <footer className="content-footer">
+        <ContentDisclaimer compact />
+      </footer>
     </div>
   )
 }

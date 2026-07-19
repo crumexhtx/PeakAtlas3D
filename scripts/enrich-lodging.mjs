@@ -22,7 +22,10 @@ const OVERPASS_URLS = [
   'https://overpass.kumi.systems/api/interpreter',
 ]
 const RADIUS_M = 25_000
+/** Drop results farther than this from the summit (avoids town→summit mismatches). */
+const MAX_SUMMIT_MILES = 50
 const MAX_PER_PEAK = 3
+const REJECT_NAME = /\b(lookout|porch|viewpoint|picnic|campground|campsite)\b/i
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 const TOURISM_CATEGORY = {
@@ -110,12 +113,15 @@ function mapElements(elements, peakLat, peakLon) {
     const tourism = el.tags?.tourism
     const center = centerOf(el)
     if (!name || !tourism || !center) continue
+    if (REJECT_NAME.test(name)) continue
 
     const key = `${name.toLowerCase()}|${center.lat.toFixed(4)}|${center.lon.toFixed(4)}`
     if (seen.has(key)) continue
     seen.add(key)
 
     const miles = haversineMiles(peakLat, peakLon, center.lat, center.lon)
+    if (miles > MAX_SUMMIT_MILES) continue
+
     mapped.push({
       name,
       category: TOURISM_CATEGORY[tourism] || 'Lodging',

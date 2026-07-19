@@ -1,8 +1,11 @@
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { ContentDisclaimer } from '../components/ContentDisclaimer'
 import { applyDocumentMeta } from '../lib/documentMeta'
 
 export function AboutPage() {
+  const { hash } = useLocation()
+
   useEffect(() => {
     applyDocumentMeta({
       title: 'About — PeakAtlas3D',
@@ -11,6 +14,12 @@ export function AboutPage() {
       path: '/about',
     })
   }, [])
+
+  useEffect(() => {
+    if (hash !== '#disclaimer') return
+    const el = document.getElementById('disclaimer')
+    el?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, [hash])
 
   return (
     <article className="content-article about-article">
@@ -59,7 +68,13 @@ export function AboutPage() {
           a link to a friend who “gets” mountains — the same way summit registers and
           trailhead conversations have always worked.
         </p>
+        <p>
+          For product updates, see the{' '}
+          <Link to="/releases">Releases</Link> page.
+        </p>
       </section>
+
+      <ContentDisclaimer />
 
       <p className="content-cta-row">
         <Link to="/" className="content-cta">

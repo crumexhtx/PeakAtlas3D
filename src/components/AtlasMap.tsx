@@ -59,12 +59,18 @@ type AtlasMapProps = {
   funFactsEnabled?: boolean
 }
 
-const WORLD_VIEW = {
-  longitude: 20,
-  latitude: 20,
-  zoom: 1.55,
-  pitch: 0,
-  bearing: 0,
+const WORLD_ZOOM = 1.55
+
+/** Fresh random globe framing for each full page load / refresh. */
+function createRandomWorldView() {
+  return {
+    longitude: Math.random() * 360 - 180,
+    // Avoid framing mostly ocean at the poles.
+    latitude: -32 + Math.random() * 64,
+    zoom: WORLD_ZOOM,
+    pitch: 0,
+    bearing: 0,
+  }
 }
 
 const ORBIT_ZOOM = 12.2
@@ -109,6 +115,8 @@ export function AtlasMap({
   const leavingPeakRef = useRef(false)
   const cinematicRunRef = useRef(0)
   const onCinematicChangeRef = useRef(onCinematicChange)
+  /** Stable for this page session; randomized again on full refresh. */
+  const [worldView] = useState(createRandomWorldView)
   const [mapReady, setMapReady] = useState(false)
   const [mapInstance, setMapInstance] = useState<MapboxMap | null>(null)
   const [spinning, setSpinning] = useState(false)
@@ -217,10 +225,10 @@ export function AtlasMap({
     if (!selectedCountry) {
       if (prev || returningFromPeak) {
         map.easeTo({
-          center: [WORLD_VIEW.longitude, WORLD_VIEW.latitude],
-          zoom: WORLD_VIEW.zoom,
-          pitch: WORLD_VIEW.pitch,
-          bearing: WORLD_VIEW.bearing,
+          center: [worldView.longitude, worldView.latitude],
+          zoom: worldView.zoom,
+          pitch: worldView.pitch,
+          bearing: worldView.bearing,
           duration: prefersReducedMotion() ? 0 : 1400,
           essential: true,
         })
@@ -239,7 +247,7 @@ export function AtlasMap({
       pitch: 0,
       bearing: 0,
     })
-  }, [mapReady, selectedCountry, countryPeaks, activePeak])
+  }, [mapReady, selectedCountry, countryPeaks, activePeak, worldView])
 
   // Peak cinematic — continues from the live camera (same map instance).
   useEffect(() => {
@@ -424,7 +432,7 @@ export function AtlasMap({
       <Map
         ref={mapRef}
         mapboxAccessToken={MAPBOX_TOKEN}
-        initialViewState={WORLD_VIEW}
+        initialViewState={worldView}
         mapStyle={MAP_STYLE_SATELLITE}
         projection="globe"
         maxPitch={85}
@@ -447,6 +455,7 @@ export function AtlasMap({
           <CountryFlagsLayer
             countries={countries}
             onSelectCountry={onSelectCountry}
+            spinning={spinning}
           />
         )}
 

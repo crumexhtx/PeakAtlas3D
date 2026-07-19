@@ -50,19 +50,24 @@ Open the URL Vite prints (usually `http://localhost:5173`).
 | `npm run build` | Production build |
 | `npm run preview` | Preview production build |
 | `npm run lint` | Lint with oxlint |
+| `npm run enrich:content` | Add whyNotable / seasons / aliases |
+| `npm run enrich:lodging` | Refresh OSM lodging near peaks |
+| `npm run scrub:lodging` | Drop lodging farther than 50 mi from summit |
+| `npm run validate:photos:check` | Fail if peak photos look mismatched |
 
 ## Data
 
-Peak data lives in [`src/data/peaks.json`](src/data/peaks.json). Peak photos include Wikimedia Commons credit, license, and source links in the dossier. Lodging is pulled from OpenStreetMap (`npm run enrich:lodging`); food entries remain sample suggestions only.
+Peak data lives in [`src/data/peaks.json`](src/data/peaks.json). Peak photos include Wikimedia Commons credit, license, and source links in the dossier. Lodging is pulled from OpenStreetMap (`npm run enrich:lodging`); food entries remain sample suggestions only. Site updates are listed on `/releases`; legal/context notes are on `/about#disclaimer`.
 
 To refresh OSM lodging:
 
 ```bash
 npm run enrich:lodging
+npm run scrub:lodging
 ```
 
-To regenerate enriched peak fields after editing the curated map:
+To regenerate curated dossier fields:
 
 ```bash
-node scripts/enrich-peaks.mjs
+npm run enrich:content
 ```

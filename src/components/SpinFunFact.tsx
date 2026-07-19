@@ -6,11 +6,11 @@ import { flagUrl } from '../lib/countries'
 import { isOnFrontHemisphere } from '../lib/globeVisibility'
 import { useUnits } from '../context/UnitsContext'
 import { pickRandomFact } from '../lib/peakFacts'
-import { isAtlasHintPending } from './AtlasHint'
 
 type SpinFunFactProps = {
   map: MapboxMap | null
   spinning: boolean
+  /** When false (e.g. atlas hint visible), hide callouts. Parent owns this. */
   enabled?: boolean
   countries: CountrySummary[]
   peaks: Peak[]
@@ -126,7 +126,7 @@ export function SpinFunFact({
   const lastPeakIdRef = useRef<string | null>(null)
   const lastFactRef = useRef<string | null>(null)
 
-  const allowFunFacts = enabled && !isAtlasHintPending()
+  const allowFunFacts = enabled
 
   const countryByLabel = useMemo(() => {
     const m = new Map<string, CountrySummary>()
