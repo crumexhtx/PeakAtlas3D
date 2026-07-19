@@ -111,9 +111,38 @@ export function peakFramePadding(): {
     typeof window !== 'undefined' &&
     window.matchMedia('(max-width: 800px)').matches
   if (narrow) {
-    return { top: 56, bottom: 220, left: 28, right: 28 }
+    // Keep summit in the visible map above the mobile details sheet.
+    const sheet = Math.min(window.innerHeight * 0.3, 240)
+    return {
+      top: 52,
+      bottom: Math.round(sheet + 28),
+      left: 24,
+      right: 24,
+    }
   }
   return { top: 110, bottom: 48, left: 36, right: 300 }
+}
+
+/** Extra bottom pad when the country panel sheet covers the map on phones. */
+export function countryFramePadding(): {
+  top: number
+  bottom: number
+  left: number
+  right: number
+} {
+  const narrow =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(max-width: 800px)').matches
+  if (narrow) {
+    const sheet = Math.min(window.innerHeight * 0.28, 220)
+    return {
+      top: 72,
+      bottom: Math.round(sheet + 72),
+      left: 36,
+      right: 36,
+    }
+  }
+  return { top: 80, bottom: 140, left: 60, right: 60 }
 }
 
 /** Nudge look-at toward the camera so pitched terrain sits nearer mid-frame. */
