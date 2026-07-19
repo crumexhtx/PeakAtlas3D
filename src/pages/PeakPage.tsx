@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom'
+import { DetailsSheet } from '../components/DetailsSheet'
 import { PeakDossier } from '../components/PeakDossier'
 import { useAtlas } from '../context/AtlasContext'
+import { formatElevation } from '../lib/geo'
 import { atlasHref } from '../lib/routes'
+import { useUnits } from '../context/UnitsContext'
 
 export function PeakPage() {
   const { activePeak, selectedCountry } = useAtlas()
+  const { units } = useUnits()
   const backHref = atlasHref(selectedCountry)
 
   if (!activePeak) {
@@ -21,7 +25,13 @@ export function PeakPage() {
 
   return (
     <div className="peak-overlay-panel">
-      <PeakDossier peak={activePeak} />
+      <DetailsSheet
+        resetKey={activePeak.id}
+        title={activePeak.name}
+        subtitle={`${formatElevation(activePeak.elevationFt, units)} · ${activePeak.range}`}
+      >
+        <PeakDossier peak={activePeak} />
+      </DetailsSheet>
     </div>
   )
 }

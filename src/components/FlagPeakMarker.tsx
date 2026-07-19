@@ -1,6 +1,7 @@
+import { useState } from 'react'
 import { Marker } from 'react-map-gl/mapbox'
 import type { Peak } from '../types/peak'
-import { flagUrl } from '../lib/countries'
+import { countryToIso, flagUrl } from '../lib/countries'
 
 type FlagPeakMarkerProps = {
   peak: Peak
@@ -8,7 +9,15 @@ type FlagPeakMarkerProps = {
 }
 
 export function FlagPeakMarker({ peak, onClick }: FlagPeakMarkerProps) {
-  const flag = flagUrl(peak.country, 40)
+  const primary = flagUrl(peak.country, 40)
+  const iso = countryToIso(peak.country)
+  const candidates = [
+    primary,
+    iso ? `https://flagcdn.com/40x30/${iso}.png` : null,
+  ].filter(Boolean) as string[]
+  const [candidateIndex, setCandidateIndex] = useState(0)
+  const [failed, setFailed] = useState(false)
+  const flag = candidates[candidateIndex]
 
   return (
     <Marker longitude={peak.lon} latitude={peak.lat} anchor="bottom">
@@ -22,8 +31,24 @@ export function FlagPeakMarker({ peak, onClick }: FlagPeakMarkerProps) {
           onClick(peak)
         }}
       >
-        {flag ? (
-          <img src={flag} alt="" className="flag-marker-img" width={28} height={20} />
+        {flag && !failed ? (
+          <img
+            src={flag}
+            alt=""
+            className="flag-marker-img"
+            width={28}
+            height={20}
+            loading="lazy"
+            decoding="async"
+            referrerPolicy="no-referrer"
+            onError={() => {
+              if (candidateIndex + 1 < candidates.length) {
+                setCandidateIndex((i) => i + 1)
+                return
+              }
+              setFailed(true)
+            }}
+          />
         ) : (
           <span className="flag-marker-fallback" aria-hidden="true">
             ▲

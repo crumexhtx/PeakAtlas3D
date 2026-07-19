@@ -322,11 +322,168 @@ a {
   pointer-events: none;
 }
 
+.peak-overlay-panel .details-sheet,
 .peak-overlay-panel .peak-dossier,
 .peak-overlay-panel .empty-state {
   pointer-events: auto;
   height: 100%;
   box-shadow: -12px 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.peak-overlay-panel .peak-dossier {
+  border-left: 1px solid var(--border);
+  background: rgba(10, 16, 26, 0.94);
+}
+
+/* Collapsible details sheet (tab on mobile, always open on desktop) */
+.details-sheet {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: rgba(10, 16, 26, 0.96);
+}
+
+.details-sheet-chrome {
+  display: none;
+  align-items: stretch;
+  gap: 0.35rem;
+  padding: 0.35rem 0.55rem 0.45rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.details-sheet-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+  padding: 0.25rem 0.5rem 0.45rem;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.details-sheet-handle {
+  width: 2.5rem;
+  height: 0.28rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.details-sheet-tab-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.details-sheet-tab-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.details-sheet-tab-sub {
+  font-size: 0.75rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.details-sheet-chevron {
+  position: absolute;
+  right: 3.1rem;
+  top: 1.15rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.details-sheet-chrome {
+  position: relative;
+}
+
+.details-sheet-close {
+  flex-shrink: 0;
+  width: 2.25rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.details-sheet-body {
+  min-height: 0;
+  flex: 1;
+  overflow: auto;
+}
+
+.country-panel-shell {
+  position: absolute;
+  top: calc(0.85rem + var(--safe-top, 0px));
+  right: calc(0.85rem + var(--safe-right));
+  bottom: calc(5.5rem + var(--safe-bottom));
+  z-index: 12;
+  width: min(340px, calc(100% - 1.7rem));
+  pointer-events: none;
+}
+
+.country-panel-shell .details-sheet {
+  pointer-events: auto;
+  height: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.country-panel {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  width: auto;
+  height: 100%;
+  overflow: auto;
+  padding: 1.1rem 1.15rem 1.25rem;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  animation: none;
+}
+
+.peak-photo-fallback {
+  display: grid;
+  place-content: center;
+  gap: 0.35rem;
+  padding: 1rem;
+  text-align: center;
+  background: #0a101a;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.peak-photo-fallback a {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .map-mode-chip {
@@ -461,23 +618,6 @@ a {
   white-space: nowrap;
   font-size: 0.68rem;
   font-weight: 600;
-}
-
-.country-panel {
-  position: absolute;
-  top: calc(0.85rem + var(--safe-top, 0px));
-  right: calc(0.85rem + var(--safe-right));
-  bottom: calc(5.5rem + var(--safe-bottom));
-  z-index: 12;
-  width: min(340px, calc(100% - 1.7rem));
-  overflow: auto;
-  padding: 1.1rem 1.15rem 1.25rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: rgba(10, 16, 26, 0.94);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(12px);
-  animation: panel-in 0.28s ease-out;
 }
 
 .country-panel-top {
@@ -1348,16 +1488,78 @@ a {
 
   .map-stage.is-peak-mode .peak-overlay-panel {
     top: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    height: min(34vh, 280px);
+    height: auto;
+    max-height: 75vh;
   }
 
-  .peak-dossier,
-  .map-stage.is-peak-mode .peak-overlay-panel .peak-dossier {
+  .peak-overlay-panel .details-sheet {
+    height: auto;
+    max-height: 75vh;
+    border-radius: 16px 16px 0 0;
+    border: 1px solid var(--border);
+    border-bottom: none;
+    box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .peak-overlay-panel .details-sheet.is-expanded {
+    height: 75vh;
+  }
+
+  .peak-overlay-panel .peak-dossier {
     border-left: none;
-    border-top: 1px solid var(--border);
-    box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.35);
-    border-radius: 14px 14px 0 0;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+  }
+
+  .details-sheet-chrome {
+    display: flex;
+  }
+
+  .details-sheet.is-collapsed .details-sheet-body {
+    display: none;
+  }
+
+  .details-sheet.is-expanded .details-sheet-body {
+    display: block;
+  }
+
+  .country-panel-shell {
+    top: auto;
+    right: 0;
+    left: 0;
+    bottom: calc(4.35rem + var(--safe-bottom));
+    width: 100%;
+    height: auto;
+    max-height: 75vh;
+  }
+
+  .country-panel-shell .details-sheet {
+    height: auto;
+    max-height: 75vh;
+    border-radius: 16px 16px 0 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .country-panel-shell .details-sheet.is-expanded {
+    height: 75vh;
+  }
+
+  .country-panel-desktop-close {
+    display: none;
+  }
+
+  .country-panel .back-world-btn {
+    display: none;
+  }
+
+  .country-peak-list {
+    max-height: none;
   }
 
   .map-stage {
@@ -1379,25 +1581,6 @@ a {
   .control-select {
     min-width: 0;
     max-width: 100%;
-  }
-
-  .country-panel {
-    top: auto;
-    right: calc(0.65rem + var(--safe-right));
-    left: calc(0.65rem + var(--safe-left));
-    bottom: calc(4.5rem + var(--safe-bottom));
-    width: auto;
-    max-height: min(30vh, 240px);
-    border-radius: 14px;
-  }
-
-  .country-panel .back-world-btn {
-    display: none;
-  }
-
-  .country-peak-list {
-    max-height: 5.5rem;
-    overflow: auto;
   }
 
   .map-mode-chip {
@@ -1480,7 +1663,7 @@ a {
   }
 
   .map-stage.is-peak-mode .peak-overlay-panel {
-    height: min(30vh, 240px);
+    max-height: 75vh;
   }
 
   .peak-dossier,
@@ -1518,7 +1701,7 @@ a {
   }
 
   .country-panel {
-    max-height: min(28vh, 220px);
+    max-height: none;
     padding: 0.7rem 0.75rem calc(0.7rem + var(--safe-bottom));
   }
 

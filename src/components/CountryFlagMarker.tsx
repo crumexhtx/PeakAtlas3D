@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Marker, useMap } from 'react-map-gl/mapbox'
 import type { CountrySummary } from '../types/country'
-import { flagUrl } from '../lib/countries'
+import { countryToIso, flagUrl } from '../lib/countries'
 import { isOnFrontHemisphere } from '../lib/globeVisibility'
 
 type CountryFlagMarkerProps = {
@@ -9,10 +9,30 @@ type CountryFlagMarkerProps = {
   onClick: (country: CountrySummary) => void
 }
 
+function flagCandidates(country: string): string[] {
+  const primary = flagUrl(country, 40)
+  const iso = countryToIso(country)
+  const out: string[] = []
+  if (primary) out.push(primary)
+  if (iso) {
+    const alt = `https://flagcdn.com/40x30/${iso}.png`
+    if (!out.includes(alt)) out.push(alt)
+  }
+  return out
+}
+
 export function CountryFlagMarker({ country, onClick }: CountryFlagMarkerProps) {
   const { current } = useMap()
   const [visible, setVisible] = useState(true)
-  const flag = flagUrl(country.name, 40)
+  const candidates = flagCandidates(country.name)
+  const [candidateIndex, setCandidateIndex] = useState(0)
+  const [failed, setFailed] = useState(false)
+  const flag = candidates[candidateIndex]
+
+  useEffect(() => {
+    setCandidateIndex(0)
+    setFailed(false)
+  }, [country.name])
 
   useEffect(() => {
     const map = current?.getMap()
@@ -49,13 +69,23 @@ export function CountryFlagMarker({ country, onClick }: CountryFlagMarkerProps) 
           onClick(country)
         }}
       >
-        {flag ? (
+        {flag && !failed ? (
           <img
             src={flag}
             alt=""
             className="country-flag-marker-img"
             width={40}
             height={28}
+            loading="lazy"
+            decoding="async"
+            referrerPolicy="no-referrer"
+            onError={() => {
+              if (candidateIndex + 1 < candidates.length) {
+                setCandidateIndex((i) => i + 1)
+                return
+              }
+              setFailed(true)
+            }}
           />
         ) : (
           <span className="country-flag-marker-fallback" aria-hidden="true">

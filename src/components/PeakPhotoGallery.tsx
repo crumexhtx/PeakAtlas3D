@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { PeakPhoto } from '../types/peak'
+import { photoCandidateUrls } from '../lib/photoUrl'
 
 const ROTATE_MS = 5_500
 
@@ -44,6 +45,65 @@ function PhotoCredit({ photo }: { photo: PeakPhoto }) {
   )
 }
 
+function PeakPhotoSlide({
+  photo,
+  peakName,
+  index,
+  active,
+  eager,
+}: {
+  photo: PeakPhoto
+  peakName: string
+  index: number
+  active: boolean
+  eager: boolean
+}) {
+  const candidates = photoCandidateUrls(photo.url)
+  const [candidateIndex, setCandidateIndex] = useState(0)
+  const [failed, setFailed] = useState(false)
+  const src = candidates[candidateIndex]
+
+  useEffect(() => {
+    setCandidateIndex(0)
+    setFailed(false)
+  }, [photo.url])
+
+  if (failed || !src) {
+    return (
+      <div
+        className={`peak-photo-slide peak-photo-fallback ${active ? 'is-active' : ''}`}
+        role="img"
+        aria-label={`${peakName} — photo unavailable`}
+      >
+        <p>Photo unavailable</p>
+        {photo.sourceUrl && (
+          <a href={photo.sourceUrl} target="_blank" rel="noopener noreferrer">
+            View on Commons
+          </a>
+        )}
+      </div>
+    )
+  }
+
+  return (
+    <img
+      src={src}
+      alt={`${peakName} — view ${index + 1}`}
+      className={`peak-photo-slide ${active ? 'is-active' : ''}`}
+      loading={eager ? 'eager' : 'lazy'}
+      decoding="async"
+      referrerPolicy="no-referrer"
+      onError={() => {
+        if (candidateIndex + 1 < candidates.length) {
+          setCandidateIndex((i) => i + 1)
+          return
+        }
+        setFailed(true)
+      }}
+    />
+  )
+}
+
 export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryProps) {
   const slides = photos.filter((p) => p?.url).slice(0, 2)
   const [index, setIndex] = useState(0)
@@ -74,27 +134,16 @@ export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryPro
       onMouseLeave={multi ? () => setPaused(false) : undefined}
     >
       <div className="peak-photo-stage">
-        {multi ? (
-          slides.map((photo, i) => (
-            <img
-              key={photo.url}
-              src={photo.url}
-              alt={`${peakName} — view ${i + 1}`}
-              className={`peak-photo-slide ${i === index ? 'is-active' : ''}`}
-              loading={i === 0 ? 'eager' : 'lazy'}
-              decoding="async"
-              referrerPolicy="no-referrer"
-            />
-          ))
-        ) : (
-          <img
-            src={active.url}
-            alt={`${peakName} — summit view`}
-            loading="eager"
-            decoding="async"
-            referrerPolicy="no-referrer"
+        {slides.map((photo, i) => (
+          <PeakPhotoSlide
+            key={photo.url}
+            photo={photo}
+            peakName={peakName}
+            index={i}
+            active={i === index}
+            eager={i === 0}
           />
-        )}
+        ))}
 
         {multi && (
           <div className="peak-photo-dots" role="group" aria-label="Choose photo">
