@@ -72,8 +72,6 @@ export function PeakDossier({ peak }: PeakDossierProps) {
 
   return (
     <aside className="peak-dossier">
-      <PeakPhotoGallery name={peak.name} photos={photos} />
-
       <div className="dossier-top">
         {flag && (
           <img src={flag} alt="" className="dossier-flag" width={36} height={24} />
@@ -89,6 +87,8 @@ export function PeakDossier({ peak }: PeakDossierProps) {
           )}
         </div>
       </div>
+
+      <PeakPhotoGallery name={peak.name} photos={photos} />
 
       {peak.whyNotable && (
         <p className="peak-why-notable">{peak.whyNotable}</p>

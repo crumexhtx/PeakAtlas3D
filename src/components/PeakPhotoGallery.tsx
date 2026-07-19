@@ -45,17 +45,15 @@ function PhotoCredit({ photo }: { photo: PeakPhoto }) {
 }
 
 export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryProps) {
-  const initial = photos.filter((p) => p?.url).slice(0, 2)
-  const [slides, setSlides] = useState(initial)
+  const slides = photos.filter((p) => p?.url).slice(0, 2)
   const [index, setIndex] = useState(0)
   const multi = slides.length > 1
   const [paused, setPaused] = useState(false)
   const active = slides[index] ?? slides[0]
 
   useEffect(() => {
-    setSlides(photos.filter((p) => p?.url).slice(0, 2))
     setIndex(0)
-  }, [peakName, photos])
+  }, [peakName])
 
   useEffect(() => {
     if (!multi || paused) return
@@ -66,14 +64,6 @@ export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryPro
     }, ROTATE_MS)
     return () => window.clearInterval(id)
   }, [multi, slides.length, peakName, paused])
-
-  function dropSlide(url: string) {
-    setSlides((prev) => {
-      const next = prev.filter((p) => p.url !== url)
-      setIndex((i) => (next.length ? Math.min(i, next.length - 1) : 0))
-      return next
-    })
-  }
 
   if (!slides.length || !active) return null
 
@@ -94,7 +84,6 @@ export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryPro
               loading={i === 0 ? 'eager' : 'lazy'}
               decoding="async"
               referrerPolicy="no-referrer"
-              onError={() => dropSlide(photo.url)}
             />
           ))
         ) : (
@@ -104,7 +93,6 @@ export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryPro
             loading="eager"
             decoding="async"
             referrerPolicy="no-referrer"
-            onError={() => dropSlide(active.url)}
           />
         )}
 

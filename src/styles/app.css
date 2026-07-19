@@ -1349,7 +1349,7 @@ a {
   .map-stage.is-peak-mode .peak-overlay-panel {
     top: auto;
     width: 100%;
-    height: min(42vh, 360px);
+    height: min(34vh, 280px);
   }
 
   .peak-dossier,
@@ -1357,6 +1357,7 @@ a {
     border-left: none;
     border-top: 1px solid var(--border);
     box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.35);
+    border-radius: 14px 14px 0 0;
   }
 
   .map-stage {
@@ -1384,9 +1385,19 @@ a {
     top: auto;
     right: calc(0.65rem + var(--safe-right));
     left: calc(0.65rem + var(--safe-left));
-    bottom: calc(5.75rem + var(--safe-bottom));
+    bottom: calc(4.5rem + var(--safe-bottom));
     width: auto;
-    max-height: min(42vh, 360px);
+    max-height: min(30vh, 240px);
+    border-radius: 14px;
+  }
+
+  .country-panel .back-world-btn {
+    display: none;
+  }
+
+  .country-peak-list {
+    max-height: 5.5rem;
+    overflow: auto;
   }
 
   .map-mode-chip {
@@ -1469,32 +1480,36 @@ a {
   }
 
   .map-stage.is-peak-mode .peak-overlay-panel {
-    height: min(48vh, 320px);
+    height: min(30vh, 240px);
   }
 
   .peak-dossier,
   .map-stage.is-peak-mode .peak-overlay-panel .peak-dossier {
-    padding: 0.85rem calc(0.85rem + var(--safe-right))
-      calc(1.25rem + var(--safe-bottom)) 0.85rem;
+    padding: 0.7rem calc(0.75rem + var(--safe-right))
+      calc(0.85rem + var(--safe-bottom)) 0.75rem;
+  }
+
+  .dossier-top {
+    margin-bottom: 0.65rem;
   }
 
   .dossier-title {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
 
   .peak-description,
   .peak-why-notable {
-    font-size: 0.92rem;
-    line-height: 1.45;
+    font-size: 0.88rem;
+    line-height: 1.4;
   }
 
   .peak-photo {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.65rem;
     border-radius: 8px;
   }
 
   .peak-photo-stage {
-    aspect-ratio: 16 / 11;
+    aspect-ratio: 2 / 1;
   }
 
   .info-list div {
@@ -1503,9 +1518,29 @@ a {
   }
 
   .country-panel {
-    bottom: calc(5.1rem + var(--safe-bottom));
-    max-height: min(38vh, 300px);
-    padding: 0.75rem;
+    max-height: min(28vh, 220px);
+    padding: 0.7rem 0.75rem calc(0.7rem + var(--safe-bottom));
+  }
+
+  .country-panel-title {
+    font-size: 1.15rem;
+  }
+
+  .country-panel-top {
+    margin-bottom: 0.55rem;
+  }
+
+  .country-stats {
+    margin-bottom: 0.45rem;
+  }
+
+  .country-ranges {
+    margin-bottom: 0.5rem;
+    font-size: 0.78rem;
+  }
+
+  .country-panel .info-heading {
+    margin-bottom: 0.35rem;
   }
 
   .country-flag-marker-img,

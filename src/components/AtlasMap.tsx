@@ -30,6 +30,7 @@ import {
 } from '../lib/mapbox'
 import {
   applyPeakAtmosphere,
+  countryFramePadding,
   easeToAsync,
   flyToAsync,
   IDLE_ROTATE_DELAY_MS,
@@ -229,7 +230,7 @@ export function AtlasMap({
     if (!bounds) return
 
     map.fitBounds(bounds, {
-      padding: { top: 80, bottom: 140, left: 60, right: 60 },
+      padding: countryFramePadding(),
       maxZoom: countryPeaks.length === 1 ? 5.8 : 6.4,
       duration: prefersReducedMotion() ? 0 : 1600,
       essential: true,
