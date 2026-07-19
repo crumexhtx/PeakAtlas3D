@@ -583,11 +583,18 @@ a {
   outline: none;
 }
 
-.country-flag-marker-img {
-  display: block;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  background: #111;
+.country-flag-marker.is-flag-only {
+  gap: 0;
+}
+
+.country-flag-marker.is-flag-only .country-flag-marker-img,
+.country-flag-marker.is-flag-only .country-flag-marker-fallback {
+  width: 28px;
+  height: 20px;
+}
+
+.country-flag-marker.is-flag-only .country-flag-marker-fallback {
+  font-size: 0.62rem;
 }
 
 .country-flag-marker-fallback {

@@ -7,6 +7,8 @@ import { isOnFrontHemisphere } from '../lib/globeVisibility'
 type CountryFlagMarkerProps = {
   country: CountrySummary
   onClick: (country: CountrySummary) => void
+  /** When false, only the flag/pin is shown (used by declutter). */
+  showLabel?: boolean
 }
 
 function flagCandidates(country: string): string[] {
@@ -21,7 +23,11 @@ function flagCandidates(country: string): string[] {
   return out
 }
 
-export function CountryFlagMarker({ country, onClick }: CountryFlagMarkerProps) {
+export function CountryFlagMarker({
+  country,
+  onClick,
+  showLabel = true,
+}: CountryFlagMarkerProps) {
   const { current } = useMap()
   const [visible, setVisible] = useState(true)
   const candidates = flagCandidates(country.name)
@@ -61,7 +67,7 @@ export function CountryFlagMarker({ country, onClick }: CountryFlagMarkerProps) 
     <Marker longitude={country.lon} latitude={country.lat} anchor="bottom">
       <button
         type="button"
-        className="country-flag-marker"
+        className={`country-flag-marker${showLabel ? '' : ' is-flag-only'}`}
         title={country.name}
         aria-label={`Explore peaks in ${country.name}`}
         onClick={(e) => {
@@ -74,8 +80,8 @@ export function CountryFlagMarker({ country, onClick }: CountryFlagMarkerProps) 
             src={flag}
             alt=""
             className="country-flag-marker-img"
-            width={40}
-            height={28}
+            width={showLabel ? 40 : 28}
+            height={showLabel ? 28 : 20}
             loading="lazy"
             decoding="async"
             referrerPolicy="no-referrer"
@@ -92,9 +98,11 @@ export function CountryFlagMarker({ country, onClick }: CountryFlagMarkerProps) 
             {country.name.slice(0, 2).toUpperCase()}
           </span>
         )}
-        <span className="country-flag-marker-label">
-          <span className="country-flag-marker-name">{country.name}</span>
-        </span>
+        {showLabel && (
+          <span className="country-flag-marker-label">
+            <span className="country-flag-marker-name">{country.name}</span>
+          </span>
+        )}
         <span className="flag-marker-pin" aria-hidden="true" />
       </button>
     </Marker>
