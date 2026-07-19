@@ -53,7 +53,7 @@ Open the URL Vite prints (usually `http://localhost:5173`).
 
 ## Data
 
-Peak data lives in [`src/data/peaks.json`](src/data/peaks.json). Hotels/food under nearby context remain illustrative MVP lists.
+Peak data lives in [`src/data/peaks.json`](src/data/peaks.json). Peak photos include Wikimedia Commons credit, license, and source links in the dossier. Lodging/food entries are sample suggestions only — not verified listings or ratings.
 
 To regenerate enriched peak fields after editing the curated map:
 

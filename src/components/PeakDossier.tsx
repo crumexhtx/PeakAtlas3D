@@ -19,18 +19,11 @@ function peakPhotos(peak: Peak) {
   return []
 }
 
-function formatRating(rating?: number) {
-  if (rating == null || Number.isNaN(rating)) return null
-  return rating.toFixed(1)
-}
-
 function AmenityRow({ item }: { item: Amenity }) {
-  const rating = formatRating(item.rating)
   return (
     <li className="amenity-row">
       <div className="amenity-row-top">
         <span className="amenity-name">{item.name}</span>
-        {rating && <span className="amenity-rating">{rating}★</span>}
       </div>
       {(item.category || item.note) && (
         <p className="amenity-meta">
@@ -147,7 +140,7 @@ export function PeakDossier({ peak }: PeakDossierProps) {
           aria-expanded={showNearby}
           onClick={() => setShowNearby((v) => !v)}
         >
-          <span>Lodging & food</span>
+          <span>Sample lodging & food</span>
           <span aria-hidden="true">{showNearby ? '−' : '+'}</span>
         </button>
 
@@ -161,13 +154,17 @@ export function PeakDossier({ peak }: PeakDossierProps) {
               {formatDistance(peak.nearestTown.distanceMiles, units)} from the summit
               area.
             </p>
-            <h3 className="sub-heading">Lodging</h3>
+            <p className="amenity-disclaimer">
+              Sample suggestions for trip planning — not verified listings, reviews, or
+              ratings.
+            </p>
+            <h3 className="sub-heading">Sample lodging</h3>
             <ul className="amenity-list">
               {peak.hotels.map((h) => (
                 <AmenityRow key={h.name} item={h} />
               ))}
             </ul>
-            <h3 className="sub-heading">Food</h3>
+            <h3 className="sub-heading">Sample food</h3>
             <ul className="amenity-list">
               {peak.food.map((f) => (
                 <AmenityRow key={f.name} item={f} />

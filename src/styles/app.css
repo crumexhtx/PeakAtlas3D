@@ -770,11 +770,40 @@ a {
   background: #0a101a;
 }
 
-.peak-photo > img {
+.peak-photo-stage > img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 100%;
   object-fit: cover;
+}
+
+.peak-photo-credit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 0.75rem;
+  margin: 0;
+  padding: 0.45rem 0.65rem 0.55rem;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--muted);
+  background: rgba(8, 14, 24, 0.96);
+  border-top: 1px solid var(--border);
+}
+
+.peak-photo-credit-text {
+  min-width: 0;
+}
+
+.peak-photo-credit-link {
+  flex-shrink: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.peak-photo-credit-link:hover {
+  text-decoration: underline;
 }
 
 .peak-photo-slide {
@@ -1046,10 +1075,11 @@ a {
   color: var(--text);
 }
 
-.amenity-rating {
-  flex-shrink: 0;
-  font-size: 0.78rem;
-  color: #e6c07b;
+.amenity-disclaimer {
+  margin: 0 0 0.85rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--muted);
 }
 
 .amenity-meta {

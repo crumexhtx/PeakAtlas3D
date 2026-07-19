@@ -8,15 +8,43 @@ type PeakPhotoGalleryProps = {
   photos: PeakPhoto[]
 }
 
-export function PeakPhotoGallery({ name, photos }: PeakPhotoGalleryProps) {
+function PhotoCredit({ photo }: { photo: PeakPhoto }) {
+  const credit = photo.credit?.trim()
+  const license = photo.license?.trim()
+  const sourceUrl = photo.sourceUrl?.trim()
+
+  if (!credit && !license && !sourceUrl) return null
+
+  return (
+    <figcaption className="peak-photo-credit">
+      <span className="peak-photo-credit-text">
+        {credit ? `Photo: ${credit}` : 'Photo'}
+        {license ? ` · ${license}` : ''}
+      </span>
+      {sourceUrl && (
+        <a
+          className="peak-photo-credit-link"
+          href={sourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Source
+        </a>
+      )}
+    </figcaption>
+  )
+}
+
+export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryProps) {
   const slides = photos.filter((p) => p?.url).slice(0, 2)
   const [index, setIndex] = useState(0)
   const multi = slides.length > 1
   const [paused, setPaused] = useState(false)
+  const active = slides[index] ?? slides[0]
 
   useEffect(() => {
     setIndex(0)
-  }, [name])
+  }, [peakName])
 
   useEffect(() => {
     if (!multi || paused) return
@@ -26,20 +54,23 @@ export function PeakPhotoGallery({ name, photos }: PeakPhotoGalleryProps) {
       setIndex((i) => (i + 1) % slides.length)
     }, ROTATE_MS)
     return () => window.clearInterval(id)
-  }, [multi, slides.length, name, paused])
+  }, [multi, slides.length, peakName, paused])
 
-  if (!slides.length) return null
+  if (!slides.length || !active) return null
 
   if (!multi) {
     return (
       <figure className="peak-photo">
-        <img
-          src={slides[0]!.url}
-          alt={`${name} — summit view`}
-          loading="eager"
-          decoding="async"
-          referrerPolicy="no-referrer"
-        />
+        <div className="peak-photo-stage">
+          <img
+            src={active.url}
+            alt={`${peakName} — summit view`}
+            loading="eager"
+            decoding="async"
+            referrerPolicy="no-referrer"
+          />
+        </div>
+        <PhotoCredit photo={active} />
       </figure>
     )
   }
@@ -55,26 +86,29 @@ export function PeakPhotoGallery({ name, photos }: PeakPhotoGalleryProps) {
           <img
             key={photo.url}
             src={photo.url}
-            alt={`${name} — view ${i + 1}`}
+            alt={`${peakName} — view ${i + 1}`}
             className={`peak-photo-slide ${i === index ? 'is-active' : ''}`}
             loading={i === 0 ? 'eager' : 'lazy'}
             decoding="async"
             referrerPolicy="no-referrer"
           />
         ))}
+
+        <div className="peak-photo-dots" role="group" aria-label="Choose photo">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              className={`peak-photo-dot ${i === index ? 'is-active' : ''}`}
+              aria-label={`Show photo ${i + 1}`}
+              aria-current={i === index ? 'true' : undefined}
+              onClick={() => setIndex(i)}
+            />
+          ))}
+        </div>
       </div>
 
-      <div className="peak-photo-dots" aria-hidden="true">
-        {slides.map((_, i) => (
-          <button
-            key={i}
-            type="button"
-            className={`peak-photo-dot ${i === index ? 'is-active' : ''}`}
-            aria-label={`Show photo ${i + 1}`}
-            onClick={() => setIndex(i)}
-          />
-        ))}
-      </div>
+      <PhotoCredit photo={active} />
     </figure>
   )
 }
