@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import type { PeakPhoto } from '../types/peak'
-import { photoSrcSet, photoThumb } from '../lib/photoUrl'
 
 const ROTATE_MS = 5_500
 
@@ -46,15 +45,17 @@ function PhotoCredit({ photo }: { photo: PeakPhoto }) {
 }
 
 export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryProps) {
-  const slides = photos.filter((p) => p?.url).slice(0, 2)
+  const initial = photos.filter((p) => p?.url).slice(0, 2)
+  const [slides, setSlides] = useState(initial)
   const [index, setIndex] = useState(0)
   const multi = slides.length > 1
   const [paused, setPaused] = useState(false)
   const active = slides[index] ?? slides[0]
 
   useEffect(() => {
+    setSlides(photos.filter((p) => p?.url).slice(0, 2))
     setIndex(0)
-  }, [peakName])
+  }, [peakName, photos])
 
   useEffect(() => {
     if (!multi || paused) return
@@ -65,6 +66,14 @@ export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryPro
     }, ROTATE_MS)
     return () => window.clearInterval(id)
   }, [multi, slides.length, peakName, paused])
+
+  function dropSlide(url: string) {
+    setSlides((prev) => {
+      const next = prev.filter((p) => p.url !== url)
+      setIndex((i) => (next.length ? Math.min(i, next.length - 1) : 0))
+      return next
+    })
+  }
 
   if (!slides.length || !active) return null
 
@@ -79,25 +88,23 @@ export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryPro
           slides.map((photo, i) => (
             <img
               key={photo.url}
-              src={photoThumb(photo.url, 640)}
-              srcSet={photoSrcSet(photo.url)}
-              sizes="(max-width: 640px) 100vw, 360px"
+              src={photo.url}
               alt={`${peakName} — view ${i + 1}`}
               className={`peak-photo-slide ${i === index ? 'is-active' : ''}`}
               loading={i === 0 ? 'eager' : 'lazy'}
               decoding="async"
               referrerPolicy="no-referrer"
+              onError={() => dropSlide(photo.url)}
             />
           ))
         ) : (
           <img
-            src={photoThumb(active.url, 640)}
-            srcSet={photoSrcSet(active.url)}
-            sizes="(max-width: 640px) 100vw, 360px"
+            src={active.url}
             alt={`${peakName} — summit view`}
             loading="eager"
             decoding="async"
             referrerPolicy="no-referrer"
+            onError={() => dropSlide(active.url)}
           />
         )}
 
