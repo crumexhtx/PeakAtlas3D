@@ -34,7 +34,7 @@ export function AppHeader({
   }, [])
 
   return (
-    <header className="app-header">
+    <header className={`app-header${showBack ? ' is-peak' : ''}`}>
       <div className="brand-row">
         {showBack && (
           <Link to={atlasHref} className="back-link">
