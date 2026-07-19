@@ -60,14 +60,19 @@ type AtlasMapProps = {
 }
 
 const WORLD_ZOOM = 1.55
+/** Portrait phones: slightly tighter zoom so the globe fills the short axis. */
+const WORLD_ZOOM_NARROW = 1.72
 
 /** Fresh random globe framing for each full page load / refresh. */
 function createRandomWorldView() {
+  const narrow =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(max-width: 640px)').matches
   return {
     longitude: Math.random() * 360 - 180,
     // Avoid framing mostly ocean at the poles.
     latitude: -32 + Math.random() * 64,
-    zoom: WORLD_ZOOM,
+    zoom: narrow ? WORLD_ZOOM_NARROW : WORLD_ZOOM,
     pitch: 0,
     bearing: 0,
   }
