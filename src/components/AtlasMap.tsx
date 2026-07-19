@@ -7,9 +7,8 @@ import Map, {
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Map as MapboxMap } from 'mapbox-gl'
 import type { Peak } from '../types/peak'
-import type { CountrySummary } from '../types/country'
 import { FlagPeakMarker } from './FlagPeakMarker'
-import { CountryFlagMarker } from './CountryFlagMarker'
+import { CountryFlagsLayer } from './CountryFlagsLayer'
 import { NearbyPlaceMarker } from './NearbyPlaceMarker'
 import { SpinFunFact } from './SpinFunFact'
 import { useUnits } from '../context/UnitsContext'
@@ -441,14 +440,12 @@ export function AtlasMap({
         <Source id={TERRAIN_SOURCE_ID} {...TERRAIN_SOURCE} />
         {!cinematic && <NavigationControl position="bottom-right" visualizePitch />}
 
-        {mode === 'world' &&
-          countries.map((country) => (
-            <CountryFlagMarker
-              key={country.name}
-              country={country}
-              onClick={(c: CountrySummary) => onSelectCountry(c.name)}
-            />
-          ))}
+        {mode === 'world' && (
+          <CountryFlagsLayer
+            countries={countries}
+            onSelectCountry={onSelectCountry}
+          />
+        )}
 
         {mode === 'country' &&
           countryPeaks.map((peak) => (
