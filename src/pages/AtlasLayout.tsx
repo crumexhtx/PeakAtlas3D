@@ -39,6 +39,11 @@ export function AtlasLayout() {
   const [cinematic, setCinematic] = useState(false)
   const [cinematicStatus, setCinematicStatus] = useState('')
   const [skipNonce, setSkipNonce] = useState(0)
+  const [hintActive, setHintActive] = useState(false)
+
+  const onHintActiveChange = useCallback((active: boolean) => {
+    setHintActive(active)
+  }, [])
 
   useEffect(() => {
     setBrowseState((prev) => {
@@ -187,8 +192,12 @@ export function AtlasLayout() {
             onCinematicChange={onCinematicChange}
             onSkipCinematic={skipCinematic}
             skipNonce={skipNonce}
+            funFactsEnabled={!hintActive}
           />
-          <AtlasHint visible={!activePeak && !selectedCountry && !cinematic} />
+          <AtlasHint
+            visible={!activePeak && !selectedCountry && !cinematic}
+            onActiveChange={onHintActiveChange}
+          />
           <Outlet />
         </div>
       </div>

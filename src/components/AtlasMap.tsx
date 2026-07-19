@@ -55,6 +55,8 @@ type AtlasMapProps = {
   onCinematicChange: (next: { active: boolean; status: string }) => void
   onSkipCinematic: () => void
   skipNonce: number
+  /** When false, hide spin fun-fact callouts (e.g. while onboarding hint is up). */
+  funFactsEnabled?: boolean
 }
 
 const WORLD_VIEW = {
@@ -96,6 +98,7 @@ export function AtlasMap({
   onCinematicChange,
   onSkipCinematic,
   skipNonce,
+  funFactsEnabled = true,
 }: AtlasMapProps) {
   const mapRef = useRef<MapRef>(null)
   const idleTimerRef = useRef<number | null>(null)
@@ -489,6 +492,7 @@ export function AtlasMap({
         <SpinFunFact
           map={mapInstance}
           spinning={spinning}
+          enabled={funFactsEnabled}
           countries={countries}
           peaks={peaks}
         />

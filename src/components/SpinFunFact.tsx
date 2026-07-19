@@ -6,10 +6,12 @@ import { flagUrl } from '../lib/countries'
 import { isOnFrontHemisphere } from '../lib/globeVisibility'
 import { useUnits } from '../context/UnitsContext'
 import { pickRandomFact } from '../lib/peakFacts'
+import { isAtlasHintPending } from './AtlasHint'
 
 type SpinFunFactProps = {
   map: MapboxMap | null
   spinning: boolean
+  enabled?: boolean
   countries: CountrySummary[]
   peaks: Peak[]
 }
@@ -30,13 +32,12 @@ type Anchor = {
 
 type Point = { x: number; y: number }
 
-const CENTER_RADIUS_PX = 130
+const CENTER_RADIUS_PX = 120
 const EDGE_MARGIN_PX = 28
 const HOLD_MS = 5_400
 const CARD_W = 272
 const CARD_H = 118
-/** Stronger than marker culling — avoid limb/far-side false hits. */
-const FRONT_DOT = 0.28
+const FRONT_DOT = 0.32
 
 function placeCard(flagX: number, flagY: number, vw: number, vh: number) {
   let cardX = flagX - CARD_W - 36
@@ -48,7 +49,19 @@ function placeCard(flagX: number, flagY: number, vw: number, vh: number) {
   return { cardX, cardY }
 }
 
-/** Mapbox project() is canvas-local; convert into the overlay's local box. */
+/** Pixel radius of the visible globe disk in the map container. */
+function globeDiskRadiusPx(map: MapboxMap, width: number, height: number) {
+  const minSide = Math.min(width, height)
+  const zoom = map.getZoom()
+  // Tuned for Mapbox globe around world zoom (~1.5): disk fills most of the short side.
+  const radius = (minSide / 2) * 0.88 * Math.pow(2, zoom - 1.5)
+  return Math.min(radius, minSide * 0.5)
+}
+
+/**
+ * Project a lng/lat into overlay pixels, only if it lands on the visible
+ * front of the globe disk (not the black void around Earth).
+ */
 function projectToOverlay(
   map: MapboxMap,
   overlay: HTMLElement,
@@ -60,25 +73,28 @@ function projectToOverlay(
   const pt = map.project([lon, lat])
   if (!Number.isFinite(pt.x) || !Number.isFinite(pt.y)) return null
 
-  const canvas = map.getCanvas()
-  const canvasRect = canvas.getBoundingClientRect()
+  const mapEl = map.getContainer()
+  const mapRect = mapEl.getBoundingClientRect()
   const overlayRect = overlay.getBoundingClientRect()
+  if (mapEl.clientWidth < 1 || mapEl.clientHeight < 1) return null
   if (overlayRect.width < 1 || overlayRect.height < 1) return null
 
-  // Normalize by rect size in case the canvas CSS size ≠ Mapbox's layout size.
   const x =
-    ((pt.x / Math.max(canvas.clientWidth, 1)) * canvasRect.width +
-      (canvasRect.left - overlayRect.left)) *
-    (overlay.clientWidth / overlayRect.width)
+    pt.x * (mapRect.width / mapEl.clientWidth) + (mapRect.left - overlayRect.left)
   const y =
-    ((pt.y / Math.max(canvas.clientHeight, 1)) * canvasRect.height +
-      (canvasRect.top - overlayRect.top)) *
-    (overlay.clientHeight / overlayRect.height)
+    pt.y * (mapRect.height / mapEl.clientHeight) + (mapRect.top - overlayRect.top)
 
   if (!Number.isFinite(x) || !Number.isFinite(y)) return null
 
   const vw = overlay.clientWidth
   const vh = overlay.clientHeight
+  const cx = vw / 2
+  const cy = vh / 2
+  const diskR = globeDiskRadiusPx(map, vw, vh) * 0.94
+
+  // Reject points that sit in the empty space beside/above/below the globe.
+  if (Math.hypot(x - cx, y - cy) > diskR) return null
+
   if (
     x < EDGE_MARGIN_PX ||
     y < EDGE_MARGIN_PX + 48 ||
@@ -91,7 +107,13 @@ function projectToOverlay(
   return { x, y }
 }
 
-export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProps) {
+export function SpinFunFact({
+  map,
+  spinning,
+  enabled = true,
+  countries,
+  peaks,
+}: SpinFunFactProps) {
   const { units } = useUnits()
   const [content, setContent] = useState<FactContent | null>(null)
   const [viewBox, setViewBox] = useState({ w: 1, h: 1 })
@@ -104,6 +126,8 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
   const lastPeakIdRef = useRef<string | null>(null)
   const lastFactRef = useRef<string | null>(null)
 
+  const allowFunFacts = enabled && !isAtlasHintPending()
+
   const countryByLabel = useMemo(() => {
     const m = new Map<string, CountrySummary>()
     for (const country of countries) {
@@ -114,7 +138,7 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
   }, [countries])
 
   useEffect(() => {
-    if (!spinning || !map) {
+    if (!spinning || !map || !allowFunFacts) {
       setContent(null)
       activeRef.current = null
       holdUntilRef.current = 0
@@ -259,9 +283,9 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
 
     frame = requestAnimationFrame(tick)
     return () => cancelAnimationFrame(frame)
-  }, [spinning, map, peaks, countryByLabel, units])
+  }, [spinning, map, allowFunFacts, peaks, countryByLabel, units])
 
-  if (!spinning) return null
+  if (!spinning || !allowFunFacts) return null
 
   return (
     <div
