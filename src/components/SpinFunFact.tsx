@@ -28,6 +28,8 @@ type Anchor = {
   lat: number
 }
 
+type Point = { x: number; y: number }
+
 const CENTER_RADIUS_PX = 130
 const EDGE_MARGIN_PX = 28
 const HOLD_MS = 5_400
@@ -46,30 +48,53 @@ function placeCard(flagX: number, flagY: number, vw: number, vh: number) {
   return { cardX, cardY }
 }
 
-function projectPeak(
+/** Mapbox project() is canvas-local; convert into the overlay's local box. */
+function projectToOverlay(
   map: MapboxMap,
+  overlay: HTMLElement,
   lon: number,
   lat: number,
-  vw: number,
-  vh: number,
-) {
+): Point | null {
   if (!isOnFrontHemisphere(map, lon, lat, FRONT_DOT)) return null
+
   const pt = map.project([lon, lat])
   if (!Number.isFinite(pt.x) || !Number.isFinite(pt.y)) return null
+
+  const canvas = map.getCanvas()
+  const canvasRect = canvas.getBoundingClientRect()
+  const overlayRect = overlay.getBoundingClientRect()
+  if (overlayRect.width < 1 || overlayRect.height < 1) return null
+
+  // Normalize by rect size in case the canvas CSS size ≠ Mapbox's layout size.
+  const x =
+    ((pt.x / Math.max(canvas.clientWidth, 1)) * canvasRect.width +
+      (canvasRect.left - overlayRect.left)) *
+    (overlay.clientWidth / overlayRect.width)
+  const y =
+    ((pt.y / Math.max(canvas.clientHeight, 1)) * canvasRect.height +
+      (canvasRect.top - overlayRect.top)) *
+    (overlay.clientHeight / overlayRect.height)
+
+  if (!Number.isFinite(x) || !Number.isFinite(y)) return null
+
+  const vw = overlay.clientWidth
+  const vh = overlay.clientHeight
   if (
-    pt.x < EDGE_MARGIN_PX ||
-    pt.y < EDGE_MARGIN_PX + 48 ||
-    pt.x > vw - EDGE_MARGIN_PX ||
-    pt.y > vh - EDGE_MARGIN_PX
+    x < EDGE_MARGIN_PX ||
+    y < EDGE_MARGIN_PX + 48 ||
+    x > vw - EDGE_MARGIN_PX ||
+    y > vh - EDGE_MARGIN_PX
   ) {
     return null
   }
-  return pt
+
+  return { x, y }
 }
 
 export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProps) {
   const { units } = useUnits()
   const [content, setContent] = useState<FactContent | null>(null)
+  const [viewBox, setViewBox] = useState({ w: 1, h: 1 })
   const cardRef = useRef<HTMLElement | null>(null)
   const lineRef = useRef<SVGLineElement | null>(null)
   const dotRef = useRef<SVGCircleElement | null>(null)
@@ -97,9 +122,13 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
     }
 
     let frame = 0
-    const canvas = map.getCanvas()
 
-    const applyGeometry = (flagX: number, flagY: number, vw: number, vh: number) => {
+    const applyGeometry = (
+      flagX: number,
+      flagY: number,
+      vw: number,
+      vh: number,
+    ) => {
       const { cardX, cardY } = placeCard(flagX, flagY, vw, vh)
       if (cardRef.current) {
         cardRef.current.style.transform = `translate3d(${cardX}px, ${cardY}px, 0)`
@@ -125,8 +154,7 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
     const showForPeak = (
       peak: Peak,
       country: CountrySummary,
-      x: number,
-      y: number,
+      point: Point,
       vw: number,
       vh: number,
       now: number,
@@ -147,17 +175,20 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
         fact,
         flag: flagUrl(country.name, 40),
       })
-      applyGeometry(x, y, vw, vh)
+      applyGeometry(point.x, point.y, vw, vh)
     }
 
-    const nearestPeakInCenter = (vw: number, vh: number, cx: number, cy: number) => {
+    const nearestPeakInCenter = (
+      overlay: HTMLElement,
+      cx: number,
+      cy: number,
+    ) => {
       let best:
         | {
             peak: Peak
             country: CountrySummary
             dist: number
-            x: number
-            y: number
+            point: Point
           }
         | null = null
 
@@ -165,32 +196,43 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
         if (peak.id === lastPeakIdRef.current) continue
         const country = countryByLabel.get(peak.country)
         if (!country) continue
-        const pt = projectPeak(map, peak.lon, peak.lat, vw, vh)
-        if (!pt) continue
-        const dist = Math.hypot(pt.x - cx, pt.y - cy)
+        const point = projectToOverlay(map, overlay, peak.lon, peak.lat)
+        if (!point) continue
+        const dist = Math.hypot(point.x - cx, point.y - cy)
         if (dist > CENTER_RADIUS_PX) continue
         if (!best || dist < best.dist) {
-          best = { peak, country, dist, x: pt.x, y: pt.y }
+          best = { peak, country, dist, point }
         }
       }
       return best
     }
 
     const tick = () => {
+      const overlay = wrapRef.current
+      if (!overlay) {
+        frame = requestAnimationFrame(tick)
+        return
+      }
+
       const now = performance.now()
-      const vw = canvas.clientWidth
-      const vh = canvas.clientHeight
+      const vw = overlay.clientWidth
+      const vh = overlay.clientHeight
+      if (vw > 0 && vh > 0) {
+        setViewBox((prev) =>
+          prev.w === vw && prev.h === vh ? prev : { w: vw, h: vh },
+        )
+      }
       const cx = vw / 2
       const cy = vh / 2
       const active = activeRef.current
 
       if (active) {
-        const pt = projectPeak(map, active.lon, active.lat, vw, vh)
-        if (!pt) {
+        const point = projectToOverlay(map, overlay, active.lon, active.lat)
+        if (!point) {
           clearCallout()
         } else {
-          applyGeometry(pt.x, pt.y, vw, vh)
-          const dist = Math.hypot(pt.x - cx, pt.y - cy)
+          applyGeometry(point.x, point.y, vw, vh)
+          const dist = Math.hypot(point.x - cx, point.y - cy)
           if (now >= holdUntilRef.current) {
             if (dist > CENTER_RADIUS_PX * 1.2) {
               clearCallout()
@@ -198,7 +240,7 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
               const peak = peaks.find((p) => p.id === active.peakId)
               const country = countryByLabel.get(active.countryName)
               if (peak && country) {
-                showForPeak(peak, country, pt.x, pt.y, vw, vh, now)
+                showForPeak(peak, country, point, vw, vh, now)
               } else {
                 clearCallout()
               }
@@ -206,9 +248,9 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
           }
         }
       } else {
-        const best = nearestPeakInCenter(vw, vh, cx, cy)
+        const best = nearestPeakInCenter(overlay, cx, cy)
         if (best) {
-          showForPeak(best.peak, best.country, best.x, best.y, vw, vh, now)
+          showForPeak(best.peak, best.country, best.point, vw, vh, now)
         }
       }
 
@@ -219,35 +261,49 @@ export function SpinFunFact({ map, spinning, countries, peaks }: SpinFunFactProp
     return () => cancelAnimationFrame(frame)
   }, [spinning, map, peaks, countryByLabel, units])
 
-  if (!spinning || !content) return null
+  if (!spinning) return null
 
   return (
-    <div ref={wrapRef} className="spin-fun-fact" aria-live="polite">
-      <svg className="spin-fun-fact-line" aria-hidden="true">
+    <div
+      ref={wrapRef}
+      className="spin-fun-fact"
+      aria-live="polite"
+      style={{ opacity: content ? undefined : 0 }}
+    >
+      <svg
+        className="spin-fun-fact-line"
+        aria-hidden="true"
+        width={viewBox.w}
+        height={viewBox.h}
+        viewBox={`0 0 ${viewBox.w} ${viewBox.h}`}
+        preserveAspectRatio="none"
+      >
         <line ref={lineRef} x1="0" y1="0" x2="0" y2="0" />
         <circle ref={dotRef} cx="0" cy="0" r="5" />
       </svg>
-      <article ref={cardRef} className="spin-fun-fact-card">
-        <header className="spin-fun-fact-country">
-          {content.flag ? (
-            <img
-              src={content.flag}
-              alt=""
-              className="spin-fun-fact-flag"
-              width={28}
-              height={20}
-              referrerPolicy="no-referrer"
-            />
-          ) : (
-            <span className="spin-fun-fact-flag-fallback" aria-hidden="true">
-              {content.countryName.slice(0, 2).toUpperCase()}
-            </span>
-          )}
-          <span>{content.countryName}</span>
-        </header>
-        <p className="spin-fun-fact-peak">{content.peakName}</p>
-        <p className="spin-fun-fact-text">{content.fact}</p>
-      </article>
+      {content && (
+        <article ref={cardRef} className="spin-fun-fact-card">
+          <header className="spin-fun-fact-country">
+            {content.flag ? (
+              <img
+                src={content.flag}
+                alt=""
+                className="spin-fun-fact-flag"
+                width={28}
+                height={20}
+                referrerPolicy="no-referrer"
+              />
+            ) : (
+              <span className="spin-fun-fact-flag-fallback" aria-hidden="true">
+                {content.countryName.slice(0, 2).toUpperCase()}
+              </span>
+            )}
+            <span>{content.countryName}</span>
+          </header>
+          <p className="spin-fun-fact-peak">{content.peakName}</p>
+          <p className="spin-fun-fact-text">{content.fact}</p>
+        </article>
+      )}
     </div>
   )
 }

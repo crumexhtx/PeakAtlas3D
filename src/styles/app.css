@@ -1283,8 +1283,9 @@ a {
 .spin-fun-fact-line {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
+  display: block;
+  overflow: visible;
+  pointer-events: none;
 }
 
 .spin-fun-fact-line line {
