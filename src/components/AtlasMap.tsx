@@ -41,6 +41,7 @@ import {
   softenSatelliteRaster,
   startIdleSpin,
   waitForMapIdle,
+  worldFramePadding,
 } from '../lib/mapAnimations'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
@@ -274,6 +275,9 @@ export function AtlasMap({
           zoom: worldView.zoom,
           pitch: worldView.pitch,
           bearing: worldView.bearing,
+          // Peak/country views leave asymmetric padding that shifts the globe
+          // off-center — always clear it when returning to world.
+          padding: worldFramePadding(),
           duration: prefersReducedMotion() ? 0 : 1400,
           essential: true,
         })
