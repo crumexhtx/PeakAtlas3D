@@ -180,7 +180,7 @@ for (const page of staticPages.slice(1)) {
 for (const peak of peaks) {
   if (!peak?.id) continue
   writeRoute(template, `/peak/${peak.id}`, {
-    title: `${peak.name} · PeakAtlas3D`,
+    title: `${peak.name} 3D Interactive Map & Base Town Lodging | PeakAtlas3D`,
     description: peakDescription(peak),
     image: peakImage(peak),
   })

@@ -98,9 +98,10 @@ function createRandomWorldView() {
 }
 
 const ORBIT_ZOOM = 12.9
-const ORBIT_PITCH = 70
+/** Lower pitch = more top-down; steep angles pull empty far-horizon tiles. */
+const ORBIT_PITCH = 44
 const HERO_ZOOM = 13.35
-const HERO_PITCH = 79
+const HERO_PITCH = 50
 const HERO_BEARING = -28
 /** Full 360° orbit — paced slower for a calmer spin. */
 const SPIN_DURATION_MS = 26_400

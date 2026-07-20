@@ -109,7 +109,7 @@ export function metaForPeak(peak: Peak, _country?: string | null) {
   const path = `/peak/${peak.id}`
 
   return {
-    title: `${peak.name} · PeakAtlas3D`,
+    title: `${peak.name} 3D Interactive Map & Base Town Lodging | PeakAtlas3D`,
     description,
     image: peakImage(peak),
     path,

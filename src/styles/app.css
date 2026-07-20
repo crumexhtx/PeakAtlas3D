@@ -1259,6 +1259,31 @@ a {
   margin-top: -1px;
 }
 
+.dossier-back-globe {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: -0.15rem 0 0.85rem;
+  padding: 0.4rem 0.15rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  background: rgba(10, 16, 26, 0.96);
+  border-bottom: 1px solid transparent;
+}
+
+.dossier-back-globe:hover,
+.dossier-back-globe:focus-visible {
+  color: #d7f1ff;
+  outline: none;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .dossier-top {
   display: flex;
   gap: 0.85rem;

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import type { Amenity, Peak } from '../types/peak'
 import {
   formatCoordinates,
@@ -74,6 +75,10 @@ export function PeakDossier({ peak, deferMedia = false }: PeakDossierProps) {
 
   return (
     <aside className="peak-dossier">
+      <Link to="/" className="dossier-back-globe">
+        ⬅️ Back to Global Globe
+      </Link>
+
       <div className="dossier-top">
         {flag && (
           <img src={flag} alt="" className="dossier-flag" width={36} height={24} />
