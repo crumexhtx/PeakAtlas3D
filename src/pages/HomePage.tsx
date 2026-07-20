@@ -16,6 +16,7 @@ export function HomePage() {
     browse,
     selectedCountry,
     mapPeaks,
+    cinematic,
     setBrowse,
     clearCountry,
     openPeak,
@@ -70,7 +71,7 @@ export function HomePage() {
 
   return (
     <>
-      {selectedSummary && (
+      {selectedSummary && !cinematic && (
         <CountryPanel
           country={selectedSummary}
           peaks={countryPeakList}
@@ -79,22 +80,24 @@ export function HomePage() {
         />
       )}
 
-      <BrowseBar
-        browse={browse}
-        countries={countries}
-        ranges={ranges}
-        units={units}
-        visibleCount={
-          selectedCountry ? countryPeakList.length : worldCountryCount
-        }
-        totalCount={
-          selectedCountry
-            ? (selectedSummary?.peakCount ?? 0)
-            : countries.length
-        }
-        countLabel={selectedCountry ? 'peaks' : 'countries'}
-        onBrowseChange={setBrowse}
-      />
+      {!cinematic && (
+        <BrowseBar
+          browse={browse}
+          countries={countries}
+          ranges={ranges}
+          units={units}
+          visibleCount={
+            selectedCountry ? countryPeakList.length : worldCountryCount
+          }
+          totalCount={
+            selectedCountry
+              ? (selectedSummary?.peakCount ?? 0)
+              : countries.length
+          }
+          countLabel={selectedCountry ? 'peaks' : 'countries'}
+          onBrowseChange={setBrowse}
+        />
+      )}
     </>
   )
 }
