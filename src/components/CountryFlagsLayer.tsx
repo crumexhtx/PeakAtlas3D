@@ -40,9 +40,11 @@ export function CountryFlagsLayer({
     const refresh = () => {
       cancelAnimationFrame(frame)
       frame = requestAnimationFrame(() => {
-        // During continuous jumpTo spin, refresh a bit less often to cut React churn.
+        // During continuous jumpTo spin, refresh less often to cut React churn.
+        // Desktop (wider canvas) skips more aggressively.
         if (spinningRef.current) {
-          spinSkip = (spinSkip + 1) % 2
+          const wide = map.getContainer().clientWidth > 640
+          spinSkip = (spinSkip + 1) % (wide ? 3 : 2)
           if (spinSkip !== 0) return
         }
 

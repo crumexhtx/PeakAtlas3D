@@ -19,6 +19,7 @@ import {
   peakMatchesCountry,
 } from '../lib/countries'
 import {
+  applyMapPixelRatioCap,
   hasMapboxToken,
   HERO_TERRAIN_EXAGGERATION,
   MAP_STYLE_SATELLITE,
@@ -60,10 +61,10 @@ type AtlasMapProps = {
 }
 
 /**
- * Desktop world framing — closer than phone so the globe fills the stage
- * without feeling lost in empty space.
+ * Desktop world framing — fills the stage without over-zooming (closer zoom
+ * costs more satellite detail while the idle globe spins).
  */
-const WORLD_ZOOM = 1.15
+const WORLD_ZOOM = 1.0
 /**
  * World framing matched to the reference phone shot: full Earth disk
  * visible with clear margin (not clipped, not tiny).
@@ -93,12 +94,15 @@ function createRandomWorldView() {
   }
 }
 
-const ORBIT_ZOOM = 12.2
-const ORBIT_PITCH = 54
-const HERO_ZOOM = 12.55
-const HERO_PITCH = 62
+const ORBIT_ZOOM = 12.9
+const ORBIT_PITCH = 70
+const HERO_ZOOM = 13.35
+const HERO_PITCH = 79
 const HERO_BEARING = -28
-const SPIN_DURATION_MS = 21_820
+/** Full 360° orbit — paced slower for a calmer spin. */
+const SPIN_DURATION_MS = 26_400
+/** Shared duration for peak approach and leave (country/world) camera moves. */
+const PEAK_TRANSITION_MS = 5_040
 
 const ACTIVITY_EVENTS = [
   'mousedown',
@@ -146,6 +150,18 @@ export function AtlasMap({
 
   onCinematicChangeRef.current = onCinematicChange
   latestPeakIdRef.current = activePeak?.id ?? null
+
+  // Cap HiDPI canvas fill-rate on desktop (Mapbox GL v3 has no pixelRatio option).
+  useEffect(() => {
+    const restore = applyMapPixelRatioCap()
+    const map = mapRef.current?.getMap()
+    try {
+      map?.resize()
+    } catch {
+      // Map may not be ready yet; onLoad resize also picks up the capped DPR.
+    }
+    return restore
+  }, [])
 
   // Abort in-flight camera work when the map shell unmounts (About/Releases/etc).
   useEffect(() => {
@@ -261,34 +277,45 @@ export function AtlasMap({
 
     stopSpin()
     map.setTerrain(null)
-    map.stop()
     setMapInteractive(map, true)
 
-    if (!selectedCountry) {
-      if (prev || returningFromPeak) {
-        map.easeTo({
-          center: [worldView.longitude, worldView.latitude],
-          zoom: worldView.zoom,
-          pitch: worldView.pitch,
-          bearing: worldView.bearing,
-          duration: prefersReducedMotion() ? 0 : 1400,
-          essential: true,
-        })
+    // Defer camera move to the next frame so it wins over the peak-leave
+    // effect in the same commit (that effect must not cancel this animation).
+    const frame = requestAnimationFrame(() => {
+      try {
+        map.stop()
+      } catch {
+        // Map may already be removed.
       }
-      return
-    }
 
-    const bounds = getCountryBounds(countryPeaks)
-    if (!bounds) return
+      if (!selectedCountry) {
+        if (prev || returningFromPeak) {
+          map.easeTo({
+            center: [worldView.longitude, worldView.latitude],
+            zoom: worldView.zoom,
+            pitch: worldView.pitch,
+            bearing: worldView.bearing,
+            duration: prefersReducedMotion() ? 0 : PEAK_TRANSITION_MS,
+            essential: true,
+          })
+        }
+        return
+      }
 
-    map.fitBounds(bounds, {
-      padding: countryFramePadding(),
-      maxZoom: countryPeaks.length === 1 ? 5.8 : 6.4,
-      duration: prefersReducedMotion() ? 0 : 1600,
-      essential: true,
-      pitch: 0,
-      bearing: 0,
+      const bounds = getCountryBounds(countryPeaks)
+      if (!bounds) return
+
+      map.fitBounds(bounds, {
+        padding: countryFramePadding(),
+        maxZoom: countryPeaks.length === 1 ? 5.8 : 6.4,
+        duration: prefersReducedMotion() ? 0 : PEAK_TRANSITION_MS,
+        essential: true,
+        pitch: 0,
+        bearing: 0,
+      })
     })
+
+    return () => cancelAnimationFrame(frame)
   }, [mapReady, selectedCountry, countryPeaks, activePeak, worldView])
 
   // Peak cinematic — continues from the live camera (same map instance).
@@ -302,15 +329,11 @@ export function AtlasMap({
     const prevPeakId = prevPeakIdRef.current
 
     if (!activePeak) {
-      // Always clear cinematic when leaving peak mode — do not gate on
-      // prevPeakId (StrictMode cleanup can null it before this runs).
+      // Clear cinematic UI when leaving peak mode. Do NOT map.stop() here —
+      // the country/world effect (declared above) starts fitBounds/easeTo in
+      // the same commit; a stop() after that cancels the zoom-out and leaves
+      // the camera stuck at summit framing (common with single-peak countries).
       cinematicRunRef.current += 1
-      try {
-        // Unblock any in-flight waitForMoveEnd from the previous intro.
-        map.stop()
-      } catch {
-        // Map may already be removed.
-      }
       setMapInteractive(map, true)
       map.setTerrain(null)
       onCinematicChangeRef.current({ active: false, status: '' })
@@ -392,7 +415,7 @@ export function AtlasMap({
           pitch: ORBIT_PITCH,
           bearing: approachBearing,
           padding: framePad,
-          duration: 4200,
+          duration: PEAK_TRANSITION_MS,
           curve: 1.2,
           easing: easeInOutCubic,
           essential: true,
@@ -514,6 +537,12 @@ export function AtlasMap({
         onLoad={() => {
           const map = getMap()
           if (map) {
+            // Pick up desktop DPR cap applied on mount.
+            try {
+              map.resize()
+            } catch {
+              // Ignore resize failures during early load.
+            }
             applyPeakAtmosphere(map)
             softenSatelliteRaster(map)
             setMapInstance(map)

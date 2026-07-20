@@ -299,7 +299,15 @@ export function SpinFunFact({
       return best
     }
 
+    let skip = 0
     const tick = () => {
+      // Match idle-spin paint rate (~30fps) so we don't outwork the globe.
+      skip = (skip + 1) % 2
+      if (skip !== 0) {
+        frame = requestAnimationFrame(tick)
+        return
+      }
+
       const overlay = wrapRef.current
       if (!overlay) {
         frame = requestAnimationFrame(tick)

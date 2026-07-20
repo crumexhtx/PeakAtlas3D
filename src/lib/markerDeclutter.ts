@@ -13,6 +13,7 @@ const EXIT_DOT = 0.02
 /** Phones: keep flags nearer screen-center so the small globe doesn’t look crowded. */
 const ENTER_DOT_NARROW = 0.2
 const EXIT_DOT_NARROW = 0.05
+const MAX_SPIN_FLAGS = 16
 const MAX_SPIN_FLAGS_NARROW = 12
 const NARROW_MAP_PX = 640
 
@@ -70,7 +71,7 @@ function boxAround(
 /**
  * During idle spin: only front-hemisphere visibility with hysteresis.
  * Skips overlap packing so flags don't pop in/out every frame.
- * On narrow maps, also caps how many flags stay visible (desktop unchanged).
+ * Caps visible flags on all viewports (tighter on phones).
  */
 export function spinCountryMarkerLayout(
   map: MapboxMap,
@@ -80,6 +81,7 @@ export function spinCountryMarkerLayout(
   const narrow = map.getContainer().clientWidth <= NARROW_MAP_PX
   const enterDot = narrow ? ENTER_DOT_NARROW : ENTER_DOT
   const exitDot = narrow ? EXIT_DOT_NARROW : EXIT_DOT
+  const maxFlags = narrow ? MAX_SPIN_FLAGS_NARROW : MAX_SPIN_FLAGS
 
   const layout = new Map<string, CountryMarkerLayout>()
   for (const country of countries) {
@@ -90,10 +92,8 @@ export function spinCountryMarkerLayout(
     })
   }
 
-  if (!narrow) return layout
-
   const visible = countries.filter((c) => layout.get(c.name)?.show)
-  if (visible.length <= MAX_SPIN_FLAGS_NARROW) return layout
+  if (visible.length <= maxFlags) return layout
 
   const prevShown = new Set<string>()
   if (previous) {
@@ -111,9 +111,7 @@ export function spinCountryMarkerLayout(
     return a.name.localeCompare(b.name)
   })
 
-  const keep = new Set(
-    visible.slice(0, MAX_SPIN_FLAGS_NARROW).map((c) => c.name),
-  )
+  const keep = new Set(visible.slice(0, maxFlags).map((c) => c.name))
   for (const country of visible) {
     if (!keep.has(country.name)) {
       layout.set(country.name, { show: false, showLabel: false })

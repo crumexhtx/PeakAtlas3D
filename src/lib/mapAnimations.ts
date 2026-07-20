@@ -1,8 +1,10 @@
 import type { Map as MapboxMap } from 'mapbox-gl'
 
 export const IDLE_ROTATE_DELAY_MS = 6_000
-/** Degrees of longitude advanced per animation frame on the world globe. */
+/** Degrees of longitude advanced per animation frame on the world globe (~60fps baseline). */
 export const IDLE_ROTATE_SPEED_LNG = 0.045
+/** Cap idle/orbit paints — half the WebGL cost for nearly the same motion. */
+const SPIN_FRAME_MS = 1000 / 30
 
 type CameraOptions = Parameters<MapboxMap['flyTo']>[0]
 
@@ -187,6 +189,7 @@ export function peakFramingCenter(
  * Continuous globe spin by shifting center longitude.
  * Prefer this over setBearing on a globe — bearing changes often look wrong
  * at low zoom and can fire rotatestart (which would cancel idle timers).
+ * Throttled to ~30fps and paused while the tab is hidden.
  */
 export function startIdleSpin(
   map: MapboxMap,
@@ -194,14 +197,22 @@ export function startIdleSpin(
 ): { cancel: () => void } {
   let frame = 0
   let active = true
+  let lastPaint = 0
+  // Keep perceived angular speed close to the old uncapped 60fps loop.
+  const degPerMs = speedLng * 60 / 1000
 
-  const tick = () => {
+  const tick = (now: number) => {
     if (!active) return
-    const { lng, lat } = map.getCenter()
-    map.jumpTo({ center: [lng + speedLng, lat] })
+    if (!document.hidden && now - lastPaint >= SPIN_FRAME_MS) {
+      const dt = Math.min(now - lastPaint, SPIN_FRAME_MS * 2.5)
+      lastPaint = now
+      const { lng, lat } = map.getCenter()
+      map.jumpTo({ center: [lng + degPerMs * dt, lat] })
+    }
     frame = requestAnimationFrame(tick)
   }
 
+  lastPaint = performance.now()
   frame = requestAnimationFrame(tick)
 
   return {
@@ -226,6 +237,7 @@ export function orbitAsync(
     const startBearing = map.getBearing()
     const startedAt = performance.now()
     let frame = 0
+    let lastPaint = 0
 
     const tick = (now: number) => {
       if (!shouldContinue()) {
@@ -235,7 +247,10 @@ export function orbitAsync(
       }
 
       const progress = Math.min(1, (now - startedAt) / durationMs)
-      map.setBearing(startBearing + progress * 360)
+      if (now - lastPaint >= SPIN_FRAME_MS || progress >= 1) {
+        lastPaint = now
+        map.setBearing(startBearing + progress * 360)
+      }
 
       if (progress < 1) {
         frame = requestAnimationFrame(tick)
