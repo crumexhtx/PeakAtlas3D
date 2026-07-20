@@ -29,7 +29,10 @@ export function PeakPage() {
   }
 
   return (
-    <div className="peak-overlay-panel">
+    <div
+      className={`peak-overlay-panel${cinematic ? ' is-cinematic-hidden' : ''}`}
+      aria-hidden={cinematic || undefined}
+    >
       <DetailsSheet
         resetKey={activePeak.id}
         title={activePeak.name}

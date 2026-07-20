@@ -19,7 +19,7 @@ function shouldNudgeTab() {
 }
 
 /**
- * Mobile: collapsed grab-tab by default; tap to expand to ~3/4 viewport.
+ * Mobile: collapsed card top-right by default; tap to expand downward.
  * Desktop: always shows the full body (side panel).
  */
 export function DetailsSheet({
@@ -73,7 +73,7 @@ export function DetailsSheet({
             )}
           </span>
           <span className="details-sheet-chevron" aria-hidden="true">
-            {expanded ? '▾' : '▴'}
+            {expanded ? '▴' : '▾'}
           </span>
         </button>
 

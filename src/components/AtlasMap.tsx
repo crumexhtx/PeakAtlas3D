@@ -302,14 +302,18 @@ export function AtlasMap({
     const prevPeakId = prevPeakIdRef.current
 
     if (!activePeak) {
-      if (prevPeakId) {
-        // Camera handoff is owned by the country/world effect (via leavingPeakRef).
-        // Do not map.stop() here — that was cancelling the country fitBounds.
-        cinematicRunRef.current += 1
-        setMapInteractive(map, true)
-        map.setTerrain(null)
-        onCinematicChangeRef.current({ active: false, status: '' })
+      // Always clear cinematic when leaving peak mode — do not gate on
+      // prevPeakId (StrictMode cleanup can null it before this runs).
+      cinematicRunRef.current += 1
+      try {
+        // Unblock any in-flight waitForMoveEnd from the previous intro.
+        map.stop()
+      } catch {
+        // Map may already be removed.
       }
+      setMapInteractive(map, true)
+      map.setTerrain(null)
+      onCinematicChangeRef.current({ active: false, status: '' })
       prevPeakIdRef.current = null
       return
     }
@@ -330,7 +334,11 @@ export function AtlasMap({
     async function playIntro() {
       stopSpin()
       clearIdleTimer()
-      map.stop()
+      try {
+        map.stop()
+      } catch {
+        // ignore
+      }
       applyPeakAtmosphere(map)
 
       const approachBearing = map.getBearing()
@@ -370,55 +378,63 @@ export function AtlasMap({
       })
       setMapInteractive(map, false)
 
-      // Critical: do NOT remount or jump — fly from the live atlas camera.
-      map.setTerrain({
-        source: TERRAIN_SOURCE_ID,
-        exaggeration: ORBIT_TERRAIN_EXAGGERATION,
-      })
+      try {
+        // Critical: do NOT remount or jump — fly from the live atlas camera.
+        map.setTerrain({
+          source: TERRAIN_SOURCE_ID,
+          exaggeration: ORBIT_TERRAIN_EXAGGERATION,
+        })
 
-      const framePad = peakFramePadding()
-      await flyToAsync(map, {
-        center: orbitCenter,
-        zoom: ORBIT_ZOOM,
-        pitch: ORBIT_PITCH,
-        bearing: approachBearing,
-        padding: framePad,
-        duration: 4200,
-        curve: 1.2,
-        easing: easeInOutCubic,
-        essential: true,
-      })
-      if (!stillActive()) return
+        const framePad = peakFramePadding()
+        await flyToAsync(map, {
+          center: orbitCenter,
+          zoom: ORBIT_ZOOM,
+          pitch: ORBIT_PITCH,
+          bearing: approachBearing,
+          padding: framePad,
+          duration: 4200,
+          curve: 1.2,
+          easing: easeInOutCubic,
+          essential: true,
+        })
+        if (!stillActive()) return
 
-      await waitForMapIdle(map, 900)
-      if (!stillActive()) return
+        await waitForMapIdle(map, 900)
+        if (!stillActive()) return
 
-      onCinematicChangeRef.current({ active: true, status: 'Orbiting peak…' })
-      await orbitAsync(map, SPIN_DURATION_MS, stillActive)
-      if (!stillActive()) return
+        onCinematicChangeRef.current({ active: true, status: 'Orbiting peak…' })
+        await orbitAsync(map, SPIN_DURATION_MS, stillActive)
+        if (!stillActive()) return
 
-      onCinematicChangeRef.current({
-        active: true,
-        status: 'Locking summit view…',
-      })
-      map.setTerrain({
-        source: TERRAIN_SOURCE_ID,
-        exaggeration: HERO_TERRAIN_EXAGGERATION,
-      })
-      await easeToAsync(map, {
-        center: heroCenter,
-        zoom: HERO_ZOOM,
-        pitch: HERO_PITCH,
-        bearing: HERO_BEARING,
-        padding: peakFramePadding(),
-        duration: 1400,
-        easing: easeInOutCubic,
-        essential: true,
-      })
-      if (!stillActive()) return
+        onCinematicChangeRef.current({
+          active: true,
+          status: 'Locking summit view…',
+        })
+        map.setTerrain({
+          source: TERRAIN_SOURCE_ID,
+          exaggeration: HERO_TERRAIN_EXAGGERATION,
+        })
+        await easeToAsync(map, {
+          center: heroCenter,
+          zoom: HERO_ZOOM,
+          pitch: HERO_PITCH,
+          bearing: HERO_BEARING,
+          padding: peakFramePadding(),
+          duration: 1400,
+          easing: easeInOutCubic,
+          essential: true,
+        })
+        if (!stillActive()) return
 
-      setMapInteractive(map, true)
-      onCinematicChangeRef.current({ active: false, status: '' })
+        setMapInteractive(map, true)
+        onCinematicChangeRef.current({ active: false, status: '' })
+      } catch {
+        // Terrain/camera errors must not leave the map frozen.
+        if (stillActive()) {
+          setMapInteractive(map, true)
+          onCinematicChangeRef.current({ active: false, status: '' })
+        }
+      }
     }
 
     void playIntro()
@@ -426,6 +442,11 @@ export function AtlasMap({
     return () => {
       cancelled = true
       cinematicRunRef.current += 1
+      try {
+        map.stop()
+      } catch {
+        // ignore
+      }
       // StrictMode remounts effects in dev: clear the "already played" marker so
       // the second mount can schedule playIntro for the same peak.
       if (prevPeakIdRef.current === peakId) {
@@ -435,7 +456,6 @@ export function AtlasMap({
       // (StrictMode remount keeps the same peak id — skip the flag).
       if (latestPeakIdRef.current !== peakId) {
         // Signal the country/world effect (runs after cleanups) to refit the camera.
-        // Avoid map.stop() here so that upcoming fitBounds is not cancelled.
         leavingPeakRef.current = true
       }
     }

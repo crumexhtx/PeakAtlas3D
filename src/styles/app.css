@@ -239,7 +239,7 @@ a {
   position: absolute;
   left: calc(1rem + var(--safe-left));
   bottom: calc(1rem + var(--safe-bottom));
-  z-index: 5;
+  z-index: 16;
   display: flex;
   align-items: center;
   gap: 0.85rem;
@@ -308,6 +308,14 @@ a {
 .map-stage.is-peak-mode .atlas-map-wrap {
   position: absolute;
   inset: 0;
+}
+
+/* During peak orbit, hide bottom chrome so it cannot cover Skip / status. */
+.map-stage.is-cinematic .browse-bar,
+.map-stage.is-cinematic .country-panel-shell,
+.peak-overlay-panel.is-cinematic-hidden {
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .peak-overlay-panel {
@@ -431,26 +439,26 @@ a {
   overflow: auto;
 }
 
-/* Mobile-only attention bounce — see .details-sheet.is-nudging under 900px */
+/* Mobile-only attention bounce — top-right card nudges into view */
 @keyframes details-tab-nudge {
   0%,
   100% {
-    transform: translateY(0);
+    transform: translate(0, 0);
   }
   18% {
-    transform: translateY(-12px);
+    transform: translate(-5px, 10px);
   }
   36% {
-    transform: translateY(0);
+    transform: translate(0, 0);
   }
   52% {
-    transform: translateY(-7px);
+    transform: translate(-3px, 6px);
   }
   68% {
-    transform: translateY(0);
+    transform: translate(0, 0);
   }
   82% {
-    transform: translateY(-3px);
+    transform: translate(-1px, 3px);
   }
 }
 
@@ -624,6 +632,15 @@ a {
   outline: none;
 }
 
+.country-flag-marker-img {
+  display: block;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: #111;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
 .country-flag-marker.is-flag-only {
   gap: 0;
 }
@@ -632,6 +649,7 @@ a {
 .country-flag-marker.is-flag-only .country-flag-marker-fallback {
   width: 28px;
   height: 20px;
+  border-radius: 7px;
 }
 
 .country-flag-marker.is-flag-only .country-flag-marker-fallback {
@@ -643,11 +661,13 @@ a {
   place-items: center;
   width: 40px;
   height: 28px;
-  border-radius: 4px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   background: #1c2a3a;
   color: var(--accent);
   font-size: 0.7rem;
   font-weight: 700;
+  box-sizing: border-box;
 }
 
 .country-flag-marker-label {
@@ -684,8 +704,8 @@ a {
 }
 
 .country-panel-flag {
-  border-radius: 4px;
-  border: 1px solid var(--border);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
   margin-top: 0.2rem;
 }
 
@@ -876,9 +896,11 @@ a {
 
 .flag-marker-img {
   display: block;
-  border-radius: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   background: #111;
+  object-fit: cover;
+  box-sizing: border-box;
 }
 
 .flag-marker-fallback {
@@ -886,10 +908,12 @@ a {
   place-items: center;
   width: 28px;
   height: 20px;
-  border-radius: 3px;
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   background: #1c2a3a;
   color: var(--accent);
   font-size: 0.75rem;
+  box-sizing: border-box;
 }
 
 .flag-marker-pin {
@@ -1166,8 +1190,8 @@ a {
 }
 
 .dossier-flag {
-  border-radius: 4px;
-  border: 1px solid var(--border);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
   margin-top: 0.35rem;
 }
 
@@ -1417,8 +1441,9 @@ a {
   width: 28px;
   height: 20px;
   object-fit: cover;
-  border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-sizing: border-box;
 }
 
 .spin-fun-fact-flag-fallback {
@@ -1427,9 +1452,11 @@ a {
   justify-content: center;
   width: 28px;
   height: 20px;
-  border-radius: 2px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
   background: rgba(255, 255, 255, 0.1);
   font-size: 0.62rem;
+  box-sizing: border-box;
 }
 
 .spin-fun-fact-peak {
@@ -1568,26 +1595,25 @@ a {
   }
 
   .map-stage.is-peak-mode .peak-overlay-panel {
-    top: auto;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    top: calc(0.55rem + var(--safe-top, 0px));
+    right: calc(0.55rem + var(--safe-right));
+    left: auto;
+    bottom: auto;
+    width: min(300px, calc(100% - 1.1rem - var(--safe-left) - var(--safe-right)));
     height: auto;
-    max-height: 75vh;
+    max-height: min(72vh, calc(100% - 1.1rem));
   }
 
   .peak-overlay-panel .details-sheet {
     height: auto;
-    max-height: 75vh;
-    border-radius: 16px 16px 0 0;
+    max-height: min(72vh, calc(100dvh - var(--header-h) - 1.2rem));
+    border-radius: 14px;
     border: 1px solid var(--border);
-    border-bottom: none;
-    box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
   }
 
   .peak-overlay-panel .details-sheet.is-expanded {
-    height: 75vh;
+    height: min(72vh, calc(100dvh - var(--header-h) - 1.2rem));
   }
 
   .peak-overlay-panel .peak-dossier {
@@ -1599,6 +1625,28 @@ a {
 
   .details-sheet-chrome {
     display: flex;
+  }
+
+  .details-sheet-handle {
+    /* Bottom-sheet grabber; not needed for top-right cards. */
+    display: none;
+  }
+
+  .details-sheet-tab {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 0.55rem;
+  }
+
+  .details-sheet-tab-copy {
+    flex: 1;
+  }
+
+  .details-sheet-chevron {
+    position: static;
+    flex-shrink: 0;
+    margin-left: auto;
   }
 
   .details-sheet.is-collapsed.is-nudging {
@@ -1618,25 +1666,25 @@ a {
   }
 
   .country-panel-shell {
-    top: auto;
-    right: 0;
-    left: 0;
-    bottom: calc(4.35rem + var(--safe-bottom));
-    width: 100%;
+    top: calc(0.55rem + var(--safe-top, 0px));
+    right: calc(0.55rem + var(--safe-right));
+    left: auto;
+    bottom: auto;
+    width: min(300px, calc(100% - 1.1rem - var(--safe-left) - var(--safe-right)));
     height: auto;
-    max-height: 75vh;
+    max-height: min(68vh, calc(100% - 5.25rem));
   }
 
   .country-panel-shell .details-sheet {
     height: auto;
-    max-height: 75vh;
-    border-radius: 16px 16px 0 0;
-    border-left: none;
-    border-right: none;
+    max-height: min(68vh, calc(100dvh - var(--header-h) - 5.25rem));
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
   }
 
   .country-panel-shell .details-sheet.is-expanded {
-    height: 75vh;
+    height: min(68vh, calc(100dvh - var(--header-h) - 5.25rem));
   }
 
   .country-panel-desktop-close {
@@ -1716,10 +1764,6 @@ a {
     min-height: 2.75rem;
     padding: 0.7rem 0;
     font-size: 0.8rem;
-  }
-
-  .details-sheet.is-collapsed .details-sheet-tab {
-    padding-bottom: max(0.55rem, env(safe-area-inset-bottom, 0px));
   }
 }
 
@@ -1810,13 +1854,13 @@ a {
   }
 
   .map-stage.is-peak-mode .peak-overlay-panel {
-    max-height: 75vh;
+    width: min(280px, calc(100% - 1rem - var(--safe-left) - var(--safe-right)));
+    max-height: min(70vh, calc(100% - 1rem));
   }
 
   .peak-dossier,
   .map-stage.is-peak-mode .peak-overlay-panel .peak-dossier {
-    padding: 0.7rem calc(0.75rem + var(--safe-right))
-      calc(0.85rem + var(--safe-bottom)) 0.75rem;
+    padding: 0.7rem 0.75rem 0.85rem;
   }
 
   .dossier-top {
