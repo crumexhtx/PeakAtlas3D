@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { ContentDisclaimer } from '../components/ContentDisclaimer'
 import { applyDocumentMeta } from '../lib/documentMeta'
+import { prefetchAtlasShell } from '../lib/prefetchAtlas'
 
 export function AboutPage() {
   const { hash } = useLocation()
@@ -77,7 +78,12 @@ export function AboutPage() {
       <ContentDisclaimer />
 
       <p className="content-cta-row">
-        <Link to="/" className="content-cta">
+        <Link
+          to="/"
+          className="content-cta"
+          onMouseEnter={prefetchAtlasShell}
+          onFocus={prefetchAtlasShell}
+        >
           Open the atlas
         </Link>
         <Link to="/contact" className="content-cta content-cta-secondary">

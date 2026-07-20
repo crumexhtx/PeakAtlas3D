@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { releases } from '../data/releases'
 import { applyDocumentMeta } from '../lib/documentMeta'
+import { prefetchAtlasShell } from '../lib/prefetchAtlas'
 
 function formatDate(iso: string) {
   try {
@@ -55,7 +56,12 @@ export function ReleasesPage() {
       </ol>
 
       <p className="content-cta-row">
-        <Link to="/" className="content-cta">
+        <Link
+          to="/"
+          className="content-cta"
+          onMouseEnter={prefetchAtlasShell}
+          onFocus={prefetchAtlasShell}
+        >
           Open the atlas
         </Link>
         <Link to="/about#disclaimer" className="content-cta content-cta-secondary">
