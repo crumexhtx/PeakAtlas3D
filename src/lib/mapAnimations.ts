@@ -122,8 +122,8 @@ export function softenSatelliteRaster(map: MapboxMap) {
 
 /**
  * Padding that keeps the summit in the open map (left of the dossier on
- * desktop, above the sheet on mobile) and a bit lower than raw geo-center,
- * which reads high under steep pitch.
+ * desktop, clear of the top-right card on mobile) and a bit lower than raw
+ * geo-center, which reads high under steep pitch.
  */
 export function peakFramePadding(): {
   top: number
@@ -135,18 +135,18 @@ export function peakFramePadding(): {
     typeof window !== 'undefined' &&
     window.matchMedia('(max-width: 800px)').matches
   if (narrow) {
-    // Collapsed details tab is short so peak flags stay visible on the map.
+    // Top-right details card — bias framing down/left into open map.
     return {
-      top: 52,
-      bottom: 96,
-      left: 24,
-      right: 24,
+      top: 88,
+      bottom: 56,
+      left: 28,
+      right: 120,
     }
   }
   return { top: 110, bottom: 48, left: 36, right: 300 }
 }
 
-/** Extra bottom pad when the country panel sheet covers the map on phones. */
+/** Leave room for browse bar (bottom) and top-right country card on phones. */
 export function countryFramePadding(): {
   top: number
   bottom: number
@@ -158,10 +158,10 @@ export function countryFramePadding(): {
     window.matchMedia('(max-width: 800px)').matches
   if (narrow) {
     return {
-      top: 72,
-      bottom: 160,
+      top: 96,
+      bottom: 120,
       left: 36,
-      right: 36,
+      right: 120,
     }
   }
   return { top: 80, bottom: 140, left: 60, right: 60 }
