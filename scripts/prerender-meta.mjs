@@ -44,8 +44,25 @@ function peakDescription(peak) {
   return text.length > 300 ? `${text.slice(0, 297)}…` : text
 }
 
+/** Pathname-only absolute URL (strips query/hash) for canonical + og:url. */
+function absoluteCanonical(pathOrUrl) {
+  try {
+    const parsed = new URL(pathOrUrl, `${siteUrl}/`)
+    const pathname =
+      parsed.pathname.replace(/\/{2,}/g, '/').replace(/\/$/, '') || '/'
+    return `${siteUrl}${pathname === '/' ? '/' : pathname}`
+  } catch {
+    const pathOnly = String(pathOrUrl).split(/[?#]/)[0]
+    const normalized =
+      pathOnly !== '/' && pathOnly.endsWith('/')
+        ? pathOnly.slice(0, -1)
+        : pathOnly || '/'
+    return `${siteUrl}${normalized.startsWith('/') ? '' : '/'}${normalized}`
+  }
+}
+
 function injectMeta(html, { title, description, path, image }) {
-  const url = `${siteUrl}${path}`
+  const url = absoluteCanonical(path)
   let out = html
 
   out = out.replace(
