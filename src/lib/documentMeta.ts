@@ -1,5 +1,8 @@
 import type { Peak } from '../types/peak'
 
+/** Production origin for canonical / OG URLs (never include query strings). */
+export const SITE_ORIGIN = 'https://peakatlas3d.com'
+
 const DEFAULT_TITLE = 'PeakAtlas3D — World Peak Atlas'
 const DEFAULT_DESCRIPTION =
   "Explore the world's mountain peaks on a Mapbox globe, then open a 3D terrain profile for each summit."
@@ -31,10 +34,27 @@ function upsertCanonical(href: string) {
   el.setAttribute('href', href)
 }
 
-function absoluteUrl(path: string) {
-  const origin =
-    typeof window !== 'undefined' ? window.location.origin : 'https://peakatlas3d.com'
-  return new URL(path, origin).toString()
+/**
+ * Self-referencing canonical: fixed production origin + pathname only.
+ * Strips query strings (?country=, ?count=…) and hashes so Google does not
+ * index URL variants of the same peak / page.
+ */
+export function toCanonicalHref(pathOrUrl: string): string {
+  try {
+    const raw = pathOrUrl.trim() || '/'
+    const base =
+      typeof window !== 'undefined' ? window.location.origin : SITE_ORIGIN
+    const parsed = new URL(raw, base)
+    const pathname = parsed.pathname.replace(/\/{2,}/g, '/') || '/'
+    // Normalize trailing slash: keep "/" only for home; peaks stay /peak/:id
+    const normalized =
+      pathname !== '/' && pathname.endsWith('/')
+        ? pathname.slice(0, -1)
+        : pathname
+    return new URL(normalized, SITE_ORIGIN).toString()
+  } catch {
+    return SITE_ORIGIN + '/'
+  }
 }
 
 function peakImage(peak: Peak): string | undefined {
@@ -49,6 +69,7 @@ export function applyDocumentMeta(input: {
   title: string
   description: string
   image?: string | null
+  /** Path or URL; query/hash are stripped for canonical + og:url. */
   path?: string
   /** e.g. "noindex, nofollow" for soft-404 peak URLs */
   robots?: string | null
@@ -79,7 +100,7 @@ export function applyDocumentMeta(input: {
   }
 
   if (input.path != null) {
-    const url = absoluteUrl(input.path)
+    const url = toCanonicalHref(input.path)
     upsertMeta('property', 'og:url', url)
     upsertCanonical(url)
   }
@@ -90,7 +111,9 @@ export function metaForAtlas(country: string | null) {
     return {
       title: `${country} peaks · PeakAtlas3D`,
       description: `Browse mountain peaks in ${country} on the PeakAtlas3D globe.`,
-      path: `/?country=${encodeURIComponent(country)}`,
+      // Pathname-only canonical → https://peakatlas3d.com/ (query stripped).
+      // Keep ?country= in the live URL for UX; do not put it in canonical.
+      path: '/',
     }
   }
   return {
@@ -105,11 +128,11 @@ export function metaForPeak(peak: Peak, _country?: string | null) {
   const description =
     peak.description?.trim() ||
     `${peak.name} in the ${peak.range}, ${peak.country} — ${elevation}.`
-  // Canonicalize without ?country= so Google doesn't treat nav variants as duplicates.
+  // Always /peak/:id — never ?country= or other query variants.
   const path = `/peak/${peak.id}`
 
   return {
-    title: `${peak.name} 3D Interactive Map & Base Town Lodging | PeakAtlas3D`,
+    title: `${peak.name} · PeakAtlas3D`,
     description,
     image: peakImage(peak),
     path,
