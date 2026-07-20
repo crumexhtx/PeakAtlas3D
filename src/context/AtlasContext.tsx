@@ -12,6 +12,9 @@ export type AtlasContextValue = {
   mapPeaks: Peak[]
   cinematic: boolean
   cinematicStatus: string
+  /** Hide chrome so only the globe and flags remain. */
+  earthOnly: boolean
+  setEarthOnly: (next: boolean) => void
   setBrowse: (next: PeakBrowseFilters) => void
   selectCountry: (country: string) => void
   clearCountry: () => void

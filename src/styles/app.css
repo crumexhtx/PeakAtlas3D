@@ -72,6 +72,77 @@ a {
   min-height: 100dvh;
 }
 
+.app-shell.is-earth-only {
+  grid-template-rows: 1fr;
+}
+
+.app-shell.is-earth-only .app-header {
+  display: none;
+}
+
+.app-shell.is-earth-only .map-stage {
+  min-height: 100dvh;
+  height: 100%;
+}
+
+/* Immersive Earth view — keep globe + flags; hide atlas chrome. */
+.map-stage.is-earth-only .browse-bar,
+.map-stage.is-earth-only .country-panel-shell,
+.map-stage.is-earth-only .peak-overlay-panel,
+.map-stage.is-earth-only .atlas-hint,
+.map-stage.is-earth-only .map-mode-chip {
+  display: none !important;
+}
+
+.earth-only-toggle {
+  position: absolute;
+  z-index: 18;
+  right: calc(0.75rem + var(--safe-right));
+  bottom: calc(5.5rem + var(--safe-bottom));
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(10, 16, 26, 0.82);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.earth-only-toggle:hover,
+.earth-only-toggle:focus-visible {
+  background: rgba(20, 30, 44, 0.92);
+  border-color: rgba(79, 195, 247, 0.45);
+  outline: none;
+}
+
+.earth-only-toggle.is-active {
+  background: rgba(79, 195, 247, 0.18);
+  border-color: rgba(79, 195, 247, 0.55);
+  color: #e8f6ff;
+}
+
+.earth-only-toggle-icon {
+  font-size: 1rem;
+  line-height: 1;
+  opacity: 0.9;
+}
+
+.map-stage.is-earth-only .earth-only-toggle {
+  bottom: calc(1rem + var(--safe-bottom));
+}
+
 .app-header {
   display: flex;
   align-items: center;
@@ -1707,6 +1778,19 @@ a {
     left: calc(0.65rem + var(--safe-left));
     right: calc(0.65rem + var(--safe-right));
     bottom: calc(0.65rem + var(--safe-bottom));
+  }
+
+  .earth-only-toggle {
+    right: calc(0.65rem + var(--safe-right));
+    bottom: calc(4.85rem + var(--safe-bottom));
+    padding: 0.5rem 0.75rem;
+    font-size: 0.78rem;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .map-stage.is-earth-only .earth-only-toggle {
+    bottom: calc(0.75rem + var(--safe-bottom));
   }
 
   .cinematic-overlay {

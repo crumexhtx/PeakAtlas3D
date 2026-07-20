@@ -3,6 +3,7 @@ import { Outlet, useMatch, useNavigate, useSearchParams } from 'react-router-dom
 import { AppHeader } from '../components/AppHeader'
 import { AtlasHint } from '../components/AtlasHint'
 import { AtlasMap } from '../components/AtlasMap'
+import { EarthOnlyToggle } from '../components/EarthOnlyToggle'
 import { AtlasProvider, type AtlasContextValue } from '../context/AtlasContext'
 import { getPeakById, peaks } from '../data/catalog'
 import {
@@ -41,9 +42,14 @@ export function AtlasLayout() {
   const [cinematicStatus, setCinematicStatus] = useState('')
   const [skipNonce, setSkipNonce] = useState(0)
   const [hintActive, setHintActive] = useState(false)
+  const [earthOnly, setEarthOnly] = useState(false)
 
   const onHintActiveChange = useCallback((active: boolean) => {
     setHintActive(active)
+  }, [])
+
+  const toggleEarthOnly = useCallback(() => {
+    setEarthOnly((v) => !v)
   }, [])
 
   useEffect(() => {
@@ -56,6 +62,16 @@ export function AtlasLayout() {
       }
     })
   }, [countryFromUrl])
+
+  // Esc exits Earth view.
+  useEffect(() => {
+    if (!earthOnly) return
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Escape') setEarthOnly(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [earthOnly])
 
   const selectedCountry = browse.country || null
 
@@ -154,6 +170,8 @@ export function AtlasLayout() {
       mapPeaks,
       cinematic,
       cinematicStatus,
+      earthOnly,
+      setEarthOnly,
       setBrowse,
       selectCountry,
       clearCountry,
@@ -166,6 +184,7 @@ export function AtlasLayout() {
       cinematic,
       cinematicStatus,
       clearCountry,
+      earthOnly,
       mapPeaks,
       openPeak,
       selectCountry,
@@ -177,7 +196,11 @@ export function AtlasLayout() {
 
   return (
     <AtlasProvider value={atlasValue}>
-      <div className={`app-shell ${activePeak ? 'peak-page' : ''}`}>
+      <div
+        className={`app-shell${activePeak ? ' peak-page' : ''}${
+          earthOnly ? ' is-earth-only' : ''
+        }`}
+      >
         <AppHeader
           peaks={peaks}
           showBack={Boolean(activePeak)}
@@ -188,7 +211,7 @@ export function AtlasLayout() {
         <div
           className={`map-stage${activePeak ? ' is-peak-mode' : ''}${
             cinematic ? ' is-cinematic' : ''
-          }`}
+          }${earthOnly ? ' is-earth-only' : ''}`}
         >
           <AtlasMap
             peaks={mapPeaks}
@@ -201,12 +224,14 @@ export function AtlasLayout() {
             onCinematicChange={onCinematicChange}
             onSkipCinematic={skipCinematic}
             skipNonce={skipNonce}
-            funFactsEnabled={!hintActive}
+            funFactsEnabled={!hintActive && !earthOnly}
+            earthOnly={earthOnly}
           />
           <AtlasHint
-            visible={!peakId && !selectedCountry && !cinematic}
+            visible={!peakId && !selectedCountry && !cinematic && !earthOnly}
             onActiveChange={onHintActiveChange}
           />
+          <EarthOnlyToggle active={earthOnly} onToggle={toggleEarthOnly} />
           <Outlet />
         </div>
       </div>

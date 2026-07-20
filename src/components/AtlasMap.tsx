@@ -57,6 +57,8 @@ type AtlasMapProps = {
   skipNonce: number
   /** When false, hide spin fun-fact callouts (e.g. while onboarding hint is up). */
   funFactsEnabled?: boolean
+  /** Immersive globe — hide map chrome (zoom controls, mode chip, nearby pins). */
+  earthOnly?: boolean
 }
 
 /**
@@ -125,6 +127,7 @@ export function AtlasMap({
   onSkipCinematic,
   skipNonce,
   funFactsEnabled = true,
+  earthOnly = false,
 }: AtlasMapProps) {
   const mapRef = useRef<MapRef>(null)
   const idleTimerRef = useRef<number | null>(null)
@@ -522,7 +525,9 @@ export function AtlasMap({
         }}
       >
         <Source id={TERRAIN_SOURCE_ID} {...TERRAIN_SOURCE} />
-        {!cinematic && <NavigationControl position="top-left" visualizePitch />}
+        {!cinematic && !earthOnly && (
+          <NavigationControl position="top-left" visualizePitch />
+        )}
 
         {mode === 'world' && (
           <CountryFlagsLayer
@@ -553,6 +558,7 @@ export function AtlasMap({
               </div>
             </Marker>
             {!cinematic &&
+              !earthOnly &&
               nearbyPlaces.map((place) => (
                 <NearbyPlaceMarker
                   key={`${place.name}-${place.lat}-${place.lon}`}
@@ -564,7 +570,7 @@ export function AtlasMap({
         )}
       </Map>
 
-      {mode === 'country' && selectedSummary && (
+      {mode === 'country' && selectedSummary && !earthOnly && (
         <div className="map-mode-chip" aria-hidden="true">
           {selectedSummary.name} · {selectedSummary.peakCount} peaks
         </div>
