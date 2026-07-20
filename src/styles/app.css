@@ -97,21 +97,25 @@ a {
 .earth-only-toggle {
   position: absolute;
   z-index: 18;
-  right: calc(0.75rem + var(--safe-right));
-  bottom: calc(5.5rem + var(--safe-bottom));
+  /* Sit beside Mapbox zoom / pitch (top-left). */
+  top: calc(0.65rem + var(--safe-top, 0px));
+  left: calc(3.35rem + var(--safe-left, 0px));
+  right: auto;
+  bottom: auto;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.55rem 0.85rem;
+  min-height: 2rem;
+  padding: 0.4rem 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 999px;
-  background: rgba(10, 16, 26, 0.82);
+  background: rgba(12, 18, 28, 0.9);
   color: var(--text);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.02em;
   cursor: pointer;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--shadow);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transition:
@@ -139,8 +143,12 @@ a {
   opacity: 0.9;
 }
 
+/* Zoom controls hide in Earth view — park the toggle where they were. */
 .map-stage.is-earth-only .earth-only-toggle {
-  bottom: calc(1rem + var(--safe-bottom));
+  top: calc(0.65rem + var(--safe-top, 0px));
+  left: calc(0.65rem + var(--safe-left, 0px));
+  right: auto;
+  bottom: auto;
 }
 
 .app-header {
@@ -1781,16 +1789,22 @@ a {
   }
 
   .earth-only-toggle {
-    right: calc(0.65rem + var(--safe-right));
-    bottom: calc(4.85rem + var(--safe-bottom));
-    padding: 0.5rem 0.75rem;
-    font-size: 0.78rem;
+    top: calc(0.65rem + var(--safe-top, 0px));
+    left: calc(3.15rem + var(--safe-left, 0px));
+    right: auto;
+    bottom: auto;
+    min-height: 2rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.76rem;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
 
   .map-stage.is-earth-only .earth-only-toggle {
-    bottom: calc(0.75rem + var(--safe-bottom));
+    top: calc(0.65rem + var(--safe-top, 0px));
+    left: calc(0.65rem + var(--safe-left, 0px));
+    right: auto;
+    bottom: auto;
   }
 
   .cinematic-overlay {
