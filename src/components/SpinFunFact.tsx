@@ -35,8 +35,8 @@ type Point = { x: number; y: number }
 const CENTER_RADIUS_PX = 120
 const EDGE_MARGIN_PX = 28
 const HOLD_MS = 5_400
-const CARD_W = 272
-const CARD_H = 118
+const CARD_W = 200
+const CARD_H = 92
 const FRONT_DOT = 0.32
 const FRONT_DOT_NARROW = 0.28
 const NARROW_OVERLAY_PX = 640
@@ -68,8 +68,8 @@ function layoutMetrics(vw: number): LayoutMetrics {
     }
   }
   return {
-    cardW: Math.min(220, Math.max(160, vw - 40)),
-    cardH: 108,
+    cardW: Math.min(168, Math.max(140, vw - 56)),
+    cardH: 86,
     centerR: Math.min(100, vw * 0.32),
     edge: 16,
     topChrome: 36,
@@ -88,7 +88,7 @@ function placeCard(
   cardW: number,
   cardH: number,
 ) {
-  const gap = vw <= NARROW_OVERLAY_PX ? 22 : 36
+  const gap = vw <= NARROW_OVERLAY_PX ? 16 : 28
   const topMin = vw <= NARROW_OVERLAY_PX ? 48 : 64
   let cardX = flagX - cardW - gap
   let cardY = flagY - cardH * 0.45
@@ -386,7 +386,7 @@ export function SpinFunFact({
         preserveAspectRatio="none"
       >
         <line ref={lineRef} x1="0" y1="0" x2="0" y2="0" />
-        <circle ref={dotRef} cx="0" cy="0" r="5" />
+        <circle ref={dotRef} cx="0" cy="0" r="4" />
       </svg>
       {content && (
         <article ref={cardRef} className="spin-fun-fact-card">
@@ -396,8 +396,8 @@ export function SpinFunFact({
                 src={content.flag}
                 alt=""
                 className="spin-fun-fact-flag"
-                width={28}
-                height={20}
+                width={22}
+                height={16}
                 referrerPolicy="no-referrer"
               />
             ) : (
