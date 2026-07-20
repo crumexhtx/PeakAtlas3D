@@ -1,5 +1,4 @@
 import Map, {
-  Marker,
   NavigationControl,
   Source,
   type MapRef,
@@ -15,7 +14,6 @@ import { useUnits } from '../context/UnitsContext'
 import {
   buildCountrySummaries,
   getCountryBounds,
-  flagUrl,
   peakMatchesCountry,
 } from '../lib/countries'
 import {
@@ -103,6 +101,12 @@ const ORBIT_PITCH = 44
 const HERO_ZOOM = 13.35
 const HERO_PITCH = 50
 const HERO_BEARING = -28
+/**
+ * Look-at nudge toward the camera (meters). Keep modest so the summit stays
+ * near the visual center of the padded viewport under pitch.
+ */
+const ORBIT_FRAME_OFFSET_M = 220
+const HERO_FRAME_OFFSET_M = 280
 /** Full 360° orbit — paced slower for a calmer spin. */
 const SPIN_DURATION_MS = 26_400
 /** Shared duration for peak approach and leave (country/world) camera moves. */
@@ -208,7 +212,6 @@ export function AtlasMap({
   }, [activePeak])
 
   const mode = activePeak ? 'peak' : selectedCountry ? 'country' : 'world'
-  const peakFlag = activePeak ? flagUrl(activePeak.country, 40) : null
 
   function getMap(): MapboxMap | null {
     return mapRef.current?.getMap() ?? null
@@ -377,13 +380,13 @@ export function AtlasMap({
         summit[0],
         summit[1],
         approachBearing,
-        380,
+        ORBIT_FRAME_OFFSET_M,
       )
       const heroCenter = peakFramingCenter(
         summit[0],
         summit[1],
         HERO_BEARING,
-        520,
+        HERO_FRAME_OFFSET_M,
       )
 
       if (prefersReducedMotion()) {
@@ -509,7 +512,7 @@ export function AtlasMap({
         activePeak.lon,
         activePeak.lat,
         HERO_BEARING,
-        520,
+        HERO_FRAME_OFFSET_M,
       ),
       zoom: HERO_ZOOM,
       pitch: HERO_PITCH,
@@ -576,32 +579,17 @@ export function AtlasMap({
             <FlagPeakMarker key={peak.id} peak={peak} onClick={onSelectPeak} />
           ))}
 
-        {mode === 'peak' && activePeak && (
-          <>
-            <Marker
-              longitude={activePeak.lon}
-              latitude={activePeak.lat}
-              anchor="bottom"
-            >
-              <div className="peak-page-marker">
-                {peakFlag ? (
-                  <img src={peakFlag} alt="" width={32} height={22} />
-                ) : (
-                  <span aria-hidden="true">▲</span>
-                )}
-              </div>
-            </Marker>
-            {!cinematic &&
-              !earthOnly &&
-              nearbyPlaces.map((place) => (
-                <NearbyPlaceMarker
-                  key={`${place.name}-${place.lat}-${place.lon}`}
-                  place={place}
-                  units={units}
-                />
-              ))}
-          </>
-        )}
+        {mode === 'peak' &&
+          activePeak &&
+          !cinematic &&
+          !earthOnly &&
+          nearbyPlaces.map((place) => (
+            <NearbyPlaceMarker
+              key={`${place.name}-${place.lat}-${place.lon}`}
+              place={place}
+              units={units}
+            />
+          ))}
       </Map>
 
       {mode === 'country' && selectedSummary && !earthOnly && (
