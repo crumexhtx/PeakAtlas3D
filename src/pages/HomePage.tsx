@@ -17,6 +17,7 @@ export function HomePage() {
     selectedCountry,
     mapPeaks,
     cinematic,
+    earthOnly,
     setBrowse,
     clearCountry,
     openPeak,
@@ -71,7 +72,7 @@ export function HomePage() {
 
   return (
     <>
-      {selectedSummary && !cinematic && (
+      {selectedSummary && !cinematic && !earthOnly && (
         <CountryPanel
           country={selectedSummary}
           peaks={countryPeakList}
@@ -80,7 +81,7 @@ export function HomePage() {
         />
       )}
 
-      {!cinematic && (
+      {!cinematic && !earthOnly && (
         <BrowseBar
           browse={browse}
           countries={countries}

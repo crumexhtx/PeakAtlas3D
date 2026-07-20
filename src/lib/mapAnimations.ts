@@ -169,6 +169,16 @@ export function countryFramePadding(): {
   return { top: 80, bottom: 140, left: 60, right: 60 }
 }
 
+/** Centered globe — clear any peak/country padding left on the camera. */
+export function worldFramePadding(): {
+  top: number
+  bottom: number
+  left: number
+  right: number
+} {
+  return { top: 0, bottom: 0, left: 0, right: 0 }
+}
+
 /** Nudge look-at toward the camera so pitched terrain sits nearer mid-frame. */
 export function peakFramingCenter(
   lon: number,

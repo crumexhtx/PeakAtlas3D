@@ -42,6 +42,7 @@ import {
   softenSatelliteRaster,
   startIdleSpin,
   waitForMapIdle,
+  worldFramePadding,
 } from '../lib/mapAnimations'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
@@ -58,6 +59,8 @@ type AtlasMapProps = {
   skipNonce: number
   /** When false, hide spin fun-fact callouts (e.g. while onboarding hint is up). */
   funFactsEnabled?: boolean
+  /** Immersive globe — hide map chrome (zoom controls, mode chip, nearby pins). */
+  earthOnly?: boolean
 }
 
 /**
@@ -129,6 +132,7 @@ export function AtlasMap({
   onSkipCinematic,
   skipNonce,
   funFactsEnabled = true,
+  earthOnly = false,
 }: AtlasMapProps) {
   const mapRef = useRef<MapRef>(null)
   const idleTimerRef = useRef<number | null>(null)
@@ -295,6 +299,9 @@ export function AtlasMap({
             zoom: worldView.zoom,
             pitch: worldView.pitch,
             bearing: worldView.bearing,
+            // Peak/country views leave asymmetric padding that shifts the globe
+            // off-center — always clear it when returning to world.
+            padding: worldFramePadding(),
             duration: prefersReducedMotion() ? 0 : PEAK_TRANSITION_MS,
             essential: true,
           })
@@ -551,7 +558,9 @@ export function AtlasMap({
         }}
       >
         <Source id={TERRAIN_SOURCE_ID} {...TERRAIN_SOURCE} />
-        {!cinematic && <NavigationControl position="top-left" visualizePitch />}
+        {!cinematic && !earthOnly && (
+          <NavigationControl position="top-left" visualizePitch />
+        )}
 
         {mode === 'world' && (
           <CountryFlagsLayer
@@ -582,6 +591,7 @@ export function AtlasMap({
               </div>
             </Marker>
             {!cinematic &&
+              !earthOnly &&
               nearbyPlaces.map((place) => (
                 <NearbyPlaceMarker
                   key={`${place.name}-${place.lat}-${place.lon}`}
@@ -593,7 +603,7 @@ export function AtlasMap({
         )}
       </Map>
 
-      {mode === 'country' && selectedSummary && (
+      {mode === 'country' && selectedSummary && !earthOnly && (
         <div className="map-mode-chip" aria-hidden="true">
           {selectedSummary.name} · {selectedSummary.peakCount} peaks
         </div>
