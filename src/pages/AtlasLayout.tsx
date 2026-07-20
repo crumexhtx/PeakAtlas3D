@@ -74,6 +74,13 @@ export function AtlasLayout() {
   }, [earthOnly])
 
   const selectedCountry = browse.country || null
+  const isWorldView = !peakId && !selectedCountry
+  // Earth view is world-only — never stay on after drilling into a country/peak.
+  const earthOnlyActive = earthOnly && isWorldView
+
+  useEffect(() => {
+    if (!isWorldView && earthOnly) setEarthOnly(false)
+  }, [isWorldView, earthOnly])
 
   useEffect(() => {
     if (peakId && !activePeak) {
@@ -170,7 +177,7 @@ export function AtlasLayout() {
       mapPeaks,
       cinematic,
       cinematicStatus,
-      earthOnly,
+      earthOnly: earthOnlyActive,
       setEarthOnly,
       setBrowse,
       selectCountry,
@@ -184,7 +191,7 @@ export function AtlasLayout() {
       cinematic,
       cinematicStatus,
       clearCountry,
-      earthOnly,
+      earthOnlyActive,
       mapPeaks,
       openPeak,
       selectCountry,
@@ -198,7 +205,7 @@ export function AtlasLayout() {
     <AtlasProvider value={atlasValue}>
       <div
         className={`app-shell${activePeak ? ' peak-page' : ''}${
-          earthOnly ? ' is-earth-only' : ''
+          earthOnlyActive ? ' is-earth-only' : ''
         }`}
       >
         <AppHeader
@@ -211,7 +218,7 @@ export function AtlasLayout() {
         <div
           className={`map-stage${activePeak ? ' is-peak-mode' : ''}${
             cinematic ? ' is-cinematic' : ''
-          }${earthOnly ? ' is-earth-only' : ''}`}
+          }${earthOnlyActive ? ' is-earth-only' : ''}`}
         >
           <AtlasMap
             peaks={mapPeaks}
@@ -224,14 +231,16 @@ export function AtlasLayout() {
             onCinematicChange={onCinematicChange}
             onSkipCinematic={skipCinematic}
             skipNonce={skipNonce}
-            funFactsEnabled={!hintActive && !earthOnly}
-            earthOnly={earthOnly}
+            funFactsEnabled={!hintActive && !earthOnlyActive}
+            earthOnly={earthOnlyActive}
           />
           <AtlasHint
-            visible={!peakId && !selectedCountry && !cinematic && !earthOnly}
+            visible={isWorldView && !cinematic && !earthOnlyActive}
             onActiveChange={onHintActiveChange}
           />
-          <EarthOnlyToggle active={earthOnly} onToggle={toggleEarthOnly} />
+          {isWorldView && (
+            <EarthOnlyToggle active={earthOnlyActive} onToggle={toggleEarthOnly} />
+          )}
           <Outlet />
         </div>
       </div>
