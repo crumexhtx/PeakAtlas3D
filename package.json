@@ -22,6 +22,7 @@
     "validate:photos:check": "node scripts/validate-fix-photos.mjs --check"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "mapbox-gl": "^3.26.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",

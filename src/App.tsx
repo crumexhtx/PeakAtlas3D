@@ -1,4 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import { UnitsProvider } from './context/UnitsContext'
 import { AtlasLayout } from './pages/AtlasLayout'
 import { AboutPage } from './pages/AboutPage'
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
+      <Analytics />
     </UnitsProvider>
   )
 }
