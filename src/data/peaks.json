@@ -11622,5 +11622,246 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "A steep Elk Mountains fourteener above Maroon Creek."
+  },
+  {
+    "id": "maunakea",
+    "name": "Mauna Kea",
+    "lat": 19.8207,
+    "lon": -155.4681,
+    "elevationFt": 13796,
+    "prominenceFt": 13796,
+    "range": "Hawaiian Islands",
+    "country": "USA",
+    "description": "Hawaii Island’s high shield volcano and a premier astronomy summit, rising above the Pacific with alpine cinder cones and rare snow on tropical latitudes.",
+    "firstAscent": "Ancient Hawaiian; first recorded European ascent 1823",
+    "difficulty": "High-altitude drive / hike",
+    "nearestTown": {
+      "name": "Hilo",
+      "region": "Hawaii",
+      "distanceMiles": 28,
+      "route": "Saddle Road (HI-200)",
+      "lat": 19.7297,
+      "lon": -155.09
+    },
+    "hotels": [
+      {
+        "name": "Aina Mana Hale",
+        "category": "Chalet",
+        "note": "20.5 mi from summit",
+        "lat": 19.86083,
+        "lon": -155.15619,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/700594122"
+      },
+      {
+        "name": "Hakalau Vacation Rental",
+        "category": "Hotel",
+        "note": "22.8 mi from summit",
+        "lat": 19.89721,
+        "lon": -155.12743,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/369452498"
+      },
+      {
+        "name": "Hamakua Guesthouse and Camping Cabanas",
+        "category": "Guest house",
+        "note": "23.7 mi from summit",
+        "lat": 19.86022,
+        "lon": -155.10579,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/492962231"
+      }
+    ],
+    "food": [
+      {
+        "name": "Cafe 100",
+        "category": "Casual eats",
+        "note": "Classic Hilo plate-lunch stop after summit days."
+      },
+      {
+        "name": "Ken's House of Pancakes",
+        "category": "Restaurant",
+        "note": "Local favorite for early starts and late returns."
+      },
+      {
+        "name": "Hilo Bay Cafe",
+        "category": "Restaurant",
+        "note": "Easy refuel between Mauna Kea approaches and rest days."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Mauna Kea Summit Trail"
+      },
+      {
+        "name": "Humuhumuula Trail"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Hilo",
+        "region": "Hawaii",
+        "distanceMiles": 28,
+        "route": "Saddle Road (HI-200)",
+        "lat": 19.7297,
+        "lon": -155.09
+      },
+      {
+        "name": "Waimea",
+        "region": "Hawaii",
+        "distanceMiles": 35,
+        "route": "Saddle Road / HI-190",
+        "lat": 20.0231,
+        "lon": -155.6717
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lenticular_Cloud_Over_Mauna_Kea_%28gemini-20031125-lenticpanflatII%29.jpg/1280px-Lenticular_Cloud_Over_Mauna_Kea_%28gemini-20031125-lenticpanflatII%29.jpg",
+        "credit": "International Gemini Observatory",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lenticular_Cloud_Over_Mauna_Kea_(gemini-20031125-lenticpanflatII).jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Mauna_Kea_Eastern_Telescopes.jpg/1280px-Mauna_Kea_Eastern_Telescopes.jpg",
+        "credit": "Generic1139",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mauna_Kea_Eastern_Telescopes.jpg"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lenticular_Cloud_Over_Mauna_Kea_%28gemini-20031125-lenticpanflatII%29.jpg/1280px-Lenticular_Cloud_Over_Mauna_Kea_%28gemini-20031125-lenticpanflatII%29.jpg",
+      "credit": "International Gemini Observatory",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lenticular_Cloud_Over_Mauna_Kea_(gemini-20031125-lenticpanflatII).jpg"
+    },
+    "aliases": [
+      "Maunakea",
+      "White Mountain",
+      "Mauna Kea volcano"
+    ],
+    "bestSeason": "Year-round; summit can be cold or snowy in winter",
+    "whyNotable": "Tallest mountain on Earth measured from ocean floor to summit, and one of the world’s great astronomy sites."
+  },
+  {
+    "id": "sthelens",
+    "name": "Mt. St. Helens",
+    "lat": 46.1914,
+    "lon": -122.1956,
+    "elevationFt": 8363,
+    "prominenceFt": 4605,
+    "range": "Cascade Range",
+    "country": "USA",
+    "description": "A Cascade stratovolcano remade by the 1980 eruption, with a breached crater, lava dome, and recovering forests around Spirit Lake.",
+    "firstAscent": "1853",
+    "difficulty": "Class 2–3 scramble / permit climb",
+    "nearestTown": {
+      "name": "Cougar",
+      "region": "Washington",
+      "distanceMiles": 12,
+      "route": "NF-83 / NF-81",
+      "lat": 46.0515,
+      "lon": -122.2995
+    },
+    "hotels": [
+      {
+        "name": "Lone Fir Resort",
+        "category": "Hotel",
+        "note": "11.0 mi from summit",
+        "lat": 46.05109,
+        "lon": -122.30292,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/68610939"
+      },
+      {
+        "name": "Anderson Lodge Hilltop House",
+        "category": "Guest house",
+        "note": "15.6 mi from summit",
+        "lat": 46.00087,
+        "lon": -122.37084,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4216789075"
+      },
+      {
+        "name": "Anderson Lodge",
+        "category": "Guest house",
+        "note": "16.0 mi from summit",
+        "lat": 45.99496,
+        "lon": -122.37059,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4216789076"
+      }
+    ],
+    "food": [
+      {
+        "name": "57th Street Grill",
+        "category": "Restaurant",
+        "note": "Solid post-summit meal in nearby Castle Rock."
+      },
+      {
+        "name": "Elmer's Restaurant",
+        "category": "Casual eats",
+        "note": "Easy refuel after Johnston Ridge or Monitor Ridge days."
+      },
+      {
+        "name": "McMenamins Kalama Harbor Lodge",
+        "category": "Pub / grill",
+        "note": "Local favorite between approaches and rest days."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Monitor Ridge"
+      },
+      {
+        "name": "Boundary Trail / Johnston Ridge"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Cougar",
+        "region": "Washington",
+        "distanceMiles": 12,
+        "route": "NF-83 / NF-81",
+        "lat": 46.0515,
+        "lon": -122.2995
+      },
+      {
+        "name": "Castle Rock",
+        "region": "Washington",
+        "distanceMiles": 45,
+        "route": "Spirit Lake Hwy (WA-504)",
+        "lat": 46.2751,
+        "lon": -122.9071
+      }
+    ],
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Mount_St._Helens_2007_panorama.jpg/1280px-Mount_St._Helens_2007_panorama.jpg",
+        "credit": "Kiwinanday",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_St._Helens_2007_panorama.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Mount_St._Helens_USA_20120607.jpg/1280px-Mount_St._Helens_USA_20120607.jpg",
+        "credit": "Brigitte Werner",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_St._Helens_USA_20120607.jpg"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Mount_St._Helens_2007_panorama.jpg/1280px-Mount_St._Helens_2007_panorama.jpg",
+      "credit": "Kiwinanday",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_St._Helens_2007_panorama.jpg"
+    },
+    "aliases": [
+      "Mount St. Helens",
+      "Loowit",
+      "Lawetlat'la",
+      "St. Helens"
+    ],
+    "bestSeason": "Late spring–early fall for summit climbs",
+    "whyNotable": "The 1980 eruption reshaped the mountain and made it a living laboratory of volcanic recovery."
   }
 ]
