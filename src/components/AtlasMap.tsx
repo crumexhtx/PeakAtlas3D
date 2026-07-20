@@ -531,8 +531,16 @@ export function AtlasMap({
     )
   }
 
+  const mapAriaLabel = activePeak
+    ? `${activePeak.name} interactive 3D topographic globe map`
+    : 'Interactive 3D world peak atlas globe map'
+
   return (
-    <div className={`atlas-map-wrap ${cinematic ? 'is-cinematic' : ''}`}>
+    <div
+      className={`atlas-map-wrap ${cinematic ? 'is-cinematic' : ''}`}
+      role="application"
+      aria-label={mapAriaLabel}
+    >
       <Map
         ref={mapRef}
         mapboxAccessToken={MAPBOX_TOKEN}

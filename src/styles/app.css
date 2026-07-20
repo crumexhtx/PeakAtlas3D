@@ -382,6 +382,8 @@ a {
 .map-stage.is-peak-mode .atlas-map-wrap {
   position: absolute;
   inset: 0;
+  /* Allow map pan/pinch; dossier uses pan-y so users can scroll text separately. */
+  touch-action: pan-x pan-y pinch-zoom;
 }
 
 /* During peak orbit, hide bottom chrome so it cannot cover Skip / status. */
@@ -402,12 +404,25 @@ a {
   pointer-events: none;
 }
 
+.peak-overlay-panel .peak-seo-main,
 .peak-overlay-panel .details-sheet,
 .peak-overlay-panel .peak-dossier,
 .peak-overlay-panel .empty-state {
   pointer-events: auto;
   height: 100%;
   box-shadow: -12px 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.peak-overlay-panel .peak-seo-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  box-shadow: none;
+}
+
+.peak-overlay-panel .peak-seo-main > .details-sheet {
+  flex: 1;
+  min-height: 0;
 }
 
 .peak-overlay-panel .peak-dossier {
@@ -1016,11 +1031,34 @@ a {
 .peak-dossier {
   min-height: 0;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  /* Vertical pan in the dossier; map gestures stay outside this panel. */
+  touch-action: pan-y;
   padding: 1.25rem calc(1.35rem + var(--safe-right))
     calc(2rem + var(--safe-bottom)) 1.35rem;
   border-left: 1px solid var(--border);
   background: rgba(10, 16, 26, 0.94);
   animation: dossier-in 0.55s ease-out 0.08s both;
+}
+
+.peak-seo-qualifier {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--muted);
+}
+
+.peak-seo-map-blurb,
+.peak-seo-routes,
+.peak-seo-staging {
+  margin: 0.65rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.peak-seo-about .peak-description {
+  margin-top: 0.35rem;
 }
 
 @keyframes peak-stage-in {

@@ -1,5 +1,8 @@
 import type { Peak } from '../types/peak'
 
+/** Production origin for canonical / OG / JSON-LD URLs. */
+export const SITE_ORIGIN = 'https://peakatlas3d.com'
+
 const DEFAULT_TITLE = 'PeakAtlas3D — World Peak Atlas'
 const DEFAULT_DESCRIPTION =
   "Explore the world's mountain peaks on a Mapbox globe, then open a 3D terrain profile for each summit."
