@@ -8,7 +8,7 @@ import { useUnits } from '../context/UnitsContext'
 
 export function PeakPage() {
   const { peakId } = useParams()
-  const { activePeak, selectedCountry, cinematic } = useAtlas()
+  const { activePeak, selectedCountry, cinematic, earthOnly } = useAtlas()
   const { units } = useUnits()
   const backHref = atlasHref(selectedCountry)
 
@@ -28,17 +28,19 @@ export function PeakPage() {
     )
   }
 
+  const hideChrome = cinematic || earthOnly
+
   return (
     <div
-      className={`peak-overlay-panel${cinematic ? ' is-cinematic-hidden' : ''}`}
-      aria-hidden={cinematic || undefined}
+      className={`peak-overlay-panel${hideChrome ? ' is-cinematic-hidden' : ''}`}
+      aria-hidden={hideChrome || undefined}
     >
       <DetailsSheet
         resetKey={activePeak.id}
         title={activePeak.name}
         subtitle={`${formatElevation(activePeak.elevationFt, units)} · ${activePeak.range}`}
       >
-        <PeakDossier peak={activePeak} deferMedia={cinematic} />
+        <PeakDossier peak={activePeak} deferMedia={cinematic || earthOnly} />
       </DetailsSheet>
     </div>
   )
