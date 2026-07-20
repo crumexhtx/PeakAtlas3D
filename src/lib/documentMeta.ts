@@ -41,11 +41,17 @@ function peakImage(peak: Peak): string | undefined {
   return peak.photos?.[0]?.url || peak.photo?.url
 }
 
+function removeMeta(attr: 'name' | 'property', key: string) {
+  document.head.querySelector(`meta[${attr}="${key}"]`)?.remove()
+}
+
 export function applyDocumentMeta(input: {
   title: string
   description: string
-  image?: string
+  image?: string | null
   path?: string
+  /** e.g. "noindex, nofollow" for soft-404 peak URLs */
+  robots?: string | null
 }) {
   document.title = input.title
   upsertMeta('name', 'description', input.description)
@@ -60,6 +66,16 @@ export function applyDocumentMeta(input: {
   if (input.image) {
     upsertMeta('property', 'og:image', input.image)
     upsertMeta('name', 'twitter:image', input.image)
+  } else {
+    // Clear stale peak images when navigating to pages without one.
+    removeMeta('property', 'og:image')
+    removeMeta('name', 'twitter:image')
+  }
+
+  if (input.robots) {
+    upsertMeta('name', 'robots', input.robots)
+  } else {
+    removeMeta('name', 'robots')
   }
 
   if (input.path != null) {
@@ -97,5 +113,17 @@ export function metaForPeak(peak: Peak, _country?: string | null) {
     description,
     image: peakImage(peak),
     path,
+  }
+}
+
+/** Client soft-404 for unknown /peak/:id (SPA still returns HTTP 200). */
+export function metaForMissingPeak(peakId: string) {
+  return {
+    title: 'Peak not found · PeakAtlas3D',
+    description:
+      'That summit is not in the PeakAtlas3D catalog. Browse the globe for available peaks.',
+    image: null as null,
+    path: `/peak/${encodeURIComponent(peakId)}`,
+    robots: 'noindex, nofollow',
   }
 }

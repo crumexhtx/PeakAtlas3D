@@ -43,9 +43,13 @@ export function AtlasHint({ visible, onActiveChange }: AtlasHintProps) {
     persistDismissed()
   }
 
-  // Auto-hide should count as seen so the hint doesn't keep blocking UX on return.
+  // Auto-hide counts as dismissed in React state + storage so SPA return to world
+  // does not resurrect the hint (storage alone is not enough).
   useEffect(() => {
-    if (autoHidden && !dismissed) persistDismissed()
+    if (autoHidden && !dismissed) {
+      setDismissed(true)
+      persistDismissed()
+    }
   }, [autoHidden, dismissed])
 
   if (!active) return null

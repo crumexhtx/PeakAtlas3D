@@ -8,6 +8,7 @@ import { getPeakById, peaks } from '../data/catalog'
 import {
   applyDocumentMeta,
   metaForAtlas,
+  metaForMissingPeak,
   metaForPeak,
 } from '../lib/documentMeta'
 import {
@@ -59,12 +60,16 @@ export function AtlasLayout() {
   const selectedCountry = browse.country || null
 
   useEffect(() => {
+    if (peakId && !activePeak) {
+      applyDocumentMeta(metaForMissingPeak(peakId))
+      return
+    }
     if (activePeak) {
       applyDocumentMeta(metaForPeak(activePeak, selectedCountry))
       return
     }
     applyDocumentMeta(metaForAtlas(selectedCountry))
-  }, [activePeak, selectedCountry])
+  }, [activePeak, peakId, selectedCountry])
 
   const countrySummaries = useMemo(() => buildCountrySummaries(peaks), [])
 
@@ -195,7 +200,7 @@ export function AtlasLayout() {
             funFactsEnabled={!hintActive}
           />
           <AtlasHint
-            visible={!activePeak && !selectedCountry && !cinematic}
+            visible={!peakId && !selectedCountry && !cinematic}
             onActiveChange={onHintActiveChange}
           />
           <Outlet />

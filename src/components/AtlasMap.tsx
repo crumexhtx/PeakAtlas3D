@@ -129,6 +129,25 @@ export function AtlasMap({
 
   onCinematicChangeRef.current = onCinematicChange
 
+  // Abort in-flight camera work when the map shell unmounts (About/Releases/etc).
+  useEffect(() => {
+    return () => {
+      const map = mapRef.current?.getMap()
+      cinematicRunRef.current += 1
+      try {
+        map?.stop()
+      } catch {
+        // Map may already be removed.
+      }
+      spinRef.current?.cancel()
+      spinRef.current = null
+      if (idleTimerRef.current != null) {
+        window.clearTimeout(idleTimerRef.current)
+        idleTimerRef.current = null
+      }
+    }
+  }, [])
+
   const countries = useMemo(() => buildCountrySummaries(peaks), [peaks])
   const selectedSummary = useMemo(
     () =>
@@ -277,7 +296,9 @@ export function AtlasMap({
       return
     }
 
-    if (prevPeakId === peakId) return
+    if (prevPeakId === peakId) {
+      return
+    }
     prevPeakIdRef.current = peakId
 
     const runId = ++cinematicRunRef.current
@@ -387,6 +408,11 @@ export function AtlasMap({
     return () => {
       cancelled = true
       cinematicRunRef.current += 1
+      // StrictMode remounts effects in dev: clear the "already played" marker so
+      // the second mount can schedule playIntro for the same peak.
+      if (prevPeakIdRef.current === peakId) {
+        prevPeakIdRef.current = null
+      }
       // Signal the country/world effect (runs after cleanups) to refit the camera.
       // Avoid map.stop() here so that upcoming fitBounds is not cancelled.
       leavingPeakRef.current = true

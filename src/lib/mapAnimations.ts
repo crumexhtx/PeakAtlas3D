@@ -29,7 +29,19 @@ export function setMapInteractive(map: MapboxMap, enabled: boolean) {
 
 export function waitForMoveEnd(map: MapboxMap): Promise<void> {
   return new Promise((resolve) => {
-    map.once('moveend', () => resolve())
+    let settled = false
+    const finish = () => {
+      if (settled) return
+      settled = true
+      map.off('moveend', onMoveEnd)
+      map.off('remove', onRemove)
+      resolve()
+    }
+    const onMoveEnd = () => finish()
+    const onRemove = () => finish()
+    // Resolve on remove so leave-during-cinematic does not hang forever.
+    map.once('moveend', onMoveEnd)
+    map.once('remove', onRemove)
   })
 }
 
@@ -46,11 +58,13 @@ export function waitForMapIdle(
       settled = true
       window.clearTimeout(timer)
       map.off('idle', finish)
+      map.off('remove', finish)
       resolve()
     }
 
     const timer = window.setTimeout(finish, timeoutMs)
     map.once('idle', finish)
+    map.once('remove', finish)
 
     // If tiles are already ready, settle quickly after a short paint beat.
     if (typeof map.areTilesLoaded === 'function' && map.areTilesLoaded()) {
