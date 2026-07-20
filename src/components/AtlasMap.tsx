@@ -59,12 +59,24 @@ type AtlasMapProps = {
   funFactsEnabled?: boolean
 }
 
-const WORLD_ZOOM = 1.2
-/** Portrait phones: a touch closer than desktop so the globe still reads clearly. */
-const WORLD_ZOOM_NARROW = 1.32
+/**
+ * World framing matched to the reference phone shot: full Earth disk
+ * visible with clear margin (not clipped, not tiny).
+ */
+const WORLD_ZOOM = 0.75
+/** Tall phones — same full-disk framing as the reference screenshot. */
+const WORLD_ZOOM_NARROW = 0.75
+/**
+ * iPhone SE (~375×667): map pane is shorter after header/browse chrome,
+ * so ease out a touch vs taller phones while keeping the same look.
+ */
+const WORLD_ZOOM_SE = 0.7
 
 /** Fresh random globe framing for each full page load / refresh. */
 function createRandomWorldView() {
+  const se =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(max-width: 380px)').matches
   const narrow =
     typeof window !== 'undefined' &&
     window.matchMedia('(max-width: 640px)').matches
@@ -72,7 +84,7 @@ function createRandomWorldView() {
     longitude: Math.random() * 360 - 180,
     // Avoid framing mostly ocean at the poles.
     latitude: -32 + Math.random() * 64,
-    zoom: narrow ? WORLD_ZOOM_NARROW : WORLD_ZOOM,
+    zoom: se ? WORLD_ZOOM_SE : narrow ? WORLD_ZOOM_NARROW : WORLD_ZOOM,
     pitch: 0,
     bearing: 0,
   }
