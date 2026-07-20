@@ -1,6 +1,6 @@
 import type { Peak } from '../types/peak'
 
-/** Production origin for canonical / OG URLs (never include query strings). */
+/** Production origin for canonical / OG / JSON-LD URLs (never include query strings). */
 export const SITE_ORIGIN = 'https://peakatlas3d.com'
 
 const DEFAULT_TITLE = 'PeakAtlas3D — World Peak Atlas'
@@ -132,7 +132,7 @@ export function metaForPeak(peak: Peak, _country?: string | null) {
   const path = `/peak/${peak.id}`
 
   return {
-    title: `${peak.name} · PeakAtlas3D`,
+    title: `${peak.name} 3D Interactive Map & Base Town Lodging | PeakAtlas3D`,
     description,
     image: peakImage(peak),
     path,

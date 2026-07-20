@@ -44,6 +44,98 @@ function peakDescription(peak) {
   return text.length > 300 ? `${text.slice(0, 297)}…` : text
 }
 
+function formatFt(n) {
+  return `${Number(n).toLocaleString('en-US')} ft`
+}
+
+function peakNoscriptBody(peak, url) {
+  const heading = `${peak.name} 3D Map & Topography`
+  const trails = (peak.trails || []).map((t) => t.name).filter(Boolean)
+  const nearby = peak.nearbyPlaces?.length
+    ? peak.nearbyPlaces
+    : peak.nearestTown
+      ? [peak.nearestTown]
+      : []
+
+  const trailList =
+    trails.length > 0
+      ? `<section aria-label="Notable trails">
+          <h2>Notable trails &amp; routes</h2>
+          <ul>${trails.map((n) => `<li>${escapeHtml(n)}</li>`).join('')}</ul>
+        </section>`
+      : ''
+
+  const nearbyList =
+    nearby.length > 0
+      ? `<section aria-label="Closest places">
+          <h2>Closest places</h2>
+          <ul>${nearby
+            .map(
+              (p) =>
+                `<li>${escapeHtml(p.name)} — ${escapeHtml(p.region)}${
+                  p.route ? ` via ${escapeHtml(p.route)}` : ''
+                }</li>`,
+            )
+            .join('')}</ul>
+        </section>`
+      : ''
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Mountain',
+    name: peak.name,
+    description: peakDescription(peak),
+    url,
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: peak.lat,
+      longitude: peak.lon,
+      elevation: `${Math.round(peak.elevationFt * 0.3048)} m`,
+    },
+    containedInPlace: {
+      '@type': 'MountainRange',
+      name: peak.range,
+    },
+    addressCountry: peak.country,
+  }
+
+  return `
+    <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
+    <noscript id="seo-noscript">
+      <main style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem;">
+        <article itemscope itemtype="https://schema.org/Mountain">
+          <header>
+            <p>${escapeHtml(peak.country)}</p>
+            <h1 itemprop="name">${escapeHtml(heading)}</h1>
+            <p>${escapeHtml(peak.range)} · Interactive 3D globe view</p>
+          </header>
+          <section aria-label="Peak stats">
+            <h2>Peak stats</h2>
+            <dl>
+              <div><dt>Elevation</dt><dd>${escapeHtml(formatFt(peak.elevationFt))}</dd></div>
+              <div><dt>Prominence</dt><dd>${escapeHtml(formatFt(peak.prominenceFt))}</dd></div>
+              <div><dt>Mountain range</dt><dd>${escapeHtml(peak.range)}</dd></div>
+              <div><dt>Difficulty</dt><dd>${escapeHtml(peak.difficulty || '')}</dd></div>
+            </dl>
+          </section>
+          <section aria-label="Geography and climbing context">
+            <h2>Geography &amp; climbing context</h2>
+            ${
+              peak.whyNotable
+                ? `<p>${escapeHtml(peak.whyNotable)}</p>`
+                : ''
+            }
+            <p itemprop="description">${escapeHtml(peak.description || '')}</p>
+            <p>Explore ${escapeHtml(peak.name)} on PeakAtlas3D’s interactive 3D topographic map — satellite terrain and summit framing in the ${escapeHtml(peak.range)}.</p>
+          </section>
+          ${nearbyList}
+          ${trailList}
+          <p><a href="${escapeAttr(url)}">${escapeHtml(url)}</a></p>
+        </article>
+      </main>
+    </noscript>`
+}
+
 /** Pathname-only absolute URL (strips query/hash) for canonical + og:url. */
 function absoluteCanonical(pathOrUrl) {
   try {
@@ -61,7 +153,7 @@ function absoluteCanonical(pathOrUrl) {
   }
 }
 
-function injectMeta(html, { title, description, path, image }) {
+function injectMeta(html, { title, description, path, image, noscriptBody }) {
   const url = absoluteCanonical(path)
   let out = html
 
@@ -112,8 +204,10 @@ function injectMeta(html, { title, description, path, image }) {
     )
   }
 
-  const fallback = `
-    <noscript>
+  const fallback =
+    noscriptBody ||
+    `
+    <noscript id="seo-noscript">
       <main style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem;">
         <h1>${escapeHtml(title)}</h1>
         <p>${escapeHtml(description)}</p>
@@ -124,7 +218,7 @@ function injectMeta(html, { title, description, path, image }) {
   if (!out.includes('id="seo-noscript"')) {
     out = out.replace(
       /<div id="root"><\/div>/i,
-      `<div id="root"></div>\n${fallback.replace('<noscript>', '<noscript id="seo-noscript">')}`,
+      `<div id="root"></div>\n${fallback}`,
     )
   }
 
@@ -196,10 +290,13 @@ for (const page of staticPages.slice(1)) {
 
 for (const peak of peaks) {
   if (!peak?.id) continue
-  writeRoute(template, `/peak/${peak.id}`, {
+  const path = `/peak/${peak.id}`
+  const url = `${siteUrl}${path}`
+  writeRoute(template, path, {
     title: `${peak.name} 3D Interactive Map & Base Town Lodging | PeakAtlas3D`,
     description: peakDescription(peak),
     image: peakImage(peak),
+    noscriptBody: peakNoscriptBody(peak, url),
   })
 }
 
