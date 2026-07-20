@@ -27,12 +27,16 @@ export function setMapInteractive(map: MapboxMap, enabled: boolean) {
   }
 }
 
-export function waitForMoveEnd(map: MapboxMap): Promise<void> {
+export function waitForMoveEnd(
+  map: MapboxMap,
+  timeoutMs = 8_000,
+): Promise<void> {
   return new Promise((resolve) => {
     let settled = false
     const finish = () => {
       if (settled) return
       settled = true
+      window.clearTimeout(timer)
       map.off('moveend', onMoveEnd)
       map.off('remove', onRemove)
       resolve()
@@ -40,6 +44,8 @@ export function waitForMoveEnd(map: MapboxMap): Promise<void> {
     const onMoveEnd = () => finish()
     const onRemove = () => finish()
     // Resolve on remove so leave-during-cinematic does not hang forever.
+    // Timeout so a missed moveend cannot freeze the map (interaction locked).
+    const timer = window.setTimeout(finish, timeoutMs)
     map.once('moveend', onMoveEnd)
     map.once('remove', onRemove)
   })
@@ -74,13 +80,17 @@ export function waitForMapIdle(
 }
 
 export async function flyToAsync(map: MapboxMap, options: CameraOptions) {
+  const duration =
+    typeof options?.duration === 'number' ? options.duration : 3_000
   map.flyTo(options)
-  await waitForMoveEnd(map)
+  await waitForMoveEnd(map, duration + 2_000)
 }
 
 export async function easeToAsync(map: MapboxMap, options: CameraOptions) {
+  const duration =
+    typeof options?.duration === 'number' ? options.duration : 1_500
   map.easeTo(options)
-  await waitForMoveEnd(map)
+  await waitForMoveEnd(map, duration + 2_000)
 }
 
 export function applyPeakAtmosphere(map: MapboxMap) {
