@@ -302,14 +302,12 @@ export function AtlasMap({
     const prevPeakId = prevPeakIdRef.current
 
     if (!activePeak) {
-      if (prevPeakId) {
-        // Camera handoff is owned by the country/world effect (via leavingPeakRef).
-        // Do not map.stop() here — that was cancelling the country fitBounds.
-        cinematicRunRef.current += 1
-        setMapInteractive(map, true)
-        map.setTerrain(null)
-        onCinematicChangeRef.current({ active: false, status: '' })
-      }
+      // Always clear cinematic when leaving peak mode — do not gate on
+      // prevPeakId (StrictMode cleanup can null it before this runs).
+      cinematicRunRef.current += 1
+      setMapInteractive(map, true)
+      map.setTerrain(null)
+      onCinematicChangeRef.current({ active: false, status: '' })
       prevPeakIdRef.current = null
       return
     }

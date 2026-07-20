@@ -185,7 +185,11 @@ export function AtlasLayout() {
           onSelectPeak={openPeak}
         />
 
-        <div className={`map-stage ${activePeak ? 'is-peak-mode' : ''}`}>
+        <div
+          className={`map-stage${activePeak ? ' is-peak-mode' : ''}${
+            cinematic ? ' is-cinematic' : ''
+          }`}
+        >
           <AtlasMap
             peaks={mapPeaks}
             selectedCountry={selectedCountry}

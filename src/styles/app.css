@@ -239,7 +239,7 @@ a {
   position: absolute;
   left: calc(1rem + var(--safe-left));
   bottom: calc(1rem + var(--safe-bottom));
-  z-index: 5;
+  z-index: 16;
   display: flex;
   align-items: center;
   gap: 0.85rem;
@@ -308,6 +308,14 @@ a {
 .map-stage.is-peak-mode .atlas-map-wrap {
   position: absolute;
   inset: 0;
+}
+
+/* During peak orbit, hide bottom chrome so it cannot cover Skip / status. */
+.map-stage.is-cinematic .browse-bar,
+.map-stage.is-cinematic .country-panel-shell,
+.peak-overlay-panel.is-cinematic-hidden {
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .peak-overlay-panel {
