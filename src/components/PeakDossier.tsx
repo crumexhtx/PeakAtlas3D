@@ -11,6 +11,8 @@ import { PeakPhotoGallery } from './PeakPhotoGallery'
 
 type PeakDossierProps = {
   peak: Peak
+  /** Skip mounting the photo gallery (e.g. during peak cinematic) to free decode/bandwidth. */
+  deferMedia?: boolean
 }
 
 function peakPhotos(peak: Peak) {
@@ -53,7 +55,7 @@ function AmenityRow({ item }: { item: Amenity }) {
   )
 }
 
-export function PeakDossier({ peak }: PeakDossierProps) {
+export function PeakDossier({ peak, deferMedia = false }: PeakDossierProps) {
   const { units } = useUnits()
   const [showNearby, setShowNearby] = useState(false)
   const flag = flagUrl(peak.country, 40)
@@ -88,7 +90,11 @@ export function PeakDossier({ peak }: PeakDossierProps) {
         </div>
       </div>
 
-      <PeakPhotoGallery name={peak.name} photos={photos} />
+      {deferMedia ? (
+        <div className="peak-photo peak-photo-deferred" aria-hidden="true" />
+      ) : (
+        <PeakPhotoGallery name={peak.name} photos={photos} />
+      )}
 
       {peak.whyNotable && (
         <p className="peak-why-notable">{peak.whyNotable}</p>

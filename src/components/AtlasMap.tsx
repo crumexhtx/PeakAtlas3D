@@ -60,11 +60,14 @@ type AtlasMapProps = {
 }
 
 /**
+ * Desktop world framing — closer than phone so the globe fills the stage
+ * without feeling lost in empty space.
+ */
+const WORLD_ZOOM = 1.15
+/**
  * World framing matched to the reference phone shot: full Earth disk
  * visible with clear margin (not clipped, not tiny).
  */
-const WORLD_ZOOM = 0.75
-/** Tall phones — same full-disk framing as the reference screenshot. */
 const WORLD_ZOOM_NARROW = 0.75
 /**
  * iPhone SE (~375×667): map pane is shorter after header/browse chrome,
@@ -130,6 +133,8 @@ export function AtlasMap({
   const prevPeakIdRef = useRef<string | null>(null)
   /** Set in peak-effect cleanup so the country effect can refit after back-nav. */
   const leavingPeakRef = useRef(false)
+  /** Latest peak id from render — cleanup compares against it to skip StrictMode remounts. */
+  const latestPeakIdRef = useRef<string | null>(null)
   const cinematicRunRef = useRef(0)
   const onCinematicChangeRef = useRef(onCinematicChange)
   /** Stable for this page session; randomized again on full refresh. */
@@ -140,6 +145,7 @@ export function AtlasMap({
   const { units } = useUnits()
 
   onCinematicChangeRef.current = onCinematicChange
+  latestPeakIdRef.current = activePeak?.id ?? null
 
   // Abort in-flight camera work when the map shell unmounts (About/Releases/etc).
   useEffect(() => {
@@ -425,9 +431,13 @@ export function AtlasMap({
       if (prevPeakIdRef.current === peakId) {
         prevPeakIdRef.current = null
       }
-      // Signal the country/world effect (runs after cleanups) to refit the camera.
-      // Avoid map.stop() here so that upcoming fitBounds is not cancelled.
-      leavingPeakRef.current = true
+      // Only signal leave when the latest render is no longer this peak
+      // (StrictMode remount keeps the same peak id — skip the flag).
+      if (latestPeakIdRef.current !== peakId) {
+        // Signal the country/world effect (runs after cleanups) to refit the camera.
+        // Avoid map.stop() here so that upcoming fitBounds is not cancelled.
+        leavingPeakRef.current = true
+      }
     }
   }, [mapReady, activePeak])
 

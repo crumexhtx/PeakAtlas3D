@@ -8,7 +8,7 @@ import { useUnits } from '../context/UnitsContext'
 
 export function PeakPage() {
   const { peakId } = useParams()
-  const { activePeak, selectedCountry } = useAtlas()
+  const { activePeak, selectedCountry, cinematic } = useAtlas()
   const { units } = useUnits()
   const backHref = atlasHref(selectedCountry)
 
@@ -35,7 +35,7 @@ export function PeakPage() {
         title={activePeak.name}
         subtitle={`${formatElevation(activePeak.elevationFt, units)} · ${activePeak.range}`}
       >
-        <PeakDossier peak={activePeak} />
+        <PeakDossier peak={activePeak} deferMedia={cinematic} />
       </DetailsSheet>
     </div>
   )

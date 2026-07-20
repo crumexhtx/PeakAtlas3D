@@ -85,6 +85,10 @@ const CURATED_FILES = {
     'File:Musala peak.jpg',
     'File:Musala and Malka Musala.jpg',
   ],
+  halti: [
+    'File:Haltitunturi.jpg',
+    'File:Suomen korkeimmat tunturit.jpg',
+  ],
   sidley: [
     'File:Mount Sidley - Antarctica’s Tallest Volcano.jpg',
     'File:MountSidleyCaldera.jpg',
@@ -124,10 +128,11 @@ const REQUIRE_CONTEXT = {
   grossglockner: ['glockner', 'grossglockner', 'groglockner', 'austria', 'tirol', 'carinthia'],
   kazbek: ['kazbek', 'kazbegi', 'georgia', 'caucasus'],
   elbrus: ['elbrus', 'caucasus', 'russia'],
+  halti: ['finland', 'norway', 'tunturi', 'lapland', 'kilpis', 'scandinavia', 'halti'],
 }
 
 const REJECT_PATTERNS =
-  /(?:^|[^a-z])(salmon|entrance|headstone|cemetery|kentucky|ireland|sligo|benbulbin|palo duro|texas panhandle|apollo|soyuz|helichrysum|stuhlmannii|logo|flag|diagram|chart|coat of arms|location map|topo map|orthophoto|satellite image of|pdf|geology|plaque|statue|chapel|museum|time zone|thumbnail\.jpg|helicopter|map_mount|24000 geo|ski area|moose in grand|barns grand)(?:[^a-z]|$)/i
+  /(?:^|[^a-z])(salmon|entrance|headstone|cemetery|kentucky|ireland|sligo|benbulbin|palo duro|texas panhandle|apollo|soyuz|helichrysum|stuhlmannii|logo|flag|diagram|chart|coat of arms|location map|topo map|orthophoto|satellite image of|pdf|geology|plaque|statue|chapel|museum|time zone|thumbnail\.jpg|helicopter|map_mount|24000 geo|ski area|moose in grand|barns grand|halti beel|natore|rajshahi|boundary stone)(?:[^a-z]|$)/i
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
@@ -219,7 +224,7 @@ async function searchCommons(query) {
   const api =
     `https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*` +
     `&generator=search&gsrnamespace=6&gsrsearch=${encodeURIComponent(query)}` +
-    `&gsrlimit=16&prop=imageinfo&iiprop=url|extmetadata|size|mime&iiurlwidth=960`
+    `&gsrlimit=16&prop=imageinfo&iiprop=url|extmetadata|size|mime&iiurlwidth=1280`
   const data = await fetchJson(api)
   return Object.values(data?.query?.pages ?? {})
 }
@@ -229,10 +234,16 @@ async function resolveFileTitles(titles) {
   const api =
     `https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*` +
     `&titles=${titles.map(encodeURIComponent).join('|')}` +
-    `&prop=imageinfo&iiprop=url|extmetadata|size|mime&iiurlwidth=960`
+    `&prop=imageinfo&iiprop=url|extmetadata|size|mime&iiurlwidth=1280`
   const data = await fetchJson(api)
-  return Object.values(data?.query?.pages ?? {})
-    .map(pageToPhoto)
+  const byTitle = new Map()
+  for (const page of Object.values(data?.query?.pages ?? {})) {
+    const photo = pageToPhoto(page)
+    if (photo) byTitle.set(norm(page.title || ''), photo)
+  }
+  // Preserve hand-curated order (API page order is not stable).
+  return titles
+    .map((t) => byTitle.get(norm(t)))
     .filter(Boolean)
 }
 
@@ -344,7 +355,7 @@ const report = []
 for (const peak of peaks) {
   const photos = normalizePhotos(peak)
   const need = ALLOW_SINGLE.has(peak.id) ? 1 : TARGET
-  // Hand-curated peaks with enough stills are treated as validated.
+  // Curated peaks are always rewritten in the fix loop; skip --check noise when they already have slots.
   if (CURATED_FILES[peak.id] && photos.length >= need) continue
   const judged = photos.map((ph, i) => {
     const m = photoMatchesPeak(peak, ph)

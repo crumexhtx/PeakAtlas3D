@@ -62,7 +62,7 @@ async function fetchPhotos(peak, want = TARGET) {
     const api =
       `https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*` +
       `&generator=search&gsrnamespace=6&gsrsearch=${encodeURIComponent(q)}` +
-      `&gsrlimit=12&prop=imageinfo&iiprop=url|extmetadata|size|mime&iiurlwidth=960`
+      `&gsrlimit=12&prop=imageinfo&iiprop=url|extmetadata|size|mime&iiurlwidth=1280`
 
     let data
     try {

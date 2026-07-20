@@ -1,26 +1,32 @@
-/** Prefer stored Commons thumb; offer sizes Safari/Wikimedia accept if the first fails. */
+/** Prefer sharp Commons thumbs for the dossier; fall back if a size is missing. */
 export function photoCandidateUrls(url: string): string[] {
   if (!url) return []
-  const out: string[] = [url]
+  const out: string[] = []
 
-  // Standard thumbs: …/960px-File.jpg
+  const push = (u: string) => {
+    if (u && !out.includes(u)) out.push(u)
+  }
+
+  // Prefer larger thumbs first (dossier is ~360–720 CSS px; 1280 reads clean on retina).
   if (/\/\d+px-/.test(url)) {
-    for (const width of [500, 1280, 960]) {
-      const next = url.replace(/\/\d+px-/, `/${width}px-`)
-      if (!out.includes(next)) out.push(next)
+    for (const width of [1280, 960, 800]) {
+      push(url.replace(/\/\d+px-/, `/${width}px-`))
     }
   }
 
   // Multi-page / TIFF thumbs: …/lossy-page1-960px-File.tif.jpg
   if (/\/lossy-page\d+-\d+px-/i.test(url)) {
-    for (const width of [500, 1280, 960]) {
-      const next = url.replace(
-        /\/lossy-page(\d+)-\d+px-/i,
-        `/lossy-page$1-${width}px-`,
+    for (const width of [1280, 960, 800]) {
+      push(
+        url.replace(
+          /\/lossy-page(\d+)-\d+px-/i,
+          `/lossy-page$1-${width}px-`,
+        ),
       )
-      if (!out.includes(next)) out.push(next)
     }
   }
+
+  push(url)
 
   // Original file (non-thumb) as last resort.
   const original = url
@@ -32,7 +38,7 @@ export function photoCandidateUrls(url: string): string[] {
       /\/commons\/thumb\/([0-9a-f]\/[0-9a-f]{2}\/[^/]+)\/lossy-page\d+-\d+px-[^/]+$/i,
       '/commons/$1',
     )
-  if (original !== url && !out.includes(original)) out.push(original)
+  push(original)
 
   return out
 }
