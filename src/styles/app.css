@@ -951,9 +951,27 @@ a {
   background: #0a101a;
 }
 
-/* Reserve gallery space while cinematic runs (no image decode yet). */
-.peak-photo-deferred {
-  aspect-ratio: 16 / 10;
+.peak-photo.is-pending {
+  display: none;
+}
+
+.peak-photo.is-ready {
+  animation: peak-photo-in 280ms ease-out;
+}
+
+@keyframes peak-photo-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .peak-photo.is-ready {
+    animation: none;
+  }
 }
 
 .peak-photo-stage {
@@ -1818,10 +1836,6 @@ a {
   .peak-photo {
     margin-bottom: 0.65rem;
     border-radius: 8px;
-  }
-
-  .peak-photo-deferred {
-    aspect-ratio: 2 / 1;
   }
 
   .peak-photo-stage {

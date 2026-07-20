@@ -51,12 +51,14 @@ function PeakPhotoSlide({
   index,
   active,
   eager,
+  onReady,
 }: {
   photo: PeakPhoto
   peakName: string
   index: number
   active: boolean
   eager: boolean
+  onReady?: () => void
 }) {
   const candidates = photoCandidateUrls(photo.url)
   const [candidateIndex, setCandidateIndex] = useState(0)
@@ -93,12 +95,15 @@ function PeakPhotoSlide({
       loading={eager ? 'eager' : 'lazy'}
       decoding="async"
       referrerPolicy="no-referrer"
+      onLoad={() => onReady?.()}
       onError={() => {
         if (candidateIndex + 1 < candidates.length) {
           setCandidateIndex((i) => i + 1)
           return
         }
         setFailed(true)
+        // Reveal fallback UI rather than leaving an empty hole forever.
+        onReady?.()
       }}
     />
   )
@@ -109,27 +114,30 @@ export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryPro
   const [index, setIndex] = useState(0)
   const multi = slides.length > 1
   const [paused, setPaused] = useState(false)
+  const [visible, setVisible] = useState(false)
   const active = slides[index] ?? slides[0]
 
   useEffect(() => {
     setIndex(0)
+    setVisible(false)
   }, [peakName])
 
   useEffect(() => {
-    if (!multi || paused) return
+    if (!multi || paused || !visible) return
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
     const id = window.setInterval(() => {
       setIndex((i) => (i + 1) % slides.length)
     }, ROTATE_MS)
     return () => window.clearInterval(id)
-  }, [multi, slides.length, peakName, paused])
+  }, [multi, slides.length, peakName, paused, visible])
 
   if (!slides.length || !active) return null
 
   return (
     <figure
-      className={`peak-photo${multi ? ' peak-photo-gallery' : ''}`}
+      className={`peak-photo${multi ? ' peak-photo-gallery' : ''}${visible ? ' is-ready' : ' is-pending'}`}
+      hidden={!visible}
       onMouseEnter={multi ? () => setPaused(true) : undefined}
       onMouseLeave={multi ? () => setPaused(false) : undefined}
     >
@@ -142,6 +150,7 @@ export function PeakPhotoGallery({ name: peakName, photos }: PeakPhotoGalleryPro
             index={i}
             active={i === index}
             eager={i === 0}
+            onReady={i === 0 ? () => setVisible(true) : undefined}
           />
         ))}
 

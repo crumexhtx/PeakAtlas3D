@@ -90,11 +90,7 @@ export function PeakDossier({ peak, deferMedia = false }: PeakDossierProps) {
         </div>
       </div>
 
-      {deferMedia ? (
-        <div className="peak-photo peak-photo-deferred" aria-hidden="true" />
-      ) : (
-        <PeakPhotoGallery name={peak.name} photos={photos} />
-      )}
+      {!deferMedia && <PeakPhotoGallery name={peak.name} photos={photos} />}
 
       {peak.whyNotable && (
         <p className="peak-why-notable">{peak.whyNotable}</p>
