@@ -37,6 +37,7 @@ function peakImage(peak) {
 }
 
 function peakDescription(peak) {
+  if (peak.seoMetaDescription?.trim()) return peak.seoMetaDescription.trim()
   const text =
     peak.whyNotable?.trim() ||
     peak.description?.trim() ||

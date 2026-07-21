@@ -107,7 +107,8 @@
       "Tahoma"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Most glaciated peak in the contiguous United States."
+    "whyNotable": "Most glaciated peak in the contiguous United States.",
+    "seoMetaDescription": "Explore Mt. Rainier on a 3D topographic map — Cascade glaciers, elevation, Wonderland trails, and nearby Paradise staging towns."
   },
   {
     "id": "shasta",
@@ -231,7 +232,8 @@
       "Uytaahkoo"
     ],
     "bestSeason": "May–Jul",
-    "whyNotable": "A lone Cascade volcano that dominates northern California."
+    "whyNotable": "A lone Cascade volcano that dominates northern California.",
+    "seoMetaDescription": "Explore Mt. Shasta on a 3D map — Cascade volcano topography, Avalanche Gulch context, elevation stats, and northern California approaches."
   },
   {
     "id": "hood",
@@ -341,7 +343,8 @@
       "Wy’east"
     ],
     "bestSeason": "May–Jul",
-    "whyNotable": "Oregon’s signature volcano and a classic Pacific Northwest climb."
+    "whyNotable": "Oregon’s signature volcano and a classic Pacific Northwest climb.",
+    "seoMetaDescription": "Explore Mt. Hood on a 3D topographic map — Oregon Cascade snow routes, Timberline context, elevation, and Columbia Gorge staging towns."
   },
   {
     "id": "baker",
@@ -456,7 +459,8 @@
       "Koma Kulshan"
     ],
     "bestSeason": "Jun–Sep",
-    "whyNotable": "The northernmost Cascade volcano in the contiguous U.S."
+    "whyNotable": "The northernmost Cascade volcano in the contiguous U.S.",
+    "seoMetaDescription": "Explore Mt. Baker on a 3D map — northern Cascade glaciers, ski-mountaineering terrain, elevation stats, and Pacific Northwest approaches."
   },
   {
     "id": "adams",
@@ -580,7 +584,8 @@
       "Pahto"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Washington’s second-highest volcano, quieter than Rainier."
+    "whyNotable": "Washington’s second-highest volcano, quieter than Rainier.",
+    "seoMetaDescription": "Explore Mt. Adams on a 3D topographic map — Washington’s second-highest Cascade volcano, snow slopes, elevation, and quieter trailheads."
   },
   {
     "id": "denali",
@@ -662,7 +667,8 @@
       "Mount McKinley"
     ],
     "bestSeason": "May–Jul",
-    "whyNotable": "North America’s highest mountain and a polar altitude test."
+    "whyNotable": "North America’s highest mountain and a polar altitude test.",
+    "seoMetaDescription": "Explore Denali on a 3D topographic map — Alaska Range massif, West Buttress context, elevation, and North America’s highest summit terrain."
   },
   {
     "id": "elbert",
@@ -783,7 +789,8 @@
       }
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Highest summit in the Rocky Mountains and Colorado’s high point."
+    "whyNotable": "Highest summit in the Rocky Mountains and Colorado’s high point.",
+    "seoMetaDescription": "Explore Mt. Elbert on a 3D map — Colorado’s Rocky Mountain high point, Sawatch Range topography, elevation stats, and walk-up approaches."
   },
   {
     "id": "whitney",
@@ -904,7 +911,8 @@
       }
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Highest peak in the contiguous United States."
+    "whyNotable": "Highest peak in the contiguous United States.",
+    "seoMetaDescription": "Explore Mt. Whitney on a 3D topographic map — contiguous U.S. high point, Sierra Nevada trails, elevation, and Lone Pine staging towns."
   },
   {
     "id": "longs",
@@ -1025,7 +1033,8 @@
       }
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Front Range fourteener crowned by the famous Keyhole Route."
+    "whyNotable": "Front Range fourteener crowned by the famous Keyhole Route.",
+    "seoMetaDescription": "Explore Longs Peak on a 3D map — Front Range fourteener topography, Keyhole Route context, elevation, and Rocky Mountain National Park."
   },
   {
     "id": "pikes",
@@ -1146,7 +1155,8 @@
       }
     ],
     "bestSeason": "Jun–Oct",
-    "whyNotable": "Colorado icon with a road, cog railway, and vast prairie views."
+    "whyNotable": "Colorado icon with a road, cog railway, and vast prairie views.",
+    "seoMetaDescription": "Explore Pikes Peak on a 3D topographic map — Colorado Springs landmark, Front Range views, elevation stats, and highway or trail approaches."
   },
   {
     "id": "gannett",
@@ -1261,7 +1271,8 @@
       }
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Wyoming’s high point, deep in the Wind River wilderness."
+    "whyNotable": "Wyoming’s high point, deep in the Wind River wilderness.",
+    "seoMetaDescription": "Explore Gannett Peak on a 3D map — Wyoming’s high point in the Wind River Range, glacier approaches, elevation, and remote wilderness staging."
   },
   {
     "id": "granitet",
@@ -1385,7 +1396,8 @@
       "Granite Peak"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Montana’s technical state high point in the Beartooths."
+    "whyNotable": "Montana’s technical state high point in the Beartooths.",
+    "seoMetaDescription": "Explore Granite Peak on a 3D topographic map — Montana’s Beartooth high point, technical scramble terrain, elevation, and alpine approaches."
   },
   {
     "id": "kings",
@@ -1506,7 +1518,8 @@
       }
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Utah’s high point, a long Uintas backpack to the summit ridge."
+    "whyNotable": "Utah’s high point, a long Uintas backpack to the summit ridge.",
+    "seoMetaDescription": "Explore Kings Peak on a 3D map — Utah’s Uinta Mountains high point, long alpine hike context, elevation stats, and backcountry staging towns."
   },
   {
     "id": "humphreys",
@@ -1613,7 +1626,8 @@
       }
     ],
     "bestSeason": "Jun–Oct",
-    "whyNotable": "Arizona’s high point on the San Francisco Peaks volcanic field."
+    "whyNotable": "Arizona’s high point on the San Francisco Peaks volcanic field.",
+    "seoMetaDescription": "Explore Humphreys Peak on a 3D topographic map — Arizona’s San Francisco Peaks high point, forested volcano terrain, and Flagstaff approaches."
   },
   {
     "id": "guadalupe",
@@ -1706,7 +1720,8 @@
       }
     ],
     "bestSeason": "Oct–Apr",
-    "whyNotable": "Texas high point rising abruptly from the Chihuahuan Desert."
+    "whyNotable": "Texas high point rising abruptly from the Chihuahuan Desert.",
+    "seoMetaDescription": "Explore Guadalupe Peak on a 3D map — Texas high point above the Chihuahuan Desert, Guadalupe Mountains trails, elevation, and park approaches."
   },
   {
     "id": "robson",
@@ -1827,7 +1842,8 @@
       }
     ],
     "bestSeason": "Jul–Aug",
-    "whyNotable": "Canadian Rockies giant with one of the range’s biggest faces."
+    "whyNotable": "Canadian Rockies giant with one of the range’s biggest faces.",
+    "seoMetaDescription": "Explore Mt. Robson on a 3D topographic map — Canadian Rockies giant, Berg Lake approaches, elevation stats, and ice-and-rock summit terrain."
   },
   {
     "id": "logan",
@@ -1906,7 +1922,8 @@
       }
     ],
     "bestSeason": "May–Jul",
-    "whyNotable": "Canada’s highest mountain, a vast Yukon ice massif."
+    "whyNotable": "Canada’s highest mountain, a vast Yukon ice massif.",
+    "seoMetaDescription": "Explore Mt. Logan on a 3D map — Canada’s highest mountain in the Saint Elias icefields, expedition terrain, elevation, and Kluane approaches."
   },
   {
     "id": "waddington",
@@ -1995,7 +2012,8 @@
       }
     ],
     "bestSeason": "Jul–Aug",
-    "whyNotable": "British Columbia’s highest peak, remote Coast Range alpine."
+    "whyNotable": "British Columbia’s highest peak, remote Coast Range alpine.",
+    "seoMetaDescription": "Explore Mt. Waddington on a 3D topographic map — British Columbia’s Coast Mountains high point, remote alpine ice, elevation, and approach towns."
   },
   {
     "id": "columbia",
@@ -2091,7 +2109,8 @@
       }
     ],
     "bestSeason": "Jul–Aug",
-    "whyNotable": "Alberta’s high point on the Columbia Icefield divide."
+    "whyNotable": "Alberta’s high point on the Columbia Icefield divide.",
+    "seoMetaDescription": "Explore Mt. Columbia on a 3D map — Canadian Rockies icefield summit, Continental Divide terrain, elevation stats, and Columbia Icefield staging."
   },
   {
     "id": "assini",
@@ -2215,7 +2234,8 @@
       "Mount Assiniboine"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "The “Matterhorn of the Rockies,” a perfect pyramidal summit."
+    "whyNotable": "The “Matterhorn of the Rockies,” a perfect pyramidal summit.",
+    "seoMetaDescription": "Explore Mt. Assiniboine on a 3D topographic map — the Matterhorn of the Rockies, pyramidal summit terrain, elevation, and Alberta–B.C. approaches."
   },
   {
     "id": "orizaba",
@@ -2326,7 +2346,8 @@
       "Pico de Orizaba"
     ],
     "bestSeason": "Nov–Mar",
-    "whyNotable": "Mexico’s highest peak and the tallest volcano in North America."
+    "whyNotable": "Mexico’s highest peak and the tallest volcano in North America.",
+    "seoMetaDescription": "Explore Pico de Orizaba on a 3D map — Mexico’s highest volcano, Jamapa Glacier context, elevation stats, and Trans-Mexican Volcanic Belt terrain."
   },
   {
     "id": "popo",
@@ -2451,7 +2472,8 @@
       "El Popo"
     ],
     "bestSeason": "Nov–Mar",
-    "whyNotable": "Mexico’s legendary smoking volcano above the Valley of Mexico."
+    "whyNotable": "Mexico’s legendary smoking volcano above the Valley of Mexico.",
+    "seoMetaDescription": "Explore Popocatépetl on a 3D topographic map — Mexico’s active volcano above the Valley of Mexico, elevation, and historic approach context."
   },
   {
     "id": "aconcagua",
@@ -2544,7 +2566,8 @@
       }
     ],
     "bestSeason": "Dec–Feb",
-    "whyNotable": "Highest mountain outside Asia and the Andes’ great prize."
+    "whyNotable": "Highest mountain outside Asia and the Andes’ great prize.",
+    "seoMetaDescription": "Explore Aconcagua on a 3D map — Western Hemisphere high point in the Andes, high-altitude trek terrain, elevation, and Mendoza staging towns."
   },
   {
     "id": "huascaran",
@@ -2654,7 +2677,8 @@
       "Huascarán"
     ],
     "bestSeason": "Jun–Aug",
-    "whyNotable": "Peru’s high point and the crown of the Cordillera Blanca."
+    "whyNotable": "Peru’s high point and the crown of the Cordillera Blanca.",
+    "seoMetaDescription": "Explore Huascarán on a 3D topographic map — Peru’s Cordillera Blanca high point, twin ice summits, elevation, and classic Andean expedition terrain."
   },
   {
     "id": "illimani",
@@ -2775,7 +2799,8 @@
       }
     ],
     "bestSeason": "May–Sep",
-    "whyNotable": "The great ice pyramid watching over La Paz."
+    "whyNotable": "The great ice pyramid watching over La Paz.",
+    "seoMetaDescription": "Explore Illimani on a 3D map — Cordillera Real ice pyramid above La Paz, Altiplano views, elevation stats, and Bolivian alpine approaches."
   },
   {
     "id": "chimborazo",
@@ -2896,7 +2921,8 @@
       }
     ],
     "bestSeason": "Dec–Jan or Jun–Jul",
-    "whyNotable": "The farthest point from Earth’s center due to equatorial bulge."
+    "whyNotable": "The farthest point from Earth’s center due to equatorial bulge.",
+    "seoMetaDescription": "Explore Chimborazo on a 3D topographic map — Ecuador’s farthest-from-center summit, glacier routes, elevation, and high-Andes volcano terrain."
   },
   {
     "id": "cotopaxi",
@@ -3017,7 +3043,8 @@
       }
     ],
     "bestSeason": "Dec–Apr",
-    "whyNotable": "One of the world’s highest active volcanoes, Ecuador’s icon."
+    "whyNotable": "One of the world’s highest active volcanoes, Ecuador’s icon.",
+    "seoMetaDescription": "Explore Cotopaxi on a 3D map — one of the world’s highest active volcanoes, Ecuador cone topography, elevation, and classic high-Andes climbs."
   },
   {
     "id": "fitzroy",
@@ -3128,7 +3155,8 @@
       "Chaltén"
     ],
     "bestSeason": "Nov–Mar",
-    "whyNotable": "Patagonia’s granite spire and a world-class alpine objective."
+    "whyNotable": "Patagonia’s granite spire and a world-class alpine objective.",
+    "seoMetaDescription": "Explore Cerro Fitz Roy on a 3D topographic map — Patagonian granite spire above El Chaltén, elite alpine terrain, elevation, and wind-scoured valleys."
   },
   {
     "id": "torres",
@@ -3224,7 +3252,8 @@
       "Torres del Paine"
     ],
     "bestSeason": "Nov–Mar",
-    "whyNotable": "The famous towers that define Patagonian trekking."
+    "whyNotable": "The famous towers that define Patagonian trekking.",
+    "seoMetaDescription": "Explore Torres del Paine on a 3D map — Patagonia’s famous granite towers, park topography, elevation stats, and classic Chilean trek approaches."
   },
   {
     "id": "sajama",
@@ -3348,7 +3377,8 @@
       "Nevado Sajama"
     ],
     "bestSeason": "May–Sep",
-    "whyNotable": "Bolivia’s highest peak, a lonely volcano on the Altiplano."
+    "whyNotable": "Bolivia’s highest peak, a lonely volcano on the Altiplano.",
+    "seoMetaDescription": "Explore Sajama on a 3D topographic map — Bolivia’s highest volcano on the Altiplano, snow routes, elevation, and remote Andean border approaches."
   },
   {
     "id": "ausangate",
@@ -3472,7 +3502,8 @@
       "Apu Ausangate"
     ],
     "bestSeason": "May–Sep",
-    "whyNotable": "Sacred Andean apu and the heart of Peru’s high circuit treks."
+    "whyNotable": "Sacred Andean apu and the heart of Peru’s high circuit treks.",
+    "seoMetaDescription": "Explore Ausangate on a 3D map — sacred Cordillera Vilcanota apu near Cusco, circuit trek terrain, elevation stats, and high-Andean approaches."
   },
   {
     "id": "montblanc",
@@ -3597,7 +3628,8 @@
       "Mont Blanc"
     ],
     "bestSeason": "Jun–Sep",
-    "whyNotable": "The roof of the Alps and Western Europe’s highest summit."
+    "whyNotable": "The roof of the Alps and Western Europe’s highest summit.",
+    "seoMetaDescription": "Explore Mont Blanc on a 3D topographic map — Western Europe’s high point, Alps glacier routes, elevation, and Chamonix–Courmayeur staging towns."
   },
   {
     "id": "matterhorn",
@@ -3708,7 +3740,8 @@
       "Matterhorn"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "The world’s most recognized mountain silhouette."
+    "whyNotable": "The world’s most recognized mountain silhouette.",
+    "seoMetaDescription": "Explore the Matterhorn on a 3D map — iconic Alpine pyramid on the Swiss–Italian border, classic ridges, elevation, and Zermatt approach context."
   },
   {
     "id": "jungfrau",
@@ -3829,7 +3862,8 @@
       }
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Bernese Oberland classic above the Jungfraujoch."
+    "whyNotable": "Bernese Oberland classic above the Jungfraujoch.",
+    "seoMetaDescription": "Explore the Jungfrau on a 3D topographic map — Bernese Oberland ice summit, Jungfraujoch context, elevation stats, and Swiss Alps staging towns."
   },
   {
     "id": "eiger",
@@ -3936,7 +3970,8 @@
       }
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Infamous for its North Face, the Nordwand."
+    "whyNotable": "Infamous for its North Face, the Nordwand.",
+    "seoMetaDescription": "Explore the Eiger on a 3D map — legendary North Face terrain in the Bernese Alps, elevation, classic alpine routes, and Grindelwald approaches."
   },
   {
     "id": "grossglockner",
@@ -4046,7 +4081,8 @@
       "Großglockner"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Austria’s highest mountain and an Eastern Alps landmark."
+    "whyNotable": "Austria’s highest mountain and an Eastern Alps landmark.",
+    "seoMetaDescription": "Explore Grossglockner on a 3D topographic map — Austria’s high point, Hohe Tauern glaciers, elevation stats, and classic Eastern Alps approaches."
   },
   {
     "id": "triglav",
@@ -4167,7 +4203,8 @@
       }
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Slovenia’s national mountain and a symbol of the Julian Alps."
+    "whyNotable": "Slovenia’s national mountain and a symbol of the Julian Alps.",
+    "seoMetaDescription": "Explore Triglav on a 3D map — Slovenia’s Julian Alps high point and national symbol, ridge terrain, elevation, and Trailer/Bohinj staging towns."
   },
   {
     "id": "ortles",
@@ -4291,7 +4328,8 @@
       "Ortler"
     ],
     "bestSeason": "Jun–Sep",
-    "whyNotable": "Highest peak in the Eastern Alps outside the Bernina."
+    "whyNotable": "Highest peak in the Eastern Alps outside the Bernina.",
+    "seoMetaDescription": "Explore Ortler on a 3D topographic map — South Tyrol’s great ice peak, Ortler Alps terrain, elevation stats, and classic Dolomite-region approaches."
   },
   {
     "id": "marmolada",
@@ -4412,7 +4450,8 @@
       }
     ],
     "bestSeason": "Jun–Sep",
-    "whyNotable": "Queen of the Dolomites, with a glacier and vast limestone walls."
+    "whyNotable": "Queen of the Dolomites, with a glacier and vast limestone walls.",
+    "seoMetaDescription": "Explore Marmolada on a 3D map — the Queen of the Dolomites, glacier and rock terrain, elevation, and classic Italian Alps staging towns."
   },
   {
     "id": "barreuils",
@@ -4536,7 +4575,8 @@
       "Barre des Écrins"
     ],
     "bestSeason": "Jun–Sep",
-    "whyNotable": "High point of the Écrins and the southern French Alps."
+    "whyNotable": "High point of the Écrins and the southern French Alps.",
+    "seoMetaDescription": "Explore Barre des Écrins on a 3D topographic map — Massif des Écrins high point, French Alps ice, elevation stats, and Dauphiné approach towns."
   },
   {
     "id": "elbrus",
@@ -4657,7 +4697,8 @@
       }
     ],
     "bestSeason": "Jun–Aug",
-    "whyNotable": "Europe’s conventional high point on a twin-summited volcano."
+    "whyNotable": "Europe’s conventional high point on a twin-summited volcano.",
+    "seoMetaDescription": "Explore Mt. Elbrus on a 3D map — Europe’s high point in the Caucasus, twin volcanic summits, elevation, and classic high-altitude trek terrain."
   },
   {
     "id": "kazbek",
@@ -4768,7 +4809,8 @@
       "Mkinvartsveri"
     ],
     "bestSeason": "Jun–Sep",
-    "whyNotable": "Georgia’s storied Caucasus giant above the Georgian Military Highway."
+    "whyNotable": "Georgia’s storied Caucasus giant above the Georgian Military Highway.",
+    "seoMetaDescription": "Explore Mt. Kazbek on a 3D topographic map — Caucasus glacier peak on the Georgia–Russia border, elevation, and classic Georgian alpine approaches."
   },
   {
     "id": "damavand",
@@ -4892,7 +4934,8 @@
       "Mount Damavand"
     ],
     "bestSeason": "Jun–Sep",
-    "whyNotable": "Iran’s highest peak and the tallest volcano in Asia."
+    "whyNotable": "Iran’s highest peak and the tallest volcano in Asia.",
+    "seoMetaDescription": "Explore Damavand on a 3D map — Iran’s highest volcano and Middle East high point, ash-and-snow terrain, elevation stats, and Tehran-region staging."
   },
   {
     "id": "ararat",
@@ -5017,7 +5060,8 @@
       "Mount Ararat"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Turkey’s iconic twin-peaked volcano of legend and national identity."
+    "whyNotable": "Turkey’s iconic twin-peaked volcano of legend and national identity.",
+    "seoMetaDescription": "Explore Mt. Ararat on a 3D topographic map — Turkey’s iconic twin-cone massif, high snow routes, elevation, and eastern Anatolian approach towns."
   },
   {
     "id": "kilimanjaro",
@@ -5145,7 +5189,8 @@
       "Kibo"
     ],
     "bestSeason": "Jan–Mar or Jun–Oct",
-    "whyNotable": "Africa’s highest mountain — a non-technical trek to extreme altitude."
+    "whyNotable": "Africa’s highest mountain — a non-technical trek to extreme altitude.",
+    "seoMetaDescription": "Explore Kilimanjaro on a 3D map — Africa’s high point, Uhuru Peak topography, trek routes, elevation stats, and Tanzania staging towns near Moshi."
   },
   {
     "id": "kenya",
@@ -5252,7 +5297,8 @@
       "Kirinyaga"
     ],
     "bestSeason": "Jan–Feb or Aug–Sep",
-    "whyNotable": "Africa’s second-highest peak, technical rock above the treeline."
+    "whyNotable": "Africa’s second-highest peak, technical rock above the treeline.",
+    "seoMetaDescription": "Explore Mt. Kenya on a 3D topographic map — Africa’s second-highest massif, technical rock spires, elevation, and classic Kenyan alpine approaches."
   },
   {
     "id": "toubkal",
@@ -5376,7 +5422,8 @@
       "Jebel Toubkal"
     ],
     "bestSeason": "May–Oct",
-    "whyNotable": "Highest peak in North Africa and the Atlas Mountains."
+    "whyNotable": "Highest peak in North Africa and the Atlas Mountains.",
+    "seoMetaDescription": "Explore Toubkal on a 3D map — North Africa’s Atlas Mountains high point, trek terrain, elevation stats, and Marrakech-region staging towns."
   },
   {
     "id": "rasdashen",
@@ -5501,7 +5548,8 @@
       "Ras Dashen"
     ],
     "bestSeason": "Oct–Mar",
-    "whyNotable": "Ethiopia’s high point in the Simien Mountains massif."
+    "whyNotable": "Ethiopia’s high point in the Simien Mountains massif.",
+    "seoMetaDescription": "Explore Ras Dashen on a 3D topographic map — Ethiopia’s Simien Mountains high point, highland trek terrain, elevation, and northern approach towns."
   },
   {
     "id": "table",
@@ -5626,7 +5674,8 @@
       "Hoerikwaggo"
     ],
     "bestSeason": "Nov–Mar",
-    "whyNotable": "Cape Town’s flat-topped landmark and a World Heritage icon."
+    "whyNotable": "Cape Town’s flat-topped landmark and a World Heritage icon.",
+    "seoMetaDescription": "Explore Table Mountain on a 3D map — Cape Town’s iconic flat-top massif, trail topography, elevation stats, and South African coastal approaches."
   },
   {
     "id": "meru",
@@ -5736,7 +5785,8 @@
       "Mount Meru"
     ],
     "bestSeason": "Jun–Feb",
-    "whyNotable": "Tanzania’s dramatic crater volcano and Kilimanjaro’s neighbor."
+    "whyNotable": "Tanzania’s dramatic crater volcano and Kilimanjaro’s neighbor.",
+    "seoMetaDescription": "Explore Mt. Meru on a 3D topographic map — Tanzania’s steep volcanic neighbor to Kilimanjaro, trek terrain, elevation, and Arusha staging towns."
   },
   {
     "id": "everest",
@@ -5862,7 +5912,8 @@
       "Qomolangma"
     ],
     "bestSeason": "Apr–May or Sep–Oct",
-    "whyNotable": "The highest point on Earth."
+    "whyNotable": "The highest point on Earth.",
+    "seoMetaDescription": "Explore Mt. Everest on a 3D map — Earth’s highest summit, Khumbu topography, elevation stats, South Col context, and Nepal–Tibet staging towns."
   },
   {
     "id": "k2",
@@ -5959,7 +6010,8 @@
       "Chogori"
     ],
     "bestSeason": "Jun–Aug",
-    "whyNotable": "The savage mountain — second highest, far more committing than Everest."
+    "whyNotable": "The savage mountain — second highest, far more committing than Everest.",
+    "seoMetaDescription": "Explore K2 on a 3D topographic map — Karakoram’s savage Abruzzi pyramid, expedition terrain, elevation, and Baltoro Glacier approach context."
   },
   {
     "id": "kangchen",
@@ -6083,7 +6135,8 @@
       "Kangchenjunga"
     ],
     "bestSeason": "Apr–May or Sep–Oct",
-    "whyNotable": "The world’s third-highest peak, sacred and rarely summited for years."
+    "whyNotable": "The world’s third-highest peak, sacred and rarely summited for years.",
+    "seoMetaDescription": "Explore Kangchenjunga on a 3D map — the world’s third-highest peak, Sikkim–Nepal border terrain, elevation stats, and eastern Himalaya approaches."
   },
   {
     "id": "lhotse",
@@ -6204,7 +6257,8 @@
       }
     ],
     "bestSeason": "Apr–May or Sep–Oct",
-    "whyNotable": "Everest’s neighbor and the world’s fourth-highest mountain."
+    "whyNotable": "Everest’s neighbor and the world’s fourth-highest mountain.",
+    "seoMetaDescription": "Explore Lhotse on a 3D topographic map — Everest’s towering south neighbor, Khumbu ice, elevation, and classic Nepal Himalaya expedition staging."
   },
   {
     "id": "makalu",
@@ -6325,7 +6379,8 @@
       }
     ],
     "bestSeason": "Apr–May or Sep–Oct",
-    "whyNotable": "A perfect pyramid and the world’s fifth-highest peak."
+    "whyNotable": "A perfect pyramid and the world’s fifth-highest peak.",
+    "seoMetaDescription": "Explore Makalu on a 3D map — the world’s fifth-highest peak, isolated Makalu-Barun terrain, elevation stats, and eastern Nepal approaches."
   },
   {
     "id": "chooyu",
@@ -6440,7 +6495,8 @@
       "Cho Oyu"
     ],
     "bestSeason": "Apr–May or Sep–Oct",
-    "whyNotable": "Often called the most “accessible” 8,000er — still extreme altitude."
+    "whyNotable": "Often called the most “accessible” 8,000er — still extreme altitude.",
+    "seoMetaDescription": "Explore Cho Oyu on a 3D topographic map — the world’s sixth-highest summit, Tibet–Nepal border routes, elevation, and classic 8,000er staging."
   },
   {
     "id": "dhaula",
@@ -6550,7 +6606,8 @@
       "Dhaulagiri"
     ],
     "bestSeason": "Apr–May or Sep–Oct",
-    "whyNotable": "A vast white Himalayan wall and the world’s seventh-highest peak."
+    "whyNotable": "A vast white Himalayan wall and the world’s seventh-highest peak.",
+    "seoMetaDescription": "Explore Dhaulagiri on a 3D map — Nepal’s white Himalayan giant, Kali Gandaki context, elevation stats, and classic western Nepal approaches."
   },
   {
     "id": "manaslu",
@@ -6671,7 +6728,8 @@
       }
     ],
     "bestSeason": "Apr–May or Sep–Oct",
-    "whyNotable": "The “mountain of the spirit,” Nepal’s classic 8,000er circuit peak."
+    "whyNotable": "The “mountain of the spirit,” Nepal’s classic 8,000er circuit peak.",
+    "seoMetaDescription": "Explore Manaslu on a 3D topographic map — the world’s eighth-highest peak, Manaslu Circuit terrain, elevation, and central Nepal staging towns."
   },
   {
     "id": "nanga",
@@ -6796,7 +6854,8 @@
       "Diamir"
     ],
     "bestSeason": "Jun–Jul",
-    "whyNotable": "The western Himalaya’s killer mountain, famous for its Rupal Face."
+    "whyNotable": "The western Himalaya’s killer mountain, famous for its Rupal Face.",
+    "seoMetaDescription": "Explore Nanga Parbat on a 3D map — the western Himalaya’s killer mountain, Rupal and Diamir faces, elevation stats, and Pakistan approaches."
   },
   {
     "id": "annapurna",
@@ -6906,7 +6965,8 @@
       "Annapurna I"
     ],
     "bestSeason": "Apr–May or Sep–Oct",
-    "whyNotable": "First 8,000er climbed — still among the most dangerous."
+    "whyNotable": "First 8,000er climbed — still among the most dangerous.",
+    "seoMetaDescription": "Explore Annapurna I on a 3D topographic map — infamous 8,000er above Nepal’s Annapurna Sanctuary, elevation, and classic trek-and-climb staging."
   },
   {
     "id": "gasherbrum1",
@@ -7003,7 +7063,8 @@
       "Hidden Peak"
     ],
     "bestSeason": "Jun–Aug",
-    "whyNotable": "Karakoram 8,000er known as Hidden Peak."
+    "whyNotable": "Karakoram 8,000er known as Hidden Peak.",
+    "seoMetaDescription": "Explore Gasherbrum I on a 3D map — Hidden Peak in the Karakoram, Baltoro approaches, elevation stats, and high Pakistan–China border terrain."
   },
   {
     "id": "broadpeak",
@@ -7100,7 +7161,8 @@
       "Faichan Kangri"
     ],
     "bestSeason": "Jun–Aug",
-    "whyNotable": "A long summit ridge opposite K2 in the Karakoram."
+    "whyNotable": "A long summit ridge opposite K2 in the Karakoram.",
+    "seoMetaDescription": "Explore Broad Peak on a 3D topographic map — Karakoram 8,000er beside K2, glacier approaches, elevation, and classic Baltoro expedition staging."
   },
   {
     "id": "gasherbrum2",
@@ -7182,7 +7244,8 @@
       "Gasherbrum II"
     ],
     "bestSeason": "Jun–Aug",
-    "whyNotable": "Often the “friendliest” Karakoram 8,000er — still serious."
+    "whyNotable": "Often the “friendliest” Karakoram 8,000er — still serious.",
+    "seoMetaDescription": "Explore Gasherbrum II on a 3D map — a classic Karakoram 8,000er, ice-ridge terrain, elevation stats, and Baltoro Glacier approach context."
   },
   {
     "id": "shishapangma",
@@ -7289,7 +7352,8 @@
       "Gosainthan"
     ],
     "bestSeason": "Apr–May or Sep–Oct",
-    "whyNotable": "The only 8,000er entirely in Tibet / China."
+    "whyNotable": "The only 8,000er entirely in Tibet / China.",
+    "seoMetaDescription": "Explore Shishapangma on a 3D topographic map — Tibet’s 8,000er, relatively accessible Himalayan terrain, elevation, and Chinese-side staging towns."
   },
   {
     "id": "ama",
@@ -7413,7 +7477,8 @@
       "Ama Dablam"
     ],
     "bestSeason": "Apr–May or Oct–Nov",
-    "whyNotable": "Nepal’s “Matterhorn” — the most photographed Himalayan spire."
+    "whyNotable": "Nepal’s “Matterhorn” — the most photographed Himalayan spire.",
+    "seoMetaDescription": "Explore Ama Dablam on a 3D map — Khumbu’s iconic hanging-glacier spire, technical alpine terrain, elevation stats, and Everest-region approaches."
   },
   {
     "id": "island",
@@ -7524,7 +7589,8 @@
       "Imja Tse"
     ],
     "bestSeason": "Apr–May or Oct–Nov",
-    "whyNotable": "Classic Everest-region trekking peak and alpine intro."
+    "whyNotable": "Classic Everest-region trekking peak and alpine intro.",
+    "seoMetaDescription": "Explore Island Peak on a 3D topographic map — Imja Tse training climb in the Khumbu, glacier skills terrain, elevation, and Chukhung staging."
   },
   {
     "id": "stok",
@@ -7648,7 +7714,8 @@
       "Stok Kangri"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Ladakh’s popular high trekking peak above the Indus Valley."
+    "whyNotable": "Ladakh’s popular high trekking peak above the Indus Valley.",
+    "seoMetaDescription": "Explore Stok Kangri on a 3D map — Ladakh’s popular high trek peak near Leh, Himalayan topography, elevation stats, and northern India approaches."
   },
   {
     "id": "nanda",
@@ -7772,7 +7839,8 @@
       "Nanda Devi"
     ],
     "bestSeason": "May–Jun or Sep–Oct",
-    "whyNotable": "India’s second-highest peak, once closed as a sacred sanctuary."
+    "whyNotable": "India’s second-highest peak, once closed as a sacred sanctuary.",
+    "seoMetaDescription": "Explore Nanda Devi on a 3D topographic map — India’s second-highest peak, sanctuary wilderness, elevation, and Garhwal Himalaya approach context."
   },
   {
     "id": "trisul",
@@ -7896,7 +7964,8 @@
       "Trisul"
     ],
     "bestSeason": "May–Jun or Sep–Oct",
-    "whyNotable": "A striking Garhwal triple-summit massif near Nanda Devi."
+    "whyNotable": "A striking Garhwal triple-summit massif near Nanda Devi.",
+    "seoMetaDescription": "Explore Trisul on a 3D map — Garhwal’s classic triple-summit massif, alpine trek terrain, elevation stats, and Uttarakhand staging towns."
   },
   {
     "id": "fuji",
@@ -8021,7 +8090,8 @@
       "富士山"
     ],
     "bestSeason": "Jul–early Sep",
-    "whyNotable": "Japan’s sacred icon and the country’s most climbed mountain."
+    "whyNotable": "Japan’s sacred icon and the country’s most climbed mountain.",
+    "seoMetaDescription": "Explore Mt. Fuji on a 3D topographic map — Japan’s iconic stratovolcano, summit trails, elevation, and classic Honshu approach towns and stations."
   },
   {
     "id": "yari",
@@ -8146,7 +8216,8 @@
       "Yarigatake"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "The “Matterhorn of Japan” on the North Alps ridgeline."
+    "whyNotable": "The “Matterhorn of Japan” on the North Alps ridgeline.",
+    "seoMetaDescription": "Explore Mt. Yari on a 3D map — the Matterhorn of Japan in the Northern Alps, ridgeline terrain, elevation stats, and Kamikochi approach context."
   },
   {
     "id": "hallasan",
@@ -8271,7 +8342,8 @@
       "한라산"
     ],
     "bestSeason": "Apr–Nov",
-    "whyNotable": "South Korea’s high point, a shield volcano crowning Jeju Island."
+    "whyNotable": "South Korea’s high point, a shield volcano crowning Jeju Island.",
+    "seoMetaDescription": "Explore Hallasan on a 3D topographic map — South Korea’s Jeju Island high point, crater-lake trails, elevation, and volcanic island approaches."
   },
   {
     "id": "cook",
@@ -8396,7 +8468,8 @@
       "Aoraki / Mount Cook"
     ],
     "bestSeason": "Nov–Mar",
-    "whyNotable": "New Zealand’s highest peak and the heart of the Southern Alps."
+    "whyNotable": "New Zealand’s highest peak and the heart of the Southern Alps.",
+    "seoMetaDescription": "Explore Aoraki / Mt. Cook on a 3D map — New Zealand’s Southern Alps high point, glacier valleys, elevation stats, and Hooker–Tasman staging."
   },
   {
     "id": "aspiring",
@@ -8507,7 +8580,8 @@
       "Tititea"
     ],
     "bestSeason": "Nov–Mar",
-    "whyNotable": "The “Matterhorn of the South,” New Zealand’s classic alpine peak."
+    "whyNotable": "The “Matterhorn of the South,” New Zealand’s classic alpine peak.",
+    "seoMetaDescription": "Explore Mt. Aspiring on a 3D topographic map — Tititea, the Matterhorn of the South, Southern Alps terrain, elevation, and Wanaka approaches."
   },
   {
     "id": "tasman",
@@ -8617,7 +8691,8 @@
       "Mount Tasman"
     ],
     "bestSeason": "Nov–Mar",
-    "whyNotable": "New Zealand’s second-highest summit on the main divide."
+    "whyNotable": "New Zealand’s second-highest summit on the main divide.",
+    "seoMetaDescription": "Explore Mt. Tasman on a 3D map — New Zealand’s second-highest peak beside Aoraki, glaciated Main Divide terrain, elevation, and alpine staging."
   },
   {
     "id": "kosciuszko",
@@ -8727,7 +8802,8 @@
       "Mount Kosciuszko"
     ],
     "bestSeason": "Dec–Mar",
-    "whyNotable": "Australia’s high point — an accessible alpine walk in the Snowies."
+    "whyNotable": "Australia’s high point — an accessible alpine walk in the Snowies.",
+    "seoMetaDescription": "Explore Mt. Kosciuszko on a 3D topographic map — Australia’s Snowy Mountains high point, alpine walks, elevation stats, and Thredbo approaches."
   },
   {
     "id": "townsend",
@@ -8837,7 +8913,8 @@
       "Mount Townsend"
     ],
     "bestSeason": "Dec–Mar",
-    "whyNotable": "Often mistaken for Kosciuszko; Australia’s true runner-up summit."
+    "whyNotable": "Often mistaken for Kosciuszko; Australia’s true runner-up summit.",
+    "seoMetaDescription": "Explore Mt. Townsend on a 3D map — Australia’s second-highest summit near Kosciuszko, Main Range terrain, elevation, and Snowies trailheads."
   },
   {
     "id": "galdhopiggen",
@@ -8947,7 +9024,8 @@
       "Galdhøpiggen"
     ],
     "bestSeason": "Jun–Sep",
-    "whyNotable": "Northern Europe’s highest mountain, in Norway’s Jotunheimen."
+    "whyNotable": "Northern Europe’s highest mountain, in Norway’s Jotunheimen.",
+    "seoMetaDescription": "Explore Galdhøpiggen on a 3D topographic map — Northern Europe’s high point in Jotunheimen, hike routes, elevation, and Norwegian staging towns."
   },
   {
     "id": "kebnekaise",
@@ -9054,7 +9132,8 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kebnekaise_western_passage_JS90.jpg"
     },
     "bestSeason": "Jun–Sep",
-    "whyNotable": "Sweden’s high point, with a shifting glacial summit."
+    "whyNotable": "Sweden’s high point, with a shifting glacial summit.",
+    "seoMetaDescription": "Explore Kebnekaise on a 3D map — Sweden’s Lapland high point, shifting glacial summit, elevation stats, and classic Arctic trail approaches."
   },
   {
     "id": "halti",
@@ -9164,7 +9243,8 @@
       "Haltitunturi"
     ],
     "bestSeason": "Jun–Sep",
-    "whyNotable": "Finland’s high point on the Norwegian border fells."
+    "whyNotable": "Finland’s high point on the Norwegian border fells.",
+    "seoMetaDescription": "Explore Halti on a 3D topographic map — Finland’s high point on the Norwegian border fells, gentle summit terrain, elevation, and Nordic approaches."
   },
   {
     "id": "musala",
@@ -9271,7 +9351,8 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musala_peak.jpg"
     },
     "bestSeason": "Jun–Sep",
-    "whyNotable": "The Balkans’ highest peak, in Bulgaria’s Rila Mountains."
+    "whyNotable": "The Balkans’ highest peak, in Bulgaria’s Rila Mountains.",
+    "seoMetaDescription": "Explore Musala on a 3D map — the Balkans’ highest peak in Bulgaria’s Rila Mountains, marked alpine trails, elevation stats, and Sofia-region staging."
   },
   {
     "id": "olympus",
@@ -9382,7 +9463,8 @@
       "Ólympos"
     ],
     "bestSeason": "Jun–Sep",
-    "whyNotable": "Mythic home of the gods and Greece’s highest mountain."
+    "whyNotable": "Mythic home of the gods and Greece’s highest mountain.",
+    "seoMetaDescription": "Explore Mt. Olympus on a 3D topographic map — mythic Greek high point to Mytikas, rugged massif terrain, elevation, and Aegean foothill approaches."
   },
   {
     "id": "mulhacen",
@@ -9492,7 +9574,8 @@
       "Mulhacén"
     ],
     "bestSeason": "Jun–Oct",
-    "whyNotable": "Iberia’s highest peak, rising above the Sierra Nevada."
+    "whyNotable": "Iberia’s highest peak, rising above the Sierra Nevada.",
+    "seoMetaDescription": "Explore Mulhacén on a 3D map — Iberia’s Sierra Nevada high point above Granada, long alpine walks, elevation stats, and Andalusian staging towns."
   },
   {
     "id": "teide",
@@ -9603,7 +9686,8 @@
       "Pico del Teide"
     ],
     "bestSeason": "May–Oct",
-    "whyNotable": "Spain’s highest mountain and a massive Atlantic volcano."
+    "whyNotable": "Spain’s highest mountain and a massive Atlantic volcano.",
+    "seoMetaDescription": "Explore Teide on a 3D topographic map — Spain’s Canary Islands high point, Tenerife caldera terrain, elevation, and Atlantic volcano approaches."
   },
   {
     "id": "citlaltepetl",
@@ -9714,7 +9798,8 @@
       "Citlaltépetl"
     ],
     "bestSeason": "Nov–Mar",
-    "whyNotable": "Alternate atlas entry for Mexico’s great ice volcano."
+    "whyNotable": "Alternate atlas entry for Mexico’s great ice volcano.",
+    "seoMetaDescription": "Explore Iztaccíhuatl on a 3D map — Mexico’s White Woman volcano beside Popocatépetl, snow ridge terrain, elevation stats, and Valley approaches."
   },
   {
     "id": "illampu",
@@ -9821,7 +9906,8 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ancohuma%2BIllampu.JPG"
     },
     "bestSeason": "May–Sep",
-    "whyNotable": "A sharp Cordillera Real giant north of Lake Titicaca."
+    "whyNotable": "A sharp Cordillera Real giant north of Lake Titicaca.",
+    "seoMetaDescription": "Explore Illampu on a 3D topographic map — steep Cordillera Real ice near Sorata, difficult Bolivian alpine terrain, elevation, and Altiplano staging."
   },
   {
     "id": "alpamayo",
@@ -9928,7 +10014,8 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alpamayo_12.jpg"
     },
     "bestSeason": "Jun–Aug",
-    "whyNotable": "Often called the world’s most beautiful mountain."
+    "whyNotable": "Often called the world’s most beautiful mountain.",
+    "seoMetaDescription": "Explore Alpamayo on a 3D map — the Cordillera Blanca’s fluted beauty peak, technical snow and ice, elevation stats, and classic Peru approaches."
   },
   {
     "id": "huayna",
@@ -10038,7 +10125,8 @@
       "Huayna Potosí"
     ],
     "bestSeason": "May–Sep",
-    "whyNotable": "La Paz’s backyard 6,000er — a classic first big Andean climb."
+    "whyNotable": "La Paz’s backyard 6,000er — a classic first big Andean climb.",
+    "seoMetaDescription": "Explore Huayna Potosí on a 3D topographic map — La Paz’s classic 6,000er training climb, glacier travel, elevation, and Cordillera Real huts."
   },
   {
     "id": "rittenhouse",
@@ -10120,7 +10208,8 @@
       "Mount Vinson"
     ],
     "bestSeason": "Nov–Jan",
-    "whyNotable": "Antarctica’s high point and a Seven Summits objective."
+    "whyNotable": "Antarctica’s high point and a Seven Summits objective.",
+    "seoMetaDescription": "Explore Mt. Vinson on a 3D map — Antarctica’s Ellsworth Mountains high point, polar expedition terrain, elevation stats, and Seven Summits staging."
   },
   {
     "id": "sidley",
@@ -10202,7 +10291,8 @@
       "Mount Sidley"
     ],
     "bestSeason": "Nov–Jan",
-    "whyNotable": "Antarctica’s highest volcano, remote even by polar standards."
+    "whyNotable": "Antarctica’s highest volcano, remote even by polar standards.",
+    "seoMetaDescription": "Explore Mt. Sidley on a 3D topographic map — Antarctica’s highest volcano in Marie Byrd Land, remote polar terrain, elevation, and expedition context."
   },
   {
     "id": "mitchell",
@@ -10309,7 +10399,8 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Carolina_Highway_128_in_Mount_Mitchell_State_Park.jpg"
     },
     "bestSeason": "May–Oct",
-    "whyNotable": "Highest peak east of the Mississippi in the U.S."
+    "whyNotable": "Highest peak east of the Mississippi in the U.S.",
+    "seoMetaDescription": "Explore Mt. Mitchell on a 3D map — highest U.S. peak east of the Mississippi, Appalachian topography, elevation stats, and North Carolina trails."
   },
   {
     "id": "katahdin",
@@ -10419,7 +10510,8 @@
       "Katahdin"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Northern terminus of the Appalachian Trail in Maine."
+    "whyNotable": "Northern terminus of the Appalachian Trail in Maine.",
+    "seoMetaDescription": "Explore Mt. Katahdin on a 3D topographic map — Maine’s high point and AT terminus, Knife Edge terrain, elevation, and Baxter State Park approaches."
   },
   {
     "id": "marcy",
@@ -10530,7 +10622,8 @@
       "Tahawus"
     ],
     "bestSeason": "Jun–Oct",
-    "whyNotable": "New York’s high point and the Adirondack crown."
+    "whyNotable": "New York’s high point and the Adirondack crown.",
+    "seoMetaDescription": "Explore Mt. Marcy on a 3D map — New York’s Adirondack high point, forest-to-alpine hike terrain, elevation stats, and classic High Peaks staging."
   },
   {
     "id": "washington",
@@ -10641,7 +10734,8 @@
       "Agiocochook"
     ],
     "bestSeason": "Jun–Sep",
-    "whyNotable": "Home to some of the world’s most extreme recorded weather."
+    "whyNotable": "Home to some of the world’s most extreme recorded weather.",
+    "seoMetaDescription": "Explore Mt. Washington on a 3D topographic map — New Hampshire’s Presidential weather peak, alpine trails, elevation, and White Mountains approaches."
   },
   {
     "id": "timpanogos",
@@ -10751,7 +10845,8 @@
       "Mount Timpanogos"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Utah’s beloved Wasatch giant above Utah Valley."
+    "whyNotable": "Utah’s beloved Wasatch giant above Utah Valley.",
+    "seoMetaDescription": "Explore Mt. Timpanogos on a 3D map — Utah Valley’s Wasatch classic, ridge and cirque terrain, elevation stats, and Wasatch Front trailheads."
   },
   {
     "id": "lonepeak",
@@ -10861,7 +10956,8 @@
       "Lone Peak"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "A sharp granite Wasatch summit above Salt Lake’s southern ridge."
+    "whyNotable": "A sharp granite Wasatch summit above Salt Lake’s southern ridge.",
+    "seoMetaDescription": "Explore Lone Peak on a 3D topographic map — sharp Wasatch granite above Salt Lake, scramble terrain, elevation, and southern ridge approaches."
   },
   {
     "id": "grandteton",
@@ -10972,7 +11068,8 @@
       "The Grand"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "The classic American alpine peak of the Teton Range."
+    "whyNotable": "The classic American alpine peak of the Teton Range.",
+    "seoMetaDescription": "Explore Grand Teton on a 3D map — the Teton Range’s classic American alpine peak, rock-and-snow routes, elevation, and Jenny Lake staging."
   },
   {
     "id": "moran",
@@ -11082,7 +11179,8 @@
       "Mount Moran"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "A broad Teton fortress above Jackson Lake."
+    "whyNotable": "A broad Teton fortress above Jackson Lake.",
+    "seoMetaDescription": "Explore Mt. Moran on a 3D topographic map — remote Teton fortress above Jackson Lake, alpine approaches, elevation stats, and serious rock routes."
   },
   {
     "id": "cloudpeak",
@@ -11180,7 +11278,8 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_east_from_the_summit_of_Cloud_Peak,_Big_Horn_Mountains,_Wyoming,_USA.jpg"
     },
     "bestSeason": "Jul–Sep",
-    "whyNotable": "High point of Wyoming’s Bighorn Mountains wilderness."
+    "whyNotable": "High point of Wyoming’s Bighorn Mountains wilderness.",
+    "seoMetaDescription": "Explore Cloud Peak on a 3D map — Wyoming’s Bighorn Mountains high point, wilderness scramble terrain, elevation, and glacier-carved basin approaches."
   },
   {
     "id": "blanca",
@@ -11291,7 +11390,8 @@
       "Sisnaajiní"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Monarch of the Sangre de Cristo and a sacred Navajo peak."
+    "whyNotable": "Monarch of the Sangre de Cristo and a sacred Navajo peak.",
+    "seoMetaDescription": "Explore Blanca Peak on a 3D topographic map — Sangre de Cristo monarch and Colorado fourteener, elevation stats, and San Luis Valley staging."
   },
   {
     "id": "crestone",
@@ -11401,7 +11501,8 @@
       "Crestone Peak"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "A rugged Colorado fourteener in the Crestone group."
+    "whyNotable": "A rugged Colorado fourteener in the Crestone group.",
+    "seoMetaDescription": "Explore Crestone Peak on a 3D map — rugged Sangre de Cristo fourteener, Crestone Needle linkups, elevation, and classic Colorado scramble terrain."
   },
   {
     "id": "capitol",
@@ -11511,7 +11612,8 @@
       "Capitol Peak"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "Colorado’s knife-edge fourteener near Aspen."
+    "whyNotable": "Colorado’s knife-edge fourteener near Aspen.",
+    "seoMetaDescription": "Explore Capitol Peak on a 3D topographic map — Aspen’s knife-edge Elk Mountains fourteener, committing Class 4 terrain, elevation, and trailheads."
   },
   {
     "id": "pyramid",
@@ -11621,7 +11723,8 @@
       "Pyramid Peak"
     ],
     "bestSeason": "Jul–Sep",
-    "whyNotable": "A steep Elk Mountains fourteener above Maroon Creek."
+    "whyNotable": "A steep Elk Mountains fourteener above Maroon Creek.",
+    "seoMetaDescription": "Explore Pyramid Peak on a 3D map — steep Elk Mountains fourteener above Maroon Creek, exposed ridges, elevation stats, and Aspen-area approaches."
   },
   {
     "id": "maunakea",
@@ -11741,7 +11844,8 @@
       "Mauna Kea volcano"
     ],
     "bestSeason": "Year-round; summit can be cold or snowy in winter",
-    "whyNotable": "Tallest mountain on Earth measured from ocean floor to summit, and one of the world’s great astronomy sites."
+    "whyNotable": "Tallest mountain on Earth measured from ocean floor to summit, and one of the world’s great astronomy sites.",
+    "seoMetaDescription": "Explore Mauna Kea on a 3D topographic map — Hawaii’s astronomy summit and ocean-floor giant, alpine cinder cones, elevation, and Big Island staging."
   },
   {
     "id": "sthelens",
@@ -11862,6 +11966,7 @@
       "St. Helens"
     ],
     "bestSeason": "Late spring–early fall for summit climbs",
-    "whyNotable": "The 1980 eruption reshaped the mountain and made it a living laboratory of volcanic recovery."
+    "whyNotable": "The 1980 eruption reshaped the mountain and made it a living laboratory of volcanic recovery.",
+    "seoMetaDescription": "Explore Mt. St. Helens on a 3D map — Cascade volcano remade in 1980, crater and lava-dome terrain, elevation stats, and Spirit Lake approaches."
   }
 ]

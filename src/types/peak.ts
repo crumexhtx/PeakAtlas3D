@@ -43,6 +43,11 @@ export type Peak = {
   country: string
   /** Short atlas blurb for the selected-peak dossier. */
   description: string
+  /**
+   * Search / OG meta description (120–150 characters) for peak page SEO.
+   * Prefer this over truncating `description` in document meta.
+   */
+  seoMetaDescription?: string
   /** Year of first recorded ascent, or descriptive note when unknown. */
   firstAscent: string
   /** Plain-language difficulty for atlas browsing. */
