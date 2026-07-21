@@ -127,8 +127,8 @@ export function softenSatelliteRaster(map: MapboxMap) {
 
 /**
  * Padding that keeps the summit in the open map (left of the dossier on
- * desktop, clear of the top-right card on mobile) and a bit lower than raw
- * geo-center, which reads high under steep pitch.
+ * desktop, clear of the top-right card on mobile) and near visual center
+ * under steep pitch.
  */
 export function peakFramePadding(): {
   top: number
@@ -140,15 +140,16 @@ export function peakFramePadding(): {
     typeof window !== 'undefined' &&
     window.matchMedia('(max-width: 800px)').matches
   if (narrow) {
-    // Top-right details card — bias framing down/left into open map.
+    // Top-right details card — mild bias into the open map, not hard left.
     return {
-      top: 88,
-      bottom: 56,
-      left: 28,
-      right: 120,
+      top: 76,
+      bottom: 72,
+      left: 36,
+      right: 108,
     }
   }
-  return { top: 110, bottom: 48, left: 36, right: 300 }
+  // Desktop dossier (~360px): reserve right space so summit centers in leftover map.
+  return { top: 96, bottom: 72, left: 48, right: 280 }
 }
 
 /** Leave room for browse bar (bottom) and top-right country card on phones. */
@@ -187,7 +188,7 @@ export function peakFramingCenter(
   lon: number,
   lat: number,
   bearingDeg: number,
-  offsetMeters = 520,
+  offsetMeters = 280,
 ): [number, number] {
   // Camera sits opposite bearing; shift center toward camera (behind the peak).
   const backBearing = ((bearingDeg + 180) * Math.PI) / 180

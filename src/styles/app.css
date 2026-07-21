@@ -383,6 +383,8 @@ a {
 .map-stage.is-peak-mode .atlas-map-wrap {
   position: absolute;
   inset: 0;
+  /* Allow map pan/pinch; dossier uses pan-y so users can scroll text separately. */
+  touch-action: pan-x pan-y pinch-zoom;
 }
 
 /* During peak orbit, hide bottom chrome so it cannot cover Skip / status. */
@@ -403,12 +405,25 @@ a {
   pointer-events: none;
 }
 
+.peak-overlay-panel .peak-seo-main,
 .peak-overlay-panel .details-sheet,
 .peak-overlay-panel .peak-dossier,
 .peak-overlay-panel .empty-state {
   pointer-events: auto;
   height: 100%;
   box-shadow: -12px 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.peak-overlay-panel .peak-seo-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  box-shadow: none;
+}
+
+.peak-overlay-panel .peak-seo-main > .details-sheet {
+  flex: 1;
+  min-height: 0;
 }
 
 .peak-overlay-panel .peak-dossier {
@@ -1053,11 +1068,34 @@ a {
 .peak-dossier {
   min-height: 0;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  /* Vertical pan in the dossier; map gestures stay outside this panel. */
+  touch-action: pan-y;
   padding: 1.25rem calc(1.35rem + var(--safe-right))
     calc(2rem + var(--safe-bottom)) 1.35rem;
   border-left: 1px solid var(--border);
   background: rgba(10, 16, 26, 0.94);
   animation: dossier-in 0.55s ease-out 0.08s both;
+}
+
+.peak-seo-qualifier {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--muted);
+}
+
+.peak-seo-map-blurb,
+.peak-seo-routes,
+.peak-seo-staging {
+  margin: 0.65rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.peak-seo-about .peak-description {
+  margin-top: 0.35rem;
 }
 
 @keyframes peak-stage-in {
@@ -1650,27 +1688,27 @@ a.trail-bubble-label-link:focus-visible {
 
 .spin-fun-fact-line line {
   stroke: rgba(232, 220, 190, 0.8);
-  stroke-width: 1.6;
-  stroke-dasharray: 4 3;
+  stroke-width: 1.25;
+  stroke-dasharray: 3 2.5;
 }
 
 .spin-fun-fact-line circle {
   fill: rgba(232, 220, 190, 0.98);
   stroke: rgba(10, 16, 26, 0.65);
-  stroke-width: 1.5;
+  stroke-width: 1.25;
 }
 
 .spin-fun-fact-card {
   position: absolute;
   top: 0;
   left: 0;
-  width: 272px;
+  width: 200px;
   padding: 0;
   border: 1px solid rgba(232, 220, 190, 0.32);
-  border-radius: 12px;
+  border-radius: 10px;
   background:
     linear-gradient(180deg, rgba(28, 38, 52, 0.96) 0%, rgba(12, 18, 28, 0.96) 100%);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.38);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   color: #f2efe6;
@@ -1682,24 +1720,24 @@ a.trail-bubble-label-link:focus-visible {
 .spin-fun-fact-country {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.45rem 0.75rem;
+  gap: 0.35rem;
+  padding: 0.28rem 0.55rem;
   background:
     linear-gradient(90deg, rgba(232, 220, 190, 0.16), rgba(79, 195, 247, 0.08));
   border-bottom: 1px solid rgba(232, 220, 190, 0.2);
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(232, 220, 190, 0.92);
 }
 
 .spin-fun-fact-flag {
   display: block;
-  width: 28px;
-  height: 20px;
+  width: 22px;
+  height: 16px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.45);
   box-sizing: border-box;
 }
@@ -1708,29 +1746,36 @@ a.trail-bubble-label-link:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 20px;
-  border-radius: 6px;
+  width: 22px;
+  height: 16px;
+  border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.45);
   background: rgba(255, 255, 255, 0.1);
-  font-size: 0.62rem;
+  font-size: 0.55rem;
   box-sizing: border-box;
 }
 
 .spin-fun-fact-peak {
   margin: 0;
-  padding: 0.55rem 0.8rem 0.2rem;
+  padding: 0.35rem 0.55rem 0.1rem;
   font-family: var(--font-display);
-  font-size: 1.02rem;
+  font-size: 0.88rem;
   letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .spin-fun-fact-text {
   margin: 0;
-  padding: 0 0.8rem 0.75rem;
-  font-size: 0.84rem;
-  line-height: 1.4;
+  padding: 0 0.55rem 0.5rem;
+  font-size: 0.72rem;
+  line-height: 1.35;
   color: rgba(242, 239, 230, 0.9);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @keyframes spin-fact-in {
@@ -1781,6 +1826,35 @@ a.trail-bubble-label-link:focus-visible {
   padding: 2rem;
   text-align: center;
   color: var(--muted);
+}
+
+.route-fallback {
+  display: grid;
+  place-content: center;
+  min-height: 100dvh;
+  padding: 2rem;
+  color: var(--muted);
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(79, 195, 247, 0.08), transparent),
+    var(--bg, #0a101a);
+}
+
+.atlas-map-fallback {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 45%, rgba(79, 195, 247, 0.12), transparent 65%),
+    #071018;
+}
+
+.atlas-map-fallback-copy {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
 }
 
 .map-missing-token code,
@@ -2199,18 +2273,24 @@ a.trail-bubble-label-link:focus-visible {
   }
 
   .spin-fun-fact-card {
-    width: min(220px, calc(100vw - 2.5rem));
-    border-radius: 10px;
+    width: min(168px, calc(100vw - 3.5rem));
+    border-radius: 8px;
+  }
+
+  .spin-fun-fact-country {
+    padding: 0.22rem 0.45rem;
+    font-size: 0.58rem;
   }
 
   .spin-fun-fact-peak {
-    font-size: 0.92rem;
-    padding: 0.45rem 0.65rem 0.15rem;
+    font-size: 0.8rem;
+    padding: 0.28rem 0.45rem 0.08rem;
   }
 
   .spin-fun-fact-text {
-    font-size: 0.76rem;
-    padding: 0 0.65rem 0.6rem;
+    font-size: 0.68rem;
+    padding: 0 0.45rem 0.42rem;
+    -webkit-line-clamp: 2;
   }
 
   .cinematic-overlay {

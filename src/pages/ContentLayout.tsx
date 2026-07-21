@@ -2,6 +2,10 @@ import { Link, NavLink, Outlet } from 'react-router-dom'
 import { useEffect } from 'react'
 import { ContentDisclaimer } from '../components/ContentDisclaimer'
 import { applyDocumentMeta, metaForAtlas } from '../lib/documentMeta'
+import {
+  prefetchAtlasShell,
+  scheduleIdleAtlasPrefetch,
+} from '../lib/prefetchAtlas'
 
 export function ContentLayout() {
   useEffect(() => {
@@ -9,16 +13,28 @@ export function ContentLayout() {
     return () => applyDocumentMeta(metaForAtlas(null))
   }, [])
 
+  useEffect(() => scheduleIdleAtlasPrefetch(), [])
+
   return (
     <div className="content-shell">
       <div className="content-topo" aria-hidden="true" />
       <header className="content-header">
-        <Link to="/" className="brand-block">
+        <Link
+          to="/"
+          className="brand-block"
+          onMouseEnter={prefetchAtlasShell}
+          onFocus={prefetchAtlasShell}
+        >
           <span className="brand-mark">PeakAtlas</span>
           <span className="brand-tag">3D</span>
         </Link>
         <nav className="site-nav" aria-label="Site">
-          <NavLink to="/" end>
+          <NavLink
+            to="/"
+            end
+            onMouseEnter={prefetchAtlasShell}
+            onFocus={prefetchAtlasShell}
+          >
             Atlas
           </NavLink>
           <NavLink to="/about">About</NavLink>

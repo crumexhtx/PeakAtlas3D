@@ -1,5 +1,4 @@
 import Map, {
-  Marker,
   NavigationControl,
   Source,
   type MapRef,
@@ -16,7 +15,6 @@ import { useUnits } from '../context/UnitsContext'
 import {
   buildCountrySummaries,
   getCountryBounds,
-  flagUrl,
   peakMatchesCountry,
 } from '../lib/countries'
 import {
@@ -106,6 +104,12 @@ const ORBIT_PITCH = 44
 const HERO_ZOOM = 13.35
 const HERO_PITCH = 50
 const HERO_BEARING = -28
+/**
+ * Look-at nudge toward the camera (meters). Keep modest so the summit stays
+ * near the visual center of the padded viewport under pitch.
+ */
+const ORBIT_FRAME_OFFSET_M = 220
+const HERO_FRAME_OFFSET_M = 280
 /** Full 360° orbit — paced slower for a calmer spin. */
 const SPIN_DURATION_MS = 26_400
 /** Shared duration for peak approach and leave (country/world) camera moves. */
@@ -381,13 +385,13 @@ export function AtlasMap({
         summit[0],
         summit[1],
         approachBearing,
-        380,
+        ORBIT_FRAME_OFFSET_M,
       )
       const heroCenter = peakFramingCenter(
         summit[0],
         summit[1],
         HERO_BEARING,
-        520,
+        HERO_FRAME_OFFSET_M,
       )
 
       if (prefersReducedMotion()) {
@@ -517,7 +521,7 @@ export function AtlasMap({
         activePeak.lon,
         activePeak.lat,
         HERO_BEARING,
-        520,
+        HERO_FRAME_OFFSET_M,
       ),
       zoom: HERO_ZOOM,
       pitch: HERO_PITCH,
@@ -539,8 +543,16 @@ export function AtlasMap({
     )
   }
 
+  const mapAriaLabel = activePeak
+    ? `${activePeak.name} interactive 3D topographic globe map`
+    : 'Interactive 3D world peak atlas globe map'
+
   return (
-    <div className={`atlas-map-wrap ${cinematic ? 'is-cinematic' : ''}`}>
+    <div
+      className={`atlas-map-wrap ${cinematic ? 'is-cinematic' : ''}`}
+      role="application"
+      aria-label={mapAriaLabel}
+    >
       <Map
         ref={mapRef}
         mapboxAccessToken={MAPBOX_TOKEN}

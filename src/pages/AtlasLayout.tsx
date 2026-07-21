@@ -1,8 +1,7 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react'
 import { Outlet, useMatch, useNavigate, useSearchParams } from 'react-router-dom'
 import { AppHeader } from '../components/AppHeader'
 import { AtlasHint } from '../components/AtlasHint'
-import { AtlasMap } from '../components/AtlasMap'
 import { EarthOnlyToggle } from '../components/EarthOnlyToggle'
 import { WorldTagline } from '../components/WorldTagline'
 import { AtlasProvider, type AtlasContextValue } from '../context/AtlasContext'
@@ -19,6 +18,23 @@ import {
 } from '../lib/countries'
 import { atlasHref, peakHref } from '../lib/routes'
 import type { Peak, PeakBrowseFilters } from '../types/peak'
+
+const AtlasMap = lazy(() =>
+  import('../components/AtlasMap').then((m) => ({ default: m.AtlasMap })),
+)
+
+function AtlasMapFallback() {
+  return (
+    <div
+      className="atlas-map-wrap atlas-map-fallback"
+      role="status"
+      aria-live="polite"
+      aria-label="Loading 3D map"
+    >
+      <p className="atlas-map-fallback-copy">Loading globe…</p>
+    </div>
+  )
+}
 
 const initialBrowse: PeakBrowseFilters = {
   country: '',
@@ -221,20 +237,22 @@ export function AtlasLayout() {
             cinematic ? ' is-cinematic' : ''
           }${earthOnlyActive ? ' is-earth-only' : ''}`}
         >
-          <AtlasMap
-            peaks={mapPeaks}
-            selectedCountry={selectedCountry}
-            activePeak={activePeak}
-            onSelectCountry={selectCountry}
-            onSelectPeak={openPeak}
-            cinematic={cinematic}
-            cinematicStatus={cinematicStatus}
-            onCinematicChange={onCinematicChange}
-            onSkipCinematic={skipCinematic}
-            skipNonce={skipNonce}
-            funFactsEnabled={!hintActive && !earthOnlyActive}
-            earthOnly={earthOnlyActive}
-          />
+          <Suspense fallback={<AtlasMapFallback />}>
+            <AtlasMap
+              peaks={mapPeaks}
+              selectedCountry={selectedCountry}
+              activePeak={activePeak}
+              onSelectCountry={selectCountry}
+              onSelectPeak={openPeak}
+              cinematic={cinematic}
+              cinematicStatus={cinematicStatus}
+              onCinematicChange={onCinematicChange}
+              onSkipCinematic={skipCinematic}
+              skipNonce={skipNonce}
+              funFactsEnabled={!hintActive && !earthOnlyActive}
+              earthOnly={earthOnlyActive}
+            />
+          </Suspense>
           <AtlasHint
             visible={isWorldView && !cinematic && !earthOnlyActive}
             onActiveChange={onHintActiveChange}

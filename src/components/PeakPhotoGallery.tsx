@@ -90,7 +90,7 @@ function PeakPhotoSlide({
   return (
     <img
       src={src}
-      alt={`${peakName} — view ${index + 1}`}
+      alt={`${peakName} mountain topography — photo ${index + 1}`}
       className={`peak-photo-slide ${active ? 'is-active' : ''}`}
       loading={eager ? 'eager' : 'lazy'}
       decoding="async"
