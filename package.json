@@ -18,8 +18,9 @@
     "enrich:lodging": "node scripts/enrich-lodging.mjs",
     "scrub:lodging": "node scripts/scrub-lodging.mjs",
     "fix:food-encoding": "node scripts/fix-food-encoding.mjs",
-    "validate:photos": "node scripts/validate-fix-photos.mjs",
-    "validate:photos:check": "node scripts/validate-fix-photos.mjs --check"
+    "validate:photos": "node scripts/validate-peak-photos.mjs",
+    "validate:photos:check": "node scripts/validate-peak-photos.mjs --check",
+    "promo:instagram": "node scripts/generate-instagram-promo.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

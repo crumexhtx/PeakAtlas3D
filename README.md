@@ -54,6 +54,7 @@ Open the URL Vite prints (usually `http://localhost:5173`).
 | `npm run enrich:lodging` | Refresh OSM lodging near peaks |
 | `npm run scrub:lodging` | Drop lodging farther than 50 mi from summit |
 | `npm run validate:photos:check` | Fail if peak photos look mismatched |
+| `npm run promo:instagram` | Build a 9:16 Instagram Reels promo for a peak (default: Matterhorn; needs `ffmpeg`) |
 | `npm run sitemap` | Regenerate `public/sitemap.xml` + `robots.txt` |
 | `npm run prerender` | Inject route meta into `dist/` (runs after Vite in `build`) |
 
@@ -77,3 +78,12 @@ To regenerate curated dossier fields:
 ```bash
 npm run enrich:content
 ```
+
+To generate an Instagram Reels–style (1080×1920) promo video for the Matterhorn page (or another peak):
+
+```bash
+npm run promo:instagram
+npm run promo:instagram -- --peak matterhorn --out output/matterhorn-instagram-promo.mp4
+```
+
+Requires `ffmpeg` with libx264 and librsvg. Output lands in `output/` (gitignored). Photo credits from Wikimedia Commons are burned into each frame.
