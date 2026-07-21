@@ -1,4 +1,5 @@
 import Map, {
+  Marker,
   NavigationControl,
   Source,
   type MapRef,
@@ -14,6 +15,7 @@ import { isUsPeak, TrailMarkers } from './TrailMarkers'
 import { useUnits } from '../context/UnitsContext'
 import {
   buildCountrySummaries,
+  flagUrl,
   getCountryBounds,
   peakMatchesCountry,
 } from '../lib/countries'
