@@ -126,6 +126,7 @@ export function metaForAtlas(country: string | null) {
 export function metaForPeak(peak: Peak, _country?: string | null) {
   const elevation = `${peak.elevationFt.toLocaleString('en-US')} ft`
   const description =
+    peak.seoMetaDescription?.trim() ||
     peak.description?.trim() ||
     `${peak.name} in the ${peak.range}, ${peak.country} — ${elevation}.`
   // Always /peak/:id — never ?country= or other query variants.
