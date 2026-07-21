@@ -4,6 +4,7 @@ import { AppHeader } from '../components/AppHeader'
 import { AtlasHint } from '../components/AtlasHint'
 import { AtlasMap } from '../components/AtlasMap'
 import { EarthOnlyToggle } from '../components/EarthOnlyToggle'
+import { WorldTagline } from '../components/WorldTagline'
 import { AtlasProvider, type AtlasContextValue } from '../context/AtlasContext'
 import { getPeakById, peaks } from '../data/catalog'
 import {
@@ -237,6 +238,9 @@ export function AtlasLayout() {
           <AtlasHint
             visible={isWorldView && !cinematic && !earthOnlyActive}
             onActiveChange={onHintActiveChange}
+          />
+          <WorldTagline
+            visible={isWorldView && !cinematic && !earthOnlyActive && !hintActive}
           />
           {isWorldView && (
             <EarthOnlyToggle active={earthOnlyActive} onToggle={toggleEarthOnly} />

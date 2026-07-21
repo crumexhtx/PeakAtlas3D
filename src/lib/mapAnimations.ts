@@ -1,6 +1,9 @@
 import type { Map as MapboxMap } from 'mapbox-gl'
 
-export const IDLE_ROTATE_DELAY_MS = 6_000
+/** Start world idle spin immediately on load (0 = no wait). */
+export const IDLE_ROTATE_DELAY_MS = 0
+/** Pause after user interaction before resuming world spin. */
+export const IDLE_ROTATE_RESUME_MS = 2_500
 /** Degrees of longitude advanced per animation frame on the world globe (~60fps baseline). */
 export const IDLE_ROTATE_SPEED_LNG = 0.045
 /** Cap idle/orbit paints — half the WebGL cost for nearly the same motion. */

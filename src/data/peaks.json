@@ -11250,10 +11250,16 @@
     ],
     "trails": [
       {
-        "name": "Lake Como Road"
+        "name": "Lake Como Road",
+        "note": "Standard approach from CO-150 / Lake Como Road",
+        "lat": 37.551,
+        "lon": -105.56
       },
       {
-        "name": "Northwest Face"
+        "name": "Northwest Ridge",
+        "note": "From Lake Como basin to the NW ridge scramble",
+        "lat": 37.575,
+        "lon": -105.52
       }
     ],
     "nearbyPlaces": [
@@ -11268,23 +11274,23 @@
     ],
     "photos": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Pinus_aristata%2C_2980_m%2C_above_Zapata_Falls%2C_Blanca_Peak%2C_Colorado.jpg/960px-Pinus_aristata%2C_2980_m%2C_above_Zapata_Falls%2C_Blanca_Peak%2C_Colorado.jpg",
-        "credit": "Cbarlow",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pinus_aristata,_2980_m,_above_Zapata_Falls,_Blanca_Peak,_Colorado.jpg"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/MtBlancaEast.jpg/1280px-MtBlancaEast.jpg",
+        "credit": "Meniscus",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MtBlancaEast.jpg"
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Blanca_Wetlands_and_Blanca_Peak_%2829279068390%29.jpg/960px-Blanca_Wetlands_and_Blanca_Peak_%2829279068390%29.jpg",
-        "credit": "Great Sand Dunes National Park and Preserve",
-        "license": "CC BY 2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blanca_Wetlands_and_Blanca_Peak_(29279068390).jpg"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Blanca_Peak%2C_May_2014.jpg/1280px-Blanca_Peak%2C_May_2014.jpg",
+        "credit": "Thomson200",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blanca_Peak,_May_2014.jpg"
       }
     ],
     "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Pinus_aristata%2C_2980_m%2C_above_Zapata_Falls%2C_Blanca_Peak%2C_Colorado.jpg/960px-Pinus_aristata%2C_2980_m%2C_above_Zapata_Falls%2C_Blanca_Peak%2C_Colorado.jpg",
-      "credit": "Cbarlow",
-      "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pinus_aristata,_2980_m,_above_Zapata_Falls,_Blanca_Peak,_Colorado.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/MtBlancaEast.jpg/1280px-MtBlancaEast.jpg",
+      "credit": "Meniscus",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MtBlancaEast.jpg"
     },
     "aliases": [
       "Blanca Peak",

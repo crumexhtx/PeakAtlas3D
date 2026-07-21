@@ -1,8 +1,14 @@
 import type { Peak } from '../types/peak'
+import {
+  peakTrailRoutesForPeak,
+  trailSourcesForPeak,
+} from '../data/peakTrailRoutes'
 
 const DEFAULT_TITLE = 'PeakAtlas3D — World Peak Atlas'
 const DEFAULT_DESCRIPTION =
   "Explore the world's mountain peaks on a Mapbox globe, then open a 3D terrain profile for each summit."
+
+const META_DESCRIPTION_MAX = 300
 
 function upsertMeta(
   attr: 'name' | 'property',
@@ -43,6 +49,40 @@ function peakImage(peak: Peak): string | undefined {
 
 function removeMeta(attr: 'name' | 'property', key: string) {
   document.head.querySelector(`meta[${attr}="${key}"]`)?.remove()
+}
+
+function clipDescription(text: string) {
+  if (text.length <= META_DESCRIPTION_MAX) return text
+  return `${text.slice(0, META_DESCRIPTION_MAX - 1).trimEnd()}…`
+}
+
+/** Peak meta description including popular trails + reference sources when curated. */
+export function peakSeoDescription(peak: Peak): string {
+  const base =
+    peak.whyNotable?.trim() ||
+    peak.description?.trim() ||
+    `${peak.name} in the ${peak.range}, ${peak.country} — ${peak.elevationFt.toLocaleString('en-US')} ft.`
+
+  const routes = peakTrailRoutesForPeak(peak.id)
+  const sources = trailSourcesForPeak(peak.id)
+  const catalogTrails = (peak.trails ?? [])
+    .map((t) => t.name)
+    .filter(Boolean)
+    .slice(0, 2)
+
+  const trailNames = routes.length
+    ? routes.map((r) => r.name)
+    : catalogTrails
+
+  const parts = [base]
+  if (trailNames.length) {
+    parts.push(`Popular trails: ${trailNames.join(', ')}.`)
+  }
+  if (sources.length) {
+    parts.push(`References: ${sources.map((s) => s.label).join(', ')}.`)
+  }
+
+  return clipDescription(parts.join(' '))
 }
 
 export function applyDocumentMeta(input: {
@@ -101,16 +141,12 @@ export function metaForAtlas(country: string | null) {
 }
 
 export function metaForPeak(peak: Peak, _country?: string | null) {
-  const elevation = `${peak.elevationFt.toLocaleString('en-US')} ft`
-  const description =
-    peak.description?.trim() ||
-    `${peak.name} in the ${peak.range}, ${peak.country} — ${elevation}.`
   // Canonicalize without ?country= so Google doesn't treat nav variants as duplicates.
   const path = `/peak/${peak.id}`
 
   return {
     title: `${peak.name} 3D Interactive Map & Base Town Lodging | PeakAtlas3D`,
-    description,
+    description: peakSeoDescription(peak),
     image: peakImage(peak),
     path,
   }

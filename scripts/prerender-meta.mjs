@@ -37,10 +37,37 @@ function peakImage(peak) {
 }
 
 function peakDescription(peak) {
-  const text =
+  const base =
     peak.whyNotable?.trim() ||
     peak.description?.trim() ||
     `${peak.name} in the ${peak.range}, ${peak.country}.`
+
+  const trails = (peak.trails || [])
+    .map((t) => t?.name)
+    .filter(Boolean)
+    .slice(0, 2)
+
+  const coFourteeners = new Set([
+    'elbert',
+    'longs',
+    'pikes',
+    'blanca',
+    'crestone',
+    'capitol',
+    'pyramid',
+  ])
+
+  const parts = [base]
+  if (trails.length) {
+    parts.push(`Popular trails: ${trails.join(', ')}.`)
+  }
+  if (coFourteeners.has(peak.id)) {
+    parts.push('References: 14ers.com.')
+  } else if (peak.country === 'USA' && trails.length) {
+    parts.push('References: NPS, USFS, or state park sources.')
+  }
+
+  const text = parts.join(' ')
   return text.length > 300 ? `${text.slice(0, 297)}…` : text
 }
 

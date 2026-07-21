@@ -11,6 +11,7 @@ import { FlagPeakMarker } from './FlagPeakMarker'
 import { CountryFlagsLayer } from './CountryFlagsLayer'
 import { NearbyPlaceMarker } from './NearbyPlaceMarker'
 import { SpinFunFact } from './SpinFunFact'
+import { isUsPeak, TrailMarkers } from './TrailMarkers'
 import { useUnits } from '../context/UnitsContext'
 import {
   buildCountrySummaries,
@@ -34,6 +35,7 @@ import {
   easeToAsync,
   flyToAsync,
   IDLE_ROTATE_DELAY_MS,
+  IDLE_ROTATE_RESUME_MS,
   orbitAsync,
   peakFramePadding,
   peakFramingCenter,
@@ -67,17 +69,18 @@ type AtlasMapProps = {
  * Desktop world framing — fills the stage without over-zooming (closer zoom
  * costs more satellite detail while the idle globe spins).
  */
-const WORLD_ZOOM = 1.0
+/** ~20% closer than the original full-disk framing. */
+const WORLD_ZOOM = 1.2
 /**
  * World framing matched to the reference phone shot: full Earth disk
  * visible with clear margin (not clipped, not tiny).
  */
-const WORLD_ZOOM_NARROW = 0.75
+const WORLD_ZOOM_NARROW = 0.9
 /**
  * iPhone SE (~375×667): map pane is shorter after header/browse chrome,
  * so ease out a touch vs taller phones while keeping the same look.
  */
-const WORLD_ZOOM_SE = 0.7
+const WORLD_ZOOM_SE = 0.84
 
 /** Fresh random globe framing for each full page load / refresh. */
 function createRandomWorldView() {
@@ -238,25 +241,26 @@ export function AtlasMap({
     const map = getMap()
     if (!map) return
 
-    const scheduleIdleSpin = () => {
+    const scheduleIdleSpin = (delayMs: number) => {
       clearIdleTimer()
       stopSpin()
       idleTimerRef.current = window.setTimeout(() => {
         stopSpin()
         spinRef.current = startIdleSpin(map)
         setSpinning(true)
-      }, IDLE_ROTATE_DELAY_MS)
+      }, delayMs)
     }
 
     const onUserActivity = () => {
       stopSpin()
-      scheduleIdleSpin()
+      scheduleIdleSpin(IDLE_ROTATE_RESUME_MS)
     }
 
     for (const event of ACTIVITY_EVENTS) {
       map.on(event, onUserActivity)
     }
-    scheduleIdleSpin()
+    // Start rotating as soon as the world globe is ready.
+    scheduleIdleSpin(IDLE_ROTATE_DELAY_MS)
 
     return () => {
       clearIdleTimer()
@@ -478,6 +482,9 @@ export function AtlasMap({
       } catch {
         // ignore
       }
+      // Always unlock — peak→peak switches were leaving interaction disabled
+      // when the previous intro was cancelled mid-flight.
+      setMapInteractive(map, true)
       // StrictMode remounts effects in dev: clear the "already played" marker so
       // the second mount can schedule playIntro for the same peak.
       if (prevPeakIdRef.current === peakId) {
@@ -486,6 +493,7 @@ export function AtlasMap({
       // Only signal leave when the latest render is no longer this peak
       // (StrictMode remount keeps the same peak id — skip the flag).
       if (latestPeakIdRef.current !== peakId) {
+        onCinematicChangeRef.current({ active: false, status: '' })
         // Signal the country/world effect (runs after cleanups) to refit the camera.
         leavingPeakRef.current = true
       }
@@ -600,6 +608,9 @@ export function AtlasMap({
                   units={units}
                 />
               ))}
+            {!cinematic && !earthOnly && isUsPeak(activePeak) && (
+              <TrailMarkers peak={activePeak} />
+            )}
           </>
         )}
       </Map>

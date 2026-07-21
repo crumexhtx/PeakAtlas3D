@@ -9,6 +9,13 @@ import {
 import { flagUrl } from '../lib/countries'
 import { useUnits } from '../context/UnitsContext'
 import { PeakPhotoGallery } from './PeakPhotoGallery'
+import {
+  peakHasTrailRoutes,
+  peakTrailRoutesForPeak,
+  routeDetailNote,
+  trailSourcesForPeak,
+} from '../data/peakTrailRoutes'
+import { trailLabelsForPeak } from './TrailMarkers'
 
 type PeakDossierProps = {
   peak: Peak
@@ -61,6 +68,15 @@ export function PeakDossier({ peak, deferMedia = false }: PeakDossierProps) {
   const [showNearby, setShowNearby] = useState(false)
   const flag = flagUrl(peak.country, 40)
   const photos = useMemo(() => peakPhotos(peak), [peak])
+  const curatedRoutes = useMemo(
+    () => peakTrailRoutesForPeak(peak.id),
+    [peak.id],
+  )
+  const trailLabels = useMemo(() => trailLabelsForPeak(peak), [peak])
+  const trailSources = useMemo(
+    () => trailSourcesForPeak(peak.id),
+    [peak.id],
+  )
   const nearby = peak.nearbyPlaces?.length
     ? peak.nearbyPlaces
     : peak.nearestTown
@@ -72,6 +88,10 @@ export function PeakDossier({ peak, deferMedia = false }: PeakDossierProps) {
   const lodgingFromOsm =
     lodging.length > 0 && lodging.every((h) => isOsmAmenity(h))
   const hasStaySection = lodging.length > 0 || food.length > 0
+  const hasCuratedRoutes = peakHasTrailRoutes(peak.id)
+  const hasPopularTrails = trailLabels.length > 0
+  const primarySource = trailSources[0]
+  const showReferences = trailSources.length > 0 || lodgingFromOsm
 
   return (
     <aside className="peak-dossier">
@@ -152,14 +172,62 @@ export function PeakDossier({ peak, deferMedia = false }: PeakDossierProps) {
         </section>
       )}
 
-      {peak.trails && peak.trails.length > 0 && (
+      {hasPopularTrails && (
         <section className="info-block">
-          <h2 className="info-heading">Notable trails</h2>
-          <ul className="plain-list">
-            {peak.trails.map((t) => (
-              <li key={t.name}>{t.name}</li>
-            ))}
-          </ul>
+          <h2 className="info-heading">Popular trails</h2>
+          {hasCuratedRoutes && primarySource ? (
+            <>
+              <p className="trail-source-credit">
+                Route details from{' '}
+                <a
+                  className="trail-dossier-link"
+                  href={primarySource.home}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {primarySource.label}
+                </a>
+                . Tap a route for the full page.
+              </p>
+              <ul className="plain-list trail-label-list">
+                {curatedRoutes.map((route) => (
+                  <li key={`${route.name}-${route.sourceUrl}`}>
+                    <a
+                      className="trail-bubble-label trail-bubble-label-link"
+                      href={route.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {route.name}
+                    </a>
+                    <span className="trail-dossier-note">
+                      {' '}
+                      — {routeDetailNote(route)} ·{' '}
+                      <a
+                        className="trail-dossier-link"
+                        href={route.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {route.sourceLabel}
+                      </a>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <ul className="plain-list trail-label-list">
+              {trailLabels.map((t) => (
+                <li key={t.name}>
+                  <span className="trail-bubble-label">{t.name}</span>
+                  {t.note ? (
+                    <span className="trail-dossier-note"> — {t.note}</span>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
       )}
 
@@ -229,6 +297,48 @@ export function PeakDossier({ peak, deferMedia = false }: PeakDossierProps) {
               )}
             </div>
           )}
+        </section>
+      )}
+
+      {showReferences && (
+        <section className="info-block">
+          <h2 className="info-heading">References</h2>
+          <ul className="plain-list reference-list">
+            {trailSources.map((source) => (
+              <li key={`${source.label}-${source.home}`}>
+                <a
+                  className="trail-dossier-link"
+                  href={source.home}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {source.label}
+                </a>
+                <span className="trail-dossier-note">
+                  {source.label === '14ers.com'
+                    ? ' — Colorado route descriptions, trailheads, and GPX (account required for downloads). PeakAtlas lists popular route names only; always verify conditions before you climb.'
+                    : ' — Official or agency route information for popular approaches. PeakAtlas lists trail names and outbound links only; always verify conditions, permits, and current status before you climb.'}
+                </span>
+              </li>
+            ))}
+            {lodgingFromOsm && (
+              <li>
+                <a
+                  className="trail-dossier-link"
+                  href="https://www.openstreetmap.org/copyright"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  OpenStreetMap
+                </a>
+                <span className="trail-dossier-note">
+                  {' '}
+                  — nearby lodging points. Coverage varies; confirm availability
+                  before you travel.
+                </span>
+              </li>
+            )}
+          </ul>
         </section>
       )}
     </aside>
