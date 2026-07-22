@@ -251,7 +251,8 @@ a {
 }
 
 .search-result:hover,
-.search-result:focus-visible {
+.search-result:focus-visible,
+.search-result.is-active {
   background: var(--accent-soft);
   outline: none;
 }
@@ -1080,8 +1081,13 @@ a {
 }
 
 .peak-seo-qualifier {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  line-height: 1.25;
   color: var(--muted);
 }
 

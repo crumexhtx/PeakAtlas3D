@@ -3,6 +3,7 @@ import {
   peakTrailRoutesForPeak,
   trailSourcesForPeak,
 } from '../data/peakTrailRoutes'
+import { peakLocationLabel } from './peakLocation'
 
 /** Production origin for canonical / OG / JSON-LD URLs (never include query strings). */
 export const SITE_ORIGIN = 'https://peakatlas3d.com'
@@ -78,10 +79,11 @@ function clipDescription(text: string) {
 
 /** Peak meta description including popular trails + reference sources when curated. */
 export function peakSeoDescription(peak: Peak): string {
+  const location = peakLocationLabel(peak)
   const base =
     peak.whyNotable?.trim() ||
     peak.description?.trim() ||
-    `${peak.name} in the ${peak.range}, ${peak.country} — ${peak.elevationFt.toLocaleString('en-US')} ft.`
+    `${peak.name} in the ${peak.range}, ${location} — ${peak.elevationFt.toLocaleString('en-US')} ft.`
 
   const routes = peakTrailRoutesForPeak(peak.id)
   const sources = trailSourcesForPeak(peak.id)
@@ -95,6 +97,9 @@ export function peakSeoDescription(peak: Peak): string {
     : catalogTrails
 
   const parts = [base]
+  if (!base.toLowerCase().includes(location.toLowerCase())) {
+    parts.push(`Location: ${location}.`)
+  }
   if (trailNames.length) {
     parts.push(`Popular trails: ${trailNames.join(', ')}.`)
   }
@@ -167,12 +172,17 @@ export function metaForPeak(peak: Peak, _country?: string | null) {
   // Prefer curated seoMetaDescription when present; otherwise build trails + refs.
   // Always /peak/:id — never ?country= or other query variants.
   const path = `/peak/${peak.id}`
+  const location = peakLocationLabel(peak)
   const description =
     peak.seoMetaDescription?.trim() || peakSeoDescription(peak)
+  const withLocation =
+    description.toLowerCase().includes(location.toLowerCase())
+      ? description
+      : clipDescription(`${description} Location: ${location}.`)
 
   return {
-    title: `${peak.name} 3D Interactive Map & Base Town Lodging | PeakAtlas3D`,
-    description,
+    title: `${peak.name} 3D Map & Topography · ${location} | PeakAtlas3D`,
+    description: withLocation,
     image: peakImage(peak),
     path,
   }

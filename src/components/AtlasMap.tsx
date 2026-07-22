@@ -6,7 +6,7 @@ import Map, {
 } from 'react-map-gl/mapbox'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Map as MapboxMap } from 'mapbox-gl'
-import type { Peak } from '../types/peak'
+import type { Peak, PeakIndex } from '../types/peak'
 import { FlagPeakMarker } from './FlagPeakMarker'
 import { CountryFlagsLayer } from './CountryFlagsLayer'
 import { NearbyPlaceMarker } from './NearbyPlaceMarker'
@@ -49,11 +49,11 @@ import {
 import 'mapbox-gl/dist/mapbox-gl.css'
 
 type AtlasMapProps = {
-  peaks: Peak[]
+  peaks: PeakIndex[]
   selectedCountry: string | null
   activePeak: Peak | null
   onSelectCountry: (country: string) => void
-  onSelectPeak: (peak: Peak) => void
+  onSelectPeak: (peak: PeakIndex) => void
   cinematic: boolean
   cinematicStatus: string
   onCinematicChange: (next: { active: boolean; status: string }) => void

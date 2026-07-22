@@ -1,5 +1,5 @@
 import { createContext, useContext, type ReactNode } from 'react'
-import type { Peak } from '../types/peak'
+import type { Peak, PeakIndex } from '../types/peak'
 import type { PeakBrowseFilters } from '../types/peak'
 
 export type AtlasMode = 'world' | 'country' | 'peak'
@@ -9,7 +9,9 @@ export type AtlasContextValue = {
   browse: PeakBrowseFilters
   selectedCountry: string | null
   activePeak: Peak | null
-  mapPeaks: Peak[]
+  /** True while the full peak dossier catalog is loading for a peak route. */
+  peakLoading: boolean
+  mapPeaks: PeakIndex[]
   cinematic: boolean
   cinematicStatus: string
   /** Hide chrome so only the globe and flags remain. */
@@ -18,7 +20,7 @@ export type AtlasContextValue = {
   setBrowse: (next: PeakBrowseFilters) => void
   selectCountry: (country: string) => void
   clearCountry: () => void
-  openPeak: (peak: Peak) => void
+  openPeak: (peak: PeakIndex) => void
   skipCinematic: () => void
 }
 

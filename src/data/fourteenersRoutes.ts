@@ -125,6 +125,88 @@ export const FOURTEENERS_ROUTES: Record<string, FourteenersRoute[]> = {
       sourceUrl: 'https://www.14ers.com/route.php?route=pyra1',
     },
   ],
+  massive: [
+    {
+      name: 'East Slopes',
+      trailhead: 'Mt. Massive / North Halfmoon Creek',
+      difficulty: 'Class 2',
+      roundTripMiles: 14.5,
+      elevationGainFt: 4500,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=mass1',
+    },
+    {
+      name: 'Southwest Slopes',
+      trailhead: 'Mt. Massive Trailhead',
+      difficulty: 'Class 2',
+      roundTripMiles: 13.5,
+      elevationGainFt: 4400,
+      sourceUrl: 'https://www.14ers.com/route.php?route=mass2',
+    },
+  ],
+  quandary: [
+    {
+      name: 'East Ridge',
+      trailhead: 'Quandary (East Ridge)',
+      difficulty: 'Class 1',
+      roundTripMiles: 6.75,
+      elevationGainFt: 3450,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=quan1',
+    },
+  ],
+  grays: [
+    {
+      name: 'North Slopes',
+      trailhead: 'Grays Peak',
+      difficulty: 'Class 1',
+      roundTripMiles: 7.5,
+      elevationGainFt: 3000,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=gray1',
+    },
+    {
+      name: 'Grays and Torreys Combo',
+      trailhead: 'Grays Peak',
+      difficulty: 'Class 2',
+      roundTripMiles: 8.25,
+      elevationGainFt: 3600,
+      sourceUrl: 'https://www.14ers.com/route.php?route=gray1',
+    },
+  ],
+  torreys: [
+    {
+      name: 'South Slopes (via Grays)',
+      trailhead: 'Grays Peak',
+      difficulty: 'Class 2',
+      roundTripMiles: 8.25,
+      elevationGainFt: 3600,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=torr1',
+    },
+  ],
+  bierstadt: [
+    {
+      name: 'West Slopes',
+      trailhead: 'Guanella Pass',
+      difficulty: 'Class 2',
+      roundTripMiles: 7,
+      elevationGainFt: 2850,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=bier1',
+    },
+  ],
+  maroon: [
+    {
+      name: 'South Ridge',
+      trailhead: 'Maroon Lake',
+      difficulty: 'Class 3',
+      roundTripMiles: 11.5,
+      elevationGainFt: 4800,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=maro1',
+    },
+  ],
 }
 
 export function fourteenersRoutesForPeak(peakId: string): FourteenersRoute[] {

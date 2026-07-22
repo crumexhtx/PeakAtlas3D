@@ -1,12 +1,12 @@
 import { Link, NavLink } from 'react-router-dom'
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
-import type { Peak } from '../types/peak'
+import type { PeakIndex } from '../types/peak'
 import { formatElevation, searchPeaks } from '../lib/geo'
 import { useUnits } from '../context/UnitsContext'
 
 type AppHeaderProps = {
-  peaks: Peak[]
-  onSelectPeak: (peak: Peak) => void
+  peaks: PeakIndex[]
+  onSelectPeak: (peak: PeakIndex) => void
   showBack?: boolean
   /** Where ← Atlas / brand should return (e.g. /?country=USA). */
   atlasHref?: string
@@ -21,9 +21,14 @@ export function AppHeader({
   const { units, setUnits } = useUnits()
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
+  const [activeIndex, setActiveIndex] = useState(-1)
   const listId = useId()
+  const statusId = useId()
   const wrapRef = useRef<HTMLDivElement>(null)
   const results = useMemo(() => searchPeaks(peaks, query).slice(0, 8), [peaks, query])
+  const listOpen = open && query.trim().length > 0
+  const activePeak = activeIndex >= 0 ? results[activeIndex] : undefined
+  const activeOptionId = activePeak ? `${listId}-opt-${activePeak.id}` : undefined
 
   useEffect(() => {
     function onDocClick(e: MouseEvent) {
@@ -32,6 +37,23 @@ export function AppHeader({
     document.addEventListener('mousedown', onDocClick)
     return () => document.removeEventListener('mousedown', onDocClick)
   }, [])
+
+  useEffect(() => {
+    setActiveIndex(results.length ? 0 : -1)
+  }, [query, results.length])
+
+  function selectPeak(peak: PeakIndex) {
+    onSelectPeak(peak)
+    setQuery(peak.name)
+    setOpen(false)
+    setActiveIndex(-1)
+  }
+
+  const statusMessage = !listOpen
+    ? ''
+    : results.length === 0
+      ? 'No peaks found'
+      : `${results.length} peak${results.length === 1 ? '' : 's'} available`
 
   return (
     <header className={`app-header${showBack ? ' is-peak' : ''}`}>
@@ -59,35 +81,73 @@ export function AppHeader({
           value={query}
           autoComplete="off"
           role="combobox"
-          aria-expanded={open && results.length > 0}
+          aria-expanded={listOpen}
           aria-controls={listId}
           aria-autocomplete="list"
+          aria-activedescendant={activeOptionId}
+          aria-describedby={statusId}
           onChange={(e) => {
             setQuery(e.target.value)
             setOpen(true)
           }}
           onFocus={() => setOpen(true)}
           onKeyDown={(e) => {
-            if (e.key === 'Enter' && results[0]) {
-              onSelectPeak(results[0])
-              setQuery(results[0].name)
+            if (e.key === 'Escape') {
               setOpen(false)
+              setActiveIndex(-1)
+              return
             }
-            if (e.key === 'Escape') setOpen(false)
+            if (!listOpen) return
+
+            if (e.key === 'ArrowDown') {
+              e.preventDefault()
+              if (!results.length) return
+              setActiveIndex((i) => (i + 1) % results.length)
+              return
+            }
+            if (e.key === 'ArrowUp') {
+              e.preventDefault()
+              if (!results.length) return
+              setActiveIndex((i) => (i <= 0 ? results.length - 1 : i - 1))
+              return
+            }
+            if (e.key === 'Home') {
+              e.preventDefault()
+              if (results.length) setActiveIndex(0)
+              return
+            }
+            if (e.key === 'End') {
+              e.preventDefault()
+              if (results.length) setActiveIndex(results.length - 1)
+              return
+            }
+            if (e.key === 'Enter') {
+              const peak = activePeak ?? results[0]
+              if (peak) {
+                e.preventDefault()
+                selectPeak(peak)
+              }
+            }
           }}
         />
-        {open && results.length > 0 && (
+        <div id={statusId} className="sr-only" role="status" aria-live="polite">
+          {statusMessage}
+        </div>
+        {listOpen && results.length > 0 && (
           <ul id={listId} className="search-results" role="listbox">
-            {results.map((peak) => (
-              <li key={peak.id} role="option">
+            {results.map((peak, index) => (
+              <li
+                key={peak.id}
+                id={`${listId}-opt-${peak.id}`}
+                role="option"
+                aria-selected={index === activeIndex}
+              >
                 <button
                   type="button"
-                  className="search-result"
-                  onClick={() => {
-                    onSelectPeak(peak)
-                    setQuery(peak.name)
-                    setOpen(false)
-                  }}
+                  className={`search-result${index === activeIndex ? ' is-active' : ''}`}
+                  tabIndex={-1}
+                  onClick={() => selectPeak(peak)}
+                  onMouseEnter={() => setActiveIndex(index)}
                 >
                   <span className="result-name">{peak.name}</span>
                   <span className="result-meta">

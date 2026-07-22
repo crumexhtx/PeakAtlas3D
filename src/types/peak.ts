@@ -31,7 +31,11 @@ export type PeakPhoto = {
   sourceUrl: string
 }
 
-export type Peak = {
+/**
+ * Lightweight peak row for map markers, country summaries, and search.
+ * Heavy dossier fields (photos, amenities) live only on {@link Peak}.
+ */
+export type PeakIndex = {
   id: string
   name: string
   lat: number
@@ -41,6 +45,23 @@ export type Peak = {
   prominenceFt: number
   range: string
   country: string
+  /** Alternate / local names used in search. */
+  aliases?: string[]
+  /** Year of first recorded ascent, or descriptive note when unknown. */
+  firstAscent?: string
+  /** Plain-language difficulty for atlas browsing. */
+  difficulty?: string
+  /** Typical climbing or visiting window (plain language). */
+  bestSeason?: string
+  /** One-line hook for why the peak matters in the atlas. */
+  whyNotable?: string
+  /** Short atlas blurb (optional on the index; required on full Peak). */
+  description?: string
+  /** Gate-town name for spin fun-facts without shipping full town geometry. */
+  nearestTown?: Pick<Town, 'name' | 'region' | 'distanceMiles'>
+}
+
+export type Peak = PeakIndex & {
   /** Short atlas blurb for the selected-peak dossier. */
   description: string
   /**
@@ -52,12 +73,6 @@ export type Peak = {
   firstAscent: string
   /** Plain-language difficulty for atlas browsing. */
   difficulty: string
-  /** Alternate / local names used in search and the dossier. */
-  aliases?: string[]
-  /** Typical climbing or visiting window (plain language). */
-  bestSeason?: string
-  /** One-line hook for why the peak matters in the atlas. */
-  whyNotable?: string
   /** Up to two summit / approach stills with attribution (dossier rotates them). */
   photos?: PeakPhoto[]
   /** @deprecated Prefer `photos[0]`; kept for older enriched rows. */

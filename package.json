@@ -6,10 +6,15 @@
   "scripts": {
     "dev": "vite",
     "sitemap": "node scripts/generate-sitemap.mjs",
-    "prebuild": "npm run sitemap",
+    "peaks:index": "node scripts/generate-peaks-index.mjs",
+    "validate:catalog": "node scripts/validate-catalog.mjs",
+    "prebuild": "npm run peaks:index && npm run validate:catalog && npm run sitemap",
     "build": "tsc -b && vite build && node scripts/prerender-meta.mjs",
     "prerender": "node scripts/prerender-meta.mjs",
     "lint": "oxlint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
     "preview": "vite preview",
     "enrich:photos-places": "node scripts/enrich-photos-places.mjs",
     "enrich:photos": "node scripts/enrich-photos.mjs",
@@ -30,12 +35,14 @@
     "react-router-dom": "^7.18.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.54.2",
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.3",
     "oxlint": "^1.71.0",
     "typescript": "~6.0.2",
-    "vite": "^8.1.1"
+    "vite": "^8.1.1",
+    "vitest": "^3.2.4"
   }
 }

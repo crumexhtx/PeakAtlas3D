@@ -1,4 +1,4 @@
-import type { Peak } from '../types/peak'
+import type { PeakIndex } from '../types/peak'
 import type { CountrySummary } from '../types/country'
 
 /** Map PeakAtlas country labels to ISO 3166-1 alpha-2 codes for flag CDN. */
@@ -107,7 +107,7 @@ export function flagUrl(country: string, size: 20 | 40 | 80 = 40): string | null
   return `https://flagcdn.com/w${size}/${iso}.png`
 }
 
-function sphericalMean(peaks: Peak[]): { lat: number; lon: number } {
+function sphericalMean(peaks: PeakIndex[]): { lat: number; lon: number } {
   let x = 0
   let y = 0
   let z = 0
@@ -145,9 +145,9 @@ function pickPrimaryLabel(labels: string[], iso: string | null): string {
  * One atlas entry per country (ISO), for a single world-globe flag
  * placed at the country’s geographic center of mass.
  */
-export function buildCountrySummaries(peaks: Peak[]): CountrySummary[] {
-  const byIso = new Map<string, Peak[]>()
-  const unknown: Peak[] = []
+export function buildCountrySummaries(peaks: PeakIndex[]): CountrySummary[] {
+  const byIso = new Map<string, PeakIndex[]>()
+  const unknown: PeakIndex[] = []
 
   for (const peak of peaks) {
     const iso = countryToIso(peak.country)
@@ -224,14 +224,14 @@ export function labelsForCountry(
 }
 
 export function peakMatchesCountry(
-  peak: Peak,
+  peak: PeakIndex,
   selected: string,
   summaries: CountrySummary[],
 ): boolean {
   return labelsForCountry(selected, summaries).includes(peak.country)
 }
 
-export function getCountryBounds(peaks: Peak[]): [[number, number], [number, number]] | null {
+export function getCountryBounds(peaks: PeakIndex[]): [[number, number], [number, number]] | null {
   if (peaks.length === 0) return null
 
   let minLon = peaks[0].lon

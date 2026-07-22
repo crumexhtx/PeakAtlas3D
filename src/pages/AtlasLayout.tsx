@@ -5,7 +5,7 @@ import { AtlasHint } from '../components/AtlasHint'
 import { EarthOnlyToggle } from '../components/EarthOnlyToggle'
 import { WorldTagline } from '../components/WorldTagline'
 import { AtlasProvider, type AtlasContextValue } from '../context/AtlasContext'
-import { getPeakById, peaks } from '../data/catalog'
+import { getPeakById, peaksIndex } from '../data/catalog'
 import {
   applyDocumentMeta,
   metaForAtlas,
@@ -17,7 +17,7 @@ import {
   peakMatchesCountry,
 } from '../lib/countries'
 import { atlasHref, peakHref } from '../lib/routes'
-import type { Peak, PeakBrowseFilters } from '../types/peak'
+import type { Peak, PeakBrowseFilters, PeakIndex } from '../types/peak'
 
 const AtlasMap = lazy(() =>
   import('../components/AtlasMap').then((m) => ({ default: m.AtlasMap })),
@@ -47,7 +47,10 @@ export function AtlasLayout() {
   const [searchParams, setSearchParams] = useSearchParams()
   const peakMatch = useMatch('/peak/:peakId')
   const peakId = peakMatch?.params.peakId
-  const activePeak = peakId ? (getPeakById(peakId) ?? null) : null
+
+  const [activePeak, setActivePeak] = useState<Peak | null>(null)
+  const [peakLoading, setPeakLoading] = useState(() => Boolean(peakId))
+  const [peakMissing, setPeakMissing] = useState(false)
 
   const countryFromUrl = searchParams.get('country') ?? ''
 
@@ -60,6 +63,31 @@ export function AtlasLayout() {
   const [skipNonce, setSkipNonce] = useState(0)
   const [hintActive, setHintActive] = useState(false)
   const [earthOnly, setEarthOnly] = useState(false)
+
+  useEffect(() => {
+    if (!peakId) {
+      setActivePeak(null)
+      setPeakLoading(false)
+      setPeakMissing(false)
+      return
+    }
+
+    let cancelled = false
+    setPeakLoading(true)
+    setPeakMissing(false)
+    setActivePeak(null)
+
+    getPeakById(peakId).then((peak) => {
+      if (cancelled) return
+      setActivePeak(peak ?? null)
+      setPeakMissing(!peak)
+      setPeakLoading(false)
+    })
+
+    return () => {
+      cancelled = true
+    }
+  }, [peakId])
 
   const onHintActiveChange = useCallback((active: boolean) => {
     setHintActive(active)
@@ -100,7 +128,8 @@ export function AtlasLayout() {
   }, [isWorldView, earthOnly])
 
   useEffect(() => {
-    if (peakId && !activePeak) {
+    if (peakId && peakLoading) return
+    if (peakId && peakMissing) {
       applyDocumentMeta(metaForMissingPeak(peakId))
       return
     }
@@ -109,12 +138,12 @@ export function AtlasLayout() {
       return
     }
     applyDocumentMeta(metaForAtlas(selectedCountry))
-  }, [activePeak, peakId, selectedCountry])
+  }, [activePeak, peakId, peakLoading, peakMissing, selectedCountry])
 
-  const countrySummaries = useMemo(() => buildCountrySummaries(peaks), [])
+  const countrySummaries = useMemo(() => buildCountrySummaries(peaksIndex), [])
 
   const mapPeaks = useMemo(() => {
-    return peaks.filter((p) => {
+    return peaksIndex.filter((p) => {
       if (
         selectedCountry &&
         !peakMatchesCountry(p, selectedCountry, countrySummaries)
@@ -165,7 +194,7 @@ export function AtlasLayout() {
   }, [syncCountryToUrl])
 
   const openPeak = useCallback(
-    (peak: Peak) => {
+    (peak: PeakIndex) => {
       navigate(peakHref(peak.id, selectedCountry))
     },
     [navigate, selectedCountry],
@@ -184,13 +213,15 @@ export function AtlasLayout() {
   }, [])
 
   const backHref = atlasHref(selectedCountry || countryFromUrl || null)
+  const onPeakRoute = Boolean(peakId)
 
   const atlasValue = useMemo<AtlasContextValue>(
     () => ({
-      mode: activePeak ? 'peak' : selectedCountry ? 'country' : 'world',
+      mode: onPeakRoute ? 'peak' : selectedCountry ? 'country' : 'world',
       browse,
       selectedCountry,
       activePeak,
+      peakLoading,
       mapPeaks,
       cinematic,
       cinematicStatus,
@@ -210,7 +241,9 @@ export function AtlasLayout() {
       clearCountry,
       earthOnlyActive,
       mapPeaks,
+      onPeakRoute,
       openPeak,
+      peakLoading,
       selectCountry,
       selectedCountry,
       setBrowse,
@@ -221,19 +254,19 @@ export function AtlasLayout() {
   return (
     <AtlasProvider value={atlasValue}>
       <div
-        className={`app-shell${activePeak ? ' peak-page' : ''}${
+        className={`app-shell${onPeakRoute ? ' peak-page' : ''}${
           earthOnlyActive ? ' is-earth-only' : ''
         }`}
       >
         <AppHeader
-          peaks={peaks}
-          showBack={Boolean(activePeak)}
-          atlasHref={activePeak ? backHref : '/'}
+          peaks={peaksIndex}
+          showBack={onPeakRoute}
+          atlasHref={onPeakRoute ? backHref : '/'}
           onSelectPeak={openPeak}
         />
 
         <div
-          className={`map-stage${activePeak ? ' is-peak-mode' : ''}${
+          className={`map-stage${onPeakRoute ? ' is-peak-mode' : ''}${
             cinematic ? ' is-cinematic' : ''
           }${earthOnlyActive ? ' is-earth-only' : ''}`}
         >

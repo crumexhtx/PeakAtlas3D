@@ -32,17 +32,56 @@ function escapeAttr(value) {
   return escapeHtml(value).replaceAll("'", '&#39;')
 }
 
+function peakLocationLabel(peak) {
+  const countryLevel = new Set([
+    'usa',
+    'united states',
+    'united states of america',
+    'u.s.',
+    'u.s.a.',
+  ])
+  const candidates = [
+    peak.nearestTown?.region,
+    peak.nearbyPlaces?.[0]?.region,
+  ]
+  let region = null
+  for (const raw of candidates) {
+    const value = typeof raw === 'string' ? raw.trim() : ''
+    if (!value) continue
+    if (countryLevel.has(value.toLowerCase())) continue
+    region = value
+    break
+  }
+  const country = String(peak.country || '').trim()
+  if (!region) return country
+  if (region.toLowerCase() === country.toLowerCase()) return country
+  if (country.toLowerCase().includes(region.toLowerCase())) return country
+  return `${region}, ${country}`
+}
+
+function peakRegion(peak) {
+  const label = peakLocationLabel(peak)
+  if (!label.includes(',')) return null
+  return label.split(',')[0].trim()
+}
+
 function peakImage(peak) {
   return peak.photos?.[0]?.url || peak.photo?.url || ''
 }
 
 function peakDescription(peak) {
-  if (peak.seoMetaDescription?.trim()) return peak.seoMetaDescription.trim()
+  const location = peakLocationLabel(peak)
+  if (peak.seoMetaDescription?.trim()) {
+    const curated = peak.seoMetaDescription.trim()
+    if (curated.toLowerCase().includes(location.toLowerCase())) return curated
+    const withLoc = `${curated} Location: ${location}.`
+    return withLoc.length > 300 ? `${withLoc.slice(0, 297)}…` : withLoc
+  }
 
   const base =
     peak.whyNotable?.trim() ||
     peak.description?.trim() ||
-    `${peak.name} in the ${peak.range}, ${peak.country}.`
+    `${peak.name} in the ${peak.range}, ${location}.`
 
   const trails = (peak.trails || [])
     .map((t) => t?.name)
@@ -57,9 +96,18 @@ function peakDescription(peak) {
     'crestone',
     'capitol',
     'pyramid',
+    'massive',
+    'quandary',
+    'grays',
+    'torreys',
+    'bierstadt',
+    'maroon',
   ])
 
   const parts = [base]
+  if (!base.toLowerCase().includes(location.toLowerCase())) {
+    parts.push(`Location: ${location}.`)
+  }
   if (trails.length) {
     parts.push(`Popular trails: ${trails.join(', ')}.`)
   }
@@ -78,7 +126,9 @@ function formatFt(n) {
 }
 
 function peakNoscriptBody(peak, url) {
-  const heading = `${peak.name} 3D Map & Topography`
+  const location = peakLocationLabel(peak)
+  const region = peakRegion(peak)
+  const heading = peak.name
   const trails = (peak.trails || []).map((t) => t.name).filter(Boolean)
   const nearby = peak.nearbyPlaces?.length
     ? peak.nearbyPlaces
@@ -125,7 +175,13 @@ function peakNoscriptBody(peak, url) {
       '@type': 'MountainRange',
       name: peak.range,
     },
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: peak.country,
+      ...(region ? { addressRegion: region } : {}),
+    },
     addressCountry: peak.country,
+    ...(region ? { addressRegion: region } : {}),
   }
 
   return `
@@ -134,13 +190,15 @@ function peakNoscriptBody(peak, url) {
       <main style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem;">
         <article itemscope itemtype="https://schema.org/Mountain">
           <header>
-            <p>${escapeHtml(peak.country)}</p>
+            <p>${escapeHtml(location)}</p>
             <h1 itemprop="name">${escapeHtml(heading)}</h1>
+            <p>3D Map &amp; Topography</p>
             <p>${escapeHtml(peak.range)} · Interactive 3D globe view</p>
           </header>
           <section aria-label="Peak stats">
             <h2>Peak stats</h2>
             <dl>
+              <div><dt>Location</dt><dd>${escapeHtml(location)}</dd></div>
               <div><dt>Elevation</dt><dd>${escapeHtml(formatFt(peak.elevationFt))}</dd></div>
               <div><dt>Prominence</dt><dd>${escapeHtml(formatFt(peak.prominenceFt))}</dd></div>
               <div><dt>Mountain range</dt><dd>${escapeHtml(peak.range)}</dd></div>
@@ -155,7 +213,7 @@ function peakNoscriptBody(peak, url) {
                 : ''
             }
             <p itemprop="description">${escapeHtml(peak.description || '')}</p>
-            <p>Explore ${escapeHtml(peak.name)} on PeakAtlas3D’s interactive 3D topographic map — satellite terrain and summit framing in the ${escapeHtml(peak.range)}.</p>
+            <p>Explore ${escapeHtml(peak.name)} on PeakAtlas3D’s interactive 3D topographic map — satellite terrain and summit framing in the ${escapeHtml(peak.range)}, ${escapeHtml(location)}.</p>
           </section>
           ${nearbyList}
           ${trailList}
@@ -322,7 +380,7 @@ for (const peak of peaks) {
   const path = `/peak/${peak.id}`
   const url = `${siteUrl}${path}`
   writeRoute(template, path, {
-    title: `${peak.name} 3D Interactive Map & Base Town Lodging | PeakAtlas3D`,
+    title: `${peak.name} 3D Map & Topography · ${peakLocationLabel(peak)} | PeakAtlas3D`,
     description: peakDescription(peak),
     image: peakImage(peak),
     noscriptBody: peakNoscriptBody(peak, url),

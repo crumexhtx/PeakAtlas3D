@@ -1,14 +1,17 @@
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { DetailsSheet } from '../components/DetailsSheet'
+import { PeakCanonicalLink } from '../components/PeakCanonicalLink'
 import { PeakDossier } from '../components/PeakDossier'
 import {
   peakMountainJsonLd,
   seoPeakHeading,
+  seoPeakQualifier,
 } from '../components/PeakSeoLayout'
 import { useAtlas } from '../context/AtlasContext'
 import { formatElevation } from '../lib/geo'
 import { SITE_ORIGIN } from '../lib/documentMeta'
+import { peakLocationLabel } from '../lib/peakLocation'
 import { atlasHref } from '../lib/routes'
 import { useUnits } from '../context/UnitsContext'
 
@@ -33,7 +36,8 @@ function upsertPeakJsonLd(peakId: string, data: object | null) {
 
 export function PeakPage() {
   const { peakId } = useParams()
-  const { activePeak, selectedCountry, cinematic, earthOnly } = useAtlas()
+  const { activePeak, peakLoading, selectedCountry, cinematic, earthOnly } =
+    useAtlas()
   const { units } = useUnits()
   const backHref = atlasHref(selectedCountry)
 
@@ -52,9 +56,22 @@ export function PeakPage() {
     return () => upsertPeakJsonLd(activePeak.id, null)
   }, [activePeak, peakId])
 
+  // Self-referencing canonical for this peak route (strips ?country=).
+  const canonical = peakId ? <PeakCanonicalLink peakId={peakId} /> : null
+
+  if (peakLoading) {
+    return (
+      <div className="empty-state peak-overlay-panel" role="status" aria-live="polite">
+        {canonical}
+        <p>Loading peak…</p>
+      </div>
+    )
+  }
+
   if (!activePeak) {
     return (
       <div className="empty-state peak-overlay-panel" role="alert">
+        {canonical}
         <h1>Peak not found</h1>
         <p>
           {peakId
@@ -75,6 +92,7 @@ export function PeakPage() {
       className={`peak-overlay-panel${hideChrome ? ' is-cinematic-hidden' : ''}`}
       aria-hidden={hideChrome || undefined}
     >
+      {canonical}
       {/*
         Semantic landmark for the peak dossier. The Mapbox WebGL canvas stays
         full-bleed in .map-stage (sibling); this panel is pointer-events: none
@@ -95,8 +113,9 @@ export function PeakPage() {
           />
         </DetailsSheet>
         <p className="sr-only">
-          {seoPeakHeading(activePeak.name)}. Interactive 3D topographic map of{' '}
-          {activePeak.name} in the {activePeak.range}, {activePeak.country}.
+          {seoPeakHeading(activePeak.name)}. {seoPeakQualifier()}. Interactive
+          3D topographic map of {activePeak.name} in the {activePeak.range},{' '}
+          {peakLocationLabel(activePeak)}.
         </p>
       </main>
     </div>

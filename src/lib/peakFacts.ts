@@ -1,9 +1,9 @@
-import type { Peak } from '../types/peak'
+import type { PeakIndex } from '../types/peak'
 import { formatElevation } from './geo'
 import type { UnitSystem } from '../types/peak'
 
 /** Build a shuffled pool of short fun facts for idle-spin callouts. */
-export function peakFunFacts(peak: Peak, units: UnitSystem = 'imperial'): string[] {
+export function peakFunFacts(peak: PeakIndex, units: UnitSystem = 'imperial'): string[] {
   const facts: string[] = []
 
   if (peak.whyNotable?.trim()) facts.push(peak.whyNotable.trim())
@@ -48,7 +48,7 @@ export function peakFunFacts(peak: Peak, units: UnitSystem = 'imperial'): string
   return [...new Set(facts)]
 }
 
-export function pickRandomFact(peak: Peak, units: UnitSystem, avoid?: string): string {
+export function pickRandomFact(peak: PeakIndex, units: UnitSystem, avoid?: string): string {
   const pool = peakFunFacts(peak, units)
   if (!pool.length) return `${peak.name} — a highlight of ${peak.country}.`
   const filtered = avoid ? pool.filter((f) => f !== avoid) : pool
@@ -56,7 +56,7 @@ export function pickRandomFact(peak: Peak, units: UnitSystem, avoid?: string): s
   return list[Math.floor(Math.random() * list.length)]!
 }
 
-export function pickRandomPeak(peaks: Peak[], avoidId?: string): Peak | null {
+export function pickRandomPeak(peaks: PeakIndex[], avoidId?: string): PeakIndex | null {
   if (!peaks.length) return null
   const filtered = avoidId ? peaks.filter((p) => p.id !== avoidId) : peaks
   const list = filtered.length ? filtered : peaks

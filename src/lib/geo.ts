@@ -1,4 +1,4 @@
-import type { Peak, PeakBrowseFilters, UnitSystem } from '../types/peak'
+import type { PeakBrowseFilters, PeakIndex, UnitSystem } from '../types/peak'
 
 const FT_PER_M = 3.280839895
 const MI_PER_KM = 0.621371192
@@ -32,7 +32,7 @@ export function formatCoordinates(lat: number, lon: number): string {
 }
 
 /** Search mountain peaks only (name / alias / range / country). */
-export function searchPeaks(peaks: Peak[], query: string): Peak[] {
+export function searchPeaks(peaks: PeakIndex[], query: string): PeakIndex[] {
   const q = query.trim().toLowerCase()
   if (!q) return []
   return peaks.filter(
@@ -44,7 +44,7 @@ export function searchPeaks(peaks: Peak[], query: string): Peak[] {
   )
 }
 
-export function filterPeaks(peaks: Peak[], browse: PeakBrowseFilters): Peak[] {
+export function filterPeaks(peaks: PeakIndex[], browse: PeakBrowseFilters): PeakIndex[] {
   return peaks.filter((p) => {
     if (browse.country && p.country !== browse.country) return false
     if (browse.range && p.range !== browse.range) return false

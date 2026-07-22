@@ -347,6 +347,80 @@
     "seoMetaDescription": "Explore Mt. Hood on a 3D topographic map — Oregon Cascade snow routes, Timberline context, elevation, and Columbia Gorge staging towns."
   },
   {
+    "id": "southsister",
+    "name": "South Sister",
+    "lat": 44.1035,
+    "lon": -121.7692,
+    "elevationFt": 10358,
+    "prominenceFt": 5588,
+    "range": "Cascade Range",
+    "country": "USA",
+    "description": "Oregon’s highest Cascade volcano and the state’s most popular high summit hike — a long climber’s trail from the Devils Lake / Green Lakes area near Bend.",
+    "firstAscent": "1857",
+    "difficulty": "Strenuous scramble / non-technical",
+    "aliases": [
+      "Faith"
+    ],
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Highest peak in Oregon’s Cascades and the most climbed Oregon volcano.",
+    "seoMetaDescription": "Explore South Sister on a 3D map — Oregon Cascade high point, climber-trail topography, elevation stats, and Bend / Devils Lake approaches.",
+    "nearestTown": {
+      "name": "Bend",
+      "region": "Oregon",
+      "distanceMiles": 28,
+      "route": "Cascade Lakes Hwy",
+      "lat": 44.0582,
+      "lon": -121.3153
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Bend",
+        "region": "Oregon",
+        "distanceMiles": 28,
+        "route": "Cascade Lakes Hwy",
+        "lat": 44.0582,
+        "lon": -121.3153
+      },
+      {
+        "name": "Sisters",
+        "region": "Oregon",
+        "distanceMiles": 26,
+        "route": "US-20",
+        "lat": 44.2909,
+        "lon": -121.5493
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Bend cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Bend after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Middle_and_South_Sister%2C_Oregon.jpg/960px-Middle_and_South_Sister%2C_Oregon.jpg",
+      "credit": "USGS/Cascades Volcano Observatory",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Middle_and_South_Sister,_Oregon.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Middle_and_South_Sister%2C_Oregon.jpg/960px-Middle_and_South_Sister%2C_Oregon.jpg",
+        "credit": "USGS/Cascades Volcano Observatory",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Middle_and_South_Sister,_Oregon.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/South_Sister_Mountain_in_Central_Oregon_4.jpg/960px-South_Sister_Mountain_in_Central_Oregon_4.jpg",
+        "credit": "Jeffhollett",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:South_Sister_Mountain_in_Central_Oregon_4.jpg"
+      }
+    ]
+  },
+  {
     "id": "baker",
     "name": "Mt. Baker",
     "lat": 48.7767,
@@ -461,6 +535,81 @@
     "bestSeason": "Jun–Sep",
     "whyNotable": "The northernmost Cascade volcano in the contiguous U.S.",
     "seoMetaDescription": "Explore Mt. Baker on a 3D map — northern Cascade glaciers, ski-mountaineering terrain, elevation stats, and Pacific Northwest approaches."
+  },
+  {
+    "id": "olympuswa",
+    "name": "Mt. Olympus",
+    "lat": 47.8014,
+    "lon": -123.7106,
+    "elevationFt": 7969,
+    "prominenceFt": 7838,
+    "range": "Olympic Mountains",
+    "country": "USA",
+    "description": "The glaciated high point of Olympic National Park — a multi-day wilderness approach to the Blue Glacier and West Peak, not a valley day hike.",
+    "firstAscent": "1907",
+    "difficulty": "Glacier climb / expedition backpack",
+    "aliases": [
+      "Mount Olympus",
+      "Olympus (Olympics)"
+    ],
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Signature summit of Olympic National Park and Washington’s wet-side alpine icon.",
+    "seoMetaDescription": "Explore Mt. Olympus on a 3D map — Olympic National Park high point, Blue Glacier topography, elevation, and Port Angeles wilderness approaches.",
+    "nearestTown": {
+      "name": "Port Angeles",
+      "region": "Washington",
+      "distanceMiles": 35,
+      "route": "US-101 / Hoh approaches",
+      "lat": 48.1181,
+      "lon": -123.4307
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Port Angeles",
+        "region": "Washington",
+        "distanceMiles": 35,
+        "route": "US-101",
+        "lat": 48.1181,
+        "lon": -123.4307
+      },
+      {
+        "name": "Forks",
+        "region": "Washington",
+        "distanceMiles": 42,
+        "route": "US-101 / Hoh River",
+        "lat": 47.9504,
+        "lon": -124.3854
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Port Angeles cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Port Angeles after the approach."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mount_Olympus%2C_Athena_1994.jpg/960px-Mount_Olympus%2C_Athena_1994.jpg",
+      "credit": "Ron Clausen",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Olympus,_Athena_1994.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mount_Olympus%2C_Athena_1994.jpg/960px-Mount_Olympus%2C_Athena_1994.jpg",
+        "credit": "Ron Clausen",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Olympus,_Athena_1994.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Mount_Olympus_with_lupine.jpg/960px-Mount_Olympus_with_lupine.jpg",
+        "credit": "Ron Clausen",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Olympus_with_lupine.jpg"
+      }
+    ]
   },
   {
     "id": "adams",
@@ -793,6 +942,80 @@
     "seoMetaDescription": "Explore Mt. Elbert on a 3D map — Colorado’s Rocky Mountain high point, Sawatch Range topography, elevation stats, and walk-up approaches."
   },
   {
+    "id": "massive",
+    "name": "Mt. Massive",
+    "lat": 39.1875,
+    "lon": -106.4754,
+    "elevationFt": 14421,
+    "prominenceFt": 1961,
+    "range": "Sawatch Range",
+    "country": "USA",
+    "description": "Colorado’s second-highest summit and Elbert’s massive Sawatch neighbor — a long Class 2 ridge walk with broad alpine views above Leadville.",
+    "firstAscent": "1873",
+    "difficulty": "Class 2 hike",
+    "aliases": [
+      "Mount Massive"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Second-highest peak in the Rocky Mountains; classic paired outing with Mt. Elbert.",
+    "seoMetaDescription": "Explore Mt. Massive on a 3D map — Colorado’s #2 Rockies summit, Sawatch ridge topography, elevation stats, and Leadville approaches.",
+    "nearestTown": {
+      "name": "Leadville",
+      "region": "Colorado",
+      "distanceMiles": 12,
+      "route": "US-24 / Halfmoon Creek",
+      "lat": 39.2508,
+      "lon": -106.2925
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Leadville",
+        "region": "Colorado",
+        "distanceMiles": 12,
+        "route": "US-24 / Halfmoon Creek",
+        "lat": 39.2508,
+        "lon": -106.2925
+      },
+      {
+        "name": "Twin Lakes",
+        "region": "Colorado",
+        "distanceMiles": 14,
+        "route": "CO-82",
+        "lat": 39.0828,
+        "lon": -106.3817
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Leadville cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Leadville after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Mount_Massive.jpg/960px-Mount_Massive.jpg",
+      "credit": "Rick Kimpel, Jr.",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Massive.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Mount_Massive.jpg/960px-Mount_Massive.jpg",
+        "credit": "Rick Kimpel, Jr.",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Massive.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Mt._Massive_broad_view.jpg/960px-Mt._Massive_broad_view.jpg",
+        "credit": "Gaep13 at en.wikipedia)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Massive_broad_view.jpg"
+      }
+    ]
+  },
+  {
     "id": "whitney",
     "name": "Mt. Whitney",
     "lat": 36.5785,
@@ -913,6 +1136,105 @@
     "bestSeason": "Jul–Sep",
     "whyNotable": "Highest peak in the contiguous United States.",
     "seoMetaDescription": "Explore Mt. Whitney on a 3D topographic map — contiguous U.S. high point, Sierra Nevada trails, elevation, and Lone Pine staging towns."
+  },
+  {
+    "id": "halfdome",
+    "name": "Half Dome",
+    "lat": 37.74609,
+    "lon": -119.53313,
+    "elevationFt": 8840,
+    "prominenceFt": 1363,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "description": "Yosemite’s iconic granite monolith rising nearly 5,000 feet above the Valley floor, climbed via the famous seasonal cable route after Mist Trail waterfalls.",
+    "firstAscent": "1875",
+    "difficulty": "Strenuous hike / cable scramble (permit)",
+    "aliases": [
+      "Tis-sa-ack"
+    ],
+    "bestSeason": "Late May–early Oct (cables up)",
+    "whyNotable": "World-famous Yosemite icon; tens of thousands attempt the cable route each season.",
+    "seoMetaDescription": "Explore Half Dome on a 3D map — Yosemite’s granite icon, Mist Trail approaches, cable-route topography, elevation stats, and California Sierra staging.",
+    "nearestTown": {
+      "name": "Yosemite Valley",
+      "region": "California",
+      "distanceMiles": 3.2,
+      "route": "Happy Isles / Mist Trail",
+      "lat": 37.7456,
+      "lon": -119.594
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Yosemite Valley",
+        "region": "California",
+        "distanceMiles": 3.2,
+        "route": "Happy Isles / Mist Trail",
+        "lat": 37.7456,
+        "lon": -119.594
+      },
+      {
+        "name": "El Portal",
+        "region": "California",
+        "distanceMiles": 14.5,
+        "route": "CA-140",
+        "lat": 37.6747,
+        "lon": -119.7843
+      },
+      {
+        "name": "Mariposa",
+        "region": "California",
+        "distanceMiles": 36,
+        "route": "CA-140",
+        "lat": 37.4849,
+        "lon": -119.9663
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Degnan’s Kitchen",
+        "category": "Café",
+        "note": "Quick valley refuel near Yosemite Village."
+      },
+      {
+        "name": "Base Camp Eatery",
+        "category": "Restaurant",
+        "note": "Casual meals in Yosemite Valley after long trail days."
+      },
+      {
+        "name": "Mountain Room Restaurant",
+        "category": "Restaurant",
+        "note": "Sit-down dinner at Yosemite Valley Lodge."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Half Dome Cable Route"
+      },
+      {
+        "name": "Mist Trail"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg/960px-Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg",
+      "credit": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg/960px-Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg",
+        "credit": "Diliff",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Yosemite_Half_Dome.jpg/960px-Yosemite_Half_Dome.jpg",
+        "credit": "Sachintha Gurudeniya",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yosemite_Half_Dome.jpg"
+      }
+    ]
   },
   {
     "id": "longs",
@@ -1037,6 +1359,228 @@
     "seoMetaDescription": "Explore Longs Peak on a 3D map — Front Range fourteener topography, Keyhole Route context, elevation, and Rocky Mountain National Park."
   },
   {
+    "id": "grays",
+    "name": "Grays Peak",
+    "lat": 39.6339,
+    "lon": -105.8175,
+    "elevationFt": 14278,
+    "prominenceFt": 2779,
+    "range": "Front Range",
+    "country": "USA",
+    "description": "Highest peak on the Continental Divide in Colorado and a classic Front Range day outing, often paired with neighboring Torreys Peak.",
+    "firstAscent": "1861",
+    "difficulty": "Class 1–2 hike",
+    "aliases": [
+      "Gray’s Peak"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Highest Continental Divide summit in Colorado; paired day hike with Torreys.",
+    "seoMetaDescription": "Explore Grays Peak on a 3D map — Colorado Continental Divide 14er, Front Range topography, elevation stats, and Bakerville approaches.",
+    "nearestTown": {
+      "name": "Georgetown",
+      "region": "Colorado",
+      "distanceMiles": 14,
+      "route": "I-70 / Stevens Gulch",
+      "lat": 39.7061,
+      "lon": -105.6975
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Georgetown",
+        "region": "Colorado",
+        "distanceMiles": 14,
+        "route": "I-70 / Stevens Gulch",
+        "lat": 39.7061,
+        "lon": -105.6975
+      },
+      {
+        "name": "Idaho Springs",
+        "region": "Colorado",
+        "distanceMiles": 22,
+        "route": "I-70",
+        "lat": 39.7425,
+        "lon": -105.5136
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Georgetown cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Georgetown after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Grays_and_Torreys_Peaks.jpg/960px-Grays_and_Torreys_Peaks.jpg",
+      "credit": "shaqdad34",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grays_and_Torreys_Peaks.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Grays_and_Torreys_Peaks.jpg/960px-Grays_and_Torreys_Peaks.jpg",
+        "credit": "shaqdad34",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grays_and_Torreys_Peaks.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Grays_Peak_and_Torreys_Peak_from_Dillon_Reservoir.jpg/960px-Grays_Peak_and_Torreys_Peak_from_Dillon_Reservoir.jpg",
+        "credit": "David Herrera from Albuquerque, NM, Bernalillo",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grays_Peak_and_Torreys_Peak_from_Dillon_Reservoir.jpg"
+      }
+    ]
+  },
+  {
+    "id": "torreys",
+    "name": "Torreys Peak",
+    "lat": 39.6426,
+    "lon": -105.8212,
+    "elevationFt": 14267,
+    "prominenceFt": 560,
+    "range": "Front Range",
+    "country": "USA",
+    "description": "Grays Peak’s twin on the Continental Divide — usually climbed together via the Grays/Torreys trail from Stevens Gulch.",
+    "firstAscent": "1861",
+    "difficulty": "Class 2 hike",
+    "aliases": [
+      "Torrey's Peak"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Iconic paired 14er with Grays; one of Colorado’s most popular Front Range days.",
+    "seoMetaDescription": "Explore Torreys Peak on a 3D map — Colorado Front Range 14er beside Grays, Continental Divide topography, and Stevens Gulch approaches.",
+    "nearestTown": {
+      "name": "Georgetown",
+      "region": "Colorado",
+      "distanceMiles": 14,
+      "route": "I-70 / Stevens Gulch",
+      "lat": 39.7061,
+      "lon": -105.6975
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Georgetown",
+        "region": "Colorado",
+        "distanceMiles": 14,
+        "route": "I-70 / Stevens Gulch",
+        "lat": 39.7061,
+        "lon": -105.6975
+      },
+      {
+        "name": "Idaho Springs",
+        "region": "Colorado",
+        "distanceMiles": 22,
+        "route": "I-70",
+        "lat": 39.7425,
+        "lon": -105.5136
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Georgetown cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Georgetown after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Torreys_Peak.jpg",
+      "credit": "MrB",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Torreys_Peak.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Torreys_Peak.jpg",
+        "credit": "MrB",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Torreys_Peak.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Grays_and_Torreys_Peaks.jpg/960px-Grays_and_Torreys_Peaks.jpg",
+        "credit": "shaqdad34",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grays_and_Torreys_Peaks.jpg"
+      }
+    ]
+  },
+  {
+    "id": "bierstadt",
+    "name": "Mt. Bierstadt",
+    "lat": 39.5828,
+    "lon": -105.6686,
+    "elevationFt": 14060,
+    "prominenceFt": 720,
+    "range": "Front Range",
+    "country": "USA",
+    "description": "A popular beginner Colorado 14er above Guanella Pass — short approach, Class 2 West Slopes, and big views toward the Sawtooth and Mt. Evans.",
+    "firstAscent": "1863",
+    "difficulty": "Class 2 hike",
+    "aliases": [
+      "Mount Bierstadt"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "One of Colorado’s most accessible and heavily climbed beginner 14ers.",
+    "seoMetaDescription": "Explore Mt. Bierstadt on a 3D map — popular Colorado 14er from Guanella Pass, Front Range topography, elevation, and Georgetown staging.",
+    "nearestTown": {
+      "name": "Georgetown",
+      "region": "Colorado",
+      "distanceMiles": 11,
+      "route": "Guanella Pass",
+      "lat": 39.7061,
+      "lon": -105.6975
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Georgetown",
+        "region": "Colorado",
+        "distanceMiles": 11,
+        "route": "Guanella Pass",
+        "lat": 39.7061,
+        "lon": -105.6975
+      },
+      {
+        "name": "Idaho Springs",
+        "region": "Colorado",
+        "distanceMiles": 18,
+        "route": "I-70",
+        "lat": 39.7425,
+        "lon": -105.5136
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Georgetown cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Georgetown after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Hiking_trail_up_Mt._Bierstadt.jpg/960px-Hiking_trail_up_Mt._Bierstadt.jpg",
+      "credit": "Greg Younger from Fort Collins, USA",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hiking_trail_up_Mt._Bierstadt.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Hiking_trail_up_Mt._Bierstadt.jpg/960px-Hiking_trail_up_Mt._Bierstadt.jpg",
+        "credit": "Greg Younger from Fort Collins, USA",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hiking_trail_up_Mt._Bierstadt.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Albert_Bierstadt_-_A_Storm_in_the_Rocky_Mountains%2C_Mt._Rosalie_-_Google_Art_Project.jpg/960px-Albert_Bierstadt_-_A_Storm_in_the_Rocky_Mountains%2C_Mt._Rosalie_-_Google_Art_Project.jpg",
+        "credit": "Albert Bierstadt",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Albert_Bierstadt_-_A_Storm_in_the_Rocky_Mountains,_Mt._Rosalie_-_Google_Art_Project.jpg"
+      }
+    ]
+  },
+  {
     "id": "pikes",
     "name": "Pikes Peak",
     "lat": 38.8409,
@@ -1157,6 +1701,77 @@
     "bestSeason": "Jun–Oct",
     "whyNotable": "Colorado icon with a road, cog railway, and vast prairie views.",
     "seoMetaDescription": "Explore Pikes Peak on a 3D topographic map — Colorado Springs landmark, Front Range views, elevation stats, and highway or trail approaches."
+  },
+  {
+    "id": "quandary",
+    "name": "Quandary Peak",
+    "lat": 39.3973,
+    "lon": -106.1065,
+    "elevationFt": 14265,
+    "prominenceFt": 1125,
+    "range": "Tenmile Range",
+    "country": "USA",
+    "description": "One of Colorado’s most climbed 14ers — a straightforward East Ridge hike from the Blue Lakes / Quandary trailhead near Breckenridge.",
+    "firstAscent": "1860s",
+    "difficulty": "Class 1–2 hike",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Among the most frequently summited Colorado 14ers; a classic day-hike introduction.",
+    "seoMetaDescription": "Explore Quandary Peak on a 3D map — popular Colorado 14er near Breckenridge, East Ridge topography, elevation, and Tenmile approaches.",
+    "nearestTown": {
+      "name": "Breckenridge",
+      "region": "Colorado",
+      "distanceMiles": 8,
+      "route": "CO-9",
+      "lat": 39.4817,
+      "lon": -106.0384
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Breckenridge",
+        "region": "Colorado",
+        "distanceMiles": 8,
+        "route": "CO-9",
+        "lat": 39.4817,
+        "lon": -106.0384
+      },
+      {
+        "name": "Frisco",
+        "region": "Colorado",
+        "distanceMiles": 12,
+        "route": "I-70",
+        "lat": 39.5744,
+        "lon": -106.0975
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Breckenridge cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Breckenridge after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/QuandaryPeak.JPG/960px-QuandaryPeak.JPG",
+      "credit": "Stargazer7121",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:QuandaryPeak.JPG"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/QuandaryPeak.JPG/960px-QuandaryPeak.JPG",
+        "credit": "Stargazer7121",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:QuandaryPeak.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Panorama_from_summit_of_Mount_Lincoln%2C_shows_Quandary_Peak_and_Blue_River_Range._-_NARA_-_517682.tif/lossy-page1-960px-Panorama_from_summit_of_Mount_Lincoln%2C_shows_Quandary_Peak_and_Blue_River_Range._-_NARA_-_517682.tif.jpg",
+        "credit": "William Henry Jackson",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panorama_from_summit_of_Mount_Lincoln,_shows_Quandary_Peak_and_Blue_River_Range._-_NARA_-_517682.tif"
+      }
+    ]
   },
   {
     "id": "gannett",
@@ -1398,6 +2013,80 @@
     "bestSeason": "Jul–Sep",
     "whyNotable": "Montana’s technical state high point in the Beartooths.",
     "seoMetaDescription": "Explore Granite Peak on a 3D topographic map — Montana’s Beartooth high point, technical scramble terrain, elevation, and alpine approaches."
+  },
+  {
+    "id": "borah",
+    "name": "Borah Peak",
+    "lat": 44.1374,
+    "lon": -113.7811,
+    "elevationFt": 12662,
+    "prominenceFt": 5982,
+    "range": "Lost River Range",
+    "country": "USA",
+    "description": "Idaho’s high point — a steep Class 3 Chicken-Out Ridge scramble above Mackay with big Lost River Range exposure.",
+    "firstAscent": "1912",
+    "difficulty": "Class 3 scramble",
+    "aliases": [
+      "Mount Borah"
+    ],
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Idaho state high point and a classic western Class 3 scramble.",
+    "seoMetaDescription": "Explore Borah Peak on a 3D map — Idaho high point, Chicken-Out Ridge topography, elevation stats, and Mackay approaches.",
+    "nearestTown": {
+      "name": "Mackay",
+      "region": "Idaho",
+      "distanceMiles": 22,
+      "route": "US-93 / Birch Springs",
+      "lat": 43.9113,
+      "lon": -113.6134
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Mackay",
+        "region": "Idaho",
+        "distanceMiles": 22,
+        "route": "US-93 / Birch Springs",
+        "lat": 43.9113,
+        "lon": -113.6134
+      },
+      {
+        "name": "Challis",
+        "region": "Idaho",
+        "distanceMiles": 40,
+        "route": "US-93",
+        "lat": 44.5046,
+        "lon": -114.2317
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Mackay cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Mackay after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Fault_Scarp_Borah_Peak_Earthquake_1983.jpg/960px-Fault_Scarp_Borah_Peak_Earthquake_1983.jpg",
+      "credit": "R.E. Wallace, USGS Earthquake Information Bulletin 501",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fault_Scarp_Borah_Peak_Earthquake_1983.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Fault_Scarp_Borah_Peak_Earthquake_1983.jpg/960px-Fault_Scarp_Borah_Peak_Earthquake_1983.jpg",
+        "credit": "R.E. Wallace, USGS Earthquake Information Bulletin 501",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fault_Scarp_Borah_Peak_Earthquake_1983.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Borah_Peak_earthquake_artesian_fountain_1983.jpg",
+        "credit": "Machette, M. N.",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borah_Peak_earthquake_artesian_fountain_1983.jpg"
+      }
+    ]
   },
   {
     "id": "kings",
@@ -10403,6 +11092,81 @@
     "seoMetaDescription": "Explore Mt. Mitchell on a 3D map — highest U.S. peak east of the Mississippi, Appalachian topography, elevation stats, and North Carolina trails."
   },
   {
+    "id": "kuwohi",
+    "name": "Kuwohi",
+    "lat": 35.5628,
+    "lon": -83.4985,
+    "elevationFt": 6643,
+    "prominenceFt": 4503,
+    "range": "Great Smoky Mountains",
+    "country": "USA",
+    "description": "The highest point in Great Smoky Mountains National Park (formerly Clingmans Dome) — a short paved path to the famous observation tower on the Tennessee–North Carolina crest.",
+    "firstAscent": "Unknown",
+    "difficulty": "Class 1 paved walk",
+    "aliases": [
+      "Clingmans Dome",
+      "Clingman's Dome"
+    ],
+    "bestSeason": "Apr–Nov (road season varies)",
+    "whyNotable": "Smokies high point and one of the most visited summits in the eastern United States.",
+    "seoMetaDescription": "Explore Kuwohi (Clingmans Dome) on a 3D map — Great Smoky Mountains high point, observation-tower topography, elevation, and Gatlinburg approaches.",
+    "nearestTown": {
+      "name": "Gatlinburg",
+      "region": "Tennessee",
+      "distanceMiles": 22,
+      "route": "US-441 / Clingmans Dome Rd",
+      "lat": 35.7143,
+      "lon": -83.5102
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Gatlinburg",
+        "region": "Tennessee",
+        "distanceMiles": 22,
+        "route": "US-441",
+        "lat": 35.7143,
+        "lon": -83.5102
+      },
+      {
+        "name": "Cherokee",
+        "region": "North Carolina",
+        "distanceMiles": 20,
+        "route": "US-441",
+        "lat": 35.4743,
+        "lon": -83.3157
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Gatlinburg cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Gatlinburg after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Clingmans-dome-north.jpg/960px-Clingmans-dome-north.jpg",
+      "credit": "Brian Stansberry",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clingmans-dome-north.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Clingmans-dome-north.jpg/960px-Clingmans-dome-north.jpg",
+        "credit": "Brian Stansberry",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clingmans-dome-north.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Clingmans_Dome_Observation_Tower.jpg/960px-Clingmans_Dome_Observation_Tower.jpg",
+        "credit": "Unknown",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clingmans_Dome_Observation_Tower.jpg"
+      }
+    ]
+  },
+  {
     "id": "katahdin",
     "name": "Mt. Katahdin",
     "lat": 45.9044,
@@ -10847,6 +11611,77 @@
     "bestSeason": "Jul–Sep",
     "whyNotable": "Utah’s beloved Wasatch giant above Utah Valley.",
     "seoMetaDescription": "Explore Mt. Timpanogos on a 3D map — Utah Valley’s Wasatch classic, ridge and cirque terrain, elevation stats, and Wasatch Front trailheads."
+  },
+  {
+    "id": "wheeler",
+    "name": "Wheeler Peak",
+    "lat": 38.9859,
+    "lon": -114.3139,
+    "elevationFt": 13063,
+    "prominenceFt": 7563,
+    "range": "Snake Range",
+    "country": "USA",
+    "description": "Great Basin National Park’s alpine high point — a long trail above bristlecone forests and Nevada’s scenic Snake Range crest.",
+    "firstAscent": "Unknown",
+    "difficulty": "Class 1–2 hike",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Nevada’s iconic Great Basin summit and one of the state’s highest peaks.",
+    "seoMetaDescription": "Explore Wheeler Peak on a 3D map — Great Basin National Park high point, Snake Range topography, elevation, and Baker NV approaches.",
+    "nearestTown": {
+      "name": "Baker",
+      "region": "Nevada",
+      "distanceMiles": 12,
+      "route": "NV-487 / Wheeler Peak Scenic Drive",
+      "lat": 39.0127,
+      "lon": -114.1225
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Baker",
+        "region": "Nevada",
+        "distanceMiles": 12,
+        "route": "NV-487",
+        "lat": 39.0127,
+        "lon": -114.1225
+      },
+      {
+        "name": "Ely",
+        "region": "Nevada",
+        "distanceMiles": 68,
+        "route": "US-50 / US-93",
+        "lat": 39.2474,
+        "lon": -114.8886
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Baker cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Baker after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/WheelerPeakNV2.jpg/960px-WheelerPeakNV2.jpg",
+      "credit": "G. Thomas at English Wikipedia",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:WheelerPeakNV2.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/WheelerPeakNV2.jpg/960px-WheelerPeakNV2.jpg",
+        "credit": "G. Thomas at English Wikipedia",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:WheelerPeakNV2.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/View_of_Doso_Doyabi_from_Wheeler_Peak.jpg/960px-View_of_Doso_Doyabi_from_Wheeler_Peak.jpg",
+        "credit": "Qfl247 (talk).\n\nQfl247 at en.wikipedia",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Doso_Doyabi_from_Wheeler_Peak.jpg"
+      }
+    ]
   },
   {
     "id": "lonepeak",
@@ -11733,6 +12568,81 @@
     "seoMetaDescription": "Explore Pyramid Peak on a 3D map — steep Elk Mountains fourteener above Maroon Creek, exposed ridges, elevation stats, and Aspen-area approaches."
   },
   {
+    "id": "maroon",
+    "name": "Maroon Peak",
+    "lat": 39.0708,
+    "lon": -106.989,
+    "elevationFt": 14156,
+    "prominenceFt": 2336,
+    "range": "Elk Mountains",
+    "country": "USA",
+    "description": "The higher Maroon Bell — a Class 3 South Ridge classic above Maroon Lake and one of Colorado’s most photographed mountain pairs.",
+    "firstAscent": "1890s",
+    "difficulty": "Class 3 scramble",
+    "aliases": [
+      "South Maroon",
+      "Maroon Bells"
+    ],
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Postcard Maroon Bells summit; among Colorado’s most iconic Elk Mountain 14ers.",
+    "seoMetaDescription": "Explore Maroon Peak on a 3D map — Maroon Bells 14er above Aspen, Elk Mountains topography, elevation stats, and Maroon Lake approaches.",
+    "nearestTown": {
+      "name": "Aspen",
+      "region": "Colorado",
+      "distanceMiles": 12,
+      "route": "CO-82 / Maroon Creek",
+      "lat": 39.1911,
+      "lon": -106.8175
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Aspen",
+        "region": "Colorado",
+        "distanceMiles": 12,
+        "route": "CO-82 / Maroon Creek",
+        "lat": 39.1911,
+        "lon": -106.8175
+      },
+      {
+        "name": "Snowmass Village",
+        "region": "Colorado",
+        "distanceMiles": 15,
+        "route": "CO-82",
+        "lat": 39.213,
+        "lon": -106.9378
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Aspen cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Aspen after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Maroon_Bells.jpg/960px-Maroon_Bells.jpg",
+      "credit": "Frank Kovalchek",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maroon_Bells.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Maroon_Bells.jpg/960px-Maroon_Bells.jpg",
+        "credit": "Frank Kovalchek",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maroon_Bells.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Maroon_Bells%2C_Colorado.jpg/960px-Maroon_Bells%2C_Colorado.jpg",
+        "credit": "Frank Kovalchek",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maroon_Bells,_Colorado.jpg"
+      }
+    ]
+  },
+  {
     "id": "maunakea",
     "name": "Mauna Kea",
     "lat": 19.8207,
@@ -11852,6 +12762,81 @@
     "bestSeason": "Year-round; summit can be cold or snowy in winter",
     "whyNotable": "Tallest mountain on Earth measured from ocean floor to summit, and one of the world’s great astronomy sites.",
     "seoMetaDescription": "Explore Mauna Kea on a 3D topographic map — Hawaii’s astronomy summit and ocean-floor giant, alpine cinder cones, elevation, and Big Island staging."
+  },
+  {
+    "id": "haleakala",
+    "name": "Haleakalā",
+    "lat": 20.7097,
+    "lon": -156.2533,
+    "elevationFt": 10023,
+    "prominenceFt": 10023,
+    "range": "Hawaiian Islands",
+    "country": "USA",
+    "description": "Maui’s shield-volcano high point and Haleakalā National Park’s summit — road-accessible crater rim with Sliding Sands and Halemauʻu wilderness trails into the crater.",
+    "firstAscent": "Unknown",
+    "difficulty": "Drive / Class 1–2 hike",
+    "aliases": [
+      "Haleakala",
+      "East Maui Volcano"
+    ],
+    "bestSeason": "Year-round (summit is cold; storms year-round)",
+    "whyNotable": "Maui’s iconic volcano and one of Hawaii’s most visited national-park summits.",
+    "seoMetaDescription": "Explore Haleakalā on a 3D map — Maui volcano high point, crater-rim topography, elevation stats, and Haleakalā National Park approaches.",
+    "nearestTown": {
+      "name": "Kahului",
+      "region": "Hawaii",
+      "distanceMiles": 28,
+      "route": "HI-37 / Crater Rd",
+      "lat": 20.8893,
+      "lon": -156.4729
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Kahului",
+        "region": "Hawaii",
+        "distanceMiles": 28,
+        "route": "HI-37 / Crater Rd",
+        "lat": 20.8893,
+        "lon": -156.4729
+      },
+      {
+        "name": "Pukalani",
+        "region": "Hawaii",
+        "distanceMiles": 18,
+        "route": "HI-37",
+        "lat": 20.8367,
+        "lon": -156.3367
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Kahului cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Kahului after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Haleakala_crater.jpg/960px-Haleakala_crater.jpg",
+      "credit": "Unknown",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haleakala_crater.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Haleakala_crater.jpg/960px-Haleakala_crater.jpg",
+        "credit": "Unknown",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haleakala_crater.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Haleakal%C4%81.jpg/960px-Haleakal%C4%81.jpg",
+        "credit": "Massingale",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haleakal%C4%81.jpg"
+      }
+    ]
   },
   {
     "id": "sthelens",

@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { BrowseBar } from '../components/BrowseBar'
 import { CountryPanel } from '../components/CountryPanel'
 import { useAtlas } from '../context/AtlasContext'
-import { peaks } from '../data/catalog'
+import { peaksIndex } from '../data/catalog'
 import { useUnits } from '../context/UnitsContext'
 import {
   buildCountrySummaries,
@@ -23,7 +23,7 @@ export function HomePage() {
     openPeak,
   } = useAtlas()
 
-  const allCountrySummaries = useMemo(() => buildCountrySummaries(peaks), [])
+  const allCountrySummaries = useMemo(() => buildCountrySummaries(peaksIndex), [])
 
   const countries = useMemo(
     () => allCountrySummaries.map((c) => c.name),
@@ -32,10 +32,10 @@ export function HomePage() {
 
   const ranges = useMemo(() => {
     const scoped = selectedCountry
-      ? peaks.filter((p) =>
+      ? peaksIndex.filter((p) =>
           peakMatchesCountry(p, selectedCountry, allCountrySummaries),
         )
-      : peaks
+      : peaksIndex
     return uniqueSorted(scoped.map((p) => p.range))
   }, [selectedCountry, allCountrySummaries])
 
@@ -58,7 +58,7 @@ export function HomePage() {
 
   const countryPeakList = useMemo(() => {
     if (!selectedCountry) return []
-    return peaks.filter((p) => {
+    return peaksIndex.filter((p) => {
       if (!peakMatchesCountry(p, selectedCountry, allCountrySummaries)) {
         return false
       }

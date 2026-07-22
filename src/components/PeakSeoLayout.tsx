@@ -7,13 +7,20 @@ import {
   formatElevation,
 } from '../lib/geo'
 import { flagUrl } from '../lib/countries'
+import { peakLocationLabel, peakRegion } from '../lib/peakLocation'
 
 export function seoPeakHeading(peakName: string): string {
-  return `${peakName} 3D Map & Topography`
+  return peakName
+}
+
+export function seoPeakQualifier(): string {
+  return '3D Map & Topography'
 }
 
 /** schema.org Mountain JSON-LD for peak pages (crawlable structured data). */
 export function peakMountainJsonLd(peak: Peak, pageUrl: string) {
+  const location = peakLocationLabel(peak)
+  const region = peakRegion(peak)
   return {
     '@context': 'https://schema.org',
     '@type': 'Mountain',
@@ -22,7 +29,7 @@ export function peakMountainJsonLd(peak: Peak, pageUrl: string) {
     description:
       peak.whyNotable?.trim() ||
       peak.description?.trim() ||
-      `${peak.name} in the ${peak.range}, ${peak.country}.`,
+      `${peak.name} in the ${peak.range}, ${location}.`,
     url: pageUrl,
     geo: {
       '@type': 'GeoCoordinates',
@@ -34,7 +41,13 @@ export function peakMountainJsonLd(peak: Peak, pageUrl: string) {
       '@type': 'MountainRange',
       name: peak.range,
     },
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: peak.country,
+      ...(region ? { addressRegion: region } : {}),
+    },
     addressCountry: peak.country,
+    ...(region ? { addressRegion: region } : {}),
   }
 }
 
@@ -58,6 +71,8 @@ export function PeakSeoLayout({
   children,
 }: PeakSeoLayoutProps) {
   const flag = flagUrl(peak.country, 40)
+  const location = peakLocationLabel(peak)
+  const region = peakRegion(peak)
   const nearby = peak.nearbyPlaces?.length
     ? peak.nearbyPlaces
     : peak.nearestTown
@@ -92,14 +107,20 @@ export function PeakSeoLayout({
         )}
         <div>
           <p className="dossier-eyebrow">
-            <span itemProp="addressCountry">{peak.country}</span>
+            <span>{location}</span>
+            <meta itemProp="addressCountry" content={peak.country} />
+            {region && <meta itemProp="addressRegion" content={region} />}
           </p>
           <h1 id="peak-seo-title" className="dossier-title">
-            <span itemProp="name">{peak.name}</span>{' '}
-            <span className="peak-seo-qualifier">3D Map & Topography</span>
+            <span itemProp="name">{peak.name}</span>
+            <span className="peak-seo-qualifier">{seoPeakQualifier()}</span>
           </h1>
           <p className="dossier-subtitle">
-            <span itemProp="containedInPlace" itemScope itemType="https://schema.org/MountainRange">
+            <span
+              itemProp="containedInPlace"
+              itemScope
+              itemType="https://schema.org/MountainRange"
+            >
               <span itemProp="name">{peak.range}</span>
             </span>
             {' · '}
@@ -122,6 +143,10 @@ export function PeakSeoLayout({
       >
         <h2 className="info-heading">Peak stats</h2>
         <dl className="info-list">
+          <div>
+            <dt>Location</dt>
+            <dd>{location}</dd>
+          </div>
           <div>
             <dt>Elevation</dt>
             <dd itemProp="elevation">
@@ -179,7 +204,7 @@ export function PeakSeoLayout({
         <p className="peak-seo-map-blurb">
           Explore {peak.name} on PeakAtlas3D’s interactive 3D topographic map —
           satellite terrain, summit framing, and nearby staging towns for
-          planning approaches in the {peak.range}.
+          planning approaches in the {peak.range}, {location}.
         </p>
         {approachRoutes.length > 0 && (
           <p className="peak-seo-routes">

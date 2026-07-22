@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { Marker } from 'react-map-gl/mapbox'
-import type { Peak } from '../types/peak'
+import type { PeakIndex } from '../types/peak'
 import { countryToIso, flagUrl } from '../lib/countries'
 
 type FlagPeakMarkerProps = {
-  peak: Peak
-  onClick: (peak: Peak) => void
+  peak: PeakIndex
+  onClick: (peak: PeakIndex) => void
 }
 
 export function FlagPeakMarker({ peak, onClick }: FlagPeakMarkerProps) {

@@ -1,5 +1,5 @@
 import type { CountrySummary } from '../types/country'
-import type { Peak } from '../types/peak'
+import type { PeakIndex } from '../types/peak'
 import { flagUrl } from '../lib/countries'
 import { formatElevation } from '../lib/geo'
 import { useUnits } from '../context/UnitsContext'
@@ -7,9 +7,9 @@ import { DetailsSheet } from './DetailsSheet'
 
 type CountryPanelProps = {
   country: CountrySummary
-  peaks: Peak[]
+  peaks: PeakIndex[]
   onClose: () => void
-  onOpenPeak: (peak: Peak) => void
+  onOpenPeak: (peak: PeakIndex) => void
 }
 
 export function CountryPanel({

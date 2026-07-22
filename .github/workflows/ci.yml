@@ -22,7 +22,16 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Build (sitemap + Vite + prerender meta)
+      - name: Unit tests
+        run: npm test
+
+      - name: Validate catalog schema
+        run: npm run validate:catalog
+
+      - name: Validate peak photos (offline check)
+        run: npm run validate:photos:check
+
+      - name: Build (index + sitemap + Vite + prerender meta)
         env:
           # Public token placeholder — build must not require a real Mapbox key.
           VITE_MAPBOX_TOKEN: pk.ci-placeholder
@@ -40,3 +49,11 @@ jobs:
           grep -q "Mt. Rainier" dist/peak/rainier/index.html
           grep -q 'property="og:url"' dist/peak/rainier/index.html
           grep -q "Most glaciated peak" dist/peak/rainier/index.html
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: End-to-end smoke
+        env:
+          VITE_MAPBOX_TOKEN: pk.ci-placeholder
+        run: npm run test:e2e

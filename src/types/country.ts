@@ -1,4 +1,4 @@
-import type { Peak } from './peak'
+import type { PeakIndex } from './peak'
 
 export type CountrySummary = {
   /** Primary country label used for browse/filter (one flag on the globe). */
@@ -9,8 +9,8 @@ export type CountrySummary = {
   lat: number
   lon: number
   peakCount: number
-  highestPeak: Peak
-  lowestPeak: Peak
+  highestPeak: PeakIndex
+  lowestPeak: PeakIndex
   ranges: string[]
   avgElevationFt: number
 }

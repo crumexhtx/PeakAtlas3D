@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Map as MapboxMap } from 'mapbox-gl'
-import type { Peak } from '../types/peak'
+import type { PeakIndex } from '../types/peak'
 import type { CountrySummary } from '../types/country'
 import { flagUrl } from '../lib/countries'
 import { isOnFrontHemisphere } from '../lib/globeVisibility'
@@ -13,7 +13,7 @@ type SpinFunFactProps = {
   /** When false (e.g. atlas hint visible), hide callouts. Parent owns this. */
   enabled?: boolean
   countries: CountrySummary[]
-  peaks: Peak[]
+  peaks: PeakIndex[]
 }
 
 type FactContent = {
@@ -242,7 +242,7 @@ export function SpinFunFact({
     }
 
     const showForPeak = (
-      peak: Peak,
+      peak: PeakIndex,
       country: CountrySummary,
       point: Point,
       vw: number,
@@ -277,7 +277,7 @@ export function SpinFunFact({
     ) => {
       let best:
         | {
-            peak: Peak
+            peak: PeakIndex
             country: CountrySummary
             dist: number
             point: Point
