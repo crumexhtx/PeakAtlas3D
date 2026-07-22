@@ -9,6 +9,18 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.2.2',
+    date: '2026-07-22',
+    title: 'More US peaks and official trail links',
+    summary:
+      'The U.S. catalog grows with high-demand summits—popular Colorado 14ers, Half Dome, Olympic and Cascades classics, and more—each with curated trail bubbles that open 14ers.com, NPS, or USFS pages.',
+    highlights: [
+      'Added high-value U.S. peaks including Massive, Quandary, Grays, Torreys, Bierstadt, Maroon, Half Dome, South Sister, Olympus (WA), Borah, Wheeler, Kuwohi, and Haleakalā',
+      'Trail highlight bubbles for U.S. peaks with live links to 14ers.com (Colorado) and NPS/USFS sources elsewhere',
+      'Clearer peak location labels (e.g. Colorado, USA) and peak-page SEO polish',
+    ],
+  },
+  {
     version: '0.2.1',
     date: '2026-07-19',
     title: 'Sitemap, crawlable peak meta, and CI',
