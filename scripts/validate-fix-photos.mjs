@@ -132,7 +132,7 @@ const REQUIRE_CONTEXT = {
 }
 
 const REJECT_PATTERNS =
-  /(?:^|[^a-z])(salmon|entrance|headstone|cemetery|kentucky|ireland|sligo|benbulbin|palo duro|texas panhandle|apollo|soyuz|helichrysum|stuhlmannii|logo|flag|diagram|chart|coat of arms|location map|topo map|gps track|gpsvisualizer|orthophoto|satellite image of|pdf|geology|plaque|statue|chapel|museum|time zone|thumbnail\.jpg|helicopter|map_mount|24000 geo|ski area|moose in grand|barns grand|halti beel|natore|rajshahi|boundary stone|wind farm)(?:[^a-z]|$)/i
+  /(?:^|[^a-z])(salmon|entrance|headstone|cemetery|kentucky|ireland|sligo|benbulbin|palo duro|texas panhandle|apollo|soyuz|helichrysum|stuhlmannii|logo|flag|diagram|chart|coat of arms|location map|topo map|gps track|gpsvisualizer|orthophoto|satellite image of|pdf|geology|plaque|statue|chapel|museum|time zone|thumbnail\.jpg|helicopter|map_mount|24000 geo|ski area|moose in grand|barns grand|halti beel|natore|rajshahi|boundary stone|wind farm|colorado springs|albuquerque|highway|downtown|cityscape|temple|google art|albert bierstadt|earthquake|artesian|athena|post office|kentucky)(?:[^a-z]|$)/i
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
@@ -193,8 +193,13 @@ function photoHay(photo) {
 }
 
 function photoMatchesPeak(peak, photo) {
+  // Reject on file/url text only — photographer home towns in credits
+  // (e.g. "from Albuquerque") are not subject matter.
+  const fileHay = norm(
+    `${photo.url} ${photo.sourceUrl ?? ''} ${photo.title ?? ''}`,
+  )
+  if (REJECT_PATTERNS.test(fileHay)) return { ok: false, reason: 'reject-pattern' }
   const hay = photoHay(photo)
-  if (REJECT_PATTERNS.test(hay)) return { ok: false, reason: 'reject-pattern' }
 
   const ctx = REQUIRE_CONTEXT[peak.id]
   if (ctx?.length) {
