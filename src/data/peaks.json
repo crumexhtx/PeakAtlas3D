@@ -236,6 +236,282 @@
     "seoMetaDescription": "Explore Mt. Shasta on a 3D map — Cascade volcano topography, Avalanche Gulch context, elevation stats, and northern California approaches."
   },
   {
+    "id": "lassen",
+    "name": "Lassen Peak",
+    "lat": 40.4882,
+    "lon": -121.505,
+    "elevationFt": 10457,
+    "prominenceFt": 5229,
+    "range": "Cascade Range",
+    "country": "USA",
+    "description": "Southernmost Cascade volcano and the high point of Lassen Volcanic National Park — a popular summer trail to a cratered summit above Lake Helen.",
+    "firstAscent": "1851",
+    "difficulty": "Strenuous day hike",
+    "aliases": [
+      "Mount Lassen"
+    ],
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "California’s southern Cascade volcano and a classic national-park summit hike.",
+    "seoMetaDescription": "Explore Lassen Peak on a 3D map — Lassen Volcanic National Park topography, crater summit trail, elevation, and Mineral approaches.",
+    "nearestTown": {
+      "name": "Mineral",
+      "region": "California",
+      "distanceMiles": 18,
+      "route": "CA-89",
+      "lat": 40.3482,
+      "lon": -121.595
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Mineral",
+        "region": "California",
+        "distanceMiles": 18,
+        "route": "CA-89",
+        "lat": 40.3482,
+        "lon": -121.595
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Mineral cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Mineral after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/USA_Lassen_NP_Kings_Creek_CA.jpg/960px-USA_Lassen_NP_Kings_Creek_CA.jpg",
+      "credit": "Daniel Schwen",
+      "license": "CC BY-SA 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:USA_Lassen_NP_Kings_Creek_CA.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/USA_Lassen_NP_Kings_Creek_CA.jpg/960px-USA_Lassen_NP_Kings_Creek_CA.jpg",
+        "credit": "Daniel Schwen",
+        "license": "CC BY-SA 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:USA_Lassen_NP_Kings_Creek_CA.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/USA_Lassen_NP_Kings_Creek_CA_edit3.jpg/960px-USA_Lassen_NP_Kings_Creek_CA_edit3.jpg",
+        "credit": "The original uploader was Fcb981 at English Wikipedia.",
+        "license": "CC BY-SA 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:USA_Lassen_NP_Kings_Creek_CA_edit3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "sanjacinto",
+    "name": "San Jacinto Peak",
+    "lat": 33.8147,
+    "lon": -116.6794,
+    "elevationFt": 10834,
+    "prominenceFt": 8319,
+    "range": "San Jacinto Mountains",
+    "country": "USA",
+    "description": "Southern California sky-island summit above Palm Springs — tram-accessible wilderness with steep trails from Long Valley to a granite high point.",
+    "firstAscent": "1874",
+    "difficulty": "Strenuous day hike",
+    "aliases": [
+      "Mount San Jacinto",
+      "Mt. San Jacinto"
+    ],
+    "bestSeason": "May–Oct",
+    "whyNotable": "One of Southern California’s most prominent peaks and a classic Palm Springs tram-to-summit hike.",
+    "seoMetaDescription": "Explore San Jacinto Peak on a 3D map — Southern California sky-island topography, tram approaches, elevation stats, and Palm Springs staging.",
+    "nearestTown": {
+      "name": "Palm Springs",
+      "region": "California",
+      "distanceMiles": 12,
+      "route": "Tramway Rd",
+      "lat": 33.8303,
+      "lon": -116.5453
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Palm Springs",
+        "region": "California",
+        "distanceMiles": 12,
+        "route": "Tramway Rd",
+        "lat": 33.8303,
+        "lon": -116.5453
+      },
+      {
+        "name": "Idyllwild",
+        "region": "California",
+        "distanceMiles": 14,
+        "route": "CA-243",
+        "lat": 33.7403,
+        "lon": -116.712
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Palm Springs cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Palm Springs after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Mount_San_Jacinto.jpg/960px-Mount_San_Jacinto.jpg",
+      "credit": "Orfeo 07",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_San_Jacinto.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Mount_San_Jacinto.jpg/960px-Mount_San_Jacinto.jpg",
+        "credit": "Orfeo 07",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_San_Jacinto.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/San_Jacinto_Peak_from_the_east_near_Cactus_to_Clouds.jpg/960px-San_Jacinto_Peak_from_the_east_near_Cactus_to_Clouds.jpg",
+        "credit": "David Money Harris",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Jacinto_Peak_from_the_east_near_Cactus_to_Clouds.jpg"
+      }
+    ]
+  },
+  {
+    "id": "sangorgonio",
+    "name": "San Gorgonio Mountain",
+    "lat": 34.0992,
+    "lon": -116.8247,
+    "elevationFt": 11503,
+    "prominenceFt": 8294,
+    "range": "San Bernardino Mountains",
+    "country": "USA",
+    "description": "Highest peak in Southern California — a long wilderness hike via Vivian Creek or other San Gorgonio Wilderness trails above Forest Falls.",
+    "firstAscent": "1872",
+    "difficulty": "Strenuous day / overnight",
+    "aliases": [
+      "Mt. San Gorgonio",
+      "Old Greyback"
+    ],
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Southern California’s high point and a rite-of-passage San Bernardino wilderness hike.",
+    "seoMetaDescription": "Explore San Gorgonio Mountain on a 3D map — Southern California high point, wilderness topography, elevation stats, and Forest Falls approaches.",
+    "nearestTown": {
+      "name": "Forest Falls",
+      "region": "California",
+      "distanceMiles": 8,
+      "route": "Valley of the Falls Dr",
+      "lat": 34.0878,
+      "lon": -116.925
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Forest Falls",
+        "region": "California",
+        "distanceMiles": 8,
+        "route": "Valley of the Falls Dr",
+        "lat": 34.0878,
+        "lon": -116.925
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Forest Falls cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Forest Falls after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/San_Gorgonio_Mountain.jpg/960px-San_Gorgonio_Mountain.jpg",
+      "credit": "Doc Searls",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Gorgonio_Mountain.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/San_Gorgonio_Mountain.jpg/960px-San_Gorgonio_Mountain.jpg",
+        "credit": "Doc Searls",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Gorgonio_Mountain.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/San_Gorgonio_Wilderness.jpg/960px-San_Gorgonio_Wilderness.jpg",
+        "credit": "jcookfisher",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Gorgonio_Wilderness.jpg"
+      }
+    ]
+  },
+  {
+    "id": "baldy",
+    "name": "Mt. San Antonio",
+    "lat": 34.2889,
+    "lon": -117.6463,
+    "elevationFt": 10064,
+    "prominenceFt": 6224,
+    "range": "San Gabriel Mountains",
+    "country": "USA",
+    "description": "Mt. Baldy — Los Angeles’s backyard 10,000-footer via Baldy Bowl, Ski Hut, or Devil’s Backbone routes in Angeles National Forest.",
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike / scramble",
+    "aliases": [
+      "Mt. Baldy",
+      "Mount Baldy",
+      "Baldy"
+    ],
+    "bestSeason": "May–Oct",
+    "whyNotable": "The iconic San Gabriel high point and one of the most climbed peaks in Southern California.",
+    "seoMetaDescription": "Explore Mt. San Antonio (Mt. Baldy) on a 3D map — San Gabriel Mountains topography, Baldy Bowl routes, elevation, and Claremont approaches.",
+    "nearestTown": {
+      "name": "Mt. Baldy Village",
+      "region": "California",
+      "distanceMiles": 6,
+      "route": "Mt Baldy Rd",
+      "lat": 34.2361,
+      "lon": -117.6578
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Claremont",
+        "region": "California",
+        "distanceMiles": 16,
+        "route": "Mt Baldy Rd",
+        "lat": 34.0967,
+        "lon": -117.7198
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Mt. Baldy Village cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Mt. Baldy Village after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Mount_San_Antonio.jpg",
+      "credit": "Will Beback",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_San_Antonio.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Mount_San_Antonio.jpg",
+        "credit": "Will Beback",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_San_Antonio.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Mt.SanAntonio.jpg/960px-Mt.SanAntonio.jpg",
+        "credit": "The original uploader was Tillman at English Wikipedia.",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt.SanAntonio.jpg"
+      }
+    ]
+  },
+  {
     "id": "hood",
     "name": "Mt. Hood",
     "lat": 45.3736,
@@ -421,6 +697,144 @@
     ]
   },
   {
+    "id": "jeffersonor",
+    "name": "Mt. Jefferson",
+    "lat": 44.6743,
+    "lon": -121.7996,
+    "elevationFt": 10497,
+    "prominenceFt": 5777,
+    "range": "Cascade Range",
+    "country": "USA",
+    "description": "Oregon’s second-highest Cascade volcano — a remote, technical summit north of Sisters with long approaches through Jefferson Wilderness.",
+    "firstAscent": "1888",
+    "difficulty": "Technical alpine / glacier",
+    "aliases": [
+      "Mount Jefferson"
+    ],
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Oregon’s #2 Cascade summit and a committing wilderness climb north of the Three Sisters.",
+    "seoMetaDescription": "Explore Mt. Jefferson (Oregon) on a 3D map — Cascade volcano topography, elevation stats, and Jefferson Wilderness approaches.",
+    "nearestTown": {
+      "name": "Sisters",
+      "region": "Oregon",
+      "distanceMiles": 35,
+      "route": "US-20 / FR roads",
+      "lat": 44.2909,
+      "lon": -121.5492
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Sisters",
+        "region": "Oregon",
+        "distanceMiles": 35,
+        "route": "US-20",
+        "lat": 44.2909,
+        "lon": -121.5492
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Sisters cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Sisters after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mount_Jefferson_Oregon.jpg/960px-Mount_Jefferson_Oregon.jpg",
+      "credit": "Lyn Topinka, USGS",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Jefferson_Oregon.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mount_Jefferson_Oregon.jpg/960px-Mount_Jefferson_Oregon.jpg",
+        "credit": "Lyn Topinka, USGS",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Jefferson_Oregon.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mt._Jefferson_from_Three_Fingered_Jack.JPG/960px-Mt._Jefferson_from_Three_Fingered_Jack.JPG",
+        "credit": "Jsayre64",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Jefferson_from_Three_Fingered_Jack.JPG"
+      }
+    ]
+  },
+  {
+    "id": "brokentop",
+    "name": "Broken Top",
+    "lat": 44.0829,
+    "lon": -121.6945,
+    "elevationFt": 9175,
+    "prominenceFt": 2175,
+    "range": "Cascade Range",
+    "country": "USA",
+    "description": "Jagged Cascade volcano beside the Three Sisters — popular Green Lakes and No Name Lake approaches with a scramble summit in Deschutes National Forest.",
+    "firstAscent": "1910",
+    "difficulty": "Class 3 scramble",
+    "aliases": [],
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Signature Central Oregon volcano and a favorite scramble above the Green Lakes basin.",
+    "seoMetaDescription": "Explore Broken Top on a 3D map — Central Oregon Cascades topography, Green Lakes approaches, and elevation stats near Sisters.",
+    "nearestTown": {
+      "name": "Bend",
+      "region": "Oregon",
+      "distanceMiles": 28,
+      "route": "Cascade Lakes Hwy",
+      "lat": 44.0582,
+      "lon": -121.3153
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Bend",
+        "region": "Oregon",
+        "distanceMiles": 28,
+        "route": "Cascade Lakes Hwy",
+        "lat": 44.0582,
+        "lon": -121.3153
+      },
+      {
+        "name": "Sisters",
+        "region": "Oregon",
+        "distanceMiles": 30,
+        "route": "US-20",
+        "lat": 44.2909,
+        "lon": -121.5492
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Bend cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Bend after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Broken_Top.JPG/960px-Broken_Top.JPG",
+      "credit": "Unknown",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Broken_Top.JPG"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Broken_Top.JPG/960px-Broken_Top.JPG",
+        "credit": "Unknown",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Broken_Top.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Broken_Top_Oregon_volcano.jpg/960px-Broken_Top_Oregon_volcano.jpg",
+        "credit": "Lyn Topinka",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Broken_Top_Oregon_volcano.jpg"
+      }
+    ]
+  },
+  {
     "id": "baker",
     "name": "Mt. Baker",
     "lat": 48.7767,
@@ -535,6 +949,138 @@
     "bestSeason": "Jun–Sep",
     "whyNotable": "The northernmost Cascade volcano in the contiguous U.S.",
     "seoMetaDescription": "Explore Mt. Baker on a 3D map — northern Cascade glaciers, ski-mountaineering terrain, elevation stats, and Pacific Northwest approaches."
+  },
+  {
+    "id": "glacierpeak",
+    "name": "Glacier Peak",
+    "lat": 48.1122,
+    "lon": -121.1132,
+    "elevationFt": 10541,
+    "prominenceFt": 7498,
+    "range": "Cascade Range",
+    "country": "USA",
+    "description": "Washington’s remote Cascade volcano east of Darrington — a long wilderness approach to glaciers and a classic Pacific Northwest mountaineering objective.",
+    "firstAscent": "1898",
+    "difficulty": "Glacier climb / multi-day",
+    "aliases": [
+      "Dakobed"
+    ],
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "One of the major Cascade stratovolcanoes and Washington’s most remote high volcano.",
+    "seoMetaDescription": "Explore Glacier Peak on a 3D map — remote Cascade volcano topography, elevation stats, and North Cascades wilderness approaches.",
+    "nearestTown": {
+      "name": "Darrington",
+      "region": "Washington",
+      "distanceMiles": 28,
+      "route": "Mountain Loop / Suiattle",
+      "lat": 48.2529,
+      "lon": -121.604
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Darrington",
+        "region": "Washington",
+        "distanceMiles": 28,
+        "route": "Mountain Loop Hwy",
+        "lat": 48.2529,
+        "lon": -121.604
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Darrington cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Darrington after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Glacier_Peak_from_Image_Lake.jpg/960px-Glacier_Peak_from_Image_Lake.jpg",
+      "credit": "Martin Bravenboer",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glacier_Peak_from_Image_Lake.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Glacier_Peak_from_Image_Lake.jpg/960px-Glacier_Peak_from_Image_Lake.jpg",
+        "credit": "Martin Bravenboer",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glacier_Peak_from_Image_Lake.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Glacier_Peak_7137b.jpg/960px-Glacier_Peak_7137b.jpg",
+        "credit": "Walter Siegmund",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glacier_Peak_7137b.jpg"
+      }
+    ]
+  },
+  {
+    "id": "shuksan",
+    "name": "Mt. Shuksan",
+    "lat": 48.8311,
+    "lon": -121.6031,
+    "elevationFt": 9131,
+    "prominenceFt": 4411,
+    "range": "North Cascades",
+    "country": "USA",
+    "description": "Iconic North Cascades pyramid above Artist Point and Picture Lake — a photogenic alpine peak and classic mountaineering objective near Mt. Baker.",
+    "firstAscent": "1906",
+    "difficulty": "Technical alpine",
+    "aliases": [
+      "Mount Shuksan"
+    ],
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "One of the most photographed mountains in the Cascades; classic alpine climbing above Baker Lake country.",
+    "seoMetaDescription": "Explore Mt. Shuksan on a 3D map — North Cascades alpine topography, Artist Point views, elevation stats, and Mt. Baker approaches.",
+    "nearestTown": {
+      "name": "Glacier",
+      "region": "Washington",
+      "distanceMiles": 22,
+      "route": "SR-542",
+      "lat": 48.8884,
+      "lon": -121.9338
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Glacier",
+        "region": "Washington",
+        "distanceMiles": 22,
+        "route": "SR-542",
+        "lat": 48.8884,
+        "lon": -121.9338
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Glacier cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Glacier after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Mount_Shuksan_reflected_in_Picture_Lake.jpg/960px-Mount_Shuksan_reflected_in_Picture_Lake.jpg",
+      "credit": "Ron Clausen",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Shuksan_reflected_in_Picture_Lake.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Mount_Shuksan_reflected_in_Picture_Lake.jpg/960px-Mount_Shuksan_reflected_in_Picture_Lake.jpg",
+        "credit": "Ron Clausen",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Shuksan_reflected_in_Picture_Lake.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mount_Shuksan_tarn.jpg/960px-Mount_Shuksan_tarn.jpg",
+        "credit": "Frank Kovalchek from Anchorage, Alaska, USA",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Shuksan_tarn.jpg"
+      }
+    ]
   },
   {
     "id": "olympuswa",
@@ -1016,6 +1562,72 @@
     ]
   },
   {
+    "id": "harvard",
+    "name": "Mt. Harvard",
+    "lat": 38.9244,
+    "lon": -106.3207,
+    "elevationFt": 14420,
+    "prominenceFt": 2360,
+    "range": "Sawatch Range",
+    "country": "USA",
+    "description": "Third-highest peak in the Rockies — a long Class 2 hike from Horn Fork Basin near Buena Vista in the Collegiate Peaks.",
+    "firstAscent": "1869",
+    "difficulty": "Class 2 hike",
+    "aliases": [
+      "Mount Harvard"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Colorado’s third-highest summit and namesake of the Collegiate Peaks.",
+    "seoMetaDescription": "Explore Mt. Harvard on a 3D map — Collegiate Peaks 14er topography, Horn Fork approaches, elevation stats, and Buena Vista staging.",
+    "nearestTown": {
+      "name": "Buena Vista",
+      "region": "Colorado",
+      "distanceMiles": 16,
+      "route": "CR-365 / Horn Fork",
+      "lat": 38.8422,
+      "lon": -106.1311
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Buena Vista",
+        "region": "Colorado",
+        "distanceMiles": 16,
+        "route": "CR-365",
+        "lat": 38.8422,
+        "lon": -106.1311
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Buena Vista cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Buena Vista after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Mount_Harvard_%28Colorado%29_-_2006-07-16.jpg/960px-Mount_Harvard_%28Colorado%29_-_2006-07-16.jpg",
+      "credit": "jokermanj",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Harvard_(Colorado)_-_2006-07-16.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Mount_Harvard_%28Colorado%29_-_2006-07-16.jpg/960px-Mount_Harvard_%28Colorado%29_-_2006-07-16.jpg",
+        "credit": "jokermanj",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Harvard_(Colorado)_-_2006-07-16.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Mount_Harvard_and_view_down_Arkansas_River._Lake_County%2C_Colorado._1873.jpg/960px-Mount_Harvard_and_view_down_Arkansas_River._Lake_County%2C_Colorado._1873.jpg",
+        "credit": "U.S. Geological Survey",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Harvard_and_view_down_Arkansas_River._Lake_County,_Colorado._1873.jpg"
+      }
+    ]
+  },
+  {
     "id": "whitney",
     "name": "Mt. Whitney",
     "lat": 36.5785,
@@ -1233,6 +1845,72 @@
         "credit": "Sachintha Gurudeniya",
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yosemite_Half_Dome.jpg"
+      }
+    ]
+  },
+  {
+    "id": "tallac",
+    "name": "Mt. Tallac",
+    "lat": 38.9063,
+    "lon": -120.158,
+    "elevationFt": 9735,
+    "prominenceFt": 695,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "description": "Tahoe’s signature day-hike summit above Fallen Leaf Lake — a steep trail to panoramic views over Lake Tahoe and Desolation Wilderness.",
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "aliases": [
+      "Mount Tallac"
+    ],
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "One of Lake Tahoe’s most popular summit hikes with classic alpine-lake views.",
+    "seoMetaDescription": "Explore Mt. Tallac on a 3D map — Lake Tahoe summit topography, Desolation Wilderness approaches, elevation stats, and South Lake Tahoe staging.",
+    "nearestTown": {
+      "name": "South Lake Tahoe",
+      "region": "California",
+      "distanceMiles": 8,
+      "route": "CA-89",
+      "lat": 38.9399,
+      "lon": -119.9772
+    },
+    "nearbyPlaces": [
+      {
+        "name": "South Lake Tahoe",
+        "region": "California",
+        "distanceMiles": 8,
+        "route": "CA-89",
+        "lat": 38.9399,
+        "lon": -119.9772
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "South Lake Tahoe cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in South Lake Tahoe after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/MountTallac.jpg/960px-MountTallac.jpg",
+      "credit": "Rabit 115 at English Wikipedia",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountTallac.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/MountTallac.jpg/960px-MountTallac.jpg",
+        "credit": "Rabit 115 at English Wikipedia",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MountTallac.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Mt._Tallac%2C_Lake_Tahoe%2C_California.jpg/960px-Mt._Tallac%2C_Lake_Tahoe%2C_California.jpg",
+        "credit": "jcookfisher",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Tallac,_Lake_Tahoe,_California.jpg"
       }
     ]
   },
@@ -1581,6 +2259,74 @@
     ]
   },
   {
+    "id": "bluesky",
+    "name": "Mount Blue Sky",
+    "lat": 39.5883,
+    "lon": -105.6438,
+    "elevationFt": 14265,
+    "prominenceFt": 2749,
+    "range": "Front Range",
+    "country": "USA",
+    "description": "Formerly Mt. Evans — a Front Range 14er with a seasonal summit highway and classic West Ridge hike from Summit Lake near Idaho Springs.",
+    "firstAscent": "1874",
+    "difficulty": "Drive / Class 2 hike",
+    "aliases": [
+      "Mt. Evans",
+      "Mount Evans",
+      "Mt. Blue Sky"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "One of Colorado’s most visited high summits — road-accessible 14er above the Denver Front Range.",
+    "seoMetaDescription": "Explore Mount Blue Sky (Mt. Evans) on a 3D map — Front Range 14er topography, summit highway approaches, elevation, and Idaho Springs staging.",
+    "nearestTown": {
+      "name": "Idaho Springs",
+      "region": "Colorado",
+      "distanceMiles": 28,
+      "route": "CO-103 / Mt Blue Sky Rd",
+      "lat": 39.7425,
+      "lon": -105.5136
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Idaho Springs",
+        "region": "Colorado",
+        "distanceMiles": 28,
+        "route": "CO-103",
+        "lat": 39.7425,
+        "lon": -105.5136
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Idaho Springs cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Idaho Springs after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/MtEvansCO.jpg",
+      "credit": "Lookinhere",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MtEvansCO.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/MtEvansCO.jpg",
+        "credit": "Lookinhere",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MtEvansCO.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Mt_Evans.JPG/960px-Mt_Evans.JPG",
+        "credit": "Boilerinbtown",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Evans.JPG"
+      }
+    ]
+  },
+  {
     "id": "pikes",
     "name": "Pikes Peak",
     "lat": 38.8409,
@@ -1770,6 +2516,72 @@
         "credit": "William Henry Jackson",
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panorama_from_summit_of_Mount_Lincoln,_shows_Quandary_Peak_and_Blue_River_Range._-_NARA_-_517682.tif"
+      }
+    ]
+  },
+  {
+    "id": "sherman",
+    "name": "Mt. Sherman",
+    "lat": 39.225,
+    "lon": -106.1697,
+    "elevationFt": 14036,
+    "prominenceFt": 896,
+    "range": "Mosquito Range",
+    "country": "USA",
+    "description": "One of Colorado’s most accessible 14ers — a short Class 2 ridge hike from Fourmile Creek above Fairplay / Alma.",
+    "firstAscent": "1881",
+    "difficulty": "Class 2 hike",
+    "aliases": [
+      "Mount Sherman"
+    ],
+    "bestSeason": "May–Oct",
+    "whyNotable": "A classic “first 14er” for many Colorado hikers thanks to a short approach and moderate ridge.",
+    "seoMetaDescription": "Explore Mt. Sherman on a 3D map — Mosquito Range 14er topography, Fourmile Creek approaches, elevation stats, and Fairplay staging.",
+    "nearestTown": {
+      "name": "Fairplay",
+      "region": "Colorado",
+      "distanceMiles": 14,
+      "route": "Fourmile Creek Rd",
+      "lat": 39.2247,
+      "lon": -106.0019
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Fairplay",
+        "region": "Colorado",
+        "distanceMiles": 14,
+        "route": "Fourmile Creek Rd",
+        "lat": 39.2247,
+        "lon": -106.0019
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Fairplay cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Fairplay after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Mount_Sherman_and_Mosquito_Range.jpg/960px-Mount_Sherman_and_Mosquito_Range.jpg",
+      "credit": "David Herrera from Albuquerque, NM, Bernalillo",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Sherman_and_Mosquito_Range.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Mount_Sherman_and_Mosquito_Range.jpg/960px-Mount_Sherman_and_Mosquito_Range.jpg",
+        "credit": "David Herrera from Albuquerque, NM, Bernalillo",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Sherman_and_Mosquito_Range.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Hilltop_Mine_on_Mount_Sherman.jpg/960px-Hilltop_Mine_on_Mount_Sherman.jpg",
+        "credit": "Adam Baker from Houston / Moscow / Toulouse (travel a lot)",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilltop_Mine_on_Mount_Sherman.jpg"
       }
     ]
   },
@@ -11167,6 +11979,73 @@
     ]
   },
   {
+    "id": "leconte",
+    "name": "Mt. LeConte",
+    "lat": 35.6542,
+    "lon": -83.4372,
+    "elevationFt": 6593,
+    "prominenceFt": 1360,
+    "range": "Great Smoky Mountains",
+    "country": "USA",
+    "description": "One of the Smokies’ most popular overnight destinations — Alum Cave and Rainbow Falls trails climb to LeConte Lodge and a forested summit complex.",
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day / overnight",
+    "aliases": [
+      "Mount Le Conte",
+      "Mount LeConte"
+    ],
+    "bestSeason": "Apr–Oct",
+    "whyNotable": "Among the most visited backcountry summits in the eastern U.S., with a historic summit lodge.",
+    "seoMetaDescription": "Explore Mt. LeConte on a 3D map — Great Smoky Mountains topography, Alum Cave approaches, elevation stats, and Gatlinburg staging.",
+    "nearestTown": {
+      "name": "Gatlinburg",
+      "region": "Tennessee",
+      "distanceMiles": 8,
+      "route": "US-441 / Alum Cave",
+      "lat": 35.7143,
+      "lon": -83.5102
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Gatlinburg",
+        "region": "Tennessee",
+        "distanceMiles": 8,
+        "route": "US-441",
+        "lat": 35.7143,
+        "lon": -83.5102
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Gatlinburg cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Gatlinburg after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Mount_Le_Conte_Panorama.JPG/960px-Mount_Le_Conte_Panorama.JPG",
+      "credit": "No machine-readable author provided. Blinutne assumed (based on copyright claims",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Le_Conte_Panorama.JPG"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Mount_Le_Conte_Panorama.JPG/960px-Mount_Le_Conte_Panorama.JPG",
+        "credit": "No machine-readable author provided. Blinutne assumed (based on copyright claims",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Le_Conte_Panorama.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Mount_Le_Conte_in_Fall.JPG/960px-Mount_Le_Conte_in_Fall.JPG",
+        "credit": "Scott Basford",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Le_Conte_in_Fall.JPG"
+      }
+    ]
+  },
+  {
     "id": "katahdin",
     "name": "Mt. Katahdin",
     "lat": 45.9044,
@@ -11276,6 +12155,70 @@
     "bestSeason": "Jul–Sep",
     "whyNotable": "Northern terminus of the Appalachian Trail in Maine.",
     "seoMetaDescription": "Explore Mt. Katahdin on a 3D topographic map — Maine’s high point and AT terminus, Knife Edge terrain, elevation, and Baxter State Park approaches."
+  },
+  {
+    "id": "cadillac",
+    "name": "Cadillac Mountain",
+    "lat": 44.3512,
+    "lon": -68.2265,
+    "elevationFt": 1529,
+    "prominenceFt": 1529,
+    "range": "Acadia",
+    "country": "USA",
+    "description": "Acadia National Park’s high point and one of the first places to see sunrise in the U.S. — road- and trail-accessible granite summit above Bar Harbor.",
+    "firstAscent": "Unknown",
+    "difficulty": "Drive / easy to moderate hike",
+    "aliases": [],
+    "bestSeason": "May–Oct",
+    "whyNotable": "Acadia’s iconic summit and one of the most visited mountain viewpoints on the East Coast.",
+    "seoMetaDescription": "Explore Cadillac Mountain on a 3D map — Acadia National Park high point, granite summit topography, elevation, and Bar Harbor approaches.",
+    "nearestTown": {
+      "name": "Bar Harbor",
+      "region": "Maine",
+      "distanceMiles": 4,
+      "route": "Cadillac Summit Rd",
+      "lat": 44.3876,
+      "lon": -68.2039
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Bar Harbor",
+        "region": "Maine",
+        "distanceMiles": 4,
+        "route": "Cadillac Summit Rd",
+        "lat": 44.3876,
+        "lon": -68.2039
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Bar Harbor cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Bar Harbor after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Cadillac_Mountain.jpg/960px-Cadillac_Mountain.jpg",
+      "credit": "The original uploader was NightThree at English Wikipedia.",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cadillac_Mountain.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Cadillac_Mountain.jpg/960px-Cadillac_Mountain.jpg",
+        "credit": "The original uploader was NightThree at English Wikipedia.",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cadillac_Mountain.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Cadillac_Mountain_Sunset.jpg/960px-Cadillac_Mountain_Sunset.jpg",
+        "credit": "WaxPhilosophic",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cadillac_Mountain_Sunset.jpg"
+      }
+    ]
   },
   {
     "id": "marcy",
@@ -11390,6 +12333,72 @@
     "seoMetaDescription": "Explore Mt. Marcy on a 3D map — New York’s Adirondack high point, forest-to-alpine hike terrain, elevation stats, and classic High Peaks staging."
   },
   {
+    "id": "mansfield",
+    "name": "Mt. Mansfield",
+    "lat": 44.5438,
+    "lon": -72.8143,
+    "elevationFt": 4393,
+    "prominenceFt": 3633,
+    "range": "Green Mountains",
+    "country": "USA",
+    "description": "Vermont’s high point — a classic Long Trail / Forehead-to-Chin ridge hike above Stowe with alpine tundra and ski-area access.",
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "aliases": [
+      "Mount Mansfield"
+    ],
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Highest peak in Vermont and the signature summit of the Green Mountains.",
+    "seoMetaDescription": "Explore Mt. Mansfield on a 3D map — Vermont high point topography, Long Trail ridge, elevation stats, and Stowe approaches.",
+    "nearestTown": {
+      "name": "Stowe",
+      "region": "Vermont",
+      "distanceMiles": 10,
+      "route": "VT-108",
+      "lat": 44.4654,
+      "lon": -72.6874
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Stowe",
+        "region": "Vermont",
+        "distanceMiles": 10,
+        "route": "VT-108",
+        "lat": 44.4654,
+        "lon": -72.6874
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Stowe cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Stowe after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mt_Mansfield_20060727.JPG/960px-Mt_Mansfield_20060727.JPG",
+      "credit": "Niranjan Arminius",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Mansfield_20060727.JPG"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mt_Mansfield_20060727.JPG/960px-Mt_Mansfield_20060727.JPG",
+        "credit": "Niranjan Arminius",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Mansfield_20060727.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Mt_Mansfield_from_University_Grounds_%28NBY_9253%29.jpg",
+        "credit": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Mansfield_from_University_Grounds_(NBY_9253).jpg"
+      }
+    ]
+  },
+  {
     "id": "washington",
     "name": "Mt. Washington",
     "lat": 44.2706,
@@ -11500,6 +12509,72 @@
     "bestSeason": "Jun–Sep",
     "whyNotable": "Home to some of the world’s most extreme recorded weather.",
     "seoMetaDescription": "Explore Mt. Washington on a 3D topographic map — New Hampshire’s Presidential weather peak, alpine trails, elevation, and White Mountains approaches."
+  },
+  {
+    "id": "oldrag",
+    "name": "Old Rag Mountain",
+    "lat": 38.5518,
+    "lon": -78.3142,
+    "elevationFt": 3268,
+    "prominenceFt": 1368,
+    "range": "Blue Ridge Mountains",
+    "country": "USA",
+    "description": "Shenandoah’s legendary granite scramble — a permit-required circuit with rock slabs, chimneys, and huge Piedmont views near Sperryville.",
+    "firstAscent": "Unknown",
+    "difficulty": "Class 3 scramble (permit)",
+    "aliases": [
+      "Old Rag"
+    ],
+    "bestSeason": "Mar–Nov",
+    "whyNotable": "One of the Mid-Atlantic’s most famous day hikes — a technical granite scramble in Shenandoah National Park.",
+    "seoMetaDescription": "Explore Old Rag Mountain on a 3D map — Shenandoah scramble topography, circuit trail, elevation stats, and Sperryville approaches.",
+    "nearestTown": {
+      "name": "Sperryville",
+      "region": "Virginia",
+      "distanceMiles": 10,
+      "route": "SR-231 / SR-600",
+      "lat": 38.6571,
+      "lon": -78.2261
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Sperryville",
+        "region": "Virginia",
+        "distanceMiles": 10,
+        "route": "SR-600",
+        "lat": 38.6571,
+        "lon": -78.2261
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Sperryville cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Sperryville after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Old_Rag_Mountain.jpg/960px-Old_Rag_Mountain.jpg",
+      "credit": "Todd Rich",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Rag_Mountain.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Old_Rag_Mountain.jpg/960px-Old_Rag_Mountain.jpg",
+        "credit": "Todd Rich",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Rag_Mountain.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Top_of_Old_Rag_Mountain.jpg/960px-Top_of_Old_Rag_Mountain.jpg",
+        "credit": "AGnias47",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Top_of_Old_Rag_Mountain.jpg"
+      }
+    ]
   },
   {
     "id": "timpanogos",
@@ -11680,6 +12755,139 @@
         "credit": "Qfl247 (talk).\n\nQfl247 at en.wikipedia",
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Doso_Doyabi_from_Wheeler_Peak.jpg"
+      }
+    ]
+  },
+  {
+    "id": "wheelernm",
+    "name": "Wheeler Peak",
+    "lat": 36.5569,
+    "lon": -105.4169,
+    "elevationFt": 13161,
+    "prominenceFt": 3409,
+    "range": "Sangre de Cristo Mountains",
+    "country": "USA",
+    "description": "New Mexico’s high point above Taos Ski Valley — a popular Williams Lake trail to an alpine summit in Carson National Forest.",
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "aliases": [
+      "Wheeler Peak NM"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Highest point in New Mexico and a classic Taos alpine day hike.",
+    "seoMetaDescription": "Explore Wheeler Peak (New Mexico) on a 3D map — state high point topography, Williams Lake trail, elevation stats, and Taos approaches.",
+    "nearestTown": {
+      "name": "Taos",
+      "region": "New Mexico",
+      "distanceMiles": 22,
+      "route": "NM-150 / Taos Ski Valley",
+      "lat": 36.4072,
+      "lon": -105.5733
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Taos",
+        "region": "New Mexico",
+        "distanceMiles": 22,
+        "route": "NM-150",
+        "lat": 36.4072,
+        "lon": -105.5733
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Taos cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Taos after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Wheeler_Peak_2006.jpg/960px-Wheeler_Peak_2006.jpg",
+      "credit": "David Herrera",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheeler_Peak_2006.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Wheeler_Peak_2006.jpg/960px-Wheeler_Peak_2006.jpg",
+        "credit": "David Herrera",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheeler_Peak_2006.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Wheeler_Peak_panorama.jpg/960px-Wheeler_Peak_panorama.jpg",
+        "credit": "David Herrera",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheeler_Peak_panorama.jpg"
+      }
+    ]
+  },
+  {
+    "id": "sandia",
+    "name": "Sandia Crest",
+    "lat": 35.2114,
+    "lon": -106.4497,
+    "elevationFt": 10678,
+    "prominenceFt": 4098,
+    "range": "Sandia Mountains",
+    "country": "USA",
+    "description": "Albuquerque’s mountain skyline high point — road- and tram-accessible crest with La Luz and other Sandia Wilderness trails on the west face.",
+    "firstAscent": "Unknown",
+    "difficulty": "Drive / strenuous day hike",
+    "aliases": [
+      "Sandia Peak",
+      "Sandia Mountains high point"
+    ],
+    "bestSeason": "May–Oct",
+    "whyNotable": "The defining summit above Albuquerque and one of New Mexico’s most visited mountain destinations.",
+    "seoMetaDescription": "Explore Sandia Crest on a 3D map — Albuquerque skyline topography, La Luz Trail approaches, elevation stats, and tram / crest-road access.",
+    "nearestTown": {
+      "name": "Albuquerque",
+      "region": "New Mexico",
+      "distanceMiles": 16,
+      "route": "I-40 / NM-536",
+      "lat": 35.0844,
+      "lon": -106.6504
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Albuquerque",
+        "region": "New Mexico",
+        "distanceMiles": 16,
+        "route": "NM-536",
+        "lat": 35.0844,
+        "lon": -106.6504
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Albuquerque cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Albuquerque after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Sandia_Mountains.jpg/960px-Sandia_Mountains.jpg",
+      "credit": "Gdomoniqua",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sandia_Mountains.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Sandia_Mountains.jpg/960px-Sandia_Mountains.jpg",
+        "credit": "Gdomoniqua",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sandia_Mountains.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Sandia_Crest%2C_Albuquerque_PP_AB.JPG/960px-Sandia_Crest%2C_Albuquerque_PP_AB.JPG",
+        "credit": "Skoch3",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sandia_Crest,_Albuquerque_PP_AB.JPG"
       }
     ]
   },
@@ -12639,6 +13847,136 @@
         "credit": "Frank Kovalchek",
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maroon_Bells,_Colorado.jpg"
+      }
+    ]
+  },
+  {
+    "id": "sneffels",
+    "name": "Mt. Sneffels",
+    "lat": 38.0038,
+    "lon": -107.7923,
+    "elevationFt": 14150,
+    "prominenceFt": 3030,
+    "range": "San Juan Mountains",
+    "country": "USA",
+    "description": "Iconic San Juan 14er above Yankee Boy Basin — a steep Class 3 scramble with classic Colorado “Matterhorn” summit views near Ouray.",
+    "firstAscent": "1874",
+    "difficulty": "Class 3 scramble",
+    "aliases": [
+      "Mount Sneffels"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "One of Colorado’s most photographed 14ers and a classic Ouray / Ridgway objective.",
+    "seoMetaDescription": "Explore Mt. Sneffels on a 3D map — San Juan 14er topography, Yankee Boy Basin approaches, elevation stats, and Ouray staging.",
+    "nearestTown": {
+      "name": "Ouray",
+      "region": "Colorado",
+      "distanceMiles": 12,
+      "route": "Camp Bird Rd",
+      "lat": 38.0228,
+      "lon": -107.6714
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Ouray",
+        "region": "Colorado",
+        "distanceMiles": 12,
+        "route": "Camp Bird Rd",
+        "lat": 38.0228,
+        "lon": -107.6714
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Ouray cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Ouray after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Mount_Sneffels.jpg/960px-Mount_Sneffels.jpg",
+      "credit": "Alex Kerney",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Sneffels.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Mount_Sneffels.jpg/960px-Mount_Sneffels.jpg",
+        "credit": "Alex Kerney",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Sneffels.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/MtSneffelsMarch2008.jpg/960px-MtSneffelsMarch2008.jpg",
+        "credit": "de Bivort 21:57, 8 April 2008 (UTC)",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MtSneffelsMarch2008.jpg"
+      }
+    ]
+  },
+  {
+    "id": "uncompahgre",
+    "name": "Uncompahgre Peak",
+    "lat": 38.0717,
+    "lon": -107.462,
+    "elevationFt": 14309,
+    "prominenceFt": 4277,
+    "range": "San Juan Mountains",
+    "country": "USA",
+    "description": "Highest peak in the San Juans — a broad Class 2 summit hike from Nellie Creek with huge views above Lake City.",
+    "firstAscent": "1874",
+    "difficulty": "Class 2 hike",
+    "aliases": [],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "San Juan Mountains high point and one of Colorado’s most prominent 14ers.",
+    "seoMetaDescription": "Explore Uncompahgre Peak on a 3D map — San Juan high point topography, Nellie Creek approaches, elevation stats, and Lake City staging.",
+    "nearestTown": {
+      "name": "Lake City",
+      "region": "Colorado",
+      "distanceMiles": 16,
+      "route": "Nellie Creek Rd",
+      "lat": 38.0297,
+      "lon": -107.3153
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Lake City",
+        "region": "Colorado",
+        "distanceMiles": 16,
+        "route": "Nellie Creek Rd",
+        "lat": 38.0297,
+        "lon": -107.3153
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Lake City cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Lake City after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Uncompahgre_peak.jpg/960px-Uncompahgre_peak.jpg",
+      "credit": "Gregstoner88 (talk · contribs)",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uncompahgre_peak.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Uncompahgre_peak.jpg/960px-Uncompahgre_peak.jpg",
+        "credit": "Gregstoner88 (talk · contribs)",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uncompahgre_peak.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Uncompahgre_Peak_from_northeast._Lake_City_Quadrangle._Hinsdale_County%2C_Colorado._-_NARA_-_517110.jpg/960px-Uncompahgre_Peak_from_northeast._Lake_City_Quadrangle._Hinsdale_County%2C_Colorado._-_NARA_-_517110.jpg",
+        "credit": "William Henry Jackson",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uncompahgre_Peak_from_northeast._Lake_City_Quadrangle._Hinsdale_County,_Colorado._-_NARA_-_517110.jpg"
       }
     ]
   },

@@ -9,6 +9,17 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.2.3',
+    date: '2026-07-23',
+    title: 'Twenty more popular U.S. summits',
+    summary:
+      'Another wave of high-traffic American peaks joins the atlas—Cascades volcanoes, Southern California classics, Colorado 14ers, Southwest high points, and East Coast favorites—with official trail links.',
+    highlights: [
+      'Added Glacier Peak, Shuksan, Jefferson (OR), Broken Top, Lassen, San Jacinto, San Gorgonio, Baldy, Tallac, Sneffels, Uncompahgre, Harvard, Sherman, Blue Sky, Wheeler (NM), Sandia Crest, LeConte, Old Rag, Mansfield, and Cadillac',
+      'Trail bubbles wired to 14ers.com for new Colorado 14ers and NPS/USFS/state sources elsewhere',
+    ],
+  },
+  {
     version: '0.2.2',
     date: '2026-07-22',
     title: 'More US peaks and official trail links',

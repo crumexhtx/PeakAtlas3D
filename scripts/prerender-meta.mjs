@@ -102,6 +102,11 @@ function peakDescription(peak) {
     'torreys',
     'bierstadt',
     'maroon',
+    'sneffels',
+    'uncompahgre',
+    'harvard',
+    'sherman',
+    'bluesky',
   ])
 
   const parts = [base]

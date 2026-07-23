@@ -132,7 +132,7 @@ const REQUIRE_CONTEXT = {
 }
 
 const REJECT_PATTERNS =
-  /(?:^|[^a-z])(salmon|entrance|headstone|cemetery|kentucky|ireland|sligo|benbulbin|palo duro|texas panhandle|apollo|soyuz|helichrysum|stuhlmannii|logo|flag|diagram|chart|coat of arms|location map|topo map|orthophoto|satellite image of|pdf|geology|plaque|statue|chapel|museum|time zone|thumbnail\.jpg|helicopter|map_mount|24000 geo|ski area|moose in grand|barns grand|halti beel|natore|rajshahi|boundary stone)(?:[^a-z]|$)/i
+  /(?:^|[^a-z])(salmon|entrance|headstone|cemetery|kentucky|ireland|sligo|benbulbin|palo duro|texas panhandle|apollo|soyuz|helichrysum|stuhlmannii|logo|flag|diagram|chart|coat of arms|location map|topo map|gps track|gpsvisualizer|orthophoto|satellite image of|pdf|geology|plaque|statue|chapel|museum|time zone|thumbnail\.jpg|helicopter|map_mount|24000 geo|ski area|moose in grand|barns grand|halti beel|natore|rajshahi|boundary stone|wind farm)(?:[^a-z]|$)/i
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 

@@ -12,6 +12,7 @@ export type FourteenersRoute = {
   /** Typical elevation gain in feet from the usual start. */
   elevationGainFt: number
   standard?: boolean
+  note?: string
   sourceUrl: string
 }
 
@@ -205,6 +206,62 @@ export const FOURTEENERS_ROUTES: Record<string, FourteenersRoute[]> = {
       elevationGainFt: 4800,
       standard: true,
       sourceUrl: 'https://www.14ers.com/route.php?route=maro1',
+    },
+  ],
+  sneffels: [
+    {
+      name: 'South Slopes',
+      trailhead: 'Yankee Boy Basin',
+      difficulty: 'Difficult Class 2',
+      roundTripMiles: 6,
+      elevationGainFt: 2900,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=snef1',
+    },
+  ],
+  uncompahgre: [
+    {
+      name: 'South Ridge',
+      trailhead: 'Nellie Creek',
+      difficulty: 'Class 2',
+      roundTripMiles: 7.5,
+      elevationGainFt: 3000,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=unco1',
+    },
+  ],
+  harvard: [
+    {
+      name: 'South Slopes',
+      trailhead: 'North Cottonwood / Horn Fork',
+      difficulty: 'Class 2',
+      roundTripMiles: 14,
+      elevationGainFt: 4600,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=harv1',
+    },
+  ],
+  sherman: [
+    {
+      name: 'Southwest Ridge',
+      trailhead: 'Fourmile Creek',
+      difficulty: 'Class 2',
+      roundTripMiles: 5.25,
+      elevationGainFt: 2100,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=sher1',
+    },
+  ],
+  bluesky: [
+    {
+      name: 'West Ridge',
+      trailhead: 'Summit Lake',
+      difficulty: 'Class 2',
+      roundTripMiles: 3.5,
+      elevationGainFt: 1400,
+      standard: true,
+      note: 'Formerly Mt. Evans; summit highway seasonal.',
+      sourceUrl: 'https://www.14ers.com/route.php?route=evan1',
     },
   ],
 }

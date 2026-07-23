@@ -46,6 +46,102 @@
     }
   },
   {
+    "id": "lassen",
+    "name": "Lassen Peak",
+    "lat": 40.4882,
+    "lon": -121.505,
+    "elevationFt": 10457,
+    "prominenceFt": 5229,
+    "range": "Cascade Range",
+    "country": "USA",
+    "aliases": [
+      "Mount Lassen"
+    ],
+    "firstAscent": "1851",
+    "difficulty": "Strenuous day hike",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "California’s southern Cascade volcano and a classic national-park summit hike.",
+    "description": "Southernmost Cascade volcano and the high point of Lassen Volcanic National Park — a popular summer trail to a cratered summit above Lake Helen.",
+    "nearestTown": {
+      "name": "Mineral",
+      "region": "California",
+      "distanceMiles": 18
+    }
+  },
+  {
+    "id": "sanjacinto",
+    "name": "San Jacinto Peak",
+    "lat": 33.8147,
+    "lon": -116.6794,
+    "elevationFt": 10834,
+    "prominenceFt": 8319,
+    "range": "San Jacinto Mountains",
+    "country": "USA",
+    "aliases": [
+      "Mount San Jacinto",
+      "Mt. San Jacinto"
+    ],
+    "firstAscent": "1874",
+    "difficulty": "Strenuous day hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "One of Southern California’s most prominent peaks and a classic Palm Springs tram-to-summit hike.",
+    "description": "Southern California sky-island summit above Palm Springs — tram-accessible wilderness with steep trails from Long Valley to a granite high point.",
+    "nearestTown": {
+      "name": "Palm Springs",
+      "region": "California",
+      "distanceMiles": 12
+    }
+  },
+  {
+    "id": "sangorgonio",
+    "name": "San Gorgonio Mountain",
+    "lat": 34.0992,
+    "lon": -116.8247,
+    "elevationFt": 11503,
+    "prominenceFt": 8294,
+    "range": "San Bernardino Mountains",
+    "country": "USA",
+    "aliases": [
+      "Mt. San Gorgonio",
+      "Old Greyback"
+    ],
+    "firstAscent": "1872",
+    "difficulty": "Strenuous day / overnight",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Southern California’s high point and a rite-of-passage San Bernardino wilderness hike.",
+    "description": "Highest peak in Southern California — a long wilderness hike via Vivian Creek or other San Gorgonio Wilderness trails above Forest Falls.",
+    "nearestTown": {
+      "name": "Forest Falls",
+      "region": "California",
+      "distanceMiles": 8
+    }
+  },
+  {
+    "id": "baldy",
+    "name": "Mt. San Antonio",
+    "lat": 34.2889,
+    "lon": -117.6463,
+    "elevationFt": 10064,
+    "prominenceFt": 6224,
+    "range": "San Gabriel Mountains",
+    "country": "USA",
+    "aliases": [
+      "Mt. Baldy",
+      "Mount Baldy",
+      "Baldy"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike / scramble",
+    "bestSeason": "May–Oct",
+    "whyNotable": "The iconic San Gabriel high point and one of the most climbed peaks in Southern California.",
+    "description": "Mt. Baldy — Los Angeles’s backyard 10,000-footer via Baldy Bowl, Ski Hut, or Devil’s Backbone routes in Angeles National Forest.",
+    "nearestTown": {
+      "name": "Mt. Baldy Village",
+      "region": "California",
+      "distanceMiles": 6
+    }
+  },
+  {
     "id": "hood",
     "name": "Mt. Hood",
     "lat": 45.3736,
@@ -92,6 +188,49 @@
     }
   },
   {
+    "id": "jeffersonor",
+    "name": "Mt. Jefferson",
+    "lat": 44.6743,
+    "lon": -121.7996,
+    "elevationFt": 10497,
+    "prominenceFt": 5777,
+    "range": "Cascade Range",
+    "country": "USA",
+    "aliases": [
+      "Mount Jefferson"
+    ],
+    "firstAscent": "1888",
+    "difficulty": "Technical alpine / glacier",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Oregon’s #2 Cascade summit and a committing wilderness climb north of the Three Sisters.",
+    "description": "Oregon’s second-highest Cascade volcano — a remote, technical summit north of Sisters with long approaches through Jefferson Wilderness.",
+    "nearestTown": {
+      "name": "Sisters",
+      "region": "Oregon",
+      "distanceMiles": 35
+    }
+  },
+  {
+    "id": "brokentop",
+    "name": "Broken Top",
+    "lat": 44.0829,
+    "lon": -121.6945,
+    "elevationFt": 9175,
+    "prominenceFt": 2175,
+    "range": "Cascade Range",
+    "country": "USA",
+    "firstAscent": "1910",
+    "difficulty": "Class 3 scramble",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Signature Central Oregon volcano and a favorite scramble above the Green Lakes basin.",
+    "description": "Jagged Cascade volcano beside the Three Sisters — popular Green Lakes and No Name Lake approaches with a scramble summit in Deschutes National Forest.",
+    "nearestTown": {
+      "name": "Bend",
+      "region": "Oregon",
+      "distanceMiles": 28
+    }
+  },
+  {
     "id": "baker",
     "name": "Mt. Baker",
     "lat": 48.7767,
@@ -112,6 +251,52 @@
       "name": "Glacier",
       "region": "Washington",
       "distanceMiles": 18
+    }
+  },
+  {
+    "id": "glacierpeak",
+    "name": "Glacier Peak",
+    "lat": 48.1122,
+    "lon": -121.1132,
+    "elevationFt": 10541,
+    "prominenceFt": 7498,
+    "range": "Cascade Range",
+    "country": "USA",
+    "aliases": [
+      "Dakobed"
+    ],
+    "firstAscent": "1898",
+    "difficulty": "Glacier climb / multi-day",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "One of the major Cascade stratovolcanoes and Washington’s most remote high volcano.",
+    "description": "Washington’s remote Cascade volcano east of Darrington — a long wilderness approach to glaciers and a classic Pacific Northwest mountaineering objective.",
+    "nearestTown": {
+      "name": "Darrington",
+      "region": "Washington",
+      "distanceMiles": 28
+    }
+  },
+  {
+    "id": "shuksan",
+    "name": "Mt. Shuksan",
+    "lat": 48.8311,
+    "lon": -121.6031,
+    "elevationFt": 9131,
+    "prominenceFt": 4411,
+    "range": "North Cascades",
+    "country": "USA",
+    "aliases": [
+      "Mount Shuksan"
+    ],
+    "firstAscent": "1906",
+    "difficulty": "Technical alpine",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "One of the most photographed mountains in the Cascades; classic alpine climbing above Baker Lake country.",
+    "description": "Iconic North Cascades pyramid above Artist Point and Picture Lake — a photogenic alpine peak and classic mountaineering objective near Mt. Baker.",
+    "nearestTown": {
+      "name": "Glacier",
+      "region": "Washington",
+      "distanceMiles": 22
     }
   },
   {
@@ -228,6 +413,29 @@
     }
   },
   {
+    "id": "harvard",
+    "name": "Mt. Harvard",
+    "lat": 38.9244,
+    "lon": -106.3207,
+    "elevationFt": 14420,
+    "prominenceFt": 2360,
+    "range": "Sawatch Range",
+    "country": "USA",
+    "aliases": [
+      "Mount Harvard"
+    ],
+    "firstAscent": "1869",
+    "difficulty": "Class 2 hike",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Colorado’s third-highest summit and namesake of the Collegiate Peaks.",
+    "description": "Third-highest peak in the Rockies — a long Class 2 hike from Horn Fork Basin near Buena Vista in the Collegiate Peaks.",
+    "nearestTown": {
+      "name": "Buena Vista",
+      "region": "Colorado",
+      "distanceMiles": 16
+    }
+  },
+  {
     "id": "whitney",
     "name": "Mt. Whitney",
     "lat": 36.5785,
@@ -268,6 +476,29 @@
       "name": "Yosemite Valley",
       "region": "California",
       "distanceMiles": 3.2
+    }
+  },
+  {
+    "id": "tallac",
+    "name": "Mt. Tallac",
+    "lat": 38.9063,
+    "lon": -120.158,
+    "elevationFt": 9735,
+    "prominenceFt": 695,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "aliases": [
+      "Mount Tallac"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "One of Lake Tahoe’s most popular summit hikes with classic alpine-lake views.",
+    "description": "Tahoe’s signature day-hike summit above Fallen Leaf Lake — a steep trail to panoramic views over Lake Tahoe and Desolation Wilderness.",
+    "nearestTown": {
+      "name": "South Lake Tahoe",
+      "region": "California",
+      "distanceMiles": 8
     }
   },
   {
@@ -360,6 +591,31 @@
     }
   },
   {
+    "id": "bluesky",
+    "name": "Mount Blue Sky",
+    "lat": 39.5883,
+    "lon": -105.6438,
+    "elevationFt": 14265,
+    "prominenceFt": 2749,
+    "range": "Front Range",
+    "country": "USA",
+    "aliases": [
+      "Mt. Evans",
+      "Mount Evans",
+      "Mt. Blue Sky"
+    ],
+    "firstAscent": "1874",
+    "difficulty": "Drive / Class 2 hike",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "One of Colorado’s most visited high summits — road-accessible 14er above the Denver Front Range.",
+    "description": "Formerly Mt. Evans — a Front Range 14er with a seasonal summit highway and classic West Ridge hike from Summit Lake near Idaho Springs.",
+    "nearestTown": {
+      "name": "Idaho Springs",
+      "region": "Colorado",
+      "distanceMiles": 28
+    }
+  },
+  {
     "id": "pikes",
     "name": "Pikes Peak",
     "lat": 38.8409,
@@ -397,6 +653,29 @@
       "name": "Breckenridge",
       "region": "Colorado",
       "distanceMiles": 8
+    }
+  },
+  {
+    "id": "sherman",
+    "name": "Mt. Sherman",
+    "lat": 39.225,
+    "lon": -106.1697,
+    "elevationFt": 14036,
+    "prominenceFt": 896,
+    "range": "Mosquito Range",
+    "country": "USA",
+    "aliases": [
+      "Mount Sherman"
+    ],
+    "firstAscent": "1881",
+    "difficulty": "Class 2 hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "A classic “first 14er” for many Colorado hikers thanks to a short approach and moderate ridge.",
+    "description": "One of Colorado’s most accessible 14ers — a short Class 2 ridge hike from Fourmile Creek above Fairplay / Alma.",
+    "nearestTown": {
+      "name": "Fairplay",
+      "region": "Colorado",
+      "distanceMiles": 14
     }
   },
   {
@@ -2262,6 +2541,30 @@
     }
   },
   {
+    "id": "leconte",
+    "name": "Mt. LeConte",
+    "lat": 35.6542,
+    "lon": -83.4372,
+    "elevationFt": 6593,
+    "prominenceFt": 1360,
+    "range": "Great Smoky Mountains",
+    "country": "USA",
+    "aliases": [
+      "Mount Le Conte",
+      "Mount LeConte"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day / overnight",
+    "bestSeason": "Apr–Oct",
+    "whyNotable": "Among the most visited backcountry summits in the eastern U.S., with a historic summit lodge.",
+    "description": "One of the Smokies’ most popular overnight destinations — Alum Cave and Rainbow Falls trails climb to LeConte Lodge and a forested summit complex.",
+    "nearestTown": {
+      "name": "Gatlinburg",
+      "region": "Tennessee",
+      "distanceMiles": 8
+    }
+  },
+  {
     "id": "katahdin",
     "name": "Mt. Katahdin",
     "lat": 45.9044,
@@ -2282,6 +2585,26 @@
       "name": "Millinocket",
       "region": "Maine",
       "distanceMiles": 20
+    }
+  },
+  {
+    "id": "cadillac",
+    "name": "Cadillac Mountain",
+    "lat": 44.3512,
+    "lon": -68.2265,
+    "elevationFt": 1529,
+    "prominenceFt": 1529,
+    "range": "Acadia",
+    "country": "USA",
+    "firstAscent": "Unknown",
+    "difficulty": "Drive / easy to moderate hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Acadia’s iconic summit and one of the most visited mountain viewpoints on the East Coast.",
+    "description": "Acadia National Park’s high point and one of the first places to see sunrise in the U.S. — road- and trail-accessible granite summit above Bar Harbor.",
+    "nearestTown": {
+      "name": "Bar Harbor",
+      "region": "Maine",
+      "distanceMiles": 4
     }
   },
   {
@@ -2309,6 +2632,29 @@
     }
   },
   {
+    "id": "mansfield",
+    "name": "Mt. Mansfield",
+    "lat": 44.5438,
+    "lon": -72.8143,
+    "elevationFt": 4393,
+    "prominenceFt": 3633,
+    "range": "Green Mountains",
+    "country": "USA",
+    "aliases": [
+      "Mount Mansfield"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Highest peak in Vermont and the signature summit of the Green Mountains.",
+    "description": "Vermont’s high point — a classic Long Trail / Forehead-to-Chin ridge hike above Stowe with alpine tundra and ski-area access.",
+    "nearestTown": {
+      "name": "Stowe",
+      "region": "Vermont",
+      "distanceMiles": 10
+    }
+  },
+  {
     "id": "washington",
     "name": "Mt. Washington",
     "lat": 44.2706,
@@ -2329,6 +2675,29 @@
     "nearestTown": {
       "name": "Gorham",
       "region": "New Hampshire",
+      "distanceMiles": 10
+    }
+  },
+  {
+    "id": "oldrag",
+    "name": "Old Rag Mountain",
+    "lat": 38.5518,
+    "lon": -78.3142,
+    "elevationFt": 3268,
+    "prominenceFt": 1368,
+    "range": "Blue Ridge Mountains",
+    "country": "USA",
+    "aliases": [
+      "Old Rag"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Class 3 scramble (permit)",
+    "bestSeason": "Mar–Nov",
+    "whyNotable": "One of the Mid-Atlantic’s most famous day hikes — a technical granite scramble in Shenandoah National Park.",
+    "description": "Shenandoah’s legendary granite scramble — a permit-required circuit with rock slabs, chimneys, and huge Piedmont views near Sperryville.",
+    "nearestTown": {
+      "name": "Sperryville",
+      "region": "Virginia",
       "distanceMiles": 10
     }
   },
@@ -2373,6 +2742,53 @@
       "name": "Baker",
       "region": "Nevada",
       "distanceMiles": 12
+    }
+  },
+  {
+    "id": "wheelernm",
+    "name": "Wheeler Peak",
+    "lat": 36.5569,
+    "lon": -105.4169,
+    "elevationFt": 13161,
+    "prominenceFt": 3409,
+    "range": "Sangre de Cristo Mountains",
+    "country": "USA",
+    "aliases": [
+      "Wheeler Peak NM"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Highest point in New Mexico and a classic Taos alpine day hike.",
+    "description": "New Mexico’s high point above Taos Ski Valley — a popular Williams Lake trail to an alpine summit in Carson National Forest.",
+    "nearestTown": {
+      "name": "Taos",
+      "region": "New Mexico",
+      "distanceMiles": 22
+    }
+  },
+  {
+    "id": "sandia",
+    "name": "Sandia Crest",
+    "lat": 35.2114,
+    "lon": -106.4497,
+    "elevationFt": 10678,
+    "prominenceFt": 4098,
+    "range": "Sandia Mountains",
+    "country": "USA",
+    "aliases": [
+      "Sandia Peak",
+      "Sandia Mountains high point"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Drive / strenuous day hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "The defining summit above Albuquerque and one of New Mexico’s most visited mountain destinations.",
+    "description": "Albuquerque’s mountain skyline high point — road- and tram-accessible crest with La Luz and other Sandia Wilderness trails on the west face.",
+    "nearestTown": {
+      "name": "Albuquerque",
+      "region": "New Mexico",
+      "distanceMiles": 16
     }
   },
   {
@@ -2580,6 +2996,49 @@
       "name": "Aspen",
       "region": "Colorado",
       "distanceMiles": 12
+    }
+  },
+  {
+    "id": "sneffels",
+    "name": "Mt. Sneffels",
+    "lat": 38.0038,
+    "lon": -107.7923,
+    "elevationFt": 14150,
+    "prominenceFt": 3030,
+    "range": "San Juan Mountains",
+    "country": "USA",
+    "aliases": [
+      "Mount Sneffels"
+    ],
+    "firstAscent": "1874",
+    "difficulty": "Class 3 scramble",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "One of Colorado’s most photographed 14ers and a classic Ouray / Ridgway objective.",
+    "description": "Iconic San Juan 14er above Yankee Boy Basin — a steep Class 3 scramble with classic Colorado “Matterhorn” summit views near Ouray.",
+    "nearestTown": {
+      "name": "Ouray",
+      "region": "Colorado",
+      "distanceMiles": 12
+    }
+  },
+  {
+    "id": "uncompahgre",
+    "name": "Uncompahgre Peak",
+    "lat": 38.0717,
+    "lon": -107.462,
+    "elevationFt": 14309,
+    "prominenceFt": 4277,
+    "range": "San Juan Mountains",
+    "country": "USA",
+    "firstAscent": "1874",
+    "difficulty": "Class 2 hike",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "San Juan Mountains high point and one of Colorado’s most prominent 14ers.",
+    "description": "Highest peak in the San Juans — a broad Class 2 summit hike from Nellie Creek with huge views above Lake City.",
+    "nearestTown": {
+      "name": "Lake City",
+      "region": "Colorado",
+      "distanceMiles": 16
     }
   },
   {
