@@ -249,47 +249,48 @@ function injectMeta(html, { title, description, path, image, noscriptBody }) {
     `<title>${escapeHtml(title)}</title>`,
   )
 
-  const replaceMeta = (attr, key, content) => {
-    const re = new RegExp(
-      `<meta\\s+${attr}=["']${key}["']\\s+content=["'][^"']*["']\\s*/?>`,
-      'i',
+  const upsertMeta = (attr, key, content) => {
+    // Strip every existing tag for this key (handles multiline + prior inject dupes).
+    const strip = new RegExp(
+      `\\s*<meta\\b[^>]*?\\b${attr}=["']${key}["'][^>]*?/?>`,
+      'gi',
     )
-    const tag = `<meta ${attr}="${key}" content="${escapeAttr(content)}" />`
-    if (re.test(out)) out = out.replace(re, tag)
-    else out = out.replace(/<\/head>/i, `    ${tag}\n  </head>`)
+    out = out.replace(strip, '')
+    const tag = `    <meta ${attr}="${key}" content="${escapeAttr(content)}" />`
+    out = out.replace(/<\/head>/i, `${tag}\n  </head>`)
   }
 
-  replaceMeta('name', 'description', description)
-  replaceMeta('property', 'og:type', 'website')
-  replaceMeta('property', 'og:site_name', 'PeakAtlas3D')
-  replaceMeta('property', 'og:title', title)
-  replaceMeta('property', 'og:description', description)
-  replaceMeta('property', 'og:url', url)
-  replaceMeta('name', 'twitter:title', title)
-  replaceMeta('name', 'twitter:description', description)
-  replaceMeta(
+  upsertMeta('name', 'description', description)
+  upsertMeta('property', 'og:type', 'website')
+  upsertMeta('property', 'og:site_name', 'PeakAtlas3D')
+  upsertMeta('property', 'og:title', title)
+  upsertMeta('property', 'og:description', description)
+  upsertMeta('property', 'og:url', url)
+  upsertMeta('name', 'twitter:title', title)
+  upsertMeta('name', 'twitter:description', description)
+  upsertMeta(
     'name',
     'twitter:card',
     image ? 'summary_large_image' : 'summary',
   )
 
   if (image) {
-    replaceMeta('property', 'og:image', image)
-    replaceMeta('name', 'twitter:image', image)
+    upsertMeta('property', 'og:image', image)
+    upsertMeta('name', 'twitter:image', image)
+  } else {
+    // Drop stale image tags from a previous prerender of this shell.
+    out = out.replace(
+      /\s*<meta\b[^>]*?\b(?:property|name)=["'](?:og:image|twitter:image)["'][^>]*?\/?>/gi,
+      '',
+    )
   }
 
   // Canonical helps Search Console / social scrapers.
-  if (!/<link\s+rel=["']canonical["']/i.test(out)) {
-    out = out.replace(
-      /<\/head>/i,
-      `    <link rel="canonical" href="${escapeAttr(url)}" />\n  </head>`,
-    )
-  } else {
-    out = out.replace(
-      /<link\s+rel=["']canonical["']\s+href=["'][^"']*["']\s*\/?>/i,
-      `<link rel="canonical" href="${escapeAttr(url)}" />`,
-    )
-  }
+  out = out.replace(/\s*<link\s+rel=["']canonical["'][^>]*\/?>/gi, '')
+  out = out.replace(
+    /<\/head>/i,
+    `    <link rel="canonical" href="${escapeAttr(url)}" />\n  </head>`,
+  )
 
   const fallback =
     noscriptBody ||
@@ -302,7 +303,12 @@ function injectMeta(html, { title, description, path, image, noscriptBody }) {
       </main>
     </noscript>`
 
-  if (!out.includes('id="seo-noscript"')) {
+  if (/id=["']seo-noscript["']/.test(out)) {
+    out = out.replace(
+      /<noscript\b[^>]*\bid=["']seo-noscript["'][^>]*>[\s\S]*?<\/noscript>/i,
+      fallback.trim(),
+    )
+  } else {
     out = out.replace(
       /<div id="root"><\/div>/i,
       `<div id="root"></div>\n${fallback}`,

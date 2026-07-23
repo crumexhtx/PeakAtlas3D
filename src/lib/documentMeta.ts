@@ -20,7 +20,12 @@ function upsertMeta(
   content: string,
 ) {
   const selector = `meta[${attr}="${key}"]`
-  let el = document.head.querySelector(selector) as HTMLMetaElement | null
+  const existing = [
+    ...document.head.querySelectorAll(selector),
+  ] as HTMLMetaElement[]
+  let el = existing[0] ?? null
+  // Drop duplicates from older prerender shells so crawlers see one tag.
+  for (const extra of existing.slice(1)) extra.remove()
   if (!el) {
     el = document.createElement('meta')
     el.setAttribute(attr, key)
@@ -30,9 +35,11 @@ function upsertMeta(
 }
 
 function upsertCanonical(href: string) {
-  let el = document.head.querySelector(
-    'link[rel="canonical"]',
-  ) as HTMLLinkElement | null
+  const existing = [
+    ...document.head.querySelectorAll('link[rel="canonical"]'),
+  ] as HTMLLinkElement[]
+  let el = existing[0] ?? null
+  for (const extra of existing.slice(1)) extra.remove()
   if (!el) {
     el = document.createElement('link')
     el.setAttribute('rel', 'canonical')
@@ -69,7 +76,9 @@ function peakImage(peak: Peak): string | undefined {
 }
 
 function removeMeta(attr: 'name' | 'property', key: string) {
-  document.head.querySelector(`meta[${attr}="${key}"]`)?.remove()
+  document.head
+    .querySelectorAll(`meta[${attr}="${key}"]`)
+    .forEach((el) => el.remove())
 }
 
 function clipDescription(text: string) {
