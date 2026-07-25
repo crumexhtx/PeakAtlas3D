@@ -409,7 +409,17 @@ a {
   pointer-events: none;
 }
 
-.peak-overlay-panel .peak-seo-main,
+/* Match country-panel-shell: only the sheet captures hits, not a full-height
+   wrapper over the Mapbox canvas (iOS Safari otherwise mis-routes taps). */
+.peak-overlay-panel .peak-seo-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+  pointer-events: none;
+  box-shadow: none;
+}
+
 .peak-overlay-panel .details-sheet,
 .peak-overlay-panel .peak-dossier,
 .peak-overlay-panel .empty-state {
@@ -418,16 +428,11 @@ a {
   box-shadow: -12px 0 40px rgba(0, 0, 0, 0.35);
 }
 
-.peak-overlay-panel .peak-seo-main {
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-  box-shadow: none;
-}
-
 .peak-overlay-panel .peak-seo-main > .details-sheet {
   flex: 1;
   min-height: 0;
+  /* Whole sheet is a tap surface over the globe — avoid gesture delay. */
+  touch-action: manipulation;
 }
 
 .peak-overlay-panel .peak-dossier {
@@ -449,6 +454,7 @@ a {
   gap: 0.35rem;
   padding: 0.35rem 0.55rem 0.45rem;
   border-bottom: 1px solid var(--border);
+  touch-action: manipulation;
 }
 
 .details-sheet-tab {
@@ -1949,6 +1955,13 @@ a.trail-bubble-label-link:focus-visible {
     width: min(300px, calc(100% - 1.1rem - var(--safe-left) - var(--safe-right)));
     height: auto;
     max-height: min(72vh, calc(100% - 1.1rem));
+    /* Above map chrome / earth toggle so collapsed tab taps aren't stolen. */
+    z-index: 19;
+  }
+
+  .peak-overlay-panel .peak-seo-main {
+    height: auto;
+    display: block;
   }
 
   .peak-overlay-panel .details-sheet {
@@ -1957,6 +1970,11 @@ a.trail-bubble-label-link:focus-visible {
     border-radius: 14px;
     border: 1px solid var(--border);
     box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
+  }
+
+  .peak-overlay-panel .details-sheet.is-collapsed {
+    height: auto;
+    max-height: none;
   }
 
   .peak-overlay-panel .details-sheet.is-expanded {
