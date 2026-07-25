@@ -541,7 +541,32 @@ a {
 .details-sheet-body {
   min-height: 0;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Single scroll owner for sheet content (peak dossier / country panel
+   should not nest another overflow:auto inside this). */
+.details-sheet-body-inner {
+  min-height: 0;
+  flex: 1;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+.details-sheet .peak-dossier,
+.details-sheet .country-panel {
+  overflow: visible;
+  height: auto;
+  max-height: none;
+  -webkit-overflow-scrolling: auto;
+  touch-action: auto;
+}
+
+.peak-overlay-panel .details-sheet .peak-dossier {
+  height: auto;
 }
 
 /* Mobile-only attention bounce — top-right card nudges into view */
@@ -2022,12 +2047,30 @@ a.trail-bubble-label-link:focus-visible {
     animation: details-chevron-wiggle 0.45s ease-in-out 4;
   }
 
-  .details-sheet.is-collapsed .details-sheet-body {
-    display: none;
+  /* Animate reveal so a tap gives clear feedback (avoids instant snap that
+     feels like “nothing happened” and invites a second canceling tap). */
+  .details-sheet-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    flex: none;
+    transition: grid-template-rows 0.3s ease;
+  }
+
+  .details-sheet-body-inner {
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 0;
+    flex: unset;
   }
 
   .details-sheet.is-expanded .details-sheet-body {
-    display: block;
+    grid-template-rows: 1fr;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .details-sheet-body {
+      transition: none;
+    }
   }
 
   .country-panel-shell {
