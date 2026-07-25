@@ -1,4 +1,4 @@
-import { useEffect, useId, useState, type ReactNode } from 'react'
+import { useEffect, useId, useRef, useState, type ReactNode, type TouchEvent } from 'react'
 
 type DetailsSheetProps = {
   title: string
@@ -33,10 +33,13 @@ export function DetailsSheet({
   const [expanded, setExpanded] = useState(false)
   const [nudging, setNudging] = useState(false)
   const bodyId = useId()
+  /** iOS-over-WebGL: touch may fire pointer/touch without a following click. */
+  const touchToggledRef = useRef(false)
 
   useEffect(() => {
     setExpanded(false)
     setNudging(false)
+    touchToggledRef.current = false
     if (!shouldNudgeTab()) return
 
     // Brief pause after the peak/country opens, then bounce the tab twice.
@@ -47,6 +50,27 @@ export function DetailsSheet({
       window.clearTimeout(stop)
     }
   }, [resetKey])
+
+  function toggleExpanded() {
+    setNudging(false)
+    setExpanded((v) => !v)
+  }
+
+  function onTabClick() {
+    if (touchToggledRef.current) {
+      touchToggledRef.current = false
+      return
+    }
+    toggleExpanded()
+  }
+
+  function onTabTouchEnd(e: TouchEvent<HTMLButtonElement>) {
+    // Prevent the delayed synthetic click and toggle immediately — Mapbox's
+    // canvas gesture recognizer on iOS often swallows the click for peak cards.
+    e.preventDefault()
+    touchToggledRef.current = true
+    toggleExpanded()
+  }
 
   return (
     <div
@@ -60,10 +84,8 @@ export function DetailsSheet({
           className="details-sheet-tab"
           aria-expanded={expanded}
           aria-controls={bodyId}
-          onClick={() => {
-            setNudging(false)
-            setExpanded((v) => !v)
-          }}
+          onClick={onTabClick}
+          onTouchEnd={onTabTouchEnd}
         >
           <span className="details-sheet-handle" aria-hidden="true" />
           <span className="details-sheet-tab-copy">
@@ -83,6 +105,10 @@ export function DetailsSheet({
             className="details-sheet-close"
             aria-label={closeLabel}
             onClick={onClose}
+            onTouchEnd={(e) => {
+              e.preventDefault()
+              onClose()
+            }}
           >
             ×
           </button>
