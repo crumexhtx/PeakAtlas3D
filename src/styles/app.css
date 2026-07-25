@@ -2004,12 +2004,30 @@ a.trail-bubble-label-link:focus-visible {
     animation: details-chevron-wiggle 0.45s ease-in-out 4;
   }
 
-  .details-sheet.is-collapsed .details-sheet-body {
-    display: none;
+  /* Animate the reveal so a tap gives an unmistakable visual response —
+     without this, expand/collapse snapped instantly and a quick second tap
+     (a natural "did that work?" follow-up) could cancel it right back to
+     collapsed, looking exactly like the tap had done nothing. */
+  .details-sheet-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+  }
+
+  .details-sheet-body-inner {
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 0;
   }
 
   .details-sheet.is-expanded .details-sheet-body {
-    display: block;
+    grid-template-rows: 1fr;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .details-sheet-body {
+      transition: none;
+    }
   }
 
   .country-panel-shell {

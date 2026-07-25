@@ -90,7 +90,7 @@ export function DetailsSheet({
       </div>
 
       <div id={bodyId} className="details-sheet-body">
-        {children}
+        <div className="details-sheet-body-inner">{children}</div>
       </div>
     </div>
   )
