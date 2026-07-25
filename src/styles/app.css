@@ -1995,15 +1995,21 @@ a.trail-bubble-label-link:focus-visible {
     border-radius: 14px;
     border: 1px solid var(--border);
     box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
+    /* Clip tall dossier content so the sheet never paints past max-height. */
+    overflow: hidden;
   }
 
   .peak-overlay-panel .details-sheet.is-collapsed {
     height: auto;
     max-height: none;
+    overflow: visible;
   }
 
   .peak-overlay-panel .details-sheet.is-expanded {
+    /* Fixed viewport budget — body scrolls inside; page/map stay put. */
     height: min(72vh, calc(100dvh - var(--header-h) - 1.2rem));
+    max-height: min(72vh, calc(100dvh - var(--header-h) - 1.2rem));
+    overflow: hidden;
   }
 
   .peak-overlay-panel .peak-dossier {
@@ -2048,11 +2054,15 @@ a.trail-bubble-label-link:focus-visible {
   }
 
   /* Animate reveal so a tap gives clear feedback (avoids instant snap that
-     feels like “nothing happened” and invites a second canceling tap). */
+     feels like “nothing happened” and invites a second canceling tap).
+     Expanded: body flexes into the sheet’s fixed height so 1fr is definite
+     and .details-sheet-body-inner becomes the scroll owner (not the page). */
   .details-sheet-body {
     display: grid;
     grid-template-rows: 0fr;
     flex: none;
+    min-height: 0;
+    overflow: hidden;
     transition: grid-template-rows 0.3s ease;
   }
 
@@ -2061,10 +2071,14 @@ a.trail-bubble-label-link:focus-visible {
     overflow-x: hidden;
     min-height: 0;
     flex: unset;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
 
   .details-sheet.is-expanded .details-sheet-body {
     grid-template-rows: 1fr;
+    flex: 1 1 0;
+    min-height: 0;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -2089,10 +2103,17 @@ a.trail-bubble-label-link:focus-visible {
     border-radius: 14px;
     border: 1px solid var(--border);
     box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+  }
+
+  .country-panel-shell .details-sheet.is-collapsed {
+    overflow: visible;
   }
 
   .country-panel-shell .details-sheet.is-expanded {
     height: min(68vh, calc(100dvh - var(--header-h) - 5.25rem));
+    max-height: min(68vh, calc(100dvh - var(--header-h) - 5.25rem));
+    overflow: hidden;
   }
 
   .country-panel-desktop-close {
