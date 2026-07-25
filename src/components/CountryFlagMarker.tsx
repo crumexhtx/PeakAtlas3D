@@ -60,7 +60,6 @@ export function CountryFlagMarker({
             className="country-flag-marker-img"
             width={showLabel ? 40 : 28}
             height={showLabel ? 28 : 20}
-            loading="lazy"
             decoding="async"
             referrerPolicy="no-referrer"
             onError={() => {

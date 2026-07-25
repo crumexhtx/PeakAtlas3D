@@ -38,7 +38,6 @@ export function FlagPeakMarker({ peak, onClick }: FlagPeakMarkerProps) {
             className="flag-marker-img"
             width={28}
             height={20}
-            loading="lazy"
             decoding="async"
             referrerPolicy="no-referrer"
             onError={() => {
