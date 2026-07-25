@@ -2,7 +2,15 @@ import { lazy, Suspense } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react'
 import { UnitsProvider } from './context/UnitsContext'
+import { DebugTapOverlay } from './components/DebugTapOverlay'
 import './styles/app.css'
+
+// TEMP: ?debug=1 shows an on-page log of what element every tap actually
+// hits — diagnosing a mobile tap bug without remote devtools. Remove once
+// that's found (tracked alongside the peak details-sheet tap investigation).
+const DEBUG_TAPS =
+  typeof window !== 'undefined' &&
+  new URLSearchParams(window.location.search).get('debug') === '1'
 
 const AtlasLayout = lazy(() =>
   import('./pages/AtlasLayout').then((m) => ({ default: m.AtlasLayout })),
@@ -54,6 +62,7 @@ export default function App() {
         </Suspense>
       </BrowserRouter>
       <Analytics />
+      {DEBUG_TAPS && <DebugTapOverlay />}
     </UnitsProvider>
   )
 }
