@@ -1,4 +1,11 @@
-import { useEffect, useId, useRef, useState, type ReactNode, type TouchEvent } from 'react'
+import {
+  useEffect,
+  useId,
+  useRef,
+  useState,
+  type ReactNode,
+  type TouchEvent,
+} from 'react'
 
 type DetailsSheetProps = {
   title: string
@@ -11,11 +18,13 @@ type DetailsSheetProps = {
   closeLabel?: string
 }
 
+const SHEET_MQ = '(max-width: 900px)'
+
 function shouldNudgeTab() {
   if (typeof window === 'undefined') return false
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false
   // Tab chrome only shows under the mobile details-sheet breakpoint.
-  return window.matchMedia('(max-width: 900px)').matches
+  return window.matchMedia(SHEET_MQ).matches
 }
 
 /**
@@ -32,9 +41,19 @@ export function DetailsSheet({
 }: DetailsSheetProps) {
   const [expanded, setExpanded] = useState(false)
   const [nudging, setNudging] = useState(false)
+  /** Collapsible sheet UI only below 900px — desktop ignores expand state. */
+  const [mobileSheet, setMobileSheet] = useState(false)
   const bodyId = useId()
   /** iOS-over-WebGL: touch may fire pointer/touch without a following click. */
   const touchToggledRef = useRef(false)
+
+  useEffect(() => {
+    const mq = window.matchMedia(SHEET_MQ)
+    const sync = () => setMobileSheet(mq.matches)
+    sync()
+    mq.addEventListener('change', sync)
+    return () => mq.removeEventListener('change', sync)
+  }, [])
 
   useEffect(() => {
     setExpanded(false)
@@ -71,6 +90,10 @@ export function DetailsSheet({
     touchToggledRef.current = true
     toggleExpanded()
   }
+
+  // Only inert/hide when the mobile collapsible sheet is actually collapsed.
+  // Desktop keeps expanded=false but still shows the body (no tab chrome).
+  const bodyCollapsed = mobileSheet && !expanded
 
   return (
     <div
@@ -115,8 +138,14 @@ export function DetailsSheet({
         )}
       </div>
 
-      <div id={bodyId} className="details-sheet-body">
-        {children}
+      <div
+        id={bodyId}
+        className="details-sheet-body"
+        aria-hidden={bodyCollapsed || undefined}
+        // React 19 supports boolean `inert` for focus/interaction lock.
+        inert={bodyCollapsed || undefined}
+      >
+        <div className="details-sheet-body-inner">{children}</div>
       </div>
     </div>
   )
