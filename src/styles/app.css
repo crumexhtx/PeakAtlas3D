@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Instrument+Sans:wght@600;700&display=swap');
 
 :root {
+  /* Site is dark-only: hint the browser so native controls (select popups,
+     scrollbars) render with dark, readable chrome instead of default light. */
+  color-scheme: dark;
   --bg: #0b1220;
   --panel: rgba(12, 18, 28, 0.82);
   --panel-solid: #101826;
@@ -992,6 +995,7 @@ a {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
   outline: none;
 }
 
