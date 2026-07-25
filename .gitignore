@@ -31,3 +31,7 @@ dist-ssr
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# Script scratch output
+/tmp-photo-check/
+src/data/peaks.photos.backup.json
