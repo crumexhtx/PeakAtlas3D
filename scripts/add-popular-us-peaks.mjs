@@ -97,8 +97,8 @@ const CURATED = {
     'File:2013-09-19 14 23 44 View from US 6 of Boundary Peak and Montgomery Peak in the White Mountains of Nevada and California.JPG',
   ],
   blackelk: [
-    'File:Harney Peak aka Black Elk Peak.jpg',
     'File:Harney Peak.JPG',
+    'File:Harney Peak aka Black Elk Peak.jpg',
     'File:Black Elk Peak hike 11.jpg',
   ],
   rogers: [
