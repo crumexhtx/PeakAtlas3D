@@ -465,6 +465,10 @@ a {
   color: inherit;
   cursor: pointer;
   text-align: left;
+  /* Sits over the gesture-heavy Mapbox globe — tell iOS Safari this is a
+     plain tap target so it doesn't hold the tap while disambiguating
+     pan/zoom/double-tap on the surrounding map. */
+  touch-action: manipulation;
 }
 
 .details-sheet-handle {
@@ -525,6 +529,7 @@ a {
   font-size: 1.25rem;
   line-height: 1;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 .details-sheet-body {
