@@ -188,6 +188,52 @@
     }
   },
   {
+    "id": "northsister",
+    "name": "North Sister",
+    "lat": 44.1662,
+    "lon": -121.7725,
+    "elevationFt": 10085,
+    "prominenceFt": 2725,
+    "range": "Cascade Range",
+    "country": "USA",
+    "aliases": [
+      "Faith"
+    ],
+    "firstAscent": "1910",
+    "difficulty": "Technical alpine",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Hardest of the Three Sisters; classic Oregon Cascade technical summit.",
+    "description": "The oldest and most eroded of Oregon’s Three Sisters — a technical Cascade climb of rotten volcanic rock, far harder than South Sister.",
+    "nearestTown": {
+      "name": "Bend",
+      "region": "Oregon",
+      "distanceMiles": 28
+    }
+  },
+  {
+    "id": "middlesister",
+    "name": "Middle Sister",
+    "lat": 44.1481,
+    "lon": -121.7842,
+    "elevationFt": 10047,
+    "prominenceFt": 1187,
+    "range": "Cascade Range",
+    "country": "USA",
+    "aliases": [
+      "Hope"
+    ],
+    "firstAscent": "1910",
+    "difficulty": "Snow / scramble",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Central Three Sisters summit; popular Oregon Cascade alpine day climb.",
+    "description": "The middle peak of Oregon’s Three Sisters — a moderate snow and scree climb often done as a long day from the Pole Creek or Obsidian approaches.",
+    "nearestTown": {
+      "name": "Bend",
+      "region": "Oregon",
+      "distanceMiles": 28
+    }
+  },
+  {
     "id": "jeffersonor",
     "name": "Mt. Jefferson",
     "lat": 44.6743,
@@ -274,6 +320,29 @@
       "name": "Darrington",
       "region": "Washington",
       "distanceMiles": 28
+    }
+  },
+  {
+    "id": "stuart",
+    "name": "Mt. Stuart",
+    "lat": 47.4752,
+    "lon": -120.9015,
+    "elevationFt": 9415,
+    "prominenceFt": 5354,
+    "range": "Cascade Range",
+    "country": "USA",
+    "aliases": [
+      "Mount Stuart"
+    ],
+    "firstAscent": "1873",
+    "difficulty": "Technical alpine",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Highest non-volcanic peak in Washington; landmark of the Enchantments.",
+    "description": "The non-volcanic king of the central Washington Cascades — a massive granite massif with classic alpine rock routes above the Enchantments.",
+    "nearestTown": {
+      "name": "Leavenworth",
+      "region": "Washington",
+      "distanceMiles": 22
     }
   },
   {
@@ -390,6 +459,30 @@
     }
   },
   {
+    "id": "holycross",
+    "name": "Mt. of the Holy Cross",
+    "lat": 39.4668,
+    "lon": -106.4817,
+    "elevationFt": 14005,
+    "prominenceFt": 2113,
+    "range": "Sawatch Range",
+    "country": "USA",
+    "aliases": [
+      "Mount of the Holy Cross",
+      "Holy Cross"
+    ],
+    "firstAscent": "1873",
+    "difficulty": "Class 2 hike",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Iconic Colorado 14er named for the snow cross on its northeast face.",
+    "description": "A storied Sawatch 14er famous for the snow-filled cross couloir on its northeast face — a long Class 2 hike from Half Moon / Tigiwon approaches.",
+    "nearestTown": {
+      "name": "Minturn",
+      "region": "Colorado",
+      "distanceMiles": 12
+    }
+  },
+  {
     "id": "massive",
     "name": "Mt. Massive",
     "lat": 39.1875,
@@ -436,6 +529,52 @@
     }
   },
   {
+    "id": "princeton",
+    "name": "Mt. Princeton",
+    "lat": 38.7492,
+    "lon": -106.2425,
+    "elevationFt": 14197,
+    "prominenceFt": 3017,
+    "range": "Sawatch Range",
+    "country": "USA",
+    "aliases": [
+      "Mount Princeton"
+    ],
+    "firstAscent": "1877",
+    "difficulty": "Class 2 hike",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Prominent Collegiate Peaks 14er and a classic Buena Vista day hike.",
+    "description": "A Collegiate Peaks 14er above Buena Vista — the popular East Slopes hike climbs from the radio towers road into alpine ridge terrain.",
+    "nearestTown": {
+      "name": "Buena Vista",
+      "region": "Colorado",
+      "distanceMiles": 10
+    }
+  },
+  {
+    "id": "yale",
+    "name": "Mt. Yale",
+    "lat": 38.8442,
+    "lon": -106.3139,
+    "elevationFt": 14196,
+    "prominenceFt": 1896,
+    "range": "Sawatch Range",
+    "country": "USA",
+    "aliases": [
+      "Mount Yale"
+    ],
+    "firstAscent": "1870s",
+    "difficulty": "Class 2 hike",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Popular Collegiate Peaks 14er with a classic Denny Creek approach.",
+    "description": "A Collegiate Peaks 14er climbed via the Denny Creek / Southwest Slopes route — forest, then alpine, then a rocky Class 2 summit ridge.",
+    "nearestTown": {
+      "name": "Buena Vista",
+      "region": "Colorado",
+      "distanceMiles": 12
+    }
+  },
+  {
     "id": "whitney",
     "name": "Mt. Whitney",
     "lat": 36.5785,
@@ -453,6 +592,49 @@
       "name": "Lone Pine",
       "region": "California",
       "distanceMiles": 13
+    }
+  },
+  {
+    "id": "whitemountain",
+    "name": "White Mountain Peak",
+    "lat": 37.6341,
+    "lon": -118.2557,
+    "elevationFt": 14252,
+    "prominenceFt": 7196,
+    "range": "White Mountains",
+    "country": "USA",
+    "aliases": [
+      "White Mountain"
+    ],
+    "firstAscent": "Unknown / Indigenous",
+    "difficulty": "Class 1–2 hike",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Third-highest peak in California; ultra-prominent White Mountains high point.",
+    "description": "California’s third-highest summit and the high point of the White Mountains — a long high-desert ridge hike with expansive views toward the Sierra Nevada.",
+    "nearestTown": {
+      "name": "Bishop",
+      "region": "California",
+      "distanceMiles": 22
+    }
+  },
+  {
+    "id": "boundary",
+    "name": "Boundary Peak",
+    "lat": 37.8465,
+    "lon": -118.3513,
+    "elevationFt": 13140,
+    "prominenceFt": 253,
+    "range": "White Mountains",
+    "country": "USA",
+    "firstAscent": "Unknown / Indigenous",
+    "difficulty": "Class 2 scramble",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Highest peak in Nevada; sits on the California–Nevada border crest.",
+    "description": "Nevada’s state high point on the California border — a rocky Class 2 scramble often approached with neighboring Montgomery Peak.",
+    "nearestTown": {
+      "name": "Bishop",
+      "region": "California",
+      "distanceMiles": 30
     }
   },
   {
@@ -476,6 +658,29 @@
       "name": "Yosemite Valley",
       "region": "California",
       "distanceMiles": 3.2
+    }
+  },
+  {
+    "id": "elcapitan",
+    "name": "El Capitan",
+    "lat": 37.7342,
+    "lon": -119.6377,
+    "elevationFt": 7569,
+    "prominenceFt": 9,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "aliases": [
+      "El Cap"
+    ],
+    "firstAscent": "1958 (The Nose)",
+    "difficulty": "Elite big-wall",
+    "bestSeason": "Apr–Oct (climbers)",
+    "whyNotable": "World-famous Yosemite big wall; iconic American climbing landmark.",
+    "description": "Yosemite’s sheer granite monolith — one of the world’s most famous big walls, rising nearly 3,000 feet above the Valley floor.",
+    "nearestTown": {
+      "name": "Yosemite Valley",
+      "region": "California",
+      "distanceMiles": 3
     }
   },
   {
@@ -802,6 +1007,49 @@
       "name": "Pine Springs",
       "region": "Texas",
       "distanceMiles": 3
+    }
+  },
+  {
+    "id": "blackelk",
+    "name": "Black Elk Peak",
+    "lat": 43.8661,
+    "lon": -103.5314,
+    "elevationFt": 7242,
+    "prominenceFt": 2911,
+    "range": "Black Hills",
+    "country": "USA",
+    "aliases": [
+      "Harney Peak"
+    ],
+    "firstAscent": "Unknown / Indigenous",
+    "difficulty": "Class 1 hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Highest peak in South Dakota; classic Black Hills fire-tower summit.",
+    "description": "South Dakota’s high point (formerly Harney Peak) — a popular Black Hills hike to a stone fire tower with views across the plains.",
+    "nearestTown": {
+      "name": "Custer",
+      "region": "South Dakota",
+      "distanceMiles": 10
+    }
+  },
+  {
+    "id": "telescope",
+    "name": "Telescope Peak",
+    "lat": 36.1699,
+    "lon": -117.0892,
+    "elevationFt": 11043,
+    "prominenceFt": 6168,
+    "range": "Panamint Range",
+    "country": "USA",
+    "firstAscent": "Unknown / Indigenous",
+    "difficulty": "Class 1–2 hike",
+    "bestSeason": "Apr–Jun, Sep–Nov",
+    "whyNotable": "Highest peak in Death Valley National Park; classic desert high-point hike.",
+    "description": "Death Valley’s high point in the Panamint Range — a long desert ridge walk with views from Badwater Basin to Mount Whitney on clear days.",
+    "nearestTown": {
+      "name": "Furnace Creek",
+      "region": "California",
+      "distanceMiles": 28
     }
   },
   {
@@ -2655,6 +2903,30 @@
     }
   },
   {
+    "id": "monadnock",
+    "name": "Mt. Monadnock",
+    "lat": 42.8615,
+    "lon": -72.1081,
+    "elevationFt": 3165,
+    "prominenceFt": 2130,
+    "range": "New England Upland",
+    "country": "USA",
+    "aliases": [
+      "Grand Monadnock",
+      "Mount Monadnock"
+    ],
+    "firstAscent": "Unknown / Indigenous",
+    "difficulty": "Class 1–2 hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Among the most frequently hiked peaks on Earth; classic New England summit.",
+    "description": "One of the world’s most climbed mountains — a bare New Hampshire summit of open ledge trails above Jaffrey and Dublin.",
+    "nearestTown": {
+      "name": "Jaffrey",
+      "region": "New Hampshire",
+      "distanceMiles": 5
+    }
+  },
+  {
     "id": "washington",
     "name": "Mt. Washington",
     "lat": 44.2706,
@@ -2679,6 +2951,76 @@
     }
   },
   {
+    "id": "lafayette",
+    "name": "Mt. Lafayette",
+    "lat": 44.1607,
+    "lon": -71.6444,
+    "elevationFt": 5249,
+    "prominenceFt": 3342,
+    "range": "White Mountains",
+    "country": "USA",
+    "aliases": [
+      "Mount Lafayette"
+    ],
+    "firstAscent": "1820s",
+    "difficulty": "Class 1–2 hike",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Franconia Ridge high point; one of New England’s premier alpine day hikes.",
+    "description": "The high point of Franconia Ridge — a classic White Mountains alpine traverse linking Little Haystack, Lincoln, and Lafayette above Franconia Notch.",
+    "nearestTown": {
+      "name": "Franconia",
+      "region": "New Hampshire",
+      "distanceMiles": 8
+    }
+  },
+  {
+    "id": "madison",
+    "name": "Mt. Madison",
+    "lat": 44.3284,
+    "lon": -71.277,
+    "elevationFt": 5367,
+    "prominenceFt": 466,
+    "range": "Presidential Range",
+    "country": "USA",
+    "aliases": [
+      "Mount Madison"
+    ],
+    "firstAscent": "1840s",
+    "difficulty": "Class 2 hike",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Northern anchor of New Hampshire’s Presidential Range alpine crest.",
+    "description": "Northernmost Presidential 5000-footer — rocky alpine trails above Madison Spring Hut on the classic Presidential Traverse.",
+    "nearestTown": {
+      "name": "Gorham",
+      "region": "New Hampshire",
+      "distanceMiles": 10
+    }
+  },
+  {
+    "id": "adamsnh",
+    "name": "Mt. Adams (NH)",
+    "lat": 44.3206,
+    "lon": -71.2915,
+    "elevationFt": 5799,
+    "prominenceFt": 861,
+    "range": "Presidential Range",
+    "country": "USA",
+    "aliases": [
+      "Mount Adams",
+      "Adams (Presidentials)"
+    ],
+    "firstAscent": "1840s",
+    "difficulty": "Class 2 hike",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Second-highest peak in New England; key Presidential Range alpine summit.",
+    "description": "Second-highest peak in New England — a rugged Presidential summit of alpine rock between Madison and Jefferson on the Presidential Traverse.",
+    "nearestTown": {
+      "name": "Gorham",
+      "region": "New Hampshire",
+      "distanceMiles": 11
+    }
+  },
+  {
     "id": "oldrag",
     "name": "Old Rag Mountain",
     "lat": 38.5518,
@@ -2699,6 +3041,29 @@
       "name": "Sperryville",
       "region": "Virginia",
       "distanceMiles": 10
+    }
+  },
+  {
+    "id": "rogers",
+    "name": "Mt. Rogers",
+    "lat": 36.6598,
+    "lon": -81.5448,
+    "elevationFt": 5729,
+    "prominenceFt": 2449,
+    "range": "Blue Ridge Mountains",
+    "country": "USA",
+    "aliases": [
+      "Mount Rogers"
+    ],
+    "firstAscent": "Unknown / Indigenous",
+    "difficulty": "Class 1 hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Highest peak in Virginia; Appalachian Trail destination near Grayson Highlands.",
+    "description": "Virginia’s high point in the Mount Rogers massif — a spruce-fir Appalachian summit reached via the Appalachian Trail from Elk Garden or Grayson Highlands.",
+    "nearestTown": {
+      "name": "Damascus",
+      "region": "Virginia",
+      "distanceMiles": 22
     }
   },
   {
@@ -2929,6 +3294,29 @@
     }
   },
   {
+    "id": "crestoneneedle",
+    "name": "Crestone Needle",
+    "lat": 37.9647,
+    "lon": -105.5767,
+    "elevationFt": 14197,
+    "prominenceFt": 457,
+    "range": "Sangre de Cristo",
+    "country": "USA",
+    "aliases": [
+      "Crestone Needles"
+    ],
+    "firstAscent": "1916",
+    "difficulty": "Class 3 scramble",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "One of Colorado’s most striking 14ers; often linked with Crestone Peak.",
+    "description": "A sharp Sangre de Cristo 14er beside Crestone Peak — classic Class 3 scrambling on solid rock via Ellingwood Arete or the standard South Face.",
+    "nearestTown": {
+      "name": "Westcliffe",
+      "region": "Colorado",
+      "distanceMiles": 18
+    }
+  },
+  {
     "id": "capitol",
     "name": "Capitol Peak",
     "lat": 39.1503,
@@ -3042,6 +3430,26 @@
     }
   },
   {
+    "id": "handies",
+    "name": "Handies Peak",
+    "lat": 37.9131,
+    "lon": -107.5044,
+    "elevationFt": 14048,
+    "prominenceFt": 1908,
+    "range": "San Juan Mountains",
+    "country": "USA",
+    "firstAscent": "1870s",
+    "difficulty": "Class 1–2 hike",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Among the most accessible San Juan 14ers; classic American Basin day hike.",
+    "description": "One of Colorado’s easier San Juan 14ers — a Class 1–2 hike from American Basin or Grizzly Gulch with broad alpine meadows and big views.",
+    "nearestTown": {
+      "name": "Lake City",
+      "region": "Colorado",
+      "distanceMiles": 20
+    }
+  },
+  {
     "id": "maunakea",
     "name": "Mauna Kea",
     "lat": 19.8207,
@@ -3064,6 +3472,26 @@
       "name": "Hilo",
       "region": "Hawaii",
       "distanceMiles": 28
+    }
+  },
+  {
+    "id": "maunaloa",
+    "name": "Mauna Loa",
+    "lat": 19.4756,
+    "lon": -155.6081,
+    "elevationFt": 13679,
+    "prominenceFt": 7079,
+    "range": "Hawaiian Islands",
+    "country": "USA",
+    "firstAscent": "Unknown / Indigenous",
+    "difficulty": "High-altitude hike",
+    "bestSeason": "Year-round (weather dependent)",
+    "whyNotable": "Largest volcano on Earth by volume; active Hawaiian shield beside Mauna Kea.",
+    "description": "Earth’s largest shield volcano by volume — a vast, gently sloping Hawaiian giant beside Mauna Kea, with long alpine approaches above the rainforest.",
+    "nearestTown": {
+      "name": "Hilo",
+      "region": "Hawaii",
+      "distanceMiles": 35
     }
   },
   {
