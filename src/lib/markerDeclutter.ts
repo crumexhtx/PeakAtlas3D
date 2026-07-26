@@ -194,3 +194,85 @@ export function declutterCountryMarkers(
 
   return layout
 }
+
+export type PeakMarkerLayout = {
+  show: boolean
+}
+
+export function peakLayoutsEqual(
+  a: Map<string, PeakMarkerLayout>,
+  b: Map<string, PeakMarkerLayout>,
+): boolean {
+  if (a.size !== b.size) return false
+  for (const [key, value] of a) {
+    const other = b.get(key)
+    if (!other || other.show !== value.show) return false
+  }
+  return true
+}
+
+const MAX_COUNTRY_PEAK_FLAGS = 28
+const MAX_COUNTRY_PEAK_FLAGS_NARROW = 18
+
+/**
+ * Cap and de-overlap peak flags in country drill-in (USA can hit 80+).
+ * Prefer higher elevation when packing is tight.
+ */
+export function declutterPeakMarkers(
+  map: MapLibreMap,
+  peaks: Array<{
+    id: string
+    lat: number
+    lon: number
+    elevationFt: number
+    name: string
+  }>,
+  previous?: Map<string, PeakMarkerLayout>,
+): Map<string, PeakMarkerLayout> {
+  const narrow = map.getContainer().clientWidth <= NARROW_MAP_PX
+  const maxFlags = narrow
+    ? MAX_COUNTRY_PEAK_FLAGS_NARROW
+    : MAX_COUNTRY_PEAK_FLAGS
+  const flagW = 30
+  const flagH = 38
+
+  const candidates = peaks
+    .filter((p) =>
+      stickyFront(map, p.lon, p.lat, previous?.get(p.id)?.show ?? false),
+    )
+    .map((p) => {
+      const point = map.project([p.lon, p.lat])
+      return { peak: p, x: point.x, y: point.y }
+    })
+    .filter((c) => Number.isFinite(c.x) && Number.isFinite(c.y))
+    .sort((a, b) => {
+      const byElev = b.peak.elevationFt - a.peak.elevationFt
+      if (byElev !== 0) return byElev
+      return a.peak.name.localeCompare(b.peak.name)
+    })
+
+  const placed: Box[] = []
+  const layout = new Map<string, PeakMarkerLayout>()
+  let shown = 0
+
+  for (const item of candidates) {
+    if (shown >= maxFlags) {
+      layout.set(item.peak.id, { show: false })
+      continue
+    }
+    const flagBox = boxAround(item.x, item.y, flagW, flagH)
+    if (placed.some((b) => overlaps(flagBox, b, 2))) {
+      layout.set(item.peak.id, { show: false })
+      continue
+    }
+    placed.push(flagBox)
+    layout.set(item.peak.id, { show: true })
+    shown += 1
+  }
+
+  for (const peak of peaks) {
+    if (!layout.has(peak.id)) layout.set(peak.id, { show: false })
+  }
+
+  return layout
+}

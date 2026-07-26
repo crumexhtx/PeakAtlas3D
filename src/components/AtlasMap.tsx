@@ -7,8 +7,8 @@ import Map, {
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Map as MapLibreMap } from 'maplibre-gl'
 import type { Peak, PeakIndex } from '../types/peak'
-import { FlagPeakMarker } from './FlagPeakMarker'
 import { CountryFlagsLayer } from './CountryFlagsLayer'
+import { CountryPeaksLayer } from './CountryPeaksLayer'
 import { NearbyPlaceMarker } from './NearbyPlaceMarker'
 import { SpinFunFact } from './SpinFunFact'
 import { isUsPeak, TrailMarkers } from './TrailMarkers'
@@ -20,12 +20,14 @@ import {
   peakMatchesCountry,
 } from '../lib/countries'
 import {
-  desktopPixelRatio,
+  cappedPixelRatio,
+  DETAIL_MAX_ZOOM,
   HERO_TERRAIN_EXAGGERATION,
-  mapStyleUrl,
+  mapStyleForMode,
   ORBIT_TERRAIN_EXAGGERATION,
   terrainSource,
   TERRAIN_SOURCE_ID,
+  WORLD_MAX_ZOOM,
 } from '../lib/maptiler'
 import {
   applyPeakAtmosphere,
@@ -34,6 +36,7 @@ import {
   flyToAsync,
   IDLE_ROTATE_DELAY_MS,
   IDLE_ROTATE_RESUME_MS,
+  IDLE_SPIN_MAX_MS,
   orbitAsync,
   peakFramePadding,
   peakFramingCenter,
@@ -163,8 +166,8 @@ export function AtlasMap({
   onCinematicChangeRef.current = onCinematicChange
   latestPeakIdRef.current = activePeak?.id ?? null
 
-  // Cap HiDPI canvas fill-rate on desktop via MapLibre's native pixelRatio.
-  const pixelRatio = useMemo(() => desktopPixelRatio(), [])
+  // Cap HiDPI canvas fill-rate on desktop + mobile via MapLibre pixelRatio.
+  const pixelRatio = useMemo(() => cappedPixelRatio(), [])
 
   useEffect(() => {
     const map = mapRef.current?.getMap()
@@ -236,7 +239,7 @@ export function AtlasMap({
     }
   }
 
-  // Idle spin — world mode only.
+  // Idle spin — world mode only (delayed start, auto-pauses after a budget).
   useEffect(() => {
     if (!mapReady || prefersReducedMotion() || mode !== 'world') {
       stopSpin()
@@ -252,7 +255,13 @@ export function AtlasMap({
       stopSpin()
       idleTimerRef.current = window.setTimeout(() => {
         stopSpin()
-        spinRef.current = startIdleSpin(map)
+        spinRef.current = startIdleSpin(map, undefined, {
+          maxMs: IDLE_SPIN_MAX_MS,
+          onAutoStop: () => {
+            spinRef.current = null
+            setSpinning(false)
+          },
+        })
         setSpinning(true)
       }, delayMs)
     }
@@ -265,7 +274,6 @@ export function AtlasMap({
     for (const event of ACTIVITY_EVENTS) {
       map.on(event, onUserActivity)
     }
-    // Start rotating as soon as the world globe is ready.
     scheduleIdleSpin(IDLE_ROTATE_DELAY_MS)
 
     return () => {
@@ -420,12 +428,8 @@ export function AtlasMap({
       setMapInteractive(map, false)
 
       try {
-        // Critical: do NOT remount or jump — fly from the live atlas camera.
-        map.setTerrain({
-          source: TERRAIN_SOURCE_ID,
-          exaggeration: ORBIT_TERRAIN_EXAGGERATION,
-        })
-
+        // Approach without DEM first (smoother fly / fewer tiles), then enable
+        // terrain once the camera has settled for orbit + hero.
         const framePad = peakFramePadding()
         await flyToAsync(map, {
           center: orbitCenter,
@@ -441,6 +445,13 @@ export function AtlasMap({
         if (!stillActive()) return
 
         await waitForMapIdle(map, 900)
+        if (!stillActive()) return
+
+        map.setTerrain({
+          source: TERRAIN_SOURCE_ID,
+          exaggeration: ORBIT_TERRAIN_EXAGGERATION,
+        })
+        await waitForMapIdle(map, 450)
         if (!stillActive()) return
 
         onCinematicChangeRef.current({ active: true, status: 'Orbiting peak…' })
@@ -538,12 +549,37 @@ export function AtlasMap({
     ? `${activePeak.name} interactive 3D topographic globe map`
     : 'Interactive 3D world peak atlas globe map'
 
-  const style = useMemo(() => mapStyleUrl(), [])
+  const styleMode = mode === 'world' ? 'world' : 'detail'
+  const style = useMemo(() => mapStyleForMode(styleMode), [styleMode])
   const dem = useMemo(() => terrainSource(), [])
+  const maxZoom = mode === 'world' ? WORLD_MAX_ZOOM : DETAIL_MAX_ZOOM
+
+  // Re-apply atmosphere / satellite soften after world↔detail style swaps.
+  useEffect(() => {
+    if (!mapReady) return
+    const map = getMap()
+    if (!map) return
+    const onStyle = () => {
+      applyPeakAtmosphere(map)
+      softenSatelliteRaster(map)
+    }
+    map.on('style.load', onStyle)
+    // Style may already be loaded for the initial mode.
+    try {
+      onStyle()
+    } catch {
+      // ignore
+    }
+    return () => {
+      map.off('style.load', onStyle)
+    }
+  }, [mapReady, styleMode])
 
   return (
     <div
-      className={`atlas-map-wrap ${cinematic ? 'is-cinematic' : ''}`}
+      className={`atlas-map-wrap${cinematic ? ' is-cinematic' : ''}${
+        spinning ? ' is-spinning' : ''
+      }`}
       role="application"
       aria-label={mapAriaLabel}
     >
@@ -553,6 +589,7 @@ export function AtlasMap({
         mapStyle={style}
         projection="globe"
         maxPitch={85}
+        maxZoom={maxZoom}
         attributionControl={{ compact: true }}
         {...(pixelRatio != null ? { pixelRatio } : {})}
         style={{ width: '100%', height: '100%' }}
@@ -586,10 +623,9 @@ export function AtlasMap({
           />
         )}
 
-        {mode === 'country' &&
-          countryPeaks.map((peak) => (
-            <FlagPeakMarker key={peak.id} peak={peak} onClick={onSelectPeak} />
-          ))}
+        {mode === 'country' && (
+          <CountryPeaksLayer peaks={countryPeaks} onSelectPeak={onSelectPeak} />
+        )}
 
         {mode === 'peak' && activePeak && (
           <>

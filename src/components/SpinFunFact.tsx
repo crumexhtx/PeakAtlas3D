@@ -116,6 +116,7 @@ function globeDiskRadiusPx(
 /**
  * Project a lng/lat into overlay pixels, only if it lands on the visible
  * front of the globe disk (not the black void around Earth).
+ * Pass pre-measured rects from the tick loop to avoid layout thrash.
  */
 function projectToOverlay(
   map: MapLibreMap,
@@ -123,6 +124,8 @@ function projectToOverlay(
   lon: number,
   lat: number,
   metrics: LayoutMetrics,
+  mapRect: DOMRect,
+  overlayRect: DOMRect,
 ): Point | null {
   if (!isOnFrontHemisphere(map, lon, lat, metrics.frontDot)) return null
 
@@ -130,8 +133,6 @@ function projectToOverlay(
   if (!Number.isFinite(pt.x) || !Number.isFinite(pt.y)) return null
 
   const mapEl = map.getContainer()
-  const mapRect = mapEl.getBoundingClientRect()
-  const overlayRect = overlay.getBoundingClientRect()
   if (mapEl.clientWidth < 1 || mapEl.clientHeight < 1) return null
   if (overlayRect.width < 1 || overlayRect.height < 1) return null
 
@@ -274,6 +275,8 @@ export function SpinFunFact({
       cx: number,
       cy: number,
       metrics: LayoutMetrics,
+      mapRect: DOMRect,
+      overlayRect: DOMRect,
     ) => {
       let best:
         | {
@@ -288,7 +291,19 @@ export function SpinFunFact({
         if (peak.id === lastPeakIdRef.current) continue
         const country = countryByLabel.get(peak.country)
         if (!country) continue
-        const point = projectToOverlay(map, overlay, peak.lon, peak.lat, metrics)
+        // Cheap reject before project/rects work.
+        if (!isOnFrontHemisphere(map, peak.lon, peak.lat, metrics.frontDot)) {
+          continue
+        }
+        const point = projectToOverlay(
+          map,
+          overlay,
+          peak.lon,
+          peak.lat,
+          metrics,
+          mapRect,
+          overlayRect,
+        )
         if (!point) continue
         const dist = Math.hypot(point.x - cx, point.y - cy)
         if (dist > metrics.centerR) continue
@@ -304,6 +319,11 @@ export function SpinFunFact({
       // Match idle-spin paint rate (~30fps) so we don't outwork the globe.
       skip = (skip + 1) % 2
       if (skip !== 0) {
+        frame = requestAnimationFrame(tick)
+        return
+      }
+
+      if (document.hidden) {
         frame = requestAnimationFrame(tick)
         return
       }
@@ -325,6 +345,8 @@ export function SpinFunFact({
       const metrics = layoutMetrics(vw)
       const cx = vw / 2
       const cy = vh / 2
+      const mapRect = map.getContainer().getBoundingClientRect()
+      const overlayRect = overlay.getBoundingClientRect()
       const active = activeRef.current
 
       if (active) {
@@ -334,6 +356,8 @@ export function SpinFunFact({
           active.lon,
           active.lat,
           metrics,
+          mapRect,
+          overlayRect,
         )
         if (!point) {
           clearCallout()
@@ -355,7 +379,14 @@ export function SpinFunFact({
           }
         }
       } else {
-        const best = nearestPeakInCenter(overlay, cx, cy, metrics)
+        const best = nearestPeakInCenter(
+          overlay,
+          cx,
+          cy,
+          metrics,
+          mapRect,
+          overlayRect,
+        )
         if (best) {
           showForPeak(best.peak, best.country, best.point, vw, vh, now, metrics)
         }

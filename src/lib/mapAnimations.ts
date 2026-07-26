@@ -1,11 +1,13 @@
 import type { Map as MapLibreMap } from 'maplibre-gl'
 
-/** Start world idle spin immediately on load (0 = no wait). */
-export const IDLE_ROTATE_DELAY_MS = 0
+/** Brief pause after world load before idle spin starts (lets tiles settle). */
+export const IDLE_ROTATE_DELAY_MS = 2_200
 /** Pause after user interaction before resuming world spin. */
-export const IDLE_ROTATE_RESUME_MS = 2_500
+export const IDLE_ROTATE_RESUME_MS = 3_200
 /** Degrees of longitude advanced per animation frame on the world globe (~60fps baseline). */
-export const IDLE_ROTATE_SPEED_LNG = 0.045
+export const IDLE_ROTATE_SPEED_LNG = 0.032
+/** Auto-pause continuous spin until the next user interaction (GPU budget). */
+export const IDLE_SPIN_MAX_MS = 45_000
 /** Cap idle/orbit paints — half the WebGL cost for nearly the same motion. */
 const SPIN_FRAME_MS = 1000 / 30
 
@@ -223,19 +225,29 @@ export function peakFramingCenter(
  * Prefer this over setBearing on a globe — bearing changes often look wrong
  * at low zoom and can fire rotatestart (which would cancel idle timers).
  * Throttled to ~30fps and paused while the tab is hidden.
+ * Optional `maxMs` auto-stops the spin (caller can resume on interaction).
  */
 export function startIdleSpin(
   map: MapLibreMap,
   speedLng = IDLE_ROTATE_SPEED_LNG,
+  options?: { maxMs?: number; onAutoStop?: () => void },
 ): { cancel: () => void } {
   let frame = 0
   let active = true
   let lastPaint = 0
+  const startedAt = performance.now()
+  const maxMs = options?.maxMs
   // Keep perceived angular speed close to the old uncapped 60fps loop.
   const degPerMs = (speedLng * 60) / 1000
 
   const tick = (now: number) => {
     if (!active) return
+    if (maxMs != null && now - startedAt >= maxMs) {
+      active = false
+      cancelAnimationFrame(frame)
+      options?.onAutoStop?.()
+      return
+    }
     if (!document.hidden && now - lastPaint >= SPIN_FRAME_MS) {
       const dt = Math.min(now - lastPaint, SPIN_FRAME_MS * 2.5)
       lastPaint = now
