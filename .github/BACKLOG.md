@@ -5,7 +5,7 @@ Ready-to-file issues for the live soft launch. Prefer small PRs.
 ## Ops / SEO
 
 - [ ] Verify domain in Google Search Console and submit `https://peakatlas3d.com/sitemap.xml`
-- [ ] Confirm Mapbox token URL allow-list (prod + localhost) and usage alerts
+- [ ] Confirm MapTiler key URL allow-list (prod + localhost) and usage alerts when using `VITE_MAPTILER_KEY`
 - [ ] After deploy: confirm `/sitemap.xml`, `/robots.txt`, and `/peak/rainier` HTML include peak title in raw source (View Source)
 
 ## Product / data
@@ -16,10 +16,12 @@ Ready-to-file issues for the live soft launch. Prefer small PRs.
 
 ## Engineering
 
-- [ ] Lazy-load Mapbox / `AtlasMap` so About / Releases / Contact skip the ~1.8MB chunk
+- [ ] Lazy-load MapLibre / `AtlasMap` so About / Releases / Contact skip the large GL chunk
 - [ ] Privacy-friendly analytics (Plausible or Umami)
 - [ ] Smoke e2e: world → country → peak → skip → back (Playwright)
 - [ ] Install GitHub CLI locally if you want these tracked as Issues (`gh issue create`)
+- [ ] Retune globe disk metrics (`SpinFunFact`) after MapLibre + free-tile vs MapTiler visual QA
+- [ ] Optionally drop transitive `mapbox-gl` peer pulled by `react-map-gl` (unused import path)
 
 ## Growth
 

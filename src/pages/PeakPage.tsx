@@ -94,7 +94,7 @@ export function PeakPage() {
     >
       {canonical}
       {/*
-        Semantic landmark for the peak dossier. The Mapbox WebGL canvas stays
+        Semantic landmark for the peak dossier. The MapLibre WebGL canvas stays
         full-bleed in .map-stage (sibling); this panel is pointer-events: none
         except on the sheet so mobile users can pan/swipe the globe freely.
       */}

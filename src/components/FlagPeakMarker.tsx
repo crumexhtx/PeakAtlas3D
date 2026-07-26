@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Marker } from 'react-map-gl/mapbox'
+import { Marker } from 'react-map-gl/maplibre'
 import type { PeakIndex } from '../types/peak'
 import { countryToIso, flagUrl } from '../lib/countries'
 

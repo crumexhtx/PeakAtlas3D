@@ -1,7 +1,7 @@
 {
   "name": "peakatlas3d",
   "private": true,
-  "version": "0.2.3",
+  "version": "0.2.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
-    "mapbox-gl": "^3.26.0",
+    "maplibre-gl": "^5.24.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-map-gl": "^8.1.1",

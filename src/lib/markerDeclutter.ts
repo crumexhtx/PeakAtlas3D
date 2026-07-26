@@ -1,4 +1,4 @@
-import type { Map as MapboxMap } from 'mapbox-gl'
+import type { Map as MapLibreMap } from 'maplibre-gl'
 import type { CountrySummary } from '../types/country'
 import { isOnFrontHemisphere } from './globeVisibility'
 
@@ -32,7 +32,7 @@ export function layoutsEqual(
 }
 
 function stickyFront(
-  map: MapboxMap,
+  map: MapLibreMap,
   lon: number,
   lat: number,
   wasShown: boolean,
@@ -74,7 +74,7 @@ function boxAround(
  * Caps visible flags on all viewports (tighter on phones).
  */
 export function spinCountryMarkerLayout(
-  map: MapboxMap,
+  map: MapLibreMap,
   countries: CountrySummary[],
   previous?: Map<string, CountryMarkerLayout>,
 ): Map<string, CountryMarkerLayout> {
@@ -126,7 +126,7 @@ export function spinCountryMarkerLayout(
  * so dense regions like Europe don't stack on top of each other.
  */
 export function declutterCountryMarkers(
-  map: MapboxMap,
+  map: MapLibreMap,
   countries: CountrySummary[],
   previous?: Map<string, CountryMarkerLayout>,
 ): Map<string, CountryMarkerLayout> {

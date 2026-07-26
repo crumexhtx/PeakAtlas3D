@@ -10,7 +10,7 @@ export const SITE_ORIGIN = 'https://peakatlas3d.com'
 
 const DEFAULT_TITLE = 'PeakAtlas3D — World Peak Atlas'
 const DEFAULT_DESCRIPTION =
-  "Explore the world's mountain peaks on a Mapbox globe, then open a 3D terrain profile for each summit."
+  "Explore the world's mountain peaks on a 3D globe, then open a terrain profile for each summit."
 
 const META_DESCRIPTION_MAX = 300
 

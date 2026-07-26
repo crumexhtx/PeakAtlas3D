@@ -84,7 +84,7 @@ export function DetailsSheet({
   }
 
   function onTabTouchEnd(e: TouchEvent<HTMLButtonElement>) {
-    // Prevent the delayed synthetic click and toggle immediately — Mapbox's
+    // Prevent the delayed synthetic click and toggle immediately — the map
     // canvas gesture recognizer on iOS often swallows the click for peak cards.
     e.preventDefault()
     touchToggledRef.current = true

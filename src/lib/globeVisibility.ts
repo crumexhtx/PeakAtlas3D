@@ -1,12 +1,12 @@
-import type { Map as MapboxMap } from 'mapbox-gl'
+import type { Map as MapLibreMap } from 'maplibre-gl'
 
 /**
  * True when a lng/lat is on the camera-facing side of the globe.
- * Mapbox `project()` still returns canvas coords for the far side, which
+ * `project()` still returns canvas coords for the far side, which
  * made fun-fact pointers attach to the wrong ocean.
  */
 export function isOnFrontHemisphere(
-  map: MapboxMap,
+  map: MapLibreMap,
   lon: number,
   lat: number,
   /** Cosine threshold; 0 ≈ limb, higher = more toward screen center. */

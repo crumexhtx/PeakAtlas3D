@@ -3,9 +3,9 @@ import Map, {
   NavigationControl,
   Source,
   type MapRef,
-} from 'react-map-gl/mapbox'
+} from 'react-map-gl/maplibre'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import type { Map as MapboxMap } from 'mapbox-gl'
+import type { Map as MapLibreMap } from 'maplibre-gl'
 import type { Peak, PeakIndex } from '../types/peak'
 import { FlagPeakMarker } from './FlagPeakMarker'
 import { CountryFlagsLayer } from './CountryFlagsLayer'
@@ -20,15 +20,13 @@ import {
   peakMatchesCountry,
 } from '../lib/countries'
 import {
-  applyMapPixelRatioCap,
-  hasMapboxToken,
+  desktopPixelRatio,
   HERO_TERRAIN_EXAGGERATION,
-  MAP_STYLE_SATELLITE,
-  MAPBOX_TOKEN,
+  mapStyleUrl,
   ORBIT_TERRAIN_EXAGGERATION,
-  TERRAIN_SOURCE,
+  terrainSource,
   TERRAIN_SOURCE_ID,
-} from '../lib/mapbox'
+} from '../lib/maptiler'
 import {
   applyPeakAtmosphere,
   countryFramePadding,
@@ -46,7 +44,7 @@ import {
   waitForMapIdle,
   worldFramePadding,
 } from '../lib/mapAnimations'
-import 'mapbox-gl/dist/mapbox-gl.css'
+import 'maplibre-gl/dist/maplibre-gl.css'
 
 type AtlasMapProps = {
   peaks: PeakIndex[]
@@ -158,24 +156,26 @@ export function AtlasMap({
   /** Stable for this page session; randomized again on full refresh. */
   const [worldView] = useState(createRandomWorldView)
   const [mapReady, setMapReady] = useState(false)
-  const [mapInstance, setMapInstance] = useState<MapboxMap | null>(null)
+  const [mapInstance, setMapInstance] = useState<MapLibreMap | null>(null)
   const [spinning, setSpinning] = useState(false)
   const { units } = useUnits()
 
   onCinematicChangeRef.current = onCinematicChange
   latestPeakIdRef.current = activePeak?.id ?? null
 
-  // Cap HiDPI canvas fill-rate on desktop (Mapbox GL v3 has no pixelRatio option).
+  // Cap HiDPI canvas fill-rate on desktop via MapLibre's native pixelRatio.
+  const pixelRatio = useMemo(() => desktopPixelRatio(), [])
+
   useEffect(() => {
-    const restore = applyMapPixelRatioCap()
     const map = mapRef.current?.getMap()
+    if (!map || pixelRatio == null) return
     try {
-      map?.resize()
+      map.setPixelRatio?.(pixelRatio)
+      map.resize()
     } catch {
       // Map may not be ready yet; onLoad resize also picks up the capped DPR.
     }
-    return restore
-  }, [])
+  }, [pixelRatio])
 
   // Abort in-flight camera work when the map shell unmounts (About/Releases/etc).
   useEffect(() => {
@@ -219,7 +219,7 @@ export function AtlasMap({
   const mode = activePeak ? 'peak' : selectedCountry ? 'country' : 'world'
   const peakFlag = activePeak ? flagUrl(activePeak.country, 40) : null
 
-  function getMap(): MapboxMap | null {
+  function getMap(): MapLibreMap | null {
     return mapRef.current?.getMap() ?? null
   }
 
@@ -341,7 +341,7 @@ export function AtlasMap({
     if (!mapReady) return
     const mapInstance = getMap()
     if (!mapInstance) return
-    const map: MapboxMap = mapInstance
+    const map: MapLibreMap = mapInstance
 
     const peakId = activePeak?.id ?? null
     const prevPeakId = prevPeakIdRef.current
@@ -534,20 +534,12 @@ export function AtlasMap({
     onCinematicChangeRef.current({ active: false, status: '' })
   }, [skipNonce, activePeak])
 
-  if (!hasMapboxToken()) {
-    return (
-      <div className="map-missing-token">
-        <p>
-          Add a public Mapbox token to <code>.env</code> as{' '}
-          <code>VITE_MAPBOX_TOKEN=pk.…</code>, then restart the dev server.
-        </p>
-      </div>
-    )
-  }
-
   const mapAriaLabel = activePeak
     ? `${activePeak.name} interactive 3D topographic globe map`
     : 'Interactive 3D world peak atlas globe map'
+
+  const style = useMemo(() => mapStyleUrl(), [])
+  const dem = useMemo(() => terrainSource(), [])
 
   return (
     <div
@@ -557,18 +549,19 @@ export function AtlasMap({
     >
       <Map
         ref={mapRef}
-        mapboxAccessToken={MAPBOX_TOKEN}
         initialViewState={worldView}
-        mapStyle={MAP_STYLE_SATELLITE}
+        mapStyle={style}
         projection="globe"
         maxPitch={85}
-        attributionControl
+        attributionControl={{ compact: true }}
+        {...(pixelRatio != null ? { pixelRatio } : {})}
         style={{ width: '100%', height: '100%' }}
         onLoad={() => {
           const map = getMap()
           if (map) {
             // Pick up desktop DPR cap applied on mount.
             try {
+              if (pixelRatio != null) map.setPixelRatio?.(pixelRatio)
               map.resize()
             } catch {
               // Ignore resize failures during early load.
@@ -580,7 +573,7 @@ export function AtlasMap({
           setMapReady(true)
         }}
       >
-        <Source id={TERRAIN_SOURCE_ID} {...TERRAIN_SOURCE} />
+        <Source id={TERRAIN_SOURCE_ID} {...dem} />
         {!cinematic && !earthOnly && (
           <NavigationControl position="top-left" visualizePitch />
         )}

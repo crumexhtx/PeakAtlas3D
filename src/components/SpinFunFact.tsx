@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import type { Map as MapboxMap } from 'mapbox-gl'
+import type { Map as MapLibreMap } from 'maplibre-gl'
 import type { PeakIndex } from '../types/peak'
 import type { CountrySummary } from '../types/country'
 import { flagUrl } from '../lib/countries'
@@ -8,7 +8,7 @@ import { useUnits } from '../context/UnitsContext'
 import { pickRandomFact } from '../lib/peakFacts'
 
 type SpinFunFactProps = {
-  map: MapboxMap | null
+  map: MapLibreMap | null
   spinning: boolean
   /** When false (e.g. atlas hint visible), hide callouts. Parent owns this. */
   enabled?: boolean
@@ -101,14 +101,14 @@ function placeCard(
 
 /** Pixel radius of the visible globe disk in the map container. */
 function globeDiskRadiusPx(
-  map: MapboxMap,
+  map: MapLibreMap,
   width: number,
   height: number,
   fill: number,
 ) {
   const minSide = Math.min(width, height)
   const zoom = map.getZoom()
-  // Tuned for Mapbox globe around world zoom (~1.5): disk fills most of the short side.
+  // Tuned for globe projection around world zoom (~1.5): disk fills most of the short side.
   const radius = (minSide / 2) * fill * Math.pow(2, zoom - 1.5)
   return Math.min(radius, minSide * 0.5)
 }
@@ -118,7 +118,7 @@ function globeDiskRadiusPx(
  * front of the globe disk (not the black void around Earth).
  */
 function projectToOverlay(
-  map: MapboxMap,
+  map: MapLibreMap,
   overlay: HTMLElement,
   lon: number,
   lat: number,

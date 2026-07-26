@@ -18,7 +18,7 @@ const siteUrl = (process.env.SITE_URL || 'https://peakatlas3d.com').replace(
 )
 
 const DEFAULT_DESCRIPTION =
-  "Explore the world's mountain peaks on a Mapbox globe, then open a 3D terrain profile for each summit."
+  "Explore the world's mountain peaks on a 3D globe, then open a terrain profile for each summit."
 
 function escapeHtml(value) {
   return String(value)
