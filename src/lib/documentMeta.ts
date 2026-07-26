@@ -8,9 +8,9 @@ import { peakLocationLabel } from './peakLocation'
 /** Production origin for canonical / OG / JSON-LD URLs (never include query strings). */
 export const SITE_ORIGIN = 'https://peakatlas3d.com'
 
-const DEFAULT_TITLE = 'PeakAtlas3D — World Peak Atlas'
+const DEFAULT_TITLE = 'PeakAtlas3D — Trip-Ready Peak Guides'
 const DEFAULT_DESCRIPTION =
-  "Explore the world's mountain peaks on a Mapbox globe, then open a 3D terrain profile for each summit."
+  'Research any peak — difficulty, best season, permits, and what you need to know before you go — then explore it in 3D.'
 
 const META_DESCRIPTION_MAX = 300
 
@@ -109,6 +109,12 @@ export function peakSeoDescription(peak: Peak): string {
   if (!base.toLowerCase().includes(location.toLowerCase())) {
     parts.push(`Location: ${location}.`)
   }
+  const tripBits: string[] = []
+  if (peak.difficulty?.trim()) tripBits.push(peak.difficulty.trim())
+  if (peak.bestSeason?.trim()) tripBits.push(`best ${peak.bestSeason.trim()}`)
+  if (tripBits.length) {
+    parts.push(`Trip readiness: ${tripBits.join(' · ')}.`)
+  }
   if (trailNames.length) {
     parts.push(`Popular trails: ${trailNames.join(', ')}.`)
   }
@@ -117,6 +123,33 @@ export function peakSeoDescription(peak: Peak): string {
   }
 
   return clipDescription(parts.join(' '))
+}
+
+function withTripFacts(peak: Peak, description: string): string {
+  const hay = description.toLowerCase()
+  const extras: string[] = []
+  const difficulty = peak.difficulty?.trim()
+  const season = peak.bestSeason?.trim()
+  if (
+    difficulty &&
+    !hay.includes(difficulty.toLowerCase()) &&
+    !/\b(class|hike|scramble|glacier|expedition|climb|difficulty)\b/i.test(
+      description,
+    )
+  ) {
+    extras.push(difficulty)
+  }
+  if (
+    season &&
+    !hay.includes(season.toLowerCase()) &&
+    !/\b(season|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b/i.test(
+      description,
+    )
+  ) {
+    extras.push(`best ${season}`)
+  }
+  if (!extras.length) return description
+  return clipDescription(`${description} ${extras.join(' · ')}.`)
 }
 
 export function applyDocumentMeta(input: {
@@ -182,15 +215,17 @@ export function metaForPeak(peak: Peak, _country?: string | null) {
   // Always /peak/:id — never ?country= or other query variants.
   const path = `/peak/${peak.id}`
   const location = peakLocationLabel(peak)
-  const description =
-    peak.seoMetaDescription?.trim() || peakSeoDescription(peak)
+  const description = withTripFacts(
+    peak,
+    peak.seoMetaDescription?.trim() || peakSeoDescription(peak),
+  )
   const withLocation =
     description.toLowerCase().includes(location.toLowerCase())
       ? description
       : clipDescription(`${description} Location: ${location}.`)
 
   return {
-    title: `${peak.name} 3D Map & Topography · ${location} | PeakAtlas3D`,
+    title: `${peak.name} Trip Guide & 3D Map · ${location} | PeakAtlas3D`,
     description: withLocation,
     image: peakImage(peak),
     path,

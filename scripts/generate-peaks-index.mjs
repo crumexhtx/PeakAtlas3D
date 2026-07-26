@@ -32,9 +32,12 @@ const index = peaks.map((peak) => {
   }
   if (peak.firstAscent) row.firstAscent = peak.firstAscent
   if (peak.difficulty) row.difficulty = peak.difficulty
+  if (peak.difficultyTier) row.difficultyTier = peak.difficultyTier
   if (peak.bestSeason) row.bestSeason = peak.bestSeason
   if (peak.whyNotable) row.whyNotable = peak.whyNotable
   if (peak.description) row.description = peak.description
+  if (peak.permitStatus) row.permitStatus = peak.permitStatus
+  if (peak.permitRequired !== undefined) row.permitRequired = peak.permitRequired
   if (peak.nearestTown?.name) {
     row.nearestTown = {
       name: peak.nearestTown.name,

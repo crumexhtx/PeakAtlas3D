@@ -100,6 +100,49 @@ for (let i = 0; i < peaks.length; i++) {
   if (!isNonEmptyString(peak.description)) fail(`${where}.description`)
   if (!isNonEmptyString(peak.firstAscent)) fail(`${where}.firstAscent`)
   if (!isNonEmptyString(peak.difficulty)) fail(`${where}.difficulty`)
+  if (!isNonEmptyString(peak.bestSeason)) {
+    fail(`${where}.bestSeason (required for trip readiness)`)
+  }
+  // Trip readiness requires difficulty + bestSeason together (both must be present).
+  if (!isNonEmptyString(peak.difficulty) || !isNonEmptyString(peak.bestSeason)) {
+    fail(`${where} missing trip-readiness fields (difficulty and bestSeason)`)
+  }
+
+  const VALID_TIERS = new Set([
+    'day-hike',
+    'strenuous-hike',
+    'scramble',
+    'snow-glacier',
+    'alpine-technical',
+    'expedition',
+  ])
+  if (!isNonEmptyString(peak.difficultyTier)) {
+    fail(`${where}.difficultyTier (required for gear checklist mapping)`)
+  }
+  if (!VALID_TIERS.has(peak.difficultyTier)) {
+    fail(`${where}.difficultyTier invalid: ${peak.difficultyTier}`)
+  }
+
+  const VALID_PERMIT = new Set(['required', 'not_required', 'unsourced'])
+  if (!isNonEmptyString(peak.permitStatus)) {
+    fail(`${where}.permitStatus (required; use unsourced when not researched)`)
+  }
+  if (!VALID_PERMIT.has(peak.permitStatus)) {
+    fail(`${where}.permitStatus invalid: ${peak.permitStatus}`)
+  }
+  if (peak.permitRequired !== null && typeof peak.permitRequired !== 'boolean') {
+    fail(`${where}.permitRequired must be boolean or null`)
+  }
+  if (peak.permitStatus === 'required' && peak.permitRequired !== true) {
+    fail(`${where}.permitRequired must be true when permitStatus is required`)
+  }
+  if (peak.permitStatus === 'not_required' && peak.permitRequired !== false) {
+    fail(`${where}.permitRequired must be false when permitStatus is not_required`)
+  }
+  if (peak.permitStatus === 'unsourced' && peak.permitRequired !== null) {
+    fail(`${where}.permitRequired must be null when permitStatus is unsourced`)
+  }
+
   assertTown(peak.nearestTown, `${where}.nearestTown`)
   if (!Array.isArray(peak.nearbyPlaces) || peak.nearbyPlaces.length === 0) {
     fail(`${where}.nearbyPlaces`)

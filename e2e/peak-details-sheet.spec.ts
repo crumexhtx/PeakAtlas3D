@@ -8,7 +8,7 @@ test.use({
 
 test('collapsed peak tab expands on tap', async ({ page }) => {
   await page.addInitScript(() => {
-    window.localStorage.setItem('peakatlas.hint.world.v2', '1')
+    window.localStorage.setItem('peakatlas.hint.world.v3', '1')
   })
 
   await page.goto('/peak/rainier?country=USA')

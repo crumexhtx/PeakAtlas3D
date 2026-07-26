@@ -16,6 +16,8 @@ type PeakDossierProps = {
   peak: Peak
   /** Skip mounting the photo gallery (e.g. during peak cinematic) to free decode/bandwidth. */
   deferMedia?: boolean
+  /** Country context for nearby-peak links. */
+  country?: string | null
 }
 
 function peakPhotos(peak: Peak) {
@@ -58,7 +60,11 @@ function AmenityRow({ item }: { item: Amenity }) {
   )
 }
 
-export function PeakDossier({ peak, deferMedia = false }: PeakDossierProps) {
+export function PeakDossier({
+  peak,
+  deferMedia = false,
+  country = null,
+}: PeakDossierProps) {
   const { units } = useUnits()
   const [showNearby, setShowNearby] = useState(false)
   const photos = useMemo(() => peakPhotos(peak), [peak])
@@ -86,6 +92,7 @@ export function PeakDossier({ peak, deferMedia = false }: PeakDossierProps) {
     <PeakSeoLayout
       peak={peak}
       units={units}
+      country={country}
       media={
         !deferMedia ? (
           <PeakPhotoGallery name={peak.name} photos={photos} />

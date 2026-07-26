@@ -108,7 +108,11 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Most glaciated peak in the contiguous United States.",
-    "seoMetaDescription": "Explore Mt. Rainier on a 3D topographic map — Cascade glaciers, elevation, Wonderland trails, and nearby Paradise staging towns."
+    "seoMetaDescription": "Plan Mt. Rainier: Glacier climb — best Jul–Sep — Cascade Range, Washington — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Mount Rainier National Park climbing pass + wilderness camping permits for overnight climbs."
   },
   {
     "id": "shasta",
@@ -233,7 +237,11 @@
     ],
     "bestSeason": "May–Jul",
     "whyNotable": "A lone Cascade volcano that dominates northern California.",
-    "seoMetaDescription": "Explore Mt. Shasta on a 3D map — Cascade volcano topography, Avalanche Gulch context, elevation stats, and northern California approaches."
+    "seoMetaDescription": "Plan Mt. Shasta: Snow / glacier climb — best May–Jul — Cascade Range, California — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Summit pass required for climbs above 10,000 ft on Mount Shasta (USFS)."
   },
   {
     "id": "lassen",
@@ -252,7 +260,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "California’s southern Cascade volcano and a classic national-park summit hike.",
-    "seoMetaDescription": "Explore Lassen Peak on a 3D map — Lassen Volcanic National Park topography, crater summit trail, elevation, and Mineral approaches.",
+    "seoMetaDescription": "Plan Lassen Peak: Strenuous day hike — best Jul–Sep — Cascade Range, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Mineral",
       "region": "California",
@@ -299,7 +307,10 @@
         "license": "CC BY-SA 2.5",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:USA_Lassen_NP_Kings_Creek_CA_edit3.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "sanjacinto",
@@ -319,7 +330,7 @@
     ],
     "bestSeason": "May–Oct",
     "whyNotable": "One of Southern California’s most prominent peaks and a classic Palm Springs tram-to-summit hike.",
-    "seoMetaDescription": "Explore San Jacinto Peak on a 3D map — Southern California sky-island topography, tram approaches, elevation stats, and Palm Springs staging.",
+    "seoMetaDescription": "Plan San Jacinto Peak: Strenuous day hike — best May–Oct — San Jacinto Mountains, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Palm Springs",
       "region": "California",
@@ -374,7 +385,10 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Jacinto_Peak_from_the_east_near_Cactus_to_Clouds.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "sangorgonio",
@@ -394,7 +408,7 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "Southern California’s high point and a rite-of-passage San Bernardino wilderness hike.",
-    "seoMetaDescription": "Explore San Gorgonio Mountain on a 3D map — Southern California high point, wilderness topography, elevation stats, and Forest Falls approaches.",
+    "seoMetaDescription": "Plan San Gorgonio Mountain: Strenuous day / overnight — best Jun–Oct — San Bernardino Mountains, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Forest Falls",
       "region": "California",
@@ -441,7 +455,10 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Gorgonio_Wilderness.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "baldy",
@@ -462,7 +479,7 @@
     ],
     "bestSeason": "May–Oct",
     "whyNotable": "The iconic San Gabriel high point and one of the most climbed peaks in Southern California.",
-    "seoMetaDescription": "Explore Mt. San Antonio (Mt. Baldy) on a 3D map — San Gabriel Mountains topography, Baldy Bowl routes, elevation, and Claremont approaches.",
+    "seoMetaDescription": "Plan Mt. San Antonio: Strenuous day hike / scramble — best May–Oct — San Gabriel Mountains, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Mt. Baldy Village",
       "region": "California",
@@ -509,7 +526,10 @@
         "license": "CC BY-SA 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt.SanAntonio.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "hood",
@@ -620,7 +640,11 @@
     ],
     "bestSeason": "May–Jul",
     "whyNotable": "Oregon’s signature volcano and a classic Pacific Northwest climb.",
-    "seoMetaDescription": "Explore Mt. Hood on a 3D topographic map — Oregon Cascade snow routes, Timberline context, elevation, and Columbia Gorge staging towns."
+    "seoMetaDescription": "Plan Mt. Hood: Snow climb — best May–Jul — Cascade Range, Oregon — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general climbing permit for standard south-side routes; wilderness rules and seasonal restrictions still apply."
   },
   {
     "id": "southsister",
@@ -639,7 +663,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Highest peak in Oregon’s Cascades and the most climbed Oregon volcano.",
-    "seoMetaDescription": "Explore South Sister on a 3D map — Oregon Cascade high point, climber-trail topography, elevation stats, and Bend / Devils Lake approaches.",
+    "seoMetaDescription": "Plan South Sister: Strenuous scramble / non-technical — best Jul–Sep — Cascade Range, Oregon — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Bend",
       "region": "Oregon",
@@ -694,7 +718,10 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:South_Sister_Mountain_in_Central_Oregon_4.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "northsister",
@@ -713,7 +740,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Hardest of the Three Sisters; classic Oregon Cascade technical summit.",
-    "seoMetaDescription": "Explore North Sister on a 3D map — technical Oregon Cascade volcano in the Three Sisters, alpine topography, elevation, and Bend approaches.",
+    "seoMetaDescription": "Plan North Sister: Technical alpine — best Jul–Sep — Cascade Range, Oregon — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Bend",
       "region": "Oregon",
@@ -768,7 +795,10 @@
         "license": "CC BY-SA 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oregon_Three_Sisters,_2008-12-09.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "middlesister",
@@ -787,7 +817,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Central Three Sisters summit; popular Oregon Cascade alpine day climb.",
-    "seoMetaDescription": "Explore Middle Sister on a 3D map — Oregon Three Sisters Cascade peak, snow-and-scree topography, elevation stats, and Sisters/Bend approaches.",
+    "seoMetaDescription": "Plan Middle Sister: Snow / scramble — best Jul–Sep — Cascade Range, Oregon — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Bend",
       "region": "Oregon",
@@ -842,7 +872,10 @@
         "license": "CC BY-SA 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oregon_Three_Sisters,_2008-12-09.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "jeffersonor",
@@ -861,7 +894,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Oregon’s #2 Cascade summit and a committing wilderness climb north of the Three Sisters.",
-    "seoMetaDescription": "Explore Mt. Jefferson (Oregon) on a 3D map — Cascade volcano topography, elevation stats, and Jefferson Wilderness approaches.",
+    "seoMetaDescription": "Plan Mt. Jefferson: Technical alpine / glacier — best Jul–Sep — Cascade Range, Oregon — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Sisters",
       "region": "Oregon",
@@ -908,7 +941,10 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Jefferson_from_Three_Fingered_Jack.JPG"
       }
-    ]
+    ],
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "brokentop",
@@ -925,7 +961,7 @@
     "aliases": [],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Signature Central Oregon volcano and a favorite scramble above the Green Lakes basin.",
-    "seoMetaDescription": "Explore Broken Top on a 3D map — Central Oregon Cascades topography, Green Lakes approaches, and elevation stats near Sisters.",
+    "seoMetaDescription": "Plan Broken Top: Class 3 scramble — best Jul–Sep — Cascade Range, Oregon — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Bend",
       "region": "Oregon",
@@ -980,7 +1016,10 @@
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Broken_Top_Oregon_volcano.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "baker",
@@ -1096,7 +1135,11 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "The northernmost Cascade volcano in the contiguous U.S.",
-    "seoMetaDescription": "Explore Mt. Baker on a 3D map — northern Cascade glaciers, ski-mountaineering terrain, elevation stats, and Pacific Northwest approaches."
+    "seoMetaDescription": "Plan Mt. Baker: Glacier climb — best Jun–Sep — Cascade Range, Washington — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general summit permit for standard routes; overnight wilderness rules may apply."
   },
   {
     "id": "glacierpeak",
@@ -1115,7 +1158,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "One of the major Cascade stratovolcanoes and Washington’s most remote high volcano.",
-    "seoMetaDescription": "Explore Glacier Peak on a 3D map — remote Cascade volcano topography, elevation stats, and North Cascades wilderness approaches.",
+    "seoMetaDescription": "Plan Glacier Peak: Glacier climb / multi-day — best Jul–Sep — Cascade Range, Washington — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Darrington",
       "region": "Washington",
@@ -1162,7 +1205,10 @@
         "license": "CC BY 2.5",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glacier_Peak_7137b.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "stuart",
@@ -1181,7 +1227,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Highest non-volcanic peak in Washington; landmark of the Enchantments.",
-    "seoMetaDescription": "Explore Mt. Stuart on a 3D map — granite Cascades giant above the Enchantments, alpine rock topography, elevation, and Leavenworth approaches.",
+    "seoMetaDescription": "Plan Mt. Stuart: Technical alpine — best Jul–Sep — Cascade Range, Washington — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Leavenworth",
       "region": "Washington",
@@ -1236,7 +1282,10 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Stuart_2.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "shuksan",
@@ -1255,7 +1304,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "One of the most photographed mountains in the Cascades; classic alpine climbing above Baker Lake country.",
-    "seoMetaDescription": "Explore Mt. Shuksan on a 3D map — North Cascades alpine topography, Artist Point views, elevation stats, and Mt. Baker approaches.",
+    "seoMetaDescription": "Plan Mt. Shuksan: Technical alpine — best Jul–Sep — North Cascades, Washington — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Glacier",
       "region": "Washington",
@@ -1302,7 +1351,10 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Shuksan_tarn.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "olympuswa",
@@ -1322,7 +1374,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Signature summit of Olympic National Park and Washington’s wet-side alpine icon.",
-    "seoMetaDescription": "Explore Mt. Olympus on a 3D map — Olympic National Park high point, Blue Glacier topography, elevation, and Port Angeles wilderness approaches.",
+    "seoMetaDescription": "Plan Mt. Olympus: Glacier climb / expedition backpack — best Jul–Sep — Olympic Mountains, Washington — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Port Angeles",
       "region": "Washington",
@@ -1377,7 +1429,10 @@
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016._Mt._Olympus._Olympic_National_Park,_Washington._(38897209971).jpg"
       }
-    ]
+    ],
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "adams",
@@ -1502,7 +1557,11 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Washington’s second-highest volcano, quieter than Rainier.",
-    "seoMetaDescription": "Explore Mt. Adams on a 3D topographic map — Washington’s second-highest Cascade volcano, snow slopes, elevation, and quieter trailheads."
+    "seoMetaDescription": "Plan Mt. Adams: Snow climb — best Jul–Sep — Cascade Range, Washington — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general climbing permit for standard Cascade routes; check wilderness regulations for overnight."
   },
   {
     "id": "denali",
@@ -1585,7 +1644,11 @@
     ],
     "bestSeason": "May–Jul",
     "whyNotable": "North America’s highest mountain and a polar altitude test.",
-    "seoMetaDescription": "Explore Denali on a 3D topographic map — Alaska Range massif, West Buttress context, elevation, and North America’s highest summit terrain."
+    "seoMetaDescription": "Plan Denali: High-altitude expedition — best May–Jul — Alaska Range, Alaska — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Denali National Park climbing registration and special use requirements for the West Buttress and other routes."
   },
   {
     "id": "elbert",
@@ -1707,7 +1770,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Highest summit in the Rocky Mountains and Colorado’s high point.",
-    "seoMetaDescription": "Explore Mt. Elbert on a 3D map — Colorado’s Rocky Mountain high point, Sawatch Range topography, elevation stats, and walk-up approaches."
+    "seoMetaDescription": "Plan Mt. Elbert: Walk-up — best Jul–Sep — Sawatch Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "holycross",
@@ -1727,7 +1793,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Iconic Colorado 14er named for the snow cross on its northeast face.",
-    "seoMetaDescription": "Explore Mt. of the Holy Cross on a 3D map — legendary Sawatch 14er near Vail, snow-cross couloir topography, elevation, and Tigiwon approaches.",
+    "seoMetaDescription": "Plan Mt. of the Holy Cross: Class 2 hike — best Jul–Sep — Sawatch Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Minturn",
       "region": "Colorado",
@@ -1782,7 +1848,11 @@
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_of_the_Holy_Cross._Eagle_County,_Colorado_-_NARA_-_517031.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit on standard routes; check Forest Service road and trail status."
   },
   {
     "id": "massive",
@@ -1801,7 +1871,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Second-highest peak in the Rocky Mountains; classic paired outing with Mt. Elbert.",
-    "seoMetaDescription": "Explore Mt. Massive on a 3D map — Colorado’s #2 Rockies summit, Sawatch ridge topography, elevation stats, and Leadville approaches.",
+    "seoMetaDescription": "Plan Mt. Massive: Class 2 hike — best Jun–Sep — Sawatch Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Leadville",
       "region": "Colorado",
@@ -1856,7 +1926,10 @@
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Massive_broad_view.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "harvard",
@@ -1875,7 +1948,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Colorado’s third-highest summit and namesake of the Collegiate Peaks.",
-    "seoMetaDescription": "Explore Mt. Harvard on a 3D map — Collegiate Peaks 14er topography, Horn Fork approaches, elevation stats, and Buena Vista staging.",
+    "seoMetaDescription": "Plan Mt. Harvard: Class 2 hike — best Jun–Sep — Sawatch Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Buena Vista",
       "region": "Colorado",
@@ -1922,7 +1995,10 @@
         "license": "CC0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Harvard_and_view_down_Arkansas_River._Lake_County,_Colorado._1873.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "princeton",
@@ -1941,7 +2017,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Prominent Collegiate Peaks 14er and a classic Buena Vista day hike.",
-    "seoMetaDescription": "Explore Mt. Princeton on a 3D map — Colorado Collegiate Peaks 14er above Buena Vista, East Slopes topography, elevation, and Chalk Creek approaches.",
+    "seoMetaDescription": "Plan Mt. Princeton: Class 2 hike — best Jun–Sep — Sawatch Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Buena Vista",
       "region": "Colorado",
@@ -1996,7 +2072,11 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Princeton_from_Cottonwood_Pass_road,_west_of_Buena_Vista.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special 14er permit on standard routes; check seasonal road closures and Leave No Trace."
   },
   {
     "id": "yale",
@@ -2015,7 +2095,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Popular Collegiate Peaks 14er with a classic Denny Creek approach.",
-    "seoMetaDescription": "Explore Mt. Yale on a 3D map — Colorado Collegiate Peaks 14er via Denny Creek, Sawatch topography, elevation stats, and Buena Vista staging.",
+    "seoMetaDescription": "Plan Mt. Yale: Class 2 hike — best Jun–Sep — Sawatch Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Buena Vista",
       "region": "Colorado",
@@ -2070,7 +2150,11 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Yale_from_along_U.S._285_near_the_town_of_Nathrop.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special 14er permit on standard routes; check seasonal road closures."
   },
   {
     "id": "whitney",
@@ -2192,7 +2276,11 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Highest peak in the contiguous United States.",
-    "seoMetaDescription": "Explore Mt. Whitney on a 3D topographic map — contiguous U.S. high point, Sierra Nevada trails, elevation, and Lone Pine staging towns."
+    "seoMetaDescription": "Plan Mt. Whitney: Class 1–2 hike — best Jul–Sep — Sierra Nevada, California — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Inyo National Forest wilderness permit + quota for overnight; day-hike Whitney Portal corridor also regulated in peak season."
   },
   {
     "id": "whitemountain",
@@ -2211,7 +2299,7 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "Third-highest peak in California; ultra-prominent White Mountains high point.",
-    "seoMetaDescription": "Explore White Mountain Peak on a 3D map — California’s third-highest summit, White Mountains topography, elevation, and Bishop approaches.",
+    "seoMetaDescription": "Plan White Mountain Peak: Class 1–2 hike — best Jun–Oct — White Mountains, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Bishop",
       "region": "California",
@@ -2266,7 +2354,10 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_Mountain_Peak,_California.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "boundary",
@@ -2282,7 +2373,7 @@
     "difficulty": "Class 2 scramble",
     "bestSeason": "Jun–Oct",
     "whyNotable": "Highest peak in Nevada; sits on the California–Nevada border crest.",
-    "seoMetaDescription": "Explore Boundary Peak on a 3D map — Nevada’s state high point on the White Mountains crest, scramble topography, elevation, and Bishop approaches.",
+    "seoMetaDescription": "Plan Boundary Peak: Class 2 scramble — best Jun–Oct — White Mountains, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Bishop",
       "region": "California",
@@ -2337,7 +2428,11 @@
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boundary_Peak_Nevada_USA.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "scramble",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit on standard approaches; stay on public land and check seasonal road access."
   },
   {
     "id": "halfdome",
@@ -2356,7 +2451,7 @@
     ],
     "bestSeason": "Late May–early Oct (cables up)",
     "whyNotable": "World-famous Yosemite icon; tens of thousands attempt the cable route each season.",
-    "seoMetaDescription": "Explore Half Dome on a 3D map — Yosemite’s granite icon, Mist Trail approaches, cable-route topography, elevation stats, and California Sierra staging.",
+    "seoMetaDescription": "Plan Half Dome: Strenuous hike / cable scramble (permit) — best Late May–early Oct (cables up) — Sierra Nevada, California — trip notes and 3D terrain on…",
     "nearestTown": {
       "name": "Yosemite Valley",
       "region": "California",
@@ -2436,7 +2531,11 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yosemite_Half_Dome.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "scramble",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Yosemite Half Dome cables permit (lottery / day-of) required when cables are up."
   },
   {
     "id": "elcapitan",
@@ -2455,7 +2554,7 @@
     ],
     "bestSeason": "Apr–Oct (climbers)",
     "whyNotable": "World-famous Yosemite big wall; iconic American climbing landmark.",
-    "seoMetaDescription": "Explore El Capitan on a 3D map — Yosemite’s legendary granite big wall, Valley topography, elevation context, and Yosemite Village staging.",
+    "seoMetaDescription": "Plan El Capitan: Elite big-wall — best Apr–Oct (climbers) — Sierra Nevada, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Yosemite Valley",
       "region": "California",
@@ -2510,7 +2609,11 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_Capitan.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "alpine-technical",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Yosemite wilderness permit for overnight wall climbs; day climbing still subject to park regulations."
   },
   {
     "id": "tallac",
@@ -2529,7 +2632,7 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "One of Lake Tahoe’s most popular summit hikes with classic alpine-lake views.",
-    "seoMetaDescription": "Explore Mt. Tallac on a 3D map — Lake Tahoe summit topography, Desolation Wilderness approaches, elevation stats, and South Lake Tahoe staging.",
+    "seoMetaDescription": "Plan Mt. Tallac: Strenuous day hike — best Jun–Oct — Sierra Nevada, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "South Lake Tahoe",
       "region": "California",
@@ -2576,7 +2679,10 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Tallac,_Lake_Tahoe,_California.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "longs",
@@ -2698,7 +2804,11 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Front Range fourteener crowned by the famous Keyhole Route.",
-    "seoMetaDescription": "Explore Longs Peak on a 3D map — Front Range fourteener topography, Keyhole Route context, elevation, and Rocky Mountain National Park."
+    "seoMetaDescription": "Plan Longs Peak: Class 3 scramble — best Jul–Sep — Front Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "scramble",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Rocky Mountain National Park timed-entry / trailhead permits may apply in peak season."
   },
   {
     "id": "grays",
@@ -2717,7 +2827,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Highest Continental Divide summit in Colorado; paired day hike with Torreys.",
-    "seoMetaDescription": "Explore Grays Peak on a 3D map — Colorado Continental Divide 14er, Front Range topography, elevation stats, and Bakerville approaches.",
+    "seoMetaDescription": "Plan Grays Peak: Class 1–2 hike — best Jun–Sep — Front Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Georgetown",
       "region": "Colorado",
@@ -2772,7 +2882,10 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grays_Peak_Trail,_cairn,_hikers,_Grays_%26_Torreys.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "torreys",
@@ -2791,7 +2904,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Iconic paired 14er with Grays; one of Colorado’s most popular Front Range days.",
-    "seoMetaDescription": "Explore Torreys Peak on a 3D map — Colorado Front Range 14er beside Grays, Continental Divide topography, and Stevens Gulch approaches.",
+    "seoMetaDescription": "Plan Torreys Peak: Class 2 hike — best Jun–Sep — Front Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Georgetown",
       "region": "Colorado",
@@ -2846,7 +2959,10 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grays_and_Torreys_Peaks.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "bierstadt",
@@ -2865,7 +2981,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "One of Colorado’s most accessible and heavily climbed beginner 14ers.",
-    "seoMetaDescription": "Explore Mt. Bierstadt on a 3D map — popular Colorado 14er from Guanella Pass, Front Range topography, elevation, and Georgetown staging.",
+    "seoMetaDescription": "Plan Mt. Bierstadt: Class 2 hike — best Jun–Sep — Front Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Georgetown",
       "region": "Colorado",
@@ -2920,7 +3036,10 @@
         "license": "CC BY 2.5",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bierstadt_and_sawtooth.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "bluesky",
@@ -2941,7 +3060,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "One of Colorado’s most visited high summits — road-accessible 14er above the Denver Front Range.",
-    "seoMetaDescription": "Explore Mount Blue Sky (Mt. Evans) on a 3D map — Front Range 14er topography, summit highway approaches, elevation, and Idaho Springs staging.",
+    "seoMetaDescription": "Plan Mount Blue Sky: Drive / Class 2 hike — best Jun–Sep — Front Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Idaho Springs",
       "region": "Colorado",
@@ -2988,7 +3107,10 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Evans.JPG"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "pikes",
@@ -3110,7 +3232,10 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "Colorado icon with a road, cog railway, and vast prairie views.",
-    "seoMetaDescription": "Explore Pikes Peak on a 3D topographic map — Colorado Springs landmark, Front Range views, elevation stats, and highway or trail approaches."
+    "seoMetaDescription": "Plan Pikes Peak: Walk-up — best Jun–Oct — Front Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "quandary",
@@ -3126,7 +3251,7 @@
     "difficulty": "Class 1–2 hike",
     "bestSeason": "Jun–Sep",
     "whyNotable": "Among the most frequently summited Colorado 14ers; a classic day-hike introduction.",
-    "seoMetaDescription": "Explore Quandary Peak on a 3D map — popular Colorado 14er near Breckenridge, East Ridge topography, elevation, and Tenmile approaches.",
+    "seoMetaDescription": "Plan Quandary Peak: Class 1–2 hike — best Jun–Sep — Tenmile Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Breckenridge",
       "region": "Colorado",
@@ -3181,7 +3306,10 @@
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panorama_from_summit_of_Mount_Lincoln,_shows_Quandary_Peak_and_Blue_River_Range._-_NARA_-_517682.tif"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "sherman",
@@ -3200,7 +3328,7 @@
     ],
     "bestSeason": "May–Oct",
     "whyNotable": "A classic “first 14er” for many Colorado hikers thanks to a short approach and moderate ridge.",
-    "seoMetaDescription": "Explore Mt. Sherman on a 3D map — Mosquito Range 14er topography, Fourmile Creek approaches, elevation stats, and Fairplay staging.",
+    "seoMetaDescription": "Plan Mt. Sherman: Class 2 hike — best May–Oct — Mosquito Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Fairplay",
       "region": "Colorado",
@@ -3247,7 +3375,10 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilltop_Mine_on_Mount_Sherman.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "gannett",
@@ -3363,7 +3494,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Wyoming’s high point, deep in the Wind River wilderness.",
-    "seoMetaDescription": "Explore Gannett Peak on a 3D map — Wyoming’s high point in the Wind River Range, glacier approaches, elevation, and remote wilderness staging."
+    "seoMetaDescription": "Plan Gannett Peak: Glacier climb — best Jul–Sep — Wind River Range, Wyoming — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "granitet",
@@ -3488,7 +3622,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Montana’s technical state high point in the Beartooths.",
-    "seoMetaDescription": "Explore Granite Peak on a 3D topographic map — Montana’s Beartooth high point, technical scramble terrain, elevation, and alpine approaches."
+    "seoMetaDescription": "Plan Granite Peak: Class 3–4 scramble — best Jul–Sep — Beartooth Mountains, Montana — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "borah",
@@ -3507,7 +3644,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Idaho state high point and a classic western Class 3 scramble.",
-    "seoMetaDescription": "Explore Borah Peak on a 3D map — Idaho high point, Chicken-Out Ridge topography, elevation stats, and Mackay approaches.",
+    "seoMetaDescription": "Plan Borah Peak: Class 3 scramble — best Jul–Sep — Lost River Range, Idaho — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Mackay",
       "region": "Idaho",
@@ -3562,7 +3699,10 @@
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Borah_2009.JPG"
       }
-    ]
+    ],
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "kings",
@@ -3684,7 +3824,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Utah’s high point, a long Uintas backpack to the summit ridge.",
-    "seoMetaDescription": "Explore Kings Peak on a 3D map — Utah’s Uinta Mountains high point, long alpine hike context, elevation stats, and backcountry staging towns."
+    "seoMetaDescription": "Plan Kings Peak: Class 2 hike — best Jul–Sep — Uinta Mountains, Wyoming — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "humphreys",
@@ -3792,7 +3935,10 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "Arizona’s high point on the San Francisco Peaks volcanic field.",
-    "seoMetaDescription": "Explore Humphreys Peak on a 3D topographic map — Arizona’s San Francisco Peaks high point, forested volcano terrain, and Flagstaff approaches."
+    "seoMetaDescription": "Plan Humphreys Peak: Class 1 hike — best Jun–Oct — San Francisco Peaks, Arizona — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "guadalupe",
@@ -3886,7 +4032,10 @@
     ],
     "bestSeason": "Oct–Apr",
     "whyNotable": "Texas high point rising abruptly from the Chihuahuan Desert.",
-    "seoMetaDescription": "Explore Guadalupe Peak on a 3D map — Texas high point above the Chihuahuan Desert, Guadalupe Mountains trails, elevation, and park approaches."
+    "seoMetaDescription": "Plan Guadalupe Peak: Class 1 hike — best Oct–Apr — Guadalupe Mountains, Texas — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "blackelk",
@@ -3905,7 +4054,7 @@
     ],
     "bestSeason": "May–Oct",
     "whyNotable": "Highest peak in South Dakota; classic Black Hills fire-tower summit.",
-    "seoMetaDescription": "Explore Black Elk Peak on a 3D map — South Dakota high point in the Black Hills, fire-tower summit topography, elevation, and Custer approaches.",
+    "seoMetaDescription": "Plan Black Elk Peak: Class 1 hike — best May–Oct — Black Hills, South Dakota — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Custer",
       "region": "South Dakota",
@@ -3960,7 +4109,11 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harney_Peak_aka_Black_Elk_Peak.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit; park entrance / recreation fees may apply in the Black Hills."
   },
   {
     "id": "telescope",
@@ -3976,7 +4129,7 @@
     "difficulty": "Class 1–2 hike",
     "bestSeason": "Apr–Jun, Sep–Nov",
     "whyNotable": "Highest peak in Death Valley National Park; classic desert high-point hike.",
-    "seoMetaDescription": "Explore Telescope Peak on a 3D map — Death Valley high point in the Panamints, desert ridge topography, elevation, and Furnace Creek staging.",
+    "seoMetaDescription": "Plan Telescope Peak: Class 1–2 hike — best Apr–Jun, Sep–Nov — Panamint Range, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Furnace Creek",
       "region": "California",
@@ -4031,7 +4184,10 @@
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Telescope_Peak_-_Death_Valley_NP_California.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "robson",
@@ -4153,7 +4309,10 @@
     ],
     "bestSeason": "Jul–Aug",
     "whyNotable": "Canadian Rockies giant with one of the range’s biggest faces.",
-    "seoMetaDescription": "Explore Mt. Robson on a 3D topographic map — Canadian Rockies giant, Berg Lake approaches, elevation stats, and ice-and-rock summit terrain."
+    "seoMetaDescription": "Plan Mt. Robson: Alpine climb — best Jul–Aug — Canadian Rockies, British Columbia — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "logan",
@@ -4233,7 +4392,10 @@
     ],
     "bestSeason": "May–Jul",
     "whyNotable": "Canada’s highest mountain, a vast Yukon ice massif.",
-    "seoMetaDescription": "Explore Mt. Logan on a 3D map — Canada’s highest mountain in the Saint Elias icefields, expedition terrain, elevation, and Kluane approaches."
+    "seoMetaDescription": "Plan Mt. Logan: High-altitude expedition — best May–Jul — Saint Elias Mountains, Yukon — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "waddington",
@@ -4323,7 +4485,10 @@
     ],
     "bestSeason": "Jul–Aug",
     "whyNotable": "British Columbia’s highest peak, remote Coast Range alpine.",
-    "seoMetaDescription": "Explore Mt. Waddington on a 3D topographic map — British Columbia’s Coast Mountains high point, remote alpine ice, elevation, and approach towns."
+    "seoMetaDescription": "Plan Mt. Waddington: Technical alpine — best Jul–Aug — Coast Mountains, British Columbia — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "columbia",
@@ -4420,7 +4585,10 @@
     ],
     "bestSeason": "Jul–Aug",
     "whyNotable": "Alberta’s high point on the Columbia Icefield divide.",
-    "seoMetaDescription": "Explore Mt. Columbia on a 3D map — Canadian Rockies icefield summit, Continental Divide terrain, elevation stats, and Columbia Icefield staging."
+    "seoMetaDescription": "Plan Mt. Columbia: Glacier climb — best Jul–Aug — Canadian Rockies, Alberta — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "assini",
@@ -4545,7 +4713,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "The “Matterhorn of the Rockies,” a perfect pyramidal summit.",
-    "seoMetaDescription": "Explore Mt. Assiniboine on a 3D topographic map — the Matterhorn of the Rockies, pyramidal summit terrain, elevation, and Alberta–B.C. approaches."
+    "seoMetaDescription": "Plan Mt. Assiniboine: Alpine climb — best Jul–Sep — Canadian Rockies, Alberta — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "orizaba",
@@ -4657,7 +4828,10 @@
     ],
     "bestSeason": "Nov–Mar",
     "whyNotable": "Mexico’s highest peak and the tallest volcano in North America.",
-    "seoMetaDescription": "Explore Pico de Orizaba on a 3D map — Mexico’s highest volcano, Jamapa Glacier context, elevation stats, and Trans-Mexican Volcanic Belt terrain."
+    "seoMetaDescription": "Plan Pico de Orizaba: Snow / glacier climb — best Nov–Mar — Trans-Mexican Volcanic Belt, Puebla — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "popo",
@@ -4783,7 +4957,10 @@
     ],
     "bestSeason": "Nov–Mar",
     "whyNotable": "Mexico’s legendary smoking volcano above the Valley of Mexico.",
-    "seoMetaDescription": "Explore Popocatépetl on a 3D topographic map — Mexico’s active volcano above the Valley of Mexico, elevation, and historic approach context."
+    "seoMetaDescription": "Plan Popocatépetl: Restricted / volcanic — best Nov–Mar — Trans-Mexican Volcanic Belt, Mexico State — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "aconcagua",
@@ -4877,7 +5054,11 @@
     ],
     "bestSeason": "Dec–Feb",
     "whyNotable": "Highest mountain outside Asia and the Andes’ great prize.",
-    "seoMetaDescription": "Explore Aconcagua on a 3D map — Western Hemisphere high point in the Andes, high-altitude trek terrain, elevation, and Mendoza staging towns."
+    "seoMetaDescription": "Plan Aconcagua: High-altitude trek — best Dec–Feb — Andes, Mendoza — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Aconcagua Provincial Park climbing permit required; medical check rules apply in season."
   },
   {
     "id": "huascaran",
@@ -4988,7 +5169,10 @@
     ],
     "bestSeason": "Jun–Aug",
     "whyNotable": "Peru’s high point and the crown of the Cordillera Blanca.",
-    "seoMetaDescription": "Explore Huascarán on a 3D topographic map — Peru’s Cordillera Blanca high point, twin ice summits, elevation, and classic Andean expedition terrain."
+    "seoMetaDescription": "Plan Huascarán: Alpine glacier — best Jun–Aug — Cordillera Blanca, Ancash — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "illimani",
@@ -5110,7 +5294,10 @@
     ],
     "bestSeason": "May–Sep",
     "whyNotable": "The great ice pyramid watching over La Paz.",
-    "seoMetaDescription": "Explore Illimani on a 3D map — Cordillera Real ice pyramid above La Paz, Altiplano views, elevation stats, and Bolivian alpine approaches."
+    "seoMetaDescription": "Plan Illimani: Alpine glacier — best May–Sep — Cordillera Real, La Paz — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "chimborazo",
@@ -5232,7 +5419,10 @@
     ],
     "bestSeason": "Dec–Jan or Jun–Jul",
     "whyNotable": "The farthest point from Earth’s center due to equatorial bulge.",
-    "seoMetaDescription": "Explore Chimborazo on a 3D topographic map — Ecuador’s farthest-from-center summit, glacier routes, elevation, and high-Andes volcano terrain."
+    "seoMetaDescription": "Plan Chimborazo: Glacier climb — best Dec–Jan or Jun–Jul — Andes, Chimborazo — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "cotopaxi",
@@ -5354,7 +5544,10 @@
     ],
     "bestSeason": "Dec–Apr",
     "whyNotable": "One of the world’s highest active volcanoes, Ecuador’s icon.",
-    "seoMetaDescription": "Explore Cotopaxi on a 3D map — one of the world’s highest active volcanoes, Ecuador cone topography, elevation, and classic high-Andes climbs."
+    "seoMetaDescription": "Plan Cotopaxi: Glacier climb — best Dec–Apr — Andes, Cotopaxi — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "fitzroy",
@@ -5466,7 +5659,10 @@
     ],
     "bestSeason": "Nov–Mar",
     "whyNotable": "Patagonia’s granite spire and a world-class alpine objective.",
-    "seoMetaDescription": "Explore Cerro Fitz Roy on a 3D topographic map — Patagonian granite spire above El Chaltén, elite alpine terrain, elevation, and wind-scoured valleys."
+    "seoMetaDescription": "Plan Cerro Fitz Roy: Elite big-wall — best Nov–Mar — Patagonian Andes, Santa Cruz — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "torres",
@@ -5563,7 +5759,10 @@
     ],
     "bestSeason": "Nov–Mar",
     "whyNotable": "The famous towers that define Patagonian trekking.",
-    "seoMetaDescription": "Explore Torres del Paine on a 3D map — Patagonia’s famous granite towers, park topography, elevation stats, and classic Chilean trek approaches."
+    "seoMetaDescription": "Plan Torres del Paine: Technical rock — best Nov–Mar — Patagonian Andes, Magallanes — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "sajama",
@@ -5688,7 +5887,10 @@
     ],
     "bestSeason": "May–Sep",
     "whyNotable": "Bolivia’s highest peak, a lonely volcano on the Altiplano.",
-    "seoMetaDescription": "Explore Sajama on a 3D topographic map — Bolivia’s highest volcano on the Altiplano, snow routes, elevation, and remote Andean border approaches."
+    "seoMetaDescription": "Plan Sajama: Snow climb — best May–Sep — Andes, Oruro — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "ausangate",
@@ -5813,7 +6015,10 @@
     ],
     "bestSeason": "May–Sep",
     "whyNotable": "Sacred Andean apu and the heart of Peru’s high circuit treks.",
-    "seoMetaDescription": "Explore Ausangate on a 3D map — sacred Cordillera Vilcanota apu near Cusco, circuit trek terrain, elevation stats, and high-Andean approaches."
+    "seoMetaDescription": "Plan Ausangate: Alpine climb — best May–Sep — Cordillera Vilcanota, Cusco — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "montblanc",
@@ -5939,7 +6144,11 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "The roof of the Alps and Western Europe’s highest summit.",
-    "seoMetaDescription": "Explore Mont Blanc on a 3D topographic map — Western Europe’s high point, Alps glacier routes, elevation, and Chamonix–Courmayeur staging towns."
+    "seoMetaDescription": "Explore Mont Blanc on a 3D topographic map — Western Europe’s high point, Alps glacier routes, elevation, and Chamonix–Courmayeur staging towns.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No single universal summit permit; hut reservations and local access rules are the main logistics constraint."
   },
   {
     "id": "matterhorn",
@@ -6051,7 +6260,11 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "The world’s most recognized mountain silhouette.",
-    "seoMetaDescription": "Explore the Matterhorn on a 3D map — iconic Alpine pyramid on the Swiss–Italian border, classic ridges, elevation, and Zermatt approach context."
+    "seoMetaDescription": "Plan Matterhorn: Alpine rock ridge — best Jul–Sep — Pennine Alps, Valais — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general government climbing permit for the Hörnli; hut bookings and guide requirements are the practical gate."
   },
   {
     "id": "jungfrau",
@@ -6173,7 +6386,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Bernese Oberland classic above the Jungfraujoch.",
-    "seoMetaDescription": "Explore the Jungfrau on a 3D topographic map — Bernese Oberland ice summit, Jungfraujoch context, elevation stats, and Swiss Alps staging towns."
+    "seoMetaDescription": "Plan Jungfrau: Alpine glacier — best Jul–Sep — Bernese Alps, Bern — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "eiger",
@@ -6281,7 +6497,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Infamous for its North Face, the Nordwand.",
-    "seoMetaDescription": "Explore the Eiger on a 3D map — legendary North Face terrain in the Bernese Alps, elevation, classic alpine routes, and Grindelwald approaches."
+    "seoMetaDescription": "Plan Eiger: Technical alpine — best Jul–Sep — Bernese Alps, Bern — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "grossglockner",
@@ -6392,7 +6611,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Austria’s highest mountain and an Eastern Alps landmark.",
-    "seoMetaDescription": "Explore Grossglockner on a 3D topographic map — Austria’s high point, Hohe Tauern glaciers, elevation stats, and classic Eastern Alps approaches."
+    "seoMetaDescription": "Plan Grossglockner: Alpine glacier — best Jul–Sep — High Tauern, Carinthia — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "triglav",
@@ -6514,7 +6736,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Slovenia’s national mountain and a symbol of the Julian Alps.",
-    "seoMetaDescription": "Explore Triglav on a 3D map — Slovenia’s Julian Alps high point and national symbol, ridge terrain, elevation, and Trailer/Bohinj staging towns."
+    "seoMetaDescription": "Plan Triglav: Via ferrata / scramble — best Jul–Sep — Julian Alps, Upper Carniola — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "ortles",
@@ -6639,7 +6864,10 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Highest peak in the Eastern Alps outside the Bernina.",
-    "seoMetaDescription": "Explore Ortler on a 3D topographic map — South Tyrol’s great ice peak, Ortler Alps terrain, elevation stats, and classic Dolomite-region approaches."
+    "seoMetaDescription": "Plan Ortler: Alpine glacier — best Jun–Sep — Ortler Alps, South Tyrol — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "marmolada",
@@ -6761,7 +6989,10 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Queen of the Dolomites, with a glacier and vast limestone walls.",
-    "seoMetaDescription": "Explore Marmolada on a 3D map — the Queen of the Dolomites, glacier and rock terrain, elevation, and classic Italian Alps staging towns."
+    "seoMetaDescription": "Plan Marmolada: Alpine glacier — best Jun–Sep — Dolomites, Trentino — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "barreuils",
@@ -6886,7 +7117,10 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "High point of the Écrins and the southern French Alps.",
-    "seoMetaDescription": "Explore Barre des Écrins on a 3D topographic map — Massif des Écrins high point, French Alps ice, elevation stats, and Dauphiné approach towns."
+    "seoMetaDescription": "Plan Barre des Écrins: Alpine glacier — best Jun–Sep — Dauphiné Alps, Hautes-Alpes — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "elbrus",
@@ -7008,7 +7242,11 @@
     ],
     "bestSeason": "Jun–Aug",
     "whyNotable": "Europe’s conventional high point on a twin-summited volcano.",
-    "seoMetaDescription": "Explore Mt. Elbrus on a 3D map — Europe’s high point in the Caucasus, twin volcanic summits, elevation, and classic high-altitude trek terrain."
+    "seoMetaDescription": "Plan Mt. Elbrus: High-altitude trek — best Jun–Aug — Caucasus, Kabardino-Balkaria — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Border-zone / park permits typically required; use a current licensed operator for access rules."
   },
   {
     "id": "kazbek",
@@ -7120,7 +7358,10 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Georgia’s storied Caucasus giant above the Georgian Military Highway.",
-    "seoMetaDescription": "Explore Mt. Kazbek on a 3D topographic map — Caucasus glacier peak on the Georgia–Russia border, elevation, and classic Georgian alpine approaches."
+    "seoMetaDescription": "Plan Mt. Kazbek: Glacier climb — best Jun–Sep — Caucasus, Mtskheta-Mtianeti — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "damavand",
@@ -7245,7 +7486,10 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Iran’s highest peak and the tallest volcano in Asia.",
-    "seoMetaDescription": "Explore Damavand on a 3D map — Iran’s highest volcano and Middle East high point, ash-and-snow terrain, elevation stats, and Tehran-region staging."
+    "seoMetaDescription": "Plan Damavand: High-altitude trek — best Jun–Sep — Alborz, Mazandaran — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "ararat",
@@ -7371,7 +7615,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Turkey’s iconic twin-peaked volcano of legend and national identity.",
-    "seoMetaDescription": "Explore Mt. Ararat on a 3D topographic map — Turkey’s iconic twin-cone massif, high snow routes, elevation, and eastern Anatolian approach towns."
+    "seoMetaDescription": "Plan Mt. Ararat: Snow climb — best Jul–Sep — Armenian Highlands, Ağrı — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "kilimanjaro",
@@ -7500,7 +7747,11 @@
     ],
     "bestSeason": "Jan–Mar or Jun–Oct",
     "whyNotable": "Africa’s highest mountain — a non-technical trek to extreme altitude.",
-    "seoMetaDescription": "Explore Kilimanjaro on a 3D map — Africa’s high point, Uhuru Peak topography, trek routes, elevation stats, and Tanzania staging towns near Moshi."
+    "seoMetaDescription": "Plan Kilimanjaro: High-altitude trek — best Jan–Mar or Jun–Oct — Eastern Rift, Kilimanjaro — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Tanzanian park fees and a licensed operator / guide required for all standard routes."
   },
   {
     "id": "kenya",
@@ -7608,7 +7859,10 @@
     ],
     "bestSeason": "Jan–Feb or Aug–Sep",
     "whyNotable": "Africa’s second-highest peak, technical rock above the treeline.",
-    "seoMetaDescription": "Explore Mt. Kenya on a 3D topographic map — Africa’s second-highest massif, technical rock spires, elevation, and classic Kenyan alpine approaches."
+    "seoMetaDescription": "Plan Mt. Kenya: Technical rock / ice — best Jan–Feb or Aug–Sep — Eastern Rift, Laikipia — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "toubkal",
@@ -7733,7 +7987,10 @@
     ],
     "bestSeason": "May–Oct",
     "whyNotable": "Highest peak in North Africa and the Atlas Mountains.",
-    "seoMetaDescription": "Explore Toubkal on a 3D map — North Africa’s Atlas Mountains high point, trek terrain, elevation stats, and Marrakech-region staging towns."
+    "seoMetaDescription": "Plan Jebel Toubkal: Class 2 hike — best May–Oct — High Atlas, Marrakesh-Safi — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "rasdashen",
@@ -7859,7 +8116,10 @@
     ],
     "bestSeason": "Oct–Mar",
     "whyNotable": "Ethiopia’s high point in the Simien Mountains massif.",
-    "seoMetaDescription": "Explore Ras Dashen on a 3D topographic map — Ethiopia’s Simien Mountains high point, highland trek terrain, elevation, and northern approach towns."
+    "seoMetaDescription": "Plan Ras Dashen: Class 2 hike — best Oct–Mar — Simien Mountains, Amhara — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "table",
@@ -7985,7 +8245,10 @@
     ],
     "bestSeason": "Nov–Mar",
     "whyNotable": "Cape Town’s flat-topped landmark and a World Heritage icon.",
-    "seoMetaDescription": "Explore Table Mountain on a 3D map — Cape Town’s iconic flat-top massif, trail topography, elevation stats, and South African coastal approaches."
+    "seoMetaDescription": "Plan Table Mountain: Class 1 hike — best Nov–Mar — Cape Fold Belt, Western Cape — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "meru",
@@ -8096,7 +8359,10 @@
     ],
     "bestSeason": "Jun–Feb",
     "whyNotable": "Tanzania’s dramatic crater volcano and Kilimanjaro’s neighbor.",
-    "seoMetaDescription": "Explore Mt. Meru on a 3D topographic map — Tanzania’s steep volcanic neighbor to Kilimanjaro, trek terrain, elevation, and Arusha staging towns."
+    "seoMetaDescription": "Plan Mt. Meru: Trekking peak — best Jun–Feb — Eastern Rift, Arusha — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "everest",
@@ -8223,7 +8489,11 @@
     ],
     "bestSeason": "Apr–May or Sep–Oct",
     "whyNotable": "The highest point on Earth.",
-    "seoMetaDescription": "Explore Mt. Everest on a 3D map — Earth’s highest summit, Khumbu topography, elevation stats, South Col context, and Nepal–Tibet staging towns."
+    "seoMetaDescription": "Plan Mt. Everest: High-altitude expedition — best Apr–May or Sep–Oct — Mahalangur Himal, Solukhumbu — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Nepal (or Tibet) climbing permit via licensed operator; multiple agency fees apply."
   },
   {
     "id": "k2",
@@ -8321,7 +8591,11 @@
     ],
     "bestSeason": "Jun–Aug",
     "whyNotable": "The savage mountain — second highest, far more committing than Everest.",
-    "seoMetaDescription": "Explore K2 on a 3D topographic map — Karakoram’s savage Abruzzi pyramid, expedition terrain, elevation, and Baltoro Glacier approach context."
+    "seoMetaDescription": "Plan K2: Extreme expedition — best Jun–Aug — Karakoram, Gilgit-Baltistan — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Pakistan climbing permit and licensed expedition operator required."
   },
   {
     "id": "kangchen",
@@ -8446,7 +8720,10 @@
     ],
     "bestSeason": "Apr–May or Sep–Oct",
     "whyNotable": "The world’s third-highest peak, sacred and rarely summited for years.",
-    "seoMetaDescription": "Explore Kangchenjunga on a 3D map — the world’s third-highest peak, Sikkim–Nepal border terrain, elevation stats, and eastern Himalaya approaches."
+    "seoMetaDescription": "Plan Kangchenjunga: High-altitude expedition — best Apr–May or Sep–Oct — Himalaya, Province 1 — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "lhotse",
@@ -8568,7 +8845,10 @@
     ],
     "bestSeason": "Apr–May or Sep–Oct",
     "whyNotable": "Everest’s neighbor and the world’s fourth-highest mountain.",
-    "seoMetaDescription": "Explore Lhotse on a 3D topographic map — Everest’s towering south neighbor, Khumbu ice, elevation, and classic Nepal Himalaya expedition staging."
+    "seoMetaDescription": "Plan Lhotse: High-altitude expedition — best Apr–May or Sep–Oct — Mahalangur Himal, Solukhumbu — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "makalu",
@@ -8690,7 +8970,10 @@
     ],
     "bestSeason": "Apr–May or Sep–Oct",
     "whyNotable": "A perfect pyramid and the world’s fifth-highest peak.",
-    "seoMetaDescription": "Explore Makalu on a 3D map — the world’s fifth-highest peak, isolated Makalu-Barun terrain, elevation stats, and eastern Nepal approaches."
+    "seoMetaDescription": "Plan Makalu: High-altitude expedition — best Apr–May or Sep–Oct — Mahalangur Himal, Province 1 — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "chooyu",
@@ -8806,7 +9089,10 @@
     ],
     "bestSeason": "Apr–May or Sep–Oct",
     "whyNotable": "Often called the most “accessible” 8,000er — still extreme altitude.",
-    "seoMetaDescription": "Explore Cho Oyu on a 3D topographic map — the world’s sixth-highest summit, Tibet–Nepal border routes, elevation, and classic 8,000er staging."
+    "seoMetaDescription": "Plan Cho Oyu: High-altitude expedition — best Apr–May or Sep–Oct — Mahalangur Himal, Tibet — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "dhaula",
@@ -8917,7 +9203,10 @@
     ],
     "bestSeason": "Apr–May or Sep–Oct",
     "whyNotable": "A vast white Himalayan wall and the world’s seventh-highest peak.",
-    "seoMetaDescription": "Explore Dhaulagiri on a 3D map — Nepal’s white Himalayan giant, Kali Gandaki context, elevation stats, and classic western Nepal approaches."
+    "seoMetaDescription": "Plan Dhaulagiri: High-altitude expedition — best Apr–May or Sep–Oct — Dhaulagiri Himal, Gandaki — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "manaslu",
@@ -9039,7 +9328,10 @@
     ],
     "bestSeason": "Apr–May or Sep–Oct",
     "whyNotable": "The “mountain of the spirit,” Nepal’s classic 8,000er circuit peak.",
-    "seoMetaDescription": "Explore Manaslu on a 3D topographic map — the world’s eighth-highest peak, Manaslu Circuit terrain, elevation, and central Nepal staging towns."
+    "seoMetaDescription": "Plan Manaslu: High-altitude expedition — best Apr–May or Sep–Oct — Mansiri Himal, Gandaki — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "nanga",
@@ -9165,7 +9457,10 @@
     ],
     "bestSeason": "Jun–Jul",
     "whyNotable": "The western Himalaya’s killer mountain, famous for its Rupal Face.",
-    "seoMetaDescription": "Explore Nanga Parbat on a 3D map — the western Himalaya’s killer mountain, Rupal and Diamir faces, elevation stats, and Pakistan approaches."
+    "seoMetaDescription": "Plan Nanga Parbat: Extreme expedition — best Jun–Jul — Western Himalaya, Gilgit-Baltistan — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "annapurna",
@@ -9276,7 +9571,10 @@
     ],
     "bestSeason": "Apr–May or Sep–Oct",
     "whyNotable": "First 8,000er climbed — still among the most dangerous.",
-    "seoMetaDescription": "Explore Annapurna I on a 3D topographic map — infamous 8,000er above Nepal’s Annapurna Sanctuary, elevation, and classic trek-and-climb staging."
+    "seoMetaDescription": "Plan Annapurna I: Extreme expedition — best Apr–May or Sep–Oct — Annapurna Himal, Gandaki — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "gasherbrum1",
@@ -9374,7 +9672,10 @@
     ],
     "bestSeason": "Jun–Aug",
     "whyNotable": "Karakoram 8,000er known as Hidden Peak.",
-    "seoMetaDescription": "Explore Gasherbrum I on a 3D map — Hidden Peak in the Karakoram, Baltoro approaches, elevation stats, and high Pakistan–China border terrain."
+    "seoMetaDescription": "Plan Gasherbrum I: High-altitude expedition — best Jun–Aug — Karakoram, Gilgit-Baltistan — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "broadpeak",
@@ -9472,7 +9773,10 @@
     ],
     "bestSeason": "Jun–Aug",
     "whyNotable": "A long summit ridge opposite K2 in the Karakoram.",
-    "seoMetaDescription": "Explore Broad Peak on a 3D topographic map — Karakoram 8,000er beside K2, glacier approaches, elevation, and classic Baltoro expedition staging."
+    "seoMetaDescription": "Plan Broad Peak: High-altitude expedition — best Jun–Aug — Karakoram, Gilgit-Baltistan — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "gasherbrum2",
@@ -9555,7 +9859,10 @@
     ],
     "bestSeason": "Jun–Aug",
     "whyNotable": "Often the “friendliest” Karakoram 8,000er — still serious.",
-    "seoMetaDescription": "Explore Gasherbrum II on a 3D map — a classic Karakoram 8,000er, ice-ridge terrain, elevation stats, and Baltoro Glacier approach context."
+    "seoMetaDescription": "Plan Gasherbrum II: High-altitude expedition — best Jun–Aug — Karakoram, Gilgit-Baltistan — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "shishapangma",
@@ -9663,7 +9970,10 @@
     ],
     "bestSeason": "Apr–May or Sep–Oct",
     "whyNotable": "The only 8,000er entirely in Tibet / China.",
-    "seoMetaDescription": "Explore Shishapangma on a 3D topographic map — Tibet’s 8,000er, relatively accessible Himalayan terrain, elevation, and Chinese-side staging towns."
+    "seoMetaDescription": "Plan Shishapangma: High-altitude expedition — best Apr–May or Sep–Oct — Jugal Himal, Tibet — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "ama",
@@ -9788,7 +10098,10 @@
     ],
     "bestSeason": "Apr–May or Oct–Nov",
     "whyNotable": "Nepal’s “Matterhorn” — the most photographed Himalayan spire.",
-    "seoMetaDescription": "Explore Ama Dablam on a 3D map — Khumbu’s iconic hanging-glacier spire, technical alpine terrain, elevation stats, and Everest-region approaches."
+    "seoMetaDescription": "Plan Ama Dablam: Technical alpine — best Apr–May or Oct–Nov — Mahalangur Himal, Solukhumbu — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "island",
@@ -9900,7 +10213,10 @@
     ],
     "bestSeason": "Apr–May or Oct–Nov",
     "whyNotable": "Classic Everest-region trekking peak and alpine intro.",
-    "seoMetaDescription": "Explore Island Peak on a 3D topographic map — Imja Tse training climb in the Khumbu, glacier skills terrain, elevation, and Chukhung staging."
+    "seoMetaDescription": "Plan Island Peak: Trekking peak — best Apr–May or Oct–Nov — Mahalangur Himal, Solukhumbu — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "stok",
@@ -10025,7 +10341,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Ladakh’s popular high trekking peak above the Indus Valley.",
-    "seoMetaDescription": "Explore Stok Kangri on a 3D map — Ladakh’s popular high trek peak near Leh, Himalayan topography, elevation stats, and northern India approaches."
+    "seoMetaDescription": "Plan Stok Kangri: Trekking peak — best Jul–Sep — Stok Range, Ladakh — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "nanda",
@@ -10150,7 +10469,10 @@
     ],
     "bestSeason": "May–Jun or Sep–Oct",
     "whyNotable": "India’s second-highest peak, once closed as a sacred sanctuary.",
-    "seoMetaDescription": "Explore Nanda Devi on a 3D topographic map — India’s second-highest peak, sanctuary wilderness, elevation, and Garhwal Himalaya approach context."
+    "seoMetaDescription": "Plan Nanda Devi: Technical expedition — best May–Jun or Sep–Oct — Garhwal Himalaya, Uttarakhand — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "trisul",
@@ -10275,7 +10597,10 @@
     ],
     "bestSeason": "May–Jun or Sep–Oct",
     "whyNotable": "A striking Garhwal triple-summit massif near Nanda Devi.",
-    "seoMetaDescription": "Explore Trisul on a 3D map — Garhwal’s classic triple-summit massif, alpine trek terrain, elevation stats, and Uttarakhand staging towns."
+    "seoMetaDescription": "Plan Trisul: Alpine climb — best May–Jun or Sep–Oct — Garhwal Himalaya, Uttarakhand — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "fuji",
@@ -10401,7 +10726,11 @@
     ],
     "bestSeason": "Jul–early Sep",
     "whyNotable": "Japan’s sacred icon and the country’s most climbed mountain.",
-    "seoMetaDescription": "Explore Mt. Fuji on a 3D topographic map — Japan’s iconic stratovolcano, summit trails, elevation, and classic Honshu approach towns and stations."
+    "seoMetaDescription": "Plan Mt. Fuji: Class 1 hike — best Jul–early Sep — Fuji Volcanic Zone, Yamanashi — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Seasonal climbing fee / reservation rules on the Yoshida trail and related approaches — check current prefecture guidance."
   },
   {
     "id": "yari",
@@ -10527,7 +10856,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "The “Matterhorn of Japan” on the North Alps ridgeline.",
-    "seoMetaDescription": "Explore Mt. Yari on a 3D map — the Matterhorn of Japan in the Northern Alps, ridgeline terrain, elevation stats, and Kamikochi approach context."
+    "seoMetaDescription": "Plan Mt. Yari: Class 2–3 scramble — best Jul–Sep — Hida Mountains, Nagano — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "hallasan",
@@ -10653,7 +10985,10 @@
     ],
     "bestSeason": "Apr–Nov",
     "whyNotable": "South Korea’s high point, a shield volcano crowning Jeju Island.",
-    "seoMetaDescription": "Explore Hallasan on a 3D topographic map — South Korea’s Jeju Island high point, crater-lake trails, elevation, and volcanic island approaches."
+    "seoMetaDescription": "Plan Hallasan: Class 1 hike — best Apr–Nov — Jeju Island, Jeju — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "cook",
@@ -10779,7 +11114,10 @@
     ],
     "bestSeason": "Nov–Mar",
     "whyNotable": "New Zealand’s highest peak and the heart of the Southern Alps.",
-    "seoMetaDescription": "Explore Aoraki / Mt. Cook on a 3D map — New Zealand’s Southern Alps high point, glacier valleys, elevation stats, and Hooker–Tasman staging."
+    "seoMetaDescription": "Plan Aoraki / Mt. Cook: Alpine ice / rock — best Nov–Mar — Southern Alps, Canterbury — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "aspiring",
@@ -10891,7 +11229,10 @@
     ],
     "bestSeason": "Nov–Mar",
     "whyNotable": "The “Matterhorn of the South,” New Zealand’s classic alpine peak.",
-    "seoMetaDescription": "Explore Mt. Aspiring on a 3D topographic map — Tititea, the Matterhorn of the South, Southern Alps terrain, elevation, and Wanaka approaches."
+    "seoMetaDescription": "Plan Mt. Aspiring: Alpine climb — best Nov–Mar — Southern Alps, Otago — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "tasman",
@@ -11002,7 +11343,10 @@
     ],
     "bestSeason": "Nov–Mar",
     "whyNotable": "New Zealand’s second-highest summit on the main divide.",
-    "seoMetaDescription": "Explore Mt. Tasman on a 3D map — New Zealand’s second-highest peak beside Aoraki, glaciated Main Divide terrain, elevation, and alpine staging."
+    "seoMetaDescription": "Plan Mt. Tasman: Alpine ice — best Nov–Mar — Southern Alps, Canterbury — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "kosciuszko",
@@ -11113,7 +11457,10 @@
     ],
     "bestSeason": "Dec–Mar",
     "whyNotable": "Australia’s high point — an accessible alpine walk in the Snowies.",
-    "seoMetaDescription": "Explore Mt. Kosciuszko on a 3D topographic map — Australia’s Snowy Mountains high point, alpine walks, elevation stats, and Thredbo approaches."
+    "seoMetaDescription": "Plan Mt. Kosciuszko: Class 1 hike — best Dec–Mar — Snowy Mountains, New South Wales — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "townsend",
@@ -11224,7 +11571,10 @@
     ],
     "bestSeason": "Dec–Mar",
     "whyNotable": "Often mistaken for Kosciuszko; Australia’s true runner-up summit.",
-    "seoMetaDescription": "Explore Mt. Townsend on a 3D map — Australia’s second-highest summit near Kosciuszko, Main Range terrain, elevation, and Snowies trailheads."
+    "seoMetaDescription": "Plan Mt. Townsend: Class 1 hike — best Dec–Mar — Snowy Mountains, New South Wales — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "galdhopiggen",
@@ -11335,7 +11685,10 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Northern Europe’s highest mountain, in Norway’s Jotunheimen.",
-    "seoMetaDescription": "Explore Galdhøpiggen on a 3D topographic map — Northern Europe’s high point in Jotunheimen, hike routes, elevation, and Norwegian staging towns."
+    "seoMetaDescription": "Plan Galdhøpiggen: Class 1–2 hike — best Jun–Sep — Jotunheimen, Innlandet — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "kebnekaise",
@@ -11443,7 +11796,10 @@
     },
     "bestSeason": "Jun–Sep",
     "whyNotable": "Sweden’s high point, with a shifting glacial summit.",
-    "seoMetaDescription": "Explore Kebnekaise on a 3D map — Sweden’s Lapland high point, shifting glacial summit, elevation stats, and classic Arctic trail approaches."
+    "seoMetaDescription": "Plan Kebnekaise: Class 2 hike — best Jun–Sep — Scandinavian Mountains, Norrbotten — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "halti",
@@ -11554,7 +11910,10 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Finland’s high point on the Norwegian border fells.",
-    "seoMetaDescription": "Explore Halti on a 3D topographic map — Finland’s high point on the Norwegian border fells, gentle summit terrain, elevation, and Nordic approaches."
+    "seoMetaDescription": "Plan Halti: Class 1 hike — best Jun–Sep — Scandinavian Mountains, Lapland — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "musala",
@@ -11662,7 +12021,10 @@
     },
     "bestSeason": "Jun–Sep",
     "whyNotable": "The Balkans’ highest peak, in Bulgaria’s Rila Mountains.",
-    "seoMetaDescription": "Explore Musala on a 3D map — the Balkans’ highest peak in Bulgaria’s Rila Mountains, marked alpine trails, elevation stats, and Sofia-region staging."
+    "seoMetaDescription": "Plan Musala: Class 1 hike — best Jun–Sep — Rila, Sofia Province — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "olympus",
@@ -11774,7 +12136,10 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Mythic home of the gods and Greece’s highest mountain.",
-    "seoMetaDescription": "Explore Mt. Olympus on a 3D topographic map — mythic Greek high point to Mytikas, rugged massif terrain, elevation, and Aegean foothill approaches."
+    "seoMetaDescription": "Plan Mt. Olympus: Class 2–3 scramble — best Jun–Sep — Olympus Massif, Pieria — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "mulhacen",
@@ -11885,7 +12250,10 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "Iberia’s highest peak, rising above the Sierra Nevada.",
-    "seoMetaDescription": "Explore Mulhacén on a 3D map — Iberia’s Sierra Nevada high point above Granada, long alpine walks, elevation stats, and Andalusian staging towns."
+    "seoMetaDescription": "Plan Mulhacén: Class 1 hike — best Jun–Oct — Sierra Nevada, Andalusia — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "teide",
@@ -11997,7 +12365,10 @@
     ],
     "bestSeason": "May–Oct",
     "whyNotable": "Spain’s highest mountain and a massive Atlantic volcano.",
-    "seoMetaDescription": "Explore Teide on a 3D topographic map — Spain’s Canary Islands high point, Tenerife caldera terrain, elevation, and Atlantic volcano approaches."
+    "seoMetaDescription": "Plan Teide: Class 1 hike — best May–Oct — Canary Islands, Tenerife — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "citlaltepetl",
@@ -12109,7 +12480,10 @@
     ],
     "bestSeason": "Nov–Mar",
     "whyNotable": "Alternate atlas entry for Mexico’s great ice volcano.",
-    "seoMetaDescription": "Explore Iztaccíhuatl on a 3D map — Mexico’s White Woman volcano beside Popocatépetl, snow ridge terrain, elevation stats, and Valley approaches."
+    "seoMetaDescription": "Plan Iztaccíhuatl: Snow / glacier climb — best Nov–Mar — Trans-Mexican Volcanic Belt, Mexico State — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "illampu",
@@ -12217,7 +12591,10 @@
     },
     "bestSeason": "May–Sep",
     "whyNotable": "A sharp Cordillera Real giant north of Lake Titicaca.",
-    "seoMetaDescription": "Explore Illampu on a 3D topographic map — steep Cordillera Real ice near Sorata, difficult Bolivian alpine terrain, elevation, and Altiplano staging."
+    "seoMetaDescription": "Plan Illampu: Technical alpine — best May–Sep — Cordillera Real, La Paz — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "alpamayo",
@@ -12325,7 +12702,10 @@
     },
     "bestSeason": "Jun–Aug",
     "whyNotable": "Often called the world’s most beautiful mountain.",
-    "seoMetaDescription": "Explore Alpamayo on a 3D map — the Cordillera Blanca’s fluted beauty peak, technical snow and ice, elevation stats, and classic Peru approaches."
+    "seoMetaDescription": "Plan Alpamayo: Technical alpine — best Jun–Aug — Cordillera Blanca, Ancash — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "huayna",
@@ -12436,7 +12816,10 @@
     ],
     "bestSeason": "May–Sep",
     "whyNotable": "La Paz’s backyard 6,000er — a classic first big Andean climb.",
-    "seoMetaDescription": "Explore Huayna Potosí on a 3D topographic map — La Paz’s classic 6,000er training climb, glacier travel, elevation, and Cordillera Real huts."
+    "seoMetaDescription": "Plan Huayna Potosí: Glacier climb — best May–Sep — Cordillera Real, La Paz — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "snow-glacier",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "rittenhouse",
@@ -12519,7 +12902,11 @@
     ],
     "bestSeason": "Nov–Jan",
     "whyNotable": "Antarctica’s high point and a Seven Summits objective.",
-    "seoMetaDescription": "Explore Mt. Vinson on a 3D map — Antarctica’s Ellsworth Mountains high point, polar expedition terrain, elevation stats, and Seven Summits staging."
+    "seoMetaDescription": "Plan Mt. Vinson: Polar expedition — best Nov–Jan — Ellsworth Mountains, Antarctica — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Antarctic logistics via authorized operator; IAATO / national program rules apply."
   },
   {
     "id": "sidley",
@@ -12602,7 +12989,10 @@
     ],
     "bestSeason": "Nov–Jan",
     "whyNotable": "Antarctica’s highest volcano, remote even by polar standards.",
-    "seoMetaDescription": "Explore Mt. Sidley on a 3D topographic map — Antarctica’s highest volcano in Marie Byrd Land, remote polar terrain, elevation, and expedition context."
+    "seoMetaDescription": "Plan Mt. Sidley: Polar expedition — best Nov–Jan — Executive Committee Range, Antarctica — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "expedition",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "mitchell",
@@ -12710,7 +13100,10 @@
     },
     "bestSeason": "May–Oct",
     "whyNotable": "Highest peak east of the Mississippi in the U.S.",
-    "seoMetaDescription": "Explore Mt. Mitchell on a 3D map — highest U.S. peak east of the Mississippi, Appalachian topography, elevation stats, and North Carolina trails."
+    "seoMetaDescription": "Plan Mt. Mitchell: Class 1 hike — best May–Oct — Appalachian Mountains, North Carolina — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "kuwohi",
@@ -12730,7 +13123,7 @@
     ],
     "bestSeason": "Apr–Nov (road season varies)",
     "whyNotable": "Smokies high point and one of the most visited summits in the eastern United States.",
-    "seoMetaDescription": "Explore Kuwohi (Clingmans Dome) on a 3D map — Great Smoky Mountains high point, observation-tower topography, elevation, and Gatlinburg approaches.",
+    "seoMetaDescription": "Plan Kuwohi: Class 1 paved walk — best Apr–Nov (road season varies) — Great Smoky Mountains, Tennessee — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Gatlinburg",
       "region": "Tennessee",
@@ -12785,7 +13178,10 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clingmans_Dome_Observation_Tower.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "leconte",
@@ -12805,7 +13201,7 @@
     ],
     "bestSeason": "Apr–Oct",
     "whyNotable": "Among the most visited backcountry summits in the eastern U.S., with a historic summit lodge.",
-    "seoMetaDescription": "Explore Mt. LeConte on a 3D map — Great Smoky Mountains topography, Alum Cave approaches, elevation stats, and Gatlinburg staging.",
+    "seoMetaDescription": "Plan Mt. LeConte: Strenuous day / overnight — best Apr–Oct — Great Smoky Mountains, Tennessee — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Gatlinburg",
       "region": "Tennessee",
@@ -12852,7 +13248,10 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Le_Conte_in_Fall.JPG"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "katahdin",
@@ -12963,7 +13362,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Northern terminus of the Appalachian Trail in Maine.",
-    "seoMetaDescription": "Explore Mt. Katahdin on a 3D topographic map — Maine’s high point and AT terminus, Knife Edge terrain, elevation, and Baxter State Park approaches."
+    "seoMetaDescription": "Plan Mt. Katahdin: Class 2–3 scramble — best Jul–Sep — Appalachian Mountains, Maine — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "cadillac",
@@ -12980,7 +13382,7 @@
     "aliases": [],
     "bestSeason": "May–Oct",
     "whyNotable": "Acadia’s iconic summit and one of the most visited mountain viewpoints on the East Coast.",
-    "seoMetaDescription": "Explore Cadillac Mountain on a 3D map — Acadia National Park high point, granite summit topography, elevation, and Bar Harbor approaches.",
+    "seoMetaDescription": "Plan Cadillac Mountain: Drive / easy to moderate hike — best May–Oct — Acadia, Maine — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Bar Harbor",
       "region": "Maine",
@@ -13027,7 +13429,10 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cadillac_Mountain_Sunset.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "marcy",
@@ -13139,7 +13544,10 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "New York’s high point and the Adirondack crown.",
-    "seoMetaDescription": "Explore Mt. Marcy on a 3D map — New York’s Adirondack high point, forest-to-alpine hike terrain, elevation stats, and classic High Peaks staging."
+    "seoMetaDescription": "Plan Mt. Marcy: Class 1–2 hike — best Jun–Oct — Adirondacks, New York — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "mansfield",
@@ -13158,7 +13566,7 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "Highest peak in Vermont and the signature summit of the Green Mountains.",
-    "seoMetaDescription": "Explore Mt. Mansfield on a 3D map — Vermont high point topography, Long Trail ridge, elevation stats, and Stowe approaches.",
+    "seoMetaDescription": "Plan Mt. Mansfield: Strenuous day hike — best Jun–Oct — Green Mountains, Vermont — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Stowe",
       "region": "Vermont",
@@ -13205,7 +13613,10 @@
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Mansfield_from_University_Grounds_(NBY_9253).jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "monadnock",
@@ -13225,7 +13636,7 @@
     ],
     "bestSeason": "May–Oct",
     "whyNotable": "Among the most frequently hiked peaks on Earth; classic New England summit.",
-    "seoMetaDescription": "Explore Mt. Monadnock on a 3D map — famously climbed New Hampshire summit, open ledge topography, elevation, and Jaffrey trailhead approaches.",
+    "seoMetaDescription": "Plan Mt. Monadnock: Class 1–2 hike — best May–Oct — New England Upland, New Hampshire — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Jaffrey",
       "region": "New Hampshire",
@@ -13280,7 +13691,11 @@
         "license": "CC BY-SA 2.5",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Monadnock.JPG"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No climbing permit; paid parking / park day-use fees apply at common trailheads."
   },
   {
     "id": "washington",
@@ -13392,7 +13807,10 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Home to some of the world’s most extreme recorded weather.",
-    "seoMetaDescription": "Explore Mt. Washington on a 3D topographic map — New Hampshire’s Presidential weather peak, alpine trails, elevation, and White Mountains approaches."
+    "seoMetaDescription": "Plan Mt. Washington: Class 1–2 hike — best Jun–Sep — Presidential Range, New Hampshire — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "lafayette",
@@ -13411,7 +13829,7 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "Franconia Ridge high point; one of New England’s premier alpine day hikes.",
-    "seoMetaDescription": "Explore Mt. Lafayette on a 3D map — Franconia Ridge high point in New Hampshire, alpine traverse topography, elevation, and Franconia approaches.",
+    "seoMetaDescription": "Plan Mt. Lafayette: Class 1–2 hike — best Jun–Oct — White Mountains, New Hampshire — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Franconia",
       "region": "New Hampshire",
@@ -13466,7 +13884,11 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Frosty_Mount_Lafayette_Franconia_Ridge_White_Mountains_Grafton_County_New_Hampshire.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit; White Mountain National Forest parking fees / recreation passes common at trailheads."
   },
   {
     "id": "madison",
@@ -13485,7 +13907,7 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "Northern anchor of New Hampshire’s Presidential Range alpine crest.",
-    "seoMetaDescription": "Explore Mt. Madison on a 3D map — northern Presidential Range summit in New Hampshire, alpine crest topography, and Appalachian Trail approaches.",
+    "seoMetaDescription": "Plan Mt. Madison: Class 2 hike — best Jun–Oct — Presidential Range, New Hampshire — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Gorham",
       "region": "New Hampshire",
@@ -13540,7 +13962,11 @@
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Madison_from_Mt_Adams_summit.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit; Presidential Range approaches often need recreation parking passes."
   },
   {
     "id": "adamsnh",
@@ -13560,7 +13986,7 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "Second-highest peak in New England; key Presidential Range alpine summit.",
-    "seoMetaDescription": "Explore Mt. Adams (NH) on a 3D map — second-highest New England peak, Presidential Range alpine topography, elevation, and Pinkham Notch staging.",
+    "seoMetaDescription": "Plan Mt. Adams (NH): Class 2 hike — best Jun–Oct — Presidential Range, New Hampshire — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Gorham",
       "region": "New Hampshire",
@@ -13615,7 +14041,11 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Adams_and_Mt._Madison_from_Washington_summit.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit; Presidential Range trailheads typically require parking / recreation fees."
   },
   {
     "id": "oldrag",
@@ -13634,7 +14064,7 @@
     ],
     "bestSeason": "Mar–Nov",
     "whyNotable": "One of the Mid-Atlantic’s most famous day hikes — a technical granite scramble in Shenandoah National Park.",
-    "seoMetaDescription": "Explore Old Rag Mountain on a 3D map — Shenandoah scramble topography, circuit trail, elevation stats, and Sperryville approaches.",
+    "seoMetaDescription": "Plan Old Rag Mountain: Class 3 scramble (permit) — best Mar–Nov — Blue Ridge Mountains, Virginia — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Sperryville",
       "region": "Virginia",
@@ -13681,7 +14111,11 @@
         "license": "CC BY 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Top_of_Old_Rag_Mountain.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "scramble",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Shenandoah National Park Old Rag day-use ticket required in peak season."
   },
   {
     "id": "rogers",
@@ -13700,7 +14134,7 @@
     ],
     "bestSeason": "May–Oct",
     "whyNotable": "Highest peak in Virginia; Appalachian Trail destination near Grayson Highlands.",
-    "seoMetaDescription": "Explore Mt. Rogers on a 3D map — Virginia’s high point on the Appalachian Trail, Blue Ridge topography, elevation, and Grayson Highlands approaches.",
+    "seoMetaDescription": "Plan Mt. Rogers: Class 1 hike — best May–Oct — Blue Ridge Mountains, Virginia — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Damascus",
       "region": "Virginia",
@@ -13755,7 +14189,11 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017-05-16_09_27_42_View_west-northwest_towards_Mount_Rogers_from_the_northern_rocky_outcrop_along_the_Wilburn_Ridge_Trail_within_the_Mount_Rogers_National_Recreation_Area_in_Grayson_County,_Virginia.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit; standard National Forest / AT use rules apply near Grayson Highlands."
   },
   {
     "id": "timpanogos",
@@ -13866,7 +14304,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Utah’s beloved Wasatch giant above Utah Valley.",
-    "seoMetaDescription": "Explore Mt. Timpanogos on a 3D map — Utah Valley’s Wasatch classic, ridge and cirque terrain, elevation stats, and Wasatch Front trailheads."
+    "seoMetaDescription": "Plan Mt. Timpanogos: Class 2 hike — best Jul–Sep — Wasatch Range, Utah — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "wheeler",
@@ -13882,7 +14323,7 @@
     "difficulty": "Class 1–2 hike",
     "bestSeason": "Jun–Oct",
     "whyNotable": "Nevada’s iconic Great Basin summit and one of the state’s highest peaks.",
-    "seoMetaDescription": "Explore Wheeler Peak on a 3D map — Great Basin National Park high point, Snake Range topography, elevation, and Baker NV approaches.",
+    "seoMetaDescription": "Plan Wheeler Peak: Class 1–2 hike — best Jun–Oct — Snake Range, Nevada — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Baker",
       "region": "Nevada",
@@ -13937,7 +14378,10 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Doso_Doyabi_from_Wheeler_Peak.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "wheelernm",
@@ -13956,7 +14400,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Highest point in New Mexico and a classic Taos alpine day hike.",
-    "seoMetaDescription": "Explore Wheeler Peak (New Mexico) on a 3D map — state high point topography, Williams Lake trail, elevation stats, and Taos approaches.",
+    "seoMetaDescription": "Plan Wheeler Peak: Strenuous day hike — best Jun–Sep — Sangre de Cristo Mountains, New Mexico — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Taos",
       "region": "New Mexico",
@@ -14003,7 +14447,10 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheeler_Peak_panorama.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "sandia",
@@ -14023,7 +14470,7 @@
     ],
     "bestSeason": "May–Oct",
     "whyNotable": "The defining summit above Albuquerque and one of New Mexico’s most visited mountain destinations.",
-    "seoMetaDescription": "Explore Sandia Crest on a 3D map — Albuquerque skyline topography, La Luz Trail approaches, elevation stats, and tram / crest-road access.",
+    "seoMetaDescription": "Plan Sandia Crest: Drive / strenuous day hike — best May–Oct — Sandia Mountains, New Mexico — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Albuquerque",
       "region": "New Mexico",
@@ -14070,7 +14517,10 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sandia_Crest.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "lonepeak",
@@ -14181,7 +14631,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "A sharp granite Wasatch summit above Salt Lake’s southern ridge.",
-    "seoMetaDescription": "Explore Lone Peak on a 3D topographic map — sharp Wasatch granite above Salt Lake, scramble terrain, elevation, and southern ridge approaches."
+    "seoMetaDescription": "Plan Lone Peak: Class 3–4 scramble — best Jul–Sep — Wasatch Range, Utah — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "grandteton",
@@ -14293,7 +14746,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "The classic American alpine peak of the Teton Range.",
-    "seoMetaDescription": "Explore Grand Teton on a 3D map — the Teton Range’s classic American alpine peak, rock-and-snow routes, elevation, and Jenny Lake staging."
+    "seoMetaDescription": "Plan Grand Teton: Technical alpine — best Jul–Sep — Teton Range, Wyoming — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "moran",
@@ -14404,7 +14860,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "A broad Teton fortress above Jackson Lake.",
-    "seoMetaDescription": "Explore Mt. Moran on a 3D topographic map — remote Teton fortress above Jackson Lake, alpine approaches, elevation stats, and serious rock routes."
+    "seoMetaDescription": "Plan Mt. Moran: Technical alpine — best Jul–Sep — Teton Range, Wyoming — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "alpine-technical",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "cloudpeak",
@@ -14503,7 +14962,10 @@
     },
     "bestSeason": "Jul–Sep",
     "whyNotable": "High point of Wyoming’s Bighorn Mountains wilderness.",
-    "seoMetaDescription": "Explore Cloud Peak on a 3D map — Wyoming’s Bighorn Mountains high point, wilderness scramble terrain, elevation, and glacier-carved basin approaches."
+    "seoMetaDescription": "Plan Cloud Peak: Class 3 scramble — best Jul–Sep — Bighorn Mountains, Wyoming — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "blanca",
@@ -14621,7 +15083,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Monarch of the Sangre de Cristo and a sacred Navajo peak.",
-    "seoMetaDescription": "Explore Blanca Peak on a 3D topographic map — Sangre de Cristo monarch and Colorado fourteener, elevation stats, and San Luis Valley staging."
+    "seoMetaDescription": "Plan Blanca Peak: Class 2–3 scramble — best Jul–Sep — Sangre de Cristo, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "crestone",
@@ -14732,7 +15197,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "A rugged Colorado fourteener in the Crestone group.",
-    "seoMetaDescription": "Explore Crestone Peak on a 3D map — rugged Sangre de Cristo fourteener, Crestone Needle linkups, elevation, and classic Colorado scramble terrain."
+    "seoMetaDescription": "Plan Crestone Peak: Class 3 scramble — best Jul–Sep — Sangre de Cristo, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "crestoneneedle",
@@ -14751,7 +15219,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "One of Colorado’s most striking 14ers; often linked with Crestone Peak.",
-    "seoMetaDescription": "Explore Crestone Needle on a 3D map — sharp Sangre de Cristo 14er beside Crestone Peak, Class 3 scramble terrain, and South Colony approaches.",
+    "seoMetaDescription": "Plan Crestone Needle: Class 3 scramble — best Jul–Sep — Sangre de Cristo, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Westcliffe",
       "region": "Colorado",
@@ -14810,7 +15278,11 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Broken_Hand_Peak_and_Crestone_Needle.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "scramble",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit; Sangre de Cristo wilderness rules apply on overnight trips."
   },
   {
     "id": "capitol",
@@ -14921,7 +15393,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Colorado’s knife-edge fourteener near Aspen.",
-    "seoMetaDescription": "Explore Capitol Peak on a 3D topographic map — Aspen’s knife-edge Elk Mountains fourteener, committing Class 4 terrain, elevation, and trailheads."
+    "seoMetaDescription": "Plan Capitol Peak: Class 4 scramble — best Jul–Sep — Elk Mountains, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "pyramid",
@@ -15032,7 +15507,10 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "A steep Elk Mountains fourteener above Maroon Creek.",
-    "seoMetaDescription": "Explore Pyramid Peak on a 3D map — steep Elk Mountains fourteener above Maroon Creek, exposed ridges, elevation stats, and Aspen-area approaches."
+    "seoMetaDescription": "Plan Pyramid Peak: Class 4 scramble — best Jul–Sep — Elk Mountains, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "maroon",
@@ -15052,7 +15530,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Postcard Maroon Bells summit; among Colorado’s most iconic Elk Mountain 14ers.",
-    "seoMetaDescription": "Explore Maroon Peak on a 3D map — Maroon Bells 14er above Aspen, Elk Mountains topography, elevation stats, and Maroon Lake approaches.",
+    "seoMetaDescription": "Plan Maroon Peak: Class 3 scramble — best Jul–Sep — Elk Mountains, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Aspen",
       "region": "Colorado",
@@ -15107,7 +15585,10 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maroon_Bells,_Colorado.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "sneffels",
@@ -15126,7 +15607,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "One of Colorado’s most photographed 14ers and a classic Ouray / Ridgway objective.",
-    "seoMetaDescription": "Explore Mt. Sneffels on a 3D map — San Juan 14er topography, Yankee Boy Basin approaches, elevation stats, and Ouray staging.",
+    "seoMetaDescription": "Plan Mt. Sneffels: Class 3 scramble — best Jun–Sep — San Juan Mountains, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Ouray",
       "region": "Colorado",
@@ -15173,7 +15654,10 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:MtSneffelsMarch2008.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "scramble",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "uncompahgre",
@@ -15190,7 +15674,7 @@
     "aliases": [],
     "bestSeason": "Jun–Sep",
     "whyNotable": "San Juan Mountains high point and one of Colorado’s most prominent 14ers.",
-    "seoMetaDescription": "Explore Uncompahgre Peak on a 3D map — San Juan high point topography, Nellie Creek approaches, elevation stats, and Lake City staging.",
+    "seoMetaDescription": "Plan Uncompahgre Peak: Class 2 hike — best Jun–Sep — San Juan Mountains, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Lake City",
       "region": "Colorado",
@@ -15237,7 +15721,10 @@
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uncompahgre_Peak_from_northeast._Lake_City_Quadrangle._Hinsdale_County,_Colorado._-_NARA_-_517110.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "handies",
@@ -15253,7 +15740,7 @@
     "difficulty": "Class 1–2 hike",
     "bestSeason": "Jul–Sep",
     "whyNotable": "Among the most accessible San Juan 14ers; classic American Basin day hike.",
-    "seoMetaDescription": "Explore Handies Peak on a 3D map — accessible San Juan 14er via American Basin, alpine meadow topography, elevation, and Lake City approaches.",
+    "seoMetaDescription": "Plan Handies Peak: Class 1–2 hike — best Jul–Sep — San Juan Mountains, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Lake City",
       "region": "Colorado",
@@ -15308,7 +15795,11 @@
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Handies_Peak_WSA_(9464673273).jpg"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special 14er permit on standard American Basin approaches; high-clearance road access varies."
   },
   {
     "id": "maunakea",
@@ -15429,7 +15920,10 @@
     ],
     "bestSeason": "Year-round; summit can be cold or snowy in winter",
     "whyNotable": "Tallest mountain on Earth measured from ocean floor to summit, and one of the world’s great astronomy sites.",
-    "seoMetaDescription": "Explore Mauna Kea on a 3D topographic map — Hawaii’s astronomy summit and ocean-floor giant, alpine cinder cones, elevation, and Big Island staging."
+    "seoMetaDescription": "Plan Mauna Kea: High-altitude drive / hike — best Year-round; summit can be cold or snowy in winter — Hawaiian Islands, Hawaii — trip notes and 3D terrain…",
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "maunaloa",
@@ -15445,7 +15939,7 @@
     "difficulty": "High-altitude hike",
     "bestSeason": "Year-round (weather dependent)",
     "whyNotable": "Largest volcano on Earth by volume; active Hawaiian shield beside Mauna Kea.",
-    "seoMetaDescription": "Explore Mauna Loa on a 3D map — Earth’s largest shield volcano on Hawaiʻi Island, alpine shield topography, elevation, and Hilo approaches.",
+    "seoMetaDescription": "Plan Mauna Loa: High-altitude hike — best Year-round (weather dependent) — Hawaiian Islands, Hawaii — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Hilo",
       "region": "Hawaii",
@@ -15500,7 +15994,10 @@
         "license": "CC0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mauna_loa_from_hilo_bay.JPG"
       }
-    ]
+    ],
+    "difficultyTier": "strenuous-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "haleakala",
@@ -15520,7 +16017,7 @@
     ],
     "bestSeason": "Year-round (summit is cold; storms year-round)",
     "whyNotable": "Maui’s iconic volcano and one of Hawaii’s most visited national-park summits.",
-    "seoMetaDescription": "Explore Haleakalā on a 3D map — Maui volcano high point, crater-rim topography, elevation stats, and Haleakalā National Park approaches.",
+    "seoMetaDescription": "Plan Haleakalā: Drive / Class 1–2 hike — best Year-round (summit is cold; storms year-round) — Hawaiian Islands, Hawaii — trip notes and 3D terrain on Pea…",
     "nearestTown": {
       "name": "Kahului",
       "region": "Hawaii",
@@ -15575,7 +16072,10 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haleakal%C4%81.jpg"
       }
-    ]
+    ],
+    "difficultyTier": "day-hike",
+    "permitRequired": null,
+    "permitStatus": "unsourced"
   },
   {
     "id": "sthelens",
@@ -15697,6 +16197,10 @@
     ],
     "bestSeason": "Late spring–early fall for summit climbs",
     "whyNotable": "The 1980 eruption reshaped the mountain and made it a living laboratory of volcanic recovery.",
-    "seoMetaDescription": "Explore Mt. St. Helens on a 3D map — Cascade volcano remade in 1980, crater and lava-dome terrain, elevation stats, and Spirit Lake approaches."
+    "seoMetaDescription": "Plan Mt. St. Helens: Class 2–3 scramble / permit climb — best Late spring–early fall for summit climbs — Cascade Range, Washington — trip notes and 3D ter…",
+    "difficultyTier": "scramble",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Mount St. Helens climbing permit required above 4,800 ft (Monument climbing pass)."
   }
 ]

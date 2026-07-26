@@ -8,7 +8,7 @@ export function WorldTagline({ visible }: WorldTaglineProps) {
 
   return (
     <p className="world-tagline" role="doc-subtitle">
-      Explore mountain peaks around the world
+      Research any peak — then explore it in 3D
     </p>
   )
 }
