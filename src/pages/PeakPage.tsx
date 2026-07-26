@@ -110,6 +110,7 @@ export function PeakPage() {
           <PeakDossier
             peak={activePeak}
             deferMedia={cinematic || earthOnly}
+            country={selectedCountry}
           />
         </DetailsSheet>
         <p className="sr-only">

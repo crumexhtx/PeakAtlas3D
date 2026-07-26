@@ -1,3 +1,8 @@
+import type { DifficultyTier } from '../lib/difficultyTiers'
+import type { PermitStatus } from './tripReadiness'
+
+export type { DifficultyTier, PermitStatus }
+
 export type Town = {
   name: string
   region: string
@@ -51,6 +56,11 @@ export type PeakIndex = {
   firstAscent?: string
   /** Plain-language difficulty for atlas browsing. */
   difficulty?: string
+  /**
+   * Normalized difficulty tier for gear checklists (maps free-text difficulty).
+   * One of: day-hike | strenuous-hike | scramble | snow-glacier | alpine-technical | expedition
+   */
+  difficultyTier?: DifficultyTier
   /** Typical climbing or visiting window (plain language). */
   bestSeason?: string
   /** One-line hook for why the peak matters in the atlas. */
@@ -59,6 +69,15 @@ export type PeakIndex = {
   description?: string
   /** Gate-town name for spin fun-facts without shipping full town geometry. */
   nearestTown?: Pick<Town, 'name' | 'region' | 'distanceMiles'>
+  /**
+   * Whether a permit/reservation is required when known.
+   * `null` means unsourced — do not treat as “no permit.”
+   */
+  permitRequired?: boolean | null
+  /** Explicit permit sourcing status (required | not_required | unsourced). */
+  permitStatus?: PermitStatus
+  /** Short access note (lottery, wilderness quota, climbing pass, etc.). */
+  permitNotes?: string
 }
 
 export type Peak = PeakIndex & {
@@ -73,6 +92,17 @@ export type Peak = PeakIndex & {
   firstAscent: string
   /** Plain-language difficulty for atlas browsing. */
   difficulty: string
+  /** Normalized tier for gear checklist mapping (required on full Peak). */
+  difficultyTier: DifficultyTier
+  /** Typical climbing or visiting window (required for trip-readiness). */
+  bestSeason: string
+  /**
+   * Whether a permit/reservation is required when known.
+   * `null` means unsourced — do not treat as “no permit.”
+   */
+  permitRequired: boolean | null
+  permitStatus: PermitStatus
+  permitNotes?: string
   /** Up to two summit / approach stills with attribution (dossier rotates them). */
   photos?: PeakPhoto[]
   /** @deprecated Prefer `photos[0]`; kept for older enriched rows. */

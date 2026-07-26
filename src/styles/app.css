@@ -1584,6 +1584,161 @@ a.trail-bubble-label-link:focus-visible {
   color: #e7eef7;
 }
 
+/* Trip readiness summary — scannable block at top of peak dossier */
+.trip-readiness-lede,
+.nearby-peaks-lede {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.trip-readiness-grid {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+}
+
+.trip-readiness-grid > div {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.trip-readiness-grid dt {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.trip-readiness-grid dd {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.trip-readiness-value {
+  display: block;
+  font-weight: 600;
+}
+
+.trip-readiness-tier,
+.trip-readiness-note {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.trip-readiness-permit.is-required {
+  border-color: rgba(255, 138, 128, 0.45);
+  background: rgba(255, 138, 128, 0.08);
+}
+
+.trip-readiness-permit.is-clear {
+  border-color: rgba(79, 195, 247, 0.28);
+}
+
+.trip-readiness-permit.is-unsourced {
+  border-color: rgba(255, 193, 7, 0.35);
+  background: rgba(255, 193, 7, 0.06);
+}
+
+.trip-readiness-gear {
+  margin-top: 0.75rem;
+}
+
+.trip-readiness-gear-toggle {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.trip-readiness-gear-body {
+  margin-top: 0.45rem;
+  padding: 0.65rem 0.7rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.trip-readiness-gear-summary {
+  margin: 0 0 0.5rem;
+  font-size: 0.86rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.trip-readiness-gear-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.trip-readiness-gear-list li + li {
+  margin-top: 0.3rem;
+}
+
+.trip-readiness-disclaimer {
+  margin: 0.65rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.nearby-peaks-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.nearby-peaks-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.nearby-peaks-link:hover,
+.nearby-peaks-link:focus-visible {
+  border-color: rgba(79, 195, 247, 0.45);
+  background: var(--accent-soft);
+}
+
+.nearby-peaks-name {
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.nearby-peaks-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
 .info-block {
   margin-bottom: 1.2rem;
   padding-bottom: 1rem;
