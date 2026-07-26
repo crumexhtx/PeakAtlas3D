@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useMap } from 'react-map-gl/mapbox'
+import { useMap } from 'react-map-gl/maplibre'
 import type { CountrySummary } from '../types/country'
 import {
   declutterCountryMarkers,

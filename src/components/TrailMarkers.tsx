@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { Marker } from 'react-map-gl/mapbox'
+import { Marker } from 'react-map-gl/maplibre'
 import {
   peakTrailRoutesForPeak,
   routeDetailNote,

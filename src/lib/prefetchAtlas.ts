@@ -1,5 +1,5 @@
 /**
- * Warm AtlasLayout + AtlasMap (and thus mapbox-gl) before the user opens /.
+ * Warm AtlasLayout + AtlasMap (and thus maplibre-gl) before the user opens /.
  * Safe to call repeatedly — runs at most once per page lifetime.
  */
 

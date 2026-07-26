@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Marker } from 'react-map-gl/mapbox'
+import { Marker } from 'react-map-gl/maplibre'
 import type { CountrySummary } from '../types/country'
 import { countryToIso, flagUrl } from '../lib/countries'
 

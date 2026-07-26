@@ -1,4 +1,4 @@
-import { Marker } from 'react-map-gl/mapbox'
+import { Marker } from 'react-map-gl/maplibre'
 import type { Town } from '../types/peak'
 import { formatDistance } from '../lib/geo'
 import type { UnitSystem } from '../types/peak'

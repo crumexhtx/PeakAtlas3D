@@ -9,6 +9,19 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.2.4',
+    date: '2026-07-26',
+    title: 'MapLibre globe (MapTiler optional)',
+    summary:
+      'The atlas map now runs on MapLibre GL instead of Mapbox. Add a MapTiler key for hybrid satellite + terrain-rgb, or use the free Sentinel-2 / Mapterhorn fallback.',
+    highlights: [
+      'Switched rendering to MapLibre GL via react-map-gl/maplibre',
+      'Optional VITE_MAPTILER_KEY for MapTiler hybrid style + terrain-rgb DEM',
+      'Keyless fallback: EOX Sentinel-2 satellite tiles + Mapterhorn DEM',
+      'Atmosphere via MapLibre sky (replaces Mapbox fog)',
+    ],
+  },
+  {
     version: '0.2.3',
     date: '2026-07-23',
     title: 'Twenty more popular U.S. summits',

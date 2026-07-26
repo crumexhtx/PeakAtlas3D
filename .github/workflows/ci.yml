@@ -33,8 +33,8 @@ jobs:
 
       - name: Build (index + sitemap + Vite + prerender meta)
         env:
-          # Public token placeholder — build must not require a real Mapbox key.
-          VITE_MAPBOX_TOKEN: pk.ci-placeholder
+          # Optional MapTiler key — build works with the free tile fallback too.
+          VITE_MAPTILER_KEY: ''
           SITE_URL: https://peakatlas3d.com
         run: npm run build
 
@@ -55,5 +55,5 @@ jobs:
 
       - name: End-to-end smoke
         env:
-          VITE_MAPBOX_TOKEN: pk.ci-placeholder
+          VITE_MAPTILER_KEY: ''
         run: npm run test:e2e

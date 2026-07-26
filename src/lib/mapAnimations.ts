@@ -1,4 +1,4 @@
-import type { Map as MapboxMap } from 'mapbox-gl'
+import type { Map as MapLibreMap } from 'maplibre-gl'
 
 /** Start world idle spin immediately on load (0 = no wait). */
 export const IDLE_ROTATE_DELAY_MS = 0
@@ -9,13 +9,13 @@ export const IDLE_ROTATE_SPEED_LNG = 0.045
 /** Cap idle/orbit paints — half the WebGL cost for nearly the same motion. */
 const SPIN_FRAME_MS = 1000 / 30
 
-type CameraOptions = Parameters<MapboxMap['flyTo']>[0]
+type CameraOptions = Parameters<MapLibreMap['flyTo']>[0]
 
 export function prefersReducedMotion(): boolean {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
 }
 
-export function setMapInteractive(map: MapboxMap, enabled: boolean) {
+export function setMapInteractive(map: MapLibreMap, enabled: boolean) {
   const handlers = [
     map.boxZoom,
     map.scrollZoom,
@@ -33,7 +33,7 @@ export function setMapInteractive(map: MapboxMap, enabled: boolean) {
 }
 
 export function waitForMoveEnd(
-  map: MapboxMap,
+  map: MapLibreMap,
   timeoutMs = 8_000,
 ): Promise<void> {
   return new Promise((resolve) => {
@@ -58,7 +58,7 @@ export function waitForMoveEnd(
 
 /** Wait until the map goes idle (tiles settled), with a timeout fallback. */
 export function waitForMapIdle(
-  map: MapboxMap,
+  map: MapLibreMap,
   timeoutMs = 2800,
 ): Promise<void> {
   return new Promise((resolve) => {
@@ -84,33 +84,52 @@ export function waitForMapIdle(
   })
 }
 
-export async function flyToAsync(map: MapboxMap, options: CameraOptions) {
+export async function flyToAsync(map: MapLibreMap, options: CameraOptions) {
   const duration =
     typeof options?.duration === 'number' ? options.duration : 3_000
   map.flyTo(options)
   await waitForMoveEnd(map, duration + 2_000)
 }
 
-export async function easeToAsync(map: MapboxMap, options: CameraOptions) {
+export async function easeToAsync(map: MapLibreMap, options: CameraOptions) {
   const duration =
     typeof options?.duration === 'number' ? options.duration : 1_500
   map.easeTo(options)
   await waitForMoveEnd(map, duration + 2_000)
 }
 
-export function applyPeakAtmosphere(map: MapboxMap) {
-  map.setFog({
-    range: [1.0, 10],
-    color: 'rgb(150, 172, 196)',
-    'high-color': 'rgb(48, 78, 140)',
-    'horizon-blend': 0.16,
-    'space-color': 'rgb(11, 16, 32)',
-    'star-intensity': 0.12,
-  })
+/**
+ * Atmosphere / sky for globe + pitched terrain.
+ * MapLibre uses `setSky` (Mapbox’s `setFog` API is not available).
+ */
+export function applyPeakAtmosphere(map: MapLibreMap) {
+  try {
+    map.setSky({
+      'sky-color': 'rgb(48, 78, 140)',
+      'horizon-color': 'rgb(150, 172, 196)',
+      'fog-color': 'rgb(11, 16, 32)',
+      'sky-horizon-blend': 0.35,
+      'horizon-fog-blend': 0.7,
+      'fog-ground-blend': 0.35,
+      'atmosphere-blend': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        0,
+        1,
+        3,
+        0.35,
+        6,
+        0,
+      ],
+    })
+  } catch {
+    // Older styles may reject sky props; ignore.
+  }
 }
 
 /** Soften blown-out snow / bright satellite whites without killing contrast. */
-export function softenSatelliteRaster(map: MapboxMap) {
+export function softenSatelliteRaster(map: MapLibreMap) {
   const layers = map.getStyle()?.layers ?? []
   for (const layer of layers) {
     if (layer.type !== 'raster') continue
@@ -206,14 +225,14 @@ export function peakFramingCenter(
  * Throttled to ~30fps and paused while the tab is hidden.
  */
 export function startIdleSpin(
-  map: MapboxMap,
+  map: MapLibreMap,
   speedLng = IDLE_ROTATE_SPEED_LNG,
 ): { cancel: () => void } {
   let frame = 0
   let active = true
   let lastPaint = 0
   // Keep perceived angular speed close to the old uncapped 60fps loop.
-  const degPerMs = speedLng * 60 / 1000
+  const degPerMs = (speedLng * 60) / 1000
 
   const tick = (now: number) => {
     if (!active) return
@@ -239,11 +258,11 @@ export function startIdleSpin(
 
 /**
  * Full 360° orbit around the current center.
- * Uses rAF + setBearing because easeTo(bearing + 360) is a no-op after Mapbox
- * normalizes bearing into [-180, 180].
+ * Uses rAF + setBearing because easeTo(bearing + 360) is a no-op after
+ * normalizing bearing into [-180, 180].
  */
 export function orbitAsync(
-  map: MapboxMap,
+  map: MapLibreMap,
   durationMs: number,
   shouldContinue: () => boolean = () => true,
 ): Promise<void> {

@@ -67,7 +67,7 @@ for (const id of ids) {
     }
     if (descs.length !== 1) issues.push(`description count ${descs.length}`)
     if (ogDescs.length !== 1) issues.push(`og:description count ${ogDescs.length}`)
-    if (!descs[0] || descs[0].includes('Mapbox globe')) {
+    if (!descs[0] || descs[0].includes('Mapbox globe') || descs[0].includes('3D globe')) {
       issues.push('generic description still present')
     }
     if (ogImgs.length !== 1 || !ogImgs[0]) issues.push('missing og:image')
