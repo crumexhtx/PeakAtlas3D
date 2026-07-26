@@ -9,6 +9,19 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.2.5',
+    date: '2026-07-26',
+    title: 'Smoother globe (spin + markers)',
+    summary:
+      'World idle spin and country drill-in are lighter on the GPU—especially on phones and dense catalogs like the U.S.',
+    highlights: [
+      'Capped canvas pixel ratio on mobile and desktop',
+      'Idle spin starts later, runs slower, and auto-pauses after a budget',
+      'Lighter world basemap + lower max zoom while spinning; terrain deferred until after peak approach',
+      'Country peak flags decluttered/capped (USA-friendly); drop-shadow off while spinning',
+    ],
+  },
+  {
     version: '0.2.4',
     date: '2026-07-26',
     title: 'MapLibre globe (MapTiler optional)',

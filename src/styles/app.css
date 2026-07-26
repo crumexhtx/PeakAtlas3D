@@ -794,6 +794,17 @@ a {
   transition: transform 0.15s ease;
 }
 
+/* Continuous globe spin: drop expensive filter on moving DOM markers. */
+.atlas-map-wrap.is-spinning .country-flag-marker {
+  filter: none;
+}
+
+@media (max-width: 900px) {
+  .country-flag-marker {
+    filter: none;
+  }
+}
+
 .country-flag-marker:hover,
 .country-flag-marker:focus-visible {
   transform: translateY(-3px) scale(1.05);
@@ -1056,6 +1067,12 @@ a {
   cursor: pointer;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.45));
   transition: transform 0.15s ease;
+}
+
+@media (max-width: 900px) {
+  .flag-marker {
+    filter: none;
+  }
 }
 
 .flag-marker:hover,
