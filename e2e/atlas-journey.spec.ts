@@ -5,7 +5,7 @@ test.describe('atlas journey', () => {
     page,
   }) => {
     await page.addInitScript(() => {
-      window.localStorage.setItem('peakatlas.hint.world.v2', '1')
+      window.localStorage.setItem('peakatlas.hint.world.v3', '1')
     })
 
     await page.goto('/')

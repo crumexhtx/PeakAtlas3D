@@ -8,13 +8,15 @@ import {
 } from '../lib/geo'
 import { flagUrl } from '../lib/countries'
 import { peakLocationLabel, peakRegion } from '../lib/peakLocation'
+import { NearbyPeaks } from './NearbyPeaks'
+import { TripReadiness } from './TripReadiness'
 
 export function seoPeakHeading(peakName: string): string {
   return peakName
 }
 
 export function seoPeakQualifier(): string {
-  return '3D Map & Topography'
+  return 'Trip Guide & 3D Map'
 }
 
 /** schema.org Mountain JSON-LD for peak pages (crawlable structured data). */
@@ -58,10 +60,12 @@ type PeakSeoLayoutProps = {
   media?: ReactNode
   /** Trails, lodging, and other interactive sections below the SEO core. */
   children?: ReactNode
+  /** Country context for nearby-peak links (back navigation). */
+  country?: string | null
 }
 
 /**
- * Semantic peak article: crawlable hierarchy + stats for long-tail SEO,
+ * Semantic peak article: trip readiness first, supporting media + stats,
  * while living inside the existing sticky/side dossier (map stays full-bleed).
  */
 export function PeakSeoLayout({
@@ -69,6 +73,7 @@ export function PeakSeoLayout({
   units,
   media,
   children,
+  country,
 }: PeakSeoLayoutProps) {
   const flag = flagUrl(peak.country, 40)
   const location = peakLocationLabel(peak)
@@ -124,7 +129,7 @@ export function PeakSeoLayout({
               <span itemProp="name">{peak.range}</span>
             </span>
             {' · '}
-            Interactive 3D globe view
+            Difficulty, season, and access — then explore the 3D terrain
           </p>
           {peak.aliases && peak.aliases.length > 0 && (
             <p className="dossier-aliases">
@@ -135,7 +140,11 @@ export function PeakSeoLayout({
         </div>
       </header>
 
+      <TripReadiness peak={peak} />
+
       {media}
+
+      <NearbyPeaks peak={peak} country={country} />
 
       <section
         className="info-block peak-seo-stats"
@@ -202,9 +211,10 @@ export function PeakSeoLayout({
           {peak.description}
         </p>
         <p className="peak-seo-map-blurb">
-          Explore {peak.name} on PeakAtlas3D’s interactive 3D topographic map —
-          satellite terrain, summit framing, and nearby staging towns for
-          planning approaches in the {peak.range}, {location}.
+          After you check trip readiness for {peak.name}, explore the summit on
+          PeakAtlas3D’s interactive 3D topographic map — satellite terrain,
+          summit framing, and nearby staging towns in the {peak.range},{' '}
+          {location}.
         </p>
         {approachRoutes.length > 0 && (
           <p className="peak-seo-routes">

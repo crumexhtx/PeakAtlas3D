@@ -11,7 +11,7 @@ export function AboutPage() {
     applyDocumentMeta({
       title: 'About — PeakAtlas3D',
       description:
-        'Why PeakAtlas3D exists: celebrating the world’s mountain peaks and sharing the places that surround them.',
+        'Why PeakAtlas3D exists: trip-ready peak guides with difficulty, season, and access — then explore each summit in 3D.',
       path: '/about',
     })
   }, [])
@@ -27,17 +27,17 @@ export function AboutPage() {
       <p className="content-eyebrow">About</p>
       <h1 className="content-title">Built for people who love mountains</h1>
       <p className="content-lede">
-        PeakAtlas3D is a living atlas of the world’s great summits — a place to wander
-        the globe, drop into a peak, and feel how extraordinary these mountains are.
+        PeakAtlas3D helps you answer a practical question — can I climb this,
+        and what do I need to know before I go? — then explore the summit in 3D
+        so the trip notes feel real.
       </p>
 
       <section className="content-section">
         <h2>Our goal</h2>
         <p>
-          Mountains shape climates, cultures, and the way people move through a
-          landscape. We want PeakAtlas3D to celebrate that — not as a dry list of
-          elevations, but as a visual, explorable atlas that makes each peak feel
-          present and worth knowing.
+          We want PeakAtlas3D to answer a trip question first — difficulty, best
+          season, permits, and prep — then make that answer compelling with 3D
+          terrain, not the other way around.
         </p>
         <p>
           From rain-soaked Cascades volcanoes to knife-edge fourteeners and Himalayan
@@ -50,14 +50,15 @@ export function AboutPage() {
         <h2>Peaks, places, and the journey around them</h2>
         <p>
           A mountain is never just a coordinate. Gate towns, lodges, trailheads, and
-          small restaurants are part of how climbers and travelers experience a peak.
-          PeakAtlas3D gathers that surrounding context — lodging and food near the
-          approaches, nearby places on the map — so the atlas feels useful as well as
-          beautiful.
+          nearby summits are part of how climbers and travelers plan a peak.
+          PeakAtlas3D gathers that surrounding context — access notes, lodging and
+          food near the approaches, nearby peaks for multi-summit trips — so the
+          atlas feels useful as well as beautiful.
         </p>
         <p>
           The aim is simple: share that information with the world, and with anyone
-          who feels drawn to high places.
+          who feels drawn to high places — without claiming real-time route safety
+          or conditions.
         </p>
       </section>
 

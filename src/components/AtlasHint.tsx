@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export const ATLAS_HINT_STORAGE_KEY = 'peakatlas.hint.world.v2'
+export const ATLAS_HINT_STORAGE_KEY = 'peakatlas.hint.world.v3'
 
 type AtlasHintProps = {
   visible: boolean
@@ -57,10 +57,13 @@ export function AtlasHint({ visible, onActiveChange }: AtlasHintProps) {
   return (
     <div className="atlas-hint" role="status">
       <div className="atlas-hint-text">
-        <p className="atlas-hint-title">Explore mountain peaks around the world</p>
+        <p className="atlas-hint-title">
+          Research any peak before you go
+        </p>
         <p className="atlas-hint-copy">
-          PeakAtlas is a 3D atlas of notable summits. Click a country flag to
-          zoom in, then open a peak to learn its routes, lodging, and story.
+          Check difficulty, best season, permits, and prep — then explore the
+          summit in 3D. Click a country flag to zoom in, then open a peak for
+          trip readiness.
         </p>
       </div>
       <button type="button" className="atlas-hint-dismiss" onClick={dismiss}>

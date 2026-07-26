@@ -18,7 +18,7 @@ const siteUrl = (process.env.SITE_URL || 'https://peakatlas3d.com').replace(
 )
 
 const DEFAULT_DESCRIPTION =
-  "Explore the world's mountain peaks on a 3D globe, then open a terrain profile for each summit."
+  'Research any peak — difficulty, best season, permits, and what you need to know before you go — then explore it in 3D.'
 
 function escapeHtml(value) {
   return String(value)
@@ -197,9 +197,21 @@ function peakNoscriptBody(peak, url) {
           <header>
             <p>${escapeHtml(location)}</p>
             <h1 itemprop="name">${escapeHtml(heading)}</h1>
-            <p>3D Map &amp; Topography</p>
-            <p>${escapeHtml(peak.range)} · Interactive 3D globe view</p>
+            <p>Trip Guide &amp; 3D Map</p>
+            <p>${escapeHtml(peak.range)} · Difficulty, season, and access — then explore the 3D terrain</p>
           </header>
+          <section aria-label="Trip readiness">
+            <h2>Trip readiness</h2>
+            <dl>
+              <div><dt>Difficulty</dt><dd>${escapeHtml(peak.difficulty || '')}</dd></div>
+              <div><dt>Best season</dt><dd>${escapeHtml(peak.bestSeason || '')}</dd></div>
+              <div><dt>Access / staging</dt><dd>${escapeHtml(
+                peak.nearestTown?.name
+                  ? `${peak.nearestTown.name}${peak.nearestTown.region ? `, ${peak.nearestTown.region}` : ''}`
+                  : '',
+              )}</dd></div>
+            </dl>
+          </section>
           <section aria-label="Peak stats">
             <h2>Peak stats</h2>
             <dl>
@@ -218,7 +230,7 @@ function peakNoscriptBody(peak, url) {
                 : ''
             }
             <p itemprop="description">${escapeHtml(peak.description || '')}</p>
-            <p>Explore ${escapeHtml(peak.name)} on PeakAtlas3D’s interactive 3D topographic map — satellite terrain and summit framing in the ${escapeHtml(peak.range)}, ${escapeHtml(location)}.</p>
+            <p>After you check trip readiness for ${escapeHtml(peak.name)}, explore the summit on PeakAtlas3D’s interactive 3D topographic map in the ${escapeHtml(peak.range)}, ${escapeHtml(location)}.</p>
           </section>
           ${nearbyList}
           ${trailList}
@@ -344,7 +356,7 @@ const peaks = JSON.parse(readFileSync(peaksPath, 'utf8'))
 const staticPages = [
   {
     path: '/',
-    title: 'PeakAtlas3D — World Peak Atlas',
+    title: 'PeakAtlas3D — Trip-Ready Peak Guides',
     description: DEFAULT_DESCRIPTION,
     image: '',
   },
@@ -352,7 +364,7 @@ const staticPages = [
     path: '/about',
     title: 'About — PeakAtlas3D',
     description:
-      'Why PeakAtlas3D exists: celebrating the world’s mountain peaks and sharing the places that surround them.',
+      'Why PeakAtlas3D exists: trip-ready peak guides with difficulty, season, and access — then explore each summit in 3D.',
     image: '',
   },
   {
@@ -366,7 +378,7 @@ const staticPages = [
     path: '/contact',
     title: 'Contact — PeakAtlas3D',
     description:
-      'Send feedback, corrections, or ideas for PeakAtlas3D — the world peak atlas.',
+      'Send feedback, corrections, or ideas for PeakAtlas3D — trip-ready peak guides with 3D terrain.',
     image: '',
   },
 ]
@@ -391,7 +403,7 @@ for (const peak of peaks) {
   const path = `/peak/${peak.id}`
   const url = `${siteUrl}${path}`
   writeRoute(template, path, {
-    title: `${peak.name} 3D Map & Topography · ${peakLocationLabel(peak)} | PeakAtlas3D`,
+    title: `${peak.name} Trip Guide & 3D Map · ${peakLocationLabel(peak)} | PeakAtlas3D`,
     description: peakDescription(peak),
     image: peakImage(peak),
     noscriptBody: peakNoscriptBody(peak, url),
