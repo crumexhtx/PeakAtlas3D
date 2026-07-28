@@ -185,7 +185,7 @@ export function PeakDossier({
                 summit area.
               </p>
 
-              {lodging.length > 0 && (
+              {lodging.length > 0 ? (
                 <>
                   <h3 className="sub-heading">Lodging</h3>
                   {lodgingFromOsm ? (
@@ -215,6 +215,19 @@ export function PeakDossier({
                       />
                     ))}
                   </ul>
+                </>
+              ) : (
+                <>
+                  <h3 className="sub-heading">Lodging</h3>
+                  <p className="amenity-empty">
+                    No mapped lodging near this summit yet. Most parties stage
+                    in {peak.nearestTown.name}
+                    {peak.nearestTown.region
+                      ? `, ${peak.nearestTown.region}`
+                      : ''}{' '}
+                    and confirm beds before travel — remote and high-alpine
+                    approaches often have none at the trailhead.
+                  </p>
                 </>
               )}
 

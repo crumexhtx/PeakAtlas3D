@@ -9,6 +9,19 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.3.0',
+    date: '2026-07-28',
+    title: 'Post-launch: flagship peaks + analytics',
+    summary:
+      'Trip-ready copy for ten high-traffic summits, optional Plausible analytics, lodging empty-states, and a Search Console / DNS runbook for the live site.',
+    highlights: [
+      'Curated trip notes + permits for Rainier, Denali, Everest, Whitney, Hood, Fuji, Matterhorn, Elbert, Half Dome, and Shasta',
+      'Optional VITE_PLAUSIBLE_DOMAIN alongside Vercel Analytics',
+      'Clearer lodging empty state when OSM has no nearby stays',
+      'docs/POST_LAUNCH.md checklist for www DNS and GSC indexing requests',
+    ],
+  },
+  {
     version: '0.2.9',
     date: '2026-07-28',
     title: 'Zoom-only peak entry (no orbit)',

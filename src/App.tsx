@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react'
+import { PlausibleAnalytics } from './components/PlausibleAnalytics'
 import { UnitsProvider } from './context/UnitsContext'
 import './styles/app.css'
 
@@ -58,6 +59,7 @@ export default function App() {
         </Suspense>
       </BrowserRouter>
       <Analytics />
+      <PlausibleAnalytics />
     </UnitsProvider>
   )
 }
