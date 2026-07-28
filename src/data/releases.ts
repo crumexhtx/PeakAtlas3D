@@ -9,6 +9,17 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.2.7',
+    date: '2026-07-28',
+    title: 'Clear markers on peak maps',
+    summary:
+      'On any peak page, tap Clear markers to hide the summit flag, trail signs, and nearby place pins so the 3D terrain stands alone.',
+    highlights: [
+      'New Clear markers control on peak pages (Esc restores icons)',
+      'Hides summit flag, US trail bubbles, and nearby place markers',
+    ],
+  },
+  {
     version: '0.2.6',
     date: '2026-07-28',
     title: 'Search indexing: crawlable peaks',
