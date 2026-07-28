@@ -9,6 +9,19 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.3.3',
+    date: '2026-07-28',
+    title: 'Catskill High Peaks',
+    summary:
+      'Five Catskill High Peaks join the catalog — Slide, Hunter, Black Dome, Blackhead, and West Kill — with forested mountain-face photos and OSM lodging.',
+    highlights: [
+      'Slide Mountain (Catskills high point) + Hunter Mountain fire-tower peak',
+      'Blackhead Range: Black Dome and Blackhead',
+      'West Kill Mountain on the Devil’s Path',
+      'Curated Commons face photos + Forest Preserve permit notes',
+    ],
+  },
+  {
     version: '0.3.2',
     date: '2026-07-28',
     title: 'Country peak flags stay visible when zooming in',

@@ -121,7 +121,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://peakatlas3d.com/peak/blackdome</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://peakatlas3d.com/peak/blackelk</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://peakatlas3d.com/peak/blackhead</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -452,6 +464,12 @@
   </url>
   <url>
     <loc>https://peakatlas3d.com/peak/humphreys</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://peakatlas3d.com/peak/hunterny</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -883,6 +901,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://peakatlas3d.com/peak/slide</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://peakatlas3d.com/peak/sneffels</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -1016,6 +1040,12 @@
   </url>
   <url>
     <loc>https://peakatlas3d.com/peak/weisshorn</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://peakatlas3d.com/peak/westkill</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

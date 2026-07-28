@@ -145,6 +145,27 @@ const CURATED_FILES = {
     'File:Messina Canyon-Etna-Volcano-Sicily-Italy - Creative Commons by gnuckx (3493037353).jpg',
   ],
   vesuvius: ['File:Vesuvius from Pompeii.jpg', 'File:Mount Vesuvius.jpg'],
+  // Catskills High Peaks — forested mountain-face stills.
+  slide: [
+    'File:2025-07-21 14 08 27 View west toward the summit of Slide Mountain from the Wittenberg-Cornell-Slide Trail (Burroughs Range Trail) just west of the summit of Cornell Mountain in Shandaken, Ulster County, New York.jpg',
+    'File:2025-07-21 14 09 24 View west toward the summit of Slide Mountain from the Wittenberg-Cornell-Slide Trail (Burroughs Range Trail) just west of the summit of Cornell Mountain in Shandaken, Ulster County, New York.jpg',
+  ],
+  hunterny: [
+    'File:NY 214 mountainous scene.JPG',
+    'File:Southwest Hunter Mountain from Geiger Point, Hunter, NY.jpg',
+  ],
+  blackdome: [
+    'File:Eastern side of Black Dome.jpg',
+    'File:Blackhead Range.jpg',
+  ],
+  blackhead: [
+    'File:Blackhead Mountain from Black Dome.jpg',
+    'File:Blackhead Range from Buck Ridge Lookout in autumn.jpg',
+  ],
+  westkill: [
+    'File:West Kill and Spruceton Road.jpg',
+    "File:Steep, rocky section of Devil's Path on West Kill Mountain, Spruceton, NY.jpg",
+  ],
 }
 
 /** Peaks allowed to ship with a single validated still (Commons scarcity). */
