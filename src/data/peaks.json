@@ -16203,5 +16203,1607 @@
     "permitRequired": true,
     "permitStatus": "required",
     "permitNotes": "Mount St. Helens climbing permit required above 4,800 ft (Monument climbing pass)."
+  },
+  {
+    "id": "monterosa",
+    "name": "Monte Rosa (Dufourspitze)",
+    "aliases": [
+      "Dufourspitze",
+      "Punta Dufour",
+      "Monte Rosa"
+    ],
+    "lat": 45.9369,
+    "lon": 7.8667,
+    "elevationFt": 15203,
+    "prominenceFt": 7103,
+    "range": "Pennine Alps",
+    "country": "Switzerland",
+    "description": "The Dufourspitze crowns the Monte Rosa massif on the Swiss–Italian border above Zermatt and Macugnaga. Standard approaches are long glacier climbs with crevasse hazard and high-camp logistics from the Monte Rosa Hut or Italian bivouacs. Treat it as a serious Pennine Alps expedition peak, not a day hike.",
+    "firstAscent": "1855",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Highest summit in Switzerland and second-highest in the Alps after Mont Blanc.",
+    "seoMetaDescription": "Monte Rosa (Dufourspitze) trip guide: alpine glacier climb, Jul–Sep, Zermatt staging, Switzerland’s high point, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general government summit permit; hut bookings and glacier conditions are the practical gates. Confirm Swiss/Italian border-approach rules with current hut staff.",
+    "nearestTown": {
+      "name": "Zermatt",
+      "region": "Valais",
+      "distanceMiles": 10,
+      "route": "Gornergrat / Monte Rosa Hut approaches",
+      "lat": 46.0207,
+      "lon": 7.7491
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Zermatt",
+        "region": "Valais",
+        "distanceMiles": 10,
+        "route": "Gornergrat / Monte Rosa Hut approaches",
+        "lat": 46.0207,
+        "lon": 7.7491
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Orestes Hütte",
+        "category": "Alpine hut",
+        "note": "4.4 mi from summit",
+        "lat": 45.87437,
+        "lon": 7.85004,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/353049753"
+      },
+      {
+        "name": "Rifugio Guide d'Ayas",
+        "category": "Alpine hut",
+        "note": "4.9 mi from summit",
+        "lat": 45.9206,
+        "lon": 7.76714,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/353049786"
+      },
+      {
+        "name": "Rifugio Ottorino Mezzalama",
+        "category": "Alpine hut",
+        "note": "5.4 mi from summit",
+        "lat": 45.9137,
+        "lon": 7.75943,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/353049783"
+      }
+    ],
+    "food": [
+      {
+        "name": "Restaurant Matterhorn",
+        "category": "Restaurant",
+        "note": "Easy refuel in Zermatt between approaches."
+      },
+      {
+        "name": "Whymper Stube",
+        "category": "Restaurant",
+        "note": "Classic Valais meals after glacier days."
+      },
+      {
+        "name": "Cafe du Pont",
+        "category": "Café",
+        "note": "Simple breakfast before early starts."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Normal route via Monte Rosa Hut"
+      },
+      {
+        "name": "Italian east-wall approaches"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Dufourspitze_%28Monte_Rosa%29_and_Monte_Rosa_Glacier_as_seen_from_Gornergrat%2C_Wallis%2C_Switzerland%2C_2012_August.jpg/960px-Dufourspitze_%28Monte_Rosa%29_and_Monte_Rosa_Glacier_as_seen_from_Gornergrat%2C_Wallis%2C_Switzerland%2C_2012_August.jpg",
+      "credit": "Ximonic (Simo Räsänen)",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dufourspitze_(Monte_Rosa)_and_Monte_Rosa_Glacier_as_seen_from_Gornergrat,_Wallis,_Switzerland,_2012_August.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Dufourspitze_%28Monte_Rosa%29_and_Monte_Rosa_Glacier_as_seen_from_Gornergrat%2C_Wallis%2C_Switzerland%2C_2012_August.jpg/960px-Dufourspitze_%28Monte_Rosa%29_and_Monte_Rosa_Glacier_as_seen_from_Gornergrat%2C_Wallis%2C_Switzerland%2C_2012_August.jpg",
+        "credit": "Ximonic (Simo Räsänen)",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dufourspitze_(Monte_Rosa)_and_Monte_Rosa_Glacier_as_seen_from_Gornergrat,_Wallis,_Switzerland,_2012_August.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Aerial_image_of_the_Monte_Rosa_east_face_%28view_from_the_east%29.jpg/960px-Aerial_image_of_the_Monte_Rosa_east_face_%28view_from_the_east%29.jpg",
+        "credit": "Carsten Steger",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Monte_Rosa_east_face_(view_from_the_east).jpg"
+      }
+    ]
+  },
+  {
+    "id": "weisshorn",
+    "name": "Weisshorn",
+    "lat": 46.1014,
+    "lon": 7.7139,
+    "elevationFt": 14783,
+    "prominenceFt": 4052,
+    "range": "Pennine Alps",
+    "country": "Switzerland",
+    "description": "The Weisshorn is a classic Valais 4000er: long approaches, mixed rock and snow ridges, and serious exposure on the standard East Ridge from the Weisshorn Hut. Most parties treat it as a guided or highly experienced alpine climb from Randa / Täsch.",
+    "firstAscent": "1861",
+    "difficulty": "Alpine rock ridge",
+    "difficultyTier": "alpine-technical",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "One of the great isolated 4000ers of the Valais — a steep pyramid above Randa.",
+    "seoMetaDescription": "Weisshorn trip guide: alpine rock ridge, Jul–Sep, Randa staging, Valais 4000er, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general summit permit; Weisshorn Hut bookings and conditions are the main logistics constraint.",
+    "nearestTown": {
+      "name": "Randa",
+      "region": "Valais",
+      "distanceMiles": 5,
+      "route": "Weisshorn Hut trail",
+      "lat": 46.1001,
+      "lon": 7.7816
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Randa",
+        "region": "Valais",
+        "distanceMiles": 5,
+        "route": "Weisshorn Hut trail",
+        "lat": 46.1001,
+        "lon": 7.7816
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Täscher Hof",
+        "category": "Hotel",
+        "note": "3.8 mi from summit",
+        "lat": 46.06681,
+        "lon": 7.77536,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/418012873"
+      },
+      {
+        "name": "Centre de vacances REKA",
+        "category": "Chalet",
+        "note": "4.5 mi from summit",
+        "lat": 46.13068,
+        "lon": 7.63109,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/484264529"
+      },
+      {
+        "name": "Auberge La Navizence",
+        "category": "Guest house",
+        "note": "4.7 mi from summit",
+        "lat": 46.13285,
+        "lon": 7.62633,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/484264496"
+      }
+    ],
+    "food": [
+      {
+        "name": "Hotel Dom Restaurant",
+        "category": "Restaurant",
+        "note": "Solid meal base in Randa / Täsch."
+      },
+      {
+        "name": "Restaurant Walliserhof",
+        "category": "Restaurant",
+        "note": "Valais fare after ridge days."
+      },
+      {
+        "name": "Bahnhof Buffet Visp",
+        "category": "Café",
+        "note": "Transit refuel on the way in."
+      }
+    ],
+    "trails": [
+      {
+        "name": "East Ridge (normal)"
+      },
+      {
+        "name": "Schali Ridge"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Weisshorn_from_Rothorn.jpg/960px-Weisshorn_from_Rothorn.jpg",
+      "credit": "simonsimages",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Weisshorn_from_Rothorn.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Weisshorn_from_Rothorn.jpg/960px-Weisshorn_from_Rothorn.jpg",
+        "credit": "simonsimages",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Weisshorn_from_Rothorn.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Weisshorn.jpg",
+        "credit": "Stan Shebs",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Weisshorn.jpg"
+      }
+    ]
+  },
+  {
+    "id": "dom",
+    "name": "Dom",
+    "aliases": [
+      "Dom de Mischabel"
+    ],
+    "lat": 46.095,
+    "lon": 7.8589,
+    "elevationFt": 14911,
+    "prominenceFt": 3432,
+    "range": "Pennine Alps",
+    "country": "Switzerland",
+    "description": "The Dom is the highest peak lying wholly in Switzerland, rising from the Mischabel range above Saas-Fee. The Festigrat / normal route is a long glacier climb from the Dom Hut with sustained altitude and crevasse terrain. Stage in Saas-Fee and budget for an alpine start.",
+    "firstAscent": "1858",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Highest mountain entirely in Switzerland — the Mischabel giant above Saas-Fee.",
+    "seoMetaDescription": "Dom trip guide: alpine glacier climb, Jul–Sep, Saas-Fee staging, highest peak wholly in Switzerland, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general summit permit; Dom Hut reservations and glacier conditions govern the climb.",
+    "nearestTown": {
+      "name": "Saas-Fee",
+      "region": "Valais",
+      "distanceMiles": 5,
+      "route": "Dom Hut approach",
+      "lat": 46.109,
+      "lon": 7.927
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Saas-Fee",
+        "region": "Valais",
+        "distanceMiles": 5,
+        "route": "Dom Hut approach",
+        "lat": 46.109,
+        "lon": 7.927
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Mischabeljochbiwak SAC",
+        "category": "Wilderness hut",
+        "note": "1.5 mi from summit",
+        "lat": 46.07421,
+        "lon": 7.86582,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/502559916"
+      },
+      {
+        "name": "Mischabelhütte",
+        "category": "Alpine hut",
+        "note": "1.7 mi from summit",
+        "lat": 46.10942,
+        "lon": 7.8888,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/251403227"
+      },
+      {
+        "name": "Täschhütte",
+        "category": "Alpine hut",
+        "note": "3.3 mi from summit",
+        "lat": 46.05157,
+        "lon": 7.83001,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/502559963"
+      }
+    ],
+    "food": [
+      {
+        "name": "Restaurant Allalin",
+        "category": "Restaurant",
+        "note": "Village meal after Dom Hut days."
+      },
+      {
+        "name": "Popcorn Restaurant",
+        "category": "Restaurant",
+        "note": "Casual Saas-Fee option."
+      },
+      {
+        "name": "Café Schneerauch",
+        "category": "Café",
+        "note": "Coffee before the hut hike."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Festigrat / Dom Hut normal"
+      },
+      {
+        "name": "North Face routes"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Dom_%28mountain%29.jpg/960px-Dom_%28mountain%29.jpg",
+      "credit": "Michal Jurosz",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dom_(mountain).jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Dom_%28mountain%29.jpg/960px-Dom_%28mountain%29.jpg",
+        "credit": "Michal Jurosz",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dom_(mountain).jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Dom%2C_T%C3%A4schhorn_and_Alphubel_%2815089083580%29.jpg/960px-Dom%2C_T%C3%A4schhorn_and_Alphubel_%2815089083580%29.jpg",
+        "credit": "Björn S...",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dom,_T%C3%A4schhorn_and_Alphubel_(15089083580).jpg"
+      }
+    ]
+  },
+  {
+    "id": "dentblanche",
+    "name": "Dent Blanche",
+    "lat": 46.0342,
+    "lon": 7.6119,
+    "elevationFt": 14295,
+    "prominenceFt": 3002,
+    "range": "Pennine Alps",
+    "country": "Switzerland",
+    "description": "Dent Blanche is a sharp Pennine Alps pyramid climbed most often via the South Ridge (Wandfluegrat) from the Dent Blanche Hut. Expect sustained rock, snow patches, and route-finding in mixed terrain. Stage from Les Haudères / Evolène or Zermatt-side valleys.",
+    "firstAscent": "1862",
+    "difficulty": "Alpine rock ridge",
+    "difficultyTier": "alpine-technical",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Striking Valais rock pyramid guarding the approaches between Zinal and Zermatt.",
+    "seoMetaDescription": "Dent Blanche trip guide: alpine rock ridge, Jul–Sep, Dent Blanche Hut logistics, Valais, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general summit permit; hut space and summer conditions are the practical limits.",
+    "nearestTown": {
+      "name": "Les Haudères",
+      "region": "Valais",
+      "distanceMiles": 8,
+      "route": "Dent Blanche Hut approach",
+      "lat": 46.0806,
+      "lon": 7.5089
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Les Haudères",
+        "region": "Valais",
+        "distanceMiles": 8,
+        "route": "Dent Blanche Hut approach",
+        "lat": 46.0806,
+        "lon": 7.5089
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Cabane de Bertol CAS",
+        "category": "Alpine hut",
+        "note": "4.5 mi from summit",
+        "lat": 46.00602,
+        "lon": 7.52767,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/309758417"
+      },
+      {
+        "name": "Rifugio Aosta",
+        "category": "Alpine hut",
+        "note": "5.1 mi from summit",
+        "lat": 45.96955,
+        "lon": 7.56144,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/353049833"
+      },
+      {
+        "name": "Berggasthaus Trift",
+        "category": "Alpine hut",
+        "note": "5.2 mi from summit",
+        "lat": 46.03004,
+        "lon": 7.72107,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/294171060"
+      }
+    ],
+    "food": [
+      {
+        "name": "Hotel Les Dents Blanches",
+        "category": "Restaurant",
+        "note": "Valley base meals near Evolène."
+      },
+      {
+        "name": "Restaurant La Place",
+        "category": "Restaurant",
+        "note": "Local Valais cooking."
+      },
+      {
+        "name": "Café de la Poste",
+        "category": "Café",
+        "note": "Simple start-of-day fuel."
+      }
+    ],
+    "trails": [
+      {
+        "name": "South Ridge (Wandflue)"
+      },
+      {
+        "name": "West Ridge"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Dent_Blanche.jpg",
+      "credit": "Stan Shebs",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dent_Blanche.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Dent_Blanche.jpg",
+        "credit": "Stan Shebs",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dent_Blanche.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ober_Gabelhorn%2C_Zinalrothorn_and_Dent_Blanche_%2815232269129%29.jpg/960px-Ober_Gabelhorn%2C_Zinalrothorn_and_Dent_Blanche_%2815232269129%29.jpg",
+        "credit": "Björn S...",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ober_Gabelhorn,_Zinalrothorn_and_Dent_Blanche_(15232269129).jpg"
+      }
+    ]
+  },
+  {
+    "id": "pizbernina",
+    "name": "Piz Bernina",
+    "lat": 46.3823,
+    "lon": 9.9081,
+    "elevationFt": 13284,
+    "prominenceFt": 7336,
+    "range": "Bernina Range",
+    "country": "Switzerland",
+    "description": "Piz Bernina is the highest summit of the Eastern Alps and the easternmost Alpine 4000er. The normal Spallagrat / Biancograt approaches from Diavolezza or the Tschierva Hut combine glacier travel with an airy final ridge. Stage in Pontresina or St. Moritz.",
+    "firstAscent": "1850",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Easternmost 4000er of the Alps — the Bernina high point above Pontresina.",
+    "seoMetaDescription": "Piz Bernina trip guide: alpine glacier climb, Jul–Sep, Pontresina / Diavolezza staging, easternmost 4000er, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general summit permit; hut and cableway logistics plus seasonal ridge conditions apply.",
+    "nearestTown": {
+      "name": "Pontresina",
+      "region": "Graubünden",
+      "distanceMiles": 8,
+      "route": "Diavolezza / Val Roseg",
+      "lat": 46.4917,
+      "lon": 9.9014
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Pontresina",
+        "region": "Graubünden",
+        "distanceMiles": 8,
+        "route": "Diavolezza / Val Roseg",
+        "lat": 46.4917,
+        "lon": 9.9014
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Berghaus Diavolezza",
+        "category": "Alpine hut",
+        "note": "3.4 mi from summit",
+        "lat": 46.41224,
+        "lon": 9.96505,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/479305503"
+      },
+      {
+        "name": "Berninahaus",
+        "category": "Hotel",
+        "note": "5.3 mi from summit",
+        "lat": 46.4452,
+        "lon": 9.97098,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/438576060"
+      },
+      {
+        "name": "Albergo Ospizio Bernina",
+        "category": "Hotel",
+        "note": "5.8 mi from summit",
+        "lat": 46.4112,
+        "lon": 10.02194,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/418953431"
+      }
+    ],
+    "food": [
+      {
+        "name": "Restaurant Steinbock",
+        "category": "Restaurant",
+        "note": "Pontresina classic after Bernina days."
+      },
+      {
+        "name": "Hofrestaurant",
+        "category": "Restaurant",
+        "note": "Hearty Engadin meals."
+      },
+      {
+        "name": "Café Cycle",
+        "category": "Café",
+        "note": "Light breakfast before Diavolezza."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Spallagrat normal"
+      },
+      {
+        "name": "Biancograt"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Piz_Bernina.jpg/960px-Piz_Bernina.jpg",
+      "credit": "ZachT",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piz_Bernina.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Piz_Bernina.jpg/960px-Piz_Bernina.jpg",
+        "credit": "ZachT",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piz_Bernina.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Piz_Bernina_Aug_2008_close.jpg/960px-Piz_Bernina_Aug_2008_close.jpg",
+        "credit": "Marco Zanoli (sidonius)",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piz_Bernina_Aug_2008_close.jpg"
+      }
+    ]
+  },
+  {
+    "id": "granparadiso",
+    "name": "Gran Paradiso",
+    "lat": 45.5183,
+    "lon": 7.2667,
+    "elevationFt": 13323,
+    "prominenceFt": 6165,
+    "range": "Graian Alps",
+    "country": "Italy",
+    "description": "Gran Paradiso is Italy’s highest mountain wholly inside the country and a popular first 4000er. The normal route from Rifugio Vittorio Emanuele II is a glacier climb to a short final scramble on the Madonna summit block. Stage in Valsavarenche (Aosta Valley) inside Gran Paradiso National Park.",
+    "firstAscent": "1860",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Highest peak entirely in Italy — the classic first 4000er of the Graian Alps.",
+    "seoMetaDescription": "Gran Paradiso trip guide: alpine glacier climb, Jun–Sep, Valsavarenche staging, Italy’s high point, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit inside Gran Paradiso National Park for the normal route; park rules and hut bookings apply. Confirm current trail/glacier notices.",
+    "nearestTown": {
+      "name": "Valsavarenche",
+      "region": "Aosta Valley",
+      "distanceMiles": 6,
+      "route": "Rifugio Vittorio Emanuele II",
+      "lat": 45.583,
+      "lon": 7.21
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Valsavarenche",
+        "region": "Aosta Valley",
+        "distanceMiles": 6,
+        "route": "Rifugio Vittorio Emanuele II",
+        "lat": 45.583,
+        "lon": 7.21
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Agriturismo Lo Mayen",
+        "category": "Guest house",
+        "note": "4.6 mi from summit",
+        "lat": 45.57173,
+        "lon": 7.20987,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/725271625"
+      },
+      {
+        "name": "Rifugio Vittorio Sella",
+        "category": "Alpine hut",
+        "note": "4.6 mi from summit",
+        "lat": 45.5802,
+        "lon": 7.30327,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1666029174"
+      },
+      {
+        "name": "Hotel Parco Nazionale",
+        "category": "Hotel",
+        "note": "5.8 mi from summit",
+        "lat": 45.59229,
+        "lon": 7.20924,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1424104327"
+      }
+    ],
+    "food": [
+      {
+        "name": "Ristorante Gran Paradiso",
+        "category": "Restaurant",
+        "note": "Valley meal after hut days."
+      },
+      {
+        "name": "Hotel Notre Maison",
+        "category": "Restaurant",
+        "note": "Aosta Valley cooking."
+      },
+      {
+        "name": "Bar Centrale",
+        "category": "Café",
+        "note": "Coffee before the approach hike."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Normal route via Rifugio Vittorio Emanuele"
+      },
+      {
+        "name": "Chabod approach"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Gran_Paradiso_dalla_Valsavarenche.JPG/960px-Gran_Paradiso_dalla_Valsavarenche.JPG",
+      "credit": "Alessandro Cantamessa",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gran_Paradiso_dalla_Valsavarenche.JPG"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Gran_Paradiso_dalla_Valsavarenche.JPG/960px-Gran_Paradiso_dalla_Valsavarenche.JPG",
+        "credit": "Alessandro Cantamessa",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gran_Paradiso_dalla_Valsavarenche.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Gran_Paradiso.jpg",
+        "credit": "Unknown",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gran_Paradiso.jpg"
+      }
+    ]
+  },
+  {
+    "id": "cimaggrande",
+    "name": "Cima Grande di Lavaredo",
+    "aliases": [
+      "Tre Cime di Lavaredo",
+      "Drei Zinnen",
+      "Cima Grande"
+    ],
+    "lat": 46.6189,
+    "lon": 12.3025,
+    "elevationFt": 9839,
+    "prominenceFt": 1772,
+    "range": "Dolomites",
+    "country": "Italy",
+    "description": "Cima Grande is the central and highest tower of the Tre Cime di Lavaredo. The normal route is a classic Dolomite rock climb with fixed gear in places; the north face holds historic hard routes. Most visitors hike the circuit around the towers from Rifugio Auronzo without summiting.",
+    "firstAscent": "1869",
+    "difficulty": "Technical rock",
+    "difficultyTier": "alpine-technical",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "The highest of the Tre Cime / Drei Zinnen — the postcard wall of the Dolomites.",
+    "seoMetaDescription": "Cima Grande di Lavaredo trip guide: Dolomite rock climb, Jun–Sep, Tre Cime circuit, Auronzo staging, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit for the normal rock route; paid access roads / parking to Rifugio Auronzo apply in season. Climbing ethics and fixed-gear norms are local.",
+    "nearestTown": {
+      "name": "Misurina",
+      "region": "Veneto",
+      "distanceMiles": 4,
+      "route": "Rifugio Auronzo road",
+      "lat": 46.582,
+      "lon": 12.253
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Misurina",
+        "region": "Veneto",
+        "distanceMiles": 4,
+        "route": "Rifugio Auronzo road",
+        "lat": 46.582,
+        "lon": 12.253
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Grand Hotel Misurina",
+        "category": "Hotel",
+        "note": "3.3 mi from summit",
+        "lat": 46.58441,
+        "lon": 12.25363,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/472594230"
+      },
+      {
+        "name": "Panorama",
+        "category": "Hotel",
+        "note": "6.3 mi from summit",
+        "lat": 46.69979,
+        "lon": 12.36586,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/684255988"
+      },
+      {
+        "name": "Cafe Marlen",
+        "category": "Guest house",
+        "note": "8.8 mi from summit",
+        "lat": 46.73486,
+        "lon": 12.22419,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/279714466"
+      }
+    ],
+    "food": [
+      {
+        "name": "Rifugio Auronzo",
+        "category": "Alpine hut",
+        "note": "Busy hut meals at the trailhead."
+      },
+      {
+        "name": "Ristorante Malga Rin Bianco",
+        "category": "Restaurant",
+        "note": "Valley option near Misurina."
+      },
+      {
+        "name": "Bar Toblin",
+        "category": "Café",
+        "note": "Quick coffee before the circuit."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Normal route (SE face)"
+      },
+      {
+        "name": "Tre Cime circuit hike"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg/960px-Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg",
+      "credit": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but …",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg/960px-Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg",
+        "credit": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but …",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Drei_Zinnen_1.jpg/960px-Drei_Zinnen_1.jpg",
+        "credit": "Steinsplitter",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drei_Zinnen_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "bennevis",
+    "name": "Ben Nevis",
+    "aliases": [
+      "Beinn Nibheis"
+    ],
+    "lat": 56.7969,
+    "lon": -5.0036,
+    "elevationFt": 4413,
+    "prominenceFt": 4413,
+    "range": "Grampian Mountains",
+    "country": "United Kingdom",
+    "description": "Ben Nevis is the highest peak in the UK. The Mountain Track (pony track) from Glen Nevis is a long, steep day hike in all weather; the North Face holds serious winter and rock climbs. Navigation errors in cloud are common—carry a map/compass and turn around if conditions collapse.",
+    "firstAscent": "1771",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Sep",
+    "whyNotable": "Highest mountain in the British Isles — Scotland’s classic summit walk.",
+    "seoMetaDescription": "Ben Nevis trip guide: strenuous day hike, May–Sep, Fort William staging, UK high point, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit. Park responsibly in Glen Nevis; seasonal path and weather warnings from the Nevis Landscape Partnership / outdoor centers apply.",
+    "nearestTown": {
+      "name": "Fort William",
+      "region": "Highland",
+      "distanceMiles": 5,
+      "route": "Glen Nevis",
+      "lat": 56.8198,
+      "lon": -5.1052
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Fort William",
+        "region": "Highland",
+        "distanceMiles": 5,
+        "route": "Glen Nevis",
+        "lat": 56.8198,
+        "lon": -5.1052
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Ben Nevis Hotel and Leisure Club",
+        "category": "Hotel",
+        "note": "3.8 mi from summit",
+        "lat": 56.82693,
+        "lon": -5.08654,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/471028484"
+      },
+      {
+        "name": "Inverlochy Castle Hotel",
+        "category": "Hotel",
+        "note": "3.8 mi from summit",
+        "lat": 56.84437,
+        "lon": -5.05403,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/470690310"
+      },
+      {
+        "name": "Cuil Na Sithe",
+        "category": "Guest house",
+        "note": "4.1 mi from summit",
+        "lat": 56.83492,
+        "lon": -5.08797,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/472231352"
+      }
+    ],
+    "food": [
+      {
+        "name": "The Crofter",
+        "category": "Restaurant",
+        "note": "Hearty Fort William meals."
+      },
+      {
+        "name": "Café Beag",
+        "category": "Café",
+        "note": "Pre-hike coffee in town."
+      },
+      {
+        "name": "Ben Nevis Inn",
+        "category": "Restaurant",
+        "note": "Near the Glen Nevis approach."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Mountain Track (Pony Track)"
+      },
+      {
+        "name": "Carn Mòr Dearg Arête"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/North_face_of_Ben_Nevis.jpg/1280px-North_face_of_Ben_Nevis.jpg",
+      "credit": "Corrie camper",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_face_of_Ben_Nevis.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/North_face_of_Ben_Nevis.jpg/1280px-North_face_of_Ben_Nevis.jpg",
+        "credit": "Corrie camper",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_face_of_Ben_Nevis.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/North-east_face_of_Ben_Nevis_-_geograph.org.uk_-_7870856.jpg/1280px-North-east_face_of_Ben_Nevis_-_geograph.org.uk_-_7870856.jpg",
+        "credit": "Scott Cormie",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:North-east_face_of_Ben_Nevis_-_geograph.org.uk_-_7870856.jpg"
+      }
+    ]
+  },
+  {
+    "id": "snowdon",
+    "name": "Snowdon / Yr Wyddfa",
+    "aliases": [
+      "Yr Wyddfa",
+      "Snowdon"
+    ],
+    "lat": 53.0685,
+    "lon": -4.0762,
+    "elevationFt": 3560,
+    "prominenceFt": 3406,
+    "range": "Snowdonia",
+    "country": "United Kingdom",
+    "description": "Yr Wyddfa (Snowdon) is Wales’s high point and one of Britain’s busiest mountains. Popular paths include Llanberis, Pyg, Miners, Watkin, and Rhyd Ddu; Crib Goch adds exposed scrambling. Trains on the Snowdon Mountain Railway also reach the summit complex in season.",
+    "firstAscent": "1639",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "day-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Highest peak in Wales — busy ridge walks and a summit café above Llanberis.",
+    "seoMetaDescription": "Snowdon / Yr Wyddfa trip guide: Class 1–2 hike, May–Oct, Llanberis staging, Wales high point, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit. Parking fills early; Eryri/Snowdonia National Park path and railway rules apply. Check weather and path status before you go.",
+    "nearestTown": {
+      "name": "Llanberis",
+      "region": "Gwynedd",
+      "distanceMiles": 4,
+      "route": "Llanberis Path",
+      "lat": 53.117,
+      "lon": -4.127
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Llanberis",
+        "region": "Gwynedd",
+        "distanceMiles": 4,
+        "route": "Llanberis Path",
+        "lat": 53.117,
+        "lon": -4.127
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Y Gwynedd",
+        "category": "Hotel",
+        "note": "4.0 mi from summit",
+        "lat": 53.11854,
+        "lon": -4.12373,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/883672991"
+      },
+      {
+        "name": "Dolbadarn Hotel",
+        "category": "Hotel",
+        "note": "4.0 mi from summit",
+        "lat": 53.11861,
+        "lon": -4.1252,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/418161920"
+      },
+      {
+        "name": "The Heights",
+        "category": "Hotel",
+        "note": "4.1 mi from summit",
+        "lat": 53.12007,
+        "lon": -4.12576,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/418161924"
+      }
+    ],
+    "food": [
+      {
+        "name": "Peak Restaurant",
+        "category": "Restaurant",
+        "note": "Summit complex meals in season."
+      },
+      {
+        "name": "Pete’s Eats",
+        "category": "Café",
+        "note": "Classic Llanberis climber café."
+      },
+      {
+        "name": "The Heights Hotel",
+        "category": "Restaurant",
+        "note": "Village base after the descent."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Llanberis Path"
+      },
+      {
+        "name": "Pyg Track / Miner’s Track"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Snowdon_from_Llyn_Llydaw.jpg/960px-Snowdon_from_Llyn_Llydaw.jpg",
+      "credit": "User:Gdr",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowdon_from_Llyn_Llydaw.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Snowdon_from_Llyn_Llydaw.jpg/960px-Snowdon_from_Llyn_Llydaw.jpg",
+        "credit": "User:Gdr",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowdon_from_Llyn_Llydaw.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Yr_Wyddfa_%28Snowdon%29_from_Crib_Goch%2C_Parc_Cenedlaethol_Eryri_National_Park%2C_Cymru_%28Wales%29_03.jpg/960px-Yr_Wyddfa_%28Snowdon%29_from_Crib_Goch%2C_Parc_Cenedlaethol_Eryri_National_Park%2C_Cymru_%28Wales%29_03.jpg",
+        "credit": "Llywelyn2000",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yr_Wyddfa_(Snowdon)_from_Crib_Goch,_Parc_Cenedlaethol_Eryri_National_Park,_Cymru_(Wales)_03.jpg"
+      }
+    ]
+  },
+  {
+    "id": "scafellpike",
+    "name": "Scafell Pike",
+    "lat": 54.4542,
+    "lon": -3.2115,
+    "elevationFt": 3209,
+    "prominenceFt": 2992,
+    "range": "Lake District",
+    "country": "United Kingdom",
+    "description": "Scafell Pike is England’s highest summit. The Corridor Route from Wasdale or approaches from Seathwaite / Borrowdale are rocky, eroded day hikes with frequent cloud and navigation traps. Pair with Great Gable or Scafell only if daylight and skills allow.",
+    "firstAscent": "1802",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Sep",
+    "whyNotable": "Highest mountain in England — the Lake District’s rocky high point.",
+    "seoMetaDescription": "Scafell Pike trip guide: strenuous day hike, May–Sep, Wasdale staging, England’s high point, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit. National Trust / Lake District parking and Leave No Trace rules apply; paths are heavily eroded—stay on marked routes.",
+    "nearestTown": {
+      "name": "Wasdale Head",
+      "region": "Cumbria",
+      "distanceMiles": 3,
+      "route": "Corridor Route / Brown Tongue",
+      "lat": 54.466,
+      "lon": -3.26
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Wasdale Head",
+        "region": "Cumbria",
+        "distanceMiles": 3,
+        "route": "Corridor Route / Brown Tongue",
+        "lat": 54.466,
+        "lon": -3.26
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Bybeck House",
+        "category": "Guest house",
+        "note": "6.8 mi from summit",
+        "lat": 54.54714,
+        "lon": -3.15569,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/540928817"
+      },
+      {
+        "name": "Bridge Inn",
+        "category": "Hotel",
+        "note": "7.4 mi from summit",
+        "lat": 54.4023,
+        "lon": -3.37253,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/254002014"
+      },
+      {
+        "name": "Bridge End",
+        "category": "Guest house",
+        "note": "7.6 mi from summit",
+        "lat": 54.46429,
+        "lon": -3.02223,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1311846507"
+      }
+    ],
+    "food": [
+      {
+        "name": "Wasdale Head Inn",
+        "category": "Restaurant",
+        "note": "Classic climbers’ inn meals."
+      },
+      {
+        "name": "Barn Door Shop Café",
+        "category": "Café",
+        "note": "Supplies and snacks in Wasdale."
+      },
+      {
+        "name": "The Boot Inn",
+        "category": "Restaurant",
+        "note": "Eskdale option after long days."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Brown Tongue / Wasdale"
+      },
+      {
+        "name": "Corridor Route"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Scafell_Pike.jpg/960px-Scafell_Pike.jpg",
+      "credit": "The original uploader was Soloist at English Wikipedia.\n\nLater versions were …",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scafell_Pike.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Scafell_Pike.jpg/960px-Scafell_Pike.jpg",
+        "credit": "The original uploader was Soloist at English Wikipedia.\n\nLater versions were …",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scafell_Pike.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Great_Gable_and_Scafell_Pike_-_geograph.org.uk_-_2518813.jpg/960px-Great_Gable_and_Scafell_Pike_-_geograph.org.uk_-_2518813.jpg",
+        "credit": "Ian Greig",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Gable_and_Scafell_Pike_-_geograph.org.uk_-_2518813.jpg"
+      }
+    ]
+  },
+  {
+    "id": "carrauntoohil",
+    "name": "Carrauntoohil",
+    "aliases": [
+      "Corrán Tuathail"
+    ],
+    "lat": 51.9994,
+    "lon": -9.7428,
+    "elevationFt": 3409,
+    "prominenceFt": 3409,
+    "range": "MacGillycuddy's Reeks",
+    "country": "Ireland",
+    "description": "Carrauntoohil is Ireland’s high point in MacGillycuddy’s Reeks, County Kerry. The Brother O’Shea’s Gully / Devil’s Ladder approaches from Cronin’s Yard involve steep loose ground and frequent cloud; the Reeks Ridge is a serious scramble outing. Stage near Killarney or Beaufort.",
+    "firstAscent": "1840",
+    "difficulty": "Strenuous scramble / non-technical",
+    "difficultyTier": "scramble",
+    "bestSeason": "May–Sep",
+    "whyNotable": "Highest mountain in Ireland — the Reeks horseshoe above the Hag’s Glen.",
+    "seoMetaDescription": "Carrauntoohil trip guide: strenuous scramble, May–Sep, Hag’s Glen / Cronin’s Yard, Ireland’s high point, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit. Parking fees at Cronin’s Yard / Lisleibane are common; stay on paths and respect private farmland access.",
+    "nearestTown": {
+      "name": "Killarney",
+      "region": "Kerry",
+      "distanceMiles": 12,
+      "route": "Cronin's Yard / Hag's Glen",
+      "lat": 52.059,
+      "lon": -9.508
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Killarney",
+        "region": "Kerry",
+        "distanceMiles": 12,
+        "route": "Cronin's Yard / Hag's Glen",
+        "lat": 52.059,
+        "lon": -9.508
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Shamrock Farmhouse",
+        "category": "Guest house",
+        "note": "3.5 mi from summit",
+        "lat": 51.98612,
+        "lon": -9.66392,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/451942224"
+      },
+      {
+        "name": "Rowan Tree Inn",
+        "category": "Guest house",
+        "note": "4.7 mi from summit",
+        "lat": 52.01332,
+        "lon": -9.85071,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/451998857"
+      },
+      {
+        "name": "The Climber's Inn",
+        "category": "Hostel",
+        "note": "4.9 mi from summit",
+        "lat": 51.99463,
+        "lon": -9.85779,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1500049815"
+      }
+    ],
+    "food": [
+      {
+        "name": "Cronin's Yard Café",
+        "category": "Café",
+        "note": "Trailhead tea and snacks."
+      },
+      {
+        "name": "The Laurels",
+        "category": "Restaurant",
+        "note": "Killarney meals after the Reeks."
+      },
+      {
+        "name": "Murphy’s Bar",
+        "category": "Restaurant",
+        "note": "Casual Kerry fare."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Devil's Ladder"
+      },
+      {
+        "name": "Brother O'Shea's Gully"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Carrauntoohil_Group_from_Cruach_Mhor.jpg",
+      "credit": "Jim Barton",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carrauntoohil_Group_from_Cruach_Mhor.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Carrauntoohil_Group_from_Cruach_Mhor.jpg",
+        "credit": "Jim Barton",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carrauntoohil_Group_from_Cruach_Mhor.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Carrauntoohil%2C_Beenkeragh_Ridge%2C_Caher.jpg/1280px-Carrauntoohil%2C_Beenkeragh_Ridge%2C_Caher.jpg",
+        "credit": "Reeks District",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carrauntoohil,_Beenkeragh_Ridge,_Caher.jpg"
+      }
+    ]
+  },
+  {
+    "id": "gerlach",
+    "name": "Gerlachovský štít",
+    "aliases": [
+      "Gerlach",
+      "Gerlachovsky stit"
+    ],
+    "lat": 49.1642,
+    "lon": 20.1336,
+    "elevationFt": 8711,
+    "prominenceFt": 7726,
+    "range": "High Tatras",
+    "country": "Slovakia",
+    "description": "Gerlachovský štít is the high point of the High Tatras and Slovakia. The normal routes are technical enough that unguided ascent is restricted for visitors without local alpine qualifications—most hire a UIMLA/IFMGA mountain guide from Starý Smokovec or Tatranská Lomnica.",
+    "firstAscent": "1834",
+    "difficulty": "Alpine rock ridge",
+    "difficultyTier": "alpine-technical",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Highest peak in the High Tatras and of Slovakia — guide-required for most visitors.",
+    "seoMetaDescription": "Gerlachovský štít trip guide: alpine rock ridge, Jun–Sep, High Tatras guides, Slovakia high point, 3D terrain on PeakAtlas3D.",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Guided ascent required for most visitors (Tatra National Park rules). Book a certified mountain guide; unguided travel on the normal routes is restricted.",
+    "nearestTown": {
+      "name": "Starý Smokovec",
+      "region": "Prešov",
+      "distanceMiles": 6,
+      "route": "Velická dolina approaches",
+      "lat": 49.138,
+      "lon": 20.22
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Starý Smokovec",
+        "region": "Prešov",
+        "distanceMiles": 6,
+        "route": "Velická dolina approaches",
+        "lat": 49.138,
+        "lon": 20.22
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Crocus",
+        "category": "Hotel",
+        "note": "4.5 mi from summit",
+        "lat": 49.11886,
+        "lon": 20.0631,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/306536104"
+      },
+      {
+        "name": "Hotel Hubert",
+        "category": "Hotel",
+        "note": "4.5 mi from summit",
+        "lat": 49.11256,
+        "lon": 20.1942,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/441099627"
+      },
+      {
+        "name": "Grand Hotel Kempinski High Tatras",
+        "category": "Hotel",
+        "note": "4.6 mi from summit",
+        "lat": 49.11936,
+        "lon": 20.05893,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/944028881"
+      }
+    ],
+    "food": [
+      {
+        "name": "Grandhotel Praha Restaurant",
+        "category": "Restaurant",
+        "note": "Smokovec dining after Tatras days."
+      },
+      {
+        "name": "Reštaurácia Humno",
+        "category": "Restaurant",
+        "note": "Hearty Slovak meals."
+      },
+      {
+        "name": "Café Remata",
+        "category": "Café",
+        "note": "Coffee before guide meetups."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Velická próba (guided normal)"
+      },
+      {
+        "name": "Batizovská próba"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Gerlachovsk%C3%BD_%C5%A1t%C3%ADt_od_Ve%C4%BEk%C3%A9ho_Slavkova.jpg/1280px-Gerlachovsk%C3%BD_%C5%A1t%C3%ADt_od_Ve%C4%BEk%C3%A9ho_Slavkova.jpg",
+      "credit": "Pavol Svetoň",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gerlachovsk%C3%BD_%C5%A1t%C3%ADt_od_Ve%C4%BEk%C3%A9ho_Slavkova.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Gerlachovsk%C3%BD_%C5%A1t%C3%ADt_od_Ve%C4%BEk%C3%A9ho_Slavkova.jpg/1280px-Gerlachovsk%C3%BD_%C5%A1t%C3%ADt_od_Ve%C4%BEk%C3%A9ho_Slavkova.jpg",
+        "credit": "Pavol Svetoň",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gerlachovsk%C3%BD_%C5%A1t%C3%ADt_od_Ve%C4%BEk%C3%A9ho_Slavkova.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Gerlachovsky_stit_from_Velicka_dolina.jpg",
+        "credit": "Kristo",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gerlachovsky_stit_from_Velicka_dolina.jpg"
+      }
+    ]
+  },
+  {
+    "id": "etna",
+    "name": "Mount Etna",
+    "aliases": [
+      "Etna",
+      "Mongibello"
+    ],
+    "lat": 37.751,
+    "lon": 14.9934,
+    "elevationFt": 11014,
+    "prominenceFt": 11014,
+    "range": "Sicily",
+    "country": "Italy",
+    "description": "Mount Etna is Europe’s tallest active volcano. Summit elevation changes with eruptions; cableways and 4×4 tours from Rifugio Sapienza or Piano Provenzana shorten approaches, but crater-rim travel depends on volcanic alert levels. Always check INGV / park closures before going high.",
+    "firstAscent": "Unknown (ancient)",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Europe’s highest and most active volcano — Sicily’s restless summit.",
+    "seoMetaDescription": "Mount Etna trip guide: strenuous volcano hike, May–Oct, Catania staging, active crater rules, 3D terrain on PeakAtlas3D.",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Access above authorized zones often requires authorized guides when alert levels rise. Follow Etna Park / Civil Protection closures—summit travel can be banned during eruptions.",
+    "nearestTown": {
+      "name": "Nicolosi",
+      "region": "Sicily",
+      "distanceMiles": 12,
+      "route": "Rifugio Sapienza",
+      "lat": 37.616,
+      "lon": 15.024
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Nicolosi",
+        "region": "Sicily",
+        "distanceMiles": 12,
+        "route": "Rifugio Sapienza",
+        "lat": 37.616,
+        "lon": 15.024
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Airone Wellness Hotel",
+        "category": "Hotel",
+        "note": "7.0 mi from summit",
+        "lat": 37.68913,
+        "lon": 15.09567,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/472754944"
+      },
+      {
+        "name": "Villa Hirschen",
+        "category": "Guest house",
+        "note": "7.3 mi from summit",
+        "lat": 37.68775,
+        "lon": 15.10127,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/256277241"
+      },
+      {
+        "name": "La Ginestra dell'Etna",
+        "category": "Guest house",
+        "note": "7.4 mi from summit",
+        "lat": 37.68593,
+        "lon": 15.10188,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2340373023"
+      }
+    ],
+    "food": [
+      {
+        "name": "Rifugio Sapienza",
+        "category": "Restaurant",
+        "note": "Busy hut meals on the south side."
+      },
+      {
+        "name": "Osteria Etna",
+        "category": "Restaurant",
+        "note": "Nicolosi Sicilian cooking."
+      },
+      {
+        "name": "Café del Parco",
+        "category": "Café",
+        "note": "Coffee before the cableway."
+      }
+    ],
+    "trails": [
+      {
+        "name": "South side (Sapienza)"
+      },
+      {
+        "name": "North side (Piano Provenzana)"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/View_of_Mount_Etna_from_Reggio_Calabria_-_Italy_-_10_Feb._2017_-_%281%29.jpg/1280px-View_of_Mount_Etna_from_Reggio_Calabria_-_Italy_-_10_Feb._2017_-_%281%29.jpg",
+      "credit": "Jacopo Werther",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Mount_Etna_from_Reggio_Calabria_-_Italy_-_10_Feb._2017_-_(1).jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/View_of_Mount_Etna_from_Reggio_Calabria_-_Italy_-_10_Feb._2017_-_%281%29.jpg/1280px-View_of_Mount_Etna_from_Reggio_Calabria_-_Italy_-_10_Feb._2017_-_%281%29.jpg",
+        "credit": "Jacopo Werther",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Mount_Etna_from_Reggio_Calabria_-_Italy_-_10_Feb._2017_-_(1).jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Messina_Canyon-Etna-Volcano-Sicily-Italy_-_Creative_Commons_by_gnuckx_%283493037353%29.jpg/1280px-Messina_Canyon-Etna-Volcano-Sicily-Italy_-_Creative_Commons_by_gnuckx_%283493037353%29.jpg",
+        "credit": "gnuckx",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Messina_Canyon-Etna-Volcano-Sicily-Italy_-_Creative_Commons_by_gnuckx_(3493037353).jpg"
+      }
+    ]
+  },
+  {
+    "id": "vesuvius",
+    "name": "Mount Vesuvius",
+    "aliases": [
+      "Vesuvio"
+    ],
+    "lat": 40.8214,
+    "lon": 14.4261,
+    "elevationFt": 4203,
+    "prominenceFt": 4042,
+    "range": "Campanian volcanic arc",
+    "country": "Italy",
+    "description": "Vesuvius is the iconic volcano overlooking Naples and the site of the 79 AD eruption that buried Pompeii and Herculaneum. Today a ticketed path reaches the crater rim on a short, steep walk. Check park opening hours and volcanic alert status; summer heat and crowds are intense.",
+    "firstAscent": "Unknown (ancient)",
+    "difficulty": "Class 1 hike",
+    "difficultyTier": "day-hike",
+    "bestSeason": "Apr–Jun or Sep–Oct",
+    "whyNotable": "The volcano that buried Pompeii — a short crater-rim walk above the Bay of Naples.",
+    "seoMetaDescription": "Mount Vesuvius trip guide: Class 1 crater hike, Apr–Jun or Sep–Oct, Naples staging, Pompeii views, 3D terrain on PeakAtlas3D.",
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Entry ticket required for Vesuvius National Park crater path. Hours and access change with weather and alert level—book or buy on-site per current park rules.",
+    "nearestTown": {
+      "name": "Herculaneum",
+      "region": "Campania",
+      "distanceMiles": 5,
+      "route": "Vesuvius National Park road",
+      "lat": 40.806,
+      "lon": 14.35
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Herculaneum",
+        "region": "Campania",
+        "distanceMiles": 5,
+        "route": "Vesuvius National Park road",
+        "lat": 40.806,
+        "lon": 14.35
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hotel Forum",
+        "category": "Hotel",
+        "note": "6.2 mi from summit",
+        "lat": 40.74922,
+        "lon": 14.49634,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1670782366"
+      },
+      {
+        "name": "Il Fauno",
+        "category": "Guest house",
+        "note": "6.5 mi from summit",
+        "lat": 40.75765,
+        "lon": 14.51663,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/317474435"
+      },
+      {
+        "name": "Hotel Potenza",
+        "category": "Hotel",
+        "note": "8.5 mi from summit",
+        "lat": 40.85156,
+        "lon": 14.26944,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/415476691"
+      }
+    ],
+    "food": [
+      {
+        "name": "Restaurant Kona",
+        "category": "Restaurant",
+        "note": "Near park approaches."
+      },
+      {
+        "name": "Trattoria da Gennaro",
+        "category": "Restaurant",
+        "note": "Campanian meals after the rim."
+      },
+      {
+        "name": "Café Vesuvio",
+        "category": "Café",
+        "note": "Quick stop by the ticket area."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Crater rim path"
+      },
+      {
+        "name": "Nature trails on the lower flanks"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Vesuvius_from_Pompeii.jpg",
+      "credit": "Unknown",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vesuvius_from_Pompeii.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Vesuvius_from_Pompeii.jpg",
+        "credit": "Unknown",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vesuvius_from_Pompeii.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Mount_Vesuvius.jpg/1280px-Mount_Vesuvius.jpg",
+        "credit": "Purnawibawa",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Vesuvius.jpg"
+      }
+    ]
   }
 ]
