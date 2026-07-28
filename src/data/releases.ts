@@ -9,6 +9,17 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.2.8',
+    date: '2026-07-28',
+    title: 'Wider peak approach from search',
+    summary:
+      'Searching a mountain no longer dives into an ultra-close summit crop — orbit and hero framing pull back so the massif stays in view.',
+    highlights: [
+      'Lower orbit/hero zoom and pitch for peak cinematic framing',
+      'From the world globe (search), settle even a touch wider',
+    ],
+  },
+  {
     version: '0.2.7',
     date: '2026-07-28',
     title: 'Clear markers on peak maps',

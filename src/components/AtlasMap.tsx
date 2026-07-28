@@ -103,22 +103,37 @@ function createRandomWorldView() {
   }
 }
 
-const ORBIT_ZOOM = 12.9
+const ORBIT_ZOOM = 11.5
 /** Lower pitch = more top-down; steep angles pull empty far-horizon tiles. */
-const ORBIT_PITCH = 44
-const HERO_ZOOM = 13.35
-const HERO_PITCH = 50
+const ORBIT_PITCH = 40
+const HERO_ZOOM = 12.1
+const HERO_PITCH = 46
 const HERO_BEARING = -28
 /**
  * Look-at nudge toward the camera (meters). Keep modest so the summit stays
  * near the visual center of the padded viewport under pitch.
  */
-const ORBIT_FRAME_OFFSET_M = 220
-const HERO_FRAME_OFFSET_M = 280
+const ORBIT_FRAME_OFFSET_M = 320
+const HERO_FRAME_OFFSET_M = 400
 /** Full 360° orbit — paced slower for a calmer spin. */
 const SPIN_DURATION_MS = 26_400
 /** Shared duration for peak approach and leave (country/world) camera moves. */
 const PEAK_TRANSITION_MS = 5_040
+
+/**
+ * When jumping in from the spinning globe (search / world flags), ease in with
+ * a slightly wider final frame so the massif stays readable — not buried in
+ * the summit pixels.
+ */
+function peakApproachZooms(startZoom: number): {
+  orbit: number
+  hero: number
+} {
+  if (startZoom < 4) {
+    return { orbit: ORBIT_ZOOM - 0.35, hero: HERO_ZOOM - 0.35 }
+  }
+  return { orbit: ORBIT_ZOOM, hero: HERO_ZOOM }
+}
 
 const ACTIVITY_EVENTS = [
   'mousedown',
@@ -394,6 +409,9 @@ export function AtlasMap({
       applyPeakAtmosphere(map)
 
       const approachBearing = map.getBearing()
+      const { orbit: orbitZoom, hero: heroZoom } = peakApproachZooms(
+        map.getZoom(),
+      )
       const orbitCenter = peakFramingCenter(
         summit[0],
         summit[1],
@@ -414,7 +432,7 @@ export function AtlasMap({
         })
         map.jumpTo({
           center: heroCenter,
-          zoom: HERO_ZOOM,
+          zoom: heroZoom,
           pitch: HERO_PITCH,
           bearing: HERO_BEARING,
           padding: peakFramePadding(),
@@ -436,12 +454,12 @@ export function AtlasMap({
         const framePad = peakFramePadding()
         await flyToAsync(map, {
           center: orbitCenter,
-          zoom: ORBIT_ZOOM,
+          zoom: orbitZoom,
           pitch: ORBIT_PITCH,
           bearing: approachBearing,
           padding: framePad,
           duration: PEAK_TRANSITION_MS,
-          curve: 1.2,
+          curve: 1.35,
           easing: easeInOutCubic,
           essential: true,
         })
@@ -471,7 +489,7 @@ export function AtlasMap({
         })
         await easeToAsync(map, {
           center: heroCenter,
-          zoom: HERO_ZOOM,
+          zoom: heroZoom,
           pitch: HERO_PITCH,
           bearing: HERO_BEARING,
           padding: peakFramePadding(),
