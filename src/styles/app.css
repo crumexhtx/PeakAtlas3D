@@ -442,12 +442,41 @@ a {
   touch-action: pan-x pan-y pinch-zoom;
 }
 
-/* During peak orbit, hide bottom chrome so it cannot cover Skip / status. */
+/* During peak approach, hide bottom chrome so it cannot cover Skip / status. */
 .map-stage.is-cinematic .browse-bar,
 .map-stage.is-cinematic .country-panel-shell,
 .peak-overlay-panel.is-cinematic-hidden {
   visibility: hidden;
   pointer-events: none;
+}
+
+.peak-orbit-btn {
+  position: absolute;
+  top: calc(7.75rem + var(--safe-top));
+  left: calc(0.65rem + var(--safe-left));
+  z-index: 15;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(12, 18, 28, 0.92);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.peak-orbit-btn:hover,
+.peak-orbit-btn:focus-visible {
+  background: var(--accent-soft);
+  border-color: rgba(79, 195, 247, 0.55);
+  outline: none;
+}
+
+.peak-orbit-btn.is-orbiting {
+  background: rgba(79, 195, 247, 0.18);
+  border-color: rgba(79, 195, 247, 0.55);
 }
 
 .peak-overlay-panel {

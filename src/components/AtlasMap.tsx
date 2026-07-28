@@ -35,6 +35,7 @@ import {
   IDLE_ROTATE_DELAY_MS,
   IDLE_ROTATE_RESUME_MS,
   IDLE_SPIN_MAX_MS,
+  orbitAsync,
   peakFramePadding,
   peakFramingCenter,
   prefersReducedMotion,
@@ -109,7 +110,14 @@ const HERO_BEARING = -28
  * near the visual center of the padded viewport under pitch.
  */
 const HERO_FRAME_OFFSET_M = 400
-/** Zoom-in duration for peak approach (no orbit). */
+/** Manual 360° orbit — paced slow for a calm spin. */
+const SPIN_DURATION_MS = 26_400
+/**
+ * Peak approach fly-in. Slower than country leave so the summit reveal
+ * reads as a deliberate zoom rather than a snap.
+ */
+const PEAK_APPROACH_MS = 8_800
+/** Shared duration for leaving peak (country/world) camera moves. */
 const PEAK_TRANSITION_MS = 3_600
 
 /**
@@ -158,12 +166,14 @@ export function AtlasMap({
   /** Latest peak id from render — cleanup compares against it to skip StrictMode remounts. */
   const latestPeakIdRef = useRef<string | null>(null)
   const cinematicRunRef = useRef(0)
+  const orbitRunRef = useRef(0)
   const onCinematicChangeRef = useRef(onCinematicChange)
   /** Stable for this page session; randomized again on full refresh. */
   const [worldView] = useState(createRandomWorldView)
   const [mapReady, setMapReady] = useState(false)
   const [mapInstance, setMapInstance] = useState<MapLibreMap | null>(null)
   const [spinning, setSpinning] = useState(false)
+  const [orbiting, setOrbiting] = useState(false)
   const { units } = useUnits()
 
   onCinematicChangeRef.current = onCinematicChange
@@ -239,6 +249,37 @@ export function AtlasMap({
     if (idleTimerRef.current != null) {
       window.clearTimeout(idleTimerRef.current)
       idleTimerRef.current = null
+    }
+  }
+
+  function stopPeakOrbit() {
+    orbitRunRef.current += 1
+    setOrbiting(false)
+    const map = getMap()
+    if (map) setMapInteractive(map, true)
+  }
+
+  async function startPeakOrbit() {
+    const map = getMap()
+    if (!map || !activePeak || cinematic || prefersReducedMotion()) return
+
+    const runId = ++orbitRunRef.current
+    setOrbiting(true)
+    setMapInteractive(map, false)
+
+    try {
+      await orbitAsync(
+        map,
+        SPIN_DURATION_MS,
+        () =>
+          orbitRunRef.current === runId &&
+          latestPeakIdRef.current === activePeak.id,
+      )
+    } finally {
+      if (orbitRunRef.current === runId) {
+        setOrbiting(false)
+        setMapInteractive(map, true)
+      }
     }
   }
 
@@ -363,6 +404,8 @@ export function AtlasMap({
       // the same commit; a stop() after that cancels the zoom-out and leaves
       // the camera stuck at summit framing (common with single-peak countries).
       cinematicRunRef.current += 1
+      orbitRunRef.current += 1
+      setOrbiting(false)
       setMapInteractive(map, true)
       map.setTerrain(null)
       onCinematicChangeRef.current({ active: false, status: '' })
@@ -374,6 +417,8 @@ export function AtlasMap({
       return
     }
     prevPeakIdRef.current = peakId
+    orbitRunRef.current += 1
+    setOrbiting(false)
 
     const runId = ++cinematicRunRef.current
     let cancelled = false
@@ -462,7 +507,7 @@ export function AtlasMap({
           pitch: HERO_PITCH,
           bearing: HERO_BEARING,
           padding: framePad,
-          duration: PEAK_TRANSITION_MS,
+          duration: PEAK_APPROACH_MS,
           curve: 1.35,
           easing: easeInOutCubic,
           essential: true,
@@ -499,6 +544,8 @@ export function AtlasMap({
     return () => {
       cancelled = true
       cinematicRunRef.current += 1
+      orbitRunRef.current += 1
+      setOrbiting(false)
       try {
         map.stop()
       } catch {
@@ -522,13 +569,15 @@ export function AtlasMap({
     }
   }, [mapReady, activePeak])
 
-  // Skip cinematic from overlay button.
+  // Skip approach from overlay button.
   useEffect(() => {
     if (!skipNonce || !activePeak) return
     const map = getMap()
     if (!map) return
 
     cinematicRunRef.current += 1
+    orbitRunRef.current += 1
+    setOrbiting(false)
     map.stop()
     map.setTerrain({
       source: TERRAIN_SOURCE_ID,
@@ -678,6 +727,25 @@ export function AtlasMap({
           peaks={peaks}
         />
       )}
+
+      {mode === 'peak' &&
+        activePeak &&
+        !cinematic &&
+        !earthOnly &&
+        !prefersReducedMotion() && (
+          <button
+            type="button"
+            className={`peak-orbit-btn${orbiting ? ' is-orbiting' : ''}`}
+            aria-pressed={orbiting}
+            aria-label={orbiting ? 'Stop peak orbit' : 'Orbit around peak'}
+            onClick={() => {
+              if (orbiting) stopPeakOrbit()
+              else void startPeakOrbit()
+            }}
+          >
+            {orbiting ? 'Stop orbit' : 'Orbit 360°'}
+          </button>
+        )}
 
       {cinematic && (
         <div className="cinematic-overlay">

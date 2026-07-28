@@ -14,3 +14,12 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv
 }
+
+interface Gtag {
+  (...args: unknown[]): void
+}
+
+interface Window {
+  dataLayer: unknown[]
+  gtag: Gtag
+}

@@ -1,6 +1,7 @@
-import { lazy, Suspense } from 'react'
+﻿import { lazy, Suspense } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react'
+import { GoogleAnalytics } from './components/GoogleAnalytics'
 import { PlausibleAnalytics } from './components/PlausibleAnalytics'
 import { UnitsProvider } from './context/UnitsContext'
 import './styles/app.css'
@@ -42,6 +43,7 @@ export default function App() {
   return (
     <UnitsProvider>
       <BrowserRouter>
+        <GoogleAnalytics />
         <Suspense fallback={<RouteFallback />}>
           <Routes>
             <Route element={<AtlasLayout />}>
