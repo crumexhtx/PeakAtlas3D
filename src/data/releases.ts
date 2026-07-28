@@ -9,6 +9,20 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.3.1',
+    date: '2026-07-28',
+    title: 'Alps & Europe peaks',
+    summary:
+      'Fourteen popular Alps and Europe summits join the catalog with validated elevations, mountain-face photos, OSM lodging, and trip notes.',
+    highlights: [
+      'Pennine Alps: Monte Rosa, Weisshorn, Dom, Dent Blanche, Piz Bernina',
+      'Italy / Dolomites: Gran Paradiso, Cima Grande, Etna, Vesuvius',
+      'UK & Ireland: Ben Nevis, Snowdon, Scafell Pike, Carrauntoohil',
+      'High Tatras: Gerlachovský štít (guide-required notes)',
+      'Curated Commons face photos pinned in the photo validator',
+    ],
+  },
+  {
     version: '0.3.0',
     date: '2026-07-28',
     title: 'Post-launch: flagship peaks + analytics',

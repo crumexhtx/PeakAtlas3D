@@ -294,6 +294,90 @@ const PERMIT_BY_ID = {
     permitNotes:
       'Border-zone / park permits typically required; use a current licensed operator for access rules.',
   },
+  monterosa: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No general government summit permit; hut bookings and glacier conditions are the practical gates. Confirm Swiss/Italian border-approach rules with current hut staff.',
+  },
+  weisshorn: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No general summit permit; Weisshorn Hut bookings and conditions are the main logistics constraint.',
+  },
+  dom: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No general summit permit; Dom Hut reservations and glacier conditions govern the climb.',
+  },
+  dentblanche: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No general summit permit; hut space and summer conditions are the practical limits.',
+  },
+  pizbernina: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No general summit permit; hut and cableway logistics plus seasonal ridge conditions apply.',
+  },
+  granparadiso: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No summit permit inside Gran Paradiso National Park for the normal route; park rules and hut bookings apply. Confirm current trail/glacier notices.',
+  },
+  cimaggrande: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No summit permit for the normal rock route; paid access roads / parking to Rifugio Auronzo apply in season. Climbing ethics and fixed-gear norms are local.',
+  },
+  bennevis: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No summit permit. Park responsibly in Glen Nevis; seasonal path and weather warnings from the Nevis Landscape Partnership / outdoor centers apply.',
+  },
+  snowdon: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No summit permit. Parking fills early; Eryri/Snowdonia National Park path and railway rules apply. Check weather and path status before you go.',
+  },
+  scafellpike: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No summit permit. National Trust / Lake District parking and Leave No Trace rules apply; paths are heavily eroded—stay on marked routes.',
+  },
+  carrauntoohil: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No summit permit. Parking fees at Cronin’s Yard / Lisleibane are common; stay on paths and respect private farmland access.',
+  },
+  gerlach: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Guided ascent required for most visitors (Tatra National Park rules). Book a certified mountain guide; unguided travel on the normal routes is restricted.',
+  },
+  etna: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Access above authorized zones often requires authorized guides when alert levels rise. Follow Etna Park / Civil Protection closures—summit travel can be banned during eruptions.',
+  },
+  vesuvius: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Entry ticket required for Vesuvius National Park crater path. Hours and access change with weather and alert level—book or buy on-site per current park rules.',
+  },
 }
 
 function clipSeo(text, max = 155) {

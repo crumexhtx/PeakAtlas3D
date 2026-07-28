@@ -97,6 +97,54 @@ const CURATED_FILES = {
     'File:Adams The Tetons and the Snake River.jpg',
     'File:Willow Flats area and Teton Range in Grand Teton National Park.jpg',
   ],
+  // Alps + Europe batch — mountain-face stills (avoid ambiguous / rejected filenames).
+  monterosa: [
+    'File:Dufourspitze (Monte Rosa) and Monte Rosa Glacier as seen from Gornergrat, Wallis, Switzerland, 2012 August.jpg',
+    'File:Aerial image of the Monte Rosa east face (view from the east).jpg',
+  ],
+  weisshorn: ['File:Weisshorn from Rothorn.jpg', 'File:Weisshorn.jpg'],
+  dom: [
+    'File:Dom (mountain).jpg',
+    'File:Dom, Täschhorn and Alphubel (15089083580).jpg',
+  ],
+  dentblanche: [
+    'File:Dent Blanche.jpg',
+    'File:Ober Gabelhorn, Zinalrothorn and Dent Blanche (15232269129).jpg',
+  ],
+  pizbernina: ['File:Piz Bernina.jpg', 'File:Piz Bernina Aug 2008 close.jpg'],
+  granparadiso: [
+    'File:Gran Paradiso dalla Valsavarenche.JPG',
+    'File:Gran Paradiso.jpg',
+  ],
+  cimaggrande: [
+    'File:Drei Zinnen Tre Cime di Lavaredo Dolomites.jpg',
+    'File:Drei Zinnen 1.jpg',
+  ],
+  bennevis: [
+    'File:North face of Ben Nevis.jpg',
+    'File:North-east face of Ben Nevis - geograph.org.uk - 7870856.jpg',
+  ],
+  snowdon: [
+    'File:Snowdon from Llyn Llydaw.jpg',
+    'File:Yr Wyddfa (Snowdon) from Crib Goch, Parc Cenedlaethol Eryri National Park, Cymru (Wales) 03.jpg',
+  ],
+  scafellpike: [
+    'File:Scafell Pike.jpg',
+    'File:Great Gable and Scafell Pike - geograph.org.uk - 2518813.jpg',
+  ],
+  carrauntoohil: [
+    'File:Carrauntoohil Group from Cruach Mhor.jpg',
+    'File:Carrauntoohil, Beenkeragh Ridge, Caher.jpg',
+  ],
+  gerlach: [
+    'File:Gerlachovský štít od Veľkého Slavkova.jpg',
+    'File:Gerlachovsky stit from Velicka dolina.jpg',
+  ],
+  etna: [
+    'File:View of Mount Etna from Reggio Calabria - Italy - 10 Feb. 2017 - (1).jpg',
+    'File:Messina Canyon-Etna-Volcano-Sicily-Italy - Creative Commons by gnuckx (3493037353).jpg',
+  ],
+  vesuvius: ['File:Vesuvius from Pompeii.jpg', 'File:Mount Vesuvius.jpg'],
 }
 
 /** Peaks allowed to ship with a single validated still (Commons scarcity). */
@@ -129,6 +177,9 @@ const REQUIRE_CONTEXT = {
   kazbek: ['kazbek', 'kazbegi', 'georgia', 'caucasus'],
   elbrus: ['elbrus', 'caucasus', 'russia'],
   halti: ['finland', 'norway', 'tunturi', 'lapland', 'kilpis', 'scandinavia', 'halti'],
+  dom: ['valais', 'pennine', 'switzerland', 'tasch', 'mischabel', 'alphubel', 'zermatt'],
+  etna: ['sicily', 'sicilia', 'catania', 'messina', 'reggio', 'italy', 'italia', 'volcano'],
+  vesuvius: ['pompeii', 'naples', 'napoli', 'italy', 'italia', 'vesuvio', 'bay of naples'],
 }
 
 const REJECT_PATTERNS =

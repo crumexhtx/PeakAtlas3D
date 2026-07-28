@@ -4014,5 +4014,361 @@
       "region": "Washington",
       "distanceMiles": 12
     }
+  },
+  {
+    "id": "monterosa",
+    "name": "Monte Rosa (Dufourspitze)",
+    "lat": 45.9369,
+    "lon": 7.8667,
+    "elevationFt": 15203,
+    "prominenceFt": 7103,
+    "range": "Pennine Alps",
+    "country": "Switzerland",
+    "aliases": [
+      "Dufourspitze",
+      "Punta Dufour",
+      "Monte Rosa"
+    ],
+    "firstAscent": "1855",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Highest summit in Switzerland and second-highest in the Alps after Mont Blanc.",
+    "description": "The Dufourspitze crowns the Monte Rosa massif on the Swiss–Italian border above Zermatt and Macugnaga. Standard approaches are long glacier climbs with crevasse hazard and high-camp logistics from the Monte Rosa Hut or Italian bivouacs. Treat it as a serious Pennine Alps expedition peak, not a day hike.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Zermatt",
+      "region": "Valais",
+      "distanceMiles": 10
+    }
+  },
+  {
+    "id": "weisshorn",
+    "name": "Weisshorn",
+    "lat": 46.1014,
+    "lon": 7.7139,
+    "elevationFt": 14783,
+    "prominenceFt": 4052,
+    "range": "Pennine Alps",
+    "country": "Switzerland",
+    "firstAscent": "1861",
+    "difficulty": "Alpine rock ridge",
+    "difficultyTier": "alpine-technical",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "One of the great isolated 4000ers of the Valais — a steep pyramid above Randa.",
+    "description": "The Weisshorn is a classic Valais 4000er: long approaches, mixed rock and snow ridges, and serious exposure on the standard East Ridge from the Weisshorn Hut. Most parties treat it as a guided or highly experienced alpine climb from Randa / Täsch.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Randa",
+      "region": "Valais",
+      "distanceMiles": 5
+    }
+  },
+  {
+    "id": "dom",
+    "name": "Dom",
+    "lat": 46.095,
+    "lon": 7.8589,
+    "elevationFt": 14911,
+    "prominenceFt": 3432,
+    "range": "Pennine Alps",
+    "country": "Switzerland",
+    "aliases": [
+      "Dom de Mischabel"
+    ],
+    "firstAscent": "1858",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Highest mountain entirely in Switzerland — the Mischabel giant above Saas-Fee.",
+    "description": "The Dom is the highest peak lying wholly in Switzerland, rising from the Mischabel range above Saas-Fee. The Festigrat / normal route is a long glacier climb from the Dom Hut with sustained altitude and crevasse terrain. Stage in Saas-Fee and budget for an alpine start.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Saas-Fee",
+      "region": "Valais",
+      "distanceMiles": 5
+    }
+  },
+  {
+    "id": "dentblanche",
+    "name": "Dent Blanche",
+    "lat": 46.0342,
+    "lon": 7.6119,
+    "elevationFt": 14295,
+    "prominenceFt": 3002,
+    "range": "Pennine Alps",
+    "country": "Switzerland",
+    "firstAscent": "1862",
+    "difficulty": "Alpine rock ridge",
+    "difficultyTier": "alpine-technical",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Striking Valais rock pyramid guarding the approaches between Zinal and Zermatt.",
+    "description": "Dent Blanche is a sharp Pennine Alps pyramid climbed most often via the South Ridge (Wandfluegrat) from the Dent Blanche Hut. Expect sustained rock, snow patches, and route-finding in mixed terrain. Stage from Les Haudères / Evolène or Zermatt-side valleys.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Les Haudères",
+      "region": "Valais",
+      "distanceMiles": 8
+    }
+  },
+  {
+    "id": "pizbernina",
+    "name": "Piz Bernina",
+    "lat": 46.3823,
+    "lon": 9.9081,
+    "elevationFt": 13284,
+    "prominenceFt": 7336,
+    "range": "Bernina Range",
+    "country": "Switzerland",
+    "firstAscent": "1850",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Easternmost 4000er of the Alps — the Bernina high point above Pontresina.",
+    "description": "Piz Bernina is the highest summit of the Eastern Alps and the easternmost Alpine 4000er. The normal Spallagrat / Biancograt approaches from Diavolezza or the Tschierva Hut combine glacier travel with an airy final ridge. Stage in Pontresina or St. Moritz.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Pontresina",
+      "region": "Graubünden",
+      "distanceMiles": 8
+    }
+  },
+  {
+    "id": "granparadiso",
+    "name": "Gran Paradiso",
+    "lat": 45.5183,
+    "lon": 7.2667,
+    "elevationFt": 13323,
+    "prominenceFt": 6165,
+    "range": "Graian Alps",
+    "country": "Italy",
+    "firstAscent": "1860",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Highest peak entirely in Italy — the classic first 4000er of the Graian Alps.",
+    "description": "Gran Paradiso is Italy’s highest mountain wholly inside the country and a popular first 4000er. The normal route from Rifugio Vittorio Emanuele II is a glacier climb to a short final scramble on the Madonna summit block. Stage in Valsavarenche (Aosta Valley) inside Gran Paradiso National Park.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Valsavarenche",
+      "region": "Aosta Valley",
+      "distanceMiles": 6
+    }
+  },
+  {
+    "id": "cimaggrande",
+    "name": "Cima Grande di Lavaredo",
+    "lat": 46.6189,
+    "lon": 12.3025,
+    "elevationFt": 9839,
+    "prominenceFt": 1772,
+    "range": "Dolomites",
+    "country": "Italy",
+    "aliases": [
+      "Tre Cime di Lavaredo",
+      "Drei Zinnen",
+      "Cima Grande"
+    ],
+    "firstAscent": "1869",
+    "difficulty": "Technical rock",
+    "difficultyTier": "alpine-technical",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "The highest of the Tre Cime / Drei Zinnen — the postcard wall of the Dolomites.",
+    "description": "Cima Grande is the central and highest tower of the Tre Cime di Lavaredo. The normal route is a classic Dolomite rock climb with fixed gear in places; the north face holds historic hard routes. Most visitors hike the circuit around the towers from Rifugio Auronzo without summiting.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Misurina",
+      "region": "Veneto",
+      "distanceMiles": 4
+    }
+  },
+  {
+    "id": "bennevis",
+    "name": "Ben Nevis",
+    "lat": 56.7969,
+    "lon": -5.0036,
+    "elevationFt": 4413,
+    "prominenceFt": 4413,
+    "range": "Grampian Mountains",
+    "country": "United Kingdom",
+    "aliases": [
+      "Beinn Nibheis"
+    ],
+    "firstAscent": "1771",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Sep",
+    "whyNotable": "Highest mountain in the British Isles — Scotland’s classic summit walk.",
+    "description": "Ben Nevis is the highest peak in the UK. The Mountain Track (pony track) from Glen Nevis is a long, steep day hike in all weather; the North Face holds serious winter and rock climbs. Navigation errors in cloud are common—carry a map/compass and turn around if conditions collapse.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Fort William",
+      "region": "Highland",
+      "distanceMiles": 5
+    }
+  },
+  {
+    "id": "snowdon",
+    "name": "Snowdon / Yr Wyddfa",
+    "lat": 53.0685,
+    "lon": -4.0762,
+    "elevationFt": 3560,
+    "prominenceFt": 3406,
+    "range": "Snowdonia",
+    "country": "United Kingdom",
+    "aliases": [
+      "Yr Wyddfa",
+      "Snowdon"
+    ],
+    "firstAscent": "1639",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "day-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Highest peak in Wales — busy ridge walks and a summit café above Llanberis.",
+    "description": "Yr Wyddfa (Snowdon) is Wales’s high point and one of Britain’s busiest mountains. Popular paths include Llanberis, Pyg, Miners, Watkin, and Rhyd Ddu; Crib Goch adds exposed scrambling. Trains on the Snowdon Mountain Railway also reach the summit complex in season.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Llanberis",
+      "region": "Gwynedd",
+      "distanceMiles": 4
+    }
+  },
+  {
+    "id": "scafellpike",
+    "name": "Scafell Pike",
+    "lat": 54.4542,
+    "lon": -3.2115,
+    "elevationFt": 3209,
+    "prominenceFt": 2992,
+    "range": "Lake District",
+    "country": "United Kingdom",
+    "firstAscent": "1802",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Sep",
+    "whyNotable": "Highest mountain in England — the Lake District’s rocky high point.",
+    "description": "Scafell Pike is England’s highest summit. The Corridor Route from Wasdale or approaches from Seathwaite / Borrowdale are rocky, eroded day hikes with frequent cloud and navigation traps. Pair with Great Gable or Scafell only if daylight and skills allow.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Wasdale Head",
+      "region": "Cumbria",
+      "distanceMiles": 3
+    }
+  },
+  {
+    "id": "carrauntoohil",
+    "name": "Carrauntoohil",
+    "lat": 51.9994,
+    "lon": -9.7428,
+    "elevationFt": 3409,
+    "prominenceFt": 3409,
+    "range": "MacGillycuddy's Reeks",
+    "country": "Ireland",
+    "aliases": [
+      "Corrán Tuathail"
+    ],
+    "firstAscent": "1840",
+    "difficulty": "Strenuous scramble / non-technical",
+    "difficultyTier": "scramble",
+    "bestSeason": "May–Sep",
+    "whyNotable": "Highest mountain in Ireland — the Reeks horseshoe above the Hag’s Glen.",
+    "description": "Carrauntoohil is Ireland’s high point in MacGillycuddy’s Reeks, County Kerry. The Brother O’Shea’s Gully / Devil’s Ladder approaches from Cronin’s Yard involve steep loose ground and frequent cloud; the Reeks Ridge is a serious scramble outing. Stage near Killarney or Beaufort.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Killarney",
+      "region": "Kerry",
+      "distanceMiles": 12
+    }
+  },
+  {
+    "id": "gerlach",
+    "name": "Gerlachovský štít",
+    "lat": 49.1642,
+    "lon": 20.1336,
+    "elevationFt": 8711,
+    "prominenceFt": 7726,
+    "range": "High Tatras",
+    "country": "Slovakia",
+    "aliases": [
+      "Gerlach",
+      "Gerlachovsky stit"
+    ],
+    "firstAscent": "1834",
+    "difficulty": "Alpine rock ridge",
+    "difficultyTier": "alpine-technical",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Highest peak in the High Tatras and of Slovakia — guide-required for most visitors.",
+    "description": "Gerlachovský štít is the high point of the High Tatras and Slovakia. The normal routes are technical enough that unguided ascent is restricted for visitors without local alpine qualifications—most hire a UIMLA/IFMGA mountain guide from Starý Smokovec or Tatranská Lomnica.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Starý Smokovec",
+      "region": "Prešov",
+      "distanceMiles": 6
+    }
+  },
+  {
+    "id": "etna",
+    "name": "Mount Etna",
+    "lat": 37.751,
+    "lon": 14.9934,
+    "elevationFt": 11014,
+    "prominenceFt": 11014,
+    "range": "Sicily",
+    "country": "Italy",
+    "aliases": [
+      "Etna",
+      "Mongibello"
+    ],
+    "firstAscent": "Unknown (ancient)",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Europe’s highest and most active volcano — Sicily’s restless summit.",
+    "description": "Mount Etna is Europe’s tallest active volcano. Summit elevation changes with eruptions; cableways and 4×4 tours from Rifugio Sapienza or Piano Provenzana shorten approaches, but crater-rim travel depends on volcanic alert levels. Always check INGV / park closures before going high.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Nicolosi",
+      "region": "Sicily",
+      "distanceMiles": 12
+    }
+  },
+  {
+    "id": "vesuvius",
+    "name": "Mount Vesuvius",
+    "lat": 40.8214,
+    "lon": 14.4261,
+    "elevationFt": 4203,
+    "prominenceFt": 4042,
+    "range": "Campanian volcanic arc",
+    "country": "Italy",
+    "aliases": [
+      "Vesuvio"
+    ],
+    "firstAscent": "Unknown (ancient)",
+    "difficulty": "Class 1 hike",
+    "difficultyTier": "day-hike",
+    "bestSeason": "Apr–Jun or Sep–Oct",
+    "whyNotable": "The volcano that buried Pompeii — a short crater-rim walk above the Bay of Naples.",
+    "description": "Vesuvius is the iconic volcano overlooking Naples and the site of the 79 AD eruption that buried Pompeii and Herculaneum. Today a ticketed path reaches the crater rim on a short, steep walk. Check park opening hours and volcanic alert status; summer heat and crowds are intense.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Herculaneum",
+      "region": "Campania",
+      "distanceMiles": 5
+    }
   }
 ]
