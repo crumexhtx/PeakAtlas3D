@@ -9,6 +9,18 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.2.9',
+    date: '2026-07-28',
+    title: 'Zoom-only peak entry (no orbit)',
+    summary:
+      'Opening a peak now flies straight to the summit framing — the long orbit spin is gone — and style-swap races that could leave the peak page stuck are hardened.',
+    highlights: [
+      'Removed peak orbit; single zoom-in to summit view',
+      'Wait for basemap style reload before flying (fixes blank/stuck peak after search)',
+      'Catalog load errors no longer hang on “Loading peak…” forever',
+    ],
+  },
+  {
     version: '0.2.8',
     date: '2026-07-28',
     title: 'Wider peak approach from search',

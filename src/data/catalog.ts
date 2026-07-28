@@ -13,10 +13,16 @@ let fullCatalogPromise: Promise<Peak[]> | null = null
 /** Lazily load the full dossier catalog (photos, amenities, nearby places). */
 export function loadFullCatalog(): Promise<Peak[]> {
   if (fullCatalog) return Promise.resolve(fullCatalog)
-  fullCatalogPromise ??= import('./peaks.json').then((mod) => {
-    fullCatalog = mod.default as Peak[]
-    return fullCatalog
-  })
+  fullCatalogPromise ??= import('./peaks.json')
+    .then((mod) => {
+      fullCatalog = mod.default as Peak[]
+      return fullCatalog
+    })
+    .catch((err) => {
+      // Allow a later navigation / refresh to retry the dynamic import.
+      fullCatalogPromise = null
+      throw err
+    })
   return fullCatalogPromise
 }
 

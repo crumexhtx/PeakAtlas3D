@@ -86,6 +86,38 @@ export function waitForMapIdle(
   })
 }
 
+/** Wait until the basemap style has finished loading (or timeout). */
+export function waitForStyleReady(
+  map: MapLibreMap,
+  timeoutMs = 4_000,
+): Promise<void> {
+  return new Promise((resolve) => {
+    let settled = false
+    const finish = () => {
+      if (settled) return
+      settled = true
+      window.clearTimeout(timer)
+      map.off('style.load', onLoad)
+      map.off('remove', onRemove)
+      resolve()
+    }
+    const onLoad = () => finish()
+    const onRemove = () => finish()
+    const timer = window.setTimeout(finish, timeoutMs)
+    try {
+      if (map.isStyleLoaded()) {
+        finish()
+        return
+      }
+    } catch {
+      finish()
+      return
+    }
+    map.once('style.load', onLoad)
+    map.once('remove', onRemove)
+  })
+}
+
 export async function flyToAsync(map: MapLibreMap, options: CameraOptions) {
   const duration =
     typeof options?.duration === 'number' ? options.duration : 3_000
