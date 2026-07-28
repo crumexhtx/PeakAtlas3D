@@ -17805,5 +17805,582 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Vesuvius.jpg"
       }
     ]
+  },
+  {
+    "id": "slide",
+    "name": "Slide Mountain",
+    "aliases": [
+      "Slide Mtn"
+    ],
+    "lat": 41.9986,
+    "lon": -74.3864,
+    "elevationFt": 4180,
+    "prominenceFt": 3280,
+    "range": "Catskills",
+    "country": "USA",
+    "description": "Slide Mountain anchors the Burroughs Range in Catskill Park. The Wittenberg–Cornell–Slide Trail is the classic approach—a long forest hike with ledge views near the top. The true summit is wooded; ledges and openings nearby give the best vistas. Expect mud, roots, and busy weekends in leaf season.",
+    "firstAscent": "unknown",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Highest peak in the Catskills and the high point of Ulster County and the New York metro area.",
+    "seoMetaDescription": "Slide Mountain trip guide: Catskills high point, strenuous hike, Phoenicia staging, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit. Catskill Forest Preserve rules apply (day-use, camping regs, Leave No Trace). Parking fills early at busy trailheads.",
+    "nearestTown": {
+      "name": "Phoenicia",
+      "region": "New York",
+      "distanceMiles": 12,
+      "route": "NY-28 / Oliverea Rd to Slide trailheads",
+      "lat": 42.006,
+      "lon": -74.333
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Phoenicia",
+        "region": "New York",
+        "distanceMiles": 12,
+        "route": "NY-28 / Oliverea Rd to Slide trailheads",
+        "lat": 42.006,
+        "lon": -74.333
+      }
+    ],
+    "hotels": [
+      {
+        "name": "The Pines",
+        "category": "Hotel",
+        "note": "6.9 mi from summit",
+        "lat": 42.04742,
+        "lon": -74.27017,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/304811303"
+      },
+      {
+        "name": "Phoenicia Belle Bed & Breakfast",
+        "category": "Hotel",
+        "note": "7.0 mi from summit",
+        "lat": 42.08363,
+        "lon": -74.31352,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/304810268"
+      },
+      {
+        "name": "The Wheelhouse Inn",
+        "category": "Hotel",
+        "note": "10.4 mi from summit",
+        "lat": 42.1325,
+        "lon": -74.47892,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/10276282819"
+      }
+    ],
+    "food": [
+      {
+        "name": "Brio’s Restaurant",
+        "category": "Restaurant",
+        "note": "Solid post-hike meal in Phoenicia."
+      },
+      {
+        "name": "Sweet Sue’s",
+        "category": "Café",
+        "note": "Breakfast before early Catskills starts."
+      },
+      {
+        "name": "Phoenicia Diner",
+        "category": "Casual eats",
+        "note": "Easy refuel on NY-28."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Wittenberg–Cornell–Slide Trail (Burroughs Range)"
+      },
+      {
+        "name": "Phoenicia–East Branch / Curtis–Ormsbee approaches"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/2025-07-21_14_08_27_View_west_toward_the_summit_of_Slide_Mountain_from_the_Wittenberg-Cornell-Slide_Trail_%28Burroughs_Range_Trail%29_just_west_of_the_summit_of_Cornell_Mountain_in_Shandaken%2C_Ulster_County%2C_New_York.jpg/1280px-thumbnail.jpg",
+      "credit": "Famartin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025-07-21_14_08_27_View_west_toward_the_summit_of_Slide_Mountain_from_the_Wittenberg-Cornell-Slide_Trail_(Burroughs_Range_Trail)_just_west_of_the_summit_of_Cornell_Mountain_in_Shandaken,_Ulster_County,_New_York.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/2025-07-21_14_08_27_View_west_toward_the_summit_of_Slide_Mountain_from_the_Wittenberg-Cornell-Slide_Trail_%28Burroughs_Range_Trail%29_just_west_of_the_summit_of_Cornell_Mountain_in_Shandaken%2C_Ulster_County%2C_New_York.jpg/1280px-thumbnail.jpg",
+        "credit": "Famartin",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025-07-21_14_08_27_View_west_toward_the_summit_of_Slide_Mountain_from_the_Wittenberg-Cornell-Slide_Trail_(Burroughs_Range_Trail)_just_west_of_the_summit_of_Cornell_Mountain_in_Shandaken,_Ulster_County,_New_York.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/2025-07-21_14_09_24_View_west_toward_the_summit_of_Slide_Mountain_from_the_Wittenberg-Cornell-Slide_Trail_%28Burroughs_Range_Trail%29_just_west_of_the_summit_of_Cornell_Mountain_in_Shandaken%2C_Ulster_County%2C_New_York.jpg/1280px-thumbnail.jpg",
+        "credit": "Famartin",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025-07-21_14_09_24_View_west_toward_the_summit_of_Slide_Mountain_from_the_Wittenberg-Cornell-Slide_Trail_(Burroughs_Range_Trail)_just_west_of_the_summit_of_Cornell_Mountain_in_Shandaken,_Ulster_County,_New_York.jpg"
+      }
+    ]
+  },
+  {
+    "id": "hunterny",
+    "name": "Hunter Mountain",
+    "aliases": [
+      "Hunter Mtn",
+      "Hunter Mountain (NY)"
+    ],
+    "lat": 42.1779,
+    "lon": -74.2304,
+    "elevationFt": 4040,
+    "prominenceFt": 2140,
+    "range": "Catskills",
+    "country": "USA",
+    "description": "Hunter Mountain rises above the village of Hunter in Greene County. Hikers reach the fire-tower summit via Becker Hollow, Spruceton, or ski-area connectors. Winter brings deep snow and wind on the open tower; summer weekends are busy. The ski resort occupies the north face—stay on designated hiking routes.",
+    "firstAscent": "unknown",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Second-highest Catskill peak, topped by a restored fire tower with wide views over the range.",
+    "seoMetaDescription": "Hunter Mountain trip guide: Catskills fire tower, strenuous hike, Hunter NY staging, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit. Forest Preserve rules apply; respect ski-area closures and private land boundaries near the resort.",
+    "nearestTown": {
+      "name": "Hunter",
+      "region": "New York",
+      "distanceMiles": 3,
+      "route": "NY-214 / Becker Hollow or Spruceton approaches",
+      "lat": 42.2106,
+      "lon": -74.2174
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Hunter",
+        "region": "New York",
+        "distanceMiles": 3,
+        "route": "NY-214 / Becker Hollow or Spruceton approaches",
+        "lat": 42.2106,
+        "lon": -74.2174
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Kaatskill Mountain Club",
+        "category": "Hotel",
+        "note": "2.0 mi from summit",
+        "lat": 42.2046,
+        "lon": -74.21603,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2622427137"
+      },
+      {
+        "name": "The Base Lodge",
+        "category": "Alpine hut",
+        "note": "2.4 mi from summit",
+        "lat": 42.20671,
+        "lon": -74.20591,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/11267359522"
+      },
+      {
+        "name": "Trail View Inn",
+        "category": "Guest house",
+        "note": "2.4 mi from summit",
+        "lat": 42.21009,
+        "lon": -74.21363,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/8225731494"
+      }
+    ],
+    "food": [
+      {
+        "name": "Jägerberg Biergarten",
+        "category": "Restaurant",
+        "note": "Après-hike fare in Hunter village."
+      },
+      {
+        "name": "Prospect Restaurant",
+        "category": "Restaurant",
+        "note": "Sit-down meal after tower days."
+      },
+      {
+        "name": "Hunter Mountain Brewery",
+        "category": "Pub / grill",
+        "note": "Casual refuel near the ski area."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Becker Hollow Trail"
+      },
+      {
+        "name": "Spruceton Trail / Hunter Mountain Trail"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/NY_214_mountainous_scene.JPG/1280px-NY_214_mountainous_scene.JPG",
+      "credit": "Mitchazenia",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NY_214_mountainous_scene.JPG"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/NY_214_mountainous_scene.JPG/1280px-NY_214_mountainous_scene.JPG",
+        "credit": "Mitchazenia",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:NY_214_mountainous_scene.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Southwest_Hunter_Mountain_from_Geiger_Point%2C_Hunter%2C_NY.jpg/1280px-Southwest_Hunter_Mountain_from_Geiger_Point%2C_Hunter%2C_NY.jpg",
+        "credit": "Daniel Case",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Southwest_Hunter_Mountain_from_Geiger_Point,_Hunter,_NY.jpg"
+      }
+    ]
+  },
+  {
+    "id": "blackdome",
+    "name": "Black Dome",
+    "aliases": [
+      "Black Dome Mountain"
+    ],
+    "lat": 42.2701,
+    "lon": -74.1226,
+    "elevationFt": 3980,
+    "prominenceFt": 560,
+    "range": "Catskills",
+    "country": "USA",
+    "description": "Black Dome sits between Thomas Cole and Blackhead on the Blackhead Range. The Black Dome Range Trail links the trio; most hikers stage from Big Hollow Road. Expect steep forest climbs, muddy cols, and limited summit views through the trees—better vistas open on ledges along the ridge.",
+    "firstAscent": "unknown",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Third-highest Catskill peak and the high point of the Blackhead Range above Big Hollow.",
+    "seoMetaDescription": "Black Dome trip guide: Blackhead Range, strenuous hike, Windham / Big Hollow staging, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit. Catskill Forest Preserve day-use and camping rules apply; trailhead parking is limited.",
+    "nearestTown": {
+      "name": "Windham",
+      "region": "New York",
+      "distanceMiles": 8,
+      "route": "Big Hollow Rd trailheads",
+      "lat": 42.307,
+      "lon": -74.252
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Windham",
+        "region": "New York",
+        "distanceMiles": 8,
+        "route": "Big Hollow Rd trailheads",
+        "lat": 42.307,
+        "lon": -74.252
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Glen Falls House",
+        "category": "Hotel",
+        "note": "5.0 mi from summit",
+        "lat": 42.25403,
+        "lon": -74.02659,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/12499320060"
+      },
+      {
+        "name": "Winter Clove Inn",
+        "category": "Hotel",
+        "note": "5.1 mi from summit",
+        "lat": 42.24065,
+        "lon": -74.03202,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/711575126"
+      },
+      {
+        "name": "The Henson",
+        "category": "Hotel",
+        "note": "5.1 mi from summit",
+        "lat": 42.28988,
+        "lon": -74.21831,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/8401136454"
+      }
+    ],
+    "food": [
+      {
+        "name": "Windham Local",
+        "category": "Restaurant",
+        "note": "Solid meal base in Windham."
+      },
+      {
+        "name": "Cave Mountain Brewery",
+        "category": "Pub / grill",
+        "note": "Casual post-ridge refuel."
+      },
+      {
+        "name": "Coffee Pot Deli",
+        "category": "Café",
+        "note": "Breakfast before Big Hollow starts."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Black Dome Range Trail"
+      },
+      {
+        "name": "Escarpment Trail connectors via Blackhead"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Eastern_side_of_Black_Dome.jpg/1280px-Eastern_side_of_Black_Dome.jpg",
+      "credit": "MTBradley",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eastern_side_of_Black_Dome.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Eastern_side_of_Black_Dome.jpg/1280px-Eastern_side_of_Black_Dome.jpg",
+        "credit": "MTBradley",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eastern_side_of_Black_Dome.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Blackhead_Range.jpg",
+        "credit": "The original uploader was Daniel Case at English Wikipedia.",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackhead_Range.jpg"
+      }
+    ]
+  },
+  {
+    "id": "blackhead",
+    "name": "Blackhead",
+    "aliases": [
+      "Blackhead Mountain"
+    ],
+    "lat": 42.2679,
+    "lon": -74.1046,
+    "elevationFt": 3940,
+    "prominenceFt": 500,
+    "range": "Catskills",
+    "country": "USA",
+    "description": "Blackhead anchors the east end of the Blackhead Range and sits on the Escarpment / Long Path corridor. Approaches from Big Hollow or the Escarpment are steep; the eastern pitch can hold ice well into spring. Summit views are limited, but lookouts along the ridge open toward the Hudson Valley.",
+    "firstAscent": "unknown",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Eastern pillar of the Blackhead Range and one of four Catskill 3500 Club required winter peaks.",
+    "seoMetaDescription": "Blackhead Mountain trip guide: Escarpment Trail, Catskill 3500 winter peak, Windham staging, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit. Forest Preserve rules apply; carry traction in shoulder seasons on the east face.",
+    "nearestTown": {
+      "name": "Windham",
+      "region": "New York",
+      "distanceMiles": 9,
+      "route": "Big Hollow Rd / Escarpment Trail approaches",
+      "lat": 42.307,
+      "lon": -74.252
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Windham",
+        "region": "New York",
+        "distanceMiles": 9,
+        "route": "Big Hollow Rd / Escarpment Trail approaches",
+        "lat": 42.307,
+        "lon": -74.252
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Glen Falls House",
+        "category": "Hotel",
+        "note": "4.1 mi from summit",
+        "lat": 42.25403,
+        "lon": -74.02659,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/12499320060"
+      },
+      {
+        "name": "Winter Clove Inn",
+        "category": "Hotel",
+        "note": "4.2 mi from summit",
+        "lat": 42.24065,
+        "lon": -74.03202,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/711575126"
+      },
+      {
+        "name": "Riedlbauer's Resort",
+        "category": "Hotel",
+        "note": "4.2 mi from summit",
+        "lat": 42.25259,
+        "lon": -74.0254,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/12499320082"
+      }
+    ],
+    "food": [
+      {
+        "name": "Windham Local",
+        "category": "Restaurant",
+        "note": "Post-hike meal in Windham."
+      },
+      {
+        "name": "Albergo Allegria Restaurant",
+        "category": "Restaurant",
+        "note": "Sit-down option after Escarpment days."
+      },
+      {
+        "name": "Cave Mountain Brewery",
+        "category": "Pub / grill",
+        "note": "Casual refuel after Blackhead Range days."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Blackhead Mountain Spur / Escarpment Trail"
+      },
+      {
+        "name": "Black Dome Range Trail"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Blackhead_Mountain_from_Black_Dome.jpg/1280px-Blackhead_Mountain_from_Black_Dome.jpg",
+      "credit": "Kevin Kenny from Niskayuna, NY, Schenectady. Cropped and color-corrected prio…",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackhead_Mountain_from_Black_Dome.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Blackhead_Mountain_from_Black_Dome.jpg/1280px-Blackhead_Mountain_from_Black_Dome.jpg",
+        "credit": "Kevin Kenny from Niskayuna, NY, Schenectady. Cropped and color-corrected prio…",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackhead_Mountain_from_Black_Dome.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Blackhead_Range_from_Buck_Ridge_Lookout_in_autumn.jpg/1280px-Blackhead_Range_from_Buck_Ridge_Lookout_in_autumn.jpg",
+        "credit": "Daniel Case",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackhead_Range_from_Buck_Ridge_Lookout_in_autumn.jpg"
+      }
+    ]
+  },
+  {
+    "id": "westkill",
+    "name": "West Kill Mountain",
+    "aliases": [
+      "Westkill Mountain",
+      "West Kill"
+    ],
+    "lat": 42.1679,
+    "lon": -74.2896,
+    "elevationFt": 3880,
+    "prominenceFt": 1220,
+    "range": "Catskills",
+    "country": "USA",
+    "description": "West Kill Mountain is the western crown of the Devil’s Path above Spruceton Valley. The Diamond Notch / Devil’s Path approach is steep and often wet, with Buck Ridge Lookout as the signature viewpoint. Expect a full day, scarce water on the ridge, and quieter crowds than Slide or Hunter.",
+    "firstAscent": "unknown",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "High point of the Devil’s Path west of Stony Clove—steep, rooty, and classic Catskills ridge hiking.",
+    "seoMetaDescription": "West Kill Mountain trip guide: Devil’s Path, strenuous hike, Spruceton staging, 3D terrain on PeakAtlas3D.",
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit. Forest Preserve rules apply; Spruceton / Diamond Notch parking is limited on peak weekends.",
+    "nearestTown": {
+      "name": "Lexington",
+      "region": "New York",
+      "distanceMiles": 8,
+      "route": "Spruceton Rd / Diamond Notch approaches",
+      "lat": 42.239,
+      "lon": -74.355
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Lexington",
+        "region": "New York",
+        "distanceMiles": 8,
+        "route": "Spruceton Rd / Diamond Notch approaches",
+        "lat": 42.239,
+        "lon": -74.355
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Kaatskill Mountain Club",
+        "category": "Hotel",
+        "note": "4.5 mi from summit",
+        "lat": 42.2046,
+        "lon": -74.21603,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2622427137"
+      },
+      {
+        "name": "Harris's Happy Hunter Hideaway",
+        "category": "Guest house",
+        "note": "4.8 mi from summit",
+        "lat": 42.21175,
+        "lon": -74.21683,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/8218635457"
+      },
+      {
+        "name": "The Fairlawn Inn",
+        "category": "Guest house",
+        "note": "4.8 mi from summit",
+        "lat": 42.21103,
+        "lon": -74.21497,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/8225731457"
+      }
+    ],
+    "food": [
+      {
+        "name": "Last Chance Cheese & Antiques",
+        "category": "Casual eats",
+        "note": "Snack stop in Tannersville / Phoenicia corridor."
+      },
+      {
+        "name": "Zadooria Restaurant",
+        "category": "Restaurant",
+        "note": "Meal option toward Hunter / Tannersville."
+      },
+      {
+        "name": "Maggie’s Krooked Café",
+        "category": "Café",
+        "note": "Breakfast before Spruceton starts."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Devil’s Path (West Kill)"
+      },
+      {
+        "name": "Diamond Notch Trail connectors"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/West_Kill_and_Spruceton_Road.jpg/1280px-West_Kill_and_Spruceton_Road.jpg",
+      "credit": "Daniel Case",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:West_Kill_and_Spruceton_Road.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/West_Kill_and_Spruceton_Road.jpg/1280px-West_Kill_and_Spruceton_Road.jpg",
+        "credit": "Daniel Case",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:West_Kill_and_Spruceton_Road.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Steep%2C_rocky_section_of_Devil%27s_Path_on_West_Kill_Mountain%2C_Spruceton%2C_NY.jpg/1280px-Steep%2C_rocky_section_of_Devil%27s_Path_on_West_Kill_Mountain%2C_Spruceton%2C_NY.jpg",
+        "credit": "Daniel Case",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steep,_rocky_section_of_Devil%27s_Path_on_West_Kill_Mountain,_Spruceton,_NY.jpg"
+      }
+    ]
   }
 ]

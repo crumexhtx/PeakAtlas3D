@@ -378,6 +378,36 @@ const PERMIT_BY_ID = {
     permitNotes:
       'Entry ticket required for Vesuvius National Park crater path. Hours and access change with weather and alert level—book or buy on-site per current park rules.',
   },
+  slide: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No summit permit. Catskill Forest Preserve rules apply (day-use, camping regs, Leave No Trace). Parking fills early at busy trailheads.',
+  },
+  hunterny: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No summit permit. Forest Preserve rules apply; respect ski-area closures and private land boundaries near the resort.',
+  },
+  blackdome: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No summit permit. Catskill Forest Preserve day-use and camping rules apply; trailhead parking is limited.',
+  },
+  blackhead: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No summit permit. Forest Preserve rules apply; carry traction in shoulder seasons on the east face.',
+  },
+  westkill: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No summit permit. Forest Preserve rules apply; Spruceton / Diamond Notch parking is limited on peak weekends.',
+  },
 }
 
 function clipSeo(text, max = 155) {

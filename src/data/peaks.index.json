@@ -4370,5 +4370,137 @@
       "region": "Campania",
       "distanceMiles": 5
     }
+  },
+  {
+    "id": "slide",
+    "name": "Slide Mountain",
+    "lat": 41.9986,
+    "lon": -74.3864,
+    "elevationFt": 4180,
+    "prominenceFt": 3280,
+    "range": "Catskills",
+    "country": "USA",
+    "aliases": [
+      "Slide Mtn"
+    ],
+    "firstAscent": "unknown",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Highest peak in the Catskills and the high point of Ulster County and the New York metro area.",
+    "description": "Slide Mountain anchors the Burroughs Range in Catskill Park. The Wittenberg–Cornell–Slide Trail is the classic approach—a long forest hike with ledge views near the top. The true summit is wooded; ledges and openings nearby give the best vistas. Expect mud, roots, and busy weekends in leaf season.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Phoenicia",
+      "region": "New York",
+      "distanceMiles": 12
+    }
+  },
+  {
+    "id": "hunterny",
+    "name": "Hunter Mountain",
+    "lat": 42.1779,
+    "lon": -74.2304,
+    "elevationFt": 4040,
+    "prominenceFt": 2140,
+    "range": "Catskills",
+    "country": "USA",
+    "aliases": [
+      "Hunter Mtn",
+      "Hunter Mountain (NY)"
+    ],
+    "firstAscent": "unknown",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Second-highest Catskill peak, topped by a restored fire tower with wide views over the range.",
+    "description": "Hunter Mountain rises above the village of Hunter in Greene County. Hikers reach the fire-tower summit via Becker Hollow, Spruceton, or ski-area connectors. Winter brings deep snow and wind on the open tower; summer weekends are busy. The ski resort occupies the north face—stay on designated hiking routes.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Hunter",
+      "region": "New York",
+      "distanceMiles": 3
+    }
+  },
+  {
+    "id": "blackdome",
+    "name": "Black Dome",
+    "lat": 42.2701,
+    "lon": -74.1226,
+    "elevationFt": 3980,
+    "prominenceFt": 560,
+    "range": "Catskills",
+    "country": "USA",
+    "aliases": [
+      "Black Dome Mountain"
+    ],
+    "firstAscent": "unknown",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Third-highest Catskill peak and the high point of the Blackhead Range above Big Hollow.",
+    "description": "Black Dome sits between Thomas Cole and Blackhead on the Blackhead Range. The Black Dome Range Trail links the trio; most hikers stage from Big Hollow Road. Expect steep forest climbs, muddy cols, and limited summit views through the trees—better vistas open on ledges along the ridge.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Windham",
+      "region": "New York",
+      "distanceMiles": 8
+    }
+  },
+  {
+    "id": "blackhead",
+    "name": "Blackhead",
+    "lat": 42.2679,
+    "lon": -74.1046,
+    "elevationFt": 3940,
+    "prominenceFt": 500,
+    "range": "Catskills",
+    "country": "USA",
+    "aliases": [
+      "Blackhead Mountain"
+    ],
+    "firstAscent": "unknown",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Eastern pillar of the Blackhead Range and one of four Catskill 3500 Club required winter peaks.",
+    "description": "Blackhead anchors the east end of the Blackhead Range and sits on the Escarpment / Long Path corridor. Approaches from Big Hollow or the Escarpment are steep; the eastern pitch can hold ice well into spring. Summit views are limited, but lookouts along the ridge open toward the Hudson Valley.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Windham",
+      "region": "New York",
+      "distanceMiles": 9
+    }
+  },
+  {
+    "id": "westkill",
+    "name": "West Kill Mountain",
+    "lat": 42.1679,
+    "lon": -74.2896,
+    "elevationFt": 3880,
+    "prominenceFt": 1220,
+    "range": "Catskills",
+    "country": "USA",
+    "aliases": [
+      "Westkill Mountain",
+      "West Kill"
+    ],
+    "firstAscent": "unknown",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "High point of the Devil’s Path west of Stony Clove—steep, rooty, and classic Catskills ridge hiking.",
+    "description": "West Kill Mountain is the western crown of the Devil’s Path above Spruceton Valley. The Diamond Notch / Devil’s Path approach is steep and often wet, with Buck Ridge Lookout as the signature viewpoint. Expect a full day, scarce water on the ridge, and quieter crowds than Slide or Hunter.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Lexington",
+      "region": "New York",
+      "distanceMiles": 8
+    }
   }
 ]
