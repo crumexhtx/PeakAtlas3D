@@ -20,7 +20,6 @@ export function HomePage() {
     earthOnly,
     setBrowse,
     clearCountry,
-    openPeak,
   } = useAtlas()
 
   const allCountrySummaries = useMemo(() => buildCountrySummaries(peaksIndex), [])
@@ -77,7 +76,6 @@ export function HomePage() {
           country={selectedSummary}
           peaks={countryPeakList}
           onClose={clearCountry}
-          onOpenPeak={openPeak}
         />
       )}
 

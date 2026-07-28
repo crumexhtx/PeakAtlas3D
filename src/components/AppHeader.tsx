@@ -142,11 +142,15 @@ export function AppHeader({
                 role="option"
                 aria-selected={index === activeIndex}
               >
-                <button
-                  type="button"
+                <Link
+                  to={`/peak/${peak.id}`}
                   className={`search-result${index === activeIndex ? ' is-active' : ''}`}
                   tabIndex={-1}
-                  onClick={() => selectPeak(peak)}
+                  onClick={() => {
+                    setQuery(peak.name)
+                    setOpen(false)
+                    setActiveIndex(-1)
+                  }}
                   onMouseEnter={() => setActiveIndex(index)}
                 >
                   <span className="result-name">{peak.name}</span>
@@ -154,7 +158,7 @@ export function AppHeader({
                     {formatElevation(peak.elevationFt, units)} · {peak.range} ·{' '}
                     {peak.country}
                   </span>
-                </button>
+                </Link>
               </li>
             ))}
           </ul>
@@ -163,6 +167,7 @@ export function AppHeader({
 
       <nav className="site-nav site-nav-compact" aria-label="Site">
         <NavLink to="/about">About</NavLink>
+        <NavLink to="/peaks">Peaks</NavLink>
         <NavLink to="/releases">Releases</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>

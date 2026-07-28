@@ -13,7 +13,7 @@ export function ContactPage() {
     applyDocumentMeta({
       title: 'Contact — PeakAtlas3D',
       description:
-        'Send feedback, corrections, or ideas for PeakAtlas3D — the world peak atlas.',
+        'Send feedback, corrections, or ideas for PeakAtlas3D — trip-ready peak guides with 3D terrain.',
       path: '/contact',
     })
   }, [])

@@ -21,12 +21,13 @@ export function FlagPeakMarker({ peak, onClick }: FlagPeakMarkerProps) {
 
   return (
     <Marker longitude={peak.lon} latitude={peak.lat} anchor="bottom">
-      <button
-        type="button"
+      <a
+        href={`/peak/${peak.id}`}
         className="flag-marker"
         title={`${peak.name} · ${peak.country}`}
         aria-label={`Open ${peak.name}`}
         onClick={(e) => {
+          e.preventDefault()
           e.stopPropagation()
           onClick(peak)
         }}
@@ -54,7 +55,7 @@ export function FlagPeakMarker({ peak, onClick }: FlagPeakMarkerProps) {
           </span>
         )}
         <span className="flag-marker-pin" aria-hidden="true" />
-      </button>
+      </a>
     </Marker>
   )
 }

@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom'
 import type { CountrySummary } from '../types/country'
 import type { PeakIndex } from '../types/peak'
 import { flagUrl } from '../lib/countries'
 import { formatElevation } from '../lib/geo'
+import { peakHref } from '../lib/routes'
 import { useUnits } from '../context/UnitsContext'
 import { DetailsSheet } from './DetailsSheet'
 
@@ -9,14 +11,12 @@ type CountryPanelProps = {
   country: CountrySummary
   peaks: PeakIndex[]
   onClose: () => void
-  onOpenPeak: (peak: PeakIndex) => void
 }
 
 export function CountryPanel({
   country,
   peaks,
   onClose,
-  onOpenPeak,
 }: CountryPanelProps) {
   const { units } = useUnits()
   const flag = flagUrl(country.name, 40)
@@ -67,13 +67,12 @@ export function CountryPanel({
             <div>
               <dt>Highest</dt>
               <dd>
-                <button
-                  type="button"
+                <Link
                   className="inline-peak-link"
-                  onClick={() => onOpenPeak(country.highestPeak)}
+                  to={peakHref(country.highestPeak.id, country.name)}
                 >
                   {country.highestPeak.name}
-                </button>
+                </Link>
                 <span className="stat-meta">
                   {formatElevation(country.highestPeak.elevationFt, units)}
                 </span>
@@ -97,16 +96,15 @@ export function CountryPanel({
           <ul className="country-peak-list">
             {ranked.map((peak) => (
               <li key={peak.id}>
-                <button
-                  type="button"
+                <Link
                   className="country-peak-row"
-                  onClick={() => onOpenPeak(peak)}
+                  to={peakHref(peak.id, country.name)}
                 >
                   <span className="result-name">{peak.name}</span>
                   <span className="result-meta">
                     {formatElevation(peak.elevationFt, units)} · {peak.range}
                   </span>
-                </button>
+                </Link>
               </li>
             ))}
           </ul>

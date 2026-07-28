@@ -251,6 +251,8 @@ a {
   text-align: left;
   cursor: pointer;
   border-radius: 8px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .search-result:hover,
@@ -954,6 +956,8 @@ a {
   text-align: left;
   cursor: pointer;
   border-radius: 6px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .country-peak-row:hover,
@@ -1067,6 +1071,8 @@ a {
   cursor: pointer;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.45));
   transition: transform 0.15s ease;
+  color: inherit;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
@@ -2877,6 +2883,60 @@ a.trail-bubble-label-link:focus-visible {
   color: #c9d7e8;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.peaks-directory-atlas-link {
+  margin: 0 0 1.5rem;
+}
+
+.peaks-directory-atlas-link a {
+  color: #c9d7e8;
+  font-weight: 600;
+}
+
+.peaks-directory-section h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.peaks-directory-count {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.peaks-directory-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.peaks-directory-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.peaks-directory-link:hover,
+.peaks-directory-link:focus-visible {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+.peaks-directory-name {
+  font-weight: 600;
+}
+
+.peaks-directory-meta {
+  font-size: 0.8rem;
+  color: var(--muted);
 }
 
 .disclaimer-section {

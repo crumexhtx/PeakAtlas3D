@@ -29,6 +29,7 @@ const today = new Date().toISOString().slice(0, 10)
 /** @type {{ path: string, changefreq: string, priority: string, lastmod: string }[]} */
 const staticRoutes = [
   { path: '/', changefreq: 'weekly', priority: '1.0', lastmod: today },
+  { path: '/peaks', changefreq: 'weekly', priority: '0.9', lastmod: today },
   { path: '/about', changefreq: 'monthly', priority: '0.6', lastmod: today },
   { path: '/releases', changefreq: 'weekly', priority: '0.7', lastmod: today },
   { path: '/contact', changefreq: 'yearly', priority: '0.4', lastmod: today },

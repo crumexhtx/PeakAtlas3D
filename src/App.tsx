@@ -25,6 +25,9 @@ const ReleasesPage = lazy(() =>
 const ContactPage = lazy(() =>
   import('./pages/ContactPage').then((m) => ({ default: m.ContactPage })),
 )
+const PeaksPage = lazy(() =>
+  import('./pages/PeaksPage').then((m) => ({ default: m.PeaksPage })),
+)
 
 function RouteFallback() {
   return (
@@ -46,6 +49,7 @@ export default function App() {
             </Route>
             <Route element={<ContentLayout />}>
               <Route path="about" element={<AboutPage />} />
+              <Route path="peaks" element={<PeaksPage />} />
               <Route path="releases" element={<ReleasesPage />} />
               <Route path="contact" element={<ContactPage />} />
             </Route>
