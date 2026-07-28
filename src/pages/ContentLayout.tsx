@@ -38,6 +38,7 @@ export function ContentLayout() {
             Atlas
           </NavLink>
           <NavLink to="/about">About</NavLink>
+          <NavLink to="/peaks">Peaks</NavLink>
           <NavLink to="/releases">Releases</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </nav>

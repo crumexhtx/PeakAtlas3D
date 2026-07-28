@@ -1,6 +1,9 @@
 /**
  * After Vite build, write route HTML shells with correct title / description / OG
- * tags so crawlers and link previews see peak-specific meta without waiting on JS.
+ * tags and crawlable body copy so Search Console can index without waiting on JS.
+ *
+ * SEO body is injected into `#root` as `#seo-prerender` (cleared when React mounts).
+ * A matching `<noscript>` copy remains for no-JS clients.
  *
  * Run: node scripts/prerender-meta.mjs
  * Env: SITE_URL=https://peakatlas3d.com (optional)
@@ -130,10 +133,9 @@ function formatFt(n) {
   return `${Number(n).toLocaleString('en-US')} ft`
 }
 
-function peakNoscriptBody(peak, url) {
+/** Shared article markup — used in crawlable `#seo-prerender` and `<noscript>`. */
+function peakArticleHtml(peak, url) {
   const location = peakLocationLabel(peak)
-  const region = peakRegion(peak)
-  const heading = peak.name
   const trails = (peak.trails || []).map((t) => t.name).filter(Boolean)
   const nearby = peak.nearbyPlaces?.length
     ? peak.nearbyPlaces
@@ -164,39 +166,11 @@ function peakNoscriptBody(peak, url) {
         </section>`
       : ''
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Mountain',
-    name: peak.name,
-    description: peakDescription(peak),
-    url,
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: peak.lat,
-      longitude: peak.lon,
-      elevation: `${Math.round(peak.elevationFt * 0.3048)} m`,
-    },
-    containedInPlace: {
-      '@type': 'MountainRange',
-      name: peak.range,
-    },
-    address: {
-      '@type': 'PostalAddress',
-      addressCountry: peak.country,
-      ...(region ? { addressRegion: region } : {}),
-    },
-    addressCountry: peak.country,
-    ...(region ? { addressRegion: region } : {}),
-  }
-
-  return `
-    <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
-    <noscript id="seo-noscript">
-      <main style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem;">
+  return `<main style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem;">
         <article itemscope itemtype="https://schema.org/Mountain">
           <header>
             <p>${escapeHtml(location)}</p>
-            <h1 itemprop="name">${escapeHtml(heading)}</h1>
+            <h1 itemprop="name">${escapeHtml(peak.name)}</h1>
             <p>Trip Guide &amp; 3D Map</p>
             <p>${escapeHtml(peak.range)} · Difficulty, season, and access — then explore the 3D terrain</p>
           </header>
@@ -234,10 +208,135 @@ function peakNoscriptBody(peak, url) {
           </section>
           ${nearbyList}
           ${trailList}
-          <p><a href="${escapeAttr(url)}">${escapeHtml(url)}</a></p>
+          <nav aria-label="Site">
+            <p><a href="${escapeAttr(url)}">${escapeHtml(url)}</a></p>
+            <p><a href="${escapeAttr(siteUrl)}/peaks">All peaks</a> · <a href="${escapeAttr(siteUrl)}/">Atlas</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
+          </nav>
         </article>
-      </main>
-    </noscript>`
+      </main>`
+}
+
+function peakMountainJsonLd(peak, url) {
+  const region = peakRegion(peak)
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Mountain',
+    name: peak.name,
+    description: peakDescription(peak),
+    url,
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: peak.lat,
+      longitude: peak.lon,
+      elevation: `${Math.round(peak.elevationFt * 0.3048)} m`,
+    },
+    containedInPlace: {
+      '@type': 'MountainRange',
+      name: peak.range,
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: peak.country,
+      ...(region ? { addressRegion: region } : {}),
+    },
+    addressCountry: peak.country,
+    ...(region ? { addressRegion: region } : {}),
+  }
+}
+
+function wrapCrawlableBody(innerHtml, extraHead = '') {
+  return `${extraHead}
+    <div id="seo-prerender">${innerHtml}</div>
+    <noscript id="seo-noscript">${innerHtml}</noscript>`
+}
+
+function peakCrawlableBody(peak, url) {
+  const article = peakArticleHtml(peak, url)
+  const jsonLd = `<script type="application/ld+json">${JSON.stringify(peakMountainJsonLd(peak, url))}</script>`
+  return wrapCrawlableBody(article, jsonLd)
+}
+
+function staticPageBody(title, description, path) {
+  const url = absoluteCanonical(path)
+  return wrapCrawlableBody(`<main style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem;">
+        <h1>${escapeHtml(title)}</h1>
+        <p>${escapeHtml(description)}</p>
+        <nav aria-label="Site">
+          <p><a href="${escapeAttr(url)}">${escapeHtml(url)}</a></p>
+          <p><a href="${escapeAttr(siteUrl)}/">Atlas</a> · <a href="${escapeAttr(siteUrl)}/peaks">All peaks</a> · <a href="${escapeAttr(siteUrl)}/about">About</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
+        </nav>
+      </main>`)
+}
+
+function homeCrawlableBody(peaks) {
+  const sorted = [...peaks].sort((a, b) => a.name.localeCompare(b.name))
+  const links = sorted
+    .map(
+      (p) =>
+        `<li><a href="${escapeAttr(siteUrl)}/peak/${escapeAttr(p.id)}">${escapeHtml(p.name)}</a> — ${escapeHtml(peakLocationLabel(p))}</li>`,
+    )
+    .join('')
+
+  const itemList = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'PeakAtlas3D peak catalog',
+    numberOfItems: sorted.length,
+    itemListElement: sorted.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${siteUrl}/peak/${p.id}`,
+      name: p.name,
+    })),
+  }
+
+  const inner = `<main style="font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem;">
+        <h1>PeakAtlas3D — Trip-Ready Peak Guides</h1>
+        <p>${escapeHtml(DEFAULT_DESCRIPTION)}</p>
+        <p><a href="${escapeAttr(siteUrl)}/peaks">Browse all ${sorted.length} peaks</a> · <a href="${escapeAttr(siteUrl)}/about">About</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
+        <section aria-label="Peak directory">
+          <h2>Peak directory</h2>
+          <ul>${links}</ul>
+        </section>
+      </main>`
+
+  return wrapCrawlableBody(
+    inner,
+    `<script type="application/ld+json">${JSON.stringify(itemList)}</script>`,
+  )
+}
+
+function peaksIndexBody(peaks) {
+  const sorted = [...peaks].sort((a, b) => a.name.localeCompare(b.name))
+  const byCountry = new Map()
+  for (const p of sorted) {
+    const country = p.country || 'Other'
+    if (!byCountry.has(country)) byCountry.set(country, [])
+    byCountry.get(country).push(p)
+  }
+  const countries = [...byCountry.keys()].sort((a, b) => a.localeCompare(b))
+  const sections = countries
+    .map((country) => {
+      const list = byCountry
+        .get(country)
+        .map(
+          (p) =>
+            `<li><a href="${escapeAttr(siteUrl)}/peak/${escapeAttr(p.id)}">${escapeHtml(p.name)}</a> <span>(${escapeHtml(formatFt(p.elevationFt))} · ${escapeHtml(p.range)})</span></li>`,
+        )
+        .join('')
+      return `<section aria-label="${escapeAttr(country)}">
+          <h2>${escapeHtml(country)}</h2>
+          <ul>${list}</ul>
+        </section>`
+    })
+    .join('')
+
+  return wrapCrawlableBody(`<main style="font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem;">
+        <h1>All peaks — PeakAtlas3D</h1>
+        <p>Trip-ready guides for ${sorted.length} summits — difficulty, season, permits, and 3D terrain.</p>
+        <p><a href="${escapeAttr(siteUrl)}/">Open the 3D atlas</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
+        ${sections}
+      </main>`)
 }
 
 /** Pathname-only absolute URL (strips query/hash) for canonical + og:url. */
@@ -257,7 +356,7 @@ function absoluteCanonical(pathOrUrl) {
   }
 }
 
-function injectMeta(html, { title, description, path, image, noscriptBody }) {
+function injectMeta(html, { title, description, path, image, bodyHtml, keepWebsiteJsonLd }) {
   const url = absoluteCanonical(path)
   let out = html
 
@@ -309,26 +408,28 @@ function injectMeta(html, { title, description, path, image, noscriptBody }) {
     `    <link rel="canonical" href="${escapeAttr(url)}" />\n  </head>`,
   )
 
-  const fallback =
-    noscriptBody ||
-    `
-    <noscript id="seo-noscript">
-      <main style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem;">
-        <h1>${escapeHtml(title)}</h1>
-        <p>${escapeHtml(description)}</p>
-        <p><a href="${escapeAttr(url)}">${escapeHtml(url)}</a></p>
-      </main>
-    </noscript>`
-
-  if (/id=["']seo-noscript["']/.test(out)) {
+  // Peak/content shells should not keep the homepage WebSite JSON-LD.
+  if (!keepWebsiteJsonLd) {
     out = out.replace(
-      /<noscript\b[^>]*\bid=["']seo-noscript["'][^>]*>[\s\S]*?<\/noscript>/i,
-      fallback.trim(),
+      /\s*<script\b[^>]*\btype=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi,
+      '',
+    )
+  }
+
+  const fallback =
+    bodyHtml ||
+    staticPageBody(title, description, path)
+
+  // Always replace #root contents so rebuilds stay clean.
+  if (/<div id="root"[\s>]/.test(out)) {
+    out = out.replace(
+      /<div id="root"[^>]*>[\s\S]*?<\/div>/i,
+      `<div id="root">${fallback}</div>`,
     )
   } else {
     out = out.replace(
-      /<div id="root"><\/div>/i,
-      `<div id="root"></div>\n${fallback}`,
+      /<body([^>]*)>/i,
+      `<body$1>\n<div id="root">${fallback}</div>`,
     )
   }
 
@@ -359,6 +460,8 @@ const staticPages = [
     title: 'PeakAtlas3D — Trip-Ready Peak Guides',
     description: DEFAULT_DESCRIPTION,
     image: '',
+    keepWebsiteJsonLd: true,
+    bodyHtml: homeCrawlableBody(peaks),
   },
   {
     path: '/about',
@@ -381,9 +484,17 @@ const staticPages = [
       'Send feedback, corrections, or ideas for PeakAtlas3D — trip-ready peak guides with 3D terrain.',
     image: '',
   },
+  {
+    path: '/peaks',
+    title: 'All peaks — PeakAtlas3D',
+    description:
+      'Browse every summit in the PeakAtlas3D catalog — trip readiness, difficulty, season, and 3D terrain for each peak.',
+    image: '',
+    bodyHtml: peaksIndexBody(peaks),
+  },
 ]
 
-// Root index keeps home meta (already mostly correct); refresh OG url/canonical.
+// Root index keeps home meta + crawlable peak directory.
 writeFileSync(
   indexPath,
   injectMeta(template, {
@@ -391,6 +502,8 @@ writeFileSync(
     description: staticPages[0].description,
     path: '/',
     image: '',
+    keepWebsiteJsonLd: true,
+    bodyHtml: staticPages[0].bodyHtml,
   }),
 )
 
@@ -406,7 +519,7 @@ for (const peak of peaks) {
     title: `${peak.name} Trip Guide & 3D Map · ${peakLocationLabel(peak)} | PeakAtlas3D`,
     description: peakDescription(peak),
     image: peakImage(peak),
-    noscriptBody: peakNoscriptBody(peak, url),
+    bodyHtml: peakCrawlableBody(peak, url),
   })
 }
 

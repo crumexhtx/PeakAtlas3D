@@ -4,9 +4,12 @@ Ready-to-file issues for the live soft launch. Prefer small PRs.
 
 ## Ops / SEO
 
-- [ ] Verify domain in Google Search Console and submit `https://peakatlas3d.com/sitemap.xml`
+- [x] Verify domain in Google Search Console and submit `https://peakatlas3d.com/sitemap.xml`
 - [ ] Confirm MapTiler key URL allow-list (prod + localhost) and usage alerts when using `VITE_MAPTILER_KEY`
-- [ ] After deploy: confirm `/sitemap.xml`, `/robots.txt`, and `/peak/rainier` HTML include peak title in raw source (View Source)
+- [ ] After deploy: confirm `/sitemap.xml`, `/robots.txt`, and `/peak/rainier` HTML include peak title **and an `<h1>` outside noscript** in View Source
+- [ ] Point `www.peakatlas3d.com` DNS at Vercel (CNAME) so the www→apex redirect in `vercel.json` can take effect — www currently parks on Namecheap
+- [ ] In GSC: after deploy, Validate Fix on “Discovered – currently not indexed”; request indexing for `/peaks`, `/contact`, and a few flagship `/peak/*` URLs
+- [ ] “Page with redirect” / “Alternate page with proper canonical” are mostly expected (trailing slash → clean URL; `?country=` → canonical path) — ignore unless a wrong target URL appears
 
 ## Product / data
 

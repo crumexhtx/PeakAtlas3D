@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { peaksIndex } from '../data/catalog'
 import { formatDistance, formatElevation } from '../lib/geo'
 import { nearbyPeaksFor } from '../lib/nearbyPeaks'
-import { peakHref } from '../lib/routes'
 import { useUnits } from '../context/UnitsContext'
 import type { Peak } from '../types/peak'
 
@@ -12,7 +11,7 @@ type NearbyPeaksProps = {
 }
 
 /** Internal links to 3–5 nearby summits for multi-peak trip planning + SEO. */
-export function NearbyPeaks({ peak, country }: NearbyPeaksProps) {
+export function NearbyPeaks({ peak }: NearbyPeaksProps) {
   const { units } = useUnits()
   const nearby = nearbyPeaksFor(peak, peaksIndex, 5)
   if (nearby.length === 0) return null
@@ -29,7 +28,7 @@ export function NearbyPeaks({ peak, country }: NearbyPeaksProps) {
       <ul className="nearby-peaks-list">
         {nearby.map((p) => (
           <li key={p.id}>
-            <Link className="nearby-peaks-link" to={peakHref(p.id, country)}>
+            <Link className="nearby-peaks-link" to={`/peak/${p.id}`}>
               <span className="nearby-peaks-name">{p.name}</span>
               <span className="nearby-peaks-meta">
                 {formatElevation(p.elevationFt, units)}

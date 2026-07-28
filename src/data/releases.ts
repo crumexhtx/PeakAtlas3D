@@ -9,6 +9,19 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.2.6',
+    date: '2026-07-28',
+    title: 'Search indexing: crawlable peaks',
+    summary:
+      'Peak and contact HTML now include real body copy and internal links for Google Search Console — plus a new /peaks directory hub.',
+    highlights: [
+      'Prerender injects peak articles into HTML (not only <noscript>) for first-byte crawlability',
+      'New /peaks catalog page with every summit as a real link; added to the sitemap',
+      'Country lists, search results, and nearby peaks use <a href> / <Link> instead of buttons only',
+      'www → apex redirect configured (point www DNS at Vercel to activate)',
+    ],
+  },
+  {
     version: '0.2.5',
     date: '2026-07-26',
     title: 'Smoother globe (spin + markers)',
