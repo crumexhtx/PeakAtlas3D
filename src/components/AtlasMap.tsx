@@ -24,7 +24,6 @@ import {
   DETAIL_MAX_ZOOM,
   HERO_TERRAIN_EXAGGERATION,
   mapStyleForMode,
-  ORBIT_TERRAIN_EXAGGERATION,
   terrainSource,
   TERRAIN_SOURCE_ID,
   WORLD_MAX_ZOOM,
@@ -32,12 +31,10 @@ import {
 import {
   applyPeakAtmosphere,
   countryFramePadding,
-  easeToAsync,
   flyToAsync,
   IDLE_ROTATE_DELAY_MS,
   IDLE_ROTATE_RESUME_MS,
   IDLE_SPIN_MAX_MS,
-  orbitAsync,
   peakFramePadding,
   peakFramingCenter,
   prefersReducedMotion,
@@ -45,6 +42,7 @@ import {
   softenSatelliteRaster,
   startIdleSpin,
   waitForMapIdle,
+  waitForStyleReady,
   worldFramePadding,
 } from '../lib/mapAnimations'
 import 'maplibre-gl/dist/maplibre-gl.css'
@@ -103,9 +101,6 @@ function createRandomWorldView() {
   }
 }
 
-const ORBIT_ZOOM = 11.5
-/** Lower pitch = more top-down; steep angles pull empty far-horizon tiles. */
-const ORBIT_PITCH = 40
 const HERO_ZOOM = 12.1
 const HERO_PITCH = 46
 const HERO_BEARING = -28
@@ -113,26 +108,16 @@ const HERO_BEARING = -28
  * Look-at nudge toward the camera (meters). Keep modest so the summit stays
  * near the visual center of the padded viewport under pitch.
  */
-const ORBIT_FRAME_OFFSET_M = 320
 const HERO_FRAME_OFFSET_M = 400
-/** Full 360° orbit — paced slower for a calmer spin. */
-const SPIN_DURATION_MS = 26_400
-/** Shared duration for peak approach and leave (country/world) camera moves. */
-const PEAK_TRANSITION_MS = 5_040
+/** Zoom-in duration for peak approach (no orbit). */
+const PEAK_TRANSITION_MS = 3_600
 
 /**
  * When jumping in from the spinning globe (search / world flags), ease in with
- * a slightly wider final frame so the massif stays readable — not buried in
- * the summit pixels.
+ * a slightly wider final frame so the massif stays readable.
  */
-function peakApproachZooms(startZoom: number): {
-  orbit: number
-  hero: number
-} {
-  if (startZoom < 4) {
-    return { orbit: ORBIT_ZOOM - 0.35, hero: HERO_ZOOM - 0.35 }
-  }
-  return { orbit: ORBIT_ZOOM, hero: HERO_ZOOM }
+function peakHeroZoom(startZoom: number): number {
+  return startZoom < 4 ? HERO_ZOOM - 0.35 : HERO_ZOOM
 }
 
 const ACTIVITY_EVENTS = [
@@ -406,36 +391,51 @@ export function AtlasMap({
       } catch {
         // ignore
       }
-      applyPeakAtmosphere(map)
 
-      const approachBearing = map.getBearing()
-      const { orbit: orbitZoom, hero: heroZoom } = peakApproachZooms(
-        map.getZoom(),
-      )
-      const orbitCenter = peakFramingCenter(
-        summit[0],
-        summit[1],
-        approachBearing,
-        ORBIT_FRAME_OFFSET_M,
-      )
+      // World→detail style swap (search / globe entry) reloads the basemap.
+      // Two frames lets react-map-gl apply mapStyle; then wait for style.load
+      // so flyTo + terrain are not cancelled mid-swap (stuck / blank peak page).
+      await new Promise<void>((resolve) => {
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => resolve())
+        })
+      })
+      if (!stillActive()) return
+      await waitForStyleReady(map)
+      if (!stillActive()) return
+      // Let react-map-gl re-attach the DEM source after style.load.
+      await new Promise<void>((resolve) => {
+        requestAnimationFrame(() => resolve())
+      })
+      if (!stillActive()) return
+
+      applyPeakAtmosphere(map)
+      softenSatelliteRaster(map)
+
+      const heroZoom = peakHeroZoom(map.getZoom())
       const heroCenter = peakFramingCenter(
         summit[0],
         summit[1],
         HERO_BEARING,
         HERO_FRAME_OFFSET_M,
       )
+      const framePad = peakFramePadding()
 
       if (prefersReducedMotion()) {
-        map.setTerrain({
-          source: TERRAIN_SOURCE_ID,
-          exaggeration: HERO_TERRAIN_EXAGGERATION,
-        })
+        try {
+          map.setTerrain({
+            source: TERRAIN_SOURCE_ID,
+            exaggeration: HERO_TERRAIN_EXAGGERATION,
+          })
+        } catch {
+          // Source may still be attaching — jump without terrain.
+        }
         map.jumpTo({
           center: heroCenter,
           zoom: heroZoom,
           pitch: HERO_PITCH,
           bearing: HERO_BEARING,
-          padding: peakFramePadding(),
+          padding: framePad,
         })
         setMapInteractive(map, true)
         onCinematicChangeRef.current({ active: false, status: '' })
@@ -444,19 +444,23 @@ export function AtlasMap({
 
       onCinematicChangeRef.current({
         active: true,
-        status: 'Approaching summit…',
+        status: 'Zooming to summit…',
       })
       setMapInteractive(map, false)
 
+      // Hard unlock if anything hangs (style race, tile stall).
+      const safety = window.setTimeout(() => {
+        if (!stillActive()) return
+        setMapInteractive(map, true)
+        onCinematicChangeRef.current({ active: false, status: '' })
+      }, 12_000)
+
       try {
-        // Approach without DEM first (smoother fly / fewer tiles), then enable
-        // terrain once the camera has settled for orbit + hero.
-        const framePad = peakFramePadding()
         await flyToAsync(map, {
-          center: orbitCenter,
-          zoom: orbitZoom,
-          pitch: ORBIT_PITCH,
-          bearing: approachBearing,
+          center: heroCenter,
+          zoom: heroZoom,
+          pitch: HERO_PITCH,
+          bearing: HERO_BEARING,
           padding: framePad,
           duration: PEAK_TRANSITION_MS,
           curve: 1.35,
@@ -465,48 +469,28 @@ export function AtlasMap({
         })
         if (!stillActive()) return
 
-        await waitForMapIdle(map, 900)
+        await waitForMapIdle(map, 800)
         if (!stillActive()) return
 
-        map.setTerrain({
-          source: TERRAIN_SOURCE_ID,
-          exaggeration: ORBIT_TERRAIN_EXAGGERATION,
-        })
-        await waitForMapIdle(map, 450)
-        if (!stillActive()) return
-
-        onCinematicChangeRef.current({ active: true, status: 'Orbiting peak…' })
-        await orbitAsync(map, SPIN_DURATION_MS, stillActive)
-        if (!stillActive()) return
-
-        onCinematicChangeRef.current({
-          active: true,
-          status: 'Locking summit view…',
-        })
-        map.setTerrain({
-          source: TERRAIN_SOURCE_ID,
-          exaggeration: HERO_TERRAIN_EXAGGERATION,
-        })
-        await easeToAsync(map, {
-          center: heroCenter,
-          zoom: heroZoom,
-          pitch: HERO_PITCH,
-          bearing: HERO_BEARING,
-          padding: peakFramePadding(),
-          duration: 1400,
-          easing: easeInOutCubic,
-          essential: true,
-        })
-        if (!stillActive()) return
+        try {
+          map.setTerrain({
+            source: TERRAIN_SOURCE_ID,
+            exaggeration: HERO_TERRAIN_EXAGGERATION,
+          })
+        } catch {
+          // Terrain source missing after a style race — unlock anyway.
+        }
 
         setMapInteractive(map, true)
         onCinematicChangeRef.current({ active: false, status: '' })
       } catch {
-        // Terrain/camera errors must not leave the map frozen.
+        // Camera errors must not leave the map frozen / dossier hidden.
         if (stillActive()) {
           setMapInteractive(map, true)
           onCinematicChangeRef.current({ active: false, status: '' })
         }
+      } finally {
+        window.clearTimeout(safety)
       }
     }
 
@@ -699,7 +683,7 @@ export function AtlasMap({
         <div className="cinematic-overlay">
           <div className="cinematic-copy" aria-live="polite">
             <p className="cinematic-status">{cinematicStatus}</p>
-            <p className="cinematic-hint">Controls unlock after the orbit</p>
+            <p className="cinematic-hint">Controls unlock after the zoom</p>
           </div>
           <button type="button" className="cinematic-skip" onClick={onSkipCinematic}>
             Skip

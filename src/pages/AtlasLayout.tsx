@@ -6,7 +6,7 @@ import { ClearMarkersToggle } from '../components/ClearMarkersToggle'
 import { EarthOnlyToggle } from '../components/EarthOnlyToggle'
 import { WorldTagline } from '../components/WorldTagline'
 import { AtlasProvider, type AtlasContextValue } from '../context/AtlasContext'
-import { getPeakById, peaksIndex } from '../data/catalog'
+import { getPeakById, loadFullCatalog, peaksIndex } from '../data/catalog'
 import {
   applyDocumentMeta,
   metaForAtlas,
@@ -66,6 +66,14 @@ export function AtlasLayout() {
   const [earthOnly, setEarthOnly] = useState(false)
   const [hideMapMarkers, setHideMapMarkers] = useState(false)
 
+  // Prefetch the full dossier catalog so peak navigations are less likely to
+  // sit on "Loading peak…" (and so a failed import surfaces sooner).
+  useEffect(() => {
+    void loadFullCatalog().catch(() => {
+      // Peak route effect handles per-id failures.
+    })
+  }, [])
+
   useEffect(() => {
     if (!peakId) {
       setActivePeak(null)
@@ -79,12 +87,19 @@ export function AtlasLayout() {
     setPeakMissing(false)
     setActivePeak(null)
 
-    getPeakById(peakId).then((peak) => {
-      if (cancelled) return
-      setActivePeak(peak ?? null)
-      setPeakMissing(!peak)
-      setPeakLoading(false)
-    })
+    getPeakById(peakId)
+      .then((peak) => {
+        if (cancelled) return
+        setActivePeak(peak ?? null)
+        setPeakMissing(!peak)
+        setPeakLoading(false)
+      })
+      .catch(() => {
+        if (cancelled) return
+        setActivePeak(null)
+        setPeakMissing(true)
+        setPeakLoading(false)
+      })
 
     return () => {
       cancelled = true
