@@ -9,6 +9,17 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.3.2',
+    date: '2026-07-28',
+    title: 'Country peak flags stay visible when zooming in',
+    summary:
+      'Zooming into a region (like the US East Coast) no longer hides local peak flags behind off-screen western summits.',
+    highlights: [
+      'Country-view declutter only counts peaks in the current viewport',
+      'Off-screen Rockies/Alaska peaks no longer consume the USA flag cap',
+    ],
+  },
+  {
     version: '0.3.1',
     date: '2026-07-28',
     title: 'Alps & Europe peaks',

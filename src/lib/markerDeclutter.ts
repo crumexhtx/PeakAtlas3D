@@ -213,10 +213,23 @@ export function peakLayoutsEqual(
 
 const MAX_COUNTRY_PEAK_FLAGS = 28
 const MAX_COUNTRY_PEAK_FLAGS_NARROW = 18
+/** Keep edge peaks from popping when panning; still excludes far off-screen peaks. */
+const VIEWPORT_PAD_PX = 48
+
+function inViewport(
+  x: number,
+  y: number,
+  width: number,
+  height: number,
+  pad = VIEWPORT_PAD_PX,
+): boolean {
+  return x >= -pad && x <= width + pad && y >= -pad && y <= height + pad
+}
 
 /**
  * Cap and de-overlap peak flags in country drill-in (USA can hit 80+).
- * Prefer higher elevation when packing is tight.
+ * Prefer peaks in the current viewport (so zooming into the East Coast
+ * doesn't lose flags to off-screen Rockies/Alaska), then higher elevation.
  */
 export function declutterPeakMarkers(
   map: MapLibreMap,
@@ -229,12 +242,17 @@ export function declutterPeakMarkers(
   }>,
   previous?: Map<string, PeakMarkerLayout>,
 ): Map<string, PeakMarkerLayout> {
-  const narrow = map.getContainer().clientWidth <= NARROW_MAP_PX
+  const container = map.getContainer()
+  const narrow = container.clientWidth <= NARROW_MAP_PX
   const maxFlags = narrow
     ? MAX_COUNTRY_PEAK_FLAGS_NARROW
     : MAX_COUNTRY_PEAK_FLAGS
   const flagW = 30
   const flagH = 38
+  const viewW = container.clientWidth
+  const viewH = container.clientHeight
+  const cx = viewW / 2
+  const cy = viewH / 2
 
   const candidates = peaks
     .filter((p) =>
@@ -244,10 +262,19 @@ export function declutterPeakMarkers(
       const point = map.project([p.lon, p.lat])
       return { peak: p, x: point.x, y: point.y }
     })
-    .filter((c) => Number.isFinite(c.x) && Number.isFinite(c.y))
+    .filter(
+      (c) =>
+        Number.isFinite(c.x) &&
+        Number.isFinite(c.y) &&
+        inViewport(c.x, c.y, viewW, viewH),
+    )
     .sort((a, b) => {
       const byElev = b.peak.elevationFt - a.peak.elevationFt
       if (byElev !== 0) return byElev
+      // Tie-break toward the view center so equally tall neighbors feel local.
+      const da = (a.x - cx) ** 2 + (a.y - cy) ** 2
+      const db = (b.x - cx) ** 2 + (b.y - cy) ** 2
+      if (da !== db) return da - db
       return a.peak.name.localeCompare(b.peak.name)
     })
 
