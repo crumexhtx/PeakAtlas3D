@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import type { Peak, UnitSystem } from '../types/peak'
 import {
@@ -6,10 +7,15 @@ import {
   formatDistance,
   formatElevation,
 } from '../lib/geo'
-import { flagUrl } from '../lib/countries'
+import { buildCountrySummaries, flagUrl } from '../lib/countries'
+import {
+  countryHref,
+  primaryCountryName,
+} from '../lib/countryPages'
 import { peakLocationLabel, peakRegion } from '../lib/peakLocation'
 import { NearbyPeaks } from './NearbyPeaks'
 import { TripReadiness } from './TripReadiness'
+import { peaksIndex } from '../data/catalog'
 
 export function seoPeakHeading(peakName: string): string {
   return peakName
@@ -75,9 +81,12 @@ export function PeakSeoLayout({
   children,
   country,
 }: PeakSeoLayoutProps) {
+  const summaries = useMemo(() => buildCountrySummaries(peaksIndex), [])
   const flag = flagUrl(peak.country, 40)
   const location = peakLocationLabel(peak)
   const region = peakRegion(peak)
+  const countryName = primaryCountryName(peak.country, summaries)
+  const countryPath = countryHref(countryName)
   const nearby = peak.nearbyPlaces?.length
     ? peak.nearbyPlaces
     : peak.nearestTown
@@ -103,7 +112,7 @@ export function PeakSeoLayout({
         {flag && (
           <img
             src={flag}
-            alt={`${peak.country} flag`}
+            alt={`${countryName} flag`}
             className="dossier-flag"
             width={36}
             height={24}
@@ -112,7 +121,9 @@ export function PeakSeoLayout({
         )}
         <div>
           <p className="dossier-eyebrow">
-            <span>{location}</span>
+            <Link to={countryPath} className="dossier-country-link">
+              {location}
+            </Link>
             <meta itemProp="addressCountry" content={peak.country} />
             {region && <meta itemProp="addressRegion" content={region} />}
           </p>

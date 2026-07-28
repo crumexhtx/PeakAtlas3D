@@ -20,6 +20,7 @@ const COUNTRY_ISO: Record<string, string> = {
   Greece: 'gr',
   India: 'in',
   Iran: 'ir',
+  Ireland: 'ie',
   Italy: 'it',
   Japan: 'jp',
   Kenya: 'ke',
@@ -34,6 +35,7 @@ const COUNTRY_ISO: Record<string, string> = {
   'Pakistan/China': 'pk',
   Peru: 'pe',
   Russia: 'ru',
+  Slovakia: 'sk',
   Slovenia: 'si',
   'South Africa': 'za',
   'South Korea': 'kr',
@@ -42,6 +44,7 @@ const COUNTRY_ISO: Record<string, string> = {
   Switzerland: 'ch',
   Tanzania: 'tz',
   Turkey: 'tr',
+  'United Kingdom': 'gb',
   USA: 'us',
 }
 
@@ -67,6 +70,7 @@ const COUNTRY_CENTROID: Record<string, { lat: number; lon: number }> = {
   gr: { lat: 39.1, lon: 21.8 },
   in: { lat: 22.4, lon: 79.0 },
   ir: { lat: 32.4, lon: 53.7 },
+  ie: { lat: 53.1, lon: -7.7 },
   it: { lat: 41.9, lon: 12.6 },
   jp: { lat: 36.2, lon: 138.3 },
   ke: { lat: 0.0, lon: 37.9 },
@@ -78,6 +82,7 @@ const COUNTRY_CENTROID: Record<string, { lat: number; lon: number }> = {
   pk: { lat: 30.4, lon: 69.3 },
   pe: { lat: -9.2, lon: -75.0 },
   ru: { lat: 61.5, lon: 105.3 },
+  sk: { lat: 48.7, lon: 19.7 },
   si: { lat: 46.2, lon: 14.8 },
   za: { lat: -30.6, lon: 22.9 },
   kr: { lat: 36.5, lon: 127.9 },
@@ -86,6 +91,7 @@ const COUNTRY_CENTROID: Record<string, { lat: number; lon: number }> = {
   ch: { lat: 46.8, lon: 8.2 },
   tz: { lat: -6.4, lon: 34.9 },
   tr: { lat: 39.0, lon: 35.2 },
+  gb: { lat: 54.0, lon: -2.5 },
   us: { lat: 39.8, lon: -98.5 },
 }
 
@@ -194,18 +200,36 @@ export function buildCountrySummaries(peaks: PeakIndex[]): CountrySummary[] {
     })
   }
 
-  // Rare fallback: labels without an ISO still get their own marker.
+  // Fallback: labels without an ISO still get one marker per label.
+  const unknownByLabel = new Map<string, PeakIndex[]>()
   for (const peak of unknown) {
+    const list = unknownByLabel.get(peak.country)
+    if (list) list.push(peak)
+    else unknownByLabel.set(peak.country, [peak])
+  }
+
+  for (const [label, countryPeaks] of unknownByLabel) {
+    let elevSum = 0
+    let highest = countryPeaks[0]!
+    let lowest = countryPeaks[0]!
+    const ranges = new Set<string>()
+    for (const peak of countryPeaks) {
+      elevSum += peak.elevationFt
+      ranges.add(peak.range)
+      if (peak.elevationFt > highest.elevationFt) highest = peak
+      if (peak.elevationFt < lowest.elevationFt) lowest = peak
+    }
+    const centroid = sphericalMean(countryPeaks)
     summaries.push({
-      name: peak.country,
-      labels: [peak.country],
-      lat: peak.lat,
-      lon: peak.lon,
-      peakCount: 1,
-      highestPeak: peak,
-      lowestPeak: peak,
-      ranges: [peak.range],
-      avgElevationFt: peak.elevationFt,
+      name: label,
+      labels: [label],
+      lat: centroid.lat,
+      lon: centroid.lon,
+      peakCount: countryPeaks.length,
+      highestPeak: highest,
+      lowestPeak: lowest,
+      ranges: [...ranges].sort((a, b) => a.localeCompare(b)),
+      avgElevationFt: elevSum / countryPeaks.length,
     })
   }
 

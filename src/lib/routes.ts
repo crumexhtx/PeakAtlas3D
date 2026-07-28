@@ -10,6 +10,8 @@ export function peakHref(peakId: string, country?: string | null): string {
   return `/peak/${peakId}?country=${encodeURIComponent(country)}`
 }
 
+export { countryHref } from './countryPages'
+
 /** Camera handoff from atlas → peak page for a continuous zoom-in. */
 export type PeakEntryState = {
   fromCountry?: string | null

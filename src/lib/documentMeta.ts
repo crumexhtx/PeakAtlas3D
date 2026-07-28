@@ -243,3 +243,47 @@ export function metaForMissingPeak(peakId: string) {
     robots: 'noindex, nofollow',
   }
 }
+
+/**
+ * Country landing metadata — unique title + description per country.
+ * Canonical is always `/countries/{slug}` (no query string).
+ */
+export function metaForCountry(input: {
+  name: string
+  slug: string
+  peakCount: number
+  highestName: string
+  highestElevationFt: number
+  ranges: string[]
+}) {
+  const rangeBit =
+    input.ranges.length > 0
+      ? ` Ranges include ${input.ranges.slice(0, 4).join(', ')}${
+          input.ranges.length > 4 ? ', and more' : ''
+        }.`
+      : ''
+  const description = clipDescription(
+    `Explore ${input.peakCount} mountain peak${
+      input.peakCount === 1 ? '' : 's'
+    } in ${input.name} on PeakAtlas3D — trip guides, difficulty, season, and 3D terrain. Highest in the catalog: ${
+      input.highestName
+    } (${input.highestElevationFt.toLocaleString('en-US')} ft).${rangeBit}`,
+  )
+  return {
+    title: `${input.name} Peaks — Trip Guides & 3D Maps | PeakAtlas3D`,
+    description,
+    path: `/countries/${input.slug}`,
+  }
+}
+
+/** Soft-404 for unknown /countries/:slug. */
+export function metaForMissingCountry(slug: string) {
+  return {
+    title: 'Country not found · PeakAtlas3D',
+    description:
+      'That country is not in the PeakAtlas3D catalog. Browse all peaks or open the 3D atlas.',
+    image: null as null,
+    path: `/countries/${encodeURIComponent(slug)}`,
+    robots: 'noindex, nofollow',
+  }
+}

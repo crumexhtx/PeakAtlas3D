@@ -11,6 +11,11 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import {
+  buildCountrySummaries,
+  countryMeta,
+  countrySlug,
+} from './lib/countries-static.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const distDir = join(root, 'dist')
@@ -134,7 +139,7 @@ function formatFt(n) {
 }
 
 /** Shared article markup — used in crawlable `#seo-prerender` and `<noscript>`. */
-function peakArticleHtml(peak, url) {
+function peakArticleHtml(peak, url, countryLandingHref) {
   const location = peakLocationLabel(peak)
   const trails = (peak.trails || []).map((t) => t.name).filter(Boolean)
   const nearby = peak.nearbyPlaces?.length
@@ -166,10 +171,18 @@ function peakArticleHtml(peak, url) {
         </section>`
       : ''
 
+  const locationHtml = countryLandingHref
+    ? `<a href="${escapeAttr(countryLandingHref)}">${escapeHtml(location)}</a>`
+    : escapeHtml(location)
+
+  const countryNav = countryLandingHref
+    ? `<a href="${escapeAttr(countryLandingHref)}">Country peaks</a> · `
+    : ''
+
   return `<main style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem;">
         <article itemscope itemtype="https://schema.org/Mountain">
           <header>
-            <p>${escapeHtml(location)}</p>
+            <p>${locationHtml}</p>
             <h1 itemprop="name">${escapeHtml(peak.name)}</h1>
             <p>Trip Guide &amp; 3D Map</p>
             <p>${escapeHtml(peak.range)} · Difficulty, season, and access — then explore the 3D terrain</p>
@@ -189,7 +202,7 @@ function peakArticleHtml(peak, url) {
           <section aria-label="Peak stats">
             <h2>Peak stats</h2>
             <dl>
-              <div><dt>Location</dt><dd>${escapeHtml(location)}</dd></div>
+              <div><dt>Location</dt><dd>${locationHtml}</dd></div>
               <div><dt>Elevation</dt><dd>${escapeHtml(formatFt(peak.elevationFt))}</dd></div>
               <div><dt>Prominence</dt><dd>${escapeHtml(formatFt(peak.prominenceFt))}</dd></div>
               <div><dt>Mountain range</dt><dd>${escapeHtml(peak.range)}</dd></div>
@@ -210,7 +223,7 @@ function peakArticleHtml(peak, url) {
           ${trailList}
           <nav aria-label="Site">
             <p><a href="${escapeAttr(url)}">${escapeHtml(url)}</a></p>
-            <p><a href="${escapeAttr(siteUrl)}/peaks">All peaks</a> · <a href="${escapeAttr(siteUrl)}/">Atlas</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
+            <p>${countryNav}<a href="${escapeAttr(siteUrl)}/peaks">All peaks</a> · <a href="${escapeAttr(siteUrl)}/">Atlas</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
           </nav>
         </article>
       </main>`
@@ -250,8 +263,8 @@ function wrapCrawlableBody(innerHtml, extraHead = '') {
     <noscript id="seo-noscript">${innerHtml}</noscript>`
 }
 
-function peakCrawlableBody(peak, url) {
-  const article = peakArticleHtml(peak, url)
+function peakCrawlableBody(peak, url, countryLandingHref) {
+  const article = peakArticleHtml(peak, url, countryLandingHref)
   const jsonLd = `<script type="application/ld+json">${JSON.stringify(peakMountainJsonLd(peak, url))}</script>`
   return wrapCrawlableBody(article, jsonLd)
 }
@@ -306,26 +319,18 @@ function homeCrawlableBody(peaks) {
   )
 }
 
-function peaksIndexBody(peaks) {
-  const sorted = [...peaks].sort((a, b) => a.name.localeCompare(b.name))
-  const byCountry = new Map()
-  for (const p of sorted) {
-    const country = p.country || 'Other'
-    if (!byCountry.has(country)) byCountry.set(country, [])
-    byCountry.get(country).push(p)
-  }
-  const countries = [...byCountry.keys()].sort((a, b) => a.localeCompare(b))
-  const sections = countries
-    .map((country) => {
-      const list = byCountry
-        .get(country)
+function peaksIndexBody(peaks, countrySummaries) {
+  const sections = countrySummaries
+    .map((summary) => {
+      const list = summary.peaks
         .map(
           (p) =>
             `<li><a href="${escapeAttr(siteUrl)}/peak/${escapeAttr(p.id)}">${escapeHtml(p.name)}</a> <span>(${escapeHtml(formatFt(p.elevationFt))} · ${escapeHtml(p.range)})</span></li>`,
         )
         .join('')
-      return `<section aria-label="${escapeAttr(country)}">
-          <h2>${escapeHtml(country)}</h2>
+      const href = `${siteUrl}/countries/${countrySlug(summary.name)}`
+      return `<section aria-label="${escapeAttr(summary.name)}">
+          <h2><a href="${escapeAttr(href)}">${escapeHtml(summary.name)}</a> (${summary.peakCount})</h2>
           <ul>${list}</ul>
         </section>`
     })
@@ -333,9 +338,44 @@ function peaksIndexBody(peaks) {
 
   return wrapCrawlableBody(`<main style="font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem;">
         <h1>All peaks — PeakAtlas3D</h1>
-        <p>Trip-ready guides for ${sorted.length} summits — difficulty, season, permits, and 3D terrain.</p>
+        <p>Trip-ready guides for ${peaks.length} summits across ${countrySummaries.length} countries — difficulty, season, permits, and 3D terrain.</p>
         <p><a href="${escapeAttr(siteUrl)}/">Open the 3D atlas</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
         ${sections}
+      </main>`)
+}
+
+function countryCrawlableBody(summary, allSummaries) {
+  const meta = countryMeta(summary)
+  const url = `${siteUrl}${meta.path}`
+  const peakList = summary.peaks
+    .map(
+      (p) =>
+        `<li><a href="${escapeAttr(siteUrl)}/peak/${escapeAttr(p.id)}">${escapeHtml(p.name)}</a> <span>(${escapeHtml(formatFt(p.elevationFt))} · ${escapeHtml(p.range)})</span></li>`,
+    )
+    .join('')
+  const otherCountries = allSummaries
+    .filter((s) => s.name !== summary.name)
+    .map(
+      (s) =>
+        `<li><a href="${escapeAttr(siteUrl)}/countries/${escapeAttr(countrySlug(s.name))}">${escapeHtml(s.name)}</a> (${s.peakCount})</li>`,
+    )
+    .join('')
+
+  return wrapCrawlableBody(`<main style="font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem;">
+        <h1>${escapeHtml(summary.name)} peaks — PeakAtlas3D</h1>
+        <p>${escapeHtml(meta.description)}</p>
+        <p><a href="${escapeAttr(siteUrl)}/?country=${escapeAttr(encodeURIComponent(summary.name))}">Open ${escapeHtml(summary.name)} on the 3D atlas</a> · <a href="${escapeAttr(siteUrl)}/peaks">All peaks</a></p>
+        <section aria-label="${escapeAttr(summary.name)} peaks">
+          <h2>Peaks in ${escapeHtml(summary.name)} (${summary.peakCount})</h2>
+          <ul>${peakList}</ul>
+        </section>
+        <section aria-label="Other countries">
+          <h2>Other countries</h2>
+          <ul>${otherCountries}</ul>
+        </section>
+        <nav aria-label="Site">
+          <p><a href="${escapeAttr(url)}">${escapeHtml(url)}</a></p>
+        </nav>
       </main>`)
 }
 
@@ -453,6 +493,21 @@ try {
 }
 
 const peaks = JSON.parse(readFileSync(peaksPath, 'utf8'))
+const countrySummaries = buildCountrySummaries(peaks)
+
+/** @type {Map<string, string>} raw peak.country → primary summary name */
+const primaryByLabel = new Map()
+for (const summary of countrySummaries) {
+  for (const label of summary.labels) {
+    primaryByLabel.set(label, summary.name)
+  }
+}
+
+function countryLandingHrefForPeak(peak) {
+  const name = primaryByLabel.get(peak.country) || peak.country
+  if (!name) return ''
+  return `${siteUrl}/countries/${countrySlug(name)}`
+}
 
 const staticPages = [
   {
@@ -490,7 +545,7 @@ const staticPages = [
     description:
       'Browse every summit in the PeakAtlas3D catalog — trip readiness, difficulty, season, and 3D terrain for each peak.',
     image: '',
-    bodyHtml: peaksIndexBody(peaks),
+    bodyHtml: peaksIndexBody(peaks, countrySummaries),
   },
 ]
 
@@ -511,6 +566,16 @@ for (const page of staticPages.slice(1)) {
   writeRoute(template, page.path, page)
 }
 
+for (const summary of countrySummaries) {
+  const meta = countryMeta(summary)
+  writeRoute(template, meta.path, {
+    title: meta.title,
+    description: meta.description,
+    image: '',
+    bodyHtml: countryCrawlableBody(summary, countrySummaries),
+  })
+}
+
 for (const peak of peaks) {
   if (!peak?.id) continue
   const path = `/peak/${peak.id}`
@@ -519,10 +584,10 @@ for (const peak of peaks) {
     title: `${peak.name} Trip Guide & 3D Map · ${peakLocationLabel(peak)} | PeakAtlas3D`,
     description: peakDescription(peak),
     image: peakImage(peak),
-    bodyHtml: peakCrawlableBody(peak, url),
+    bodyHtml: peakCrawlableBody(peak, url, countryLandingHrefForPeak(peak)),
   })
 }
 
 console.log(
-  `Prerendered meta HTML for ${staticPages.length} pages + ${peaks.length} peaks → ${siteUrl}`,
+  `Prerendered meta HTML for ${staticPages.length} pages + ${countrySummaries.length} countries + ${peaks.length} peaks → ${siteUrl}`,
 )

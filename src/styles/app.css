@@ -2997,10 +2997,73 @@ a.trail-bubble-label-link:focus-visible {
   gap: 0.4rem;
 }
 
+.peaks-directory-country {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(201, 215, 232, 0.35);
+}
+
+.peaks-directory-country:hover,
+.peaks-directory-country:focus-visible {
+  color: #e8f0fa;
+  text-decoration-color: rgba(79, 195, 247, 0.7);
+  outline: none;
+}
+
 .peaks-directory-count {
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--muted);
+}
+
+.country-landing-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 0.35rem;
+}
+
+.country-landing-flag {
+  margin-top: 0.35rem;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.country-directory-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 0.35rem 1rem;
+}
+
+.country-directory-list a {
+  color: #c9d7e8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.country-directory-list a:hover,
+.country-directory-list a:focus-visible {
+  color: #e8f0fa;
+  text-decoration: underline;
+  outline: none;
+}
+
+.dossier-country-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(201, 215, 232, 0.4);
+}
+
+.dossier-country-link:hover,
+.dossier-country-link:focus-visible {
+  color: #e8f0fa;
+  text-decoration-color: rgba(79, 195, 247, 0.7);
+  outline: none;
 }
 
 .peaks-directory-list {

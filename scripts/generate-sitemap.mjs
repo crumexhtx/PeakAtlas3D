@@ -8,6 +8,10 @@
 import { mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import {
+  buildCountrySummaries,
+  countryMeta,
+} from './lib/countries-static.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const peaksPath = join(root, 'src', 'data', 'peaks.json')
@@ -22,6 +26,9 @@ const peakIds = peaks
   .map((p) => p.id)
   .filter((id) => typeof id === 'string' && id.length > 0)
   .sort((a, b) => a.localeCompare(b))
+
+const countrySummaries = buildCountrySummaries(peaks)
+const countryPaths = countrySummaries.map((s) => countryMeta(s).path)
 
 const peaksMtime = statSync(peaksPath).mtime.toISOString().slice(0, 10)
 const today = new Date().toISOString().slice(0, 10)
@@ -62,6 +69,9 @@ const urls = [
       route.priority,
     ),
   ),
+  ...countryPaths.map((path) =>
+    urlEntry(`${siteUrl}${path}`, peaksMtime, 'weekly', '0.85'),
+  ),
   ...peakIds.map((id) =>
     urlEntry(
       `${siteUrl}/peak/${encodeURIComponent(id)}`,
@@ -90,5 +100,5 @@ writeFileSync(join(publicDir, 'sitemap.xml'), `${sitemap}\n`)
 writeFileSync(join(publicDir, 'robots.txt'), `${robots}\n`)
 
 console.log(
-  `Wrote sitemap (${staticRoutes.length + peakIds.length} URLs) and robots.txt → ${siteUrl}`,
+  `Wrote sitemap (${staticRoutes.length + countryPaths.length + peakIds.length} URLs: ${countryPaths.length} countries, ${peakIds.length} peaks) → ${siteUrl}`,
 )
