@@ -2,6 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react
 import { Outlet, useMatch, useNavigate, useSearchParams } from 'react-router-dom'
 import { AppHeader } from '../components/AppHeader'
 import { AtlasHint } from '../components/AtlasHint'
+import { ClearMarkersToggle } from '../components/ClearMarkersToggle'
 import { EarthOnlyToggle } from '../components/EarthOnlyToggle'
 import { WorldTagline } from '../components/WorldTagline'
 import { AtlasProvider, type AtlasContextValue } from '../context/AtlasContext'
@@ -63,6 +64,7 @@ export function AtlasLayout() {
   const [skipNonce, setSkipNonce] = useState(0)
   const [hintActive, setHintActive] = useState(false)
   const [earthOnly, setEarthOnly] = useState(false)
+  const [hideMapMarkers, setHideMapMarkers] = useState(false)
 
   useEffect(() => {
     if (!peakId) {
@@ -97,6 +99,10 @@ export function AtlasLayout() {
     setEarthOnly((v) => !v)
   }, [])
 
+  const toggleHideMapMarkers = useCallback(() => {
+    setHideMapMarkers((v) => !v)
+  }, [])
+
   useEffect(() => {
     setBrowseState((prev) => {
       if (prev.country === countryFromUrl) return prev
@@ -118,14 +124,31 @@ export function AtlasLayout() {
     return () => window.removeEventListener('keydown', onKey)
   }, [earthOnly])
 
+  // Esc restores peak map markers.
+  useEffect(() => {
+    if (!hideMapMarkers) return
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Escape') setHideMapMarkers(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [hideMapMarkers])
+
   const selectedCountry = browse.country || null
   const isWorldView = !peakId && !selectedCountry
+  const onPeakRoute = Boolean(peakId)
   // Earth view is world-only — never stay on after drilling into a country/peak.
   const earthOnlyActive = earthOnly && isWorldView
+  // Clear-markers is peak-only — drop it when leaving a summit.
+  const hideMapMarkersActive = hideMapMarkers && onPeakRoute
 
   useEffect(() => {
     if (!isWorldView && earthOnly) setEarthOnly(false)
   }, [isWorldView, earthOnly])
+
+  useEffect(() => {
+    if (!onPeakRoute && hideMapMarkers) setHideMapMarkers(false)
+  }, [onPeakRoute, hideMapMarkers])
 
   useEffect(() => {
     if (peakId && peakLoading) return
@@ -213,7 +236,6 @@ export function AtlasLayout() {
   }, [])
 
   const backHref = atlasHref(selectedCountry || countryFromUrl || null)
-  const onPeakRoute = Boolean(peakId)
 
   const atlasValue = useMemo<AtlasContextValue>(
     () => ({
@@ -227,6 +249,8 @@ export function AtlasLayout() {
       cinematicStatus,
       earthOnly: earthOnlyActive,
       setEarthOnly,
+      hideMapMarkers: hideMapMarkersActive,
+      setHideMapMarkers,
       setBrowse,
       selectCountry,
       clearCountry,
@@ -240,6 +264,7 @@ export function AtlasLayout() {
       cinematicStatus,
       clearCountry,
       earthOnlyActive,
+      hideMapMarkersActive,
       mapPeaks,
       onPeakRoute,
       openPeak,
@@ -268,7 +293,9 @@ export function AtlasLayout() {
         <div
           className={`map-stage${onPeakRoute ? ' is-peak-mode' : ''}${
             cinematic ? ' is-cinematic' : ''
-          }${earthOnlyActive ? ' is-earth-only' : ''}`}
+          }${earthOnlyActive ? ' is-earth-only' : ''}${
+            hideMapMarkersActive ? ' is-clear-markers' : ''
+          }`}
         >
           <Suspense fallback={<AtlasMapFallback />}>
             <AtlasMap
@@ -284,6 +311,7 @@ export function AtlasLayout() {
               skipNonce={skipNonce}
               funFactsEnabled={!hintActive && !earthOnlyActive}
               earthOnly={earthOnlyActive}
+              hideMapMarkers={hideMapMarkersActive}
             />
           </Suspense>
           <AtlasHint
@@ -295,6 +323,12 @@ export function AtlasLayout() {
           />
           {isWorldView && (
             <EarthOnlyToggle active={earthOnlyActive} onToggle={toggleEarthOnly} />
+          )}
+          {onPeakRoute && !cinematic && (
+            <ClearMarkersToggle
+              active={hideMapMarkersActive}
+              onToggle={toggleHideMapMarkers}
+            />
           )}
           <Outlet />
         </div>

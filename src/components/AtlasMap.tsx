@@ -64,6 +64,8 @@ type AtlasMapProps = {
   funFactsEnabled?: boolean
   /** Immersive globe — hide map chrome (zoom controls, mode chip, nearby pins). */
   earthOnly?: boolean
+  /** Peak mode — hide summit flag, trail signs, and nearby place pins. */
+  hideMapMarkers?: boolean
 }
 
 /**
@@ -144,6 +146,7 @@ export function AtlasMap({
   skipNonce,
   funFactsEnabled = true,
   earthOnly = false,
+  hideMapMarkers = false,
 }: AtlasMapProps) {
   const mapRef = useRef<MapRef>(null)
   const idleTimerRef = useRef<number | null>(null)
@@ -627,7 +630,7 @@ export function AtlasMap({
           <CountryPeaksLayer peaks={countryPeaks} onSelectPeak={onSelectPeak} />
         )}
 
-        {mode === 'peak' && activePeak && (
+        {mode === 'peak' && activePeak && !hideMapMarkers && (
           <>
             <Marker
               longitude={activePeak.lon}
