@@ -33,7 +33,17 @@ VITE_MAPTILER_KEY=your_maptiler_key_here
 
 Without a key, the app uses free Sentinel-2 satellite tiles (EOX) and Mapterhorn terrain DEM so local development still works.
 
+Optional Plausible analytics:
+
+```env
+VITE_PLAUSIBLE_DOMAIN=peakatlas3d.com
+```
+
 Never put secret server-only tokens in the frontend.
+
+## Post-launch
+
+If the site is live and in Google Search Console, follow **[`docs/POST_LAUNCH.md`](docs/POST_LAUNCH.md)** (DNS/www, GSC indexing requests, MapTiler allow-list, flagship content).
 
 ## Run locally
 

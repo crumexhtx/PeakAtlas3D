@@ -222,6 +222,12 @@ const PERMIT_BY_ID = {
     permitNotes:
       'No special 14er permit on standard routes; check seasonal road closures and Leave No Trace.',
   },
+  elbert: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No special summit permit on standard Mount Elbert trails. Check San Isabel National Forest road/trail status and practice Leave No Trace on this busy 14er.',
+  },
   yale: {
     permitRequired: false,
     permitStatus: 'not_required',

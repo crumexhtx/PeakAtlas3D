@@ -1,7 +1,7 @@
 {
   "name": "peakatlas3d",
   "private": true,
-  "version": "0.2.9",
+  "version": "0.3.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -20,6 +20,7 @@
     "enrich:photos": "node scripts/enrich-photos.mjs",
     "enrich:content": "node scripts/enrich-content.mjs",
     "enrich:trip-readiness": "node scripts/enrich-trip-readiness.mjs",
+    "enrich:flagship": "node scripts/curate-flagship-peaks.mjs",
     "enrich:amenities": "node scripts/enrich-amenities.mjs",
     "enrich:lodging": "node scripts/enrich-lodging.mjs",
     "scrub:lodging": "node scripts/scrub-lodging.mjs",
