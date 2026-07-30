@@ -12,6 +12,16 @@
 - Imperial / metric unit toggle
 - Collapsible nearby town context (for later expansion)
 
+## Routes
+
+| Route | Description |
+|-------|-------------|
+| `/` | 3D globe. Accepts client-side filters such as `?country=USA` (query strings are not prerendered — the crawlable shell always lists every peak) |
+| `/peaks` | Full peak directory, grouped by country |
+| `/countries/:countrySlug` | Per-country landing page (e.g. `/countries/usa`) with that country's peaks only — this is the indexable, server-rendered equivalent of `?country=` |
+| `/peak/:slug` | Peak dossier with 3D terrain |
+| `/about`, `/contact`, `/releases` | Static pages |
+
 ## Stack
 
 - Vite + React + TypeScript

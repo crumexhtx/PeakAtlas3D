@@ -3,7 +3,7 @@
  * tags and crawlable body copy so Search Console can index without waiting on JS.
  *
  * SEO body is injected into `#root` as `#seo-prerender` (cleared when React mounts).
- * A matching `<noscript>` copy remains for no-JS clients.
+ * With JS disabled it is never cleared, so it doubles as the no-JS view.
  *
  * Run: node scripts/prerender-meta.mjs
  * Env: SITE_URL=https://peakatlas3d.com (optional)
@@ -258,9 +258,11 @@ function peakMountainJsonLd(peak, url) {
 }
 
 function wrapCrawlableBody(innerHtml, extraHead = '') {
+  // Single copy only. `#seo-prerender` already survives with JS disabled
+  // (main.tsx clears it on mount), so a <noscript> twin would just duplicate
+  // the whole directory in the served HTML.
   return `${extraHead}
-    <div id="seo-prerender">${innerHtml}</div>
-    <noscript id="seo-noscript">${innerHtml}</noscript>`
+    <div id="seo-prerender">${innerHtml}</div>`
 }
 
 function peakCrawlableBody(peak, url, countryLandingHref) {
