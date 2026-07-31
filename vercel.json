@@ -1,17 +1,9 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.peakatlas3d.com" }],
-      "destination": "https://peakatlas3d.com/:path*",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     {
-      "source": "/((?!sitemap\\.xml$|robots\\.txt$|favicon\\.svg$).*)",
+      "source": "/((?!assets/|sitemap\\.xml$|robots\\.txt$|favicon\\.svg$).*)",
       "destination": "/index.html"
     }
   ]
