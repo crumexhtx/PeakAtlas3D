@@ -78,18 +78,18 @@ type AtlasMapProps = {
  * Desktop world framing — fills the stage without over-zooming (closer zoom
  * costs more satellite detail while the idle globe spins).
  */
-/** ~20% closer than the original full-disk framing. */
-const WORLD_ZOOM = 1.2
+/** ~17% closer than the prior full-disk framing. */
+const WORLD_ZOOM = 1.404
 /**
  * World framing matched to the reference phone shot: full Earth disk
  * visible with clear margin (not clipped, not tiny).
  */
-const WORLD_ZOOM_NARROW = 0.9
+const WORLD_ZOOM_NARROW = 1.053
 /**
  * iPhone SE (~375×667): map pane is shorter after header/browse chrome,
  * so ease out a touch vs taller phones while keeping the same look.
  */
-const WORLD_ZOOM_SE = 0.84
+const WORLD_ZOOM_SE = 0.983
 
 /** Fresh random globe framing for each full page load / refresh. */
 function createRandomWorldView() {
@@ -365,49 +365,82 @@ export function AtlasMap({
     if (prev === undefined && !selectedCountry && !returningFromPeak) return
 
     stopSpin()
-    map.setTerrain(null)
+    try {
+      map.setTerrain(null)
+    } catch {
+      // Style may be mid-swap after leaving a peak.
+    }
     setMapInteractive(map, true)
 
-    // Defer camera move to the next frame so it wins over the peak-leave
-    // effect in the same commit (that effect must not cancel this animation).
+    let cancelled = false
+    // Peak→world also swaps basemap (detail→world). Wait for style.load
+    // before easeTo, otherwise MapLibre cancels the zoom-out and the camera
+    // (or maxZoom clamp) leaves the globe unusable.
     const frame = requestAnimationFrame(() => {
-      try {
-        map.stop()
-      } catch {
-        // Map may already be removed.
-      }
+      void (async () => {
+        try {
+          map.stop()
+        } catch {
+          // Map may already be removed.
+        }
+        if (returningFromPeak) {
+          await waitForStyleReady(map)
+          // One more frame so react-map-gl can re-attach the DEM source.
+          await new Promise<void>((r) => requestAnimationFrame(() => r()))
+        }
+        if (cancelled) return
 
-      if (!selectedCountry) {
-        if (prev || returningFromPeak) {
-          map.easeTo({
-            center: [worldView.longitude, worldView.latitude],
-            zoom: worldView.zoom,
-            pitch: worldView.pitch,
-            bearing: worldView.bearing,
-            // Peak/country views leave asymmetric padding that shifts the globe
-            // off-center — always clear it when returning to world.
-            padding: worldFramePadding(),
+        try {
+          applyPeakAtmosphere(map)
+          softenSatelliteRaster(map)
+        } catch {
+          // ignore
+        }
+
+        if (!selectedCountry) {
+          if (prev || returningFromPeak) {
+            try {
+              map.easeTo({
+                center: [worldView.longitude, worldView.latitude],
+                zoom: worldView.zoom,
+                pitch: worldView.pitch,
+                bearing: worldView.bearing,
+                // Peak/country views leave asymmetric padding that shifts the globe
+                // off-center — always clear it when returning to world.
+                padding: worldFramePadding(),
+                duration: prefersReducedMotion() ? 0 : PEAK_TRANSITION_MS,
+                essential: true,
+              })
+            } catch {
+              // Style/camera race — unlock and let idle spin recover.
+              setMapInteractive(map, true)
+            }
+          }
+          return
+        }
+
+        const bounds = getCountryBounds(countryPeaks)
+        if (!bounds) return
+
+        try {
+          map.fitBounds(bounds, {
+            padding: countryFramePadding(),
+            maxZoom: countryPeaks.length === 1 ? 5.8 : 6.4,
             duration: prefersReducedMotion() ? 0 : PEAK_TRANSITION_MS,
             essential: true,
+            pitch: 0,
+            bearing: 0,
           })
+        } catch {
+          setMapInteractive(map, true)
         }
-        return
-      }
-
-      const bounds = getCountryBounds(countryPeaks)
-      if (!bounds) return
-
-      map.fitBounds(bounds, {
-        padding: countryFramePadding(),
-        maxZoom: countryPeaks.length === 1 ? 5.8 : 6.4,
-        duration: prefersReducedMotion() ? 0 : PEAK_TRANSITION_MS,
-        essential: true,
-        pitch: 0,
-        bearing: 0,
-      })
+      })()
     })
 
-    return () => cancelAnimationFrame(frame)
+    return () => {
+      cancelled = true
+      cancelAnimationFrame(frame)
+    }
   }, [mapReady, selectedCountry, countryPeaks, activePeak, worldView])
 
   // National park selection — fly to an overview frame (world mode only).
@@ -692,8 +725,55 @@ export function AtlasMap({
   const styleMode = mode === 'world' && !showNationalParks ? 'world' : 'detail'
   const style = useMemo(() => mapStyleForMode(styleMode), [styleMode])
   const dem = useMemo(() => terrainSource(), [])
-  const maxZoom =
-    mode === 'world' && !showNationalParks ? WORLD_MAX_ZOOM : DETAIL_MAX_ZOOM
+  const wantsWorldZoomCap = mode === 'world' && !showNationalParks
+  // Never clamp maxZoom while the camera is still at summit/country zoom —
+  // dropping to WORLD_MAX_ZOOM mid-transition hard-constrains the map and
+  // breaks "Back to Global Globe".
+  const [worldZoomCapOn, setWorldZoomCapOn] = useState(wantsWorldZoomCap)
+
+  useEffect(() => {
+    if (!wantsWorldZoomCap) {
+      setWorldZoomCapOn(false)
+      return
+    }
+    if (!mapReady) {
+      setWorldZoomCapOn(true)
+      return
+    }
+    const map = getMap()
+    if (!map) {
+      setWorldZoomCapOn(true)
+      return
+    }
+    const applyIfReady = () => {
+      try {
+        if (map.getZoom() <= WORLD_MAX_ZOOM + 0.05) {
+          setWorldZoomCapOn(true)
+          return true
+        }
+      } catch {
+        setWorldZoomCapOn(true)
+        return true
+      }
+      return false
+    }
+    if (applyIfReady()) return
+    setWorldZoomCapOn(false)
+    const onMove = () => {
+      if (applyIfReady()) {
+        map.off('zoom', onMove)
+        map.off('moveend', onMove)
+      }
+    }
+    map.on('zoom', onMove)
+    map.on('moveend', onMove)
+    return () => {
+      map.off('zoom', onMove)
+      map.off('moveend', onMove)
+    }
+  }, [wantsWorldZoomCap, mapReady])
+
+  const maxZoom = worldZoomCapOn ? WORLD_MAX_ZOOM : DETAIL_MAX_ZOOM
 
   // Re-apply atmosphere / satellite soften after world↔detail style swaps.
   useEffect(() => {
