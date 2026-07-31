@@ -403,10 +403,12 @@ export function AtlasLayout() {
             <>
               <EarthOnlyToggle active={earthOnlyActive} onToggle={toggleEarthOnly} />
               {!earthOnlyActive && (
-                <NationalParksToggle
-                  active={showNationalParksActive}
-                  onToggle={toggleNationalParks}
-                />
+                <>
+                  <NationalParksToggle
+                    active={showNationalParksActive}
+                    onToggle={toggleNationalParks}
+                  />
+                </>
               )}
             </>
           )}

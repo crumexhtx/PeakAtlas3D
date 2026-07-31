@@ -25,7 +25,7 @@
 ## Stack
 
 - Vite + React + TypeScript
-- MapLibre GL JS via `react-map-gl`
+- MapLibre GL JS via `react-map-gl` (main atlas)
 - React Router
 
 ## Setup

@@ -42,10 +42,10 @@ import {
   peakFramingCenter,
   prefersReducedMotion,
   setMapInteractive,
+  settleBasemap,
   softenSatelliteRaster,
   startIdleSpin,
   waitForMapIdle,
-  waitForStyleReady,
   worldFramePadding,
 } from '../lib/mapAnimations'
 import 'maplibre-gl/dist/maplibre-gl.css'
@@ -117,6 +117,13 @@ const PARK_ZOOM = 8.4
 const PARK_PITCH = 42
 const PARK_BEARING = -18
 const PARK_FLY_MS = 4_200
+/** Contiguous-US framing while the parks overlay is on (no park selected). */
+const PARKS_OVERVIEW = {
+  center: [-108.5, 39.5] as [number, number],
+  zoom: 3.2,
+  pitch: 0,
+  bearing: 0,
+}
 /**
  * Look-at nudge toward the camera (meters). Keep modest so the summit stays
  * near the visual center of the padded viewport under pitch.
@@ -129,8 +136,11 @@ const SPIN_DURATION_MS = 26_400
  * reads as a deliberate zoom rather than a snap.
  */
 const PEAK_APPROACH_MS = 8_800
-/** Shared duration for leaving peak (country/world) camera moves. */
-const PEAK_TRANSITION_MS = 3_600
+/** Shared duration for overview camera moves (country / world / parks). */
+/** World ↔ country / parks framing — snappy enough to feel responsive on click. */
+const OVERVIEW_TRANSITION_MS = 1_400
+/** Don't stall country/parks clicks for a long hung style.load. */
+const OVERVIEW_SETTLE_MS = 1_000
 
 /**
  * When jumping in from the spinning globe (search / world flags), ease in with
@@ -365,6 +375,7 @@ export function AtlasMap({
     if (prev === undefined && !selectedCountry && !returningFromPeak) return
 
     stopSpin()
+    clearIdleTimer()
     try {
       map.setTerrain(null)
     } catch {
@@ -373,9 +384,6 @@ export function AtlasMap({
     setMapInteractive(map, true)
 
     let cancelled = false
-    // Peak→world also swaps basemap (detail→world). Wait for style.load
-    // before easeTo, otherwise MapLibre cancels the zoom-out and the camera
-    // (or maxZoom clamp) leaves the globe unusable.
     const frame = requestAnimationFrame(() => {
       void (async () => {
         try {
@@ -383,50 +391,37 @@ export function AtlasMap({
         } catch {
           // Map may already be removed.
         }
-        if (returningFromPeak) {
-          await waitForStyleReady(map)
-          // One more frame so react-map-gl can re-attach the DEM source.
-          await new Promise<void>((r) => requestAnimationFrame(() => r()))
-        }
+        // World↔country and peak→world both swap or reload style; settle first.
+        await settleBasemap(map, OVERVIEW_SETTLE_MS)
         if (cancelled) return
 
-        try {
-          applyPeakAtmosphere(map)
-          softenSatelliteRaster(map)
-        } catch {
-          // ignore
-        }
+        const duration = prefersReducedMotion() ? 0 : OVERVIEW_TRANSITION_MS
 
-        if (!selectedCountry) {
-          if (prev || returningFromPeak) {
-            try {
+        try {
+          if (!selectedCountry) {
+            if (prev || returningFromPeak) {
               map.easeTo({
                 center: [worldView.longitude, worldView.latitude],
                 zoom: worldView.zoom,
                 pitch: worldView.pitch,
                 bearing: worldView.bearing,
-                // Peak/country views leave asymmetric padding that shifts the globe
-                // off-center — always clear it when returning to world.
                 padding: worldFramePadding(),
-                duration: prefersReducedMotion() ? 0 : PEAK_TRANSITION_MS,
+                duration,
+                easing: easeInOutCubic,
                 essential: true,
               })
-            } catch {
-              // Style/camera race — unlock and let idle spin recover.
-              setMapInteractive(map, true)
             }
+            return
           }
-          return
-        }
 
-        const bounds = getCountryBounds(countryPeaks)
-        if (!bounds) return
+          const bounds = getCountryBounds(countryPeaks)
+          if (!bounds) return
 
-        try {
           map.fitBounds(bounds, {
             padding: countryFramePadding(),
             maxZoom: countryPeaks.length === 1 ? 5.8 : 6.4,
-            duration: prefersReducedMotion() ? 0 : PEAK_TRANSITION_MS,
+            duration,
+            easing: easeInOutCubic,
             essential: true,
             pitch: 0,
             bearing: 0,
@@ -443,7 +438,7 @@ export function AtlasMap({
     }
   }, [mapReady, selectedCountry, countryPeaks, activePeak, worldView])
 
-  // National park selection — fly to an overview frame (world mode only).
+  // National park selection — fly to park, or return to US parks overview.
   useEffect(() => {
     if (!mapReady || activePeak || selectedCountry) return
     const map = getMap()
@@ -454,7 +449,44 @@ export function AtlasMap({
     if (parkId === prevParkId) return
     prevParkIdRef.current = parkId
 
-    if (!selectedPark) return
+    // Deselected while parks overlay still on → back to country/US overview.
+    if (!selectedPark) {
+      if (!prevParkId || !showNationalParks) return
+      stopSpin()
+      clearIdleTimer()
+      setMapInteractive(map, true)
+
+      let cancelled = false
+      const frame = requestAnimationFrame(() => {
+        void (async () => {
+          try {
+            map.stop()
+          } catch {
+            // ignore
+          }
+          await settleBasemap(map, OVERVIEW_SETTLE_MS)
+          if (cancelled) return
+          try {
+            map.easeTo({
+              center: PARKS_OVERVIEW.center,
+              zoom: PARKS_OVERVIEW.zoom,
+              pitch: PARKS_OVERVIEW.pitch,
+              bearing: PARKS_OVERVIEW.bearing,
+              padding: worldFramePadding(),
+              duration: prefersReducedMotion() ? 0 : OVERVIEW_TRANSITION_MS,
+              easing: easeInOutCubic,
+              essential: true,
+            })
+          } catch {
+            setMapInteractive(map, true)
+          }
+        })()
+      })
+      return () => {
+        cancelled = true
+        cancelAnimationFrame(frame)
+      }
+    }
 
     stopSpin()
     clearIdleTimer()
@@ -462,28 +494,31 @@ export function AtlasMap({
 
     const cancelled = { current: false }
     const frame = requestAnimationFrame(() => {
-      void flyToAsync(map, {
-        center: [selectedPark.lon, selectedPark.lat],
-        zoom: PARK_ZOOM,
-        pitch: PARK_PITCH,
-        bearing: PARK_BEARING,
-        duration: prefersReducedMotion() ? 0 : PARK_FLY_MS,
-        curve: 1.2,
-        easing: easeInOutCubic,
-        essential: true,
-      }).catch(() => {
-        // Camera move aborted — ignore.
-      })
-      if (cancelled.current) return
+      void (async () => {
+        await settleBasemap(map, OVERVIEW_SETTLE_MS)
+        if (cancelled.current) return
+        void flyToAsync(map, {
+          center: [selectedPark.lon, selectedPark.lat],
+          zoom: PARK_ZOOM,
+          pitch: PARK_PITCH,
+          bearing: PARK_BEARING,
+          duration: prefersReducedMotion() ? 0 : PARK_FLY_MS,
+          curve: 1.25,
+          easing: easeInOutCubic,
+          essential: true,
+        }).catch(() => {
+          // Camera move aborted — ignore.
+        })
+      })()
     })
 
     return () => {
       cancelled.current = true
       cancelAnimationFrame(frame)
     }
-  }, [mapReady, selectedPark, activePeak, selectedCountry])
+  }, [mapReady, selectedPark, activePeak, selectedCountry, showNationalParks])
 
-  // When parks overlay turns on with no selection, frame the contiguous US.
+  // Parks overlay: frame contiguous US on, return to world globe on off.
   const prevShowParksRef = useRef(false)
   useEffect(() => {
     if (!mapReady || activePeak || selectedCountry) {
@@ -491,21 +526,65 @@ export function AtlasMap({
       return
     }
     const map = getMap()
-    const turningOn = showNationalParks && !prevShowParksRef.current
+    const wasOn = prevShowParksRef.current
+    const turningOn = showNationalParks && !wasOn
+    const turningOff = !showNationalParks && wasOn
     prevShowParksRef.current = showNationalParks
-    if (!map || !turningOn || selectedPark) return
+    if (!map || (!turningOn && !turningOff)) return
+    if (turningOn && selectedPark) return
 
     stopSpin()
     clearIdleTimer()
-    map.easeTo({
-      center: [-108.5, 39.5],
-      zoom: 3.2,
-      pitch: 0,
-      bearing: 0,
-      duration: prefersReducedMotion() ? 0 : 1600,
-      essential: true,
+    setMapInteractive(map, true)
+
+    let cancelled = false
+    const frame = requestAnimationFrame(() => {
+      void (async () => {
+        try {
+          map.stop()
+        } catch {
+          // ignore
+        }
+        // Parks toggles world↔detail style — always settle before camera move.
+        await settleBasemap(map, OVERVIEW_SETTLE_MS)
+        if (cancelled) return
+
+        const duration = prefersReducedMotion() ? 0 : OVERVIEW_TRANSITION_MS
+        try {
+          if (turningOn) {
+            map.easeTo({
+              center: PARKS_OVERVIEW.center,
+              zoom: PARKS_OVERVIEW.zoom,
+              pitch: PARKS_OVERVIEW.pitch,
+              bearing: PARKS_OVERVIEW.bearing,
+              padding: worldFramePadding(),
+              duration,
+              easing: easeInOutCubic,
+              essential: true,
+            })
+          } else {
+            map.easeTo({
+              center: [worldView.longitude, worldView.latitude],
+              zoom: worldView.zoom,
+              pitch: worldView.pitch,
+              bearing: worldView.bearing,
+              padding: worldFramePadding(),
+              duration,
+              easing: easeInOutCubic,
+              essential: true,
+            })
+          }
+        } catch {
+          setMapInteractive(map, true)
+        }
+      })()
     })
-  }, [mapReady, showNationalParks, selectedPark, activePeak, selectedCountry])
+
+    return () => {
+      cancelled = true
+      cancelAnimationFrame(frame)
+    }
+  }, [mapReady, showNationalParks, selectedPark, activePeak, selectedCountry, worldView])
 
   // Peak cinematic — continues from the live camera (same map instance).
   useEffect(() => {
@@ -557,24 +636,9 @@ export function AtlasMap({
       }
 
       // World→detail style swap (search / globe entry) reloads the basemap.
-      // Two frames lets react-map-gl apply mapStyle; then wait for style.load
-      // so flyTo + terrain are not cancelled mid-swap (stuck / blank peak page).
-      await new Promise<void>((resolve) => {
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => resolve())
-        })
-      })
+      // settleBasemap waits for style.load so flyTo + terrain are not cancelled.
+      await settleBasemap(map)
       if (!stillActive()) return
-      await waitForStyleReady(map)
-      if (!stillActive()) return
-      // Let react-map-gl re-attach the DEM source after style.load.
-      await new Promise<void>((resolve) => {
-        requestAnimationFrame(() => resolve())
-      })
-      if (!stillActive()) return
-
-      applyPeakAtmosphere(map)
-      softenSatelliteRaster(map)
 
       const heroZoom = peakHeroZoom(map.getZoom())
       const heroCenter = peakFramingCenter(

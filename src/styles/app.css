@@ -245,6 +245,8 @@ a {
   opacity: 0.9;
 }
 
+
+
 .app-header {
   display: flex;
   align-items: center;
@@ -1735,21 +1737,45 @@ a.trail-bubble-label-link:focus-visible {
   gap: 0.45rem;
 }
 
-.dossier-back-globe {
+.dossier-back-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.85rem;
+  margin: -0.15rem 0 0.85rem;
   position: sticky;
   top: 0;
   z-index: 2;
+  padding: 0.25rem 0;
+  background: rgba(10, 16, 26, 0.96);
+}
+
+.dossier-back-globe {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  margin: -0.15rem 0 0.85rem;
-  padding: 0.4rem 0.15rem;
+  margin: 0;
+  padding: 0.25rem 0.15rem;
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--accent);
   text-decoration: none;
-  background: rgba(10, 16, 26, 0.96);
   border-bottom: 1px solid transparent;
+}
+
+.dossier-back-globe-secondary {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.dossier-back-globe-secondary:hover,
+.dossier-back-globe-secondary:focus-visible {
+  color: #d7f1ff;
+  outline: none;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .dossier-back-globe:hover,

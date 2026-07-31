@@ -13,6 +13,7 @@ import {
   geographyLead,
   peakStatsLead,
 } from '../lib/peakSectionLeads'
+import { atlasHref } from '../lib/routes'
 import { NearbyPeaks } from './NearbyPeaks'
 import { PeakSnapshotBox } from './PeakSnapshot'
 import { TripReadiness } from './TripReadiness'
@@ -97,6 +98,8 @@ export function PeakSeoLayout({
   const statsLead = peakStatsLead(peak)
   const geoLead = geographyLead(peak)
   const placesLead = closestPlacesLead(peak)
+  const backCountry = (country?.trim() || peak.country).trim()
+  const countryBackHref = atlasHref(backCountry)
 
   return (
     <article
@@ -105,9 +108,14 @@ export function PeakSeoLayout({
       itemType="https://schema.org/Mountain"
       aria-labelledby="peak-seo-title"
     >
-      <Link to="/" className="dossier-back-globe">
-        ← Back to Global Globe
-      </Link>
+      <nav className="dossier-back-nav" aria-label="Peak navigation">
+        <Link to={countryBackHref} className="dossier-back-globe">
+          ← Back to {backCountry}
+        </Link>
+        <Link to="/" className="dossier-back-globe-secondary">
+          Global globe
+        </Link>
+      </nav>
 
       <header className="dossier-top peak-seo-header">
         {flag && (

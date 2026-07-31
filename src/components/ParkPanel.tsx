@@ -47,7 +47,7 @@ export function ParkPanel({ park, onClose }: ParkPanelProps) {
         title={park.name}
         subtitle={`${park.state} · est. ${park.established}`}
         onClose={onClose}
-        closeLabel="Close park"
+        closeLabel="Back to parks"
       >
         <aside className="country-panel park-panel" aria-label={`${park.name} guide`}>
           <div className="country-panel-top">
@@ -64,7 +64,7 @@ export function ParkPanel({ park, onClose }: ParkPanelProps) {
               type="button"
               className="icon-btn country-panel-desktop-close"
               onClick={onClose}
-              aria-label="Close park"
+              aria-label="Back to parks"
             >
               ×
             </button>
@@ -140,7 +140,7 @@ export function ParkPanel({ park, onClose }: ParkPanelProps) {
           )}
 
           <button type="button" className="back-world-btn" onClick={onClose}>
-            ← Close park
+            ← Back to parks
           </button>
         </aside>
       </DetailsSheet>
