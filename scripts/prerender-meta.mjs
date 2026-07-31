@@ -16,6 +16,12 @@ import {
   countryMeta,
   countrySlug,
 } from './lib/countries-static.mjs'
+import {
+  COMPARISON_PAIRS,
+  compareIndexHtml,
+  comparePageHtml,
+  peakSnapshotHtml,
+} from './lib/peak-snapshot.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const distDir = join(root, 'dist')
@@ -187,8 +193,10 @@ function peakArticleHtml(peak, url, countryLandingHref) {
             <p>Trip Guide &amp; 3D Map</p>
             <p>${escapeHtml(peak.range)} · Difficulty, season, and access — then explore the 3D terrain</p>
           </header>
+          ${peakSnapshotHtml(peak)}
           <section aria-label="Trip readiness">
-            <h2>Trip readiness</h2>
+            <h2>How hard is ${escapeHtml(peak.name)}, and what do you need before you go?</h2>
+            <p>${escapeHtml(peak.name)} is listed as ${escapeHtml(peak.difficulty || 'a graded objective')} with a best season of ${escapeHtml(peak.bestSeason || 'the published season window')}. Use the difficulty, permit, and staging details below before you commit to a date.</p>
             <dl>
               <div><dt>Difficulty</dt><dd>${escapeHtml(peak.difficulty || '')}</dd></div>
               <div><dt>Best season</dt><dd>${escapeHtml(peak.bestSeason || '')}</dd></div>
@@ -200,7 +208,7 @@ function peakArticleHtml(peak, url, countryLandingHref) {
             </dl>
           </section>
           <section aria-label="Peak stats">
-            <h2>Peak stats</h2>
+            <h2>How tall is ${escapeHtml(peak.name)}, and where is it?</h2>
             <dl>
               <div><dt>Location</dt><dd>${locationHtml}</dd></div>
               <div><dt>Elevation</dt><dd>${escapeHtml(formatFt(peak.elevationFt))}</dd></div>
@@ -210,7 +218,7 @@ function peakArticleHtml(peak, url, countryLandingHref) {
             </dl>
           </section>
           <section aria-label="Geography and climbing context">
-            <h2>Geography &amp; climbing context</h2>
+            <h2>What makes ${escapeHtml(peak.name)} notable?</h2>
             ${
               peak.whyNotable
                 ? `<p>${escapeHtml(peak.whyNotable)}</p>`
@@ -223,7 +231,7 @@ function peakArticleHtml(peak, url, countryLandingHref) {
           ${trailList}
           <nav aria-label="Site">
             <p><a href="${escapeAttr(url)}">${escapeHtml(url)}</a></p>
-            <p>${countryNav}<a href="${escapeAttr(siteUrl)}/peaks">All peaks</a> · <a href="${escapeAttr(siteUrl)}/">Atlas</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
+            <p>${countryNav}<a href="${escapeAttr(siteUrl)}/peaks">All peaks</a> · <a href="${escapeAttr(siteUrl)}/compare">Compare</a> · <a href="${escapeAttr(siteUrl)}/">Atlas</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
           </nav>
         </article>
       </main>`
@@ -549,6 +557,14 @@ const staticPages = [
     image: '',
     bodyHtml: peaksIndexBody(peaks, countrySummaries),
   },
+  {
+    path: '/compare',
+    title: 'Peak comparisons — PeakAtlas3D',
+    description:
+      'Side-by-side peak comparisons using PeakAtlas3D catalog metrics: elevation, difficulty tier, season, permits, staging, and mapped lodging.',
+    image: '',
+    bodyHtml: compareIndexHtml(siteUrl),
+  },
 ]
 
 // Root index keeps home meta + crawlable peak directory.
@@ -590,6 +606,22 @@ for (const peak of peaks) {
   })
 }
 
+const peaksById = new Map(peaks.filter((p) => p?.id).map((p) => [p.id, p]))
+for (const pair of COMPARISON_PAIRS) {
+  const a = peaksById.get(pair.aId)
+  const b = peaksById.get(pair.bId)
+  if (!a || !b) {
+    console.warn(`Skip compare prerender ${pair.slug}: missing peak`)
+    continue
+  }
+  writeRoute(template, `/compare/${pair.slug}`, {
+    title: `${pair.title} — Peak comparison | PeakAtlas3D`,
+    description: pair.summary.slice(0, 300),
+    image: peakImage(a) || peakImage(b),
+    bodyHtml: comparePageHtml(pair, a, b, siteUrl),
+  })
+}
+
 console.log(
-  `Prerendered meta HTML for ${staticPages.length} pages + ${countrySummaries.length} countries + ${peaks.length} peaks → ${siteUrl}`,
+  `Prerendered meta HTML for ${staticPages.length} pages + ${countrySummaries.length} countries + ${peaks.length} peaks + ${COMPARISON_PAIRS.length} comparisons → ${siteUrl}`,
 )

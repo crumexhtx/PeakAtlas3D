@@ -6,6 +6,7 @@ import {
   resolveDifficultyTier,
 } from '../lib/difficultyTiers'
 import { gearChecklistForTier } from '../lib/gearChecklists'
+import { tripReadinessLead } from '../lib/peakSectionLeads'
 import { useUnits } from '../context/UnitsContext'
 
 type TripReadinessProps = {
@@ -63,16 +64,15 @@ export function TripReadiness({ peak }: TripReadinessProps) {
       .filter(Boolean)
       .join(' · ')
   }, [town, units])
+  const lead = tripReadinessLead(peak)
 
   return (
     <section
       className="info-block trip-readiness"
       aria-label={`Trip readiness for ${peak.name}`}
     >
-      <h2 className="info-heading">Trip readiness</h2>
-      <p className="trip-readiness-lede">
-        Can you climb this, and what do you need to know before you go?
-      </p>
+      <h2 className="info-heading">{lead.heading}</h2>
+      <p className="trip-readiness-lede section-answer-lead">{lead.answer}</p>
 
       <dl className="trip-readiness-grid">
         <div>

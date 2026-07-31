@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react'
-import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import type { Peak, UnitSystem } from '../types/peak'
 import {
@@ -7,15 +6,16 @@ import {
   formatDistance,
   formatElevation,
 } from '../lib/geo'
-import { buildCountrySummaries, flagUrl } from '../lib/countries'
-import {
-  countryHref,
-  primaryCountryName,
-} from '../lib/countryPages'
+import { flagUrl } from '../lib/countries'
 import { peakLocationLabel, peakRegion } from '../lib/peakLocation'
+import {
+  closestPlacesLead,
+  geographyLead,
+  peakStatsLead,
+} from '../lib/peakSectionLeads'
 import { NearbyPeaks } from './NearbyPeaks'
+import { PeakSnapshotBox } from './PeakSnapshot'
 import { TripReadiness } from './TripReadiness'
-import { peaksIndex } from '../data/catalog'
 
 export function seoPeakHeading(peakName: string): string {
   return peakName
@@ -71,7 +71,7 @@ type PeakSeoLayoutProps = {
 }
 
 /**
- * Semantic peak article: trip readiness first, supporting media + stats,
+ * Semantic peak article: snapshot + trip readiness first, then stats,
  * while living inside the existing sticky/side dossier (map stays full-bleed).
  */
 export function PeakSeoLayout({
@@ -81,12 +81,9 @@ export function PeakSeoLayout({
   children,
   country,
 }: PeakSeoLayoutProps) {
-  const summaries = useMemo(() => buildCountrySummaries(peaksIndex), [])
   const flag = flagUrl(peak.country, 40)
   const location = peakLocationLabel(peak)
   const region = peakRegion(peak)
-  const countryName = primaryCountryName(peak.country, summaries)
-  const countryPath = countryHref(countryName)
   const nearby = peak.nearbyPlaces?.length
     ? peak.nearbyPlaces
     : peak.nearestTown
@@ -96,6 +93,10 @@ export function PeakSeoLayout({
   const approachRoutes = nearby
     .map((p) => p.route)
     .filter((r): r is string => Boolean(r?.trim()))
+
+  const statsLead = peakStatsLead(peak)
+  const geoLead = geographyLead(peak)
+  const placesLead = closestPlacesLead(peak)
 
   return (
     <article
@@ -112,7 +113,7 @@ export function PeakSeoLayout({
         {flag && (
           <img
             src={flag}
-            alt={`${countryName} flag`}
+            alt={`${peak.country} flag`}
             className="dossier-flag"
             width={36}
             height={24}
@@ -121,9 +122,7 @@ export function PeakSeoLayout({
         )}
         <div>
           <p className="dossier-eyebrow">
-            <Link to={countryPath} className="dossier-country-link">
-              {location}
-            </Link>
+            <span>{location}</span>
             <meta itemProp="addressCountry" content={peak.country} />
             {region && <meta itemProp="addressRegion" content={region} />}
           </p>
@@ -151,6 +150,8 @@ export function PeakSeoLayout({
         </div>
       </header>
 
+      <PeakSnapshotBox peak={peak} />
+
       <TripReadiness peak={peak} />
 
       {media}
@@ -161,7 +162,8 @@ export function PeakSeoLayout({
         className="info-block peak-seo-stats"
         aria-label={`${peak.name} mountain statistics`}
       >
-        <h2 className="info-heading">Peak stats</h2>
+        <h2 className="info-heading">{statsLead.heading}</h2>
+        <p className="section-answer-lead">{statsLead.answer}</p>
         <dl className="info-list">
           <div>
             <dt>Location</dt>
@@ -214,7 +216,8 @@ export function PeakSeoLayout({
         className="info-block peak-seo-about"
         aria-label={`About ${peak.name} topography and climbing context`}
       >
-        <h2 className="info-heading">Geography & climbing context</h2>
+        <h2 className="info-heading">{geoLead.heading}</h2>
+        <p className="section-answer-lead">{geoLead.answer}</p>
         {peak.whyNotable && (
           <p className="peak-why-notable">{peak.whyNotable}</p>
         )}
@@ -255,7 +258,8 @@ export function PeakSeoLayout({
           className="info-block"
           aria-label={`Places near ${peak.name}`}
         >
-          <h2 className="info-heading">Closest places</h2>
+          <h2 className="info-heading">{placesLead.heading}</h2>
+          <p className="section-answer-lead">{placesLead.answer}</p>
           <ul className="nearby-places-list">
             {nearby.map((place) => (
               <li key={`${place.name}-${place.lat}`}>
