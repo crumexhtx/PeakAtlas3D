@@ -1,0 +1,1958 @@
+[
+  {
+    "id": "yellowstone",
+    "name": "Yellowstone National Park",
+    "aliases": [
+      "Yellowstone"
+    ],
+    "lat": 44.6,
+    "lon": -110.5,
+    "country": "USA",
+    "state": "Wyoming",
+    "established": 1872,
+    "areaSqMi": 3471,
+    "bestSeason": "May–Sep",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee or America the Beautiful pass; some roads close in winter.",
+    "whyNotable": "World’s first national park — geysers, wildlife, and the Yellowstone Caldera.",
+    "description": "Yellowstone spans Wyoming, Montana, and Idaho with hydrothermal wonders, bison herds, and alpine lakes. Summer is peak visitation; winter opens a quieter snow-coach season. Stage in West Yellowstone, Gardiner, or Cody and book lodging early.",
+    "seoMetaDescription": "Yellowstone National Park guide: best season, fees, staging towns, and 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "West Yellowstone",
+      "region": "Montana",
+      "distanceMiles": 28,
+      "route": "US-20 / West Entrance",
+      "lat": 44.662,
+      "lon": -111.104
+    },
+    "nearbyPlaces": [
+      {
+        "name": "West Yellowstone",
+        "region": "Montana",
+        "distanceMiles": 28,
+        "route": "US-20 / West Entrance",
+        "lat": 44.662,
+        "lon": -111.104
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Old Faithful Inn Dining Room",
+        "category": "Restaurant",
+        "note": "Historic lodge dining in season."
+      },
+      {
+        "name": "Running Bear Pancake House",
+        "category": "Casual eats",
+        "note": "Breakfast in West Yellowstone."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Grand Prismatic Overlook"
+      },
+      {
+        "name": "Uncle Tom’s Trail / Canyon area"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Grand_Prismatic_Spring_and_Midway_Geyser_Basin_from_above.jpg/1280px-Grand_Prismatic_Spring_and_Midway_Geyser_Basin_from_above.jpg",
+      "credit": "Brocken Inaglory",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grand_Prismatic_Spring_and_Midway_Geyser_Basin_from_above.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Grand_Prismatic_Spring_and_Midway_Geyser_Basin_from_above.jpg/1280px-Grand_Prismatic_Spring_and_Midway_Geyser_Basin_from_above.jpg",
+        "credit": "Brocken Inaglory",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grand_Prismatic_Spring_and_Midway_Geyser_Basin_from_above.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Daisy_Geyser_erupting_in_Yellowstone_National_Park_edit.jpg/1280px-Daisy_Geyser_erupting_in_Yellowstone_National_Park_edit.jpg",
+        "credit": "Brocken Inaglory",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daisy_Geyser_erupting_in_Yellowstone_National_Park_edit.jpg"
+      }
+    ]
+  },
+  {
+    "id": "yosemite",
+    "name": "Yosemite National Park",
+    "aliases": [
+      "Yosemite"
+    ],
+    "lat": 37.8651,
+    "lon": -119.5383,
+    "country": "USA",
+    "state": "California",
+    "established": 1890,
+    "areaSqMi": 1169,
+    "bestSeason": "May–Oct",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; peak-season reservations may be required for vehicles.",
+    "whyNotable": "Iconic Sierra granite — Half Dome, El Capitan, and Yosemite Falls.",
+    "description": "Yosemite Valley concentrates waterfalls, big walls, and crowded viewpoints. High country opens later; winter brings quieter valley days and icy trails. Stage in Mariposa, Oakhurst, or Yosemite West and expect timed entry in peak months.",
+    "seoMetaDescription": "Yosemite National Park guide: fees, season, valley staging, and 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Mariposa",
+      "region": "California",
+      "distanceMiles": 35,
+      "route": "CA-140",
+      "lat": 37.485,
+      "lon": -119.966
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Mariposa",
+        "region": "California",
+        "distanceMiles": 35,
+        "route": "CA-140",
+        "lat": 37.485,
+        "lon": -119.966
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Degnan’s Kitchen",
+        "category": "Casual eats",
+        "note": "Valley grab-and-go."
+      },
+      {
+        "name": "Base Camp Cafe",
+        "category": "Café",
+        "note": "Meals in Mariposa."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Mist Trail"
+      },
+      {
+        "name": "Valley Loop / Mirror Lake"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yosemite_meadows_2004-09-04.jpg/1280px-Yosemite_meadows_2004-09-04.jpg",
+      "credit": "Jon Sullivan",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yosemite_meadows_2004-09-04.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yosemite_meadows_2004-09-04.jpg/1280px-Yosemite_meadows_2004-09-04.jpg",
+        "credit": "Jon Sullivan",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yosemite_meadows_2004-09-04.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Yosemite_El_Capitan.jpg/1280px-Yosemite_El_Capitan.jpg",
+        "credit": "Mike Murphy (talk · contribs)",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yosemite_El_Capitan.jpg"
+      }
+    ]
+  },
+  {
+    "id": "grandcanyon",
+    "name": "Grand Canyon National Park",
+    "aliases": [
+      "Grand Canyon"
+    ],
+    "lat": 36.0544,
+    "lon": -112.1401,
+    "country": "USA",
+    "state": "Arizona",
+    "established": 1919,
+    "areaSqMi": 1902,
+    "bestSeason": "Mar–May or Sep–Nov",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; North Rim has a shorter open season.",
+    "whyNotable": "One of Earth’s most famous canyon landscapes — South Rim viewpoints and rim-to-river hikes.",
+    "description": "Most visitors use the South Rim near Grand Canyon Village. Summer heat is extreme below the rim; monsoon storms arrive mid-summer. Stage in Tusayan or Williams and start rim walks early.",
+    "seoMetaDescription": "Grand Canyon National Park guide: South Rim season, fees, staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Tusayan",
+      "region": "Arizona",
+      "distanceMiles": 7,
+      "route": "AZ-64",
+      "lat": 35.973,
+      "lon": -112.127
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Tusayan",
+        "region": "Arizona",
+        "distanceMiles": 7,
+        "route": "AZ-64",
+        "lat": 35.973,
+        "lon": -112.127
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "El Tovar Dining Room",
+        "category": "Restaurant",
+        "note": "Historic rim dining."
+      },
+      {
+        "name": "We Cook Pizza & Pasta",
+        "category": "Casual eats",
+        "note": "Tusayan after rim days."
+      }
+    ],
+    "trails": [
+      {
+        "name": "South Kaibab Trail"
+      },
+      {
+        "name": "Bright Angel Trail"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hazy_blue_hour_in_Grand_Canyon.JPG/1280px-Hazy_blue_hour_in_Grand_Canyon.JPG",
+      "credit": "Michael Gäbler",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hazy_blue_hour_in_Grand_Canyon.JPG"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hazy_blue_hour_in_Grand_Canyon.JPG/1280px-Hazy_blue_hour_in_Grand_Canyon.JPG",
+        "credit": "Michael Gäbler",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hazy_blue_hour_in_Grand_Canyon.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hazy_blue_hour_in_Grand_Canyon.JPG/1280px-Hazy_blue_hour_in_Grand_Canyon.JPG",
+        "credit": "Michael Gäbler",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hazy_blue_hour_in_Grand_Canyon.JPG"
+      }
+    ]
+  },
+  {
+    "id": "zion",
+    "name": "Zion National Park",
+    "aliases": [
+      "Zion"
+    ],
+    "lat": 37.2982,
+    "lon": -113.0263,
+    "country": "USA",
+    "state": "Utah",
+    "established": 1919,
+    "areaSqMi": 229,
+    "bestSeason": "Mar–May or Sep–Nov",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; seasonal shuttle required in Zion Canyon.",
+    "whyNotable": "Towering Navajo sandstone walls, The Narrows, and Angels Landing (permit).",
+    "description": "Zion Canyon is compact and busy. Summer is hot; spring runoff affects The Narrows. Stage in Springdale and use the shuttle in season. Angels Landing needs a permit lottery.",
+    "seoMetaDescription": "Zion National Park guide: shuttle season, fees, Springdale staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Springdale",
+      "region": "Utah",
+      "distanceMiles": 2,
+      "route": "UT-9",
+      "lat": 37.189,
+      "lon": -112.999
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Springdale",
+        "region": "Utah",
+        "distanceMiles": 2,
+        "route": "UT-9",
+        "lat": 37.189,
+        "lon": -112.999
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Oscar’s Café",
+        "category": "Restaurant",
+        "note": "Springdale classic."
+      },
+      {
+        "name": "Deep Creek Coffee",
+        "category": "Café",
+        "note": "Early canyon starts."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Angels Landing"
+      },
+      {
+        "name": "The Narrows"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Zion_angels_landing_view.jpg",
+      "credit": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zion_angels_landing_view.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Zion_angels_landing_view.jpg",
+        "credit": "Diliff",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zion_angels_landing_view.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Zion_angels_landing_view.jpg",
+        "credit": "Diliff",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zion_angels_landing_view.jpg"
+      }
+    ]
+  },
+  {
+    "id": "rockymountain",
+    "name": "Rocky Mountain National Park",
+    "aliases": [
+      "Rocky Mountain",
+      "RMNP"
+    ],
+    "lat": 40.3428,
+    "lon": -105.6836,
+    "country": "USA",
+    "state": "Colorado",
+    "established": 1915,
+    "areaSqMi": 415,
+    "bestSeason": "Jun–Sep",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; timed-entry reservations common in peak season.",
+    "whyNotable": "High alpine lakes, Trail Ridge Road, and Longs Peak on the Continental Divide.",
+    "description": "RMNP mixes easy lakeshore walks with serious 14er approaches. Trail Ridge Road usually opens by Memorial Day weekend. Stage in Estes Park or Grand Lake and reserve timed entry when required.",
+    "seoMetaDescription": "Rocky Mountain National Park guide: timed entry, season, Estes Park staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Estes Park",
+      "region": "Colorado",
+      "distanceMiles": 6,
+      "route": "US-36",
+      "lat": 40.377,
+      "lon": -105.522
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Estes Park",
+        "region": "Colorado",
+        "distanceMiles": 6,
+        "route": "US-36",
+        "lat": 40.377,
+        "lon": -105.522
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "The Nest",
+        "category": "Restaurant",
+        "note": "Estes Park meals."
+      },
+      {
+        "name": "Kind Coffee",
+        "category": "Café",
+        "note": "Before Bear Lake corridor."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Emerald Lake Trail"
+      },
+      {
+        "name": "Alberta Falls"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/RockyMountainsNationalParkColorado.jpg/1280px-RockyMountainsNationalParkColorado.jpg",
+      "credit": "Massimo Catarinella",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RockyMountainsNationalParkColorado.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/RockyMountainsNationalParkColorado.jpg/1280px-RockyMountainsNationalParkColorado.jpg",
+        "credit": "Massimo Catarinella",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:RockyMountainsNationalParkColorado.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/RockyMountainsNationalParkColorado.jpg/1280px-RockyMountainsNationalParkColorado.jpg",
+        "credit": "Massimo Catarinella",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:RockyMountainsNationalParkColorado.jpg"
+      }
+    ]
+  },
+  {
+    "id": "grandtetonnp",
+    "name": "Grand Teton National Park",
+    "aliases": [
+      "Grand Teton NP",
+      "Tetons"
+    ],
+    "lat": 43.7904,
+    "lon": -110.6818,
+    "country": "USA",
+    "state": "Wyoming",
+    "established": 1929,
+    "areaSqMi": 485,
+    "bestSeason": "Jun–Sep",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee or America the Beautiful pass.",
+    "whyNotable": "Sharp Teton skyline above Jenny Lake and Jackson Hole.",
+    "description": "Grand Teton pairs roadside viewpoints with serious alpine climbing. Summer is short; snow lingers in the high country. Stage in Jackson or Teton Village and expect busy Jenny Lake boats and trails.",
+    "seoMetaDescription": "Grand Teton National Park guide: season, fees, Jackson staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Jackson",
+      "region": "Wyoming",
+      "distanceMiles": 12,
+      "route": "US-191 / Teton Park Rd",
+      "lat": 43.48,
+      "lon": -110.762
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Jackson",
+        "region": "Wyoming",
+        "distanceMiles": 12,
+        "route": "US-191 / Teton Park Rd",
+        "lat": 43.48,
+        "lon": -110.762
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Dornan’s Chuckwagon",
+        "category": "Casual eats",
+        "note": "Moose area classic."
+      },
+      {
+        "name": "Persephone Bakery",
+        "category": "Café",
+        "note": "Jackson breakfast."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Cascade Canyon"
+      },
+      {
+        "name": "Taggart Lake"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1280px-Adams_The_Tetons_and_the_Snake_River.jpg",
+      "credit": "Ansel Adams",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adams_The_Tetons_and_the_Snake_River.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1280px-Adams_The_Tetons_and_the_Snake_River.jpg",
+        "credit": "Ansel Adams",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adams_The_Tetons_and_the_Snake_River.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1280px-Adams_The_Tetons_and_the_Snake_River.jpg",
+        "credit": "Ansel Adams",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adams_The_Tetons_and_the_Snake_River.jpg"
+      }
+    ]
+  },
+  {
+    "id": "glacier",
+    "name": "Glacier National Park",
+    "aliases": [
+      "Glacier NP"
+    ],
+    "lat": 48.7596,
+    "lon": -113.787,
+    "country": "USA",
+    "state": "Montana",
+    "established": 1910,
+    "areaSqMi": 1583,
+    "bestSeason": "Jul–Sep",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; Going-to-the-Sun Road vehicle reservations in peak season.",
+    "whyNotable": "Going-to-the-Sun Road, alpine lakes, and remaining glaciers on the Continental Divide.",
+    "description": "Glacier’s high season is brief. Snow can close Going-to-the-Sun into July. Stage in West Glacier, St. Mary, or Whitefish and plan for wildlife, steep trails, and sudden weather.",
+    "seoMetaDescription": "Glacier National Park guide: Going-to-the-Sun season, fees, staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "West Glacier",
+      "region": "Montana",
+      "distanceMiles": 4,
+      "route": "Going-to-the-Sun Rd",
+      "lat": 48.496,
+      "lon": -113.978
+    },
+    "nearbyPlaces": [
+      {
+        "name": "West Glacier",
+        "region": "Montana",
+        "distanceMiles": 4,
+        "route": "Going-to-the-Sun Rd",
+        "lat": 48.496,
+        "lon": -113.978
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Glacier Highland Restaurant",
+        "category": "Restaurant",
+        "note": "West Glacier meals."
+      },
+      {
+        "name": "Two Medicine Grill",
+        "category": "Casual eats",
+        "note": "East-side option."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Highline Trail"
+      },
+      {
+        "name": "Avalanche Lake"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg/1280px-Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg",
+      "credit": "Tuxyso",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg/1280px-Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg",
+        "credit": "Tuxyso",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg/1280px-Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg",
+        "credit": "Tuxyso",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg"
+      }
+    ]
+  },
+  {
+    "id": "acadia",
+    "name": "Acadia National Park",
+    "aliases": [
+      "Acadia"
+    ],
+    "lat": 44.35,
+    "lon": -68.21,
+    "country": "USA",
+    "state": "Maine",
+    "established": 1916,
+    "areaSqMi": 76,
+    "bestSeason": "May–Oct",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; Cadillac Summit Road may need timed reservations.",
+    "whyNotable": "Atlantic coastline, carriage roads, and Cadillac Mountain sunrise.",
+    "description": "Acadia wraps around Mount Desert Island with ocean cliffs and forested summits. Summer and fall foliage are busiest. Stage in Bar Harbor and combine Park Loop Road overlooks with shorter ridge walks.",
+    "seoMetaDescription": "Acadia National Park guide: Cadillac season, fees, Bar Harbor staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Bar Harbor",
+      "region": "Maine",
+      "distanceMiles": 3,
+      "route": "Park Loop Rd",
+      "lat": 44.387,
+      "lon": -68.204
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Bar Harbor",
+        "region": "Maine",
+        "distanceMiles": 3,
+        "route": "Park Loop Rd",
+        "lat": 44.387,
+        "lon": -68.204
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Jordan Pond House",
+        "category": "Restaurant",
+        "note": "Popovers in season."
+      },
+      {
+        "name": "2 Cats Restaurant",
+        "category": "Café",
+        "note": "Bar Harbor breakfast."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Ocean Path"
+      },
+      {
+        "name": "Beehive Trail"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Acadia_National_Park_02.JPG/1280px-Acadia_National_Park_02.JPG",
+      "credit": "Plh1234us",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acadia_National_Park_02.JPG"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Acadia_National_Park_02.JPG/1280px-Acadia_National_Park_02.JPG",
+        "credit": "Plh1234us",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acadia_National_Park_02.JPG"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Acadia_National_Park_02.JPG/1280px-Acadia_National_Park_02.JPG",
+        "credit": "Plh1234us",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acadia_National_Park_02.JPG"
+      }
+    ]
+  },
+  {
+    "id": "gsmnp",
+    "name": "Great Smoky Mountains National Park",
+    "aliases": [
+      "Great Smoky Mountains",
+      "Smokies"
+    ],
+    "lat": 35.6118,
+    "lon": -83.5496,
+    "country": "USA",
+    "state": "Tennessee",
+    "established": 1934,
+    "areaSqMi": 816,
+    "bestSeason": "Apr–Jun or Sep–Oct",
+    "feeRequired": true,
+    "feeNotes": "Parking tag required for vehicles; no traditional entrance fee booths on many approaches.",
+    "whyNotable": "America’s most-visited national park — Appalachian forests, Clingmans Dome, and Cades Cove.",
+    "description": "The Smokies straddle Tennessee and North Carolina with misty ridges and historic settlements. Fall color and summer weekends are packed. Stage in Gatlinburg, Cherokee, or Townsend.",
+    "seoMetaDescription": "Great Smoky Mountains National Park guide: parking tags, season, Gatlinburg staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Gatlinburg",
+      "region": "Tennessee",
+      "distanceMiles": 8,
+      "route": "US-441",
+      "lat": 35.714,
+      "lon": -83.51
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Gatlinburg",
+        "region": "Tennessee",
+        "distanceMiles": 8,
+        "route": "US-441",
+        "lat": 35.714,
+        "lon": -83.51
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Pancake Pantry",
+        "category": "Casual eats",
+        "note": "Gatlinburg breakfast lines."
+      },
+      {
+        "name": "The Peddler",
+        "category": "Restaurant",
+        "note": "Steakhouse after park days."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Alum Cave Trail"
+      },
+      {
+        "name": "Laurel Falls"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Great-smoky-mountains-national-park-hq-tn1.jpg/1280px-Great-smoky-mountains-national-park-hq-tn1.jpg",
+      "credit": "Brian Stansberry",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great-smoky-mountains-national-park-hq-tn1.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Great-smoky-mountains-national-park-hq-tn1.jpg/1280px-Great-smoky-mountains-national-park-hq-tn1.jpg",
+        "credit": "Brian Stansberry",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great-smoky-mountains-national-park-hq-tn1.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Great-smoky-mountains-national-park-hq-tn1.jpg/1280px-Great-smoky-mountains-national-park-hq-tn1.jpg",
+        "credit": "Brian Stansberry",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great-smoky-mountains-national-park-hq-tn1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "olympic",
+    "name": "Olympic National Park",
+    "aliases": [
+      "Olympic"
+    ],
+    "lat": 47.8021,
+    "lon": -123.6044,
+    "country": "USA",
+    "state": "Washington",
+    "established": 1938,
+    "areaSqMi": 1442,
+    "bestSeason": "Jun–Sep",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; coastal and mountain weather can diverge sharply.",
+    "whyNotable": "Rainforest, Pacific beaches, and glacier-clad Olympic peaks in one park.",
+    "description": "Olympic packs temperate rainforest, wilderness coast, and alpine meadows. Hurricane Ridge and Hoh Rain Forest are classic day destinations. Stage in Port Angeles or Forks.",
+    "seoMetaDescription": "Olympic National Park guide: season, fees, Port Angeles staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Port Angeles",
+      "region": "Washington",
+      "distanceMiles": 17,
+      "route": "Hurricane Ridge Rd",
+      "lat": 48.118,
+      "lon": -123.431
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Port Angeles",
+        "region": "Washington",
+        "distanceMiles": 17,
+        "route": "Hurricane Ridge Rd",
+        "lat": 48.118,
+        "lon": -123.431
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "New Day Fisheries Café",
+        "category": "Casual eats",
+        "note": "Port Angeles waterfront."
+      },
+      {
+        "name": "Next Door Gastropub",
+        "category": "Restaurant",
+        "note": "Post-ridge meals."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Hurricane Hill"
+      },
+      {
+        "name": "Hoh River Trail"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Hurricane_Ridge_Olympic_National_Park.jpg",
+      "credit": "Bala from Seattle, USA",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hurricane_Ridge_Olympic_National_Park.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Hurricane_Ridge_Olympic_National_Park.jpg",
+        "credit": "Bala from Seattle, USA",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hurricane_Ridge_Olympic_National_Park.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Rock_face%2C_Ruby_Beach%2C_Olympic_National_Park%2C_Washington_State%2C_1992.JPG/1280px-Rock_face%2C_Ruby_Beach%2C_Olympic_National_Park%2C_Washington_State%2C_1992.JPG",
+        "credit": "Michael Gäbler",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rock_face,_Ruby_Beach,_Olympic_National_Park,_Washington_State,_1992.JPG"
+      }
+    ]
+  },
+  {
+    "id": "rainiernp",
+    "name": "Mount Rainier National Park",
+    "aliases": [
+      "Mount Rainier NP",
+      "Rainier NP"
+    ],
+    "lat": 46.88,
+    "lon": -121.727,
+    "country": "USA",
+    "state": "Washington",
+    "established": 1899,
+    "areaSqMi": 369,
+    "bestSeason": "Jul–Sep",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; Paradise / Sunrise timed entry may apply in peak season.",
+    "whyNotable": "Cascade icon — Paradise wildflowers, glaciers, and the Rainier climbing routes.",
+    "description": "Mount Rainier National Park centers on the volcano’s paradise meadows and Nisqually approaches. Snow lingers late; summer weekends need early parking. Stage in Ashford or Packwood.",
+    "seoMetaDescription": "Mount Rainier National Park guide: Paradise season, fees, Ashford staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Ashford",
+      "region": "Washington",
+      "distanceMiles": 12,
+      "route": "WA-706 / Paradise Rd",
+      "lat": 46.753,
+      "lon": -122
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Ashford",
+        "region": "Washington",
+        "distanceMiles": 12,
+        "route": "WA-706 / Paradise Rd",
+        "lat": 46.753,
+        "lon": -122
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Copper Creek Inn",
+        "category": "Restaurant",
+        "note": "Ashford classic."
+      },
+      {
+        "name": "Whittaker’s Bunkhouse Café",
+        "category": "Café",
+        "note": "Climbing-town energy."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Skyline Trail"
+      },
+      {
+        "name": "Nisqually Vista"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Mount_Rainier_from_Paradise.jpg/1280px-Mount_Rainier_from_Paradise.jpg",
+      "credit": "Cullen328",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Rainier_from_Paradise.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Mount_Rainier_from_Paradise.jpg/1280px-Mount_Rainier_from_Paradise.jpg",
+        "credit": "Cullen328",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Rainier_from_Paradise.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg",
+        "credit": "K.lee. (Very few minor problems were fixed for getting nominated as a FP by A…",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden-Mantled_Ground_Squirrel,_Mount_Rainier,_July_2006.jpg"
+      }
+    ]
+  },
+  {
+    "id": "denalinp",
+    "name": "Denali National Park",
+    "aliases": [
+      "Denali NP"
+    ],
+    "lat": 63.1148,
+    "lon": -151.1926,
+    "country": "USA",
+    "state": "Alaska",
+    "established": 1917,
+    "areaSqMi": 7471,
+    "bestSeason": "Jun–Aug",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; park road access is mostly by bus beyond Savage River.",
+    "whyNotable": "North America’s high point massif, tundra wildlife, and a single long park road.",
+    "description": "Denali is vast. Most visitors ride park buses for wildlife viewing; climbing Denali itself is a separate expedition. Stage near Denali Park / Healy and book buses early.",
+    "seoMetaDescription": "Denali National Park guide: bus season, fees, Healy staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Healy",
+      "region": "Alaska",
+      "distanceMiles": 12,
+      "route": "George Parks Hwy",
+      "lat": 63.857,
+      "lon": -148.966
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Healy",
+        "region": "Alaska",
+        "distanceMiles": 12,
+        "route": "George Parks Hwy",
+        "lat": 63.857,
+        "lon": -148.966
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "The Perch Restaurant",
+        "category": "Restaurant",
+        "note": "Near park entrance."
+      },
+      {
+        "name": "49th State Brewing",
+        "category": "Pub / grill",
+        "note": "Healy after bus days."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Horseshoe Lake"
+      },
+      {
+        "name": "Savage Alpine Trail"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Wonder_Lake%2C_Denali2.jpg/1280px-Wonder_Lake%2C_Denali2.jpg",
+      "credit": "You may select the license of your choice.",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wonder_Lake,_Denali2.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Wonder_Lake%2C_Denali2.jpg/1280px-Wonder_Lake%2C_Denali2.jpg",
+        "credit": "You may select the license of your choice.",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wonder_Lake,_Denali2.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Wonder_Lake%2C_Denali2.jpg/1280px-Wonder_Lake%2C_Denali2.jpg",
+        "credit": "You may select the license of your choice.",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wonder_Lake,_Denali2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "sequoia",
+    "name": "Sequoia National Park",
+    "aliases": [
+      "Sequoia"
+    ],
+    "lat": 36.4864,
+    "lon": -118.5658,
+    "country": "USA",
+    "state": "California",
+    "established": 1890,
+    "areaSqMi": 631,
+    "bestSeason": "May–Oct",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee shared with Kings Canyon approaches.",
+    "whyNotable": "Giant sequoia groves including the General Sherman Tree.",
+    "description": "Sequoia protects the world’s largest trees and high Sierra approaches. Generals Highway can close with snow. Stage in Three Rivers or Visalia.",
+    "seoMetaDescription": "Sequoia National Park guide: giant trees, fees, Three Rivers staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Three Rivers",
+      "region": "California",
+      "distanceMiles": 16,
+      "route": "CA-198 / Generals Hwy",
+      "lat": 36.439,
+      "lon": -118.904
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Three Rivers",
+        "region": "California",
+        "distanceMiles": 16,
+        "route": "CA-198 / Generals Hwy",
+        "lat": 36.439,
+        "lon": -118.904
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Gateway Restaurant",
+        "category": "Restaurant",
+        "note": "Three Rivers meals."
+      },
+      {
+        "name": "We Three Bakery",
+        "category": "Café",
+        "note": "Before the climb to the grove."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Congress Trail"
+      },
+      {
+        "name": "Moro Rock Trail"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Giant_sequoia_in_Sequoia_National_Park_2013.jpg/1280px-Giant_sequoia_in_Sequoia_National_Park_2013.jpg",
+      "credit": "Tuxyso",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_sequoia_in_Sequoia_National_Park_2013.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Giant_sequoia_in_Sequoia_National_Park_2013.jpg/1280px-Giant_sequoia_in_Sequoia_National_Park_2013.jpg",
+        "credit": "Tuxyso",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_sequoia_in_Sequoia_National_Park_2013.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Giant_sequoia_in_Sequoia_National_Park_2013.jpg/1280px-Giant_sequoia_in_Sequoia_National_Park_2013.jpg",
+        "credit": "Tuxyso",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_sequoia_in_Sequoia_National_Park_2013.jpg"
+      }
+    ]
+  },
+  {
+    "id": "joshuatree",
+    "name": "Joshua Tree National Park",
+    "aliases": [
+      "Joshua Tree"
+    ],
+    "lat": 33.8734,
+    "lon": -115.901,
+    "country": "USA",
+    "state": "California",
+    "established": 1994,
+    "areaSqMi": 1235,
+    "bestSeason": "Oct–Apr",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; summer heat is extreme.",
+    "whyNotable": "Mojave / Colorado Desert meeting point — Joshua trees and granite climbing.",
+    "description": "Joshua Tree is a winter favorite for camping and rock climbing. Summers routinely exceed safe hiking temperatures. Stage in the town of Joshua Tree or Twentynine Palms.",
+    "seoMetaDescription": "Joshua Tree National Park guide: cool-season visits, fees, staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Joshua Tree",
+      "region": "California",
+      "distanceMiles": 5,
+      "route": "Park Blvd",
+      "lat": 34.135,
+      "lon": -116.313
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Joshua Tree",
+        "region": "California",
+        "distanceMiles": 5,
+        "route": "Park Blvd",
+        "lat": 34.135,
+        "lon": -116.313
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Crossroads Cafe",
+        "category": "Café",
+        "note": "Joshua Tree village."
+      },
+      {
+        "name": "The Palms Restaurant",
+        "category": "Restaurant",
+        "note": "Twentynine Palms option."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Arch Rock Trail"
+      },
+      {
+        "name": "Hidden Valley"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Giant_Marbles_in_Joshua_Tree_National_Park.jpg/1280px-Giant_Marbles_in_Joshua_Tree_National_Park.jpg",
+      "credit": "Brocken Inaglory",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Marbles_in_Joshua_Tree_National_Park.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Giant_Marbles_in_Joshua_Tree_National_Park.jpg/1280px-Giant_Marbles_in_Joshua_Tree_National_Park.jpg",
+        "credit": "Brocken Inaglory",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Marbles_in_Joshua_Tree_National_Park.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Giant_Marbles_in_Joshua_Tree_National_Park.jpg/1280px-Giant_Marbles_in_Joshua_Tree_National_Park.jpg",
+        "credit": "Brocken Inaglory",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Marbles_in_Joshua_Tree_National_Park.jpg"
+      }
+    ]
+  },
+  {
+    "id": "deathvalley",
+    "name": "Death Valley National Park",
+    "aliases": [
+      "Death Valley"
+    ],
+    "lat": 36.5054,
+    "lon": -117.0794,
+    "country": "USA",
+    "state": "California",
+    "established": 1994,
+    "areaSqMi": 5270,
+    "bestSeason": "Nov–Mar",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; summer heat can be life-threatening at lower elevations.",
+    "whyNotable": "Hottest, driest, and lowest national park landscapes in North America.",
+    "description": "Death Valley combines Badwater Basin salt flats with high desert mountains. Visit in the cool season; carry more water than you think. Stage in Furnace Creek or Beatty.",
+    "seoMetaDescription": "Death Valley National Park guide: cool season, fees, Furnace Creek staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Furnace Creek",
+      "region": "California",
+      "distanceMiles": 2,
+      "route": "CA-190",
+      "lat": 36.458,
+      "lon": -116.867
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Furnace Creek",
+        "region": "California",
+        "distanceMiles": 2,
+        "route": "CA-190",
+        "lat": 36.458,
+        "lon": -116.867
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Inn at Death Valley Dining Room",
+        "category": "Restaurant",
+        "note": "Resort dining."
+      },
+      {
+        "name": "Ranch 1890 General Store",
+        "category": "Casual eats",
+        "note": "Furnace Creek basics."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Badwater Basin"
+      },
+      {
+        "name": "Mesquite Flat Sand Dunes"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/USA_10789_Death_Valley_Luca_Galuzzi_2007.jpg/1280px-USA_10789_Death_Valley_Luca_Galuzzi_2007.jpg",
+      "credit": "Luca Galuzzi (Lucag)",
+      "license": "CC BY-SA 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:USA_10789_Death_Valley_Luca_Galuzzi_2007.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/USA_10789_Death_Valley_Luca_Galuzzi_2007.jpg/1280px-USA_10789_Death_Valley_Luca_Galuzzi_2007.jpg",
+        "credit": "Luca Galuzzi (Lucag)",
+        "license": "CC BY-SA 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:USA_10789_Death_Valley_Luca_Galuzzi_2007.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zabriskie_Point_Death_Valley.jpg/1280px-Zabriskie_Point_Death_Valley.jpg",
+        "credit": "Holgerzer",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zabriskie_Point_Death_Valley.jpg"
+      }
+    ]
+  },
+  {
+    "id": "arches",
+    "name": "Arches National Park",
+    "aliases": [
+      "Arches"
+    ],
+    "lat": 38.7331,
+    "lon": -109.5925,
+    "country": "USA",
+    "state": "Utah",
+    "established": 1971,
+    "areaSqMi": 120,
+    "bestSeason": "Mar–May or Sep–Nov",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; timed-entry reservations often required in peak months.",
+    "whyNotable": "Dense concentration of natural sandstone arches including Delicate Arch.",
+    "description": "Arches is compact and photogenic. Summer is hot; timed entry is common spring through fall. Stage in Moab and start early for Delicate Arch.",
+    "seoMetaDescription": "Arches National Park guide: timed entry, fees, Moab staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Moab",
+      "region": "Utah",
+      "distanceMiles": 5,
+      "route": "US-191",
+      "lat": 38.573,
+      "lon": -109.55
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Moab",
+        "region": "Utah",
+        "distanceMiles": 5,
+        "route": "US-191",
+        "lat": 38.573,
+        "lon": -109.55
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Pasta Jay’s",
+        "category": "Restaurant",
+        "note": "Moab after sunset shots."
+      },
+      {
+        "name": "Love Muffin Café",
+        "category": "Café",
+        "note": "Early entry breakfast."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Delicate Arch Trail"
+      },
+      {
+        "name": "Windows Loop"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/USA_10439_Arches_National_Park_Luca_Galuzzi_2007.jpg/1280px-USA_10439_Arches_National_Park_Luca_Galuzzi_2007.jpg",
+      "credit": "Luca Galuzzi (Lucag)",
+      "license": "CC BY-SA 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:USA_10439_Arches_National_Park_Luca_Galuzzi_2007.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/USA_10439_Arches_National_Park_Luca_Galuzzi_2007.jpg/1280px-USA_10439_Arches_National_Park_Luca_Galuzzi_2007.jpg",
+        "credit": "Luca Galuzzi (Lucag)",
+        "license": "CC BY-SA 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:USA_10439_Arches_National_Park_Luca_Galuzzi_2007.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Double_Arch_Arches_National_Park.jpg/1280px-Double_Arch_Arches_National_Park.jpg",
+        "credit": "Flicka",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Double_Arch_Arches_National_Park.jpg"
+      }
+    ]
+  },
+  {
+    "id": "bryce",
+    "name": "Bryce Canyon National Park",
+    "aliases": [
+      "Bryce Canyon"
+    ],
+    "lat": 37.593,
+    "lon": -112.1871,
+    "country": "USA",
+    "state": "Utah",
+    "established": 1928,
+    "areaSqMi": 56,
+    "bestSeason": "May–Oct",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; winter brings snow on hoodoos and quieter rim walks.",
+    "whyNotable": "Amphitheaters of hoodoos along the Paunsaugunt Plateau.",
+    "description": "Bryce’s rim sits near 8,000 ft with short but steep descends into the hoodoos. Cool mornings and clear air make sunrise popular. Stage in Bryce Canyon City or Tropic.",
+    "seoMetaDescription": "Bryce Canyon National Park guide: hoodoo season, fees, staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Bryce Canyon City",
+      "region": "Utah",
+      "distanceMiles": 3,
+      "route": "UT-63",
+      "lat": 37.673,
+      "lon": -112.156
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Bryce Canyon City",
+        "region": "Utah",
+        "distanceMiles": 3,
+        "route": "UT-63",
+        "lat": 37.673,
+        "lon": -112.156
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Valhalla Pizzeria",
+        "category": "Casual eats",
+        "note": "Near the lodge."
+      },
+      {
+        "name": "Cowboy’s Buffet & Steakroom",
+        "category": "Restaurant",
+        "note": "Ruby’s Inn complex."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Navajo Loop"
+      },
+      {
+        "name": "Queens Garden"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bryce_Canyon_Hoodoos.jpg/1280px-Bryce_Canyon_Hoodoos.jpg",
+      "credit": "“Jon Zander(digon3)”",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bryce_Canyon_Hoodoos.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bryce_Canyon_Hoodoos.jpg/1280px-Bryce_Canyon_Hoodoos.jpg",
+        "credit": "“Jon Zander(digon3)”",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bryce_Canyon_Hoodoos.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bryce_Canyon_Hoodoos.jpg/1280px-Bryce_Canyon_Hoodoos.jpg",
+        "credit": "“Jon Zander(digon3)”",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bryce_Canyon_Hoodoos.jpg"
+      }
+    ]
+  },
+  {
+    "id": "canyonlands",
+    "name": "Canyonlands National Park",
+    "aliases": [
+      "Canyonlands"
+    ],
+    "lat": 38.3269,
+    "lon": -109.8783,
+    "country": "USA",
+    "state": "Utah",
+    "established": 1964,
+    "areaSqMi": 527,
+    "bestSeason": "Mar–May or Sep–Nov",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; Island in the Sky is the most accessible district.",
+    "whyNotable": "Broad Colorado Plateau canyons at the Green–Colorado confluence.",
+    "description": "Canyonlands splits into Island in the Sky, The Needles, and The Maze. Most first-timers use Island in the Sky near Moab for overlooks and short walks.",
+    "seoMetaDescription": "Canyonlands National Park guide: Island in the Sky, fees, Moab staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Moab",
+      "region": "Utah",
+      "distanceMiles": 32,
+      "route": "US-191 / UT-313",
+      "lat": 38.573,
+      "lon": -109.55
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Moab",
+        "region": "Utah",
+        "distanceMiles": 32,
+        "route": "US-191 / UT-313",
+        "lat": 38.573,
+        "lon": -109.55
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Desert Bistro",
+        "category": "Restaurant",
+        "note": "Moab dinner."
+      },
+      {
+        "name": "Moab Coffee Roasters",
+        "category": "Café",
+        "note": "Before UT-313."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Mesa Arch"
+      },
+      {
+        "name": "Grand View Point"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Mesa_Arch_Canyonlands_sunrise.jpg/1280px-Mesa_Arch_Canyonlands_sunrise.jpg",
+      "credit": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mesa_Arch_Canyonlands_sunrise.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Mesa_Arch_Canyonlands_sunrise.jpg/1280px-Mesa_Arch_Canyonlands_sunrise.jpg",
+        "credit": "Thomas Wolf, www.foto-tw.de",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mesa_Arch_Canyonlands_sunrise.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Canyonlands_National_Park%2C_Utah.jpg/1280px-Canyonlands_National_Park%2C_Utah.jpg",
+        "credit": "Jim Gordon",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canyonlands_National_Park,_Utah.jpg"
+      }
+    ]
+  },
+  {
+    "id": "badlands",
+    "name": "Badlands National Park",
+    "aliases": [
+      "Badlands"
+    ],
+    "lat": 43.75,
+    "lon": -101.93,
+    "country": "USA",
+    "state": "South Dakota",
+    "established": 1978,
+    "areaSqMi": 379,
+    "bestSeason": "May–Oct",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; summer storms and heat are common.",
+    "whyNotable": "Banded mixed-grass prairie and eroded buttes on the Great Plains.",
+    "description": "Badlands Loop Road delivers big geology in a compact drive. Pair fossil exhibits with short boardwalks. Stage in Interior or Wall.",
+    "seoMetaDescription": "Badlands National Park guide: Loop Road, fees, Wall staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Wall",
+      "region": "South Dakota",
+      "distanceMiles": 8,
+      "route": "SD-240 Badlands Loop",
+      "lat": 43.992,
+      "lon": -102.241
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Wall",
+        "region": "South Dakota",
+        "distanceMiles": 8,
+        "route": "SD-240 Badlands Loop",
+        "lat": 43.992,
+        "lon": -102.241
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Wall Drug Cafe",
+        "category": "Casual eats",
+        "note": "Tourist-classic stop."
+      },
+      {
+        "name": "Badlands Inn Restaurant",
+        "category": "Restaurant",
+        "note": "Near Interior."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Door Trail"
+      },
+      {
+        "name": "Notch Trail"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/MK00609_Badlands.jpg/1280px-MK00609_Badlands.jpg",
+      "credit": "Martin Kraft",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MK00609_Badlands.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/MK00609_Badlands.jpg/1280px-MK00609_Badlands.jpg",
+        "credit": "Martin Kraft",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MK00609_Badlands.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/MK00609_Badlands.jpg/1280px-MK00609_Badlands.jpg",
+        "credit": "Martin Kraft",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MK00609_Badlands.jpg"
+      }
+    ]
+  },
+  {
+    "id": "everglades",
+    "name": "Everglades National Park",
+    "aliases": [
+      "Everglades"
+    ],
+    "lat": 25.2866,
+    "lon": -80.8987,
+    "country": "USA",
+    "state": "Florida",
+    "established": 1947,
+    "areaSqMi": 2357,
+    "bestSeason": "Dec–Apr",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; wet season means more water, mosquitoes, and fewer crowds.",
+    "whyNotable": "Unique subtropical wetland ecosystem — sawgrass, mangroves, and wildlife.",
+    "description": "Everglades is best in the dry winter season for wildlife viewing and fewer insects. Explore via Anhinga Trail, Shark Valley, or Flamingo. Stage in Homestead or Florida City.",
+    "seoMetaDescription": "Everglades National Park guide: dry season, fees, Homestead staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Homestead",
+      "region": "Florida",
+      "distanceMiles": 12,
+      "route": "FL-9336",
+      "lat": 25.468,
+      "lon": -80.477
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Homestead",
+        "region": "Florida",
+        "distanceMiles": 12,
+        "route": "FL-9336",
+        "lat": 25.468,
+        "lon": -80.477
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Robert Is Here",
+        "category": "Casual eats",
+        "note": "Fruit stand classic en route."
+      },
+      {
+        "name": "Casita Tejas",
+        "category": "Restaurant",
+        "note": "Homestead meals."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Anhinga Trail"
+      },
+      {
+        "name": "Shark Valley Tram Road"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Audubon_Society_Corkscrew_Swamp_Sanctuary.jpg/1280px-Audubon_Society_Corkscrew_Swamp_Sanctuary.jpg",
+      "credit": "Marc Ryckaert (MJJR)",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audubon_Society_Corkscrew_Swamp_Sanctuary.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Audubon_Society_Corkscrew_Swamp_Sanctuary.jpg/1280px-Audubon_Society_Corkscrew_Swamp_Sanctuary.jpg",
+        "credit": "Marc Ryckaert (MJJR)",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audubon_Society_Corkscrew_Swamp_Sanctuary.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Audubon_Society_Corkscrew_Swamp_Sanctuary.jpg/1280px-Audubon_Society_Corkscrew_Swamp_Sanctuary.jpg",
+        "credit": "Marc Ryckaert (MJJR)",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audubon_Society_Corkscrew_Swamp_Sanctuary.jpg"
+      }
+    ]
+  },
+  {
+    "id": "hawaiivolcanoes",
+    "name": "Hawaiʻi Volcanoes National Park",
+    "aliases": [
+      "Hawaii Volcanoes",
+      "Hawaiʻi Volcanoes"
+    ],
+    "lat": 19.4194,
+    "lon": -155.2885,
+    "country": "USA",
+    "state": "Hawaii",
+    "established": 1916,
+    "areaSqMi": 505,
+    "bestSeason": "Year-round",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; eruption and closure status change — check NPS alerts.",
+    "whyNotable": "Active Kīlauea and Mauna Loa landscapes on Hawaiʻi Island.",
+    "description": "Hawaiʻi Volcanoes protects living volcanoes, lava fields, and rainforest. Conditions shift with volcanic activity. Stage in Volcano Village or Hilo and verify current crater access.",
+    "seoMetaDescription": "Hawaiʻi Volcanoes National Park guide: fees, alerts, Volcano Village staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Volcano",
+      "region": "Hawaii",
+      "distanceMiles": 2,
+      "route": "HI-11",
+      "lat": 19.43,
+      "lon": -155.238
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Volcano",
+        "region": "Hawaii",
+        "distanceMiles": 2,
+        "route": "HI-11",
+        "lat": 19.43,
+        "lon": -155.238
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Café Ono",
+        "category": "Café",
+        "note": "Volcano Village."
+      },
+      {
+        "name": "Thai Thai Restaurant",
+        "category": "Restaurant",
+        "note": "Post-hike in Volcano."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Kīlauea Iki Trail"
+      },
+      {
+        "name": "Crater Rim Trail"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Barren_Volcanic_Landscape_of_Hawai%CA%BBi_Volcanoes_National_Park%2C_Hawai%27i_%284528661089%29.jpg/1280px-Barren_Volcanic_Landscape_of_Hawai%CA%BBi_Volcanoes_National_Park%2C_Hawai%27i_%284528661089%29.jpg",
+      "credit": "Ken Lund from Reno, Nevada, USA",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barren_Volcanic_Landscape_of_Hawai%CA%BBi_Volcanoes_National_Park,_Hawai%27i_(4528661089).jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Barren_Volcanic_Landscape_of_Hawai%CA%BBi_Volcanoes_National_Park%2C_Hawai%27i_%284528661089%29.jpg/1280px-Barren_Volcanic_Landscape_of_Hawai%CA%BBi_Volcanoes_National_Park%2C_Hawai%27i_%284528661089%29.jpg",
+        "credit": "Ken Lund from Reno, Nevada, USA",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barren_Volcanic_Landscape_of_Hawai%CA%BBi_Volcanoes_National_Park,_Hawai%27i_(4528661089).jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Barren_Volcanic_Landscape_of_Hawai%CA%BBi_Volcanoes_National_Park%2C_Hawai%27i_%284528661089%29.jpg/1280px-Barren_Volcanic_Landscape_of_Hawai%CA%BBi_Volcanoes_National_Park%2C_Hawai%27i_%284528661089%29.jpg",
+        "credit": "Ken Lund from Reno, Nevada, USA",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barren_Volcanic_Landscape_of_Hawai%CA%BBi_Volcanoes_National_Park,_Hawai%27i_(4528661089).jpg"
+      }
+    ]
+  },
+  {
+    "id": "haleakala",
+    "name": "Haleakalā National Park",
+    "aliases": [
+      "Haleakala",
+      "Haleakalā"
+    ],
+    "lat": 20.7097,
+    "lon": -156.2533,
+    "country": "USA",
+    "state": "Hawaii",
+    "established": 1961,
+    "areaSqMi": 52,
+    "bestSeason": "Year-round",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; sunrise reservations required for summit viewing.",
+    "whyNotable": "Massive Maui shield volcano — summit crater sunrise and coastal Kīpahulu district.",
+    "description": "Haleakalā’s summit is cold and windy even in summer; sunrise slots book out. The Kīpahulu coast adds waterfalls and rainforest. Stage in Kahului or Upcountry Maui.",
+    "seoMetaDescription": "Haleakalā National Park guide: sunrise reservations, fees, Maui staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Kula",
+      "region": "Hawaii",
+      "distanceMiles": 18,
+      "route": "HI-378",
+      "lat": 20.791,
+      "lon": -156.327
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Kula",
+        "region": "Hawaii",
+        "distanceMiles": 18,
+        "route": "HI-378",
+        "lat": 20.791,
+        "lon": -156.327
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Kula Bistro",
+        "category": "Restaurant",
+        "note": "Upcountry meals."
+      },
+      {
+        "name": "La Provence",
+        "category": "Café",
+        "note": "Before the summit drive."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Sliding Sands Trail"
+      },
+      {
+        "name": "Pipiwai Trail"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/01_Haleakala_National_Park%2C_Maui%2C_Hawaii_2185210784_o.jpg/1280px-01_Haleakala_National_Park%2C_Maui%2C_Hawaii_2185210784_o.jpg",
+      "credit": "Tony Webster",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:01_Haleakala_National_Park,_Maui,_Hawaii_2185210784_o.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/01_Haleakala_National_Park%2C_Maui%2C_Hawaii_2185210784_o.jpg/1280px-01_Haleakala_National_Park%2C_Maui%2C_Hawaii_2185210784_o.jpg",
+        "credit": "Tony Webster",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:01_Haleakala_National_Park,_Maui,_Hawaii_2185210784_o.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/01_Haleakala_National_Park%2C_Maui%2C_Hawaii_2185210784_o.jpg/1280px-01_Haleakala_National_Park%2C_Maui%2C_Hawaii_2185210784_o.jpg",
+        "credit": "Tony Webster",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:01_Haleakala_National_Park,_Maui,_Hawaii_2185210784_o.jpg"
+      }
+    ]
+  },
+  {
+    "id": "shenandoah",
+    "name": "Shenandoah National Park",
+    "aliases": [
+      "Shenandoah"
+    ],
+    "lat": 38.4925,
+    "lon": -78.4697,
+    "country": "USA",
+    "state": "Virginia",
+    "established": 1935,
+    "areaSqMi": 311,
+    "bestSeason": "Apr–Jun or Sep–Oct",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; Skyline Drive is the spine of the park.",
+    "whyNotable": "Skyline Drive overlooks and Appalachian Trail sections in Virginia’s Blue Ridge.",
+    "description": "Shenandoah is an easy overnight from D.C. with waterfall hikes and fall color. Fog and leaf-season traffic are common. Stage in Luray, Front Royal, or Waynesboro.",
+    "seoMetaDescription": "Shenandoah National Park guide: Skyline Drive, fees, Luray staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Luray",
+      "region": "Virginia",
+      "distanceMiles": 10,
+      "route": "US-211",
+      "lat": 38.665,
+      "lon": -78.459
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Luray",
+        "region": "Virginia",
+        "distanceMiles": 10,
+        "route": "US-211",
+        "lat": 38.665,
+        "lon": -78.459
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Gathering Grounds",
+        "category": "Café",
+        "note": "Luray coffee."
+      },
+      {
+        "name": "The Apartment",
+        "category": "Restaurant",
+        "note": "Downtown Luray dinner."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Dark Hollow Falls"
+      },
+      {
+        "name": "Old Rag approaches (nearby)"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2005-05-21_14-30-58_Eaton_Hollow_Overlook_from_Skyline_Dr_Shenandoah_National_Park_VA.jpg/1280px-2005-05-21_14-30-58_Eaton_Hollow_Overlook_from_Skyline_Dr_Shenandoah_National_Park_VA.jpg",
+      "credit": "G. Edward Johnson",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2005-05-21_14-30-58_Eaton_Hollow_Overlook_from_Skyline_Dr_Shenandoah_National_Park_VA.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2005-05-21_14-30-58_Eaton_Hollow_Overlook_from_Skyline_Dr_Shenandoah_National_Park_VA.jpg/1280px-2005-05-21_14-30-58_Eaton_Hollow_Overlook_from_Skyline_Dr_Shenandoah_National_Park_VA.jpg",
+        "credit": "G. Edward Johnson",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2005-05-21_14-30-58_Eaton_Hollow_Overlook_from_Skyline_Dr_Shenandoah_National_Park_VA.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2005-05-21_14-30-58_Eaton_Hollow_Overlook_from_Skyline_Dr_Shenandoah_National_Park_VA.jpg/1280px-2005-05-21_14-30-58_Eaton_Hollow_Overlook_from_Skyline_Dr_Shenandoah_National_Park_VA.jpg",
+        "credit": "G. Edward Johnson",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2005-05-21_14-30-58_Eaton_Hollow_Overlook_from_Skyline_Dr_Shenandoah_National_Park_VA.jpg"
+      }
+    ]
+  },
+  {
+    "id": "craterlake",
+    "name": "Crater Lake National Park",
+    "aliases": [
+      "Crater Lake"
+    ],
+    "lat": 42.8684,
+    "lon": -122.1685,
+    "country": "USA",
+    "state": "Oregon",
+    "established": 1902,
+    "areaSqMi": 286,
+    "bestSeason": "Jul–Sep",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; Rim Drive fully opens after snowmelt.",
+    "whyNotable": "Deepest lake in the United States — caldera views and Wizard Island.",
+    "description": "Crater Lake’s rim sits high; snow can block Rim Drive into July. Summer brings clear water views and busy overlooks. Stage in Fort Klamath or Medford.",
+    "seoMetaDescription": "Crater Lake National Park guide: Rim Drive season, fees, staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Fort Klamath",
+      "region": "Oregon",
+      "distanceMiles": 20,
+      "route": "OR-62",
+      "lat": 42.705,
+      "lon": -121.995
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Fort Klamath",
+        "region": "Oregon",
+        "distanceMiles": 20,
+        "route": "OR-62",
+        "lat": 42.705,
+        "lon": -121.995
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Annie Creek Restaurant",
+        "category": "Restaurant",
+        "note": "Mazama Village in season."
+      },
+      {
+        "name": "Beckie's Cafe",
+        "category": "Casual eats",
+        "note": "Prospect area classic."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Discovery Point"
+      },
+      {
+        "name": "Watchman Peak Trail"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Crater_Lake_Oregon.jpg",
+      "credit": "Mike from Chicago",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crater_Lake_Oregon.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Crater_Lake_Oregon.jpg",
+        "credit": "Mike from Chicago",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crater_Lake_Oregon.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Crater_Lake_winter_pano2.jpg/1280px-Crater_Lake_winter_pano2.jpg",
+        "credit": "WolfmanSF",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crater_Lake_winter_pano2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "mesaverde",
+    "name": "Mesa Verde National Park",
+    "aliases": [
+      "Mesa Verde"
+    ],
+    "lat": 37.2309,
+    "lon": -108.4618,
+    "country": "USA",
+    "state": "Colorado",
+    "established": 1906,
+    "areaSqMi": 81,
+    "bestSeason": "May–Oct",
+    "feeRequired": true,
+    "feeNotes": "Entrance fee; cliff-dwelling tours often need advance tickets.",
+    "whyNotable": "Ancestral Puebloan cliff dwellings preserved on the Colorado Plateau.",
+    "description": "Mesa Verde is as much archaeology as scenery. Tour tickets for Cliff Palace and Balcony House sell out. Stage in Cortez or Mancos and allow a full day for mesa-top drives.",
+    "seoMetaDescription": "Mesa Verde National Park guide: cliff dwelling tours, fees, Cortez staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Cortez",
+      "region": "Colorado",
+      "distanceMiles": 10,
+      "route": "US-160",
+      "lat": 37.349,
+      "lon": -108.586
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Cortez",
+        "region": "Colorado",
+        "distanceMiles": 10,
+        "route": "US-160",
+        "lat": 37.349,
+        "lon": -108.586
+      }
+    ],
+    "hotels": [],
+    "food": [
+      {
+        "name": "Absolute Bakery",
+        "category": "Café",
+        "note": "Cortez breakfast."
+      },
+      {
+        "name": "The Farm Bistro",
+        "category": "Restaurant",
+        "note": "Cortez dinner."
+      }
+    ],
+    "trails": [
+      {
+        "name": "Petroglyph Point Trail"
+      },
+      {
+        "name": "Spruce Tree House overlook"
+      }
+    ],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/MesaVerdeNationalParkCliffPalace.jpg/1280px-MesaVerdeNationalParkCliffPalace.jpg",
+      "credit": "Massimo Catarinella",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MesaVerdeNationalParkCliffPalace.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/MesaVerdeNationalParkCliffPalace.jpg/1280px-MesaVerdeNationalParkCliffPalace.jpg",
+        "credit": "Massimo Catarinella",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MesaVerdeNationalParkCliffPalace.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/MesaVerdeNationalParkCliffPalace.jpg/1280px-MesaVerdeNationalParkCliffPalace.jpg",
+        "credit": "Massimo Catarinella",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MesaVerdeNationalParkCliffPalace.jpg"
+      }
+    ]
+  }
+]

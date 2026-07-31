@@ -4,9 +4,11 @@ import { AppHeader } from '../components/AppHeader'
 import { AtlasHint } from '../components/AtlasHint'
 import { ClearMarkersToggle } from '../components/ClearMarkersToggle'
 import { EarthOnlyToggle } from '../components/EarthOnlyToggle'
+import { NationalParksToggle } from '../components/NationalParksToggle'
 import { WorldTagline } from '../components/WorldTagline'
 import { AtlasProvider, type AtlasContextValue } from '../context/AtlasContext'
 import { getPeakById, loadFullCatalog, peaksIndex } from '../data/catalog'
+import { nationalParks } from '../data/nationalParks'
 import {
   applyDocumentMeta,
   metaForAtlas,
@@ -18,6 +20,7 @@ import {
   peakMatchesCountry,
 } from '../lib/countries'
 import { atlasHref, peakHref } from '../lib/routes'
+import type { NationalPark } from '../types/nationalPark'
 import type { Peak, PeakBrowseFilters, PeakIndex } from '../types/peak'
 
 const AtlasMap = lazy(() =>
@@ -65,6 +68,8 @@ export function AtlasLayout() {
   const [hintActive, setHintActive] = useState(false)
   const [earthOnly, setEarthOnly] = useState(false)
   const [hideMapMarkers, setHideMapMarkers] = useState(false)
+  const [showNationalParks, setShowNationalParks] = useState(false)
+  const [selectedPark, setSelectedPark] = useState<NationalPark | null>(null)
 
   // Prefetch the full dossier catalog so peak navigations are less likely to
   // sit on "Loading peak…" (and so a failed import surfaces sooner).
@@ -118,6 +123,21 @@ export function AtlasLayout() {
     setHideMapMarkers((v) => !v)
   }, [])
 
+  const toggleNationalParks = useCallback(() => {
+    setShowNationalParks((v) => {
+      if (v) setSelectedPark(null)
+      return !v
+    })
+  }, [])
+
+  const selectPark = useCallback((park: NationalPark) => {
+    setSelectedPark(park)
+  }, [])
+
+  const clearPark = useCallback(() => {
+    setSelectedPark(null)
+  }, [])
+
   useEffect(() => {
     setBrowseState((prev) => {
       if (prev.country === countryFromUrl) return prev
@@ -149,6 +169,21 @@ export function AtlasLayout() {
     return () => window.removeEventListener('keydown', onKey)
   }, [hideMapMarkers])
 
+  // Esc closes selected park, then turns parks overlay off.
+  useEffect(() => {
+    if (!showNationalParks && !selectedPark) return
+    function onKey(e: KeyboardEvent) {
+      if (e.key !== 'Escape') return
+      if (selectedPark) {
+        setSelectedPark(null)
+        return
+      }
+      setShowNationalParks(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [showNationalParks, selectedPark])
+
   const selectedCountry = browse.country || null
   const isWorldView = !peakId && !selectedCountry
   const onPeakRoute = Boolean(peakId)
@@ -156,6 +191,8 @@ export function AtlasLayout() {
   const earthOnlyActive = earthOnly && isWorldView
   // Clear-markers is peak-only — drop it when leaving a summit.
   const hideMapMarkersActive = hideMapMarkers && onPeakRoute
+  // Parks overlay is world-only (same surface as Earth view).
+  const showNationalParksActive = showNationalParks && isWorldView && !earthOnlyActive
 
   useEffect(() => {
     if (!isWorldView && earthOnly) setEarthOnly(false)
@@ -164,6 +201,17 @@ export function AtlasLayout() {
   useEffect(() => {
     if (!onPeakRoute && hideMapMarkers) setHideMapMarkers(false)
   }, [onPeakRoute, hideMapMarkers])
+
+  useEffect(() => {
+    if (!isWorldView && showNationalParks) {
+      setShowNationalParks(false)
+      setSelectedPark(null)
+    }
+  }, [isWorldView, showNationalParks])
+
+  useEffect(() => {
+    if (earthOnlyActive && selectedPark) setSelectedPark(null)
+  }, [earthOnlyActive, selectedPark])
 
   useEffect(() => {
     if (peakId && peakLoading) return
@@ -216,6 +264,8 @@ export function AtlasLayout() {
 
   const selectCountry = useCallback(
     (country: string) => {
+      setSelectedPark(null)
+      setShowNationalParks(false)
       setBrowseState((prev) => ({
         ...prev,
         country,
@@ -266,6 +316,11 @@ export function AtlasLayout() {
       setEarthOnly,
       hideMapMarkers: hideMapMarkersActive,
       setHideMapMarkers,
+      showNationalParks: showNationalParksActive,
+      setShowNationalParks,
+      selectedPark: showNationalParksActive ? selectedPark : null,
+      selectPark,
+      clearPark,
       setBrowse,
       selectCountry,
       clearCountry,
@@ -278,6 +333,7 @@ export function AtlasLayout() {
       cinematic,
       cinematicStatus,
       clearCountry,
+      clearPark,
       earthOnlyActive,
       hideMapMarkersActive,
       mapPeaks,
@@ -285,8 +341,11 @@ export function AtlasLayout() {
       openPeak,
       peakLoading,
       selectCountry,
+      selectPark,
       selectedCountry,
+      selectedPark,
       setBrowse,
+      showNationalParksActive,
       skipCinematic,
     ],
   )
@@ -327,6 +386,10 @@ export function AtlasLayout() {
               funFactsEnabled={!hintActive && !earthOnlyActive}
               earthOnly={earthOnlyActive}
               hideMapMarkers={hideMapMarkersActive}
+              showNationalParks={showNationalParksActive}
+              nationalParks={nationalParks}
+              selectedPark={showNationalParksActive ? selectedPark : null}
+              onSelectPark={selectPark}
             />
           </Suspense>
           <AtlasHint
@@ -337,7 +400,15 @@ export function AtlasLayout() {
             visible={isWorldView && !cinematic && !earthOnlyActive && !hintActive}
           />
           {isWorldView && (
-            <EarthOnlyToggle active={earthOnlyActive} onToggle={toggleEarthOnly} />
+            <>
+              <EarthOnlyToggle active={earthOnlyActive} onToggle={toggleEarthOnly} />
+              {!earthOnlyActive && (
+                <NationalParksToggle
+                  active={showNationalParksActive}
+                  onToggle={toggleNationalParks}
+                />
+              )}
+            </>
           )}
           {onPeakRoute && !cinematic && (
             <ClearMarkersToggle
