@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { BrowseBar } from '../components/BrowseBar'
 import { CountryPanel } from '../components/CountryPanel'
+import { ParkPanel } from '../components/ParkPanel'
 import { useAtlas } from '../context/AtlasContext'
 import { peaksIndex } from '../data/catalog'
 import { useUnits } from '../context/UnitsContext'
@@ -18,6 +19,8 @@ export function HomePage() {
     mapPeaks,
     cinematic,
     earthOnly,
+    selectedPark,
+    clearPark,
     setBrowse,
     clearCountry,
   } = useAtlas()
@@ -71,7 +74,11 @@ export function HomePage() {
 
   return (
     <>
-      {selectedSummary && !cinematic && !earthOnly && (
+      {selectedPark && !cinematic && !earthOnly && (
+        <ParkPanel park={selectedPark} onClose={clearPark} />
+      )}
+
+      {selectedSummary && !cinematic && !earthOnly && !selectedPark && (
         <CountryPanel
           country={selectedSummary}
           peaks={countryPeakList}
@@ -79,7 +86,7 @@ export function HomePage() {
         />
       )}
 
-      {!cinematic && !earthOnly && (
+      {!cinematic && !earthOnly && !selectedPark && (
         <BrowseBar
           browse={browse}
           countries={countries}

@@ -1,4 +1,5 @@
 import { createContext, useContext, type ReactNode } from 'react'
+import type { NationalPark } from '../types/nationalPark'
 import type { Peak, PeakIndex } from '../types/peak'
 import type { PeakBrowseFilters } from '../types/peak'
 
@@ -20,6 +21,12 @@ export type AtlasContextValue = {
   /** Peak mode — hide summit/trail/nearby map markers. */
   hideMapMarkers: boolean
   setHideMapMarkers: (next: boolean) => void
+  /** World view — show curated USA National Park markers. */
+  showNationalParks: boolean
+  setShowNationalParks: (next: boolean) => void
+  selectedPark: NationalPark | null
+  selectPark: (park: NationalPark) => void
+  clearPark: () => void
   setBrowse: (next: PeakBrowseFilters) => void
   selectCountry: (country: string) => void
   clearCountry: () => void

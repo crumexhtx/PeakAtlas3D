@@ -7,8 +7,10 @@ import Map, {
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Map as MapLibreMap } from 'maplibre-gl'
 import type { Peak, PeakIndex } from '../types/peak'
+import type { NationalPark } from '../types/nationalPark'
 import { CountryFlagsLayer } from './CountryFlagsLayer'
 import { CountryPeaksLayer } from './CountryPeaksLayer'
+import { NationalParksLayer } from './NationalParksLayer'
 import { NearbyPlaceMarker } from './NearbyPlaceMarker'
 import { SpinFunFact } from './SpinFunFact'
 import { isUsPeak, TrailMarkers } from './TrailMarkers'
@@ -65,6 +67,11 @@ type AtlasMapProps = {
   earthOnly?: boolean
   /** Peak mode — hide summit flag, trail signs, and nearby place pins. */
   hideMapMarkers?: boolean
+  /** World view — show curated USA National Park markers. */
+  showNationalParks?: boolean
+  nationalParks?: NationalPark[]
+  selectedPark?: NationalPark | null
+  onSelectPark?: (park: NationalPark) => void
 }
 
 /**
@@ -105,6 +112,11 @@ function createRandomWorldView() {
 const HERO_ZOOM = 12.1
 const HERO_PITCH = 46
 const HERO_BEARING = -28
+/** National park overview frame — wider than a summit hero. */
+const PARK_ZOOM = 8.4
+const PARK_PITCH = 42
+const PARK_BEARING = -18
+const PARK_FLY_MS = 4_200
 /**
  * Look-at nudge toward the camera (meters). Keep modest so the summit stays
  * near the visual center of the padded viewport under pitch.
@@ -155,12 +167,17 @@ export function AtlasMap({
   funFactsEnabled = true,
   earthOnly = false,
   hideMapMarkers = false,
+  showNationalParks = false,
+  nationalParks = [],
+  selectedPark = null,
+  onSelectPark,
 }: AtlasMapProps) {
   const mapRef = useRef<MapRef>(null)
   const idleTimerRef = useRef<number | null>(null)
   const spinRef = useRef<{ cancel: () => void } | null>(null)
   const prevCountryRef = useRef<string | null | undefined>(undefined)
   const prevPeakIdRef = useRef<string | null>(null)
+  const prevParkIdRef = useRef<string | null>(null)
   /** Set in peak-effect cleanup so the country effect can refit after back-nav. */
   const leavingPeakRef = useRef(false)
   /** Latest peak id from render — cleanup compares against it to skip StrictMode remounts. */
@@ -283,9 +300,14 @@ export function AtlasMap({
     }
   }
 
-  // Idle spin — world mode only (delayed start, auto-pauses after a budget).
+  // Idle spin — world mode only (paused while a park dossier is open).
   useEffect(() => {
-    if (!mapReady || prefersReducedMotion() || mode !== 'world') {
+    if (
+      !mapReady ||
+      prefersReducedMotion() ||
+      mode !== 'world' ||
+      selectedPark
+    ) {
       stopSpin()
       clearIdleTimer()
       return
@@ -327,7 +349,7 @@ export function AtlasMap({
         map.off(event, onUserActivity)
       }
     }
-  }, [mapReady, mode])
+  }, [mapReady, mode, selectedPark])
 
   // Country drill-in / back to world (only when not viewing a peak).
   useEffect(() => {
@@ -387,6 +409,70 @@ export function AtlasMap({
 
     return () => cancelAnimationFrame(frame)
   }, [mapReady, selectedCountry, countryPeaks, activePeak, worldView])
+
+  // National park selection — fly to an overview frame (world mode only).
+  useEffect(() => {
+    if (!mapReady || activePeak || selectedCountry) return
+    const map = getMap()
+    if (!map) return
+
+    const parkId = selectedPark?.id ?? null
+    const prevParkId = prevParkIdRef.current
+    if (parkId === prevParkId) return
+    prevParkIdRef.current = parkId
+
+    if (!selectedPark) return
+
+    stopSpin()
+    clearIdleTimer()
+    setMapInteractive(map, true)
+
+    const cancelled = { current: false }
+    const frame = requestAnimationFrame(() => {
+      void flyToAsync(map, {
+        center: [selectedPark.lon, selectedPark.lat],
+        zoom: PARK_ZOOM,
+        pitch: PARK_PITCH,
+        bearing: PARK_BEARING,
+        duration: prefersReducedMotion() ? 0 : PARK_FLY_MS,
+        curve: 1.2,
+        easing: easeInOutCubic,
+        essential: true,
+      }).catch(() => {
+        // Camera move aborted — ignore.
+      })
+      if (cancelled.current) return
+    })
+
+    return () => {
+      cancelled.current = true
+      cancelAnimationFrame(frame)
+    }
+  }, [mapReady, selectedPark, activePeak, selectedCountry])
+
+  // When parks overlay turns on with no selection, frame the contiguous US.
+  const prevShowParksRef = useRef(false)
+  useEffect(() => {
+    if (!mapReady || activePeak || selectedCountry) {
+      prevShowParksRef.current = showNationalParks
+      return
+    }
+    const map = getMap()
+    const turningOn = showNationalParks && !prevShowParksRef.current
+    prevShowParksRef.current = showNationalParks
+    if (!map || !turningOn || selectedPark) return
+
+    stopSpin()
+    clearIdleTimer()
+    map.easeTo({
+      center: [-108.5, 39.5],
+      zoom: 3.2,
+      pitch: 0,
+      bearing: 0,
+      duration: prefersReducedMotion() ? 0 : 1600,
+      essential: true,
+    })
+  }, [mapReady, showNationalParks, selectedPark, activePeak, selectedCountry])
 
   // Peak cinematic — continues from the live camera (same map instance).
   useEffect(() => {
@@ -603,10 +689,11 @@ export function AtlasMap({
     ? `${activePeak.name} interactive 3D topographic globe map`
     : 'Interactive 3D world peak atlas globe map'
 
-  const styleMode = mode === 'world' ? 'world' : 'detail'
+  const styleMode = mode === 'world' && !showNationalParks ? 'world' : 'detail'
   const style = useMemo(() => mapStyleForMode(styleMode), [styleMode])
   const dem = useMemo(() => terrainSource(), [])
-  const maxZoom = mode === 'world' ? WORLD_MAX_ZOOM : DETAIL_MAX_ZOOM
+  const maxZoom =
+    mode === 'world' && !showNationalParks ? WORLD_MAX_ZOOM : DETAIL_MAX_ZOOM
 
   // Re-apply atmosphere / satellite soften after world↔detail style swaps.
   useEffect(() => {
@@ -677,6 +764,14 @@ export function AtlasMap({
           />
         )}
 
+        {mode === 'world' && showNationalParks && onSelectPark && (
+          <NationalParksLayer
+            parks={nationalParks}
+            selectedParkId={selectedPark?.id ?? null}
+            onSelectPark={onSelectPark}
+          />
+        )}
+
         {mode === 'country' && (
           <CountryPeaksLayer peaks={countryPeaks} onSelectPeak={onSelectPeak} />
         )}
@@ -711,6 +806,14 @@ export function AtlasMap({
           </>
         )}
       </Map>
+
+      {mode === 'world' && showNationalParks && !earthOnly && (
+        <div className="map-mode-chip" aria-hidden="true">
+          {selectedPark
+            ? selectedPark.name
+            : `${nationalParks.length} national parks`}
+        </div>
+      )}
 
       {mode === 'country' && selectedSummary && !earthOnly && (
         <div className="map-mode-chip" aria-hidden="true">

@@ -163,3 +163,58 @@ for (let i = 0; i < peaks.length; i++) {
 }
 
 console.log(`catalog ok: ${peaks.length} peaks, ${ids.size} unique ids`)
+
+// --- National parks catalog (separate from peaks) ---
+const parksPath = join(root, 'src', 'data', 'nationalParks.json')
+const parksRaw = readFileSync(parksPath, 'utf8')
+let parks
+try {
+  parks = JSON.parse(parksRaw)
+} catch (err) {
+  fail(`nationalParks JSON parse error: ${err.message}`)
+}
+
+if (!Array.isArray(parks) || parks.length !== 25) {
+  fail(`expected exactly 25 national parks, got ${parks?.length}`)
+}
+
+const parkIds = new Set()
+for (let i = 0; i < parks.length; i++) {
+  const park = parks[i]
+  const where = `parks[${i}]${park?.id ? ` (${park.id})` : ''}`
+  if (!park || typeof park !== 'object') fail(`${where} not an object`)
+  if (!isNonEmptyString(park.id)) fail(`${where}.id`)
+  if (parkIds.has(park.id)) fail(`duplicate park id: ${park.id}`)
+  parkIds.add(park.id)
+  if (!isNonEmptyString(park.name)) fail(`${where}.name`)
+  if (!isFiniteNumber(park.lat) || park.lat < -90 || park.lat > 90) {
+    fail(`${where}.lat`)
+  }
+  if (!isFiniteNumber(park.lon) || park.lon < -180 || park.lon > 180) {
+    fail(`${where}.lon`)
+  }
+  if (!isNonEmptyString(park.state)) fail(`${where}.state`)
+  if (!isFiniteNumber(park.established)) fail(`${where}.established`)
+  if (!isFiniteNumber(park.areaSqMi) || park.areaSqMi <= 0) {
+    fail(`${where}.areaSqMi`)
+  }
+  if (!isNonEmptyString(park.bestSeason)) fail(`${where}.bestSeason`)
+  if (typeof park.feeRequired !== 'boolean') fail(`${where}.feeRequired`)
+  if (!isNonEmptyString(park.feeNotes)) fail(`${where}.feeNotes`)
+  if (!isNonEmptyString(park.whyNotable)) fail(`${where}.whyNotable`)
+  if (!isNonEmptyString(park.description)) fail(`${where}.description`)
+  assertTown(park.nearestTown, `${where}.nearestTown`)
+  if (!Array.isArray(park.food)) fail(`${where}.food`)
+  park.food.forEach((f, j) => assertAmenity(f, `${where}.food[${j}]`))
+  if (park.trails != null) {
+    if (!Array.isArray(park.trails)) fail(`${where}.trails`)
+    park.trails.forEach((t, j) => assertAmenity(t, `${where}.trails[${j}]`))
+  }
+  if (!Array.isArray(park.photos) || park.photos.length < 1) {
+    fail(`${where}.photos`)
+  }
+  park.photos.forEach((p, j) => assertPhoto(p, `${where}.photos[${j}]`))
+  if (park.photo != null) assertPhoto(park.photo, `${where}.photo`)
+}
+
+console.log(`national parks ok: ${parks.length} parks, ${parkIds.size} unique ids`)

@@ -9,6 +9,19 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.3.5',
+    date: '2026-07-31',
+    title: 'National Parks toggle',
+    summary:
+      'World view gains a Parks toggle with 25 curated USA National Parks — peak-style dossiers (season, fees, staging, trails, food) and map markers on the globe.',
+    highlights: [
+      'Parks control under Earth view on the world globe',
+      '25 USA icons from Yellowstone to Mesa Verde',
+      'Tap a park to fly in and open a dossier panel',
+      'Separate nationalParks catalog (does not pollute peaks.json)',
+    ],
+  },
+  {
     version: '0.3.4',
     date: '2026-07-31',
     title: 'AI-search resilience: snapshots + comparisons',
