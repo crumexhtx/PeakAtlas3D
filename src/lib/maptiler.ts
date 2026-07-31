@@ -34,6 +34,60 @@ export function hasMapProvider(): boolean {
   return true
 }
 
+function freeSatelliteStyle(maxzoom: number, name: string): StyleSpecification {
+  return {
+    version: 8,
+    name,
+    sources: {
+      satellite: {
+        type: 'raster',
+        tiles: [
+          'https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg',
+        ],
+        tileSize: 256,
+        attribution:
+          '<a href="https://s2maps.eu/" target="_blank" rel="noopener">EOX Sentinel-2 Cloudless</a>',
+        maxzoom,
+      },
+    },
+    layers: [
+      {
+        id: 'background',
+        type: 'background',
+        paint: { 'background-color': '#0b1220' },
+      },
+      {
+        id: 'satellite',
+        type: 'raster',
+        source: 'satellite',
+        paint: { 'raster-opacity': 1 },
+      },
+    ],
+    sky: {
+      'atmosphere-blend': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        0,
+        1,
+        2.5,
+        0,
+      ],
+    },
+  }
+}
+
+/**
+ * Free Sentinel-2 cloudless mosaic for keyless globe/satellite viewing.
+ * Declared before mapStyleForMode — deprecated exports call that at module init.
+ * @see https://s2maps.eu/
+ */
+const FREE_SATELLITE_STYLE_WORLD = freeSatelliteStyle(
+  6,
+  'PeakAtlas free satellite (world)',
+)
+const FREE_SATELLITE_STYLE = freeSatelliteStyle(14, 'PeakAtlas free satellite')
+
 /**
  * World-mode style — prefer lighter satellite (no road/label overlay stack).
  * Detail mode uses hybrid when MapTiler is keyed.
@@ -84,59 +138,6 @@ export function terrainSource(): RasterDEMSourceSpecification {
 
 /** @deprecated Prefer {@link terrainSource} */
 export const TERRAIN_SOURCE = terrainSource()
-
-function freeSatelliteStyle(maxzoom: number, name: string): StyleSpecification {
-  return {
-    version: 8,
-    name,
-    sources: {
-      satellite: {
-        type: 'raster',
-        tiles: [
-          'https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg',
-        ],
-        tileSize: 256,
-        attribution:
-          '<a href="https://s2maps.eu/" target="_blank" rel="noopener">EOX Sentinel-2 Cloudless</a>',
-        maxzoom,
-      },
-    },
-    layers: [
-      {
-        id: 'background',
-        type: 'background',
-        paint: { 'background-color': '#0b1220' },
-      },
-      {
-        id: 'satellite',
-        type: 'raster',
-        source: 'satellite',
-        paint: { 'raster-opacity': 1 },
-      },
-    ],
-    sky: {
-      'atmosphere-blend': [
-        'interpolate',
-        ['linear'],
-        ['zoom'],
-        0,
-        1,
-        2.5,
-        0,
-      ],
-    },
-  }
-}
-
-/**
- * Free Sentinel-2 cloudless mosaic for keyless globe/satellite viewing.
- * @see https://s2maps.eu/
- */
-const FREE_SATELLITE_STYLE_WORLD = freeSatelliteStyle(
-  6,
-  'PeakAtlas free satellite (world)',
-)
-const FREE_SATELLITE_STYLE = freeSatelliteStyle(14, 'PeakAtlas free satellite')
 
 /**
  * Cap canvas fill-rate on HiDPI screens (desktop + mobile).
