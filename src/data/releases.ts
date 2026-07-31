@@ -9,6 +9,19 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.3.4',
+    date: '2026-07-31',
+    title: 'AI-search resilience: snapshots + comparisons',
+    summary:
+      'Peak pages lead with dated proprietary planning snapshots and answer-first section copy; ten high-intent A vs B comparison guides are prerendered and sitemapped.',
+    highlights: [
+      'Planning snapshot on every peak (elevation, tier, season, permits, staging, OSM lodging)',
+      'Question-style H2s with short standalone answers before detail lists',
+      '10 comparison routes under /compare (Whitney–Elbert, Rainier–Hood, Denali–Everest, …)',
+      'Prerender + sitemap + nav/footer links for crawlable discovery',
+    ],
+  },
+  {
     version: '0.3.3',
     date: '2026-07-28',
     title: 'Catskill High Peaks',

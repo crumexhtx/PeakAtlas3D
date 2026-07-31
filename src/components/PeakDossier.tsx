@@ -10,6 +10,7 @@ import {
   routeDetailNote,
   trailSourcesForPeak,
 } from '../data/peakTrailRoutes'
+import { lodgingLead, trailsLead } from '../lib/peakSectionLeads'
 import { trailLabelsForPeak } from './TrailMarkers'
 
 type PeakDossierProps = {
@@ -87,6 +88,8 @@ export function PeakDossier({
   const hasPopularTrails = trailLabels.length > 0
   const primarySource = trailSources[0]
   const showReferences = trailSources.length > 0 || lodgingFromOsm
+  const trailsSection = trailsLead(peak)
+  const lodgingSection = lodgingLead(peak)
 
   return (
     <PeakSeoLayout
@@ -104,7 +107,8 @@ export function PeakDossier({
           className="info-block"
           aria-label={`Popular trails near ${peak.name}`}
         >
-          <h2 className="info-heading">Popular trails</h2>
+          <h2 className="info-heading">{trailsSection.heading}</h2>
+          <p className="section-answer-lead">{trailsSection.answer}</p>
           {hasCuratedRoutes && primarySource ? (
             <>
               <p className="trail-source-credit">
@@ -170,12 +174,13 @@ export function PeakDossier({
             aria-controls={`lodging-food-${peak.id}`}
             onClick={() => setShowNearby((v) => !v)}
           >
-            <span>Lodging & food</span>
+            <span>{lodgingSection.heading}</span>
             <span aria-hidden="true">{showNearby ? '−' : '+'}</span>
           </button>
 
           {showNearby && (
             <div className="nearby-panel" id={`lodging-food-${peak.id}`}>
+              <p className="section-answer-lead">{lodgingSection.answer}</p>
               <p className="nearby-summary">
                 Most trips stage through {peak.nearestTown.name},{' '}
                 {peak.nearestTown.region}

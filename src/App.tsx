@@ -33,6 +33,14 @@ const PeaksPage = lazy(() =>
 const CountryPage = lazy(() =>
   import('./pages/CountryPage').then((m) => ({ default: m.CountryPage })),
 )
+const CompareIndexPage = lazy(() =>
+  import('./pages/CompareIndexPage').then((m) => ({
+    default: m.CompareIndexPage,
+  })),
+)
+const ComparePage = lazy(() =>
+  import('./pages/ComparePage').then((m) => ({ default: m.ComparePage })),
+)
 
 function RouteFallback() {
   return (
@@ -56,6 +64,8 @@ export default function App() {
             <Route element={<ContentLayout />}>
               <Route path="about" element={<AboutPage />} />
               <Route path="peaks" element={<PeaksPage />} />
+              <Route path="compare" element={<CompareIndexPage />} />
+              <Route path="compare/:compareSlug" element={<ComparePage />} />
               <Route path="countries/:countrySlug" element={<CountryPage />} />
               <Route path="releases" element={<ReleasesPage />} />
               <Route path="contact" element={<ContactPage />} />

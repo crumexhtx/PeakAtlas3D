@@ -39,6 +39,7 @@ export function ContentLayout() {
           </NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/peaks">Peaks</NavLink>
+          <NavLink to="/compare">Compare</NavLink>
           <NavLink to="/releases">Releases</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </nav>
@@ -47,6 +48,11 @@ export function ContentLayout() {
         <Outlet />
       </main>
       <footer className="content-footer">
+        <nav className="content-footer-nav" aria-label="Footer">
+          <Link to="/compare">Peak comparisons</Link>
+          <Link to="/peaks">All peaks</Link>
+          <Link to="/">Atlas</Link>
+        </nav>
         <ContentDisclaimer compact />
       </footer>
     </div>

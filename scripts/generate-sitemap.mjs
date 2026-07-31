@@ -12,6 +12,7 @@ import {
   buildCountrySummaries,
   countryMeta,
 } from './lib/countries-static.mjs'
+import { COMPARISON_PAIRS } from './lib/peak-snapshot.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const peaksPath = join(root, 'src', 'data', 'peaks.json')
@@ -37,6 +38,7 @@ const today = new Date().toISOString().slice(0, 10)
 const staticRoutes = [
   { path: '/', changefreq: 'weekly', priority: '1.0', lastmod: today },
   { path: '/peaks', changefreq: 'weekly', priority: '0.9', lastmod: today },
+  { path: '/compare', changefreq: 'weekly', priority: '0.85', lastmod: today },
   { path: '/about', changefreq: 'monthly', priority: '0.6', lastmod: today },
   { path: '/releases', changefreq: 'weekly', priority: '0.7', lastmod: today },
   { path: '/contact', changefreq: 'yearly', priority: '0.4', lastmod: today },
@@ -72,6 +74,14 @@ const urls = [
   ...countryPaths.map((path) =>
     urlEntry(`${siteUrl}${path}`, peaksMtime, 'weekly', '0.85'),
   ),
+  ...COMPARISON_PAIRS.map((pair) =>
+    urlEntry(
+      `${siteUrl}/compare/${encodeURIComponent(pair.slug)}`,
+      today,
+      'monthly',
+      '0.75',
+    ),
+  ),
   ...peakIds.map((id) =>
     urlEntry(
       `${siteUrl}/peak/${encodeURIComponent(id)}`,
@@ -100,5 +110,5 @@ writeFileSync(join(publicDir, 'sitemap.xml'), `${sitemap}\n`)
 writeFileSync(join(publicDir, 'robots.txt'), `${robots}\n`)
 
 console.log(
-  `Wrote sitemap (${staticRoutes.length + countryPaths.length + peakIds.length} URLs: ${countryPaths.length} countries, ${peakIds.length} peaks) → ${siteUrl}`,
+  `Wrote sitemap (${staticRoutes.length + countryPaths.length + COMPARISON_PAIRS.length + peakIds.length} URLs: ${countryPaths.length} countries, ${COMPARISON_PAIRS.length} comparisons, ${peakIds.length} peaks) → ${siteUrl}`,
 )

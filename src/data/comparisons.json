@@ -1,0 +1,116 @@
+{
+  "asOf": "2026-07-31",
+  "methodology": "Figures come from the PeakAtlas3D catalog: surveyed elevations and prominence, curated difficulty tiers, best-season windows, permit notes, staging-town distances, trail lists, and OpenStreetMap lodging near each summit. Not live weather, quotas, or prices.",
+  "pairs": [
+    {
+      "slug": "whitney-vs-elbert",
+      "aId": "whitney",
+      "bId": "elbert",
+      "title": "Mt. Whitney vs Mt. Elbert",
+      "query": "Which is harder: Mt. Whitney or Mt. Elbert?",
+      "summary": "Whitney and Elbert are the two iconic Contiguous U.S. 14ers most hikers compare. Both are high-altitude day objectives when conditions are good, but Whitney’s Portal corridor is permit-regulated in peak season while Elbert is typically a walk-up without a dedicated summit permit. Choose Whitney for the Lower 48 high point and lottery logistics; choose Elbert for a Colorado 14er with simpler access and similar elevation.",
+      "pickA": "Pick Whitney if you want the Contiguous U.S. high point, can secure Whitney Portal / Inyo permits, and accept busier trailhead logistics.",
+      "pickB": "Pick Elbert if you want ~14,440 ft with a standard Colorado walk-up, no dedicated summit permit, and Leadville-area staging.",
+      "verdict": "Elbert is usually the simpler trip; Whitney is the higher-status Lower 48 prize with stricter access rules."
+    },
+    {
+      "slug": "rainier-vs-hood",
+      "aId": "rainier",
+      "bId": "hood",
+      "title": "Mt. Rainier vs Mt. Hood",
+      "query": "Mt. Rainier or Mt. Hood — which climb should you do?",
+      "summary": "Rainier and Hood are the Pacific Northwest volcanoes climbers most often weigh. Rainier is a multi-day glacier expedition with crevasse hazard and climbing permits; Hood is a shorter, steeper snow climb that many parties treat as a long day from Timberline when spring conditions align. Rainier demands more glacier skill and logistics; Hood rewards fitness and early alpine starts with less multi-day overhead.",
+      "pickA": "Pick Rainier for a true Cascade glacier expedition, guided or experienced teams, and National Park climbing passes.",
+      "pickB": "Pick Hood for a classic spring snow climb closer to Portland with shorter approach and no general summit permit on typical routes.",
+      "verdict": "Hood is the quicker Cascade tick; Rainier is the bigger glacier commitment."
+    },
+    {
+      "slug": "rainier-vs-shasta",
+      "aId": "rainier",
+      "bId": "shasta",
+      "title": "Mt. Rainier vs Mt. Shasta",
+      "query": "Should I climb Rainier or Shasta?",
+      "summary": "Rainier and Shasta are two of the West Coast’s defining glacier volcanoes. Both need snow/ice skills, early starts, and seasonal windows — but Rainier sits in a National Park with climbing pass rules, while Shasta is USFS-managed with summit-pass expectations and California access culture. Compare permit friction, approach length, and how much multi-day glacier travel you want.",
+      "pickA": "Pick Rainier for Washington’s iconic park setting, guided glacier routes, and a more expedition-like feel.",
+      "pickB": "Pick Shasta for a California Cascade volcano with summit-pass logistics and popular Avalanche Gulch–style snow climbs.",
+      "verdict": "Both are serious snow-glacier objectives; Rainier usually means more park bureaucracy, Shasta more California peak-pass planning."
+    },
+    {
+      "slug": "halfdome-vs-whitney",
+      "aId": "halfdome",
+      "bId": "whitney",
+      "title": "Half Dome vs Mt. Whitney",
+      "query": "Half Dome or Whitney — which California classic?",
+      "summary": "Half Dome and Whitney are California’s two most searched “bucket list” day objectives. Half Dome is a Yosemite cables scramble when the cables are up — lottery-heavy and shorter in mileage than Whitney but more exposure on the final pitch. Whitney is higher, longer, and regulated through the Whitney Portal corridor. Both need advance planning; neither is a casual walk.",
+      "pickA": "Pick Half Dome for Yosemite granite, cables-season drama, and a strenuous scramble day when you hold a cables permit.",
+      "pickB": "Pick Whitney for the Contiguous U.S. high point, longer trail mileage, and Inyo / Portal permit logistics.",
+      "verdict": "Half Dome is the iconic Yosemite cables day; Whitney is the higher, longer Sierra objective."
+    },
+    {
+      "slug": "matterhorn-vs-montblanc",
+      "aId": "matterhorn",
+      "bId": "montblanc",
+      "title": "Matterhorn vs Mont Blanc",
+      "query": "Matterhorn or Mont Blanc — which Alps classic?",
+      "summary": "Matterhorn and Mont Blanc are the Alps’ two most famous “name” peaks. Matterhorn is a steep rock-ridge alpine climb (Hörnli and cousins) with hut logistics and technical exposure; Mont Blanc is a high glacier objective with altitude, crevasse hazard, and crowded normal routes. One is a rock pyramid; the other is Western Europe’s high point.",
+      "pickA": "Pick Matterhorn for a technical alpine rock ridge above Zermatt with hut-based logistics.",
+      "pickB": "Pick Mont Blanc for the Alps high point — glacier travel, altitude, and Chamonix / Courmayeur staging.",
+      "verdict": "Matterhorn is the rock icon; Mont Blanc is the altitude and glacier prize."
+    },
+    {
+      "slug": "matterhorn-vs-eiger",
+      "aId": "matterhorn",
+      "bId": "eiger",
+      "title": "Matterhorn vs Eiger",
+      "query": "Matterhorn vs Eiger — which Swiss alpine climb?",
+      "summary": "Matterhorn and Eiger are Switzerland’s most storied alpine walls. Matterhorn’s normal ridges are busy guided rock climbs; Eiger’s reputation is dominated by the Nordwand, though milder routes exist for experienced alpinists. Compare rock-ridge traffic and hut culture (Matterhorn) versus steeper, more committing Bernese Oberland terrain (Eiger).",
+      "pickA": "Pick Matterhorn for the classic Hörnli-style rock ridge and Zermatt hut infrastructure.",
+      "pickB": "Pick Eiger if you want Bernese Oberland technical alpine climbing and accept a steeper, more committing reputation.",
+      "verdict": "Matterhorn is the more guided “classic ridge”; Eiger is the darker technical legend."
+    },
+    {
+      "slug": "kilimanjaro-vs-aconcagua",
+      "aId": "kilimanjaro",
+      "bId": "aconcagua",
+      "title": "Kilimanjaro vs Aconcagua",
+      "query": "Kilimanjaro or Aconcagua for a high-altitude trip?",
+      "summary": "Kilimanjaro and Aconcagua are the two most compared non-technical high-altitude expeditions. Kili is a guided trek with park fees and operator requirements; Aconcagua is a higher, colder Andean expedition with provincial park permits and more self-supported logistics. Both are about altitude management more than rock climbing.",
+      "pickA": "Pick Kilimanjaro for a structured trek with operators, established camps, and African Seven Summits travel.",
+      "pickB": "Pick Aconcagua for the Western Hemisphere high point — higher, colder, and more expedition logistics in Mendoza Province.",
+      "verdict": "Kilimanjaro is the guided trek; Aconcagua is the higher, harsher expedition."
+    },
+    {
+      "slug": "longs-vs-elbert",
+      "aId": "longs",
+      "bId": "elbert",
+      "title": "Longs Peak vs Mt. Elbert",
+      "query": "Longs Peak or Elbert for a Colorado 14er?",
+      "summary": "Longs and Elbert bookend Colorado 14er difficulty for many day hikers. Elbert is a high walk-up; Longs via the Keyhole is a Class 3 scramble with exposure, earlier starts, and Rocky Mountain National Park access rules. Same state, very different skill and risk profiles.",
+      "pickA": "Pick Longs if you are comfortable with Class 3 scrambling, exposure, and RMNP timed-entry / trailhead rules.",
+      "pickB": "Pick Elbert for Colorado’s high point as a strenuous hike without technical scrambling on the standard routes.",
+      "verdict": "Elbert is the high walk-up; Longs is the technical Front Range classic."
+    },
+    {
+      "slug": "fuji-vs-whitney",
+      "aId": "fuji",
+      "bId": "whitney",
+      "title": "Mt. Fuji vs Mt. Whitney",
+      "query": "Mt. Fuji or Mt. Whitney?",
+      "summary": "Fuji and Whitney are the two most searched “national icon” day hikes across the Pacific. Fuji is a seasonal fee/climb culture with crowded Yoshida and Fujinomiya routes; Whitney is the Contiguous U.S. high point with Portal permits and longer Sierra mileage. Both are Class 1–2 when conditions are good — logistics and culture differ more than technical grade.",
+      "pickA": "Pick Fuji for Japan’s icon, summer climbing season fees, and hut-supported overnight or long day culture.",
+      "pickB": "Pick Whitney for the Lower 48 high point, Sierra trail mileage, and Inyo permit planning.",
+      "verdict": "Similar hike grades on paper; Fuji is seasonal Japanese access culture, Whitney is Sierra permit logistics."
+    },
+    {
+      "slug": "denali-vs-everest",
+      "aId": "denali",
+      "bId": "everest",
+      "title": "Denali vs Mt. Everest",
+      "query": "Denali or Everest — which expedition?",
+      "summary": "Denali and Everest are the expedition extremes people compare when they say “Seven Summits.” Denali is polar, self-reliant glacier travel with NPS registration; Everest is commercial 8000 m logistics with Nepal/China permits and crowded seasons. Both are multi-week commitments far beyond day-hike planning.",
+      "pickA": "Pick Denali for Alaska Range expedition skills, cold, and National Park climbing registration.",
+      "pickB": "Pick Everest for commercial 8000 m logistics, spring window planning, and the world’s high point.",
+      "verdict": "Denali tests polar self-reliance; Everest tests altitude commerce and Himalayan logistics."
+    }
+  ]
+}

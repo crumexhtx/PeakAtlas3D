@@ -1859,6 +1859,159 @@ a.trail-bubble-label-link:focus-visible {
   color: var(--muted);
 }
 
+.section-answer-lead {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.peak-snapshot {
+  background: rgba(79, 195, 247, 0.06);
+  border: 1px solid rgba(79, 195, 247, 0.22);
+  border-radius: 10px;
+  padding: 0.85rem 0.9rem 0.95rem;
+  margin-bottom: 1.15rem;
+  border-bottom: 1px solid rgba(79, 195, 247, 0.22);
+}
+
+.peak-snapshot-answer {
+  margin: 0 0 0.75rem;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.peak-snapshot-grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem 0.75rem;
+}
+
+.peak-snapshot-grid > div {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.peak-snapshot-grid dt {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.peak-snapshot-grid dd {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.peak-snapshot-meta {
+  margin: 0.75rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.peak-snapshot-asof {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.peak-snapshot-method {
+  color: var(--muted);
+}
+
+.peak-snapshot-compare {
+  margin: 0.55rem 0 0;
+  font-size: 0.88rem;
+}
+
+.peak-snapshot-compare a {
+  color: var(--accent);
+}
+
+.content-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.1rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.88rem;
+}
+
+.content-footer-nav a {
+  color: rgba(232, 220, 190, 0.85);
+  text-decoration: none;
+}
+
+.content-footer-nav a:hover {
+  color: #f2efe6;
+  text-decoration: underline;
+}
+
+.compare-index-list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.15rem;
+  line-height: 1.55;
+}
+
+.compare-index-query {
+  color: rgba(242, 239, 230, 0.65);
+}
+
+.compare-table-wrap {
+  overflow-x: auto;
+  margin: 0.75rem 0 1rem;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.compare-table th,
+.compare-table td {
+  border: 1px solid rgba(232, 220, 190, 0.22);
+  padding: 0.55rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.compare-table thead th {
+  background: rgba(232, 220, 190, 0.08);
+}
+
+.compare-pick-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 720px) {
+  .compare-pick-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.compare-verdict {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.compare-query {
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 520px) {
+  .peak-snapshot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-list div {
+    grid-template-columns: 1fr;
+  }
+}
+
 .info-list {
   margin: 0;
   display: grid;
