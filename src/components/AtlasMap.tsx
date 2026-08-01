@@ -23,9 +23,9 @@ import {
 } from '../lib/countries'
 import {
   cappedPixelRatio,
+  atlasMapStyle,
   DETAIL_MAX_ZOOM,
   HERO_TERRAIN_EXAGGERATION,
-  mapStyleForMode,
   terrainSource,
   TERRAIN_SOURCE_ID,
   WORLD_MAX_ZOOM,
@@ -140,7 +140,8 @@ const PEAK_APPROACH_MS = 8_800
 /** World ↔ country / parks framing — snappy enough to feel responsive on click. */
 const OVERVIEW_TRANSITION_MS = 1_400
 /** Don't stall country/parks clicks for a long hung style.load. */
-const OVERVIEW_SETTLE_MS = 1_000
+/** Short settle — style is stable; only need a paint beat before camera moves. */
+const OVERVIEW_SETTLE_MS = 400
 
 /**
  * When jumping in from the spinning globe (search / world flags), ease in with
@@ -636,8 +637,7 @@ export function AtlasMap({
         // ignore
       }
 
-      // World→detail style swap (search / globe entry) reloads the basemap.
-      // settleBasemap waits for style.load so flyTo + terrain are not cancelled.
+      // Paint settle before fly (style stays satellite — no basemap reload).
       await settleBasemap(map)
       if (!stillActive()) return
 
@@ -787,8 +787,8 @@ export function AtlasMap({
     ? `${activePeak.name} interactive 3D topographic globe map`
     : 'Interactive 3D world peak atlas globe map'
 
-  const styleMode = mode === 'world' && !showNationalParks ? 'world' : 'detail'
-  const style = useMemo(() => mapStyleForMode(styleMode), [styleMode])
+  // One satellite style for the whole atlas — no world↔hybrid reload on drill-in.
+  const style = useMemo(() => atlasMapStyle(), [])
   const dem = useMemo(() => terrainSource(), [])
   const wantsWorldZoomCap = mode === 'world' && !showNationalParks
   // Never clamp maxZoom while the camera is still at summit/country zoom —
@@ -840,7 +840,7 @@ export function AtlasMap({
 
   const maxZoom = worldZoomCapOn ? WORLD_MAX_ZOOM : DETAIL_MAX_ZOOM
 
-  // Re-apply atmosphere / satellite soften after world↔detail style swaps.
+  // Atmosphere / satellite soften once the stable style loads (and on rare reloads).
   useEffect(() => {
     if (!mapReady) return
     const map = getMap()
@@ -850,7 +850,6 @@ export function AtlasMap({
       softenSatelliteRaster(map)
     }
     map.on('style.load', onStyle)
-    // Style may already be loaded for the initial mode.
     try {
       onStyle()
     } catch {
@@ -859,7 +858,7 @@ export function AtlasMap({
     return () => {
       map.off('style.load', onStyle)
     }
-  }, [mapReady, styleMode])
+  }, [mapReady])
 
   return (
     <div

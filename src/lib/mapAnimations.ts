@@ -119,14 +119,27 @@ export function waitForStyleReady(
 }
 
 /**
- * Let react-map-gl apply a pending mapStyle swap, wait for style.load, then
- * re-apply atmosphere. Call before easeTo/flyTo so world↔detail swaps don't
- * cancel mid-transition.
+ * Brief paint settle before easeTo/flyTo. With a stable satellite style this
+ * usually resolves immediately (isStyleLoaded); kept for rare style reloads
+ * and to re-apply atmosphere/soften after any unexpected reload.
  */
 export async function settleBasemap(
   map: MapLibreMap,
-  timeoutMs = 4_000,
+  timeoutMs = 1_200,
 ): Promise<void> {
+  try {
+    if (map.isStyleLoaded()) {
+      applyPeakAtmosphere(map)
+      softenSatelliteRaster(map)
+      await new Promise<void>((resolve) => {
+        requestAnimationFrame(() => resolve())
+      })
+      return
+    }
+  } catch {
+    // Fall through to the full wait path.
+  }
+
   await new Promise<void>((resolve) => {
     requestAnimationFrame(() => {
       requestAnimationFrame(() => resolve())

@@ -2,6 +2,9 @@
  * MapLibre basemap + terrain config.
  * Prefer MapTiler when `VITE_MAPTILER_KEY` is set; otherwise use free satellite
  * (EOX Sentinel-2) + Mapterhorn DEM so local/CI still boot without a paid key.
+ *
+ * One satellite style for world + detail — avoiding world↔hybrid swaps so the
+ * basemap does not reload (and re-fetch tiles) on every country/peak/park entry.
  */
 import type {
   RasterDEMSourceSpecification,
@@ -23,7 +26,11 @@ const MOBILE_PIXEL_RATIO_CAP = 1.5
 
 /** World globe: stop requesting deep satellite tiles while spinning. */
 export const WORLD_MAX_ZOOM = 3.5
-export const DETAIL_MAX_ZOOM = 22
+/**
+ * Peak/park detail ceiling — enough for summit framing (~12) without requesting
+ * ultra-deep satellite tiles the UI never needs.
+ */
+export const DETAIL_MAX_ZOOM = 15
 
 export function hasMapTilerKey(): boolean {
   return Boolean(MAPTILER_KEY && MAPTILER_KEY.trim().length > 0)
@@ -78,30 +85,34 @@ function freeSatelliteStyle(maxzoom: number, name: string): StyleSpecification {
 }
 
 /**
- * Free Sentinel-2 cloudless mosaic for keyless globe/satellite viewing.
- * Declared before mapStyleForMode — deprecated exports call that at module init.
+ * Shared free Sentinel-2 style for world + detail (stable object identity so
+ * react-map-gl does not treat mode changes as a style reload).
  * @see https://s2maps.eu/
  */
-const FREE_SATELLITE_STYLE_WORLD = freeSatelliteStyle(
-  6,
-  'PeakAtlas free satellite (world)',
+const FREE_SATELLITE_STYLE = freeSatelliteStyle(
+  14,
+  'PeakAtlas free satellite',
 )
-const FREE_SATELLITE_STYLE = freeSatelliteStyle(14, 'PeakAtlas free satellite')
+
+/** Stable MapTiler satellite style URL (same for world and detail). */
+function mapTilerSatelliteStyle(): string {
+  return `https://api.maptiler.com/maps/satellite/style.json?key=${MAPTILER_KEY}`
+}
 
 /**
- * World-mode style — prefer lighter satellite (no road/label overlay stack).
- * Detail mode uses hybrid when MapTiler is keyed.
+ * Atlas basemap — satellite only for both world and detail.
+ * Mode is kept for call-site compatibility; it does not change the style.
  */
 export function mapStyleForMode(
-  mode: 'world' | 'detail',
+  _mode: 'world' | 'detail' = 'detail',
 ): string | StyleSpecification {
-  if (hasMapTilerKey()) {
-    if (mode === 'world') {
-      return `https://api.maptiler.com/maps/satellite/style.json?key=${MAPTILER_KEY}`
-    }
-    return `https://api.maptiler.com/maps/hybrid/style.json?key=${MAPTILER_KEY}`
-  }
-  return mode === 'world' ? FREE_SATELLITE_STYLE_WORLD : FREE_SATELLITE_STYLE
+  if (hasMapTilerKey()) return mapTilerSatelliteStyle()
+  return FREE_SATELLITE_STYLE
+}
+
+/** Stable style reference for the atlas map (avoids accidental remounts). */
+export function atlasMapStyle(): string | StyleSpecification {
+  return mapStyleForMode('detail')
 }
 
 /** @deprecated Prefer {@link mapStyleForMode}('detail') */
