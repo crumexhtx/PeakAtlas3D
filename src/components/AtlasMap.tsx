@@ -220,7 +220,7 @@ export function AtlasMap({
     }
   }, [pixelRatio])
 
-  // Abort in-flight camera work when the map shell unmounts (About/Releases/etc).
+  // Abort in-flight camera work when the map shell unmounts (About/Contact/etc).
   useEffect(() => {
     return () => {
       const map = mapRef.current?.getMap()

@@ -21,9 +21,6 @@ const ContentLayout = lazy(() =>
 const AboutPage = lazy(() =>
   import('./pages/AboutPage').then((m) => ({ default: m.AboutPage })),
 )
-const ReleasesPage = lazy(() =>
-  import('./pages/ReleasesPage').then((m) => ({ default: m.ReleasesPage })),
-)
 const ContactPage = lazy(() =>
   import('./pages/ContactPage').then((m) => ({ default: m.ContactPage })),
 )
@@ -67,7 +64,6 @@ export default function App() {
               <Route path="compare" element={<CompareIndexPage />} />
               <Route path="compare/:compareSlug" element={<ComparePage />} />
               <Route path="countries/:countrySlug" element={<CountryPage />} />
-              <Route path="releases" element={<ReleasesPage />} />
               <Route path="contact" element={<ContactPage />} />
             </Route>
             <Route path="*" element={<Navigate to="/" replace />} />

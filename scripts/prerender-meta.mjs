@@ -536,13 +536,6 @@ const staticPages = [
     image: '',
   },
   {
-    path: '/releases',
-    title: 'Releases — PeakAtlas3D',
-    description:
-      'What’s new on PeakAtlas3D — product updates, atlas improvements, and site notes.',
-    image: '',
-  },
-  {
     path: '/contact',
     title: 'Contact — PeakAtlas3D',
     description:
