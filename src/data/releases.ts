@@ -9,6 +9,18 @@ export type ReleaseItem = {
 /** Newest first — update this file when shipping notable site changes. */
 export const releases: ReleaseItem[] = [
   {
+    version: '0.3.6',
+    date: '2026-08-01',
+    title: 'Tighter country + park framing',
+    summary:
+      'Country drill-in (especially USA) frames the main landmass instead of every distant peak; national park fly-ins zoom ~20% closer.',
+    highlights: [
+      'Country fitBounds drops far outliers (Alaska/Hawaii-style) from the frame',
+      'Less padding so the country fills more of the map stage',
+      'Park selection zoom raised from 8.4 → 10.1',
+    ],
+  },
+  {
     version: '0.3.5',
     date: '2026-07-31',
     title: 'National Parks toggle',
