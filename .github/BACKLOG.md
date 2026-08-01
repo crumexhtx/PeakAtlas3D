@@ -23,7 +23,7 @@ Full post-launch runbook: [`docs/POST_LAUNCH.md`](../docs/POST_LAUNCH.md).
 
 ## Engineering
 
-- [ ] Lazy-load MapLibre / `AtlasMap` so About / Releases / Contact / Peaks skip the large GL chunk
+- [ ] Lazy-load MapLibre / `AtlasMap` so About / Contact / Peaks skip the large GL chunk
 - [x] Privacy-friendly analytics option (Plausible via `VITE_PLAUSIBLE_DOMAIN`; Vercel Analytics on by default)
 - [x] Smoke e2e: world → country → peak → skip → back (Playwright)
 - [ ] Retune globe disk metrics (`SpinFunFact`) after MapLibre + free-tile vs MapTiler visual QA
@@ -32,4 +32,4 @@ Full post-launch runbook: [`docs/POST_LAUNCH.md`](../docs/POST_LAUNCH.md).
 ## Growth
 
 - [ ] Add peaks in small batches; run `enrich:content`, `enrich:lodging`, `scrub:lodging`, `validate:photos:check`
-- [ ] Update `src/data/releases.ts` whenever you ship a notable change
+- [ ] Update `CHANGELOG.md` whenever you ship a notable change

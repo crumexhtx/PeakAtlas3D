@@ -72,7 +72,14 @@ export function AboutPage() {
         </p>
         <p>
           For product updates, see the{' '}
-          <Link to="/releases">Releases</Link> page.
+          <a
+            href="https://github.com/crumexhtx/PeakAtlas3D/blob/main/CHANGELOG.md"
+            target="_blank"
+            rel="noreferrer"
+          >
+            changelog on GitHub
+          </a>
+          .
         </p>
       </section>
 

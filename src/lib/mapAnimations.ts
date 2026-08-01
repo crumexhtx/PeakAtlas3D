@@ -239,13 +239,14 @@ export function countryFramePadding(): {
     window.matchMedia('(max-width: 800px)').matches
   if (narrow) {
     return {
-      top: 96,
-      bottom: 120,
-      left: 36,
-      right: 120,
+      top: 88,
+      bottom: 96,
+      left: 28,
+      right: 96,
     }
   }
-  return { top: 80, bottom: 140, left: 60, right: 60 }
+  // Tighter than before so large countries (USA) fill more of the stage.
+  return { top: 64, bottom: 100, left: 48, right: 48 }
 }
 
 /** Centered globe — clear any peak/country padding left on the camera. */

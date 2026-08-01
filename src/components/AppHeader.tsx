@@ -169,7 +169,6 @@ export function AppHeader({
         <NavLink to="/about">About</NavLink>
         <NavLink to="/peaks">Peaks</NavLink>
         <NavLink to="/compare">Compare</NavLink>
-        <NavLink to="/releases">Releases</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>
 

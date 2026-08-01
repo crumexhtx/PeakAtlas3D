@@ -8,8 +8,6 @@ export function ContentDisclaimer({ compact = false }: { compact?: boolean }) {
         PeakAtlas3D is for exploration and inspiration — not a climbing guide or
         booking service.{' '}
         <Link to="/about#disclaimer">Full disclaimers</Link>
-        {' · '}
-        <Link to="/releases">Releases</Link>
       </p>
     )
   }

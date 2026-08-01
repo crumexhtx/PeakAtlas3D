@@ -255,23 +255,73 @@ export function peakMatchesCountry(
   return labelsForCountry(selected, summaries).includes(peak.country)
 }
 
+function planarDistDeg(
+  lon: number,
+  lat: number,
+  centerLon: number,
+  centerLat: number,
+): number {
+  const midLat = (lat + centerLat) / 2
+  const dLon = (lon - centerLon) * Math.cos((midLat * Math.PI) / 180)
+  const dLat = lat - centerLat
+  return Math.hypot(dLon, dLat)
+}
+
+/**
+ * Radius for the densest peak cluster used in country framing.
+ * ~28° keeps contiguous USA together while dropping Alaska / Hawaii.
+ * Compact countries fit entirely inside one cluster.
+ */
+const COUNTRY_FRAME_CLUSTER_RADIUS_DEG = 28
+
+/**
+ * Prefer the densest landmass cluster so distant outliers (Alaska, Hawaii,
+ * remote islands) don't force fitBounds to zoom way past the country itself.
+ */
+export function peaksForCountryFraming(peaks: PeakIndex[]): PeakIndex[] {
+  if (peaks.length <= 4) return peaks
+
+  let best: PeakIndex[] = peaks
+  let bestCount = -1
+
+  for (const seed of peaks) {
+    const members = peaks.filter(
+      (p) =>
+        planarDistDeg(p.lon, p.lat, seed.lon, seed.lat) <=
+        COUNTRY_FRAME_CLUSTER_RADIUS_DEG,
+    )
+    if (members.length > bestCount) {
+      bestCount = members.length
+      best = members
+    }
+  }
+
+  return best.length >= 3 ? best : peaks
+}
+
+/**
+ * Camera bounds for country drill-in. Frames the main peak cluster (not the
+ * full catalog bbox), with modest padding so the landmass fills the view.
+ */
 export function getCountryBounds(peaks: PeakIndex[]): [[number, number], [number, number]] | null {
   if (peaks.length === 0) return null
 
-  let minLon = peaks[0].lon
-  let maxLon = peaks[0].lon
-  let minLat = peaks[0].lat
-  let maxLat = peaks[0].lat
+  const framePeaks = peaksForCountryFraming(peaks)
+  let minLon = framePeaks[0]!.lon
+  let maxLon = framePeaks[0]!.lon
+  let minLat = framePeaks[0]!.lat
+  let maxLat = framePeaks[0]!.lat
 
-  for (const peak of peaks) {
+  for (const peak of framePeaks) {
     minLon = Math.min(minLon, peak.lon)
     maxLon = Math.max(maxLon, peak.lon)
     minLat = Math.min(minLat, peak.lat)
     maxLat = Math.max(maxLat, peak.lat)
   }
 
-  const lonPad = Math.max((maxLon - minLon) * 0.35, 1.2)
-  const latPad = Math.max((maxLat - minLat) * 0.35, 1.0)
+  // Tight pad with a cap so wide countries (USA) don't get huge ocean margins.
+  const lonPad = Math.min(Math.max((maxLon - minLon) * 0.08, 0.45), 3.2)
+  const latPad = Math.min(Math.max((maxLat - minLat) * 0.08, 0.35), 2.4)
 
   return [
     [minLon - lonPad, minLat - latPad],

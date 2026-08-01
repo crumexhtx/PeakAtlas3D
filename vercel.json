@@ -1,6 +1,13 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/releases",
+      "destination": "https://github.com/crumexhtx/PeakAtlas3D/blob/main/CHANGELOG.md",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!assets/|sitemap\\.xml$|robots\\.txt$|favicon\\.svg$).*)",

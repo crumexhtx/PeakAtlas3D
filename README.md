@@ -20,7 +20,7 @@
 | `/peaks` | Full peak directory, grouped by country |
 | `/countries/:countrySlug` | Per-country landing page (e.g. `/countries/usa`) with that country's peaks only — this is the indexable, server-rendered equivalent of `?country=` |
 | `/peak/:slug` | Peak dossier with 3D terrain |
-| `/about`, `/contact`, `/releases` | Static pages |
+| `/about`, `/contact` | Static pages |
 
 ## Stack
 
@@ -81,7 +81,7 @@ Open the URL Vite prints (usually `http://localhost:5173`).
 
 ## Data
 
-Peak data lives in [`src/data/peaks.json`](src/data/peaks.json). Peak photos include Wikimedia Commons credit, license, and source links in the dossier. Lodging is pulled from OpenStreetMap (`npm run enrich:lodging`); food entries remain sample suggestions only. Site updates are listed on `/releases`; legal/context notes are on `/about#disclaimer`.
+Peak data lives in [`src/data/peaks.json`](src/data/peaks.json). Peak photos include Wikimedia Commons credit, license, and source links in the dossier. Lodging is pulled from OpenStreetMap (`npm run enrich:lodging`); food entries remain sample suggestions only. Product updates are tracked in [`CHANGELOG.md`](CHANGELOG.md); legal/context notes are on `/about#disclaimer`.
 
 `npm run build` regenerates the sitemap, builds the SPA, then writes per-route HTML shells under `dist/` with correct titles / Open Graph tags for crawlers. Override the origin with `SITE_URL` if needed.
 

@@ -112,8 +112,8 @@ function createRandomWorldView() {
 const HERO_ZOOM = 12.1
 const HERO_PITCH = 46
 const HERO_BEARING = -28
-/** National park overview frame — wider than a summit hero. */
-const PARK_ZOOM = 8.4
+/** National park overview frame — wider than a summit hero; +20% vs prior 8.4. */
+const PARK_ZOOM = 10.1
 const PARK_PITCH = 42
 const PARK_BEARING = -18
 const PARK_FLY_MS = 4_200
@@ -220,7 +220,7 @@ export function AtlasMap({
     }
   }, [pixelRatio])
 
-  // Abort in-flight camera work when the map shell unmounts (About/Releases/etc).
+  // Abort in-flight camera work when the map shell unmounts (About/Contact/etc).
   useEffect(() => {
     return () => {
       const map = mapRef.current?.getMap()
@@ -419,7 +419,8 @@ export function AtlasMap({
 
           map.fitBounds(bounds, {
             padding: countryFramePadding(),
-            maxZoom: countryPeaks.length === 1 ? 5.8 : 6.4,
+            // Allow a closer landmass frame now that bounds exclude far outliers.
+            maxZoom: countryPeaks.length === 1 ? 5.8 : 7.2,
             duration,
             easing: easeInOutCubic,
             essential: true,
