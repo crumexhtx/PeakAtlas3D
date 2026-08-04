@@ -4,8 +4,8 @@ import { AppHeader } from '../components/AppHeader'
 import { AtlasHint } from '../components/AtlasHint'
 import { ClearMarkersToggle } from '../components/ClearMarkersToggle'
 import { EarthOnlyToggle } from '../components/EarthOnlyToggle'
+import { HomeExploreStrip } from '../components/HomeExploreStrip'
 import { NationalParksToggle } from '../components/NationalParksToggle'
-import { WorldTagline } from '../components/WorldTagline'
 import { AtlasProvider, type AtlasContextValue } from '../context/AtlasContext'
 import { getPeakById, loadFullCatalog, peaksIndex } from '../data/catalog'
 import { nationalParks } from '../data/nationalParks'
@@ -396,8 +396,16 @@ export function AtlasLayout() {
             visible={isWorldView && !cinematic && !earthOnlyActive}
             onActiveChange={onHintActiveChange}
           />
-          <WorldTagline
-            visible={isWorldView && !cinematic && !earthOnlyActive && !hintActive}
+          <HomeExploreStrip
+            visible={
+              isWorldView &&
+              !cinematic &&
+              !earthOnlyActive &&
+              !hintActive &&
+              !showNationalParksActive
+            }
+            onSelectCountry={selectCountry}
+            onSelectPeak={openPeak}
           />
           {isWorldView && (
             <>

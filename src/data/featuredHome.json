@@ -1,0 +1,20 @@
+{
+  "featuredPeakIds": [
+    "everest",
+    "matterhorn",
+    "rainier",
+    "denali",
+    "fuji",
+    "kilimanjaro",
+    "aconcagua",
+    "fitzroy"
+  ],
+  "featuredCountries": [
+    "Nepal",
+    "USA",
+    "Italy",
+    "Japan",
+    "Switzerland",
+    "New Zealand"
+  ]
+}

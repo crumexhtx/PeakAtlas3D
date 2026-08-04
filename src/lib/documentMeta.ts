@@ -3,6 +3,7 @@ import {
   peakTrailRoutesForPeak,
   trailSourcesForPeak,
 } from '../data/peakTrailRoutes'
+import { atlasStatsLabel } from '../data/featuredHome'
 import { peakLocationLabel } from './peakLocation'
 
 /** Production origin for canonical / OG / JSON-LD URLs (never include query strings). */
@@ -205,7 +206,7 @@ export function metaForAtlas(country: string | null) {
   }
   return {
     title: DEFAULT_TITLE,
-    description: DEFAULT_DESCRIPTION,
+    description: `${atlasStatsLabel()}. ${DEFAULT_DESCRIPTION}`,
     path: '/',
   }
 }

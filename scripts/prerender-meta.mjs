@@ -293,6 +293,48 @@ function staticPageBody(title, description, path) {
 
 function homeCrawlableBody(peaks) {
   const sorted = [...peaks].sort((a, b) => a.name.localeCompare(b.name))
+  const byId = new Map(peaks.map((p) => [p.id, p]))
+  const featuredConfig = JSON.parse(
+    readFileSync(join(root, 'src', 'data', 'featuredHome.json'), 'utf8'),
+  )
+  const featuredPeaks = featuredConfig.featuredPeakIds
+    .map((id) => byId.get(id))
+    .filter(Boolean)
+  const countrySummaries = buildCountrySummaries(peaks)
+  const countryByName = new Map(countrySummaries.map((s) => [s.name, s]))
+  const featuredCountries = featuredConfig.featuredCountries
+    .map((name) => countryByName.get(name))
+    .filter(Boolean)
+
+  const featuredCards = featuredPeaks
+    .map((p) => {
+      const img = peakImage(p)
+      const hook =
+        p.whyNotable?.trim() ||
+        p.description?.trim()?.slice(0, 140) ||
+        `${p.name} in the ${p.range}.`
+      const imgTag = img
+        ? `<img src="${escapeAttr(img)}" alt="" width="640" height="360" loading="lazy" decoding="async" style="width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:8px;" />`
+        : ''
+      return `<article style="margin:0 0 1.25rem;padding-bottom:1.1rem;border-bottom:1px solid #e2e8f0;">
+          <a href="${escapeAttr(siteUrl)}/peak/${escapeAttr(p.id)}" style="color:inherit;text-decoration:none;">
+            ${imgTag}
+            <h3 style="margin:0.65rem 0 0.25rem;font-size:1.1rem;">${escapeHtml(p.name)}</h3>
+          </a>
+          <p style="margin:0 0 0.35rem;color:#475569;font-size:0.9rem;">${escapeHtml(formatFt(p.elevationFt))} · ${escapeHtml(peakLocationLabel(p))}</p>
+          <p style="margin:0;line-height:1.45;">${escapeHtml(hook)}</p>
+          <p style="margin:0.45rem 0 0;"><a href="${escapeAttr(siteUrl)}/peak/${escapeAttr(p.id)}">Open ${escapeHtml(p.name)} 3D guide</a></p>
+        </article>`
+    })
+    .join('')
+
+  const countryLinks = featuredCountries
+    .map((s) => {
+      const href = `${siteUrl}/countries/${countrySlug(s.name)}`
+      return `<li><a href="${escapeAttr(href)}">${escapeHtml(s.name)}</a> <span>(${s.peakCount} peaks)</span></li>`
+    })
+    .join('')
+
   const links = sorted
     .map(
       (p) =>
@@ -300,7 +342,22 @@ function homeCrawlableBody(peaks) {
     )
     .join('')
 
+  const statsLine = `${sorted.length} peaks · ${countrySummaries.length}+ countries · 3D terrain for every summit`
+
   const itemList = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'PeakAtlas3D featured peaks',
+    numberOfItems: featuredPeaks.length,
+    itemListElement: featuredPeaks.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${siteUrl}/peak/${p.id}`,
+      name: p.name,
+    })),
+  }
+
+  const catalogList = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'PeakAtlas3D peak catalog',
@@ -316,16 +373,29 @@ function homeCrawlableBody(peaks) {
   const inner = `<main style="font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem;">
         <h1>PeakAtlas3D — Trip-Ready Peak Guides</h1>
         <p>${escapeHtml(DEFAULT_DESCRIPTION)}</p>
+        <p><strong>${escapeHtml(statsLine)}</strong></p>
         <p><a href="${escapeAttr(siteUrl)}/peaks">Browse all ${sorted.length} peaks</a> · <a href="${escapeAttr(siteUrl)}/about">About</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
+        <section aria-label="Featured peaks">
+          <h2>Featured peaks</h2>
+          <p>Handpicked summits — famous icons and a few gems worth the detour.</p>
+          ${featuredCards}
+        </section>
+        <section aria-label="Explore by country">
+          <h2>Explore by country</h2>
+          <ul>${countryLinks}</ul>
+          <p><a href="${escapeAttr(siteUrl)}/peaks">See every country in the catalog</a></p>
+        </section>
         <section aria-label="Peak directory">
           <h2>Peak directory</h2>
+          <p>Full A–Z catalog of every summit on PeakAtlas3D.</p>
           <ul>${links}</ul>
         </section>
       </main>`
 
   return wrapCrawlableBody(
     inner,
-    `<script type="application/ld+json">${JSON.stringify(itemList)}</script>`,
+    `<script type="application/ld+json">${JSON.stringify(itemList)}</script>
+<script type="application/ld+json">${JSON.stringify(catalogList)}</script>`,
   )
 }
 
@@ -523,7 +593,7 @@ const staticPages = [
   {
     path: '/',
     title: 'PeakAtlas3D — Trip-Ready Peak Guides',
-    description: DEFAULT_DESCRIPTION,
+    description: `${peaks.length} peaks · ${countrySummaries.length}+ countries · 3D terrain for every summit. ${DEFAULT_DESCRIPTION}`,
     image: '',
     keepWebsiteJsonLd: true,
     bodyHtml: homeCrawlableBody(peaks),
