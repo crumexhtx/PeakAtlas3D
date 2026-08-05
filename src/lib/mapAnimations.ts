@@ -272,6 +272,25 @@ export function worldFramePadding(): {
   return { top: 0, bottom: 0, left: 0, right: 0 }
 }
 
+/**
+ * Drop cinematic padding after unlock so free pan/zoom does not snap back
+ * when MapLibre reconciles the padded viewport on moveend.
+ * Keeps the current geographic center / zoom / pitch / bearing.
+ */
+export function clearCameraPadding(map: MapLibreMap): void {
+  try {
+    map.jumpTo({
+      center: map.getCenter(),
+      zoom: map.getZoom(),
+      bearing: map.getBearing(),
+      pitch: map.getPitch(),
+      padding: worldFramePadding(),
+    })
+  } catch {
+    // Map may already be removed.
+  }
+}
+
 /** Nudge look-at toward the camera so pitched terrain sits nearer mid-frame. */
 export function peakFramingCenter(
   lon: number,

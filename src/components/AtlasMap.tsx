@@ -32,6 +32,7 @@ import {
 } from '../lib/maptiler'
 import {
   applyPeakAtmosphere,
+  clearCameraPadding,
   countryFramePadding,
   flyToAsync,
   IDLE_ROTATE_DELAY_MS,
@@ -641,6 +642,19 @@ export function AtlasMap({
       await settleBasemap(map)
       if (!stillActive()) return
 
+      // Enable terrain before the approach so DEM settle does not pop the
+      // camera after flyTo finishes (felt like an extra jump on unlock).
+      try {
+        map.setTerrain({
+          source: TERRAIN_SOURCE_ID,
+          exaggeration: HERO_TERRAIN_EXAGGERATION,
+        })
+      } catch {
+        // Source may still be attaching — fly without terrain.
+      }
+      await waitForMapIdle(map, 700)
+      if (!stillActive()) return
+
       const heroZoom = peakHeroZoom(map.getZoom())
       const heroCenter = peakFramingCenter(
         summit[0],
@@ -651,14 +665,6 @@ export function AtlasMap({
       const framePad = peakFramePadding()
 
       if (prefersReducedMotion()) {
-        try {
-          map.setTerrain({
-            source: TERRAIN_SOURCE_ID,
-            exaggeration: HERO_TERRAIN_EXAGGERATION,
-          })
-        } catch {
-          // Source may still be attaching — jump without terrain.
-        }
         map.jumpTo({
           center: heroCenter,
           zoom: heroZoom,
@@ -666,6 +672,7 @@ export function AtlasMap({
           bearing: HERO_BEARING,
           padding: framePad,
         })
+        clearCameraPadding(map)
         setMapInteractive(map, true)
         onCinematicChangeRef.current({ active: false, status: '' })
         return
@@ -680,6 +687,7 @@ export function AtlasMap({
       // Hard unlock if anything hangs (style race, tile stall).
       const safety = window.setTimeout(() => {
         if (!stillActive()) return
+        clearCameraPadding(map)
         setMapInteractive(map, true)
         onCinematicChangeRef.current({ active: false, status: '' })
       }, 12_000)
@@ -698,23 +706,18 @@ export function AtlasMap({
         })
         if (!stillActive()) return
 
-        await waitForMapIdle(map, 800)
+        // Brief tile settle, then drop cinematic padding so later pan/zoom
+        // does not snap when MapLibre reconciles the padded viewport.
+        await waitForMapIdle(map, 500)
         if (!stillActive()) return
-
-        try {
-          map.setTerrain({
-            source: TERRAIN_SOURCE_ID,
-            exaggeration: HERO_TERRAIN_EXAGGERATION,
-          })
-        } catch {
-          // Terrain source missing after a style race — unlock anyway.
-        }
+        clearCameraPadding(map)
 
         setMapInteractive(map, true)
         onCinematicChangeRef.current({ active: false, status: '' })
       } catch {
         // Camera errors must not leave the map frozen / dossier hidden.
         if (stillActive()) {
+          clearCameraPadding(map)
           setMapInteractive(map, true)
           onCinematicChangeRef.current({ active: false, status: '' })
         }
@@ -779,6 +782,7 @@ export function AtlasMap({
       bearing: HERO_BEARING,
       padding: peakFramePadding(),
     })
+    clearCameraPadding(map)
     setMapInteractive(map, true)
     onCinematicChangeRef.current({ active: false, status: '' })
   }, [skipNonce, activePeak])
