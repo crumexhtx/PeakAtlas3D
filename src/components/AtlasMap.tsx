@@ -75,21 +75,21 @@ type AtlasMapProps = {
 }
 
 /**
- * Desktop world framing — fills the stage without over-zooming (closer zoom
- * costs more satellite detail while the idle globe spins).
+ * Desktop world framing — continent-scale hemisphere (matches the reference
+ * shot where a region like South America fills most of the visible disk).
+ * Closer zoom costs more satellite detail while the idle globe spins.
  */
-/** ~17% closer than the prior full-disk framing. */
-const WORLD_ZOOM = 1.404
+const WORLD_ZOOM = 2.05
 /**
- * World framing matched to the reference phone shot: full Earth disk
- * visible with clear margin (not clipped, not tiny).
+ * World framing on phone: still a clear Earth disk with a bit more margin
+ * than desktop so chrome does not clip the sphere.
  */
-const WORLD_ZOOM_NARROW = 1.053
+const WORLD_ZOOM_NARROW = 1.54
 /**
  * iPhone SE (~375×667): map pane is shorter after header/browse chrome,
  * so ease out a touch vs taller phones while keeping the same look.
  */
-const WORLD_ZOOM_SE = 0.983
+const WORLD_ZOOM_SE = 1.43
 
 /** Fresh random globe framing for each full page load / refresh. */
 function createRandomWorldView() {
