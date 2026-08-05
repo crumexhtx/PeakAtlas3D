@@ -4,6 +4,14 @@ Product updates for [PeakAtlas3D](https://peakatlas3d.com). Newest first.
 
 Update this file when shipping notable changes (do not maintain an in-app releases page).
 
+## 0.3.7 — 2026-08-01 — Faster satellite tiles
+
+One MapTiler satellite style for world and detail so country/peak/park entry no longer reloads the basemap and re-fetches a hybrid stack.
+
+- Drop world↔hybrid style swaps (satellite-only throughout)
+- Cap detail max zoom at 15 (enough for summit/park framing)
+- Faster settleBasemap when the style is already loaded
+
 ## 0.3.6 — 2026-08-01 — Tighter country + park framing
 
 Country drill-in (especially USA) frames the main landmass instead of every distant peak; national park fly-ins zoom ~20% closer. Release notes move off the site into this changelog.
