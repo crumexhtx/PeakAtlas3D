@@ -264,7 +264,7 @@ export function PeakSeoLayout({
       {nearby.length > 0 && (
         <section
           className="info-block"
-          aria-label={`Places near ${peak.name}`}
+          aria-label={`Staging towns near ${peak.name}`}
         >
           <h2 className="info-heading">{placesLead.heading}</h2>
           <p className="section-answer-lead">{placesLead.answer}</p>

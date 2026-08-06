@@ -76,7 +76,7 @@ export function geographyLead(peak: LeadPeak): SectionLead {
 export function closestPlacesLead(peak: LeadPeak): SectionLead {
   return {
     heading: `Where should you stage near ${peak.name}?`,
-    answer: `Closest catalog places are ranked by distance from the summit. Most parties sleep in ${townBit(peak)} and day-trip or hut-hop from there — confirm beds and road status before you travel.`,
+    answer: `Closest staging towns are ranked by distance from the summit — not the individual lodging options listed separately below. Most parties sleep in ${townBit(peak)} and day-trip or hut-hop from there — confirm beds and road status before you travel.`,
   }
 }
 

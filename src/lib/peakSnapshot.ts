@@ -103,7 +103,7 @@ export function buildPeakAnswer(peak: SnapshotPeak): string {
   const hotels = hotelCount(peak)
   const lodgingBit =
     hotels > 0
-      ? ` PeakAtlas lists ${hotels} mapped lodging option${hotels === 1 ? '' : 's'} near the summit area from OpenStreetMap.`
+      ? ` PeakAtlas lists ${hotels} mapped lodging option${hotels === 1 ? '' : 's'} near the summit area from OpenStreetMap — see Lodging & food below.`
       : ' Mapped lodging near the summit is sparse — most parties book in the staging town.'
 
   const templates = [
