@@ -275,12 +275,25 @@ export function worldFramePadding(): {
 /**
  * Drop cinematic padding after unlock so free pan/zoom does not snap back
  * when MapLibre reconciles the padded viewport on moveend.
- * Keeps the current geographic center / zoom / pitch / bearing.
+ *
+ * `getCenter()` is defined relative to the *padded* viewport, so reapplying
+ * it verbatim under zero padding re-centers that point in the *full* canvas
+ * instead — with the asymmetric padding used while framing a peak (e.g. wide
+ * right padding for the desktop dossier), that alone is a visible jump, not
+ * a fix for one. Unproject the true canvas center under the still-padded
+ * transform first, and use that as the new center — whatever was showing at
+ * the canvas's actual center point stays there once padding clears.
  */
 export function clearCameraPadding(map: MapLibreMap): void {
   try {
+    const canvas = map.getCanvas()
+    const anchor: [number, number] = [
+      canvas.clientWidth / 2,
+      canvas.clientHeight / 2,
+    ]
+    const center = map.unproject(anchor)
     map.jumpTo({
-      center: map.getCenter(),
+      center,
       zoom: map.getZoom(),
       bearing: map.getBearing(),
       pitch: map.getPitch(),
