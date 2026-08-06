@@ -240,6 +240,36 @@ export function peakFramePadding(): {
   return { top: 96, bottom: 72, left: 48, right: 280 }
 }
 
+/**
+ * Open (padding-cleared) viewport width the peak hero zoom is tuned against —
+ * a representative desktop window with peakFramePadding()'s desktop sides
+ * (48 + 280) already removed.
+ */
+const HERO_ZOOM_REFERENCE_OPEN_WIDTH = 1440 - 48 - 280
+/** Cap how far the viewport-size adjustment can zoom in/out either way. */
+const HERO_ZOOM_ADJUST_CLAMP = 1.1
+
+/**
+ * Zoom is logarithmic — the same zoom level shows proportionally less ground
+ * distance on a narrower viewport, so a fixed hero zoom leaves less room for
+ * the summit + surrounding terrain to read as "framed" on small screens even
+ * though peakFramePadding() already reserves proportionally similar padding
+ * there. Zoom out for viewports narrower than the reference so a phone shows
+ * roughly the same ground context a desktop does, instead of a more tightly
+ * cropped cutout of it. Never zoom in beyond the tuned baseline — desktop
+ * framing (at/above the reference width) is unaffected.
+ */
+export function heroZoomViewportAdjust(
+  viewportWidth: number,
+  padding: { left: number; right: number },
+): number {
+  const openWidth = Math.max(1, viewportWidth - padding.left - padding.right)
+  const ratio = openWidth / HERO_ZOOM_REFERENCE_OPEN_WIDTH
+  if (!(ratio > 0) || !Number.isFinite(ratio)) return 0
+  const delta = Math.min(0, Math.log2(ratio))
+  return Math.max(-HERO_ZOOM_ADJUST_CLAMP, delta)
+}
+
 /** Leave room for browse bar (bottom) and top-right country card on phones. */
 export function countryFramePadding(): {
   top: number
