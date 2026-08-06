@@ -35,6 +35,7 @@ import {
   clearCameraPadding,
   countryFramePadding,
   flyToAsync,
+  heroZoomViewportAdjust,
   IDLE_ROTATE_DELAY_MS,
   IDLE_ROTATE_RESUME_MS,
   IDLE_SPIN_MAX_MS,
@@ -146,10 +147,18 @@ const OVERVIEW_SETTLE_MS = 400
 
 /**
  * When jumping in from the spinning globe (search / world flags), ease in with
- * a slightly wider final frame so the massif stays readable.
+ * a slightly wider final frame so the massif stays readable. Also zoom out on
+ * narrower viewports (see heroZoomViewportAdjust) so the summit reads as
+ * "framed" on small screens instead of a more tightly cropped cutout of the
+ * desktop view.
  */
-function peakHeroZoom(startZoom: number): number {
-  return startZoom < 4 ? HERO_ZOOM - 0.35 : HERO_ZOOM
+function peakHeroZoom(
+  startZoom: number,
+  viewportWidth: number,
+  padding: { left: number; right: number },
+): number {
+  const base = startZoom < 4 ? HERO_ZOOM - 0.35 : HERO_ZOOM
+  return base + heroZoomViewportAdjust(viewportWidth, padding)
 }
 
 const ACTIVITY_EVENTS = [
@@ -655,14 +664,18 @@ export function AtlasMap({
       await waitForMapIdle(map, 700)
       if (!stillActive()) return
 
-      const heroZoom = peakHeroZoom(map.getZoom())
+      const framePad = peakFramePadding()
+      const heroZoom = peakHeroZoom(
+        map.getZoom(),
+        map.getContainer().clientWidth,
+        framePad,
+      )
       const heroCenter = peakFramingCenter(
         summit[0],
         summit[1],
         HERO_BEARING,
         HERO_FRAME_OFFSET_M,
       )
-      const framePad = peakFramePadding()
 
       if (prefersReducedMotion()) {
         map.jumpTo({
@@ -770,6 +783,7 @@ export function AtlasMap({
       source: TERRAIN_SOURCE_ID,
       exaggeration: HERO_TERRAIN_EXAGGERATION,
     })
+    const skipFramePad = peakFramePadding()
     map.jumpTo({
       center: peakFramingCenter(
         activePeak.lon,
@@ -777,10 +791,14 @@ export function AtlasMap({
         HERO_BEARING,
         HERO_FRAME_OFFSET_M,
       ),
-      zoom: HERO_ZOOM,
+      zoom: peakHeroZoom(
+        map.getZoom(),
+        map.getContainer().clientWidth,
+        skipFramePad,
+      ),
       pitch: HERO_PITCH,
       bearing: HERO_BEARING,
-      padding: peakFramePadding(),
+      padding: skipFramePad,
     })
     clearCameraPadding(map)
     setMapInteractive(map, true)
