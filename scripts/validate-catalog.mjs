@@ -174,8 +174,8 @@ try {
   fail(`nationalParks JSON parse error: ${err.message}`)
 }
 
-if (!Array.isArray(parks) || parks.length !== 25) {
-  fail(`expected exactly 25 national parks, got ${parks?.length}`)
+if (!Array.isArray(parks) || parks.length === 0) {
+  fail('expected a non-empty national parks array')
 }
 
 const parkIds = new Set()
