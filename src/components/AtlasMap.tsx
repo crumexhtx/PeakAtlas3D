@@ -32,7 +32,7 @@ import {
 } from '../lib/maptiler'
 import {
   applyPeakAtmosphere,
-  clearCameraPadding,
+  deferClearCameraPadding,
   countryFramePadding,
   flyToAsync,
   heroZoomViewportAdjust,
@@ -112,7 +112,7 @@ function createRandomWorldView() {
 }
 
 const HERO_ZOOM = 11.55
-const HERO_PITCH = 46
+const HERO_PITCH = 40
 const HERO_BEARING = -28
 /** National park overview frame — wider than a summit hero; +20% vs prior 8.4. */
 const PARK_ZOOM = 10.1
@@ -127,10 +127,10 @@ const PARKS_OVERVIEW = {
   bearing: 0,
 }
 /**
- * Look-at nudge toward the camera (meters). Keep modest so the summit stays
- * near the visual center of the padded viewport under pitch.
+ * Look-at nudge toward the camera (meters). Small so the summit sits near
+ * mid-frame under pitch instead of riding the top of the viewport.
  */
-const HERO_FRAME_OFFSET_M = 280
+const HERO_FRAME_OFFSET_M = 120
 /** Manual 360° orbit — paced slow for a calm spin. */
 const SPIN_DURATION_MS = 26_400
 /**
@@ -205,7 +205,14 @@ export function AtlasMap({
   const latestPeakIdRef = useRef<string | null>(null)
   const cinematicRunRef = useRef(0)
   const orbitRunRef = useRef(0)
+  /** Cancels deferred padding clear when leaving a peak or restarting intro. */
+  const cancelDeferPadRef = useRef<(() => void) | null>(null)
   const onCinematicChangeRef = useRef(onCinematicChange)
+
+  const scheduleDeferClearPad = (map: MapLibreMap) => {
+    cancelDeferPadRef.current?.()
+    cancelDeferPadRef.current = deferClearCameraPadding(map)
+  }
   /** Stable for this page session; randomized again on full refresh. */
   const [worldView] = useState(createRandomWorldView)
   const [mapReady, setMapReady] = useState(false)
@@ -613,6 +620,8 @@ export function AtlasMap({
       // the country/world effect (declared above) starts fitBounds/easeTo in
       // the same commit; a stop() after that cancels the zoom-out and leaves
       // the camera stuck at summit framing (common with single-peak countries).
+      cancelDeferPadRef.current?.()
+      cancelDeferPadRef.current = null
       cinematicRunRef.current += 1
       orbitRunRef.current += 1
       setOrbiting(false)
@@ -627,6 +636,8 @@ export function AtlasMap({
       return
     }
     prevPeakIdRef.current = peakId
+    cancelDeferPadRef.current?.()
+    cancelDeferPadRef.current = null
     orbitRunRef.current += 1
     setOrbiting(false)
 
@@ -685,7 +696,8 @@ export function AtlasMap({
           bearing: HERO_BEARING,
           padding: framePad,
         })
-        clearCameraPadding(map)
+        // Keep dossier padding until first pan/zoom so summit stays mid-open-map.
+        scheduleDeferClearPad(map)
         setMapInteractive(map, true)
         onCinematicChangeRef.current({ active: false, status: '' })
         return
@@ -700,7 +712,7 @@ export function AtlasMap({
       // Hard unlock if anything hangs (style race, tile stall).
       const safety = window.setTimeout(() => {
         if (!stillActive()) return
-        clearCameraPadding(map)
+        scheduleDeferClearPad(map)
         setMapInteractive(map, true)
         onCinematicChangeRef.current({ active: false, status: '' })
       }, 12_000)
@@ -719,18 +731,18 @@ export function AtlasMap({
         })
         if (!stillActive()) return
 
-        // Brief tile settle, then drop cinematic padding so later pan/zoom
-        // does not snap when MapLibre reconciles the padded viewport.
+        // Brief tile settle. Keep cinematic padding so the summit stays
+        // centered in the open map beside the dossier; clear on first drag.
         await waitForMapIdle(map, 500)
         if (!stillActive()) return
-        clearCameraPadding(map)
+        scheduleDeferClearPad(map)
 
         setMapInteractive(map, true)
         onCinematicChangeRef.current({ active: false, status: '' })
       } catch {
         // Camera errors must not leave the map frozen / dossier hidden.
         if (stillActive()) {
-          clearCameraPadding(map)
+          scheduleDeferClearPad(map)
           setMapInteractive(map, true)
           onCinematicChangeRef.current({ active: false, status: '' })
         }
@@ -746,6 +758,8 @@ export function AtlasMap({
       cinematicRunRef.current += 1
       orbitRunRef.current += 1
       setOrbiting(false)
+      cancelDeferPadRef.current?.()
+      cancelDeferPadRef.current = null
       try {
         map.stop()
       } catch {
@@ -800,7 +814,7 @@ export function AtlasMap({
       bearing: HERO_BEARING,
       padding: skipFramePad,
     })
-    clearCameraPadding(map)
+    scheduleDeferClearPad(map)
     setMapInteractive(map, true)
     onCinematicChangeRef.current({ active: false, status: '' })
   }, [skipNonce, activePeak])

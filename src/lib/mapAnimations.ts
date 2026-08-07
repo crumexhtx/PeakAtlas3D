@@ -228,24 +228,25 @@ export function peakFramePadding(): {
     typeof window !== 'undefined' &&
     window.matchMedia('(max-width: 800px)').matches
   if (narrow) {
-    // Top-right details card — mild bias into the open map, not hard left.
+    // Top-right details card — bias into the open map, keep summit mid-frame.
     return {
-      top: 76,
-      bottom: 72,
-      left: 28,
-      right: 88,
+      top: 100,
+      bottom: 64,
+      left: 24,
+      right: 96,
     }
   }
-  // Desktop dossier: lighter right reserve so the summit sits nearer mid-stage.
-  return { top: 88, bottom: 64, left: 40, right: 200 }
+  // Desktop dossier (~340–380px): match right reserve so summit centers in
+  // the open map, not the full canvas under the panel.
+  return { top: 110, bottom: 56, left: 36, right: 360 }
 }
 
 /**
  * Open (padding-cleared) viewport width the peak hero zoom is tuned against —
  * a representative desktop window with peakFramePadding()'s desktop sides
- * (40 + 200) already removed.
+ * (36 + 360) already removed.
  */
-const HERO_ZOOM_REFERENCE_OPEN_WIDTH = 1440 - 40 - 200
+const HERO_ZOOM_REFERENCE_OPEN_WIDTH = 1440 - 36 - 360
 /** Cap how far the viewport-size adjustment can zoom in/out either way. */
 const HERO_ZOOM_ADJUST_CLAMP = 1.1
 
@@ -331,6 +332,33 @@ export function clearCameraPadding(map: MapLibreMap): void {
     })
   } catch {
     // Map may already be removed.
+  }
+}
+
+/**
+ * Keep peak dossier padding until the user first pans/zooms/pitches, then
+ * clear it without a visible jump. Leaving padding on after the cinematic
+ * keeps the summit centered in the open map beside the dossier.
+ */
+export function deferClearCameraPadding(map: MapLibreMap): () => void {
+  const events = [
+    'dragstart',
+    'zoomstart',
+    'pitchstart',
+    'rotatestart',
+  ] as const
+  let done = false
+  const clear = () => {
+    if (done) return
+    done = true
+    for (const event of events) map.off(event, clear)
+    clearCameraPadding(map)
+  }
+  for (const event of events) map.on(event, clear)
+  return () => {
+    if (done) return
+    done = true
+    for (const event of events) map.off(event, clear)
   }
 }
 
