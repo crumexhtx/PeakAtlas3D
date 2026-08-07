@@ -148,13 +148,14 @@ a {
   opacity: 0.9;
 }
 
-/* Peak mode — clear summit flags, trail signs, and place pins. */
+/* Peak mode — clear summit flags, trail signs, and place pins.
+   Stacked under Orbit 360° (left column, below zoom controls). */
 .clear-markers-toggle {
   position: absolute;
   z-index: 18;
-  top: calc(0.65rem + var(--safe-top, 0px));
-  right: calc(0.75rem + var(--safe-right, 0px));
-  left: auto;
+  top: calc(10.55rem + var(--safe-top, 0px));
+  left: calc(0.65rem + var(--safe-left, 0px));
+  right: auto;
   bottom: auto;
   display: inline-flex;
   align-items: center;
@@ -2828,9 +2829,9 @@ a.trail-bubble-label-link:focus-visible {
   }
 
   .clear-markers-toggle {
-    top: calc(0.65rem + var(--safe-top, 0px));
-    right: calc(0.65rem + var(--safe-right, 0px));
-    left: auto;
+    top: calc(10.55rem + var(--safe-top, 0px));
+    left: calc(0.65rem + var(--safe-left, 0px));
+    right: auto;
     bottom: auto;
     min-height: 2rem;
     padding: 0.4rem 0.7rem;

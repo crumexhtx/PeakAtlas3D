@@ -111,7 +111,7 @@ function createRandomWorldView() {
   }
 }
 
-const HERO_ZOOM = 12.1
+const HERO_ZOOM = 11.7
 const HERO_PITCH = 46
 const HERO_BEARING = -28
 /** National park overview frame — wider than a summit hero; +20% vs prior 8.4. */
