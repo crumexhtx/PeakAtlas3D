@@ -304,25 +304,34 @@ export function worldFramePadding(): {
 }
 
 /**
- * Drop cinematic padding after unlock so free pan/zoom does not snap back
- * when MapLibre reconciles the padded viewport on moveend.
+ * Drop cinematic padding after unlock so free pan/zoom does not snap when
+ * MapLibre reconciles a padded viewport on moveend.
  *
- * `getCenter()` is defined relative to the *padded* viewport, so reapplying
- * it verbatim under zero padding re-centers that point in the *full* canvas
- * instead — with the asymmetric padding used while framing a peak (e.g. wide
- * right padding for the desktop dossier), that alone is a visible jump, not
- * a fix for one. Unproject the true canvas center under the still-padded
- * transform first, and use that as the new center — whatever was showing at
- * the canvas's actual center point stays there once padding clears.
+ * `getCenter()` is the center of the *padded* open map. Clearing padding while
+ * keeping that lat/lng recenters it in the *full* canvas — a visible jump left
+ * under a wide right dossier pad. Instead, pick a new center so the point that
+ * was at the padded viewport center stays on the same screen pixel after
+ * padding goes to zero (summit stays framed beside the dossier, no mid-drag
+ * jumpTo needed).
  */
 export function clearCameraPadding(map: MapLibreMap): void {
   try {
     const canvas = map.getCanvas()
-    const anchor: [number, number] = [
-      canvas.clientWidth / 2,
-      canvas.clientHeight / 2,
-    ]
-    const center = map.unproject(anchor)
+    const w = canvas.clientWidth
+    const h = canvas.clientHeight
+    const pad = map.getPadding()
+    const left = pad.left ?? 0
+    const right = pad.right ?? 0
+    const top = pad.top ?? 0
+    const bottom = pad.bottom ?? 0
+    const openCx = left + (w - left - right) / 2
+    const openCy = top + (h - top - bottom) / 2
+    // Screen point that becomes the camera center once padding is zero, chosen
+    // so today's open-map center stays at (openCx, openCy).
+    const center = map.unproject([
+      w / 2 - (openCx - w / 2),
+      h / 2 - (openCy - h / 2),
+    ])
     map.jumpTo({
       center,
       zoom: map.getZoom(),
@@ -332,33 +341,6 @@ export function clearCameraPadding(map: MapLibreMap): void {
     })
   } catch {
     // Map may already be removed.
-  }
-}
-
-/**
- * Keep peak dossier padding until the user first pans/zooms/pitches, then
- * clear it without a visible jump. Leaving padding on after the cinematic
- * keeps the summit centered in the open map beside the dossier.
- */
-export function deferClearCameraPadding(map: MapLibreMap): () => void {
-  const events = [
-    'dragstart',
-    'zoomstart',
-    'pitchstart',
-    'rotatestart',
-  ] as const
-  let done = false
-  const clear = () => {
-    if (done) return
-    done = true
-    for (const event of events) map.off(event, clear)
-    clearCameraPadding(map)
-  }
-  for (const event of events) map.on(event, clear)
-  return () => {
-    if (done) return
-    done = true
-    for (const event of events) map.off(event, clear)
   }
 }
 
