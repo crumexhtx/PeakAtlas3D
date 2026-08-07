@@ -232,20 +232,20 @@ export function peakFramePadding(): {
     return {
       top: 76,
       bottom: 72,
-      left: 36,
-      right: 108,
+      left: 28,
+      right: 88,
     }
   }
-  // Desktop dossier (~360px): reserve right space so summit centers in leftover map.
-  return { top: 96, bottom: 72, left: 48, right: 280 }
+  // Desktop dossier: lighter right reserve so the summit sits nearer mid-stage.
+  return { top: 88, bottom: 64, left: 40, right: 200 }
 }
 
 /**
  * Open (padding-cleared) viewport width the peak hero zoom is tuned against —
  * a representative desktop window with peakFramePadding()'s desktop sides
- * (48 + 280) already removed.
+ * (40 + 200) already removed.
  */
-const HERO_ZOOM_REFERENCE_OPEN_WIDTH = 1440 - 48 - 280
+const HERO_ZOOM_REFERENCE_OPEN_WIDTH = 1440 - 40 - 200
 /** Cap how far the viewport-size adjustment can zoom in/out either way. */
 const HERO_ZOOM_ADJUST_CLAMP = 1.1
 

@@ -111,7 +111,7 @@ function createRandomWorldView() {
   }
 }
 
-const HERO_ZOOM = 11.7
+const HERO_ZOOM = 11.55
 const HERO_PITCH = 46
 const HERO_BEARING = -28
 /** National park overview frame — wider than a summit hero; +20% vs prior 8.4. */
@@ -130,7 +130,7 @@ const PARKS_OVERVIEW = {
  * Look-at nudge toward the camera (meters). Keep modest so the summit stays
  * near the visual center of the padded viewport under pitch.
  */
-const HERO_FRAME_OFFSET_M = 400
+const HERO_FRAME_OFFSET_M = 280
 /** Manual 360° orbit — paced slow for a calm spin. */
 const SPIN_DURATION_MS = 26_400
 /**
