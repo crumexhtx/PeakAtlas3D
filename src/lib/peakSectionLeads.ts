@@ -8,6 +8,7 @@ type LeadPeak = {
   range?: string
   nearestTown?: { name: string; distanceMiles?: number } | null
   hotels?: unknown[]
+  food?: unknown[]
   trails?: unknown[]
 }
 
@@ -102,12 +103,33 @@ export function trailsLead(peak: LeadPeak): SectionLead {
 }
 
 export function lodgingLead(peak: LeadPeak): SectionLead {
-  const n = peak.hotels?.length ?? 0
+  const lodging = peak.hotels?.length ?? 0
+  const dining = peak.food?.length ?? 0
+  const heading = `Where can you stay and eat near ${peak.name}?`
+
+  // Lodging is sourced from OpenStreetMap (real listings with source links);
+  // food is curated PeakAtlas suggestions, not pulled from OSM — keep that
+  // distinction honest instead of implying both are the same kind of data.
+  if (lodging > 0 && dining > 0) {
+    return {
+      heading,
+      answer: `PeakAtlas maps ${lodging} lodging place${lodging === 1 ? '' : 's'} from OpenStreetMap and ${dining} dining suggestion${dining === 1 ? '' : 's'} near ${peak.name}. Coverage varies — always confirm hours and availability before you travel.`,
+    }
+  }
+  if (lodging > 0) {
+    return {
+      heading,
+      answer: `PeakAtlas maps ${lodging} lodging place${lodging === 1 ? '' : 's'} from OpenStreetMap near ${peak.name}. Coverage varies — always confirm availability before you travel.`,
+    }
+  }
+  if (dining > 0) {
+    return {
+      heading,
+      answer: `Mapped lodging near ${peak.name} is thin — stage in ${townBit(peak)} and book early. ${dining} dining suggestion${dining === 1 ? '' : 's'} listed below.`,
+    }
+  }
   return {
-    heading: `Where can you stay and eat near ${peak.name}?`,
-    answer:
-      n > 0
-        ? `PeakAtlas maps ${n} lodging place${n === 1 ? '' : 's'} from OpenStreetMap near ${peak.name}, plus sample food ideas in ${townBit(peak)}. Coverage varies — always confirm availability.`
-        : `Mapped lodging near ${peak.name} is thin. Stage in ${townBit(peak)} and book early; remote approaches often have no beds at the trailhead.`,
+    heading,
+    answer: `Mapped lodging near ${peak.name} is thin. Stage in ${townBit(peak)} and book early; remote approaches often have no beds at the trailhead.`,
   }
 }
