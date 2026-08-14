@@ -83,11 +83,16 @@ export function PeakDossier({
   const food = peak.food ?? []
   const lodgingFromOsm =
     lodging.length > 0 && lodging.every((h) => isOsmAmenity(h))
+  // Food is currently curated PeakAtlas suggestions, not pulled from OSM —
+  // this stays false until food entries actually carry source/sourceUrl, at
+  // which point AmenityRow already renders them as source-linked like lodging.
+  const foodFromOsm = food.length > 0 && food.every((f) => isOsmAmenity(f))
   const hasStaySection = lodging.length > 0 || food.length > 0
   const hasCuratedRoutes = peakHasTrailRoutes(peak.id)
   const hasPopularTrails = trailLabels.length > 0
   const primarySource = trailSources[0]
-  const showReferences = trailSources.length > 0 || lodgingFromOsm
+  const showReferences =
+    trailSources.length > 0 || lodgingFromOsm || foodFromOsm
   const trailsSection = trailsLead(peak)
   const lodgingSection = lodgingLead(peak)
 
@@ -238,10 +243,26 @@ export function PeakDossier({
 
               {food.length > 0 && (
                 <>
-                  <h3 className="sub-heading">Sample food</h3>
-                  <p className="amenity-disclaimer">
-                    Sample food suggestions — not verified listings or ratings.
-                  </p>
+                  <h3 className="sub-heading">Food & dining</h3>
+                  {foodFromOsm ? (
+                    <p className="amenity-disclaimer">
+                      Nearby dining from{' '}
+                      <a
+                        href="https://www.openstreetmap.org/copyright"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        OpenStreetMap
+                      </a>
+                      . Listings may be outdated — always confirm hours and
+                      availability before you travel.
+                    </p>
+                  ) : (
+                    <p className="amenity-disclaimer">
+                      Curated dining suggestions — always confirm hours and
+                      availability before you travel.
+                    </p>
+                  )}
                   <ul className="amenity-list">
                     {food.map((f) => (
                       <AmenityRow key={f.name} item={f} />
@@ -275,7 +296,7 @@ export function PeakDossier({
                 </span>
               </li>
             ))}
-            {lodgingFromOsm && (
+            {(lodgingFromOsm || foodFromOsm) && (
               <li>
                 <a
                   className="trail-dossier-link"
@@ -287,8 +308,14 @@ export function PeakDossier({
                 </a>
                 <span className="trail-dossier-note">
                   {' '}
-                  — nearby lodging points. Coverage varies; confirm availability
-                  before you travel.
+                  — nearby{' '}
+                  {lodgingFromOsm && foodFromOsm
+                    ? 'lodging and dining'
+                    : lodgingFromOsm
+                      ? 'lodging'
+                      : 'dining'}{' '}
+                  points. Coverage varies; confirm availability before you
+                  travel.
                 </span>
               </li>
             )}
