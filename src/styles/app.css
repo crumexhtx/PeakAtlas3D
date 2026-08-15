@@ -3133,24 +3133,12 @@ a.trail-bubble-label-link:focus-visible {
     max-width: min(300px, calc(100% - 1.5rem));
   }
 
+  /* Vertically centered over the globe at any width, it just shrinks on
+     phones instead of repositioning — ends up covering the globe and
+     duplicating BrowseBar's country picker below it. Hide it here; search,
+     BrowseBar, and tapping flags directly still cover the same ground. */
   .home-explore {
-    left: calc(0.65rem + var(--safe-left, 0px));
-    top: 50%;
-    bottom: auto;
-    transform: translateY(-50%);
-    width: min(18.5rem, calc(100% - 1.3rem));
-    padding: 0.55rem 0.6rem 0.6rem;
-    gap: 0.35rem;
-  }
-
-  .home-explore-stats {
-    font-size: 0.72rem;
-  }
-
-  .home-explore-chip,
-  .home-explore-peak {
-    font-size: 0.68rem;
-    padding: 0.24rem 0.48rem;
+    display: none;
   }
 
   .mapboxgl-ctrl-group button {
