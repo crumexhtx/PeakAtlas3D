@@ -1,13 +1,14 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Outlet, useMatch, useNavigate, useSearchParams } from 'react-router-dom'
 import { AppHeader } from '../components/AppHeader'
 import { AtlasHint } from '../components/AtlasHint'
 import { ClearMarkersToggle } from '../components/ClearMarkersToggle'
+import { DeferredAtlasMap } from '../components/DeferredAtlasMap'
 import { EarthOnlyToggle } from '../components/EarthOnlyToggle'
 import { HomeExploreStrip } from '../components/HomeExploreStrip'
 import { NationalParksToggle } from '../components/NationalParksToggle'
 import { AtlasProvider, type AtlasContextValue } from '../context/AtlasContext'
-import { getPeakById, loadFullCatalog, peaksIndex } from '../data/catalog'
+import { getPeakById, peaksIndex } from '../data/catalog'
 import { nationalParks } from '../data/nationalParks'
 import {
   applyDocumentMeta,
@@ -22,23 +23,6 @@ import {
 import { atlasHref, peakHref } from '../lib/routes'
 import type { NationalPark } from '../types/nationalPark'
 import type { Peak, PeakBrowseFilters, PeakIndex } from '../types/peak'
-
-const AtlasMap = lazy(() =>
-  import('../components/AtlasMap').then((m) => ({ default: m.AtlasMap })),
-)
-
-function AtlasMapFallback() {
-  return (
-    <div
-      className="atlas-map-wrap atlas-map-fallback"
-      role="status"
-      aria-live="polite"
-      aria-label="Loading 3D map"
-    >
-      <p className="atlas-map-fallback-copy">Loading globe…</p>
-    </div>
-  )
-}
 
 const initialBrowse: PeakBrowseFilters = {
   country: '',
@@ -71,13 +55,9 @@ export function AtlasLayout() {
   const [showNationalParks, setShowNationalParks] = useState(false)
   const [selectedPark, setSelectedPark] = useState<NationalPark | null>(null)
 
-  // Prefetch the full dossier catalog so peak navigations are less likely to
-  // sit on "Loading peak…" (and so a failed import surfaces sooner).
-  useEffect(() => {
-    void loadFullCatalog().catch(() => {
-      // Peak route effect handles per-id failures.
-    })
-  }, [])
+  // Full dossier catalog is ~470KB parsed JS — only fetch it when a peak
+  // route actually needs it (getPeakById). Prefetching on the globe homepage
+  // competes with LCP / TBT on mobile.
 
   useEffect(() => {
     if (!peakId) {
@@ -371,27 +351,25 @@ export function AtlasLayout() {
             hideMapMarkersActive ? ' is-clear-markers' : ''
           }`}
         >
-          <Suspense fallback={<AtlasMapFallback />}>
-            <AtlasMap
-              peaks={mapPeaks}
-              selectedCountry={selectedCountry}
-              activePeak={activePeak}
-              onSelectCountry={selectCountry}
-              onSelectPeak={openPeak}
-              cinematic={cinematic}
-              cinematicStatus={cinematicStatus}
-              onCinematicChange={onCinematicChange}
-              onSkipCinematic={skipCinematic}
-              skipNonce={skipNonce}
-              funFactsEnabled={!hintActive && !earthOnlyActive}
-              earthOnly={earthOnlyActive}
-              hideMapMarkers={hideMapMarkersActive}
-              showNationalParks={showNationalParksActive}
-              nationalParks={nationalParks}
-              selectedPark={showNationalParksActive ? selectedPark : null}
-              onSelectPark={selectPark}
-            />
-          </Suspense>
+          <DeferredAtlasMap
+            peaks={mapPeaks}
+            selectedCountry={selectedCountry}
+            activePeak={activePeak}
+            onSelectCountry={selectCountry}
+            onSelectPeak={openPeak}
+            cinematic={cinematic}
+            cinematicStatus={cinematicStatus}
+            onCinematicChange={onCinematicChange}
+            onSkipCinematic={skipCinematic}
+            skipNonce={skipNonce}
+            funFactsEnabled={!hintActive && !earthOnlyActive}
+            earthOnly={earthOnlyActive}
+            hideMapMarkers={hideMapMarkersActive}
+            showNationalParks={showNationalParksActive}
+            nationalParks={nationalParks}
+            selectedPark={showNationalParksActive ? selectedPark : null}
+            onSelectPark={selectPark}
+          />
           <AtlasHint
             visible={isWorldView && !cinematic && !earthOnlyActive}
             onActiveChange={onHintActiveChange}

@@ -36,9 +36,9 @@ import {
   countryFramePadding,
   flyToAsync,
   heroZoomViewportAdjust,
-  IDLE_ROTATE_DELAY_MS,
   IDLE_ROTATE_RESUME_MS,
   IDLE_SPIN_MAX_MS,
+  idleSpinDelayMs,
   orbitAsync,
   peakFramePadding,
   peakFramingCenter,
@@ -52,7 +52,7 @@ import {
 } from '../lib/mapAnimations'
 import 'maplibre-gl/dist/maplibre-gl.css'
 
-type AtlasMapProps = {
+export type AtlasMapProps = {
   peaks: PeakIndex[]
   selectedCountry: string | null
   activePeak: Peak | null
@@ -361,7 +361,7 @@ export function AtlasMap({
     for (const event of ACTIVITY_EVENTS) {
       map.on(event, onUserActivity)
     }
-    scheduleIdleSpin(IDLE_ROTATE_DELAY_MS)
+    scheduleIdleSpin(idleSpinDelayMs())
 
     return () => {
       clearIdleTimer()

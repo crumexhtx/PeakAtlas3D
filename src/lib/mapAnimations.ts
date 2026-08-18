@@ -2,6 +2,8 @@ import type { Map as MapLibreMap } from 'maplibre-gl'
 
 /** Brief pause after world load before idle spin starts (lets tiles settle). */
 export const IDLE_ROTATE_DELAY_MS = 2_200
+/** Phones: keep jumpTo spin off the PageSpeed observation window. */
+export const IDLE_ROTATE_DELAY_MOBILE_MS = 12_000
 /** Pause after user interaction before resuming world spin. */
 export const IDLE_ROTATE_RESUME_MS = 3_200
 /** Degrees of longitude advanced per animation frame on the world globe (~60fps baseline). */
@@ -15,6 +17,14 @@ type CameraOptions = Parameters<MapLibreMap['flyTo']>[0]
 
 export function prefersReducedMotion(): boolean {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
+}
+
+/** World idle-spin delay — longer on small viewports so first paint stays idle. */
+export function idleSpinDelayMs(): number {
+  if (typeof window === 'undefined') return IDLE_ROTATE_DELAY_MS
+  return window.matchMedia('(max-width: 800px)').matches
+    ? IDLE_ROTATE_DELAY_MOBILE_MS
+    : IDLE_ROTATE_DELAY_MS
 }
 
 export function setMapInteractive(map: MapLibreMap, enabled: boolean) {

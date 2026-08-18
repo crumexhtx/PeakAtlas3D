@@ -1,5 +1,5 @@
-import { describe, expect, it } from 'vitest'
-import { heroZoomViewportAdjust } from './mapAnimations'
+import { describe, expect, it, vi } from 'vitest'
+import { heroZoomViewportAdjust, idleSpinDelayMs } from './mapAnimations'
 
 const DESKTOP_PADDING = { left: 48, right: 280 }
 const NARROW_PADDING = { left: 36, right: 108 }
@@ -33,5 +33,24 @@ describe('heroZoomViewportAdjust', () => {
     expect(Number.isFinite(heroZoomViewportAdjust(50, NARROW_PADDING))).toBe(
       true,
     )
+  })
+})
+
+describe('idleSpinDelayMs', () => {
+  it('waits longer on a phone-sized viewport', () => {
+    vi.stubGlobal('window', {
+      matchMedia: (query: string) => ({
+        matches: query.includes('max-width: 800px'),
+        media: query,
+        onchange: null,
+        addListener: () => {},
+        removeListener: () => {},
+        addEventListener: () => {},
+        removeEventListener: () => {},
+        dispatchEvent: () => false,
+      }),
+    })
+    expect(idleSpinDelayMs()).toBe(12_000)
+    vi.unstubAllGlobals()
   })
 })
