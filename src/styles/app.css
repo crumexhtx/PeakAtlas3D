@@ -92,6 +92,7 @@ a {
 .map-stage.is-earth-only .browse-bar,
 .map-stage.is-earth-only .country-panel-shell,
 .map-stage.is-earth-only .peak-overlay-panel,
+.map-stage.is-earth-only .peak-trip-panel,
 .map-stage.is-earth-only .atlas-hint,
 .map-stage.is-earth-only .home-explore,
 .map-stage.is-earth-only .world-tagline,
@@ -499,7 +500,8 @@ a {
 .map-stage.is-cinematic .browse-bar,
 .map-stage.is-cinematic .country-panel-shell,
 .map-stage.is-cinematic .home-explore,
-.peak-overlay-panel.is-cinematic-hidden {
+.peak-overlay-panel.is-cinematic-hidden,
+.peak-trip-panel.is-cinematic-hidden {
   visibility: hidden;
   pointer-events: none;
 }
@@ -535,19 +537,51 @@ a {
 
 .peak-overlay-panel {
   position: absolute;
-  left: 0;
+  top: 0;
   right: 0;
   bottom: 0;
-  top: auto;
   z-index: 12;
-  width: 100%;
-  height: auto;
-  max-height: min(46vh, 440px);
-  padding: 0
-    calc(0.65rem + var(--safe-right, 0px))
-    calc(0.55rem + var(--safe-bottom, 0px))
-    calc(0.65rem + var(--safe-left, 0px));
+  width: min(360px, 100%);
   pointer-events: none;
+}
+
+/* Left-side trip panel: staging, routes, lodging. */
+.peak-trip-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 12;
+  width: min(320px, 100%);
+  pointer-events: none;
+}
+
+.peak-trip-panel .peak-trip-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+  pointer-events: none;
+  box-shadow: none;
+}
+
+.peak-trip-panel .details-sheet,
+.peak-trip-panel .peak-dossier,
+.peak-trip-panel .empty-state {
+  pointer-events: auto;
+  height: 100%;
+  box-shadow: 12px 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.peak-trip-panel .peak-trip-main > .details-sheet {
+  flex: 1;
+  min-height: 0;
+  touch-action: manipulation;
+}
+
+.peak-trip-panel .peak-trip-dossier {
+  border-right: 1px solid var(--border);
+  background: rgba(10, 16, 26, 0.94);
 }
 
 /* Match country-panel-shell: only the sheet captures hits, not a full-height
@@ -556,8 +590,7 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 0;
-  height: auto;
-  max-height: inherit;
+  height: 100%;
   pointer-events: none;
   box-shadow: none;
 }
@@ -566,37 +599,20 @@ a {
 .peak-overlay-panel .peak-dossier,
 .peak-overlay-panel .empty-state {
   pointer-events: auto;
-  height: auto;
-  max-height: min(46vh, 440px);
-  border-radius: 14px 14px 0 0;
-  box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.35);
+  height: 100%;
+  box-shadow: -12px 0 40px rgba(0, 0, 0, 0.35);
 }
 
 .peak-overlay-panel .peak-seo-main > .details-sheet {
   flex: 1;
   min-height: 0;
-  max-height: inherit;
-  overflow: hidden;
   /* Whole sheet is a tap surface over the globe — avoid gesture delay. */
   touch-action: manipulation;
 }
 
 .peak-overlay-panel .peak-dossier {
-  border-top: 1px solid var(--border);
-  border-left: none;
+  border-left: 1px solid var(--border);
   background: rgba(10, 16, 26, 0.94);
-}
-
-.peak-overlay-panel .details-sheet-body {
-  flex: 1;
-  min-height: 0;
-  overflow: hidden;
-}
-
-.peak-overlay-panel .details-sheet-body-inner {
-  max-height: min(38vh, 360px);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 /* Collapsible details sheet (tab on mobile, always open on desktop) */
@@ -728,26 +744,11 @@ a {
   height: auto;
 }
 
-/* Mobile-only attention bounce — bottom sheet nudges upward */
-@keyframes details-tab-nudge-bottom {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  18% {
-    transform: translateY(-8px);
-  }
-  36% {
-    transform: translateY(0);
-  }
-  52% {
-    transform: translateY(-5px);
-  }
-  68% {
-    transform: translateY(0);
-  }
+.peak-trip-panel .details-sheet .peak-dossier {
+  height: auto;
 }
 
+/* Mobile-only attention bounce — top cards nudge into view */
 @keyframes details-tab-nudge {
   0%,
   100% {
@@ -2712,56 +2713,73 @@ a.trail-bubble-label-link:focus-visible {
   }
 
   .map-stage.is-peak-mode .peak-overlay-panel {
-    left: calc(0.55rem + var(--safe-left, 0px));
+    top: calc(0.55rem + var(--safe-top, 0px));
     right: calc(0.55rem + var(--safe-right));
-    bottom: calc(0.55rem + var(--safe-bottom, 0px));
-    top: auto;
-    width: auto;
+    left: auto;
+    bottom: auto;
+    width: min(300px, calc(100% - 1.1rem - var(--safe-left) - var(--safe-right)));
+    height: auto;
     max-height: min(72vh, calc(100% - 1.1rem));
     /* Above map chrome / earth toggle so collapsed tab taps aren't stolen. */
     z-index: 19;
   }
 
-  .peak-overlay-panel .peak-seo-main {
+  .map-stage.is-peak-mode .peak-trip-panel {
+    top: calc(0.55rem + var(--safe-top, 0px));
+    left: calc(0.55rem + var(--safe-left, 0px));
+    right: auto;
+    bottom: auto;
+    width: min(280px, calc(100% - 1.1rem - var(--safe-left) - var(--safe-right)));
+    height: auto;
+    max-height: min(72vh, calc(100% - 1.1rem));
+    z-index: 18;
+  }
+
+  .peak-overlay-panel .peak-seo-main,
+  .peak-trip-panel .peak-trip-main {
     height: auto;
     display: block;
   }
 
-  .peak-overlay-panel .details-sheet {
+  .peak-overlay-panel .details-sheet,
+  .peak-trip-panel .details-sheet {
     height: auto;
     max-height: min(72vh, calc(100dvh - var(--header-h) - 1.2rem));
-    border-radius: 14px 14px 0 0;
+    border-radius: 14px;
     border: 1px solid var(--border);
-    box-shadow: 0 -14px 36px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
     overflow: hidden;
   }
 
-  .peak-overlay-panel .details-sheet.is-collapsed {
+  .peak-overlay-panel .details-sheet.is-collapsed,
+  .peak-trip-panel .details-sheet.is-collapsed {
     height: auto;
     max-height: none;
     overflow: visible;
   }
 
-  .peak-overlay-panel .details-sheet.is-expanded {
-    /* Fixed viewport budget — body scrolls inside; page/map stay put. */
+  .peak-overlay-panel .details-sheet.is-expanded,
+  .peak-trip-panel .details-sheet.is-expanded {
     height: min(72vh, calc(100dvh - var(--header-h) - 1.2rem));
     max-height: min(72vh, calc(100dvh - var(--header-h) - 1.2rem));
     overflow: hidden;
   }
 
-  .peak-overlay-panel .peak-dossier {
-    border-top: none;
+  .peak-overlay-panel .peak-dossier,
+  .peak-trip-panel .peak-trip-dossier {
+    border-left: none;
+    border-right: none;
     border-radius: 0;
     box-shadow: none;
     height: auto;
   }
 
-  .peak-overlay-panel .details-sheet-handle {
-    display: block;
-  }
-
   .details-sheet-chrome {
     display: flex;
+  }
+
+  .details-sheet-handle {
+    display: none;
   }
 
   .details-sheet-tab {
@@ -2781,8 +2799,9 @@ a.trail-bubble-label-link:focus-visible {
     margin-left: auto;
   }
 
-  .peak-overlay-panel .details-sheet.is-collapsed.is-nudging {
-    animation: details-tab-nudge-bottom 0.95s ease-in-out 2;
+  .peak-overlay-panel .details-sheet.is-collapsed.is-nudging,
+  .peak-trip-panel .details-sheet.is-collapsed.is-nudging {
+    animation: details-tab-nudge 0.95s ease-in-out 2;
   }
 
   .details-sheet.is-collapsed.is-nudging .details-sheet-chevron {
@@ -3055,11 +3074,18 @@ a.trail-bubble-label-link:focus-visible {
   }
 
   .map-stage.is-peak-mode .peak-overlay-panel {
+    width: min(280px, calc(100% - 1rem - var(--safe-left) - var(--safe-right)));
+    max-height: min(70vh, calc(100% - 1rem));
+  }
+
+  .map-stage.is-peak-mode .peak-trip-panel {
+    width: min(260px, calc(100% - 1rem - var(--safe-left) - var(--safe-right)));
     max-height: min(70vh, calc(100% - 1rem));
   }
 
   .peak-dossier,
-  .map-stage.is-peak-mode .peak-overlay-panel .peak-dossier {
+  .map-stage.is-peak-mode .peak-overlay-panel .peak-dossier,
+  .map-stage.is-peak-mode .peak-trip-panel .peak-trip-dossier {
     padding: 0.7rem 0.75rem 0.85rem;
   }
 

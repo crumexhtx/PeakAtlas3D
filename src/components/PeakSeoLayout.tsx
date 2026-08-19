@@ -9,7 +9,6 @@ import {
 import { flagUrl } from '../lib/countries'
 import { peakLocationLabel, peakRegion } from '../lib/peakLocation'
 import {
-  closestPlacesLead,
   geographyLead,
   peakStatsLead,
 } from '../lib/peakSectionLeads'
@@ -65,8 +64,6 @@ type PeakSeoLayoutProps = {
   units: UnitSystem
   /** Photo gallery or other media (deferred during cinematic). */
   media?: ReactNode
-  /** Trails, lodging, and other interactive sections below the SEO core. */
-  children?: ReactNode
   /** Country context for nearby-peak links (back navigation). */
   country?: string | null
 }
@@ -79,7 +76,6 @@ export function PeakSeoLayout({
   peak,
   units,
   media,
-  children,
   country,
 }: PeakSeoLayoutProps) {
   const flag = flagUrl(peak.country, 40)
@@ -97,7 +93,6 @@ export function PeakSeoLayout({
 
   const statsLead = peakStatsLead(peak)
   const geoLead = geographyLead(peak)
-  const placesLead = closestPlacesLead(peak)
   const backCountry = (country?.trim() || peak.country).trim()
   const countryBackHref = atlasHref(backCountry)
 
@@ -260,29 +255,6 @@ export function PeakSeoLayout({
           </p>
         )}
       </section>
-
-      {nearby.length > 0 && (
-        <section
-          className="info-block"
-          aria-label={`Staging towns near ${peak.name}`}
-        >
-          <h2 className="info-heading">{placesLead.heading}</h2>
-          <p className="section-answer-lead">{placesLead.answer}</p>
-          <ul className="nearby-places-list">
-            {nearby.map((place) => (
-              <li key={`${place.name}-${place.lat}`}>
-                <span className="nearby-places-name">{place.name}</span>
-                <span className="nearby-places-meta">
-                  {place.region} · {formatDistance(place.distanceMiles, units)}
-                  {place.route ? ` · ${place.route}` : ''}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {children}
     </article>
   )
 }

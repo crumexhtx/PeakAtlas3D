@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { DetailsSheet } from '../components/DetailsSheet'
 import { PeakCanonicalLink } from '../components/PeakCanonicalLink'
 import { PeakDossier } from '../components/PeakDossier'
+import { PeakTripPanel } from '../components/PeakTripPanel'
 import {
   peakMountainJsonLd,
   seoPeakHeading,
@@ -56,16 +57,15 @@ export function PeakPage() {
     return () => upsertPeakJsonLd(activePeak.id, null)
   }, [activePeak, peakId])
 
-  // Self-referencing canonical for this peak route (strips ?country=).
   const canonical = peakId ? <PeakCanonicalLink peakId={peakId} /> : null
-
   const hideChrome = cinematic || earthOnly
   const peakStale = Boolean(peakId && activePeak?.id !== peakId)
+  const hiddenClass = hideChrome ? ' is-cinematic-hidden' : ''
 
   if (peakLoading || peakStale) {
     return (
       <div
-        className={`empty-state peak-overlay-panel${hideChrome ? ' is-cinematic-hidden' : ''}`}
+        className={`empty-state peak-overlay-panel${hiddenClass}`}
         role="status"
         aria-live="polite"
         aria-hidden={hideChrome || undefined}
@@ -94,37 +94,52 @@ export function PeakPage() {
   }
 
   return (
-    <div
-      className={`peak-overlay-panel${hideChrome ? ' is-cinematic-hidden' : ''}`}
-      aria-hidden={hideChrome || undefined}
-    >
-      {canonical}
-      {/*
-        Semantic landmark for the peak dossier. The MapLibre WebGL canvas stays
-        full-bleed in .map-stage (sibling); this panel is pointer-events: none
-        except on the sheet so mobile users can pan/swipe the globe freely.
-      */}
-      <main
-        className="peak-seo-main"
-        aria-label={`${activePeak.name} peak details and 3D map context`}
+    <>
+      <div
+        className={`peak-trip-panel${hiddenClass}`}
+        aria-hidden={hideChrome || undefined}
       >
-        <DetailsSheet
-          resetKey={activePeak.id}
-          title={activePeak.name}
-          subtitle={`${formatElevation(activePeak.elevationFt, units)} · ${activePeak.range}`}
+        <aside
+          className="peak-trip-main"
+          aria-label={`${activePeak.name} staging, routes, and lodging`}
         >
-          <PeakDossier
-            peak={activePeak}
-            deferMedia={cinematic || earthOnly}
-            country={selectedCountry}
-          />
-        </DetailsSheet>
-        <p className="sr-only">
-          {seoPeakHeading(activePeak.name)}. {seoPeakQualifier()}. Interactive
-          3D topographic map of {activePeak.name} in the {activePeak.range},{' '}
-          {peakLocationLabel(activePeak)}.
-        </p>
-      </main>
-    </div>
+          <DetailsSheet
+            resetKey={activePeak.id}
+            title="Trip planning"
+            subtitle={`${activePeak.name} · access & routes`}
+          >
+            <PeakTripPanel peak={activePeak} />
+          </DetailsSheet>
+        </aside>
+      </div>
+
+      <div
+        className={`peak-overlay-panel${hiddenClass}`}
+        aria-hidden={hideChrome || undefined}
+      >
+        {canonical}
+        <main
+          className="peak-seo-main"
+          aria-label={`${activePeak.name} peak details and 3D map context`}
+        >
+          <DetailsSheet
+            resetKey={activePeak.id}
+            title={activePeak.name}
+            subtitle={`${formatElevation(activePeak.elevationFt, units)} · ${activePeak.range}`}
+          >
+            <PeakDossier
+              peak={activePeak}
+              deferMedia={cinematic || earthOnly}
+              country={selectedCountry}
+            />
+          </DetailsSheet>
+          <p className="sr-only">
+            {seoPeakHeading(activePeak.name)}. {seoPeakQualifier()}. Interactive
+            3D topographic map of {activePeak.name} in the {activePeak.range},{' '}
+            {peakLocationLabel(activePeak)}.
+          </p>
+        </main>
+      </div>
+    </>
   )
 }

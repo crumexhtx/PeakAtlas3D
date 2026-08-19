@@ -227,6 +227,14 @@ export function softenSatelliteRaster(map: MapLibreMap) {
  * Padding that keeps the summit in the open map above the bottom dossier
  * and near visual center under steep pitch.
  */
+/** Width of the right peak dossier panel — keep in sync with peakFramePadding(). */
+export const PEAK_DOSSIER_PANEL_WIDTH = 360
+/** Width of the left trip-planning panel — keep in sync with peakFramePadding(). */
+export const PEAK_TRIP_PANEL_WIDTH = 320
+
+/**
+ * Reserve space for dual side panels so the summit centers in the open map.
+ */
 export function peakFramePadding(): {
   top: number
   bottom: number
@@ -237,24 +245,29 @@ export function peakFramePadding(): {
     typeof window !== 'undefined' &&
     window.matchMedia('(max-width: 800px)').matches
   if (narrow) {
+    // Top cards on both sides — bias summit into the open map center.
     return {
-      top: 72,
-      bottom: 200,
-      left: 24,
-      right: 24,
+      top: 100,
+      bottom: 64,
+      left: 96,
+      right: 96,
     }
   }
-  // Desktop bottom sheet (~280–320px): reserve bottom space so the summit
-  // stays centered in the open map above the panel.
-  return { top: 88, bottom: 300, left: 36, right: 36 }
+  return {
+    top: 110,
+    bottom: 56,
+    left: PEAK_TRIP_PANEL_WIDTH,
+    right: PEAK_DOSSIER_PANEL_WIDTH,
+  }
 }
 
 /**
  * Open (padding-cleared) viewport width the peak hero zoom is tuned against —
- * a representative desktop window with peakFramePadding()'s side insets
- * (36 + 36) already removed.
+ * a representative desktop window with peakFramePadding()'s side reserves
+ * (320 + 360) already removed.
  */
-const HERO_ZOOM_REFERENCE_OPEN_WIDTH = 1440 - 36 - 36
+const HERO_ZOOM_REFERENCE_OPEN_WIDTH =
+  1440 - PEAK_TRIP_PANEL_WIDTH - PEAK_DOSSIER_PANEL_WIDTH
 /** Cap how far the viewport-size adjustment can zoom in/out either way. */
 const HERO_ZOOM_ADJUST_CLAMP = 1.1
 
