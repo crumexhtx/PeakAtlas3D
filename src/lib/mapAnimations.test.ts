@@ -1,8 +1,8 @@
 import { describe, expect, it, vi } from 'vitest'
 import { heroZoomViewportAdjust, idleSpinDelayMs } from './mapAnimations'
 
-const DESKTOP_PADDING = { left: 48, right: 280 }
-const NARROW_PADDING = { left: 36, right: 108 }
+const DESKTOP_PADDING = { left: 36, right: 36 }
+const NARROW_PADDING = { left: 24, right: 24 }
 
 describe('heroZoomViewportAdjust', () => {
   it('is zero at the reference desktop width', () => {

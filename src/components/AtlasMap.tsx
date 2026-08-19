@@ -647,6 +647,14 @@ export function AtlasMap({
         // ignore
       }
 
+      if (!prefersReducedMotion()) {
+        onCinematicChangeRef.current({
+          active: true,
+          status: 'Approaching summit…',
+        })
+        setMapInteractive(map, false)
+      }
+
       // Paint settle before fly (style stays satellite — no basemap reload).
       await settleBasemap(map)
       if (!stillActive()) return
@@ -695,7 +703,6 @@ export function AtlasMap({
         active: true,
         status: 'Zooming to summit…',
       })
-      setMapInteractive(map, false)
 
       // Hard unlock if anything hangs (style race, tile stall).
       const safety = window.setTimeout(() => {

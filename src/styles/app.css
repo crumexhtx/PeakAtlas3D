@@ -535,11 +535,18 @@ a {
 
 .peak-overlay-panel {
   position: absolute;
-  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
+  top: auto;
   z-index: 12;
-  width: min(360px, 100%);
+  width: 100%;
+  height: auto;
+  max-height: min(46vh, 440px);
+  padding: 0
+    calc(0.65rem + var(--safe-right, 0px))
+    calc(0.55rem + var(--safe-bottom, 0px))
+    calc(0.65rem + var(--safe-left, 0px));
   pointer-events: none;
 }
 
@@ -549,7 +556,8 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 0;
-  height: 100%;
+  height: auto;
+  max-height: inherit;
   pointer-events: none;
   box-shadow: none;
 }
@@ -558,20 +566,37 @@ a {
 .peak-overlay-panel .peak-dossier,
 .peak-overlay-panel .empty-state {
   pointer-events: auto;
-  height: 100%;
-  box-shadow: -12px 0 40px rgba(0, 0, 0, 0.35);
+  height: auto;
+  max-height: min(46vh, 440px);
+  border-radius: 14px 14px 0 0;
+  box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.35);
 }
 
 .peak-overlay-panel .peak-seo-main > .details-sheet {
   flex: 1;
   min-height: 0;
+  max-height: inherit;
+  overflow: hidden;
   /* Whole sheet is a tap surface over the globe — avoid gesture delay. */
   touch-action: manipulation;
 }
 
 .peak-overlay-panel .peak-dossier {
-  border-left: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  border-left: none;
   background: rgba(10, 16, 26, 0.94);
+}
+
+.peak-overlay-panel .details-sheet-body {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.peak-overlay-panel .details-sheet-body-inner {
+  max-height: min(38vh, 360px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Collapsible details sheet (tab on mobile, always open on desktop) */
@@ -703,7 +728,26 @@ a {
   height: auto;
 }
 
-/* Mobile-only attention bounce — top-right card nudges into view */
+/* Mobile-only attention bounce — bottom sheet nudges upward */
+@keyframes details-tab-nudge-bottom {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  18% {
+    transform: translateY(-8px);
+  }
+  36% {
+    transform: translateY(0);
+  }
+  52% {
+    transform: translateY(-5px);
+  }
+  68% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes details-tab-nudge {
   0%,
   100% {
@@ -2668,12 +2712,11 @@ a.trail-bubble-label-link:focus-visible {
   }
 
   .map-stage.is-peak-mode .peak-overlay-panel {
-    top: calc(0.55rem + var(--safe-top, 0px));
+    left: calc(0.55rem + var(--safe-left, 0px));
     right: calc(0.55rem + var(--safe-right));
-    left: auto;
-    bottom: auto;
-    width: min(300px, calc(100% - 1.1rem - var(--safe-left) - var(--safe-right)));
-    height: auto;
+    bottom: calc(0.55rem + var(--safe-bottom, 0px));
+    top: auto;
+    width: auto;
     max-height: min(72vh, calc(100% - 1.1rem));
     /* Above map chrome / earth toggle so collapsed tab taps aren't stolen. */
     z-index: 19;
@@ -2687,10 +2730,9 @@ a.trail-bubble-label-link:focus-visible {
   .peak-overlay-panel .details-sheet {
     height: auto;
     max-height: min(72vh, calc(100dvh - var(--header-h) - 1.2rem));
-    border-radius: 14px;
+    border-radius: 14px 14px 0 0;
     border: 1px solid var(--border);
-    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
-    /* Clip tall dossier content so the sheet never paints past max-height. */
+    box-shadow: 0 -14px 36px rgba(0, 0, 0, 0.45);
     overflow: hidden;
   }
 
@@ -2708,19 +2750,18 @@ a.trail-bubble-label-link:focus-visible {
   }
 
   .peak-overlay-panel .peak-dossier {
-    border-left: none;
+    border-top: none;
     border-radius: 0;
     box-shadow: none;
     height: auto;
   }
 
-  .details-sheet-chrome {
-    display: flex;
+  .peak-overlay-panel .details-sheet-handle {
+    display: block;
   }
 
-  .details-sheet-handle {
-    /* Bottom-sheet grabber; not needed for top-right cards. */
-    display: none;
+  .details-sheet-chrome {
+    display: flex;
   }
 
   .details-sheet-tab {
@@ -2740,8 +2781,8 @@ a.trail-bubble-label-link:focus-visible {
     margin-left: auto;
   }
 
-  .details-sheet.is-collapsed.is-nudging {
-    animation: details-tab-nudge 0.95s ease-in-out 2;
+  .peak-overlay-panel .details-sheet.is-collapsed.is-nudging {
+    animation: details-tab-nudge-bottom 0.95s ease-in-out 2;
   }
 
   .details-sheet.is-collapsed.is-nudging .details-sheet-chevron {
@@ -3014,7 +3055,6 @@ a.trail-bubble-label-link:focus-visible {
   }
 
   .map-stage.is-peak-mode .peak-overlay-panel {
-    width: min(280px, calc(100% - 1rem - var(--safe-left) - var(--safe-right)));
     max-height: min(70vh, calc(100% - 1rem));
   }
 

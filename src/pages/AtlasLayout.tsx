@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react'
 import { Outlet, useMatch, useNavigate, useSearchParams } from 'react-router-dom'
 import { AppHeader } from '../components/AppHeader'
 import { AtlasHint } from '../components/AtlasHint'
@@ -21,6 +21,7 @@ import {
   peakMatchesCountry,
 } from '../lib/countries'
 import { atlasHref, peakHref } from '../lib/routes'
+import { prefersReducedMotion } from '../lib/mapAnimations'
 import type { NationalPark } from '../types/nationalPark'
 import type { Peak, PeakBrowseFilters, PeakIndex } from '../types/peak'
 
@@ -58,6 +59,20 @@ export function AtlasLayout() {
   // Full dossier catalog is ~470KB parsed JS — only fetch it when a peak
   // route actually needs it (getPeakById). Prefetching on the globe homepage
   // competes with LCP / TBT on mobile.
+
+  // Hide the peak dossier until the fly-in finishes — useLayoutEffect so the
+  // panel never paints for a frame before cinematic mode engages.
+  useLayoutEffect(() => {
+    if (!peakId) {
+      setCinematic(false)
+      setCinematicStatus('')
+      return
+    }
+    if (!prefersReducedMotion()) {
+      setCinematic(true)
+      setCinematicStatus('Approaching summit…')
+    }
+  }, [peakId])
 
   useEffect(() => {
     if (!peakId) {

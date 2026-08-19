@@ -59,9 +59,17 @@ export function PeakPage() {
   // Self-referencing canonical for this peak route (strips ?country=).
   const canonical = peakId ? <PeakCanonicalLink peakId={peakId} /> : null
 
-  if (peakLoading) {
+  const hideChrome = cinematic || earthOnly
+  const peakStale = Boolean(peakId && activePeak?.id !== peakId)
+
+  if (peakLoading || peakStale) {
     return (
-      <div className="empty-state peak-overlay-panel" role="status" aria-live="polite">
+      <div
+        className={`empty-state peak-overlay-panel${hideChrome ? ' is-cinematic-hidden' : ''}`}
+        role="status"
+        aria-live="polite"
+        aria-hidden={hideChrome || undefined}
+      >
         {canonical}
         <p>Loading peak…</p>
       </div>
@@ -84,8 +92,6 @@ export function PeakPage() {
       </div>
     )
   }
-
-  const hideChrome = cinematic || earthOnly
 
   return (
     <div

@@ -28,8 +28,8 @@ function shouldNudgeTab() {
 }
 
 /**
- * Mobile: collapsed card top-right by default; tap to expand downward.
- * Desktop: always shows the full body (side panel).
+ * Mobile: collapsed bottom tab by default; tap to expand upward.
+ * Desktop: always shows the full body (bottom panel).
  */
 export function DetailsSheet({
   title,
