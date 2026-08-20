@@ -223,17 +223,14 @@ export function softenSatelliteRaster(map: MapLibreMap) {
   }
 }
 
-/**
- * Padding that keeps the summit in the open map above the bottom dossier
- * and near visual center under steep pitch.
- */
 /** Width of the right peak dossier panel — keep in sync with peakFramePadding(). */
 export const PEAK_DOSSIER_PANEL_WIDTH = 360
 /** Width of the left trip-planning panel — keep in sync with peakFramePadding(). */
 export const PEAK_TRIP_PANEL_WIDTH = 320
 
 /**
- * Reserve space for dual side panels so the summit centers in the open map.
+ * Reserve space for dual panels so the summit centers in the open map.
+ * Desktop: left trip + right dossier. Mobile: top-right dossier + bottom trip tab.
  */
 export function peakFramePadding(): {
   top: number
@@ -245,11 +242,10 @@ export function peakFramePadding(): {
     typeof window !== 'undefined' &&
     window.matchMedia('(max-width: 800px)').matches
   if (narrow) {
-    // Top cards on both sides — bias summit into the open map center.
     return {
       top: 100,
-      bottom: 64,
-      left: 96,
+      bottom: 96,
+      left: 24,
       right: 96,
     }
   }

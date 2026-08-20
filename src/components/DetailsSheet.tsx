@@ -28,7 +28,7 @@ function shouldNudgeTab() {
 }
 
 /**
- * Mobile: collapsed card top-right / top-left by default; tap to expand.
+ * Mobile: collapsible card (peak dossier top-right, trip panel bottom).
  * Desktop: always shows the full body (side panels).
  */
 export function DetailsSheet({

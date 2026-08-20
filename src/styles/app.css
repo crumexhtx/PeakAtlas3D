@@ -150,12 +150,12 @@ a {
 }
 
 /* Peak mode — clear summit flags, trail signs, and place pins.
-   Stacked under Orbit 360° (left column, below zoom controls). */
+   Pairs with Orbit 360° in a top-center control cluster. */
 .clear-markers-toggle {
   position: absolute;
-  z-index: 18;
-  top: calc(10.55rem + var(--safe-top, 0px));
-  left: calc(0.65rem + var(--safe-left, 0px));
+  z-index: 20;
+  top: calc(0.65rem + var(--safe-top, 0px));
+  left: calc(50% + 0.3rem);
   right: auto;
   bottom: auto;
   display: inline-flex;
@@ -176,8 +176,7 @@ a {
   -webkit-backdrop-filter: blur(10px);
   transition:
     background 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.15s ease;
+    border-color 0.2s ease;
 }
 
 .clear-markers-toggle:hover,
@@ -508,9 +507,10 @@ a {
 
 .peak-orbit-btn {
   position: absolute;
-  top: calc(7.75rem + var(--safe-top));
-  left: calc(0.65rem + var(--safe-left));
-  z-index: 15;
+  top: calc(0.65rem + var(--safe-top));
+  left: calc(50% - 0.3rem);
+  transform: translateX(-100%);
+  z-index: 20;
   padding: 0.45rem 0.85rem;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -2712,26 +2712,28 @@ a.trail-bubble-label-link:focus-visible {
     grid-template-rows: min(58vh, 480px) auto;
   }
 
+  /* Peak dossier: top-right card (fit collapsed tab so center controls stay clear). */
   .map-stage.is-peak-mode .peak-overlay-panel {
     top: calc(0.55rem + var(--safe-top, 0px));
     right: calc(0.55rem + var(--safe-right));
     left: auto;
     bottom: auto;
-    width: min(300px, calc(100% - 1.1rem - var(--safe-left) - var(--safe-right)));
+    width: auto;
+    max-width: min(300px, calc(100% - 1.1rem - var(--safe-left) - var(--safe-right)));
     height: auto;
     max-height: min(72vh, calc(100% - 1.1rem));
-    /* Above map chrome / earth toggle so collapsed tab taps aren't stolen. */
     z-index: 19;
   }
 
+  /* Trip planning: bottom sheet — avoids colliding with the dossier + center controls. */
   .map-stage.is-peak-mode .peak-trip-panel {
-    top: calc(0.55rem + var(--safe-top, 0px));
+    top: auto;
     left: calc(0.55rem + var(--safe-left, 0px));
-    right: auto;
-    bottom: auto;
-    width: min(280px, calc(100% - 1.1rem - var(--safe-left) - var(--safe-right)));
+    right: calc(0.55rem + var(--safe-right));
+    bottom: calc(0.55rem + var(--safe-bottom, 0px));
+    width: auto;
     height: auto;
-    max-height: min(72vh, calc(100% - 1.1rem));
+    max-height: min(68vh, calc(100% - 1.1rem));
     z-index: 18;
   }
 
@@ -2751,17 +2753,38 @@ a.trail-bubble-label-link:focus-visible {
     overflow: hidden;
   }
 
-  .peak-overlay-panel .details-sheet.is-collapsed,
-  .peak-trip-panel .details-sheet.is-collapsed {
+  .peak-overlay-panel .details-sheet.is-collapsed {
+    width: fit-content;
+    /* Keep the tab clear of the top-center Orbit / Clear markers cluster. */
+    max-width: min(42vw, 11rem);
+    margin-left: auto;
     height: auto;
     max-height: none;
     overflow: visible;
   }
 
-  .peak-overlay-panel .details-sheet.is-expanded,
-  .peak-trip-panel .details-sheet.is-expanded {
+  .peak-trip-panel .details-sheet.is-collapsed {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .peak-trip-panel .details-sheet-handle {
+    display: block;
+  }
+
+  .peak-overlay-panel .details-sheet.is-expanded {
+    width: min(300px, calc(100vw - 1.1rem - var(--safe-left) - var(--safe-right)));
     height: min(72vh, calc(100dvh - var(--header-h) - 1.2rem));
     max-height: min(72vh, calc(100dvh - var(--header-h) - 1.2rem));
+    overflow: hidden;
+  }
+
+  .peak-trip-panel .details-sheet.is-expanded {
+    width: 100%;
+    height: min(68vh, calc(100dvh - var(--header-h) - 1.2rem));
+    max-height: min(68vh, calc(100dvh - var(--header-h) - 1.2rem));
     overflow: hidden;
   }
 
@@ -2772,6 +2795,19 @@ a.trail-bubble-label-link:focus-visible {
     border-radius: 0;
     box-shadow: none;
     height: auto;
+  }
+
+  /* Top-center peak controls stay clear of side cards on phones. */
+  .peak-orbit-btn {
+    top: calc(0.55rem + var(--safe-top, 0px));
+    left: calc(50% - 0.25rem);
+    padding: 0.4rem 0.7rem;
+    font-size: 0.76rem;
+  }
+
+  .clear-markers-toggle {
+    top: calc(0.55rem + var(--safe-top, 0px));
+    left: calc(50% + 0.25rem);
   }
 
   .details-sheet-chrome {
@@ -2906,10 +2942,6 @@ a.trail-bubble-label-link:focus-visible {
   }
 
   .clear-markers-toggle {
-    top: calc(10.55rem + var(--safe-top, 0px));
-    left: calc(0.65rem + var(--safe-left, 0px));
-    right: auto;
-    bottom: auto;
     min-height: 2rem;
     padding: 0.4rem 0.7rem;
     font-size: 0.76rem;
@@ -3074,13 +3106,24 @@ a.trail-bubble-label-link:focus-visible {
   }
 
   .map-stage.is-peak-mode .peak-overlay-panel {
-    width: min(280px, calc(100% - 1rem - var(--safe-left) - var(--safe-right)));
+    max-width: min(280px, calc(100% - 1rem - var(--safe-left) - var(--safe-right)));
     max-height: min(70vh, calc(100% - 1rem));
   }
 
   .map-stage.is-peak-mode .peak-trip-panel {
-    width: min(260px, calc(100% - 1rem - var(--safe-left) - var(--safe-right)));
-    max-height: min(70vh, calc(100% - 1rem));
+    max-height: min(66vh, calc(100% - 1rem));
+  }
+
+  .peak-overlay-panel .details-sheet.is-expanded {
+    width: min(280px, calc(100vw - 1rem - var(--safe-left) - var(--safe-right)));
+  }
+
+  /* Shorter labels so the top-center cluster fits between the dossier tab. */
+  .clear-markers-toggle-label {
+    max-width: 5.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .peak-dossier,
