@@ -103,8 +103,8 @@ export function buildPeakAnswer(peak: SnapshotPeak): string {
   const hotels = hotelCount(peak)
   const lodgingBit =
     hotels > 0
-      ? ` PeakAtlas lists ${hotels} mapped lodging option${hotels === 1 ? '' : 's'} near the summit area from OpenStreetMap — see Lodging & food below.`
-      : ' Mapped lodging near the summit is sparse — most parties book in the staging town.'
+      ? ` PeakAtlas lists ${hotels} OpenStreetMap lodging pin${hotels === 1 ? '' : 's'} near the summit — coverage is often thinner outside well-mapped regions.`
+      : ' Limited lodging data is mapped from OpenStreetMap for this region — stage in the listed town rather than expecting a full hotel directory.'
 
   const templates = [
     `${peak.name} is a ${formatFt(peak.elevationFt)} summit in the ${peak.range} (${peak.country}). PeakAtlas rates it ${tierLabel.toLowerCase()} (${peak.difficulty || 'difficulty varies'}); best season is ${season}. ${permit}. Typical staging is ${staging}.${lodgingBit} Use the 3D map and trip checklist before you go.`,
@@ -140,7 +140,7 @@ export function buildPeakSnapshot(peak: SnapshotPeak): PeakSnapshot {
         value:
           hotels > 0
             ? `${hotels} OSM place${hotels === 1 ? '' : 's'}`
-            : 'None mapped',
+            : 'Limited / none mapped',
       },
       {
         label: 'Listed trails',

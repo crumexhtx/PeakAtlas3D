@@ -8,9 +8,11 @@ import {
   routeDetailNote,
   trailSourcesForPeak,
 } from '../data/peakTrailRoutes'
+import { planningResourcesForPeak } from '../data/peakPlanningResources'
 import {
   closestPlacesLead,
   lodgingLead,
+  planningResourcesLead,
   trailsLead,
 } from '../lib/peakSectionLeads'
 import { trailLabelsForPeak } from './TrailMarkers'
@@ -76,12 +78,17 @@ export function PeakTripPanel({ peak }: PeakTripPanelProps) {
   const hasCuratedRoutes = peakHasTrailRoutes(peak.id)
   const hasPopularTrails = trailLabels.length > 0
   const primarySource = trailSources[0]
+  const planningResources = useMemo(
+    () => planningResourcesForPeak(peak.id),
+    [peak.id],
+  )
   const showReferences =
     trailSources.length > 0 || lodgingFromOsm || foodFromOsm
 
   const placesLead = closestPlacesLead(peak)
   const trailsSection = trailsLead(peak)
   const lodgingSection = lodgingLead(peak)
+  const planningSection = planningResourcesLead(peak)
 
   const nearby = peak.nearbyPlaces?.length
     ? peak.nearbyPlaces
@@ -212,8 +219,8 @@ export function PeakTripPanel({ peak }: PeakTripPanelProps) {
                 >
                   OpenStreetMap
                 </a>
-                . Coverage varies; always confirm availability before you
-                travel.
+                . Coverage is uneven — remote regions often have few mapped
+                places; always confirm availability before you travel.
               </p>
             ) : (
               <p className="amenity-disclaimer">
@@ -233,18 +240,19 @@ export function PeakTripPanel({ peak }: PeakTripPanelProps) {
           <>
             <h3 className="sub-heading">Lodging</h3>
             <p className="amenity-empty">
-              No mapped lodging near this summit yet. Most parties stage in{' '}
+              Limited lodging data is mapped from OpenStreetMap for this region
+              near {peak.name}. PeakAtlas does not invent hotel listings to
+              match better-mapped peaks — most parties stage in{' '}
               {peak.nearestTown.name}
               {peak.nearestTown.region ? `, ${peak.nearestTown.region}` : ''}{' '}
-              and confirm beds before travel — remote and high-alpine approaches
-              often have none at the trailhead.
+              and confirm beds before travel.
             </p>
           </>
         )}
 
-        {food.length > 0 && (
+        <h3 className="sub-heading">Food & dining</h3>
+        {food.length > 0 ? (
           <>
-            <h3 className="sub-heading">Food & dining</h3>
             {foodFromOsm ? (
               <p className="amenity-disclaimer">
                 Nearby dining from{' '}
@@ -260,8 +268,9 @@ export function PeakTripPanel({ peak }: PeakTripPanelProps) {
               </p>
             ) : (
               <p className="amenity-disclaimer">
-                Curated dining suggestions — always confirm hours and
-                availability before you travel.
+                PeakAtlas dining suggestions — not OpenStreetMap listings and
+                not a complete restaurant guide. Confirm hours and availability
+                locally before you travel.
               </p>
             )}
             <ul className="amenity-list">
@@ -270,8 +279,38 @@ export function PeakTripPanel({ peak }: PeakTripPanelProps) {
               ))}
             </ul>
           </>
+        ) : (
+          <p className="amenity-empty">
+            No dining data mapped for this region near {peak.name}. Plan meals
+            in {peak.nearestTown.name} and verify options when you arrive.
+          </p>
         )}
       </section>
+
+      {planningResources.length > 0 && (
+        <section
+          className="info-block"
+          aria-label={`Official planning links for ${peak.name}`}
+        >
+          <h2 className="info-heading">{planningSection.heading}</h2>
+          <p className="section-answer-lead">{planningSection.answer}</p>
+          <ul className="plain-list reference-list">
+            {planningResources.map((resource) => (
+              <li key={`${resource.label}-${resource.url}`}>
+                <a
+                  className="trail-dossier-link"
+                  href={resource.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {resource.label}
+                </a>
+                <span className="trail-dossier-note"> — {resource.note}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {showReferences && (
         <section className="info-block">
@@ -312,8 +351,8 @@ export function PeakTripPanel({ peak }: PeakTripPanelProps) {
                     : lodgingFromOsm
                       ? 'lodging'
                       : 'dining'}{' '}
-                  points. Coverage varies; confirm availability before you
-                  travel.
+                  points. Coverage varies by region; confirm availability before
+                  you travel.
                 </span>
               </li>
             )}

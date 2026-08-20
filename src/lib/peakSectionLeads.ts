@@ -75,9 +75,16 @@ export function geographyLead(peak: LeadPeak): SectionLead {
 }
 
 export function closestPlacesLead(peak: LeadPeak): SectionLead {
+  const lodging = peak.hotels?.length ?? 0
+  if (lodging === 0) {
+    return {
+      heading: `Where should you stage near ${peak.name}?`,
+      answer: `OpenStreetMap has limited lodging mapped near ${peak.name}, so PeakAtlas lists closest staging towns by summit distance instead of a hotel directory. Most parties base in ${townBit(peak)} — confirm beds, road status, and permits before you travel.`,
+    }
+  }
   return {
     heading: `Where should you stage near ${peak.name}?`,
-    answer: `Closest staging towns are ranked by distance from the summit — not the individual lodging options listed separately below. Most parties sleep in ${townBit(peak)} and day-trip or hut-hop from there — confirm beds and road status before you travel.`,
+    answer: `Closest staging towns are ranked by distance from the summit — separate from the OSM lodging pins below, which can be sparse in remote regions. Most parties sleep in ${townBit(peak)} and day-trip or hut-hop from there — confirm beds and road status before you travel.`,
   }
 }
 
@@ -107,29 +114,36 @@ export function lodgingLead(peak: LeadPeak): SectionLead {
   const dining = peak.food?.length ?? 0
   const heading = `Where can you stay and eat near ${peak.name}?`
 
-  // Lodging is sourced from OpenStreetMap (real listings with source links);
-  // food is curated PeakAtlas suggestions, not pulled from OSM — keep that
-  // distinction honest instead of implying both are the same kind of data.
-  if (lodging > 0 && dining > 0) {
+  // Lodging comes from OpenStreetMap when present. Food entries are PeakAtlas
+  // suggestions (not OSM) unless an entry carries source/sourceUrl — keep that
+  // distinction honest, especially for remote regions with sparse OSM coverage.
+  if (lodging === 0 && dining === 0) {
     return {
       heading,
-      answer: `PeakAtlas maps ${lodging} lodging place${lodging === 1 ? '' : 's'} from OpenStreetMap and ${dining} dining suggestion${dining === 1 ? '' : 's'} near ${peak.name}. Coverage varies — always confirm hours and availability before you travel.`,
+      answer: `Limited lodging and dining data is mapped for this region near ${peak.name}. PeakAtlas does not invent hotel listings to match better-mapped peaks — stage in ${townBit(peak)} and use official permit / park links when shown below.`,
     }
   }
-  if (lodging > 0) {
+  if (lodging === 0) {
     return {
       heading,
-      answer: `PeakAtlas maps ${lodging} lodging place${lodging === 1 ? '' : 's'} from OpenStreetMap near ${peak.name}. Coverage varies — always confirm availability before you travel.`,
+      answer: `Limited lodging data is mapped from OpenStreetMap near ${peak.name} — common for remote approaches. Stage in ${townBit(peak)} and book early. Dining lines below are PeakAtlas suggestions, not OSM listings; always confirm hours and availability.`,
     }
   }
   if (dining > 0) {
     return {
       heading,
-      answer: `Mapped lodging near ${peak.name} is thin — stage in ${townBit(peak)} and book early. ${dining} dining suggestion${dining === 1 ? '' : 's'} listed below.`,
+      answer: `PeakAtlas maps ${lodging} lodging place${lodging === 1 ? '' : 's'} from OpenStreetMap near ${peak.name} (coverage is often thinner outside well-mapped regions). Dining lines are PeakAtlas suggestions, not OSM — confirm everything before you travel.`,
     }
   }
   return {
     heading,
-    answer: `Mapped lodging near ${peak.name} is thin. Stage in ${townBit(peak)} and book early; remote approaches often have no beds at the trailhead.`,
+    answer: `PeakAtlas maps ${lodging} lodging place${lodging === 1 ? '' : 's'} from OpenStreetMap near ${peak.name}. Mapped dining is limited for this region — stage meals in ${townBit(peak)} and confirm options locally.`,
+  }
+}
+
+export function planningResourcesLead(peak: LeadPeak): SectionLead {
+  return {
+    heading: `Where else should you check before ${peak.name}?`,
+    answer: `When OpenStreetMap lodging is thin, PeakAtlas links official park, federation, or permit pages instead of inventing local businesses. Confirm fees, seasons, and operator rules on those sites before you travel.`,
   }
 }

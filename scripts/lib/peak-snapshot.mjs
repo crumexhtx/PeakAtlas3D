@@ -80,7 +80,7 @@ function metricsFor(peak) {
     { label: 'Staging', value: stagingShort(peak) },
     {
       label: 'Mapped lodging',
-      value: hotels > 0 ? `${hotels} OSM place${hotels === 1 ? '' : 's'}` : 'None mapped',
+      value: hotels > 0 ? `${hotels} OSM place${hotels === 1 ? '' : 's'}` : 'Limited / none mapped',
     },
     { label: 'Listed trails', value: trails > 0 ? `${trails}` : '—' },
   ]
@@ -101,8 +101,8 @@ function peakAnswer(peak) {
   const hotels = Array.isArray(peak.hotels) ? peak.hotels.length : 0
   const lodgingBit =
     hotels > 0
-      ? ` PeakAtlas lists ${hotels} mapped lodging option${hotels === 1 ? '' : 's'} near the summit area from OpenStreetMap.`
-      : ' Mapped lodging near the summit is sparse — most parties book in the staging town.'
+      ? ` PeakAtlas lists ${hotels} OpenStreetMap lodging pin${hotels === 1 ? '' : 's'} near the summit — coverage is often thinner outside well-mapped regions.`
+      : ' Limited lodging data is mapped from OpenStreetMap for this region — stage in the listed town rather than expecting a full hotel directory.'
   return `${peak.name} is a ${formatFt(peak.elevationFt)} summit in the ${peak.range} (${peak.country}). PeakAtlas rates it ${tierLabel.toLowerCase()} (${peak.difficulty || 'difficulty varies'}); best season is ${season}. ${permitShort(peak)}. Typical staging is ${staging}.${lodgingBit} Use the 3D map and trip checklist before you go.`
 }
 

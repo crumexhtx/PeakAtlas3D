@@ -1880,8 +1880,8 @@
     "bestSeason": "Jun–Sep",
     "whyNotable": "Iran’s highest peak and the tallest volcano in Asia.",
     "description": "The highest volcano in Asia and Iran’s high point, a solitary Alborz cone rising above the Caspian hinterland.",
-    "permitStatus": "unsourced",
-    "permitRequired": null,
+    "permitStatus": "required",
+    "permitRequired": true,
     "nearestTown": {
       "name": "Polur",
       "region": "Mazandaran",

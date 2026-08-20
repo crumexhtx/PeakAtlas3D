@@ -7489,8 +7489,9 @@
     "whyNotable": "Iran’s highest peak and the tallest volcano in Asia.",
     "seoMetaDescription": "Plan Damavand: High-altitude trek — best Jun–Sep — Alborz, Mazandaran — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Iran Mountaineering & Sport Climbing Federation climbing permit required for foreign climbers; typically issued at Polour Camp 1 (confirm current fee and guide rules on msfi.ir)."
   },
   {
     "id": "ararat",
