@@ -309,8 +309,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for the Lassen Peak Trail. Lassen Volcanic National Park entry fees apply; confirm current trail and volcanic-hazard status with NPS."
   },
   {
     "id": "sanjacinto",
@@ -458,8 +459,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special day-summit permit for standard San Gorgonio approaches. San Gorgonio Wilderness overnight trips need a wilderness permit; Adventure Pass / parking rules may apply at popular trailheads."
   },
   {
     "id": "baldy",
@@ -529,8 +531,9 @@
       }
     ],
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Mount San Antonio (Mt. Baldy). Angeles National Forest parking / Adventure Pass rules often apply at popular trailheads."
   },
   {
     "id": "hood",
@@ -721,8 +724,9 @@
       }
     ],
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit climbing permit for South Sister. Central Cascades Wilderness Permit / overnight rules may apply for camping approaches — confirm Deschutes National Forest guidance."
   },
   {
     "id": "northsister",
@@ -876,8 +880,9 @@
       }
     ],
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit climbing permit for Middle Sister. Central Cascades Wilderness Permit / overnight rules may apply — technical alpine skills required."
   },
   {
     "id": "jeffersonor",
@@ -1021,8 +1026,9 @@
       }
     ],
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit climbing permit for Broken Top. Central Cascades Wilderness Permit systems may apply for overnight approaches — confirm Deschutes National Forest rules."
   },
   {
     "id": "baker",
@@ -1358,8 +1364,9 @@
       }
     ],
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit climbing permit for Mount Shuksan approaches. Overnight wilderness regulations may apply on Mount Baker–Snoqualmie / North Cascades land — mountaineering experience required."
   },
   {
     "id": "olympuswa",
@@ -1436,8 +1443,9 @@
       }
     ],
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Olympic National Park wilderness camping permits are required for the multi-day approach used on standard Mount Olympus climbs. Confirm current NPS wilderness and glacier-travel guidance."
   },
   {
     "id": "adams",
@@ -2690,8 +2698,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special day-hike summit permit for Mount Tallac. Overnight camping in Desolation Wilderness requires a wilderness permit (often quota) — confirm Eldorado National Forest / LTBMU rules."
   },
   {
     "id": "longs",
@@ -3512,8 +3521,9 @@
     "whyNotable": "Wyoming’s high point, deep in the Wind River wilderness.",
     "seoMetaDescription": "Plan Gannett Peak: Glacier climb — best Jul–Sep — Wind River Range, Wyoming — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit climbing permit for Gannett Peak. Bridger Wilderness overnight camping permits and stock/party-size rules may apply — confirm Bridger-Teton National Forest guidance."
   },
   {
     "id": "granitet",
@@ -3640,8 +3650,9 @@
     "whyNotable": "Montana’s technical state high point in the Beartooths.",
     "seoMetaDescription": "Plan Granite Peak: Class 3–4 scramble — best Jul–Sep — Beartooth Mountains, Montana — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Granite Peak (Montana). Absaroka-Beartooth Wilderness overnight regulations may apply — Class 3–4 scramble with real exposure."
   },
   {
     "id": "borah",
@@ -3717,8 +3728,9 @@
       }
     ],
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Borah Peak. Check Salmon-Challis National Forest road/trail status; the Chicken-out Ridge scramble has real exposure."
   },
   {
     "id": "kings",
@@ -3844,8 +3856,9 @@
     "whyNotable": "Utah’s high point, a long Uintas backpack to the summit ridge.",
     "seoMetaDescription": "Plan Kings Peak: Class 2 hike — best Jul–Sep — Uinta Mountains, Wyoming — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Kings Peak. Check Ashley National Forest / High Uintas Wilderness overnight rules if camping on the approach."
   },
   {
     "id": "humphreys",
@@ -3955,8 +3968,9 @@
     "whyNotable": "Arizona’s high point on the San Francisco Peaks volcanic field.",
     "seoMetaDescription": "Plan Humphreys Peak: Class 1 hike — best Jun–Oct — San Francisco Peaks, Arizona — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special day-hike summit permit for Humphreys Peak. Overnight camping in the Kachina Peaks Wilderness needs a wilderness permit — confirm Coconino National Forest rules."
   },
   {
     "id": "guadalupe",
@@ -4052,8 +4066,9 @@
     "whyNotable": "Texas high point rising abruptly from the Chihuahuan Desert.",
     "seoMetaDescription": "Plan Guadalupe Peak: Class 1 hike — best Oct–Apr — Guadalupe Mountains, Texas — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for the Guadalupe Peak Trail. Guadalupe Mountains National Park entry fees apply; overnight wilderness camping needs a separate NPS permit."
   },
   {
     "id": "blackelk",
@@ -4330,8 +4345,9 @@
     "whyNotable": "Canadian Rockies giant with one of the range’s biggest faces.",
     "seoMetaDescription": "Plan Mt. Robson: Alpine climb — best Jul–Aug — Canadian Rockies, British Columbia — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Mount Robson Provincial Park overnight camping / hut bookings are required for standard approaches. Confirm BC Parks reservations and current access rules."
   },
   {
     "id": "logan",
@@ -4413,8 +4429,9 @@
     "whyNotable": "Canada’s highest mountain, a vast Yukon ice massif.",
     "seoMetaDescription": "Plan Mt. Logan: High-altitude expedition — best May–Jul — Saint Elias Mountains, Yukon — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Kluane National Park and Reserve expedition / climbing registration and Parks Canada permits are required for Mount Logan icefield approaches. Confirm current Parks Canada rules well in advance."
   },
   {
     "id": "waddington",
@@ -4506,8 +4523,9 @@
     "whyNotable": "British Columbia’s highest peak, remote Coast Range alpine.",
     "seoMetaDescription": "Plan Mt. Waddington: Technical alpine — best Jul–Aug — Coast Mountains, British Columbia — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general government climbing permit for Mount Waddington. Remote Coast Mountains expedition — confirm current BC Parks / land-manager rules for your approach and camping plan."
   },
   {
     "id": "columbia",
@@ -4606,8 +4624,9 @@
     "whyNotable": "Alberta’s high point on the Columbia Icefield divide.",
     "seoMetaDescription": "Plan Mt. Columbia: Glacier climb — best Jul–Aug — Canadian Rockies, Alberta — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Jasper / Columbia Icefield approaches fall under Parks Canada rules; overnight camping and glacier-travel planning requirements apply. Confirm current Parks Canada guidance before icefield travel."
   },
   {
     "id": "assini",
@@ -4734,8 +4753,9 @@
     "whyNotable": "The “Matterhorn of the Rockies,” a perfect pyramidal summit.",
     "seoMetaDescription": "Plan Mt. Assiniboine: Alpine climb — best Jul–Sep — Canadian Rockies, Alberta — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Mount Assiniboine Provincial Park camping reservations (e.g. Lake Magog) are required in season. Confirm BC Parks / Assiniboine Lodge booking rules."
   },
   {
     "id": "orizaba",
@@ -4849,8 +4869,9 @@
     "whyNotable": "Mexico’s highest peak and the tallest volcano in North America.",
     "seoMetaDescription": "Plan Pico de Orizaba: Snow / glacier climb — best Nov–Mar — Trans-Mexican Volcanic Belt, Puebla — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Pico de Orizaba climbs typically require park / land-access fees and are commonly arranged via a licensed Mexican guide service. Confirm current Pico de Orizaba National Park and local operator rules."
   },
   {
     "id": "popo",
@@ -4978,8 +4999,9 @@
     "whyNotable": "Mexico’s legendary smoking volcano above the Valley of Mexico.",
     "seoMetaDescription": "Plan Popocatépetl: Restricted / volcanic — best Nov–Mar — Trans-Mexican Volcanic Belt, Mexico State — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Popocatépetl is frequently closed or heavily restricted due to volcanic activity. Do not climb without explicit current authorization from Mexican civil-protection / park authorities."
   },
   {
     "id": "aconcagua",
@@ -5190,8 +5212,9 @@
     "whyNotable": "Peru’s high point and the crown of the Cordillera Blanca.",
     "seoMetaDescription": "Plan Huascarán: Alpine glacier — best Jun–Aug — Cordillera Blanca, Ancash — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Huascarán National Park entry and Cordillera Blanca climbing registration / fees apply. Most teams use a licensed Peruvian operator — confirm SERNANP / park office rules."
   },
   {
     "id": "illimani",
@@ -5315,8 +5338,9 @@
     "whyNotable": "The great ice pyramid watching over La Paz.",
     "seoMetaDescription": "Plan Illimani: Alpine glacier — best May–Sep — Cordillera Real, La Paz — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Illimani approaches typically involve local community access fees and Bolivian high-mountain logistics. Confirm current local permit / guide expectations before travel."
   },
   {
     "id": "chimborazo",
@@ -5440,8 +5464,9 @@
     "whyNotable": "The farthest point from Earth’s center due to equatorial bulge.",
     "seoMetaDescription": "Plan Chimborazo: Glacier climb — best Dec–Jan or Jun–Jul — Andes, Chimborazo — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Chimborazo Fauna Reserve / park fees apply; high glacier climbs are typically guided under Ecuador rules. Confirm current reserve access and operator requirements."
   },
   {
     "id": "cotopaxi",
@@ -5565,8 +5590,9 @@
     "whyNotable": "One of the world’s highest active volcanoes, Ecuador’s icon.",
     "seoMetaDescription": "Plan Cotopaxi: Glacier climb — best Dec–Apr — Andes, Cotopaxi — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Cotopaxi National Park entry fees apply; glacier climbs are typically done with an ASEGUIM-certified guide under Ecuador park rules. Confirm current MAE / park status (volcanic closures happen)."
   },
   {
     "id": "fitzroy",
@@ -5782,8 +5808,9 @@
     "whyNotable": "Highest summit in Torres del Paine National Park / Cordillera Paine — the famous towers sit nearby at lower elevations.",
     "seoMetaDescription": "Plan Torres del Paine: Technical rock — best Nov–Mar — Patagonian Andes, Magallanes — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Torres del Paine National Park entry tickets / bookings are required. Technical climbs also need CONAF notice / registration rules — confirm current park guidance."
   },
   {
     "id": "sajama",
@@ -5910,8 +5937,9 @@
     "whyNotable": "Bolivia’s highest peak, a lonely volcano on the Altiplano.",
     "seoMetaDescription": "Plan Sajama: Snow climb — best May–Sep — Andes, Oruro — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Sajama National Park entry fees apply for Sajama climbs. Confirm current SERNAP / park rules and local logistics."
   },
   {
     "id": "ausangate",
@@ -6038,8 +6066,9 @@
     "whyNotable": "Sacred Andean apu and the heart of Peru’s high circuit treks.",
     "seoMetaDescription": "Plan Ausangate: Alpine climb — best May–Sep — Cordillera Vilcanota, Cusco — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Ausangate approaches typically require community / park trek fees in the Vilcanota range. Confirm current local permit and camping rules (often arranged via Cusco operators)."
   },
   {
     "id": "montblanc",
@@ -6409,8 +6438,9 @@
     "whyNotable": "Bernese Oberland classic above the Jungfraujoch.",
     "seoMetaDescription": "Plan Jungfrau: Alpine glacier — best Jul–Sep — Bernese Alps, Bern — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general government climbing permit for the Jungfrau. Hut bookings and Jungfraujoch / regional transport logistics apply."
   },
   {
     "id": "eiger",
@@ -6520,8 +6550,9 @@
     "whyNotable": "Infamous for its North Face, the Nordwand.",
     "seoMetaDescription": "Plan Eiger: Technical alpine — best Jul–Sep — Bernese Alps, Bern — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general government climbing permit for the Eiger. Hut bookings, guide requirements for some parties, and Jungfrau Region transport rules are the practical constraints."
   },
   {
     "id": "grossglockner",
@@ -6634,8 +6665,9 @@
     "whyNotable": "Austria’s highest mountain and an Eastern Alps landmark.",
     "seoMetaDescription": "Plan Grossglockner: Alpine glacier — best Jul–Sep — High Tauern, Carinthia — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general climbing permit for Grossglockner. Hohe Tauern National Park rules and hut bookings apply; glacier travel required on standard routes."
   },
   {
     "id": "triglav",
@@ -6759,8 +6791,9 @@
     "whyNotable": "Slovenia’s national mountain and a symbol of the Julian Alps.",
     "seoMetaDescription": "Plan Triglav: Via ferrata / scramble — best Jul–Sep — Julian Alps, Upper Carniola — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit climbing permit for Triglav. Triglav National Park rules apply; via ferrata gear is standard on the usual routes."
   },
   {
     "id": "ortles",
@@ -6887,8 +6920,9 @@
     "whyNotable": "Highest peak in the Eastern Alps outside the Bernina.",
     "seoMetaDescription": "Plan Ortler: Alpine glacier — best Jun–Sep — Ortler Alps, South Tyrol — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general government climbing permit for Ortler. Stelvio / local hut bookings and alpine glacier skills apply."
   },
   {
     "id": "marmolada",
@@ -7012,8 +7046,9 @@
     "whyNotable": "Queen of the Dolomites, with a glacier and vast limestone walls.",
     "seoMetaDescription": "Plan Marmolada: Alpine glacier — best Jun–Sep — Dolomites, Trentino — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general government climbing permit for Marmolada. Dolomiti / cable-car and hut logistics apply; glacier conditions vary."
   },
   {
     "id": "barreuils",
@@ -7140,8 +7175,9 @@
     "whyNotable": "High point of the Écrins and the southern French Alps.",
     "seoMetaDescription": "Plan Barre des Écrins: Alpine glacier — best Jun–Sep — Dauphiné Alps, Hautes-Alpes — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general climbing permit for Barre des Écrins. Écrins National Park rules and hut bookings apply; glaciated alpine climb."
   },
   {
     "id": "elbrus",
@@ -7381,8 +7417,9 @@
     "whyNotable": "Georgia’s storied Caucasus giant above the Georgian Military Highway.",
     "seoMetaDescription": "Plan Mt. Kazbek: Glacier climb — best Jun–Sep — Caucasus, Mtskheta-Mtianeti — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Mount Kazbek climbs typically require Georgian border-zone / park registration and are commonly done with a licensed guide. Confirm current Stepantsminda / Kazbegi rules before travel."
   },
   {
     "id": "damavand",
@@ -7639,8 +7676,9 @@
     "whyNotable": "Turkey’s iconic twin-peaked volcano of legend and national identity.",
     "seoMetaDescription": "Plan Mt. Ararat: Snow climb — best Jul–Sep — Armenian Highlands, Ağrı — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Mount Ararat requires a Turkish climbing permit arranged through licensed agencies. Confirm current provincial / tourism authority rules and seasonal access."
   },
   {
     "id": "kilimanjaro",
@@ -7883,8 +7921,9 @@
     "whyNotable": "Africa’s second-highest peak, technical rock above the treeline.",
     "seoMetaDescription": "Plan Mt. Kenya: Technical rock / ice — best Jan–Feb or Aug–Sep — Eastern Rift, Laikipia — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Mount Kenya National Park / Kenya Wildlife Service park fees and climbing / trekking fees apply. Confirm current KWS rules and whether your route needs a licensed guide."
   },
   {
     "id": "toubkal",
@@ -8011,8 +8050,9 @@
     "whyNotable": "Highest peak in North Africa and the Atlas Mountains.",
     "seoMetaDescription": "Plan Jebel Toubkal: Class 2 hike — best May–Oct — High Atlas, Marrakesh-Safi — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Toubkal National Park entry fees apply for Jebel Toubkal. Confirm current park / refuge rules; many visitors hire a local guide or mule support."
   },
   {
     "id": "rasdashen",
@@ -8140,8 +8180,9 @@
     "whyNotable": "Ethiopia’s high point in the Simien Mountains massif.",
     "seoMetaDescription": "Plan Ras Dashen: Class 2 hike — best Oct–Mar — Simien Mountains, Amhara — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Simien Mountains National Park entry fees and scout / guide rules typically apply for Ras Dashen. Confirm current Ethiopian Wildlife Conservation Authority / park guidance."
   },
   {
     "id": "table",
@@ -8269,8 +8310,9 @@
     "whyNotable": "Cape Town’s flat-topped landmark and a World Heritage icon.",
     "seoMetaDescription": "Plan Table Mountain: Class 1 hike — best Nov–Mar — Cape Fold Belt, Western Cape — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Table Mountain National Park conservation fees apply for trail and cableway access. Confirm current SANParks fees and cableway status."
   },
   {
     "id": "meru",
@@ -8383,8 +8425,9 @@
     "whyNotable": "Tanzania’s dramatic crater volcano and Kilimanjaro’s neighbor.",
     "seoMetaDescription": "Plan Mt. Meru: Trekking peak — best Jun–Feb — Eastern Rift, Arusha — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Arusha National Park fees apply for Mount Meru; climbs are arranged under Tanzanian park rules (often with a guide). Confirm current TANAPA / park guidance."
   },
   {
     "id": "everest",
@@ -10005,8 +10048,9 @@
     "whyNotable": "The only 8,000er entirely in Tibet / China.",
     "seoMetaDescription": "Plan Shishapangma: High-altitude expedition — best Apr–May or Sep–Oct — Jugal Himal, Tibet — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Shishapangma requires Chinese / Tibet Autonomous Region climbing permits via authorized agencies. Confirm current CTMA / operator rules well in advance."
   },
   {
     "id": "ama",
@@ -10378,8 +10422,9 @@
     "whyNotable": "Ladakh’s popular high trekking peak above the Indus Valley.",
     "seoMetaDescription": "Plan Stok Kangri: Trekking peak — best Jul–Sep — Stok Range, Ladakh — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Stok Kangri requires Indian Himalayan climbing / trekking permits (often via IMF or Ladakh authorities) and Inner Line / local rules for foreign visitors. Confirm current Ladakh / operator requirements — access has been restricted in some seasons."
   },
   {
     "id": "nanda",
@@ -10506,8 +10551,9 @@
     "whyNotable": "India’s second-highest peak, once closed as a sacred sanctuary.",
     "seoMetaDescription": "Plan Nanda Devi: Technical expedition — best May–Jun or Sep–Oct — Garhwal Himalaya, Uttarakhand — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Nanda Devi is in a highly protected sanctuary; expedition / climbing permits through Indian authorities are required and access is often tightly limited. Confirm current IMF / forest department rules."
   },
   {
     "id": "trisul",
@@ -10634,8 +10680,9 @@
     "whyNotable": "A striking Garhwal triple-summit massif near Nanda Devi.",
     "seoMetaDescription": "Plan Trisul: Alpine climb — best May–Jun or Sep–Oct — Garhwal Himalaya, Uttarakhand — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Trisul climbs require Indian mountaineering permits through authorized channels (commonly IMF / state forest). Confirm current Garhwal permit rules with a licensed operator."
   },
   {
     "id": "fuji",
@@ -10893,8 +10940,9 @@
     "whyNotable": "The “Matterhorn of Japan” on the North Alps ridgeline.",
     "seoMetaDescription": "Plan Mt. Yari: Class 2–3 scramble — best Jul–Sep — Hida Mountains, Nagano — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special government summit permit for Mount Yari. Follow Japanese alpine hut booking customs and seasonal trail guidance."
   },
   {
     "id": "hallasan",
@@ -11022,8 +11070,9 @@
     "whyNotable": "South Korea’s high point, a shield volcano crowning Jeju Island.",
     "seoMetaDescription": "Plan Hallasan: Class 1 hike — best Apr–Nov — Jeju Island, Jeju — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Hallasan National Park trail reservations are required on designated summit routes in peak seasons. Confirm current Korea National Park Service reservation rules before you go."
   },
   {
     "id": "cook",
@@ -11151,8 +11200,9 @@
     "whyNotable": "New Zealand’s highest peak and the heart of the Southern Alps.",
     "seoMetaDescription": "Plan Aoraki / Mt. Cook: Alpine ice / rock — best Nov–Mar — Southern Alps, Canterbury — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general climbing permit for Aoraki / Mount Cook. Aoraki/Mount Cook National Park rules apply; DOC hut bookings and alpine skills are the real constraints — confirm current DOC avalanche / route advice."
   },
   {
     "id": "aspiring",
@@ -11266,8 +11316,9 @@
     "whyNotable": "The “Matterhorn of the South,” New Zealand’s classic alpine peak.",
     "seoMetaDescription": "Plan Mt. Aspiring: Alpine climb — best Nov–Mar — Southern Alps, Otago — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general climbing permit for Mount Aspiring. Mount Aspiring National Park / DOC hut and camping rules apply — confirm current DOC guidance."
   },
   {
     "id": "tasman",
@@ -11380,8 +11431,9 @@
     "whyNotable": "New Zealand’s second-highest summit on the main divide.",
     "seoMetaDescription": "Plan Mt. Tasman: Alpine ice — best Nov–Mar — Southern Alps, Canterbury — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general climbing permit for Mount Tasman. Aoraki/Mount Cook National Park / DOC rules apply; serious glaciated alpine climb."
   },
   {
     "id": "kosciuszko",
@@ -11494,8 +11546,9 @@
     "whyNotable": "Australia’s high point — an accessible alpine walk in the Snowies.",
     "seoMetaDescription": "Plan Mt. Kosciuszko: Class 1 hike — best Dec–Mar — Snowy Mountains, New South Wales — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Mount Kosciuszko. Kosciuszko National Park entry / parking rules apply on the Main Range approaches."
   },
   {
     "id": "townsend",
@@ -11608,8 +11661,9 @@
     "whyNotable": "Often mistaken for Kosciuszko; Australia’s true runner-up summit.",
     "seoMetaDescription": "Plan Mt. Townsend: Class 1 hike — best Dec–Mar — Snowy Mountains, New South Wales — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Mount Townsend. Kosciuszko National Park rules apply on the Main Range walk."
   },
   {
     "id": "galdhopiggen",
@@ -11722,8 +11776,9 @@
     "whyNotable": "Northern Europe’s highest mountain, in Norway’s Jotunheimen.",
     "seoMetaDescription": "Plan Galdhøpiggen: Class 1–2 hike — best Jun–Sep — Jotunheimen, Innlandet — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Galdhøpiggen. Jotunheimen National Park / DNT hut rules apply on popular approaches."
   },
   {
     "id": "kebnekaise",
@@ -11833,8 +11888,9 @@
     "whyNotable": "Sweden’s high point, with a shifting glacial summit.",
     "seoMetaDescription": "Plan Kebnekaise: Class 2 hike — best Jun–Sep — Scandinavian Mountains, Norrbotten — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Kebnekaise. Abisko / STF mountain-station logistics apply; glacier conditions on the western route vary."
   },
   {
     "id": "halti",
@@ -12059,8 +12115,9 @@
     "whyNotable": "The Balkans’ highest peak, in Bulgaria’s Rila Mountains.",
     "seoMetaDescription": "Plan Musala: Class 1 hike — best Jun–Sep — Rila, Sofia Province — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Musala. Rila National Park rules and lift / trailhead logistics apply."
   },
   {
     "id": "olympus",
@@ -12174,8 +12231,9 @@
     "whyNotable": "Mythic home of the gods and Greece’s highest mountain.",
     "seoMetaDescription": "Plan Mt. Olympus: Class 2–3 scramble — best Jun–Sep — Olympus Massif, Pieria — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Mount Olympus (Greece). Olympus National Park rules apply; refuge bookings help on multi-day approaches."
   },
   {
     "id": "mulhacen",
@@ -12288,8 +12346,9 @@
     "whyNotable": "Iberia’s highest peak, rising above the Sierra Nevada.",
     "seoMetaDescription": "Plan Mulhacén: Class 1 hike — best Jun–Oct — Sierra Nevada, Andalusia — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summer summit permit for Mulhacén day hikes. Sierra Nevada National Park rules apply; seasonal vehicle / snow restrictions and occasional winter registration rules — confirm current park guidance."
   },
   {
     "id": "teide",
@@ -12403,8 +12462,9 @@
     "whyNotable": "Spain’s highest mountain and a massive Atlantic volcano.",
     "seoMetaDescription": "Plan Teide: Class 1 hike — best May–Oct — Canary Islands, Tenerife — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "A summit access permit is required for Pico del Teide (PNT 10 Telesforo Bravo) above the cable-car top station. Book via Tenerife ON before you go; park rules and any current eco-fee apply."
   },
   {
     "id": "citlaltepetl",
@@ -12518,8 +12578,9 @@
     "whyNotable": "Alternate atlas entry for Mexico’s great ice volcano.",
     "seoMetaDescription": "Plan Iztaccíhuatl: Snow / glacier climb — best Nov–Mar — Trans-Mexican Volcanic Belt, Mexico State — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Iztaccíhuatl access is managed under Izta-Popo park rules; registration / fees apply and volcanic closures can change access. Confirm current CONANP / park guidance."
   },
   {
     "id": "illampu",
@@ -12629,8 +12690,9 @@
     "whyNotable": "A sharp Cordillera Real giant north of Lake Titicaca.",
     "seoMetaDescription": "Plan Illampu: Technical alpine — best May–Sep — Cordillera Real, La Paz — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Illampu climbs typically involve local community access fees and Bolivian alpine logistics. Confirm current local permit / guide expectations."
   },
   {
     "id": "alpamayo",
@@ -12740,8 +12802,9 @@
     "whyNotable": "Often called the world’s most beautiful mountain.",
     "seoMetaDescription": "Plan Alpamayo: Technical alpine — best Jun–Aug — Cordillera Blanca, Ancash — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Huascarán National Park / Cordillera Blanca climbing registration and fees apply for Alpamayo. Confirm current SERNANP and operator requirements."
   },
   {
     "id": "huayna",
@@ -12854,8 +12917,9 @@
     "whyNotable": "La Paz’s backyard 6,000er — a classic first big Andean climb.",
     "seoMetaDescription": "Plan Huayna Potosí: Glacier climb — best May–Sep — Cordillera Real, La Paz — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Huayna Potosí approaches typically involve local community / refuge fees near Zongo Pass. Confirm current access rules; glacier travel experience or a guide is strongly advised."
   },
   {
     "id": "rittenhouse",
@@ -13027,8 +13091,9 @@
     "whyNotable": "Antarctica’s highest volcano, remote even by polar standards.",
     "seoMetaDescription": "Plan Mt. Sidley: Polar expedition — best Nov–Jan — Executive Committee Range, Antarctica — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Mount Sidley is in Antarctica; access requires national Antarctic program / IAATO-compliant expedition permits and logistics. Independent travel is not practical."
   },
   {
     "id": "mitchell",
@@ -13138,8 +13203,9 @@
     "whyNotable": "Highest peak east of the Mississippi in the U.S.",
     "seoMetaDescription": "Plan Mt. Mitchell: Class 1 hike — best May–Oct — Appalachian Mountains, North Carolina — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit. Mount Mitchell State Park day-use fees / parking rules apply for the short summit walk and nearby trails."
   },
   {
     "id": "kuwohi",
@@ -13216,8 +13282,9 @@
       }
     ],
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Kuwohi (formerly Clingmans Dome). Great Smoky Mountains National Park entry / parking rules apply; the paved summit path is often crowded."
   },
   {
     "id": "leconte",
@@ -13286,8 +13353,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit day-hike permit for Mount LeConte approaches. Great Smoky Mountains National Park rules apply; overnight shelter / backcountry permits are required for overnight stays."
   },
   {
     "id": "katahdin",
@@ -13400,8 +13468,9 @@
     "whyNotable": "Northern terminus of the Appalachian Trail in Maine.",
     "seoMetaDescription": "Plan Mt. Katahdin: Class 2–3 scramble — best Jul–Sep — Appalachian Mountains, Maine — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Baxter State Park day-use parking reservations are required in peak season for Katahdin trailheads. Park rules are strict (no pets, limited capacity) — reserve via Baxter State Park before you go."
   },
   {
     "id": "cadillac",
@@ -13583,8 +13652,9 @@
     "whyNotable": "New York’s high point and the Adirondack crown.",
     "seoMetaDescription": "Plan Mt. Marcy: Class 1–2 hike — best Jun–Oct — Adirondacks, New York — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Mount Marcy. Adirondack High Peaks rules apply (bear canisters in season, trail etiquette) — confirm NYS DEC guidance."
   },
   {
     "id": "mansfield",
@@ -13652,8 +13722,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Mount Mansfield. Vermont State Parks / Green Mountain National Forest access rules and seasonal trail status apply on popular approaches."
   },
   {
     "id": "monadnock",
@@ -13846,8 +13917,9 @@
     "whyNotable": "Home to some of the world’s most extreme recorded weather.",
     "seoMetaDescription": "Plan Mt. Washington: Class 1–2 hike — best Jun–Sep — Presidential Range, New Hampshire — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special hiking summit permit for Mount Washington. White Mountain National Forest rules apply; Auto Road and Cog Railway are separate paid services."
   },
   {
     "id": "lafayette",
@@ -14343,8 +14415,9 @@
     "whyNotable": "Utah’s beloved Wasatch giant above Utah Valley.",
     "seoMetaDescription": "Plan Mt. Timpanogos: Class 2 hike — best Jul–Sep — Wasatch Range, Utah — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Mount Timpanogos. Uinta-Wasatch-Cache National Forest trail and parking rules apply; expect heavy weekend use."
   },
   {
     "id": "wheeler",
@@ -14417,8 +14490,9 @@
       }
     ],
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Wheeler Peak in Great Basin National Park. Park entry fees apply; confirm seasonal road and trail status with NPS."
   },
   {
     "id": "wheelernm",
@@ -14486,8 +14560,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special day-hike summit permit for Wheeler Peak (New Mexico). Overnight trips in the Pecos Wilderness need a wilderness permit — confirm Santa Fe National Forest rules."
   },
   {
     "id": "sandia",
@@ -14671,8 +14746,9 @@
     "whyNotable": "A sharp granite Wasatch summit above Salt Lake’s southern ridge.",
     "seoMetaDescription": "Plan Lone Peak: Class 3–4 scramble — best Jul–Sep — Wasatch Range, Utah — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Lone Peak. Wasatch-Cache National Forest / wilderness rules apply; Class 3–4 scrambling with real exposure."
   },
   {
     "id": "grandteton",
@@ -14786,8 +14862,9 @@
     "whyNotable": "The classic American alpine peak of the Teton Range.",
     "seoMetaDescription": "Plan Grand Teton: Technical alpine — best Jul–Sep — Teton Range, Wyoming — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Grand Teton National Park climbing registration is required for overnight technical climbs; day climbs still fall under park rules. Overnight camping / backcountry permits apply where you camp — confirm current NPS climbing and camping guidance."
   },
   {
     "id": "moran",
@@ -14900,8 +14977,9 @@
     "whyNotable": "A broad Teton fortress above Jackson Lake.",
     "seoMetaDescription": "Plan Mt. Moran: Technical alpine — best Jul–Sep — Teton Range, Wyoming — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Grand Teton National Park climbing registration is required for overnight technical climbs on Mount Moran. Confirm current NPS climbing and backcountry camping rules."
   },
   {
     "id": "cloudpeak",
@@ -15002,8 +15080,9 @@
     "whyNotable": "High point of Wyoming’s Bighorn Mountains wilderness.",
     "seoMetaDescription": "Plan Cloud Peak: Class 3 scramble — best Jul–Sep — Bighorn Mountains, Wyoming — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special day-summit permit for Cloud Peak. Cloud Peak Wilderness overnight permits and party-size rules may apply — confirm Bighorn National Forest guidance."
   },
   {
     "id": "blanca",
@@ -15123,8 +15202,9 @@
     "whyNotable": "Monarch of the Sangre de Cristo and a sacred Navajo peak.",
     "seoMetaDescription": "Plan Blanca Peak: Class 2–3 scramble — best Jul–Sep — Sangre de Cristo, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit on standard Blanca Peak approaches. Check Rio Grande / San Isabel National Forest road status (Lake Como road is rough) and wilderness camping rules."
   },
   {
     "id": "crestone",
@@ -15237,8 +15317,9 @@
     "whyNotable": "A rugged Colorado fourteener in the Crestone group.",
     "seoMetaDescription": "Plan Crestone Peak: Class 3 scramble — best Jul–Sep — Sangre de Cristo, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit on standard Crestone Peak routes. Check Rio Grande National Forest / Sangre de Cristo Wilderness camping rules; Class 3 terrain."
   },
   {
     "id": "crestoneneedle",
@@ -15433,8 +15514,9 @@
     "whyNotable": "Colorado’s knife-edge fourteener near Aspen.",
     "seoMetaDescription": "Plan Capitol Peak: Class 4 scramble — best Jul–Sep — Elk Mountains, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Capitol Peak. White River National Forest / Maroon Bells–Snowmass Wilderness overnight rules may apply; the Knife Edge is serious Class 4 terrain."
   },
   {
     "id": "pyramid",
@@ -15547,8 +15629,9 @@
     "whyNotable": "A steep Elk Mountains fourteener above Maroon Creek.",
     "seoMetaDescription": "Plan Pyramid Peak: Class 4 scramble — best Jul–Sep — Elk Mountains, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Pyramid Peak. White River National Forest / Maroon Bells–Snowmass Wilderness overnight rules may apply; Class 4 terrain with rockfall hazard."
   },
   {
     "id": "maroon",
@@ -15963,8 +16046,9 @@
     "whyNotable": "Tallest mountain on Earth measured from ocean floor to summit, and one of the world’s great astronomy sites.",
     "seoMetaDescription": "Plan Mauna Kea: High-altitude drive / hike — best Year-round; summit can be cold or snowy in winter — Hawaiian Islands, Hawaii — trip notes and 3D terrain…",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Maunakea Access Road and visitor rules are managed under Hawaiʻi DLNR / Maunakea stewardship guidance. Summit access, commercial activity, and high-elevation visitor limits change — confirm current access rules before driving or hiking above the visitor center."
   },
   {
     "id": "maunaloa",
@@ -16116,8 +16200,9 @@
       }
     ],
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Haleakalā National Park entry fees apply. Timed reservations are often required for sunrise access to the summit district — confirm current NPS Recreation.gov rules before you go."
   },
   {
     "id": "sthelens",

@@ -219,6 +219,86 @@ const BY_PEAK: Record<string, PeakPlanningResource[]> = {
       kind: 'park',
     },
   ],
+  teide: [
+    {
+      label: 'Tenerife ON — Teide summit permit',
+      note: 'Official booking for Pico del Teide (PNT 10 Telesforo Bravo) above the cable-car top station.',
+      url: 'https://www.tenerifeon.es/en/routes/hiking/pnt-10-telesforo-bravo',
+      kind: 'permit',
+    },
+  ],
+  cotopaxi: [
+    {
+      label: 'Cotopaxi National Park (Ecuador)',
+      note: 'Park context for Cotopaxi access; glacier climbs are typically guided — confirm current volcanic status.',
+      url: 'https://www.ambiente.gob.ec/',
+      kind: 'park',
+    },
+  ],
+  cook: [
+    {
+      label: 'DOC — Aoraki/Mount Cook National Park',
+      note: 'New Zealand Department of Conservation park and alpine advice for Aoraki / Mount Cook.',
+      url: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/aoraki-mount-cook-national-park/',
+      kind: 'park',
+    },
+  ],
+  katahdin: [
+    {
+      label: 'Baxter State Park',
+      note: 'Day-use parking reservations and park rules for Katahdin trailheads.',
+      url: 'https://www.baxterstatepark.org/',
+      kind: 'park',
+    },
+  ],
+  grandteton: [
+    {
+      label: 'Grand Teton National Park — climbing',
+      note: 'NPS climbing registration and backcountry guidance for the Teton Range.',
+      url: 'https://www.nps.gov/grte/planyourvisit/climbing.htm',
+      kind: 'permit',
+    },
+  ],
+  haleakala: [
+    {
+      label: 'Haleakalā National Park',
+      note: 'NPS park pages including sunrise reservation guidance for the summit district.',
+      url: 'https://www.nps.gov/hale/',
+      kind: 'park',
+    },
+  ],
+  kenya: [
+    {
+      label: 'Kenya Wildlife Service',
+      note: 'Park and climbing fee context for Mount Kenya National Park.',
+      url: 'https://www.kws.go.ke/',
+      kind: 'agency',
+    },
+  ],
+  ararat: [
+    {
+      label: 'Republic of Türkiye tourism / permit channels',
+      note: 'Ararat climbing permits are arranged through licensed Turkish agencies — confirm current provincial rules.',
+      url: 'https://www.ktb.gov.tr/',
+      kind: 'agency',
+    },
+  ],
+  hallasan: [
+    {
+      label: 'Korea National Park Service',
+      note: 'National park guidance and trail reservation context for Hallasan on Jeju.',
+      url: 'https://www.knps.or.kr/eng/',
+      kind: 'park',
+    },
+  ],
+  orizaba: [
+    {
+      label: 'CONANP (Mexico protected areas)',
+      note: 'Mexican protected-area context; Orizaba climbs are commonly arranged via licensed local operators.',
+      url: 'https://www.gob.mx/conanp',
+      kind: 'agency',
+    },
+  ],
 }
 
 export function planningResourcesForPeak(
