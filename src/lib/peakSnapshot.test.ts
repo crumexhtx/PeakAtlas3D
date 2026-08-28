@@ -82,6 +82,13 @@ describe('peakSnapshot', () => {
     ).toContain('2')
   })
 
+  it('counts curated 14ers.com routes when catalog trails are empty', () => {
+    const snap = buildPeakSnapshot({ ...elbert, trails: [] })
+    expect(snap.metrics.find((m) => m.label === 'Listed trails')?.value).toBe(
+      '2',
+    )
+  })
+
   it('varies answer templates by peak id', () => {
     expect(buildPeakAnswer(whitney)).not.toEqual(buildPeakAnswer(elbert))
   })

@@ -264,6 +264,50 @@ export const FOURTEENERS_ROUTES: Record<string, FourteenersRoute[]> = {
       sourceUrl: 'https://www.14ers.com/route.php?route=evan1',
     },
   ],
+  princeton: [
+    {
+      name: 'East Slopes',
+      trailhead: 'Mt. Princeton Road / radio towers',
+      difficulty: 'Class 2',
+      roundTripMiles: 6.5,
+      elevationGainFt: 3200,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=prin1',
+    },
+  ],
+  yale: [
+    {
+      name: 'Southwest Slopes',
+      trailhead: 'Denny Creek',
+      difficulty: 'Class 2',
+      roundTripMiles: 9.5,
+      elevationGainFt: 4300,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=yale1',
+    },
+  ],
+  handies: [
+    {
+      name: 'Southwest Slopes',
+      trailhead: 'American Basin',
+      difficulty: 'Class 1',
+      roundTripMiles: 5.75,
+      elevationGainFt: 2500,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=hand1',
+    },
+  ],
+  holycross: [
+    {
+      name: 'North Ridge',
+      trailhead: 'Half Moon / Fall Creek',
+      difficulty: 'Class 2',
+      roundTripMiles: 11.5,
+      elevationGainFt: 5600,
+      standard: true,
+      sourceUrl: 'https://www.14ers.com/route.php?route=holy1',
+    },
+  ],
 }
 
 export function fourteenersRoutesForPeak(peakId: string): FourteenersRoute[] {

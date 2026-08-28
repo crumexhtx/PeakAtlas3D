@@ -75,6 +75,118 @@ const BY_PEAK: Record<string, PeakPlanningResource[]> = {
       kind: 'federation',
     },
   ],
+  nanga: [
+    {
+      label: 'Pakistan Alpine Club',
+      note: 'National alpine body for Pakistan expedition context; Nanga Parbat permits run through licensed operators and government channels.',
+      url: 'https://www.alpineclub.org.pk/',
+      kind: 'federation',
+    },
+  ],
+  gasherbrum1: [
+    {
+      label: 'Pakistan Alpine Club',
+      note: 'Expedition coordination context for Gasherbrum peaks; permits via licensed operators and government channels.',
+      url: 'https://www.alpineclub.org.pk/',
+      kind: 'federation',
+    },
+  ],
+  gasherbrum2: [
+    {
+      label: 'Pakistan Alpine Club',
+      note: 'Expedition coordination context for Gasherbrum peaks; permits via licensed operators and government channels.',
+      url: 'https://www.alpineclub.org.pk/',
+      kind: 'federation',
+    },
+  ],
+  broadpeak: [
+    {
+      label: 'Pakistan Alpine Club',
+      note: 'Expedition coordination context for Broad Peak; permits via licensed operators and government channels.',
+      url: 'https://www.alpineclub.org.pk/',
+      kind: 'federation',
+    },
+  ],
+  kangchen: [
+    {
+      label: 'Nepal Department of Tourism',
+      note: 'Start here for Nepal-side expedition / climbing permit context; most Kangchenjunga teams book via a licensed operator.',
+      url: 'https://www.tourism.gov.np/',
+      kind: 'agency',
+    },
+  ],
+  lhotse: [
+    {
+      label: 'Nepal Department of Tourism',
+      note: 'Nepal-side climbing permit context for Lhotse; most teams book via a licensed operator.',
+      url: 'https://www.tourism.gov.np/',
+      kind: 'agency',
+    },
+  ],
+  makalu: [
+    {
+      label: 'Nepal Department of Tourism',
+      note: 'Nepal climbing permit context for Makalu; confirm current peak fees and park rules with a licensed operator.',
+      url: 'https://www.tourism.gov.np/',
+      kind: 'agency',
+    },
+  ],
+  chooyu: [
+    {
+      label: 'Nepal Department of Tourism',
+      note: 'Nepal-side permit context for Cho Oyu; Tibet-side climbs use Chinese agency channels.',
+      url: 'https://www.tourism.gov.np/',
+      kind: 'agency',
+    },
+  ],
+  dhaula: [
+    {
+      label: 'Nepal Department of Tourism',
+      note: 'Nepal climbing permit context for Dhaulagiri; conservation-area fees typically apply on the approach.',
+      url: 'https://www.tourism.gov.np/',
+      kind: 'agency',
+    },
+  ],
+  manaslu: [
+    {
+      label: 'Nepal Department of Tourism',
+      note: 'Nepal climbing / restricted-area permit context for Manaslu; most teams use a licensed operator.',
+      url: 'https://www.tourism.gov.np/',
+      kind: 'agency',
+    },
+  ],
+  annapurna: [
+    {
+      label: 'Nepal Department of Tourism',
+      note: 'Nepal climbing permit context for Annapurna I; ACAP fees apply on the approach.',
+      url: 'https://www.tourism.gov.np/',
+      kind: 'agency',
+    },
+  ],
+  ama: [
+    {
+      label: 'Nepal Department of Tourism',
+      note: 'Nepal climbing permit context for Ama Dablam; Sagarmatha / Khumbu fees apply.',
+      url: 'https://www.tourism.gov.np/',
+      kind: 'agency',
+    },
+  ],
+  island: [
+    {
+      label: 'Nepal Department of Tourism',
+      note: 'Nepal trekking-peak / climbing permit context for Island Peak (Imja Tse).',
+      url: 'https://www.tourism.gov.np/',
+      kind: 'agency',
+    },
+  ],
+  fitzroy: [
+    {
+      label: 'Parque Nacional Los Glaciares (APN)',
+      note: 'Official Argentine national parks guidance for El Chaltén / Fitz Roy area registration, trails, and climbing notice rules.',
+      url: 'https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares',
+      kind: 'park',
+    },
+  ],
   elbrus: [
     {
       label: 'Elbrus National Park',

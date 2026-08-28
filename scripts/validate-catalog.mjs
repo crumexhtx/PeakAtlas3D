@@ -5,6 +5,10 @@
 import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import {
+  checkProminencePlausible,
+  checkTownDistancePlausible,
+} from './lib/catalog-plausibility.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const peaksPath = join(root, 'src', 'data', 'peaks.json')
@@ -95,6 +99,10 @@ for (let i = 0; i < peaks.length; i++) {
   if (!isFiniteNumber(peak.prominenceFt) || peak.prominenceFt < 0) {
     fail(`${where}.prominenceFt`)
   }
+  {
+    const err = checkProminencePlausible(peak)
+    if (err) fail(`${where}: ${err}`)
+  }
   if (!isNonEmptyString(peak.range)) fail(`${where}.range`)
   if (!isNonEmptyString(peak.country)) fail(`${where}.country`)
   if (!isNonEmptyString(peak.description)) fail(`${where}.description`)
@@ -144,10 +152,18 @@ for (let i = 0; i < peaks.length; i++) {
   }
 
   assertTown(peak.nearestTown, `${where}.nearestTown`)
+  {
+    const err = checkTownDistancePlausible(peak, peak.nearestTown)
+    if (err) fail(`${where}.nearestTown: ${err}`)
+  }
   if (!Array.isArray(peak.nearbyPlaces) || peak.nearbyPlaces.length === 0) {
     fail(`${where}.nearbyPlaces`)
   }
-  peak.nearbyPlaces.forEach((t, j) => assertTown(t, `${where}.nearbyPlaces[${j}]`))
+  peak.nearbyPlaces.forEach((t, j) => {
+    assertTown(t, `${where}.nearbyPlaces[${j}]`)
+    const err = checkTownDistancePlausible(peak, t)
+    if (err) fail(`${where}.nearbyPlaces[${j}]: ${err}`)
+  })
   if (!Array.isArray(peak.hotels)) fail(`${where}.hotels`)
   peak.hotels.forEach((h, j) => assertAmenity(h, `${where}.hotels[${j}]`))
   if (!Array.isArray(peak.food)) fail(`${where}.food`)

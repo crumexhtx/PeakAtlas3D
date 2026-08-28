@@ -4,9 +4,6 @@ import type { Peak, PeakIndex } from '../types/peak'
 /** Lightweight rows for globe, country panels, and search. */
 export const peaksIndex = peaksIndexData as PeakIndex[]
 
-/** @deprecated Prefer {@link peaksIndex} for map/search. Alias kept for gradual call-site updates. */
-export const peaks = peaksIndex
-
 let fullCatalog: Peak[] | null = null
 let fullCatalogPromise: Promise<Peak[]> | null = null
 

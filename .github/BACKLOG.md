@@ -23,7 +23,7 @@ Full post-launch runbook: [`docs/POST_LAUNCH.md`](../docs/POST_LAUNCH.md).
 
 ## Engineering
 
-- [ ] Lazy-load MapLibre / `AtlasMap` so About / Contact / Peaks skip the large GL chunk
+- [x] Lazy-load MapLibre / `AtlasMap` so About / Contact / Peaks skip the large GL chunk (`DeferredAtlasMap`)
 - [x] Privacy-friendly analytics option (Plausible via `VITE_PLAUSIBLE_DOMAIN`; Vercel Analytics on by default)
 - [x] Smoke e2e: world → country → peak → skip → back (Playwright)
 - [ ] Retune globe disk metrics (`SpinFunFact`) after MapLibre + free-tile vs MapTiler visual QA

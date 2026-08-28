@@ -1,4 +1,5 @@
 import type { Peak } from '../types/peak'
+import { peakTrailRoutesForPeak } from '../data/peakTrailRoutes'
 import {
   DIFFICULTY_TIER_LABELS,
   resolveDifficultyTier,
@@ -71,6 +72,8 @@ function hotelCount(peak: SnapshotPeak): number {
 }
 
 function trailCount(peak: SnapshotPeak): number {
+  const curated = peakTrailRoutesForPeak(peak.id).length
+  if (curated > 0) return curated
   return Array.isArray(peak.trails) ? peak.trails.length : 0
 }
 

@@ -387,8 +387,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Overnight trips in the San Jacinto Wilderness need a wilderness permit. Day hikes from the Palm Springs Aerial Tramway have day-use rules — confirm California State Parks / San Bernardino NF guidance."
   },
   {
     "id": "sangorgonio",
@@ -797,8 +798,9 @@
       }
     ],
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit climbing permit; Central Cascades Wilderness Permit systems may apply for overnight approaches. Technical Three Sisters climb."
   },
   {
     "id": "middlesister",
@@ -943,8 +945,9 @@
       }
     ],
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit climbing permit; Central Cascades Wilderness Permit / overnight rules may apply. Technical alpine climb — confirm Willamette National Forest guidance."
   },
   {
     "id": "brokentop",
@@ -1207,8 +1210,9 @@
       }
     ],
     "difficultyTier": "snow-glacier",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit climbing permit on Glacier Peak approaches; Wilderness regulations and overnight permits may apply on USFS land. Mountaineering experience required."
   },
   {
     "id": "stuart",
@@ -1284,8 +1288,9 @@
       }
     ],
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for Cascadian Couloir / West Ridge approaches. Alpine Lakes Wilderness overnight permits may apply — confirm Okanogan-Wenatchee NF rules."
   },
   {
     "id": "shuksan",
@@ -1929,8 +1934,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit on standard Mount Massive trails. Check San Isabel National Forest road/trail status."
   },
   {
     "id": "harvard",
@@ -1998,8 +2004,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit on the standard South Slopes via Horn Fork. Check San Isabel National Forest trail and camping rules."
   },
   {
     "id": "princeton",
@@ -2357,8 +2364,9 @@
       }
     ],
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for the White Mountain Peak road/trail approach on Inyo National Forest. The high desert road is often gated; confirm current road status and weather."
   },
   {
     "id": "boundary",
@@ -2554,7 +2562,7 @@
       "El Cap"
     ],
     "bestSeason": "Apr–Oct (climbers)",
-    "whyNotable": "World-famous Yosemite big wall; iconic American climbing landmark.",
+    "whyNotable": "World-famous Yosemite big wall; iconic American climbing landmark. Topographic prominence is only ~9 ft — it is a cliff shoulder, not an independent summit.",
     "seoMetaDescription": "Plan El Capitan: Elite big-wall — best Apr–Oct (climbers) — Sierra Nevada, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Yosemite Valley",
@@ -2885,8 +2893,9 @@
       }
     ],
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit on the standard Grays Peak trails. Check Arapaho National Forest road/trail status and expect busy weekend parking at the Grays Peak trailhead."
   },
   {
     "id": "torreys",
@@ -2962,8 +2971,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit on the usual Grays/Torreys approach. Check Arapaho National Forest conditions and trailhead parking capacity."
   },
   {
     "id": "bierstadt",
@@ -3039,8 +3049,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit from Guanella Pass. Check Arapaho National Forest conditions and seasonal Guanella Pass road status."
   },
   {
     "id": "bluesky",
@@ -3110,8 +3121,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for the West Ridge from Summit Lake. The Mount Blue Sky (formerly Evans) highway is seasonal and may require timed entry or fees — confirm CDOT / USFS rules before driving."
   },
   {
     "id": "pikes",
@@ -3235,8 +3247,9 @@
     "whyNotable": "Colorado icon with a road, cog railway, and vast prairie views.",
     "seoMetaDescription": "Plan Pikes Peak: Walk-up — best Jun–Oct — Front Range, Colorado — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit climbing permit on Barr Trail or Northwest Slopes. Pikes Peak Highway is a separate toll road; confirm current fees and hours if driving."
   },
   {
     "id": "quandary",
@@ -3309,8 +3322,9 @@
       }
     ],
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit on the East Ridge. Expect heavy weekend use and limited parking at the Quandary trailhead."
   },
   {
     "id": "sherman",
@@ -3378,8 +3392,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit on the Southwest Ridge via Fourmile Creek. Check Pike National Forest road status."
   },
   {
     "id": "gannett",
@@ -3718,12 +3733,12 @@
     "firstAscent": "1877",
     "difficulty": "Class 2 hike",
     "nearestTown": {
-      "name": "Mountain View",
-      "region": "Wyoming",
-      "distanceMiles": 40,
-      "route": "WY-414",
-      "lat": 41.27,
-      "lon": -110.34
+      "name": "Duchesne",
+      "region": "Utah",
+      "distanceMiles": 45,
+      "route": "US-40 / Forest roads",
+      "lat": 40.1633,
+      "lon": -110.4029
     },
     "hotels": [
       {
@@ -3781,26 +3796,28 @@
     ],
     "nearbyPlaces": [
       {
+        "name": "Duchesne",
+        "region": "Utah",
+        "distanceMiles": 45,
+        "route": "US-40 / Forest roads",
+        "lat": 40.1633,
+        "lon": -110.4029
+      },
+      {
         "name": "Mountain View",
         "region": "Wyoming",
         "distanceMiles": 40,
-        "route": "WY-414",
+        "route": "WY-414 / Henrys Fork Rd",
         "lat": 41.27,
         "lon": -110.34
       },
       {
         "name": "Manila",
-        "region": "USA",
+        "region": "Utah",
         "distanceMiles": 37,
-        "lat": 40.9880142,
-        "lon": -109.722649
-      },
-      {
-        "name": "Lyman",
-        "region": "USA",
-        "distanceMiles": 38.3,
-        "lat": 41.327367,
-        "lon": -110.292835
+        "route": "UT-44",
+        "lat": 40.988,
+        "lon": -109.68
       }
     ],
     "photo": {
@@ -4187,8 +4204,9 @@
       }
     ],
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for the Telescope Peak Trail. Death Valley National Park entry fees apply; confirm Mahogany Flat road status."
   },
   {
     "id": "robson",
@@ -4969,7 +4987,7 @@
     "lat": -32.6532,
     "lon": -70.0109,
     "elevationFt": 22838,
-    "prominenceFt": 22841,
+    "prominenceFt": 22838,
     "range": "Andes",
     "country": "Argentina",
     "description": "The highest mountain in the Western Hemisphere, a non-technical but punishing Andes giant in Argentina.",
@@ -5662,19 +5680,20 @@
     "whyNotable": "Patagonia’s granite spire and a world-class alpine objective.",
     "seoMetaDescription": "Plan Cerro Fitz Roy: Elite big-wall — best Nov–Mar — Patagonian Andes, Santa Cruz — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Los Glaciares National Park mountain-use registration is mandatory for climbing and remote travel (free; El Chaltén visitor center or APN online form). Main day trails may have seasonal registration rules — confirm current APN guidance before you go."
   },
   {
     "id": "torres",
-    "name": "Torres del Paine",
+    "name": "Cerro Paine Grande",
     "lat": -50.9423,
     "lon": -72.9683,
-    "elevationFt": 9186,
-    "prominenceFt": 7339,
+    "elevationFt": 9462,
+    "prominenceFt": 7208,
     "range": "Patagonian Andes",
     "country": "Chile",
-    "description": "The famous granite towers of Torres del Paine National Park, a Patagonian landmark of rock and weather.",
+    "description": "The high point of the Cordillera Paine massif in Torres del Paine National Park, Chile — a serious Patagonian objective above the iconic granite towers.",
     "firstAscent": "1963 (Central Tower)",
     "difficulty": "Technical rock",
     "nearestTown": {
@@ -5756,10 +5775,11 @@
       }
     ],
     "aliases": [
-      "Torres del Paine"
+      "Torres del Paine",
+      "Paine Grande"
     ],
     "bestSeason": "Nov–Mar",
-    "whyNotable": "The famous towers that define Patagonian trekking.",
+    "whyNotable": "Highest summit in Torres del Paine National Park / Cordillera Paine — the famous towers sit nearby at lower elevations.",
     "seoMetaDescription": "Plan Torres del Paine: Technical rock — best Nov–Mar — Patagonian Andes, Magallanes — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
     "permitRequired": null,
@@ -8724,8 +8744,9 @@
     "whyNotable": "The world’s third-highest peak, sacred and rarely summited for years.",
     "seoMetaDescription": "Plan Kangchenjunga: High-altitude expedition — best Apr–May or Sep–Oct — Himalaya, Province 1 — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Nepal (and India-side where applicable) expedition / climbing permits required via a licensed operator. Restricted-area and park fees apply — confirm current Department of Tourism and operator rules."
   },
   {
     "id": "lhotse",
@@ -8849,8 +8870,9 @@
     "whyNotable": "Everest’s neighbor and the world’s fourth-highest mountain.",
     "seoMetaDescription": "Plan Lhotse: High-altitude expedition — best Apr–May or Sep–Oct — Mahalangur Himal, Solukhumbu — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Nepal or Tibet climbing permits via a licensed operator; Khumbu / Chinese agency fees and rules apply depending on route."
   },
   {
     "id": "makalu",
@@ -8974,8 +8996,9 @@
     "whyNotable": "A perfect pyramid and the world’s fifth-highest peak.",
     "seoMetaDescription": "Plan Makalu: High-altitude expedition — best Apr–May or Sep–Oct — Mahalangur Himal, Province 1 — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Nepal climbing permit via a licensed operator; Makalu-Barun National Park / conservation fees apply. Confirm current Department of Tourism rules."
   },
   {
     "id": "chooyu",
@@ -9093,8 +9116,9 @@
     "whyNotable": "Often called the most “accessible” 8,000er — still extreme altitude.",
     "seoMetaDescription": "Plan Cho Oyu: High-altitude expedition — best Apr–May or Sep–Oct — Mahalangur Himal, Tibet — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Nepal or Tibet climbing permits via a licensed operator depending on the approach; confirm current agency and border rules."
   },
   {
     "id": "dhaula",
@@ -9207,8 +9231,9 @@
     "whyNotable": "A vast white Himalayan wall and the world’s seventh-highest peak.",
     "seoMetaDescription": "Plan Dhaulagiri: High-altitude expedition — best Apr–May or Sep–Oct — Dhaulagiri Himal, Gandaki — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Nepal climbing permit via a licensed operator; Annapurna / Dhaulagiri conservation area fees typically apply."
   },
   {
     "id": "manaslu",
@@ -9332,8 +9357,9 @@
     "whyNotable": "The “mountain of the spirit,” Nepal’s classic 8,000er circuit peak.",
     "seoMetaDescription": "Plan Manaslu: High-altitude expedition — best Apr–May or Sep–Oct — Mansiri Himal, Gandaki — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Nepal climbing permit via a licensed operator; Manaslu Conservation Area / restricted-area permits apply for the approach."
   },
   {
     "id": "nanga",
@@ -9461,8 +9487,9 @@
     "whyNotable": "The western Himalaya’s killer mountain, famous for its Rupal Face.",
     "seoMetaDescription": "Plan Nanga Parbat: Extreme expedition — best Jun–Jul — Western Himalaya, Gilgit-Baltistan — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Pakistan expedition / climbing permit required through licensed channels (commonly coordinated with Alpine Club of Pakistan / tourism authorities). Confirm current Gilgit-Baltistan / Diamer rules."
   },
   {
     "id": "annapurna",
@@ -9575,8 +9602,9 @@
     "whyNotable": "First 8,000er climbed — still among the most dangerous.",
     "seoMetaDescription": "Plan Annapurna I: Extreme expedition — best Apr–May or Sep–Oct — Annapurna Himal, Gandaki — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Nepal climbing permit via a licensed operator; Annapurna Conservation Area Project (ACAP) fees apply for the approach."
   },
   {
     "id": "gasherbrum1",
@@ -9676,8 +9704,9 @@
     "whyNotable": "Karakoram 8,000er known as Hidden Peak.",
     "seoMetaDescription": "Plan Gasherbrum I: High-altitude expedition — best Jun–Aug — Karakoram, Gilgit-Baltistan — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Pakistan climbing permit required for Gasherbrum I via licensed operators and government channels; confirm current Alpine Club of Pakistan / tourism authority rules."
   },
   {
     "id": "broadpeak",
@@ -9777,8 +9806,9 @@
     "whyNotable": "A long summit ridge opposite K2 in the Karakoram.",
     "seoMetaDescription": "Plan Broad Peak: High-altitude expedition — best Jun–Aug — Karakoram, Gilgit-Baltistan — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Pakistan climbing permit required for Broad Peak via licensed operators and government channels; confirm current Alpine Club of Pakistan / tourism authority rules."
   },
   {
     "id": "gasherbrum2",
@@ -9863,8 +9893,9 @@
     "whyNotable": "Often the “friendliest” Karakoram 8,000er — still serious.",
     "seoMetaDescription": "Plan Gasherbrum II: High-altitude expedition — best Jun–Aug — Karakoram, Gilgit-Baltistan — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Pakistan climbing permit required for Gasherbrum II via licensed operators and government channels; confirm current Alpine Club of Pakistan / tourism authority rules."
   },
   {
     "id": "shishapangma",
@@ -10102,8 +10133,9 @@
     "whyNotable": "Nepal’s “Matterhorn” — the most photographed Himalayan spire.",
     "seoMetaDescription": "Plan Ama Dablam: Technical alpine — best Apr–May or Oct–Nov — Mahalangur Himal, Solukhumbu — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "alpine-technical",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Nepal climbing permit via a licensed operator; Sagarmatha National Park / Khumbu fees apply. Confirm current Department of Tourism peak fees."
   },
   {
     "id": "island",
@@ -10217,8 +10249,9 @@
     "whyNotable": "Classic Everest-region trekking peak and alpine intro.",
     "seoMetaDescription": "Plan Island Peak: Trekking peak — best Apr–May or Oct–Nov — Mahalangur Himal, Solukhumbu — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Nepal climbing / trekking-peak permit via a licensed operator; Sagarmatha National Park fees apply for the Island Peak (Imja Tse) approach."
   },
   {
     "id": "stok",
@@ -11809,10 +11842,10 @@
     "lat": 69.3083,
     "lon": 21.2833,
     "elevationFt": 4344,
-    "prominenceFt": 1683,
+    "prominenceFt": 0,
     "range": "Scandinavian Mountains",
     "country": "Finland/Norway",
-    "description": "Finland’s high point on the Norwegian border, a gentle fell summit on the edge of Scandinavian mountain terrain.",
+    "description": "Finland’s country high point on the Halti fell, marked on the Norwegian border. The independent summit (Ráisduottarháldi) is about a kilometre into Norway.",
     "firstAscent": "Historic",
     "difficulty": "Class 1 hike",
     "nearestTown": {
@@ -11911,11 +11944,12 @@
       "Haltitunturi"
     ],
     "bestSeason": "Jun–Sep",
-    "whyNotable": "Finland’s high point on the Norwegian border fells.",
+    "whyNotable": "Finland’s high point on the Norwegian border — a slope cairn (Hálditšohkka) with effectively zero topographic prominence; the taller Halti summit lies in Norway.",
     "seoMetaDescription": "Plan Halti: Class 1 hike — best Jun–Sep — Scandinavian Mountains, Lapland — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for the Finnish high-point walk; follow local trail and hut rules from Kilpisjärvi."
   },
   {
     "id": "musala",
@@ -13433,8 +13467,9 @@
       }
     ],
     "difficultyTier": "day-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Acadia National Park vehicle reservations are often required for Cadillac Summit Road in peak season. Hiking trails remain open without the summit-road reservation — confirm current NPS timed-entry rules."
   },
   {
     "id": "marcy",
@@ -14521,8 +14556,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit for La Luz / Sandia Crest approaches on Cibola National Forest. Sandia Peak Tram and Crest Highway have separate fees/hours."
   },
   {
     "id": "lonepeak",
@@ -15589,8 +15625,9 @@
       }
     ],
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Maroon Bells Scenic Area vehicle reservations / bus access apply in peak season for the Maroon Lake corridor. Overnight wilderness permits may also apply — confirm White River National Forest and Aspen-Sopris Ranger District rules."
   },
   {
     "id": "sneffels",
@@ -15658,8 +15695,9 @@
       }
     ],
     "difficultyTier": "scramble",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit on the standard South Slopes via Yankee Boy Basin. High-clearance / 4WD often needed for the upper basin road."
   },
   {
     "id": "uncompahgre",
@@ -15725,8 +15763,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit on the standard South Ridge via Nellie Creek. Check Uncompahgre National Forest road status (4WD often needed for the upper Nellie Creek road)."
   },
   {
     "id": "handies",
@@ -15998,8 +16037,9 @@
       }
     ],
     "difficultyTier": "strenuous-hike",
-    "permitRequired": null,
-    "permitStatus": "unsourced"
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Hawaii Volcanoes National Park entry applies. Overnight trips need wilderness camping permits; check NPS for Mauna Loa trail and road status after eruptions."
   },
   {
     "id": "haleakala",

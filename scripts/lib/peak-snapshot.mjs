@@ -5,6 +5,7 @@
 import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { listedTrailCount } from './curated-trail-counts.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..')
 const comparisons = JSON.parse(
@@ -70,7 +71,7 @@ function stagingShort(peak) {
 function metricsFor(peak) {
   const tier = resolveTier(peak.difficulty, peak.difficultyTier)
   const hotels = Array.isArray(peak.hotels) ? peak.hotels.length : 0
-  const trails = Array.isArray(peak.trails) ? peak.trails.length : 0
+  const trails = listedTrailCount(peak)
   return [
     { label: 'Elevation', value: formatFt(peak.elevationFt) },
     { label: 'Prominence', value: formatFt(peak.prominenceFt) },

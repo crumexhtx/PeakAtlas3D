@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useMemo } from 'react'
 import { peaksIndex } from '../data/catalog'
 import { formatDistance, formatElevation } from '../lib/geo'
 import { nearbyPeaksFor } from '../lib/nearbyPeaks'
@@ -13,7 +14,10 @@ type NearbyPeaksProps = {
 /** Internal links to 3–5 nearby summits for multi-peak trip planning + SEO. */
 export function NearbyPeaks({ peak }: NearbyPeaksProps) {
   const { units } = useUnits()
-  const nearby = nearbyPeaksFor(peak, peaksIndex, 5)
+  const nearby = useMemo(
+    () => nearbyPeaksFor(peak, peaksIndex, 5),
+    [peak],
+  )
   if (nearby.length === 0) return null
 
   return (

@@ -113,6 +113,13 @@ function createRandomWorldView() {
 
 const HERO_ZOOM = 11.55
 const HERO_PITCH = 40
+/** Flat globe / country overview — steep pitch is fine without DEM. */
+const FLAT_MAX_PITCH = 85
+/**
+ * With terrain exaggeration on, near-horizontal pitch (70–85°) exposes DEM
+ * LOD pops mid-orbit. Keep peak-mode max pitch in the stable band.
+ */
+const TERRAIN_MAX_PITCH = 62
 const HERO_BEARING = -28
 /** National park overview frame — wider than a summit hero; +20% vs prior 8.4. */
 const PARK_ZOOM = 10.1
@@ -217,19 +224,105 @@ export function AtlasMap({
   onCinematicChangeRef.current = onCinematicChange
   latestPeakIdRef.current = activePeak?.id ?? null
 
-  // Cap HiDPI canvas fill-rate on desktop + mobile via MapLibre pixelRatio.
-  const pixelRatio = useMemo(() => cappedPixelRatio(), [])
+  // Cap HiDPI canvas fill-rate — recompute when DPR / viewport width changes.
+  const [pixelRatio, setPixelRatio] = useState(() => cappedPixelRatio())
+
+  useEffect(() => {
+    const syncDpr = () => setPixelRatio(cappedPixelRatio())
+    syncDpr()
+    window.addEventListener('resize', syncDpr)
+    // Browser zoom / monitor DPI changes often fire this without a layout resize.
+    const mq = window.matchMedia(
+      `(resolution: ${window.devicePixelRatio || 1}dppx)`,
+    )
+    const onMq = () => syncDpr()
+    mq.addEventListener?.('change', onMq)
+    return () => {
+      window.removeEventListener('resize', syncDpr)
+      mq.removeEventListener?.('change', onMq)
+    }
+  }, [])
 
   useEffect(() => {
     const map = mapRef.current?.getMap()
-    if (!map || pixelRatio == null) return
+    if (!map) return
     try {
-      map.setPixelRatio?.(pixelRatio)
+      if (pixelRatio != null) map.setPixelRatio?.(pixelRatio)
+      else map.setPixelRatio?.(window.devicePixelRatio || 1)
       map.resize()
     } catch {
       // Map may not be ready yet; onLoad resize also picks up the capped DPR.
     }
   }, [pixelRatio])
+
+  // Keep the WebGL canvas resolution in sync with its CSS box.
+  const wrapRef = useRef<HTMLDivElement | null>(null)
+  useEffect(() => {
+    const wrap = wrapRef.current
+    const map = mapRef.current?.getMap()
+    if (!wrap || !map || typeof ResizeObserver === 'undefined') return
+    const ro = new ResizeObserver(() => {
+      try {
+        map.resize()
+      } catch {
+        // Ignore during teardown.
+      }
+    })
+    ro.observe(wrap)
+    return () => ro.disconnect()
+  }, [mapReady])
+
+  // WebGL context loss / restore + map error visibility.
+  const [mapFault, setMapFault] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (!mapReady) return
+    const map = getMap()
+    if (!map) return
+    const canvas = map.getCanvas()
+
+    const onLost = (e: Event) => {
+      e.preventDefault()
+      setMapFault('Map graphics were interrupted — reconnecting…')
+    }
+    const onRestored = () => {
+      try {
+        map.resize()
+        if (pixelRatio != null) map.setPixelRatio?.(pixelRatio)
+      } catch {
+        // ignore
+      }
+      setMapFault(null)
+    }
+    const onError = (e: { error?: Error; message?: string }) => {
+      const msg = e?.error?.message || e?.message || 'Map error'
+      console.warn('[AtlasMap]', msg, e)
+      // Only surface persistent-looking failures to the user.
+      if (/webgl|context|failed to initialize/i.test(msg)) {
+        setMapFault('Map failed to render. Try reloading the page.')
+      }
+    }
+
+    canvas.addEventListener('webglcontextlost', onLost)
+    canvas.addEventListener('webglcontextrestored', onRestored)
+    map.on('error', onError)
+    return () => {
+      canvas.removeEventListener('webglcontextlost', onLost)
+      canvas.removeEventListener('webglcontextrestored', onRestored)
+      map.off('error', onError)
+    }
+  }, [mapReady, pixelRatio])
+
+  function applyTerrainPitchClamp(map: MapLibreMap, terrainOn: boolean) {
+    try {
+      map.setMaxPitch(terrainOn ? TERRAIN_MAX_PITCH : FLAT_MAX_PITCH)
+      if (terrainOn && map.getPitch() > TERRAIN_MAX_PITCH) {
+        map.setPitch(TERRAIN_MAX_PITCH)
+      }
+    } catch {
+      // Older MapLibre builds may lack setMaxPitch.
+    }
+  }
 
   // Abort in-flight camera work when the map shell unmounts (About/Contact/etc).
   useEffect(() => {
@@ -389,6 +482,7 @@ export function AtlasMap({
     clearIdleTimer()
     try {
       map.setTerrain(null)
+      applyTerrainPitchClamp(map, false)
     } catch {
       // Style may be mid-swap after leaving a peak.
     }
@@ -618,6 +712,7 @@ export function AtlasMap({
       setOrbiting(false)
       setMapInteractive(map, true)
       map.setTerrain(null)
+      applyTerrainPitchClamp(map, false)
       onCinematicChangeRef.current({ active: false, status: '' })
       prevPeakIdRef.current = null
       return
@@ -666,6 +761,7 @@ export function AtlasMap({
           source: TERRAIN_SOURCE_ID,
           exaggeration: HERO_TERRAIN_EXAGGERATION,
         })
+        applyTerrainPitchClamp(map, true)
       } catch {
         // Source may still be attaching — fly without terrain.
       }
@@ -790,6 +886,7 @@ export function AtlasMap({
       source: TERRAIN_SOURCE_ID,
       exaggeration: HERO_TERRAIN_EXAGGERATION,
     })
+    applyTerrainPitchClamp(map, true)
     const skipFramePad = peakFramePadding()
     map.jumpTo({
       center: peakFramingCenter(
@@ -891,6 +988,7 @@ export function AtlasMap({
 
   return (
     <div
+      ref={wrapRef}
       className={`atlas-map-wrap${cinematic ? ' is-cinematic' : ''}${
         spinning ? ' is-spinning' : ''
       }`}
@@ -902,7 +1000,7 @@ export function AtlasMap({
         initialViewState={worldView}
         mapStyle={style}
         projection="globe"
-        maxPitch={85}
+        maxPitch={FLAT_MAX_PITCH}
         maxZoom={maxZoom}
         attributionControl={{ compact: true }}
         {...(pixelRatio != null ? { pixelRatio } : {})}
@@ -914,6 +1012,7 @@ export function AtlasMap({
             try {
               if (pixelRatio != null) map.setPixelRatio?.(pixelRatio)
               map.resize()
+              applyTerrainPitchClamp(map, false)
             } catch {
               // Ignore resize failures during early load.
             }
@@ -1022,6 +1121,12 @@ export function AtlasMap({
             {orbiting ? 'Stop orbit' : 'Orbit 360°'}
           </button>
         )}
+
+      {mapFault && (
+        <div className="map-fault-banner" role="status" aria-live="polite">
+          {mapFault}
+        </div>
+      )}
 
       {cinematic && (
         <div className="cinematic-overlay">
