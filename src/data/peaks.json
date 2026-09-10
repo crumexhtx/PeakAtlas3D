@@ -2299,6 +2299,356 @@
     "permitNotes": "Inyo National Forest wilderness permit with quota for the Whitney Zone (overnight and many day approaches). Reserve early; day-use rules change by season—confirm recreation.gov before you go."
   },
   {
+    "id": "split",
+    "name": "Split Mountain",
+    "lat": 37.0208,
+    "lon": -118.4223,
+    "elevationFt": 14058,
+    "prominenceFt": 1525,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "description": "Eastern Sierra 14er with a distinctive cleft summit — approached from the Owens Valley via Red Lake or from the west side wilderness.",
+    "firstAscent": "1902",
+    "difficulty": "Class 2–3 scramble",
+    "difficultyTier": "scramble",
+    "aliases": [
+      "South Palisade"
+    ],
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Iconic Eastside 14er silhouette and a classic Sierra scramble above Bishop / Big Pine country.",
+    "seoMetaDescription": "Explore Split Mountain on a 3D map — Sierra Nevada 14er topography, Red Lake approaches, and Owens Valley staging.",
+    "nearestTown": {
+      "name": "Big Pine",
+      "region": "California",
+      "distanceMiles": 18,
+      "route": "Glacier Lodge Rd / Red Lake",
+      "lat": 37.1649,
+      "lon": -118.2895
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Bishop",
+        "region": "California",
+        "distanceMiles": 30,
+        "route": "US-395",
+        "lat": 37.3635,
+        "lon": -118.3951
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Overnight trips need Inyo National Forest wilderness permits (quotas apply on popular trailheads). Day hikes may still need a wilderness permit depending on the entry zone — confirm current Inyo NF rules.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Big Pine cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Big Pine after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Split_Mountain.jpg/1280px-Split_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Jonathan Fox",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Split_Mountain.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Split_Mountain.jpg/1280px-Split_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Jonathan Fox",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Split_Mountain.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/View_from_Split_Mountain_%28919478688%29.jpg/1280px-View_from_Split_Mountain_%28919478688%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Jason Hollinger",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Split_Mountain_(919478688).jpg"
+      }
+    ]
+  },
+  {
+    "id": "russell",
+    "name": "Mount Russell",
+    "lat": 36.5919,
+    "lon": -118.2928,
+    "elevationFt": 14088,
+    "prominenceFt": 1086,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "description": "Neighboring Whitney 14er with a classic East Ridge scramble — approached from Whitney Portal / the Mountaineer’s Route corridor.",
+    "firstAscent": "1926",
+    "difficulty": "Class 3 scramble",
+    "difficultyTier": "scramble",
+    "aliases": [
+      "Mt. Russell"
+    ],
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "One of the Sierra’s finest Class 3 ridges and a classic companion peak to Mount Whitney.",
+    "seoMetaDescription": "Explore Mount Russell on a 3D map — Sierra Nevada 14er topography, East Ridge context, and Lone Pine / Whitney Portal staging.",
+    "nearestTown": {
+      "name": "Lone Pine",
+      "region": "California",
+      "distanceMiles": 13,
+      "route": "Whitney Portal Rd",
+      "lat": 36.606,
+      "lon": -118.063
+    },
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Inyo National Forest wilderness permits with Whitney Zone quotas apply for overnight and many day entries via Whitney Portal. Confirm current Inyo NF / Recreation.gov rules.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Lone Pine cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Lone Pine after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Mt_Russell.jpg/1280px-Mt_Russell.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Will Beback at en.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Russell.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Mt_Russell.jpg/1280px-Mt_Russell.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Will Beback at en.wikipedia",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Russell.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Russell_Offices_in_November_2006.jpg/1280px-Russell_Offices_in_November_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Nick-D",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Russell_Offices_in_November_2006.jpg"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Lone Pine",
+        "region": "California",
+        "distanceMiles": 13,
+        "route": "Whitney Portal Rd",
+        "lat": 36.606,
+        "lon": -118.063
+      }
+    ]
+  },
+  {
+    "id": "langley",
+    "name": "Mount Langley",
+    "lat": 36.5233,
+    "lon": -118.2392,
+    "elevationFt": 14026,
+    "prominenceFt": 1184,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "description": "Southernmost Sierra 14er — a Class 1–2 hike from Cottonwood Lakes / New Army Pass with big views of the Whitney Group.",
+    "firstAscent": "1871",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "day-hike",
+    "aliases": [
+      "Mt. Langley"
+    ],
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Often called the easiest Sierra 14er and the southern end of California’s fourteeners.",
+    "seoMetaDescription": "Explore Mount Langley on a 3D map — southern Sierra 14er topography, Cottonwood Lakes approaches, and Lone Pine staging.",
+    "nearestTown": {
+      "name": "Lone Pine",
+      "region": "California",
+      "distanceMiles": 18,
+      "route": "Horseshoe Meadow / Cottonwood",
+      "lat": 36.606,
+      "lon": -118.063
+    },
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Overnight trips need Inyo National Forest wilderness permits (Cottonwood Lakes / Cottonwood Pass quotas). Confirm current Inyo NF day-use and overnight rules.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Lone Pine cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Lone Pine after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Langley_Mount_-_Langley_Road_-_geograph.org.uk_-_1369548.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Betty Longbottom",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Langley_Mount_-_Langley_Road_-_geograph.org.uk_-_1369548.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Langley_Mount_-_Langley_Road_-_geograph.org.uk_-_1369548.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Betty Longbottom",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Langley_Mount_-_Langley_Road_-_geograph.org.uk_-_1369548.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Langley_Cloud_Kingdom_%283854812689%29.jpg/1280px-Langley_Cloud_Kingdom_%283854812689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Jeffrey Pang from Berkeley, CA, USA",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Langley_Cloud_Kingdom_(3854812689).jpg"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Lone Pine",
+        "region": "California",
+        "distanceMiles": 18,
+        "route": "Horseshoe Meadow / Cottonwood",
+        "lat": 36.606,
+        "lon": -118.063
+      }
+    ]
+  },
+  {
+    "id": "northpalisade",
+    "name": "North Palisade",
+    "lat": 37.0942,
+    "lon": -118.5144,
+    "elevationFt": 14242,
+    "prominenceFt": 2894,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "description": "Highest of the Palisades — a technical Sierra 14er above the Palisade Glacier with classic routes from Bishop and Big Pine.",
+    "firstAscent": "1903",
+    "difficulty": "Technical rock",
+    "difficultyTier": "alpine-technical",
+    "aliases": [
+      "North Pal"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Crown of the Palisades and one of the Sierra Nevada’s great technical 14ers.",
+    "seoMetaDescription": "Explore North Palisade on a 3D map — Sierra Palisades topography, glacier approaches, and Bishop / Big Pine staging.",
+    "nearestTown": {
+      "name": "Big Pine",
+      "region": "California",
+      "distanceMiles": 16,
+      "route": "Glacier Lodge Rd",
+      "lat": 37.1649,
+      "lon": -118.2895
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Bishop",
+        "region": "California",
+        "distanceMiles": 25,
+        "route": "US-395",
+        "lat": 37.3635,
+        "lon": -118.3951
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Inyo National Forest wilderness permits are required for overnight approaches (quotas on Bishop Pass / South Lake and related trailheads). Confirm current Inyo NF rules.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Big Pine cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Big Pine after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/North_Palisade_from_Windy_Point.jpg/1280px-North_Palisade_from_Windy_Point.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Ansel Adams",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Palisade_from_Windy_Point.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/North_Palisade_from_Windy_Point.jpg/1280px-North_Palisade_from_Windy_Point.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ansel Adams",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Palisade_from_Windy_Point.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Palisades_north_face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Justin.Johnsen (talk · contribs), on Flickr",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palisades_north_face.jpg"
+      }
+    ]
+  },
+  {
+    "id": "sill",
+    "name": "Mount Sill",
+    "lat": 37.0961,
+    "lon": -118.5025,
+    "elevationFt": 14153,
+    "prominenceFt": 353,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "description": "Palisades 14er famous for the Swiss Arete — a classic alpine rock climb above the Palisade Glacier near North Palisade.",
+    "firstAscent": "1903",
+    "difficulty": "Technical rock",
+    "difficultyTier": "alpine-technical",
+    "aliases": [
+      "Mt. Sill"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Home of the Swiss Arete — one of the Sierra’s most celebrated alpine rock routes.",
+    "seoMetaDescription": "Explore Mount Sill on a 3D map — Sierra Palisades topography, Swiss Arete context, and Big Pine staging.",
+    "nearestTown": {
+      "name": "Big Pine",
+      "region": "California",
+      "distanceMiles": 16,
+      "route": "Glacier Lodge Rd",
+      "lat": 37.1649,
+      "lon": -118.2895
+    },
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Inyo National Forest wilderness permits required for overnight Palisades approaches. Confirm current Inyo NF quota and trailhead rules.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Big Pine cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Big Pine after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Mt._Sill_Descent.jpg/1280px-Mt._Sill_Descent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Jonathan Fox",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Sill_Descent.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Mt._Sill_Descent.jpg/1280px-Mt._Sill_Descent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Jonathan Fox",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Sill_Descent.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Mount_Sill_cropped.jpg/1280px-Mount_Sill_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Jonathan Fox",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Sill_cropped.jpg"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Big Pine",
+        "region": "California",
+        "distanceMiles": 16,
+        "route": "Glacier Lodge Rd",
+        "lat": 37.1649,
+        "lon": -118.2895
+      }
+    ]
+  },
+  {
     "id": "whitemountain",
     "name": "White Mountain Peak",
     "lat": 37.6341,
@@ -6315,6 +6665,217 @@
     "permitRequired": false,
     "permitStatus": "not_required",
     "permitNotes": "No general government climbing permit for the Hörnli. Hut bookings, guide requirements, and seasonal route conditions are the practical constraints—confirm with Zermatt guides / hut staff."
+  },
+  {
+    "id": "dufourspitze",
+    "name": "Dufourspitze",
+    "lat": 45.9369,
+    "lon": 7.8668,
+    "elevationFt": 15203,
+    "prominenceFt": 7103,
+    "range": "Pennine Alps",
+    "country": "Switzerland/Italy",
+    "description": "Highest summit of Monte Rosa and Switzerland’s high point — a glaciated alpine climb above Zermatt and the Italian Macugnaga side.",
+    "firstAscent": "1855",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "aliases": [
+      "Monte Rosa",
+      "Monte Rosa Massif"
+    ],
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Highest peak in Switzerland and the Monte Rosa massif’s crowning summit.",
+    "seoMetaDescription": "Explore Dufourspitze on a 3D map — Monte Rosa / Swiss high-point topography, glacier approaches, and Zermatt staging.",
+    "nearestTown": {
+      "name": "Zermatt",
+      "region": "Valais",
+      "distanceMiles": 12,
+      "route": "Gornergrat / glacier approach",
+      "lat": 46.0207,
+      "lon": 7.7491
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Macugnaga",
+        "region": "Piedmont",
+        "distanceMiles": 14,
+        "route": "East face approaches",
+        "lat": 45.968,
+        "lon": 7.967
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general government climbing permit. Hut bookings, glacier skills, and seasonal route conditions are the practical constraints.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Zermatt cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Zermatt after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Dufourspitze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Konkord",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dufourspitze.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Dufourspitze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Konkord",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dufourspitze.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/MonteRosaWestseite_gesehenVomGornergrat.JPG/1280px-MonteRosaWestseite_gesehenVomGornergrat.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "TobiasBender",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MonteRosaWestseite_gesehenVomGornergrat.JPG"
+      }
+    ]
+  },
+  {
+    "id": "grandcombin",
+    "name": "Grand Combin",
+    "lat": 45.9375,
+    "lon": 7.2994,
+    "elevationFt": 14154,
+    "prominenceFt": 4964,
+    "range": "Pennine Alps",
+    "country": "Switzerland",
+    "description": "Major Valais 4000er west of the Grand Combin massif — glaciated alpine climbing above Bagnes / Verbier country.",
+    "firstAscent": "1859",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "aliases": [
+      "Combin de Grafeneire"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "One of the great Valais 4000-metre peaks and a classic Swiss glacier objective.",
+    "seoMetaDescription": "Explore Grand Combin on a 3D map — Valais Alps topography, glacier approaches, elevation stats, and Verbier / Bagnes staging.",
+    "nearestTown": {
+      "name": "Verbier",
+      "region": "Valais",
+      "distanceMiles": 14,
+      "route": "Val de Bagnes",
+      "lat": 46.0969,
+      "lon": 7.2286
+    },
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general climbing permit. Hut bookings and glacier travel skills apply on standard routes.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Verbier cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Verbier after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Grand_Combin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Sunna",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grand_Combin.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Grand_Combin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Sunna",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grand_Combin.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Grand_combin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Sideshowbob at German Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grand_combin.jpg"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Verbier",
+        "region": "Valais",
+        "distanceMiles": 14,
+        "route": "Val de Bagnes",
+        "lat": 46.0969,
+        "lon": 7.2286
+      }
+    ]
+  },
+  {
+    "id": "castor",
+    "name": "Castor",
+    "lat": 45.9222,
+    "lon": 7.7928,
+    "elevationFt": 13855,
+    "prominenceFt": 541,
+    "range": "Pennine Alps",
+    "country": "Switzerland/Italy",
+    "description": "Twin 4000er with Pollux on the Monte Rosa skyline — a popular glaciated traverse peak above Zermatt / Ayas.",
+    "firstAscent": "1861",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "aliases": [
+      "Castore"
+    ],
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Classic Monte Rosa 4000er often climbed with neighboring Pollux.",
+    "seoMetaDescription": "Explore Castor on a 3D map — Pennine Alps / Monte Rosa topography, glacier approaches, and Zermatt staging.",
+    "nearestTown": {
+      "name": "Zermatt",
+      "region": "Valais",
+      "distanceMiles": 10,
+      "route": "Klein Matterhorn / glacier",
+      "lat": 46.0207,
+      "lon": 7.7491
+    },
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general climbing permit. Hut and lift logistics plus glacier skills apply.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Zermatt cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Zermatt after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/PolluxCastor.jpg/1280px-PolluxCastor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "4000er",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PolluxCastor.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/PolluxCastor.jpg/1280px-PolluxCastor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "4000er",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:PolluxCastor.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Castor_Pollux.jpg/1280px-Castor_Pollux.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Alagna",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castor_Pollux.jpg"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Zermatt",
+        "region": "Valais",
+        "distanceMiles": 10,
+        "route": "Klein Matterhorn / glacier",
+        "lat": 46.0207,
+        "lon": 7.7491
+      }
+    ]
   },
   {
     "id": "jungfrau",
@@ -10945,6 +11506,148 @@
     "permitNotes": "No special government summit permit for Mount Yari. Follow Japanese alpine hut booking customs and seasonal trail guidance."
   },
   {
+    "id": "kinabalu",
+    "name": "Mount Kinabalu",
+    "lat": 6.075,
+    "lon": 116.558,
+    "elevationFt": 13435,
+    "prominenceFt": 13435,
+    "range": "Crocker Range",
+    "country": "Malaysia",
+    "description": "Highest peak in Malaysia and Borneo — a granite summit above Kinabalu Park with overnight hut approaches and a pre-dawn summit push.",
+    "firstAscent": "1851",
+    "difficulty": "Strenuous day / overnight",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Gunung Kinabalu",
+      "Kinabalu"
+    ],
+    "bestSeason": "Feb–Apr",
+    "whyNotable": "Borneo’s high point and one of Southeast Asia’s classic hut-to-summit climbs.",
+    "seoMetaDescription": "Explore Mount Kinabalu on a 3D map — Borneo’s highest summit, Kinabalu Park approaches, elevation stats, and Kota Kinabalu staging.",
+    "nearestTown": {
+      "name": "Kota Kinabalu",
+      "region": "Sabah",
+      "distanceMiles": 55,
+      "route": "Jalan Ranau",
+      "lat": 5.9804,
+      "lon": 116.0735
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Kundasang",
+        "region": "Sabah",
+        "distanceMiles": 12,
+        "route": "Park road",
+        "lat": 5.987,
+        "lon": 116.575
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Kinabalu Park climbing permits and hut bookings are required; climbs are arranged through licensed park operators. Confirm current Sabah Parks rules.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Kota Kinabalu cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Kota Kinabalu after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Kinabalu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Tony Jones",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Kinabalu.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Kinabalu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Tony Jones",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Kinabalu.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Gunung_Kinabalu.jpg/1280px-Gunung_Kinabalu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ariel Steiner, Israel",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gunung_Kinabalu.jpg"
+      }
+    ]
+  },
+  {
+    "id": "apo",
+    "name": "Mount Apo",
+    "lat": 6.9875,
+    "lon": 125.2717,
+    "elevationFt": 9692,
+    "prominenceFt": 9692,
+    "range": "Apo–Talomo",
+    "country": "Philippines",
+    "description": "Highest mountain in the Philippines — a forested volcanic massif above Davao / Cotabato with multi-day trek permits through Mount Apo Natural Park.",
+    "firstAscent": "1880",
+    "difficulty": "Strenuous day / overnight",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Apo",
+      "Mt. Apo"
+    ],
+    "bestSeason": "Mar–May",
+    "whyNotable": "Philippines high point and Mindanao’s iconic volcanic trek.",
+    "seoMetaDescription": "Explore Mount Apo on a 3D map — Philippines’ highest summit, Mount Apo Natural Park approaches, and Davao staging.",
+    "nearestTown": {
+      "name": "Davao City",
+      "region": "Davao del Sur",
+      "distanceMiles": 25,
+      "route": "Park trek trailheads",
+      "lat": 7.1907,
+      "lon": 125.4553
+    },
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Mount Apo Natural Park climbing / trekking permits are required and typically arranged through accredited local operators or park offices. Confirm current DENR / park rules.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Davao City cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Davao City after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Mount_Apo_from_air_%28Davao_City%3B_11-24-2021%29.jpg/1280px-Mount_Apo_from_air_%28Davao_City%3B_11-24-2021%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "patrickroque01",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Apo_from_air_(Davao_City;_11-24-2021).jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Mount_Apo_from_air_%28Davao_City%3B_11-24-2021%29.jpg/1280px-Mount_Apo_from_air_%28Davao_City%3B_11-24-2021%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "patrickroque01",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Apo_from_air_(Davao_City;_11-24-2021).jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Majestic_Mt_Apo.jpg/1280px-Majestic_Mt_Apo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Jdeligero24",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Majestic_Mt_Apo.jpg"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Davao City",
+        "region": "Davao del Sur",
+        "distanceMiles": 25,
+        "route": "Park trek trailheads",
+        "lat": 7.1907,
+        "lon": 125.4553
+      }
+    ]
+  },
+  {
     "id": "hallasan",
     "name": "Hallasan",
     "lat": 33.3617,
@@ -13096,6 +13799,77 @@
     "permitNotes": "Mount Sidley is in Antarctica; access requires national Antarctic program / IAATO-compliant expedition permits and logistics. Independent travel is not practical."
   },
   {
+    "id": "vinson",
+    "name": "Vinson Massif",
+    "lat": -78.5254,
+    "lon": -85.6171,
+    "elevationFt": 16050,
+    "prominenceFt": 16050,
+    "range": "Sentinel Range",
+    "country": "Antarctica",
+    "description": "Highest mountain in Antarctica — a remote Sentinel Range massif climbed via polar expedition logistics from Union Glacier.",
+    "firstAscent": "1966",
+    "difficulty": "Polar expedition",
+    "difficultyTier": "expedition",
+    "aliases": [
+      "Mount Vinson",
+      "Vinson"
+    ],
+    "bestSeason": "Nov–Jan",
+    "whyNotable": "Continent high point of Antarctica and a Seven Summits objective.",
+    "seoMetaDescription": "Explore Vinson Massif on a 3D map — Antarctica’s highest summit, Sentinel Range topography, and polar expedition context.",
+    "nearestTown": {
+      "name": "Union Glacier Camp",
+      "region": "Ellsworth Land",
+      "distanceMiles": 75,
+      "route": "Ski / flight logistics",
+      "lat": -79.76,
+      "lon": -82.85
+    },
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Antarctic expedition access requires national Antarctic program / IAATO-compliant operator logistics and permits. Independent travel is not practical.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Union Glacier Camp cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Union Glacier Camp after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/C78082s1_Ant.Map_Vinson_Massif.jpg/1280px-C78082s1_Ant.Map_Vinson_Massif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "United States Department of the Interior: Geological Survey",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:C78082s1_Ant.Map_Vinson_Massif.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/C78082s1_Ant.Map_Vinson_Massif.jpg/1280px-C78082s1_Ant.Map_Vinson_Massif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "United States Department of the Interior: Geological Survey",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:C78082s1_Ant.Map_Vinson_Massif.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Vinson-Map.jpg/1280px-Vinson-Map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "United States Department of the Interior: Geological Survey",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vinson-Map.jpg"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Union Glacier Camp",
+        "region": "Ellsworth Land",
+        "distanceMiles": 75,
+        "route": "Ski / flight logistics",
+        "lat": -79.76,
+        "lon": -82.85
+      }
+    ]
+  },
+  {
     "id": "mitchell",
     "name": "Mt. Mitchell",
     "lat": 35.7647,
@@ -14420,6 +15194,146 @@
     "permitNotes": "No special summit permit for Mount Timpanogos. Uinta-Wasatch-Cache National Forest trail and parking rules apply; expect heavy weekend use."
   },
   {
+    "id": "pfeifferhorn",
+    "name": "Pfeifferhorn",
+    "lat": 40.5336,
+    "lon": -111.7253,
+    "elevationFt": 11326,
+    "prominenceFt": 766,
+    "range": "Wasatch Range",
+    "country": "USA",
+    "description": "Classic Wasatch pyramid above Little Cottonwood Canyon — a popular scramble via Red Pine Lake with exposed Class 3 summit blocks.",
+    "firstAscent": "Unknown",
+    "difficulty": "Class 3 scramble",
+    "difficultyTier": "scramble",
+    "aliases": [
+      "Little Matterhorn"
+    ],
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "One of the Wasatch’s most recognizable alpine summits and a favorite Salt Lake scramble.",
+    "seoMetaDescription": "Explore Pfeifferhorn on a 3D map — Wasatch Range topography, Red Pine Lake approaches, and Little Cottonwood staging.",
+    "nearestTown": {
+      "name": "Alta",
+      "region": "Utah",
+      "distanceMiles": 6,
+      "route": "Little Cottonwood Canyon",
+      "lat": 40.5886,
+      "lon": -111.6372
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Salt Lake City",
+        "region": "Utah",
+        "distanceMiles": 25,
+        "route": "I-215 / SR-210",
+        "lat": 40.7608,
+        "lon": -111.891
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit. Uinta-Wasatch-Cache National Forest trailhead parking and wilderness rules apply.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Alta cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Alta after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Pfeifferhorn.jpg/1280px-Pfeifferhorn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Derrellwilliams",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pfeifferhorn.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Pfeifferhorn.jpg/1280px-Pfeifferhorn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Derrellwilliams",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pfeifferhorn.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/PfeifferhornNearRidge.JPG/1280px-PfeifferhornNearRidge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Itineranttrader",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:PfeifferhornNearRidge.JPG"
+      }
+    ]
+  },
+  {
+    "id": "nebo",
+    "name": "Mount Nebo",
+    "lat": 39.8219,
+    "lon": -111.7603,
+    "elevationFt": 11928,
+    "prominenceFt": 5486,
+    "range": "Wasatch Range",
+    "country": "USA",
+    "description": "Highest peak in the Wasatch Range — a long Class 2 ridge hike above Nephi / Payson with broad Utah Valley views.",
+    "firstAscent": "Unknown",
+    "difficulty": "Class 2 hike",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Mt. Nebo"
+    ],
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Wasatch Range high point and a classic central Utah prominence peak.",
+    "seoMetaDescription": "Explore Mount Nebo on a 3D map — Wasatch high-point topography, Nebo Bench approaches, and Nephi staging.",
+    "nearestTown": {
+      "name": "Nephi",
+      "region": "Utah",
+      "distanceMiles": 12,
+      "route": "Nebo Scenic Loop",
+      "lat": 39.7102,
+      "lon": -111.836
+    },
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit. Uinta-Wasatch-Cache National Forest road and trail status apply on the Nebo Scenic Loop approaches.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Nephi cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Nephi after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Mount_Nebo_Utah.jpg/1280px-Mount_Nebo_Utah.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "No machine-readable author provided. C.Maylett assumed (based on copyright cl…",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Nebo_Utah.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Mount_Nebo_Utah.jpg/1280px-Mount_Nebo_Utah.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "No machine-readable author provided. C.Maylett assumed (based on copyright cl…",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Nebo_Utah.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Mount_Nebo_BW_6.JPG/1280px-Mount_Nebo_BW_6.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Berthold Werner",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Nebo_BW_6.JPG"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Nephi",
+        "region": "Utah",
+        "distanceMiles": 12,
+        "route": "Nebo Scenic Loop",
+        "lat": 39.7102,
+        "lon": -111.836
+      }
+    ]
+  },
+  {
     "id": "wheeler",
     "name": "Wheeler Peak",
     "lat": 38.9859,
@@ -14493,6 +15407,77 @@
     "permitRequired": false,
     "permitStatus": "not_required",
     "permitNotes": "No special summit permit for Wheeler Peak in Great Basin National Park. Park entry fees apply; confirm seasonal road and trail status with NPS."
+  },
+  {
+    "id": "charleston",
+    "name": "Charleston Peak",
+    "lat": 36.2716,
+    "lon": -115.6958,
+    "elevationFt": 11916,
+    "prominenceFt": 8241,
+    "range": "Spring Mountains",
+    "country": "USA",
+    "description": "Highest peak in southern Nevada — a sky-island limestone summit above Las Vegas with popular South Loop and North Loop trails in the Spring Mountains.",
+    "firstAscent": "1844",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Mount Charleston",
+      "Charleston"
+    ],
+    "bestSeason": "May–Oct",
+    "whyNotable": "Southern Nevada’s high point and a classic Las Vegas day-hike skyline peak.",
+    "seoMetaDescription": "Explore Charleston Peak on a 3D map — Spring Mountains topography, South Loop trail context, elevation, and Las Vegas staging.",
+    "nearestTown": {
+      "name": "Mount Charleston",
+      "region": "Nevada",
+      "distanceMiles": 8,
+      "route": "Kyle Canyon Rd",
+      "lat": 36.2639,
+      "lon": -115.6411
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Las Vegas",
+        "region": "Nevada",
+        "distanceMiles": 35,
+        "route": "US-95 / Kyle Canyon",
+        "lat": 36.1699,
+        "lon": -115.1398
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit. Spring Mountains National Recreation Area trail and parking rules apply; overnight camping regulations may apply.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Mount Charleston cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Mount Charleston after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Mount_Charleston_vertical.jpg/1280px-Mount_Charleston_vertical.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Stan Shebs",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Charleston_vertical.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Mount_Charleston_vertical.jpg/1280px-Mount_Charleston_vertical.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Stan Shebs",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Charleston_vertical.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Mount_Charleston_from_Las_Vegas_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Stan Shebs",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Charleston_from_Las_Vegas_1.jpg"
+      }
+    ]
   },
   {
     "id": "wheelernm",
@@ -17243,6 +18228,76 @@
     ]
   },
   {
+    "id": "benmacdui",
+    "name": "Ben Macdui",
+    "lat": 57.0704,
+    "lon": -3.6691,
+    "elevationFt": 4295,
+    "prominenceFt": 3117,
+    "range": "Cairngorms",
+    "country": "United Kingdom",
+    "description": "Second-highest mountain in the UK — a high Cairngorm plateau summit above Aviemore with long approaches and serious winter navigation.",
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Beinn Macduibh"
+    ],
+    "bestSeason": "May–Sep",
+    "whyNotable": "Scotland’s #2 summit and the high point of the Cairngorm plateau.",
+    "seoMetaDescription": "Explore Ben Macdui on a 3D map — Cairngorms topography, plateau approaches, elevation stats, and Aviemore staging.",
+    "nearestTown": {
+      "name": "Aviemore",
+      "region": "Highland",
+      "distanceMiles": 12,
+      "route": "Cairngorm Mountain / Lairig Ghru",
+      "lat": 57.194,
+      "lon": -3.828
+    },
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit. Cairngorms National Park access rights apply; winter whiteouts make navigation committing.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Aviemore cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Aviemore after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Ben_Macdui.jpg/1280px-Ben_Macdui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Quensit53",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ben_Macdui.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Ben_Macdui.jpg/1280px-Ben_Macdui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Quensit53",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ben_Macdui.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Ben_Macdui_from_Derry_Cairngorm.jpg/1280px-Ben_Macdui_from_Derry_Cairngorm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Mick Knapton at English Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ben_Macdui_from_Derry_Cairngorm.jpg"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Aviemore",
+        "region": "Highland",
+        "distanceMiles": 12,
+        "route": "Cairngorm Mountain / Lairig Ghru",
+        "lat": 57.194,
+        "lon": -3.828
+      }
+    ]
+  },
+  {
     "id": "snowdon",
     "name": "Snowdon / Yr Wyddfa",
     "aliases": [
@@ -17359,6 +18414,145 @@
     ]
   },
   {
+    "id": "tryfan",
+    "name": "Tryfan",
+    "lat": 53.1147,
+    "lon": -4,
+    "elevationFt": 3010,
+    "prominenceFt": 1332,
+    "range": "Snowdonia",
+    "country": "United Kingdom",
+    "description": "Sharp Snowdonia ridge peak above Ogwen — famous for the North Ridge scramble and the Adam and Eve summit stones.",
+    "firstAscent": "Unknown",
+    "difficulty": "Class 3 scramble",
+    "difficultyTier": "scramble",
+    "aliases": [],
+    "bestSeason": "May–Sep",
+    "whyNotable": "One of Wales’s classic scrambles and a signature Ogwen Valley skyline peak.",
+    "seoMetaDescription": "Explore Tryfan on a 3D map — Snowdonia topography, North Ridge scramble context, and Ogwen staging.",
+    "nearestTown": {
+      "name": "Bethesda",
+      "region": "Gwynedd",
+      "distanceMiles": 6,
+      "route": "A5 / Ogwen",
+      "lat": 53.179,
+      "lon": -4.06
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Capel Curig",
+        "region": "Conwy",
+        "distanceMiles": 5,
+        "route": "A5",
+        "lat": 53.105,
+        "lon": -3.913
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit. Eryri / Snowdonia National Park access rules apply; the North Ridge is a real scramble in all seasons.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Bethesda cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Bethesda after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Tryfan.jpg/1280px-Tryfan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Photograph by Mike Peel (www.mikepeel.net).",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tryfan.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Tryfan.jpg/1280px-Tryfan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Photograph by Mike Peel (www.mikepeel.net).",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tryfan.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Mountain_goats_on_the_North_Ridge_of_Tryfan_-_geograph.org.uk_-_206610.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Doug Lee",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_goats_on_the_North_Ridge_of_Tryfan_-_geograph.org.uk_-_206610.jpg"
+      }
+    ]
+  },
+  {
+    "id": "cadairidris",
+    "name": "Cadair Idris",
+    "lat": 52.6994,
+    "lon": -3.9086,
+    "elevationFt": 2930,
+    "prominenceFt": 1995,
+    "range": "Snowdonia",
+    "country": "United Kingdom",
+    "description": "Southern Snowdonia massif above Dolgellau — popular Minffordd and Pony Path routes to Penygadair with glacial cwms and big coastal views.",
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Cader Idris",
+      "Penygadair"
+    ],
+    "bestSeason": "May–Sep",
+    "whyNotable": "Southern Snowdonia’s signature summit and one of Wales’s most popular mountain days outside Yr Wyddfa.",
+    "seoMetaDescription": "Explore Cadair Idris on a 3D map — Snowdonia topography, Minffordd Path approaches, and Dolgellau staging.",
+    "nearestTown": {
+      "name": "Dolgellau",
+      "region": "Gwynedd",
+      "distanceMiles": 4,
+      "route": "Minffordd / Pony Path",
+      "lat": 52.742,
+      "lon": -3.886
+    },
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit. Eryri / Snowdonia National Park parking and path rules apply on popular approaches.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Dolgellau cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Dolgellau after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Cadair_Idris.jpg/1280px-Cadair_Idris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Ellievking1",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cadair_Idris.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Cadair_Idris.jpg/1280px-Cadair_Idris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ellievking1",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cadair_Idris.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Cader_Idris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Christopher Williams",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cader_Idris.jpg"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Dolgellau",
+        "region": "Gwynedd",
+        "distanceMiles": 4,
+        "route": "Minffordd / Pony Path",
+        "lat": 52.742,
+        "lon": -3.886
+      }
+    ]
+  },
+  {
     "id": "scafellpike",
     "name": "Scafell Pike",
     "lat": 54.4542,
@@ -17467,6 +18661,74 @@
         "credit": "Ian Greig",
         "license": "CC BY-SA 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Gable_and_Scafell_Pike_-_geograph.org.uk_-_2518813.jpg"
+      }
+    ]
+  },
+  {
+    "id": "helvellyn",
+    "name": "Helvellyn",
+    "lat": 54.5269,
+    "lon": -3.0175,
+    "elevationFt": 3117,
+    "prominenceFt": 2339,
+    "range": "Lake District",
+    "country": "United Kingdom",
+    "description": "Third-highest mountain in England — famous for Striding Edge and Swirral Edge approaches above Glenridding and Thirlmere.",
+    "firstAscent": "Unknown",
+    "difficulty": "Class 2–3 scramble",
+    "difficultyTier": "scramble",
+    "aliases": [],
+    "bestSeason": "May–Sep",
+    "whyNotable": "Iconic Lake District ridge peak and one of England’s most popular mountain days.",
+    "seoMetaDescription": "Explore Helvellyn on a 3D map — Lake District topography, Striding Edge approaches, elevation stats, and Glenridding staging.",
+    "nearestTown": {
+      "name": "Glenridding",
+      "region": "Cumbria",
+      "distanceMiles": 3,
+      "route": "Striding Edge / Greenside",
+      "lat": 54.545,
+      "lon": -2.95
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Keswick",
+        "region": "Cumbria",
+        "distanceMiles": 10,
+        "route": "A66 / A591",
+        "lat": 54.601,
+        "lon": -3.137
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit. Lake District National Park access rules and Leave No Trace guidance apply; winter conditions can make Striding Edge serious.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Glenridding cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Glenridding after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Helvellyn%28SimonLedingham%29Dec2004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Simon Ledingham",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helvellyn(SimonLedingham)Dec2004.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Helvellyn%28SimonLedingham%29Dec2004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Simon Ledingham",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helvellyn(SimonLedingham)Dec2004.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Helvellyn_Striding_Edge_360_Panorama%2C_Lake_District_-_June_09.jpg/1280px-Helvellyn_Striding_Edge_360_Panorama%2C_Lake_District_-_June_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Diliff",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helvellyn_Striding_Edge_360_Panorama,_Lake_District_-_June_09.jpg"
       }
     ]
   },
@@ -17582,6 +18844,147 @@
         "credit": "Reeks District",
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carrauntoohil,_Beenkeragh_Ridge,_Caher.jpg"
+      }
+    ]
+  },
+  {
+    "id": "lugnaquilla",
+    "name": "Lugnaquilla",
+    "lat": 52.9658,
+    "lon": -6.4631,
+    "elevationFt": 3035,
+    "prominenceFt": 2749,
+    "range": "Wicklow Mountains",
+    "country": "Ireland",
+    "description": "Highest peak in Wicklow and Leinster — a broad plateau summit approached from Glenmalure or the Baravore / Fenton’s side.",
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Log na Coille"
+    ],
+    "bestSeason": "Apr–Oct",
+    "whyNotable": "Leinster high point and the classic Wicklow Mountains summit day from Dublin.",
+    "seoMetaDescription": "Explore Lugnaquilla on a 3D map — Wicklow Mountains topography, Glenmalure approaches, and elevation stats near Dublin.",
+    "nearestTown": {
+      "name": "Glendalough",
+      "region": "Wicklow",
+      "distanceMiles": 10,
+      "route": "Glenmalure",
+      "lat": 53.011,
+      "lon": -6.327
+    },
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit. Wicklow Mountains National Park / Coillte access and Leave No Trace guidance apply; some approaches cross military range land — check notices.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Glendalough cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Glendalough after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Lugnaquilla.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "MuTiN",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lugnaquilla.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Lugnaquilla.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "MuTiN",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lugnaquilla.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Lugnaquilla_from_Glenmalure.jpg/1280px-Lugnaquilla_from_Glenmalure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Joe King",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lugnaquilla_from_Glenmalure.jpg"
+      }
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Glendalough",
+        "region": "Wicklow",
+        "distanceMiles": 10,
+        "route": "Glenmalure",
+        "lat": 53.011,
+        "lon": -6.327
+      }
+    ]
+  },
+  {
+    "id": "brandon",
+    "name": "Mount Brandon",
+    "lat": 52.2353,
+    "lon": -10.2542,
+    "elevationFt": 3123,
+    "prominenceFt": 3123,
+    "range": "Dingle Peninsula",
+    "country": "Ireland",
+    "description": "Second-highest peak in Ireland — a coastal massif above the Dingle Peninsula with Pilgrim’s Path and Faha Ridge approaches.",
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Cnoc Bréanainn",
+      "Brandon Mountain"
+    ],
+    "bestSeason": "Apr–Oct",
+    "whyNotable": "Ireland’s #2 summit and a dramatic Atlantic pilgrimage mountain on the Dingle Peninsula.",
+    "seoMetaDescription": "Explore Mount Brandon on a 3D map — Dingle Peninsula topography, Pilgrim’s Path approaches, and elevation stats in County Kerry.",
+    "nearestTown": {
+      "name": "Dingle",
+      "region": "Kerry",
+      "distanceMiles": 8,
+      "route": "R559 / Cloghane",
+      "lat": 52.1409,
+      "lon": -10.268
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Cloghane",
+        "region": "Kerry",
+        "distanceMiles": 3,
+        "route": "Pilgrim’s Route",
+        "lat": 52.229,
+        "lon": -10.168
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No special summit permit. Respect private farmland access customs on the Dingle Peninsula and check weather — Atlantic conditions change fast.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Dingle cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Dingle after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Mount_Brandon.jpg/1280px-Mount_Brandon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Ingo Mehling",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Brandon.jpg"
+    },
+    "photos": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Mount_Brandon.jpg/1280px-Mount_Brandon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ingo Mehling",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Brandon.jpg"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/On_Pilgrim%27s_Path_to_Brandon_Mountain_-_geograph.org.uk_-_22557.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "JOHN MORELAND",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:On_Pilgrim%27s_Path_to_Brandon_Mountain_-_geograph.org.uk_-_22557.jpg"
       }
     ]
   },

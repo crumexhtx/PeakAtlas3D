@@ -299,6 +299,30 @@ const BY_PEAK: Record<string, PeakPlanningResource[]> = {
       kind: 'agency',
     },
   ],
+  kinabalu: [
+    {
+      label: 'Sabah Parks — Kinabalu Park',
+      note: 'Park climbing permits and hut booking context for Mount Kinabalu.',
+      url: 'https://www.sabahparks.org.my/',
+      kind: 'park',
+    },
+  ],
+  apo: [
+    {
+      label: 'Mount Apo Natural Park',
+      note: 'Philippines protected-area context for Mount Apo trek permits (confirm current DENR / local operator rules).',
+      url: 'https://www.denr.gov.ph/',
+      kind: 'agency',
+    },
+  ],
+  vinson: [
+    {
+      label: 'IAATO — Antarctic tourism',
+      note: 'Industry association context for Antarctic expedition access; Vinson climbs run through specialized polar operators.',
+      url: 'https://iaato.org/',
+      kind: 'agency',
+    },
+  ],
 }
 
 export function planningResourcesForPeak(

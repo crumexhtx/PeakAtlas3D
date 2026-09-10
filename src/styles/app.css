@@ -2774,8 +2774,8 @@ a.trail-bubble-label-link:focus-visible {
 
   .peak-overlay-panel .details-sheet.is-collapsed {
     width: fit-content;
-    /* Keep the tab clear of the top-center Orbit / Clear markers cluster. */
-    max-width: min(42vw, 11rem);
+    /* Top-right name card — Orbit / Clear markers stack on the left. */
+    max-width: min(52vw, 13.5rem);
     margin-left: auto;
     height: auto;
     max-height: none;
@@ -2816,17 +2816,25 @@ a.trail-bubble-label-link:focus-visible {
     height: auto;
   }
 
-  /* Top-center peak controls stay clear of side cards on phones. */
-  .peak-orbit-btn {
-    top: calc(0.55rem + var(--safe-top, 0px));
-    left: calc(50% - 0.25rem);
+  /* Peak controls: left stack under zoom — keeps Clear markers off the
+     top-right peak name card at ~375px widths. */
+  .map-stage.is-peak-mode .peak-orbit-btn {
+    top: calc(5.6rem + var(--safe-top, 0px));
+    left: calc(0.55rem + var(--safe-left, 0px));
+    transform: none;
     padding: 0.4rem 0.7rem;
     font-size: 0.76rem;
   }
 
-  .clear-markers-toggle {
-    top: calc(0.55rem + var(--safe-top, 0px));
-    left: calc(50% + 0.25rem);
+  .map-stage.is-peak-mode .clear-markers-toggle {
+    top: calc(7.95rem + var(--safe-top, 0px));
+    left: calc(0.55rem + var(--safe-left, 0px));
+    right: auto;
+  }
+
+  .peak-orbit-btn {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.76rem;
   }
 
   .details-sheet-chrome {
@@ -3137,9 +3145,9 @@ a.trail-bubble-label-link:focus-visible {
     width: min(280px, calc(100vw - 1rem - var(--safe-left) - var(--safe-right)));
   }
 
-  /* Shorter labels so the top-center cluster fits between the dossier tab. */
+  /* Compact control labels on narrow phones. */
   .clear-markers-toggle-label {
-    max-width: 5.5rem;
+    max-width: 6.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

@@ -102,4 +102,15 @@ describe('scheduleGlobeInit', () => {
     expect(start).not.toHaveBeenCalled()
     cancel()
   })
+
+  it('auto-starts sooner when eager on a constrained viewport', async () => {
+    stubBrowser(true)
+    const start = vi.fn()
+    const cancel = scheduleGlobeInit(start, { eager: true })
+    await new Promise((resolve) => setTimeout(resolve, 20))
+    expect(start).not.toHaveBeenCalled()
+    await new Promise((resolve) => setTimeout(resolve, 1_100))
+    expect(start).toHaveBeenCalledTimes(1)
+    cancel()
+  })
 })

@@ -13,6 +13,18 @@ const INTERACT_EVENTS = [
 /** Auto-start delay after paint on phones so MapLibre misses the TBT window. */
 export const CONSTRAINED_GLOBE_DELAY_MS = 5_500
 
+/** Shorter delay when the user already opened a peak / country map view. */
+export const EAGER_CONSTRAINED_GLOBE_DELAY_MS = 900
+
+export type ScheduleGlobeInitOptions = {
+  /**
+   * Prefer a short delay on phones (peak deep-links / country framing) so the
+   * globe does not sit on the spinner for ~10s. Home/world still uses the
+   * longer constrained delay for LCP/TBT.
+   */
+  eager?: boolean
+}
+
 /**
  * True on phones / low-end / Save-Data — delay WebGL until after `load` so
  * header/nav can paint without competing with MapLibre parse + globe init.
@@ -46,7 +58,10 @@ function whenIdle(fn: () => void, timeoutMs: number): () => void {
  * Constrained devices wait a few seconds after load so MapLibre is not on
  * the critical path for LCP / TBT.
  */
-export function scheduleGlobeInit(start: () => void): () => void {
+export function scheduleGlobeInit(
+  start: () => void,
+  options: ScheduleGlobeInitOptions = {},
+): () => void {
   let cancelled = false
   let started = false
   let raf1 = 0
@@ -55,6 +70,9 @@ export function scheduleGlobeInit(start: () => void): () => void {
   let delayId = 0
   let loadFallbackId = 0
   let onLoad: (() => void) | null = null
+  const constrainedDelayMs = options.eager
+    ? EAGER_CONSTRAINED_GLOBE_DELAY_MS
+    : CONSTRAINED_GLOBE_DELAY_MS
 
   const run = () => {
     if (cancelled || started) return
@@ -84,7 +102,7 @@ export function scheduleGlobeInit(start: () => void): () => void {
       window.clearTimeout(loadFallbackId)
       loadFallbackId = 0
     }
-    delayId = window.setTimeout(run, CONSTRAINED_GLOBE_DELAY_MS)
+    delayId = window.setTimeout(run, constrainedDelayMs)
   }
 
   for (const event of INTERACT_EVENTS) {

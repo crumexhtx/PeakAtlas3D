@@ -367,6 +367,7 @@ export function AtlasLayout() {
           }`}
         >
           <DeferredAtlasMap
+            eager={onPeakRoute || Boolean(selectedCountry)}
             peaks={mapPeaks}
             selectedCountry={selectedCountry}
             activePeak={activePeak}

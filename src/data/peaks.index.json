@@ -673,6 +673,136 @@
     }
   },
   {
+    "id": "split",
+    "name": "Split Mountain",
+    "lat": 37.0208,
+    "lon": -118.4223,
+    "elevationFt": 14058,
+    "prominenceFt": 1525,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "aliases": [
+      "South Palisade"
+    ],
+    "firstAscent": "1902",
+    "difficulty": "Class 2–3 scramble",
+    "difficultyTier": "scramble",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Iconic Eastside 14er silhouette and a classic Sierra scramble above Bishop / Big Pine country.",
+    "description": "Eastern Sierra 14er with a distinctive cleft summit — approached from the Owens Valley via Red Lake or from the west side wilderness.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Big Pine",
+      "region": "California",
+      "distanceMiles": 18
+    }
+  },
+  {
+    "id": "russell",
+    "name": "Mount Russell",
+    "lat": 36.5919,
+    "lon": -118.2928,
+    "elevationFt": 14088,
+    "prominenceFt": 1086,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "aliases": [
+      "Mt. Russell"
+    ],
+    "firstAscent": "1926",
+    "difficulty": "Class 3 scramble",
+    "difficultyTier": "scramble",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "One of the Sierra’s finest Class 3 ridges and a classic companion peak to Mount Whitney.",
+    "description": "Neighboring Whitney 14er with a classic East Ridge scramble — approached from Whitney Portal / the Mountaineer’s Route corridor.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Lone Pine",
+      "region": "California",
+      "distanceMiles": 13
+    }
+  },
+  {
+    "id": "langley",
+    "name": "Mount Langley",
+    "lat": 36.5233,
+    "lon": -118.2392,
+    "elevationFt": 14026,
+    "prominenceFt": 1184,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "aliases": [
+      "Mt. Langley"
+    ],
+    "firstAscent": "1871",
+    "difficulty": "Class 1–2 hike",
+    "difficultyTier": "day-hike",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Often called the easiest Sierra 14er and the southern end of California’s fourteeners.",
+    "description": "Southernmost Sierra 14er — a Class 1–2 hike from Cottonwood Lakes / New Army Pass with big views of the Whitney Group.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Lone Pine",
+      "region": "California",
+      "distanceMiles": 18
+    }
+  },
+  {
+    "id": "northpalisade",
+    "name": "North Palisade",
+    "lat": 37.0942,
+    "lon": -118.5144,
+    "elevationFt": 14242,
+    "prominenceFt": 2894,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "aliases": [
+      "North Pal"
+    ],
+    "firstAscent": "1903",
+    "difficulty": "Technical rock",
+    "difficultyTier": "alpine-technical",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Crown of the Palisades and one of the Sierra Nevada’s great technical 14ers.",
+    "description": "Highest of the Palisades — a technical Sierra 14er above the Palisade Glacier with classic routes from Bishop and Big Pine.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Big Pine",
+      "region": "California",
+      "distanceMiles": 16
+    }
+  },
+  {
+    "id": "sill",
+    "name": "Mount Sill",
+    "lat": 37.0961,
+    "lon": -118.5025,
+    "elevationFt": 14153,
+    "prominenceFt": 353,
+    "range": "Sierra Nevada",
+    "country": "USA",
+    "aliases": [
+      "Mt. Sill"
+    ],
+    "firstAscent": "1903",
+    "difficulty": "Technical rock",
+    "difficultyTier": "alpine-technical",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Home of the Swiss Arete — one of the Sierra’s most celebrated alpine rock routes.",
+    "description": "Palisades 14er famous for the Swiss Arete — a classic alpine rock climb above the Palisade Glacier near North Palisade.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Big Pine",
+      "region": "California",
+      "distanceMiles": 16
+    }
+  },
+  {
     "id": "whitemountain",
     "name": "White Mountain Peak",
     "lat": 37.6341,
@@ -1641,6 +1771,85 @@
       "name": "Zermatt",
       "region": "Valais",
       "distanceMiles": 6
+    }
+  },
+  {
+    "id": "dufourspitze",
+    "name": "Dufourspitze",
+    "lat": 45.9369,
+    "lon": 7.8668,
+    "elevationFt": 15203,
+    "prominenceFt": 7103,
+    "range": "Pennine Alps",
+    "country": "Switzerland/Italy",
+    "aliases": [
+      "Monte Rosa",
+      "Monte Rosa Massif"
+    ],
+    "firstAscent": "1855",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Highest peak in Switzerland and the Monte Rosa massif’s crowning summit.",
+    "description": "Highest summit of Monte Rosa and Switzerland’s high point — a glaciated alpine climb above Zermatt and the Italian Macugnaga side.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Zermatt",
+      "region": "Valais",
+      "distanceMiles": 12
+    }
+  },
+  {
+    "id": "grandcombin",
+    "name": "Grand Combin",
+    "lat": 45.9375,
+    "lon": 7.2994,
+    "elevationFt": 14154,
+    "prominenceFt": 4964,
+    "range": "Pennine Alps",
+    "country": "Switzerland",
+    "aliases": [
+      "Combin de Grafeneire"
+    ],
+    "firstAscent": "1859",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "One of the great Valais 4000-metre peaks and a classic Swiss glacier objective.",
+    "description": "Major Valais 4000er west of the Grand Combin massif — glaciated alpine climbing above Bagnes / Verbier country.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Verbier",
+      "region": "Valais",
+      "distanceMiles": 14
+    }
+  },
+  {
+    "id": "castor",
+    "name": "Castor",
+    "lat": 45.9222,
+    "lon": 7.7928,
+    "elevationFt": 13855,
+    "prominenceFt": 541,
+    "range": "Pennine Alps",
+    "country": "Switzerland/Italy",
+    "aliases": [
+      "Castore"
+    ],
+    "firstAscent": "1861",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Classic Monte Rosa 4000er often climbed with neighboring Pollux.",
+    "description": "Twin 4000er with Pollux on the Monte Rosa skyline — a popular glaciated traverse peak above Zermatt / Ayas.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Zermatt",
+      "region": "Valais",
+      "distanceMiles": 10
     }
   },
   {
@@ -2624,6 +2833,60 @@
     }
   },
   {
+    "id": "kinabalu",
+    "name": "Mount Kinabalu",
+    "lat": 6.075,
+    "lon": 116.558,
+    "elevationFt": 13435,
+    "prominenceFt": 13435,
+    "range": "Crocker Range",
+    "country": "Malaysia",
+    "aliases": [
+      "Gunung Kinabalu",
+      "Kinabalu"
+    ],
+    "firstAscent": "1851",
+    "difficulty": "Strenuous day / overnight",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Feb–Apr",
+    "whyNotable": "Borneo’s high point and one of Southeast Asia’s classic hut-to-summit climbs.",
+    "description": "Highest peak in Malaysia and Borneo — a granite summit above Kinabalu Park with overnight hut approaches and a pre-dawn summit push.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Kota Kinabalu",
+      "region": "Sabah",
+      "distanceMiles": 55
+    }
+  },
+  {
+    "id": "apo",
+    "name": "Mount Apo",
+    "lat": 6.9875,
+    "lon": 125.2717,
+    "elevationFt": 9692,
+    "prominenceFt": 9692,
+    "range": "Apo–Talomo",
+    "country": "Philippines",
+    "aliases": [
+      "Apo",
+      "Mt. Apo"
+    ],
+    "firstAscent": "1880",
+    "difficulty": "Strenuous day / overnight",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Mar–May",
+    "whyNotable": "Philippines high point and Mindanao’s iconic volcanic trek.",
+    "description": "Highest mountain in the Philippines — a forested volcanic massif above Davao / Cotabato with multi-day trek permits through Mount Apo Natural Park.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Davao City",
+      "region": "Davao del Sur",
+      "distanceMiles": 25
+    }
+  },
+  {
     "id": "hallasan",
     "name": "Hallasan",
     "lat": 33.3617,
@@ -3112,6 +3375,33 @@
     }
   },
   {
+    "id": "vinson",
+    "name": "Vinson Massif",
+    "lat": -78.5254,
+    "lon": -85.6171,
+    "elevationFt": 16050,
+    "prominenceFt": 16050,
+    "range": "Sentinel Range",
+    "country": "Antarctica",
+    "aliases": [
+      "Mount Vinson",
+      "Vinson"
+    ],
+    "firstAscent": "1966",
+    "difficulty": "Polar expedition",
+    "difficultyTier": "expedition",
+    "bestSeason": "Nov–Jan",
+    "whyNotable": "Continent high point of Antarctica and a Seven Summits objective.",
+    "description": "Highest mountain in Antarctica — a remote Sentinel Range massif climbed via polar expedition logistics from Union Glacier.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Union Glacier Camp",
+      "region": "Ellsworth Land",
+      "distanceMiles": 75
+    }
+  },
+  {
     "id": "mitchell",
     "name": "Mt. Mitchell",
     "lat": 35.7647,
@@ -3502,6 +3792,58 @@
     }
   },
   {
+    "id": "pfeifferhorn",
+    "name": "Pfeifferhorn",
+    "lat": 40.5336,
+    "lon": -111.7253,
+    "elevationFt": 11326,
+    "prominenceFt": 766,
+    "range": "Wasatch Range",
+    "country": "USA",
+    "aliases": [
+      "Little Matterhorn"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Class 3 scramble",
+    "difficultyTier": "scramble",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "One of the Wasatch’s most recognizable alpine summits and a favorite Salt Lake scramble.",
+    "description": "Classic Wasatch pyramid above Little Cottonwood Canyon — a popular scramble via Red Pine Lake with exposed Class 3 summit blocks.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Alta",
+      "region": "Utah",
+      "distanceMiles": 6
+    }
+  },
+  {
+    "id": "nebo",
+    "name": "Mount Nebo",
+    "lat": 39.8219,
+    "lon": -111.7603,
+    "elevationFt": 11928,
+    "prominenceFt": 5486,
+    "range": "Wasatch Range",
+    "country": "USA",
+    "aliases": [
+      "Mt. Nebo"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Class 2 hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Jun–Oct",
+    "whyNotable": "Wasatch Range high point and a classic central Utah prominence peak.",
+    "description": "Highest peak in the Wasatch Range — a long Class 2 ridge hike above Nephi / Payson with broad Utah Valley views.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Nephi",
+      "region": "Utah",
+      "distanceMiles": 12
+    }
+  },
+  {
     "id": "wheeler",
     "name": "Wheeler Peak",
     "lat": 38.9859,
@@ -3522,6 +3864,33 @@
       "name": "Baker",
       "region": "Nevada",
       "distanceMiles": 12
+    }
+  },
+  {
+    "id": "charleston",
+    "name": "Charleston Peak",
+    "lat": 36.2716,
+    "lon": -115.6958,
+    "elevationFt": 11916,
+    "prominenceFt": 8241,
+    "range": "Spring Mountains",
+    "country": "USA",
+    "aliases": [
+      "Mount Charleston",
+      "Charleston"
+    ],
+    "firstAscent": "1844",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Southern Nevada’s high point and a classic Las Vegas day-hike skyline peak.",
+    "description": "Highest peak in southern Nevada — a sky-island limestone summit above Las Vegas with popular South Loop and North Loop trails in the Spring Mountains.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Mount Charleston",
+      "region": "Nevada",
+      "distanceMiles": 8
     }
   },
   {
@@ -4217,6 +4586,32 @@
     }
   },
   {
+    "id": "benmacdui",
+    "name": "Ben Macdui",
+    "lat": 57.0704,
+    "lon": -3.6691,
+    "elevationFt": 4295,
+    "prominenceFt": 3117,
+    "range": "Cairngorms",
+    "country": "United Kingdom",
+    "aliases": [
+      "Beinn Macduibh"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Sep",
+    "whyNotable": "Scotland’s #2 summit and the high point of the Cairngorm plateau.",
+    "description": "Second-highest mountain in the UK — a high Cairngorm plateau summit above Aviemore with long approaches and serious winter navigation.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Aviemore",
+      "region": "Highland",
+      "distanceMiles": 12
+    }
+  },
+  {
     "id": "snowdon",
     "name": "Snowdon / Yr Wyddfa",
     "lat": 53.0685,
@@ -4239,6 +4634,56 @@
     "permitRequired": false,
     "nearestTown": {
       "name": "Llanberis",
+      "region": "Gwynedd",
+      "distanceMiles": 4
+    }
+  },
+  {
+    "id": "tryfan",
+    "name": "Tryfan",
+    "lat": 53.1147,
+    "lon": -4,
+    "elevationFt": 3010,
+    "prominenceFt": 1332,
+    "range": "Snowdonia",
+    "country": "United Kingdom",
+    "firstAscent": "Unknown",
+    "difficulty": "Class 3 scramble",
+    "difficultyTier": "scramble",
+    "bestSeason": "May–Sep",
+    "whyNotable": "One of Wales’s classic scrambles and a signature Ogwen Valley skyline peak.",
+    "description": "Sharp Snowdonia ridge peak above Ogwen — famous for the North Ridge scramble and the Adam and Eve summit stones.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Bethesda",
+      "region": "Gwynedd",
+      "distanceMiles": 6
+    }
+  },
+  {
+    "id": "cadairidris",
+    "name": "Cadair Idris",
+    "lat": 52.6994,
+    "lon": -3.9086,
+    "elevationFt": 2930,
+    "prominenceFt": 1995,
+    "range": "Snowdonia",
+    "country": "United Kingdom",
+    "aliases": [
+      "Cader Idris",
+      "Penygadair"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Sep",
+    "whyNotable": "Southern Snowdonia’s signature summit and one of Wales’s most popular mountain days outside Yr Wyddfa.",
+    "description": "Southern Snowdonia massif above Dolgellau — popular Minffordd and Pony Path routes to Penygadair with glacial cwms and big coastal views.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Dolgellau",
       "region": "Gwynedd",
       "distanceMiles": 4
     }
@@ -4267,6 +4712,29 @@
     }
   },
   {
+    "id": "helvellyn",
+    "name": "Helvellyn",
+    "lat": 54.5269,
+    "lon": -3.0175,
+    "elevationFt": 3117,
+    "prominenceFt": 2339,
+    "range": "Lake District",
+    "country": "United Kingdom",
+    "firstAscent": "Unknown",
+    "difficulty": "Class 2–3 scramble",
+    "difficultyTier": "scramble",
+    "bestSeason": "May–Sep",
+    "whyNotable": "Iconic Lake District ridge peak and one of England’s most popular mountain days.",
+    "description": "Third-highest mountain in England — famous for Striding Edge and Swirral Edge approaches above Glenridding and Thirlmere.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Glenridding",
+      "region": "Cumbria",
+      "distanceMiles": 3
+    }
+  },
+  {
     "id": "carrauntoohil",
     "name": "Carrauntoohil",
     "lat": 51.9994,
@@ -4290,6 +4758,59 @@
       "name": "Killarney",
       "region": "Kerry",
       "distanceMiles": 12
+    }
+  },
+  {
+    "id": "lugnaquilla",
+    "name": "Lugnaquilla",
+    "lat": 52.9658,
+    "lon": -6.4631,
+    "elevationFt": 3035,
+    "prominenceFt": 2749,
+    "range": "Wicklow Mountains",
+    "country": "Ireland",
+    "aliases": [
+      "Log na Coille"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Apr–Oct",
+    "whyNotable": "Leinster high point and the classic Wicklow Mountains summit day from Dublin.",
+    "description": "Highest peak in Wicklow and Leinster — a broad plateau summit approached from Glenmalure or the Baravore / Fenton’s side.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Glendalough",
+      "region": "Wicklow",
+      "distanceMiles": 10
+    }
+  },
+  {
+    "id": "brandon",
+    "name": "Mount Brandon",
+    "lat": 52.2353,
+    "lon": -10.2542,
+    "elevationFt": 3123,
+    "prominenceFt": 3123,
+    "range": "Dingle Peninsula",
+    "country": "Ireland",
+    "aliases": [
+      "Cnoc Bréanainn",
+      "Brandon Mountain"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Apr–Oct",
+    "whyNotable": "Ireland’s #2 summit and a dramatic Atlantic pilgrimage mountain on the Dingle Peninsula.",
+    "description": "Second-highest peak in Ireland — a coastal massif above the Dingle Peninsula with Pilgrim’s Path and Faha Ridge approaches.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Dingle",
+      "region": "Kerry",
+      "distanceMiles": 8
     }
   },
   {

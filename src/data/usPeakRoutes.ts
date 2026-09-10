@@ -1020,6 +1020,95 @@ export const US_PEAK_ROUTES: Record<string, UsPeakRoute[]> = {
       sourceHome: 'https://www.fs.usda.gov/r05/inyo',
     },
   ],
+  split: [
+    {
+      name: 'North Slope / Red Lake approach',
+      trailhead: 'Red Lake',
+      difficulty: 'Class 2–3 scramble',
+      standard: true,
+      sourceUrl: 'https://www.fs.usda.gov/r05/inyo',
+      sourceLabel: 'USFS',
+      sourceHome: 'https://www.fs.usda.gov/r05/inyo',
+    },
+  ],
+  russell: [
+    {
+      name: 'East Ridge',
+      trailhead: 'Whitney Portal / Russell-Carillon Col',
+      difficulty: 'Class 3 scramble',
+      standard: true,
+      note: 'Whitney Zone wilderness permit rules apply.',
+      sourceUrl: 'https://www.fs.usda.gov/r05/inyo',
+      sourceLabel: 'USFS',
+      sourceHome: 'https://www.fs.usda.gov/r05/inyo',
+    },
+  ],
+  langley: [
+    {
+      name: 'New Army Pass / Cottonwood Lakes',
+      trailhead: 'Cottonwood Lakes',
+      difficulty: 'Class 1–2 hike',
+      standard: true,
+      sourceUrl: 'https://www.fs.usda.gov/r05/inyo',
+      sourceLabel: 'USFS',
+      sourceHome: 'https://www.fs.usda.gov/r05/inyo',
+    },
+  ],
+  northpalisade: [
+    {
+      name: 'Palisade Glacier / U-Notch approaches',
+      trailhead: 'Glacier Lodge / Big Pine Creek',
+      difficulty: 'Technical rock / snow',
+      standard: true,
+      sourceUrl: 'https://www.fs.usda.gov/r05/inyo',
+      sourceLabel: 'USFS',
+      sourceHome: 'https://www.fs.usda.gov/r05/inyo',
+    },
+  ],
+  sill: [
+    {
+      name: 'Swiss Arete',
+      trailhead: 'Glacier Lodge / Palisade Glacier',
+      difficulty: 'Technical rock',
+      standard: true,
+      sourceUrl: 'https://www.fs.usda.gov/r05/inyo',
+      sourceLabel: 'USFS',
+      sourceHome: 'https://www.fs.usda.gov/r05/inyo',
+    },
+  ],
+  charleston: [
+    {
+      name: 'South Loop Trail',
+      trailhead: 'Cathedral Rock / Kyle Canyon',
+      difficulty: 'Strenuous day hike',
+      standard: true,
+      sourceUrl: 'https://www.fs.usda.gov/r04/htnf',
+      sourceLabel: 'USFS',
+      sourceHome: 'https://www.fs.usda.gov/r04/htnf',
+    },
+  ],
+  pfeifferhorn: [
+    {
+      name: 'Red Pine Lake / East Ridge',
+      trailhead: 'White Pine / Red Pine',
+      difficulty: 'Class 3 scramble',
+      standard: true,
+      sourceUrl: 'https://www.fs.usda.gov/r04/uwcnf',
+      sourceLabel: 'USFS',
+      sourceHome: 'https://www.fs.usda.gov/r04/uwcnf',
+    },
+  ],
+  nebo: [
+    {
+      name: 'North / South Nebo trails',
+      trailhead: 'Nebo Scenic Loop',
+      difficulty: 'Class 2 hike',
+      standard: true,
+      sourceUrl: 'https://www.fs.usda.gov/r04/uwcnf',
+      sourceLabel: 'USFS',
+      sourceHome: 'https://www.fs.usda.gov/r04/uwcnf',
+    },
+  ],
 }
 
 export function usPeakRoutesForPeak(peakId: string): UsPeakRoute[] {
