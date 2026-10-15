@@ -27,6 +27,7 @@ const index = peaks.map((peak) => {
     range: peak.range,
     country: peak.country,
   }
+  if (peak.adminRegion) row.adminRegion = peak.adminRegion
   if (Array.isArray(peak.aliases) && peak.aliases.length) {
     row.aliases = peak.aliases
   }

@@ -5,10 +5,15 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import {
+  fetchMatchingPhotos,
+  photoMatchesPeak,
+  resolveFileTitles,
+  slimPhoto,
+} from './lib/photo-match.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const peaksPath = join(root, 'src', 'data', 'peaks.json')
-const UA = 'PeakAtlas3D/0.3 (https://peakatlas3d.com; popular-peaks batch3)'
 
 const CURATED = {
   vinson: [
@@ -877,115 +882,32 @@ const NEW_PEAKS = [
   },
 ]
 
-async function fetchJson(url) {
-  const res = await fetch(url, {
-    headers: { 'User-Agent': UA, Accept: 'application/json' },
-  })
-  if (!res.ok) throw new Error(`${res.status} ${res.statusText}`)
-  return res.json()
-}
-
-function slimPhoto(ph) {
-  return {
-    url: ph.url,
-    credit: ph.credit,
-    license: ph.license,
-    sourceUrl: ph.sourceUrl,
-  }
-}
-
-function pageToPhoto(page) {
-  if (page.missing != null || page.invalid != null) return null
-  const info = page.imageinfo?.[0]
-  if (!info) return null
-  const mime = info.mime ?? ''
-  if (!mime.startsWith('image/') || mime.includes('svg')) return null
-  if ((info.width ?? 0) < 640 || (info.height ?? 0) < 400) return null
-  const meta = info.extmetadata ?? {}
-  const license = String(
-    meta.LicenseShortName?.value || meta.License?.value || 'Unknown',
-  ).replace(/<[^>]+>/g, '')
-  const artist = String(meta.Artist?.value || 'Unknown').replace(/<[^>]+>/g, '')
-  return {
-    url: info.thumburl || info.url,
-    credit: artist.length > 80 ? `${artist.slice(0, 77)}…` : artist,
-    license,
-    sourceUrl: info.descriptionurl || info.url,
-    title: page.title || '',
-  }
-}
-
-async function resolveFileTitles(titles) {
-  if (!titles.length) return []
-  const api =
-    `https://commons.wikimedia.org/w/api.php?action=query&format=json` +
-    `&titles=${titles.map(encodeURIComponent).join('|')}` +
-    `&prop=imageinfo&iiprop=url|extmetadata|size|mime&iiurlwidth=1280`
-  const data = await fetchJson(api)
-  const byTitle = new Map()
-  for (const page of Object.values(data?.query?.pages ?? {})) {
-    const photo = pageToPhoto(page)
-    if (photo) byTitle.set((page.title || '').toLowerCase(), photo)
-  }
-  return titles
-    .map((t) => byTitle.get(t.toLowerCase()))
-    .filter(Boolean)
-    .map(slimPhoto)
-}
-
-async function searchPhotos(query, limit = 10) {
-  const api =
-    `https://commons.wikimedia.org/w/api.php?action=query&format=json` +
-    `&generator=search&gsrnamespace=6&gsrsearch=${encodeURIComponent(query)}` +
-    `&gsrlimit=${limit}&prop=imageinfo&iiprop=url|extmetadata|size|mime&iiurlwidth=1280`
-  const data = await fetchJson(api)
-  return Object.values(data?.query?.pages ?? {})
-    .map(pageToPhoto)
-    .filter(Boolean)
-    .map(slimPhoto)
-}
-
-function matchesName(peak, photo) {
-  const hay =
-    `${photo.url} ${photo.sourceUrl} ${photo.title || ''} ${photo.credit}`.toLowerCase()
-  const tokens = [peak.name, peak.id, ...(peak.aliases || [])]
-    .join(' ')
-    .toLowerCase()
-    .replace(/[^a-z0-9\s]/g, ' ')
-    .split(/\s+/)
-    .filter(
-      (t) =>
-        t.length >= 4 &&
-        !['mount', 'peak', 'mountain', 'massif'].includes(t),
-    )
-  return tokens.some((t) => hay.includes(t))
-}
-
 async function photosFor(peak) {
   const curated = await resolveFileTitles(CURATED[peak.id] || [])
-  const out = [...curated]
+  const out = []
+  for (const ph of curated) {
+    const m = photoMatchesPeak(peak, ph, { slot: out.length })
+    if (!m.ok) {
+      console.warn(`  skip curated ${peak.id}: ${m.reason} (${ph.title || ph.url})`)
+      continue
+    }
+    out.push(slimPhoto(ph))
+  }
   if (out.length >= 2) return out.slice(0, 2)
 
-  const queries = [
-    `${peak.name} mountain`,
-    `${peak.name} ${peak.range}`,
-    `${peak.name}`,
-    ...(peak.aliases || []).map((a) => `${a} mountain`),
-  ]
-  for (const q of queries) {
-    if (out.length >= 2) break
-    try {
-      const found = await searchPhotos(q)
-      for (const ph of found) {
-        if (out.length >= 2) break
-        if (!matchesName(peak, ph)) continue
-        if (out.some((x) => x.url === ph.url)) continue
-        out.push(ph)
-      }
-    } catch (err) {
-      console.warn(`search failed ${peak.id}:`, err.message)
+  try {
+    const fetched = await fetchMatchingPhotos(
+      peak,
+      2,
+      new Set(out.map((p) => p.url.split('/').pop())),
+    )
+    for (const ph of fetched) {
+      if (out.length >= 2) break
+      if (out.some((x) => x.url === ph.url)) continue
+      out.push(slimPhoto(ph))
     }
-    await new Promise((r) => setTimeout(r, 300))
+  } catch (err) {
+    console.warn(`search failed ${peak.id}:`, err.message)
   }
   return out.slice(0, 2)
 }

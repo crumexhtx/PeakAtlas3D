@@ -9,15 +9,18 @@ const COUNTRY_LEVEL_REGIONS = new Set([
 ])
 
 /**
- * Subdivision / state / prefecture from nearest town (or first nearby place).
+ * Subdivision / state / prefecture for the summit.
+ * Prefers `adminRegion` (where the summit sits) over nearest-town region,
+ * which is wrong for border peaks (e.g. Boundary Peak / Bishop, CA).
  * Skips country-level placeholders like "USA".
  */
 export function peakRegion(
-  peak: Pick<PeakIndex, 'nearestTown'> & {
+  peak: Pick<PeakIndex, 'nearestTown' | 'adminRegion'> & {
     nearbyPlaces?: Array<{ region?: string }>
   },
 ): string | null {
   const candidates = [
+    peak.adminRegion,
     peak.nearestTown?.region,
     peak.nearbyPlaces?.[0]?.region,
   ]
@@ -35,7 +38,7 @@ export function peakRegion(
  * Human location for dossier + SEO, e.g. "Colorado, USA" or "Nepal".
  */
 export function peakLocationLabel(
-  peak: Pick<PeakIndex, 'country' | 'nearestTown'> & {
+  peak: Pick<PeakIndex, 'country' | 'nearestTown' | 'adminRegion'> & {
     nearbyPlaces?: Array<{ region?: string }>
   },
 ): string {

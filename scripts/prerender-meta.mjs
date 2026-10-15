@@ -55,6 +55,7 @@ function peakLocationLabel(peak) {
     'u.s.a.',
   ])
   const candidates = [
+    peak.adminRegion,
     peak.nearestTown?.region,
     peak.nearbyPlaces?.[0]?.region,
   ]

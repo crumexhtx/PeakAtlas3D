@@ -23,6 +23,7 @@
     "enrich:flagship": "node scripts/curate-flagship-peaks.mjs",
     "enrich:amenities": "node scripts/enrich-amenities.mjs",
     "enrich:lodging": "node scripts/enrich-lodging.mjs",
+    "enrich:admin-region": "node scripts/enrich-admin-region.mjs",
     "scrub:lodging": "node scripts/scrub-lodging.mjs",
     "fix:food-encoding": "node scripts/fix-food-encoding.mjs",
     "validate:photos": "node scripts/validate-fix-photos.mjs",

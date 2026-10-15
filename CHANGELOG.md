@@ -4,6 +4,12 @@ Product updates for [PeakAtlas3D](https://peakatlas3d.com). Newest first.
 
 Update this file when shipping notable changes (do not maintain an in-app releases page).
 
+## Unreleased
+
+- Catalog validator reports proximity duplicates, name/alias collisions, slug mismatches, and stale admin names (warnings until `--strict`)
+- Peak location prefers optional `adminRegion` (summit state/province) over nearest-town region
+- Photo matcher requires Commons geo (≤15 km) or an explicit allow-list; expanded reject patterns; `--check` stays offline and non-strict for CI
+
 ## 0.3.7 — 2026-08-01 — Faster satellite tiles
 
 One MapTiler satellite style for world and detail so country/peak/park entry no longer reloads the basemap and re-fetches a hybrid stack.

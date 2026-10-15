@@ -50,6 +50,11 @@ export type PeakIndex = {
   prominenceFt: number
   range: string
   country: string
+  /**
+   * State / province / region the **summit** is in (not the nearest town).
+   * Border summits use a combined form, e.g. `"Nevada/California"`.
+   */
+  adminRegion?: string
   /** Alternate / local names used in search. */
   aliases?: string[]
   /** Year of first recorded ascent, or descriptive note when unknown. */

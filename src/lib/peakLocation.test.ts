@@ -28,4 +28,31 @@ describe('peakLocationLabel', () => {
   it('falls back to country only', () => {
     expect(peakLocationLabel({ country: 'Nepal' })).toBe('Nepal')
   })
+
+  it('prefers summit adminRegion over nearest-town state (Boundary Peak)', () => {
+    expect(
+      peakLocationLabel({
+        country: 'USA',
+        adminRegion: 'Nevada',
+        nearestTown: {
+          name: 'Bishop',
+          region: 'California',
+          distanceMiles: 30,
+        },
+      }),
+    ).toBe('Nevada, USA')
+  })
+
+  it('falls back to nearest-town region when adminRegion is missing', () => {
+    expect(
+      peakLocationLabel({
+        country: 'USA',
+        nearestTown: {
+          name: 'Bishop',
+          region: 'California',
+          distanceMiles: 30,
+        },
+      }),
+    ).toBe('California, USA')
+  })
 })

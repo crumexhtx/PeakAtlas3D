@@ -35,3 +35,4 @@ dist-ssr
 # Script scratch output
 /tmp-photo-check/
 src/data/peaks.photos.backup.json
+scripts/.cache/

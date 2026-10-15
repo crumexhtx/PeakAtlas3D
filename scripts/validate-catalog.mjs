@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url'
 import {
   checkProminencePlausible,
   checkTownDistancePlausible,
+  collectCatalogIssues,
 } from './lib/catalog-plausibility.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
@@ -63,6 +64,8 @@ function assertAmenity(item, label) {
   if (item.lat != null && !isFiniteNumber(item.lat)) fail(`${label}.lat`)
   if (item.lon != null && !isFiniteNumber(item.lon)) fail(`${label}.lon`)
 }
+
+const strictIssues = process.argv.includes('--strict')
 
 const raw = readFileSync(peaksPath, 'utf8')
 let peaks
@@ -179,6 +182,30 @@ for (let i = 0; i < peaks.length; i++) {
 }
 
 console.log(`catalog ok: ${peaks.length} peaks, ${ids.size} unique ids`)
+
+{
+  const { warnings, errors } = collectCatalogIssues(peaks)
+  const extra = [...errors, ...warnings]
+  if (errors.length) {
+    console.log(`catalog issue errors (${errors.length}):`)
+    for (const line of errors) console.log(`- ${line}`)
+  }
+  if (warnings.length) {
+    console.log(`catalog issue warnings (${warnings.length}):`)
+    for (const line of warnings) console.log(`- ${line}`)
+  }
+  if (!extra.length) {
+    console.log('catalog issues: none')
+  } else if (strictIssues) {
+    fail(
+      `${errors.length} error(s), ${warnings.length} warning(s) (strict mode)`,
+    )
+  } else {
+    console.log(
+      'catalog issues are warnings until --strict (promote after catalog fixes)',
+    )
+  }
+}
 
 // --- National parks catalog (separate from peaks) ---
 const parksPath = join(root, 'src', 'data', 'nationalParks.json')
