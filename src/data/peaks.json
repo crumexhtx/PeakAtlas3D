@@ -2740,7 +2740,7 @@
     "difficulty": "Class 2 scramble",
     "bestSeason": "Jun–Oct",
     "whyNotable": "Highest peak in Nevada; sits on the California–Nevada border crest.",
-    "seoMetaDescription": "Plan Boundary Peak: Class 2 scramble — best Jun–Oct — White Mountains, California — trip notes and 3D terrain on PeakAtlas3D.",
+    "seoMetaDescription": "Plan Boundary Peak: Class 2 scramble — best Jun–Oct — White Mountains, Nevada — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Bishop",
       "region": "California",
@@ -2799,7 +2799,8 @@
     "difficultyTier": "scramble",
     "permitRequired": false,
     "permitStatus": "not_required",
-    "permitNotes": "No special summit permit on standard approaches; stay on public land and check seasonal road access."
+    "permitNotes": "No special summit permit on standard approaches; stay on public land and check seasonal road access.",
+    "adminRegion": "Nevada"
   },
   {
     "id": "halfdome",
@@ -6667,77 +6668,6 @@
     "permitNotes": "No general government climbing permit for the Hörnli. Hut bookings, guide requirements, and seasonal route conditions are the practical constraints—confirm with Zermatt guides / hut staff."
   },
   {
-    "id": "dufourspitze",
-    "name": "Dufourspitze",
-    "lat": 45.9369,
-    "lon": 7.8668,
-    "elevationFt": 15203,
-    "prominenceFt": 7103,
-    "range": "Pennine Alps",
-    "country": "Switzerland/Italy",
-    "description": "Highest summit of Monte Rosa and Switzerland’s high point — a glaciated alpine climb above Zermatt and the Italian Macugnaga side.",
-    "firstAscent": "1855",
-    "difficulty": "Alpine glacier",
-    "difficultyTier": "snow-glacier",
-    "aliases": [
-      "Monte Rosa",
-      "Monte Rosa Massif"
-    ],
-    "bestSeason": "Jul–Sep",
-    "whyNotable": "Highest peak in Switzerland and the Monte Rosa massif’s crowning summit.",
-    "seoMetaDescription": "Explore Dufourspitze on a 3D map — Monte Rosa / Swiss high-point topography, glacier approaches, and Zermatt staging.",
-    "nearestTown": {
-      "name": "Zermatt",
-      "region": "Valais",
-      "distanceMiles": 12,
-      "route": "Gornergrat / glacier approach",
-      "lat": 46.0207,
-      "lon": 7.7491
-    },
-    "nearbyPlaces": [
-      {
-        "name": "Macugnaga",
-        "region": "Piedmont",
-        "distanceMiles": 14,
-        "route": "East face approaches",
-        "lat": 45.968,
-        "lon": 7.967
-      }
-    ],
-    "permitRequired": false,
-    "permitStatus": "not_required",
-    "permitNotes": "No general government climbing permit. Hut bookings, glacier skills, and seasonal route conditions are the practical constraints.",
-    "hotels": [],
-    "food": [
-      {
-        "name": "Zermatt cafés",
-        "category": "Restaurant",
-        "note": "Easy refuel in Zermatt after the summit."
-      }
-    ],
-    "trails": [],
-    "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Dufourspitze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "credit": "Konkord",
-      "license": "CC BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dufourspitze.jpg"
-    },
-    "photos": [
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Dufourspitze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "credit": "Konkord",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dufourspitze.jpg"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/MonteRosaWestseite_gesehenVomGornergrat.JPG/1280px-MonteRosaWestseite_gesehenVomGornergrat.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "credit": "TobiasBender",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MonteRosaWestseite_gesehenVomGornergrat.JPG"
-      }
-    ]
-  },
-  {
     "id": "grandcombin",
     "name": "Grand Combin",
     "lat": 45.9375,
@@ -7475,7 +7405,8 @@
       }
     ],
     "aliases": [
-      "Ortler"
+      "Ortler",
+      "Ortles"
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Highest peak in the Eastern Alps outside the Bernina.",
@@ -8996,7 +8927,7 @@
     "lat": 27.9881,
     "lon": 86.925,
     "elevationFt": 29032,
-    "prominenceFt": 29029,
+    "prominenceFt": 29032,
     "range": "Mahalangur Himal",
     "country": "Nepal/China",
     "description": "Everest is a commercialized high-altitude expedition on the Nepal or Tibet side. Success depends on permits, a licensed operator, weather windows, and prior 8000 m experience more than summit-day fitness alone. Stage through Namche / Base Camp on the south side; budget for multiple agency fees and long logistics chains.",
@@ -9237,7 +9168,7 @@
     "difficulty": "High-altitude expedition",
     "nearestTown": {
       "name": "Taplejung",
-      "region": "Province 1",
+      "region": "Koshi Province",
       "distanceMiles": 45,
       "route": "Mechi Hwy",
       "lat": 27.35,
@@ -9300,7 +9231,7 @@
     "nearbyPlaces": [
       {
         "name": "Taplejung",
-        "region": "Province 1",
+        "region": "Koshi Province",
         "distanceMiles": 45,
         "route": "Mechi Hwy",
         "lat": 27.35,
@@ -9346,11 +9277,12 @@
     ],
     "bestSeason": "Apr–May or Sep–Oct",
     "whyNotable": "The world’s third-highest peak, sacred and rarely summited for years.",
-    "seoMetaDescription": "Plan Kangchenjunga: High-altitude expedition — best Apr–May or Sep–Oct — Himalaya, Province 1 — trip notes and 3D terrain on PeakAtlas3D.",
+    "seoMetaDescription": "Plan Kangchenjunga: High-altitude expedition — best Apr–May or Sep–Oct — Himalaya, Koshi Province — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
     "permitRequired": true,
     "permitStatus": "required",
-    "permitNotes": "Nepal (and India-side where applicable) expedition / climbing permits required via a licensed operator. Restricted-area and park fees apply — confirm current Department of Tourism and operator rules."
+    "permitNotes": "Nepal (and India-side where applicable) expedition / climbing permits required via a licensed operator. Restricted-area and park fees apply — confirm current Department of Tourism and operator rules.",
+    "adminRegion": "Koshi Province"
   },
   {
     "id": "lhotse",
@@ -9492,7 +9424,7 @@
     "difficulty": "High-altitude expedition",
     "nearestTown": {
       "name": "Khandbari",
-      "region": "Province 1",
+      "region": "Koshi Province",
       "distanceMiles": 50,
       "route": "Arun Valley",
       "lat": 27.37,
@@ -9555,7 +9487,7 @@
     "nearbyPlaces": [
       {
         "name": "Khandbari",
-        "region": "Province 1",
+        "region": "Koshi Province",
         "distanceMiles": 50,
         "route": "Arun Valley",
         "lat": 27.37,
@@ -9598,11 +9530,12 @@
     ],
     "bestSeason": "Apr–May or Sep–Oct",
     "whyNotable": "A perfect pyramid and the world’s fifth-highest peak.",
-    "seoMetaDescription": "Plan Makalu: High-altitude expedition — best Apr–May or Sep–Oct — Mahalangur Himal, Province 1 — trip notes and 3D terrain on PeakAtlas3D.",
+    "seoMetaDescription": "Plan Makalu: High-altitude expedition — best Apr–May or Sep–Oct — Mahalangur Himal, Koshi Province — trip notes and 3D terrain on PeakAtlas3D.",
     "difficultyTier": "expedition",
     "permitRequired": true,
     "permitStatus": "required",
-    "permitNotes": "Nepal climbing permit via a licensed operator; Makalu-Barun National Park / conservation fees apply. Confirm current Department of Tourism rules."
+    "permitNotes": "Nepal climbing permit via a licensed operator; Makalu-Barun National Park / conservation fees apply. Confirm current Department of Tourism rules.",
+    "adminRegion": "Koshi Province"
   },
   {
     "id": "chooyu",
@@ -12256,8 +12189,8 @@
   {
     "id": "townsend",
     "name": "Mt. Townsend",
-    "lat": -36.45,
-    "lon": 148.27,
+    "lat": -36.4222,
+    "lon": 148.2447,
     "elevationFt": 7242,
     "prominenceFt": 1893,
     "range": "Snowy Mountains",
@@ -13170,7 +13103,7 @@
     "permitNotes": "A summit access permit is required for Pico del Teide (PNT 10 Telesforo Bravo) above the cable-car top station. Book via Tenerife ON before you go; park rules and any current eco-fee apply."
   },
   {
-    "id": "citlaltepetl",
+    "id": "iztaccihuatl",
     "name": "Iztaccíhuatl",
     "lat": 19.1789,
     "lon": -98.6417,
@@ -13274,12 +13207,12 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iztacc%C3%ADhuatl_desde_una_autopista_en_el_Estado_de_M%C3%A9xico_04.jpg"
     },
     "aliases": [
-      "Pico de Orizaba",
-      "Citlaltépetl"
+      "Iztaccihuatl",
+      "Sleeping Woman"
     ],
     "bestSeason": "Nov–Mar",
-    "whyNotable": "Alternate atlas entry for Mexico’s great ice volcano.",
-    "seoMetaDescription": "Plan Iztaccíhuatl: Snow / glacier climb — best Nov–Mar — Trans-Mexican Volcanic Belt, Mexico State — trip notes and 3D terrain on PeakAtlas3D.",
+    "whyNotable": "Mexico’s third-highest peak — the “White Woman” volcano beside Popocatépetl.",
+    "seoMetaDescription": "Plan Iztaccíhuatl: snow/glacier ridge beside Popocatépetl — best Nov–Mar — Trans-Mexican Volcanic Belt, 3D terrain on PeakAtlas3D.",
     "difficultyTier": "snow-glacier",
     "permitRequired": true,
     "permitStatus": "required",
@@ -13625,93 +13558,6 @@
     "permitNotes": "Huayna Potosí approaches typically involve local community / refuge fees near Zongo Pass. Confirm current access rules; glacier travel experience or a guide is strongly advised."
   },
   {
-    "id": "rittenhouse",
-    "name": "Mt. Vinson",
-    "lat": -78.5254,
-    "lon": -85.6171,
-    "elevationFt": 16050,
-    "prominenceFt": 16050,
-    "range": "Ellsworth Mountains",
-    "country": "Antarctica",
-    "description": "Mount Vinson, Antarctica’s high point in the Ellsworth Mountains, a remote polar expedition objective.",
-    "firstAscent": "1966",
-    "difficulty": "Polar expedition",
-    "nearestTown": {
-      "name": "Union Glacier Camp",
-      "region": "Antarctica",
-      "distanceMiles": 75,
-      "route": "Ski traverse",
-      "lat": -79.77,
-      "lon": -82.85
-    },
-    "hotels": [],
-    "food": [
-      {
-        "name": "Camp Mess Tent",
-        "category": "Restaurant",
-        "note": "Solid post-summit meal in Union Glacier Camp."
-      },
-      {
-        "name": "Base Camp Kitchen",
-        "category": "Restaurant",
-        "note": "Local favorite after days on Ellsworth Mountains."
-      },
-      {
-        "name": "Field Rations",
-        "category": "Restaurant",
-        "note": "Easy refuel between approaches and rest days."
-      }
-    ],
-    "trails": [
-      {
-        "name": "Normal Route"
-      },
-      {
-        "name": "East Face"
-      }
-    ],
-    "nearbyPlaces": [
-      {
-        "name": "Union Glacier Camp",
-        "region": "Antarctica",
-        "distanceMiles": 75,
-        "route": "Ski traverse",
-        "lat": -79.77,
-        "lon": -82.85
-      }
-    ],
-    "photos": [
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Vinson_Massif_from_space.jpg/960px-Vinson_Massif_from_space.jpg",
-        "credit": "NASA",
-        "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vinson_Massif_from_space.jpg"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Vinson_Massif-_Antarctica%E2%80%99s_highest_peak_%28Copernicus_2026-02-28%29.png/960px-Vinson_Massif-_Antarctica%E2%80%99s_highest_peak_%28Copernicus_2026-02-28%29.png",
-        "credit": "European Union, Copernicus Sentinel-2 imagery",
-        "license": "Attribution",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vinson_Massif-_Antarctica%E2%80%99s_highest_peak_(Copernicus_2026-02-28).png"
-      }
-    ],
-    "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Vinson_Massif_from_space.jpg/960px-Vinson_Massif_from_space.jpg",
-      "credit": "NASA",
-      "license": "Public domain",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vinson_Massif_from_space.jpg"
-    },
-    "aliases": [
-      "Mount Vinson"
-    ],
-    "bestSeason": "Nov–Jan",
-    "whyNotable": "Antarctica’s high point and a Seven Summits objective.",
-    "seoMetaDescription": "Plan Mt. Vinson: Polar expedition — best Nov–Jan — Ellsworth Mountains, Antarctica — trip notes and 3D terrain on PeakAtlas3D.",
-    "difficultyTier": "expedition",
-    "permitRequired": true,
-    "permitStatus": "required",
-    "permitNotes": "Antarctic logistics via authorized operator; IAATO / national program rules apply."
-  },
-  {
     "id": "sidley",
     "name": "Mt. Sidley",
     "lat": -77.0333,
@@ -13800,7 +13646,7 @@
   },
   {
     "id": "vinson",
-    "name": "Vinson Massif",
+    "name": "Mount Vinson",
     "lat": -78.5254,
     "lon": -85.6171,
     "elevationFt": 16050,
@@ -13812,7 +13658,7 @@
     "difficulty": "Polar expedition",
     "difficultyTier": "expedition",
     "aliases": [
-      "Mount Vinson",
+      "Vinson Massif",
       "Vinson"
     ],
     "bestSeason": "Nov–Jan",
@@ -13837,7 +13683,14 @@
         "note": "Easy refuel in Union Glacier Camp after the summit."
       }
     ],
-    "trails": [],
+    "trails": [
+      {
+        "name": "Normal Route"
+      },
+      {
+        "name": "East Face"
+      }
+    ],
     "photo": {
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/C78082s1_Ant.Map_Vinson_Massif.jpg/1280px-C78082s1_Ant.Map_Vinson_Massif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "credit": "United States Department of the Interior: Geological Survey",
@@ -17321,7 +17174,8 @@
     "aliases": [
       "Dufourspitze",
       "Punta Dufour",
-      "Monte Rosa"
+      "Monte Rosa",
+      "Monte Rosa Massif"
     ],
     "lat": 45.9369,
     "lon": 7.8667,
@@ -17355,6 +17209,14 @@
         "route": "Gornergrat / Monte Rosa Hut approaches",
         "lat": 46.0207,
         "lon": 7.7491
+      },
+      {
+        "name": "Macugnaga",
+        "region": "Piedmont",
+        "distanceMiles": 14,
+        "route": "East face approaches",
+        "lat": 45.968,
+        "lon": 7.967
       }
     ],
     "hotels": [

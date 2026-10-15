@@ -255,7 +255,7 @@ const NEW_PEAKS = [
     permitStatus: 'not_required',
     permitNotes:
       'No general climbing permit. Hut bookings and glacier travel skills apply on standard routes.',
-    afterId: 'dufourspitze',
+    afterId: 'monterosa',
   },
   {
     id: 'castor',
@@ -917,6 +917,10 @@ const added = []
 const failed = []
 
 for (const draft of NEW_PEAKS) {
+  if (draft.id === 'dufourspitze') {
+    console.log('skip merged dufourspitze → monterosa')
+    continue
+  }
   if (peaks.some((p) => p.id === draft.id)) {
     console.log(`skip existing ${draft.id}`)
     continue

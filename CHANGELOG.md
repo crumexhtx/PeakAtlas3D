@@ -9,6 +9,8 @@ Update this file when shipping notable changes (do not maintain an in-app releas
 - Catalog validator reports proximity duplicates, name/alias collisions, slug mismatches, and stale admin names (warnings until `--strict`)
 - Peak location prefers optional `adminRegion` (summit state/province) over nearest-town region
 - Photo matcher requires Commons geo (≤15 km) or an explicit allow-list; expanded reject patterns; `--check` stays offline and non-strict for CI
+- Merge duplicate Vinson (`rittenhouse` → `/peak/vinson`) and Monte Rosa (`dufourspitze` → `/peak/monterosa`); rename Iztaccíhuatl to `/peak/iztaccihuatl`
+- Fix Boundary Peak region (Nevada), Koshi Province labels, Everest prominence, and Mt. Townsend coordinates
 
 ## 0.3.7 — 2026-08-01 — Faster satellite tiles
 

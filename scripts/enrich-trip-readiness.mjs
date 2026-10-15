@@ -282,11 +282,11 @@ const PERMIT_BY_ID = {
     permitNotes:
       'Aconcagua Provincial Park climbing permit required; medical check rules apply in season.',
   },
-  rittenhouse: {
+  vinson: {
     permitRequired: true,
     permitStatus: 'required',
     permitNotes:
-      'Antarctic logistics via authorized operator; IAATO / national program rules apply.',
+      'Antarctic expedition access requires national Antarctic program / IAATO-compliant operator logistics and permits. Independent travel is not practical.',
   },
   elbrus: {
     permitRequired: true,

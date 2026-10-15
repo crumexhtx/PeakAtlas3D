@@ -179,7 +179,7 @@ const SEO = {
     'Explore Mulhacén on a 3D map — Iberia’s Sierra Nevada high point above Granada, long alpine walks, elevation stats, and Andalusian staging towns.',
   teide:
     'Explore Teide on a 3D topographic map — Spain’s Canary Islands high point, Tenerife caldera terrain, elevation, and Atlantic volcano approaches.',
-  citlaltepetl:
+  iztaccihuatl:
     'Explore Iztaccíhuatl on a 3D map — Mexico’s White Woman volcano beside Popocatépetl, snow ridge terrain, elevation stats, and Valley approaches.',
   illampu:
     'Explore Illampu on a 3D topographic map — steep Cordillera Real ice near Sorata, difficult Bolivian alpine terrain, elevation, and Altiplano staging.',
@@ -187,8 +187,8 @@ const SEO = {
     'Explore Alpamayo on a 3D map — the Cordillera Blanca’s fluted beauty peak, technical snow and ice, elevation stats, and classic Peru approaches.',
   huayna:
     'Explore Huayna Potosí on a 3D topographic map — La Paz’s classic 6,000er training climb, glacier travel, elevation, and Cordillera Real huts.',
-  rittenhouse:
-    'Explore Mt. Vinson on a 3D map — Antarctica’s Ellsworth Mountains high point, polar expedition terrain, elevation stats, and Seven Summits staging.',
+  vinson:
+    'Explore Mount Vinson on a 3D map — Antarctica’s Sentinel Range high point, polar expedition terrain, elevation stats, and Seven Summits staging.',
   sidley:
     'Explore Mt. Sidley on a 3D topographic map — Antarctica’s highest volcano in Marie Byrd Land, remote polar terrain, elevation, and expedition context.',
   mitchell:

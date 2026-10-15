@@ -599,7 +599,7 @@ const details = {
     description:
       'Spain’s highest peak and a towering Canary Islands volcano above Tenerife’s caldera landscapes.',
   },
-  citlaltepetl: {
+  iztaccihuatl: {
     prominenceFt: 5020,
     firstAscent: '1889',
     difficulty: 'Snow / glacier climb',
@@ -627,12 +627,12 @@ const details = {
     description:
       'A popular Cordillera Real training peak near La Paz, offering high-altitude glacier travel with hut access.',
   },
-  rittenhouse: {
+  vinson: {
     prominenceFt: 16050,
     firstAscent: '1966',
     difficulty: 'Polar expedition',
     description:
-      'Mount Vinson, Antarctica’s high point in the Ellsworth Mountains, a remote polar expedition objective.',
+      'Highest mountain in Antarctica — a remote Sentinel Range massif climbed via polar expedition logistics from Union Glacier.',
   },
   sidley: {
     prominenceFt: 8373,

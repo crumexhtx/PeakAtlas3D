@@ -837,6 +837,7 @@
     "prominenceFt": 253,
     "range": "White Mountains",
     "country": "USA",
+    "adminRegion": "Nevada",
     "firstAscent": "Unknown / Indigenous",
     "difficulty": "Class 2 scramble",
     "difficultyTier": "scramble",
@@ -1774,33 +1775,6 @@
     }
   },
   {
-    "id": "dufourspitze",
-    "name": "Dufourspitze",
-    "lat": 45.9369,
-    "lon": 7.8668,
-    "elevationFt": 15203,
-    "prominenceFt": 7103,
-    "range": "Pennine Alps",
-    "country": "Switzerland/Italy",
-    "aliases": [
-      "Monte Rosa",
-      "Monte Rosa Massif"
-    ],
-    "firstAscent": "1855",
-    "difficulty": "Alpine glacier",
-    "difficultyTier": "snow-glacier",
-    "bestSeason": "Jul–Sep",
-    "whyNotable": "Highest peak in Switzerland and the Monte Rosa massif’s crowning summit.",
-    "description": "Highest summit of Monte Rosa and Switzerland’s high point — a glaciated alpine climb above Zermatt and the Italian Macugnaga side.",
-    "permitStatus": "not_required",
-    "permitRequired": false,
-    "nearestTown": {
-      "name": "Zermatt",
-      "region": "Valais",
-      "distanceMiles": 12
-    }
-  },
-  {
     "id": "grandcombin",
     "name": "Grand Combin",
     "lat": 45.9375,
@@ -1957,7 +1931,8 @@
     "range": "Ortler Alps",
     "country": "Italy",
     "aliases": [
-      "Ortler"
+      "Ortler",
+      "Ortles"
     ],
     "firstAscent": "1804",
     "difficulty": "Alpine glacier",
@@ -2291,7 +2266,7 @@
     "lat": 27.9881,
     "lon": 86.925,
     "elevationFt": 29032,
-    "prominenceFt": 29029,
+    "prominenceFt": 29032,
     "range": "Mahalangur Himal",
     "country": "Nepal/China",
     "aliases": [
@@ -2349,6 +2324,7 @@
     "prominenceFt": 12896,
     "range": "Himalaya",
     "country": "Nepal/India",
+    "adminRegion": "Koshi Province",
     "aliases": [
       "Kangchenjunga"
     ],
@@ -2362,7 +2338,7 @@
     "permitRequired": true,
     "nearestTown": {
       "name": "Taplejung",
-      "region": "Province 1",
+      "region": "Koshi Province",
       "distanceMiles": 45
     }
   },
@@ -2398,6 +2374,7 @@
     "prominenceFt": 7812,
     "range": "Mahalangur Himal",
     "country": "Nepal/China",
+    "adminRegion": "Koshi Province",
     "firstAscent": "1955",
     "difficulty": "High-altitude expedition",
     "difficultyTier": "expedition",
@@ -2408,7 +2385,7 @@
     "permitRequired": true,
     "nearestTown": {
       "name": "Khandbari",
-      "region": "Province 1",
+      "region": "Koshi Province",
       "distanceMiles": 50
     }
   },
@@ -3022,8 +2999,8 @@
   {
     "id": "townsend",
     "name": "Mt. Townsend",
-    "lat": -36.45,
-    "lon": 148.27,
+    "lat": -36.4222,
+    "lon": 148.2447,
     "elevationFt": 7242,
     "prominenceFt": 1893,
     "range": "Snowy Mountains",
@@ -3224,7 +3201,7 @@
     }
   },
   {
-    "id": "citlaltepetl",
+    "id": "iztaccihuatl",
     "name": "Iztaccíhuatl",
     "lat": 19.1789,
     "lon": -98.6417,
@@ -3233,14 +3210,14 @@
     "range": "Trans-Mexican Volcanic Belt",
     "country": "Mexico",
     "aliases": [
-      "Pico de Orizaba",
-      "Citlaltépetl"
+      "Iztaccihuatl",
+      "Sleeping Woman"
     ],
     "firstAscent": "1889",
     "difficulty": "Snow / glacier climb",
     "difficultyTier": "snow-glacier",
     "bestSeason": "Nov–Mar",
-    "whyNotable": "Alternate atlas entry for Mexico’s great ice volcano.",
+    "whyNotable": "Mexico’s third-highest peak — the “White Woman” volcano beside Popocatépetl.",
     "description": "Iztaccíhuatl, the “White Woman” volcano beside Popocatépetl, a long snow ridge above the Valley of Mexico.",
     "permitStatus": "required",
     "permitRequired": true,
@@ -3323,32 +3300,6 @@
     }
   },
   {
-    "id": "rittenhouse",
-    "name": "Mt. Vinson",
-    "lat": -78.5254,
-    "lon": -85.6171,
-    "elevationFt": 16050,
-    "prominenceFt": 16050,
-    "range": "Ellsworth Mountains",
-    "country": "Antarctica",
-    "aliases": [
-      "Mount Vinson"
-    ],
-    "firstAscent": "1966",
-    "difficulty": "Polar expedition",
-    "difficultyTier": "expedition",
-    "bestSeason": "Nov–Jan",
-    "whyNotable": "Antarctica’s high point and a Seven Summits objective.",
-    "description": "Mount Vinson, Antarctica’s high point in the Ellsworth Mountains, a remote polar expedition objective.",
-    "permitStatus": "required",
-    "permitRequired": true,
-    "nearestTown": {
-      "name": "Union Glacier Camp",
-      "region": "Antarctica",
-      "distanceMiles": 75
-    }
-  },
-  {
     "id": "sidley",
     "name": "Mt. Sidley",
     "lat": -77.0333,
@@ -3376,7 +3327,7 @@
   },
   {
     "id": "vinson",
-    "name": "Vinson Massif",
+    "name": "Mount Vinson",
     "lat": -78.5254,
     "lon": -85.6171,
     "elevationFt": 16050,
@@ -3384,7 +3335,7 @@
     "range": "Sentinel Range",
     "country": "Antarctica",
     "aliases": [
-      "Mount Vinson",
+      "Vinson Massif",
       "Vinson"
     ],
     "firstAscent": "1966",
@@ -4397,7 +4348,8 @@
     "aliases": [
       "Dufourspitze",
       "Punta Dufour",
-      "Monte Rosa"
+      "Monte Rosa",
+      "Monte Rosa Massif"
     ],
     "firstAscent": "1855",
     "difficulty": "Alpine glacier",

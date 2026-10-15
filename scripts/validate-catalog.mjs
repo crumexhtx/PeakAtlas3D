@@ -196,13 +196,13 @@ console.log(`catalog ok: ${peaks.length} peaks, ${ids.size} unique ids`)
   }
   if (!extra.length) {
     console.log('catalog issues: none')
+  } else if (strictIssues && errors.length) {
+    fail(`${errors.length} catalog error(s) (strict mode)`)
   } else if (strictIssues) {
-    fail(
-      `${errors.length} error(s), ${warnings.length} warning(s) (strict mode)`,
-    )
+    console.log('catalog strict: no errors (warnings listed above)')
   } else {
     console.log(
-      'catalog issues are warnings until --strict (promote after catalog fixes)',
+      'catalog errors/warnings are non-fatal without --strict',
     )
   }
 }

@@ -407,10 +407,11 @@ const content = {
     bestSeason: 'May–Oct',
     whyNotable: 'Spain’s highest mountain and a massive Atlantic volcano.',
   },
-  citlaltepetl: {
-    aliases: ['Pico de Orizaba', 'Citlaltépetl'],
+  iztaccihuatl: {
+    aliases: ['Iztaccihuatl', 'Sleeping Woman'],
     bestSeason: 'Nov–Mar',
-    whyNotable: 'Alternate atlas entry for Mexico’s great ice volcano.',
+    whyNotable:
+      'Mexico’s third-highest peak — the “White Woman” volcano beside Popocatépetl.',
   },
   illampu: {
     bestSeason: 'May–Sep',
@@ -425,10 +426,10 @@ const content = {
     bestSeason: 'May–Sep',
     whyNotable: 'La Paz’s backyard 6,000er — a classic first big Andean climb.',
   },
-  rittenhouse: {
-    aliases: ['Mount Vinson'],
+  vinson: {
+    aliases: ['Vinson Massif', 'Vinson'],
     bestSeason: 'Nov–Jan',
-    whyNotable: 'Antarctica’s high point and a Seven Summits objective.',
+    whyNotable: 'Continent high point of Antarctica and a Seven Summits objective.',
   },
   sidley: {
     aliases: ['Mount Sidley'],

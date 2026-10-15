@@ -6,6 +6,21 @@
       "source": "/releases",
       "destination": "https://github.com/crumexhtx/PeakAtlas3D/blob/main/CHANGELOG.md",
       "permanent": true
+    },
+    {
+      "source": "/peak/rittenhouse",
+      "destination": "/peak/vinson",
+      "permanent": true
+    },
+    {
+      "source": "/peak/dufourspitze",
+      "destination": "/peak/monterosa",
+      "permanent": true
+    },
+    {
+      "source": "/peak/citlaltepetl",
+      "destination": "/peak/iztaccihuatl",
+      "permanent": true
     }
   ],
   "rewrites": [
