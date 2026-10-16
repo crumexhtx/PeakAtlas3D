@@ -13,6 +13,7 @@ Update this file when shipping notable changes (do not maintain an in-app releas
 - Fix Boundary Peak region (Nevada), Koshi Province labels, Everest prominence, and Mt. Townsend coordinates
 - Replace mismatched Commons stills (Kilimanjaro band, Langley street, Vinson maps, and other listed peaks); normalize photo thumbs to 960px
 - Country flags and pages for Philippines and Malaysia; merge Switzerland/Italy into Switzerland; Vercel runs `npm run build`; CI fails on a stale sitemap
+- Mobile map: Orbit sits under the compass, sheets paint on open, globe load retries, summit framing uses on-screen chrome
 
 ## 0.3.7 — 2026-08-01 — Faster satellite tiles
 

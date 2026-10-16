@@ -4,7 +4,7 @@ import { isConstrainedGlobeDevice, scheduleGlobeInit } from './deferGlobe'
 function matchMedia(narrow: boolean, coarse = false) {
   return (query: string) =>
     ({
-      matches: query.includes('max-width: 800px')
+      matches: query.includes('max-width: 900px')
         ? narrow
         : query.includes('pointer: coarse')
           ? coarse

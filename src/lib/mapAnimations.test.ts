@@ -1,5 +1,12 @@
 import { describe, expect, it, vi } from 'vitest'
-import { heroZoomViewportAdjust, idleSpinDelayMs } from './mapAnimations'
+import {
+  clearCameraPadding,
+  heroZoomViewportAdjust,
+  idleSpinDelayMs,
+  peakFramePaddingFromRects,
+  PEAK_FRAME_PAD_NARROW,
+  worldFramePadding,
+} from './mapAnimations'
 
 const DESKTOP_PADDING = { left: 320, right: 360 }
 const NARROW_PADDING = { left: 24, right: 96 }
@@ -40,7 +47,7 @@ describe('idleSpinDelayMs', () => {
   it('waits longer on a phone-sized viewport', () => {
     vi.stubGlobal('window', {
       matchMedia: (query: string) => ({
-        matches: query.includes('max-width: 800px'),
+        matches: query.includes('max-width: 900px'),
         media: query,
         onchange: null,
         addListener: () => {},
@@ -52,5 +59,53 @@ describe('idleSpinDelayMs', () => {
     })
     expect(idleSpinDelayMs()).toBe(12_000)
     vi.unstubAllGlobals()
+  })
+})
+
+describe('peakFramePaddingFromRects', () => {
+  it('grows padding to clear the left stack, name card, and trip tab', () => {
+    const canvas = { top: 0, left: 0, right: 375, bottom: 812 }
+    const pad = peakFramePaddingFromRects(canvas, {
+      leftStack: { top: 10, left: 10, right: 54, bottom: 180 },
+      nameCard: { top: 8, left: 200, right: 365, bottom: 72 },
+      bottomSheet: { top: 720, left: 8, right: 367, bottom: 804 },
+    })
+    expect(pad.left).toBeGreaterThanOrEqual(54 + 8)
+    expect(pad.top).toBeGreaterThanOrEqual(180 + 8)
+    expect(pad.right).toBeGreaterThanOrEqual(375 - 200 + 8)
+    expect(pad.bottom).toBeGreaterThanOrEqual(812 - 720 + 8)
+  })
+
+  it('keeps the narrow fallback when chrome rects are missing', () => {
+    const canvas = { top: 0, left: 0, right: 375, bottom: 812 }
+    expect(peakFramePaddingFromRects(canvas, {})).toEqual(PEAK_FRAME_PAD_NARROW)
+  })
+})
+
+describe('clearCameraPadding', () => {
+  it('re-centers so the padded open-map center stays on the same pixel', () => {
+    const jumpTo = vi.fn()
+    const unproject = vi.fn(([x, y]: [number, number]) => ({ lng: x, lat: y }))
+    const map = {
+      getCanvas: () => ({ clientWidth: 1000, clientHeight: 800 }),
+      getPadding: () => ({ top: 100, bottom: 96, left: 80, right: 200 }),
+      getZoom: () => 12,
+      getBearing: () => 40,
+      getPitch: () => 55,
+      unproject,
+      jumpTo,
+    }
+    clearCameraPadding(map as never)
+    expect(unproject).toHaveBeenCalled()
+    expect(jumpTo).toHaveBeenCalledWith(
+      expect.objectContaining({
+        padding: worldFramePadding(),
+        zoom: 12,
+        bearing: 40,
+        pitch: 55,
+      }),
+    )
+    const centerArg = jumpTo.mock.calls[0][0].center
+    expect(centerArg).toEqual({ lng: 560, lat: 398 })
   })
 })

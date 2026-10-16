@@ -19,10 +19,13 @@ export function prefersReducedMotion(): boolean {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
 }
 
+/** Matches the mobile sheet / orbit layout in `app.css`. */
+export const MOBILE_MAP_MQ = '(max-width: 900px)'
+
 /** World idle-spin delay — longer on small viewports so first paint stays idle. */
 export function idleSpinDelayMs(): number {
   if (typeof window === 'undefined') return IDLE_ROTATE_DELAY_MS
-  return window.matchMedia('(max-width: 800px)').matches
+  return window.matchMedia(MOBILE_MAP_MQ).matches
     ? IDLE_ROTATE_DELAY_MOBILE_MS
     : IDLE_ROTATE_DELAY_MS
 }
@@ -228,33 +231,109 @@ export const PEAK_DOSSIER_PANEL_WIDTH = 360
 /** Width of the left trip-planning panel — keep in sync with peakFramePadding(). */
 export const PEAK_TRIP_PANEL_WIDTH = 320
 
-/**
- * Reserve space for dual panels so the summit centers in the open map.
- * Desktop: left trip + right dossier. Mobile: top-right dossier + bottom trip tab.
- */
-export function peakFramePadding(): {
+export type CameraPadding = {
   top: number
   bottom: number
   left: number
   right: number
-} {
-  const narrow =
-    typeof window !== 'undefined' &&
-    window.matchMedia('(max-width: 800px)').matches
-  if (narrow) {
-    return {
-      top: 100,
-      bottom: 96,
-      left: 24,
-      right: 96,
-    }
-  }
+}
+
+export type FrameRect = {
+  top: number
+  right: number
+  bottom: number
+  left: number
+}
+
+/** Fallback when mobile chrome rects are not in the DOM yet (cinematic). */
+export const PEAK_FRAME_PAD_NARROW: CameraPadding = {
+  top: 160,
+  bottom: 96,
+  left: 56,
+  right: 110,
+}
+
+export const PEAK_FRAME_PAD_WIDE: CameraPadding = {
+  top: 110,
+  bottom: 56,
+  left: PEAK_TRIP_PANEL_WIDTH,
+  right: PEAK_DOSSIER_PANEL_WIDTH,
+}
+
+function unionRects(rects: FrameRect[]): FrameRect | null {
+  if (!rects.length) return null
   return {
-    top: 110,
-    bottom: 56,
-    left: PEAK_TRIP_PANEL_WIDTH,
-    right: PEAK_DOSSIER_PANEL_WIDTH,
+    top: Math.min(...rects.map((r) => r.top)),
+    right: Math.max(...rects.map((r) => r.right)),
+    bottom: Math.max(...rects.map((r) => r.bottom)),
+    left: Math.min(...rects.map((r) => r.left)),
   }
+}
+
+/**
+ * Mobile summit padding from on-screen chrome. Falls back to PEAK_FRAME_PAD_NARROW
+ * per side, then grows to clear the left control stack, name card, and trip tab.
+ */
+export function peakFramePaddingFromRects(
+  canvas: FrameRect,
+  chrome: {
+    leftStack?: FrameRect | null
+    nameCard?: FrameRect | null
+    bottomSheet?: FrameRect | null
+  },
+  gap = 8,
+): CameraPadding {
+  const pad = { ...PEAK_FRAME_PAD_NARROW }
+  const { leftStack, nameCard, bottomSheet } = chrome
+  if (leftStack) {
+    pad.left = Math.max(pad.left, Math.round(leftStack.right - canvas.left + gap))
+    pad.top = Math.max(pad.top, Math.round(leftStack.bottom - canvas.top + gap))
+  }
+  if (nameCard) {
+    pad.right = Math.max(pad.right, Math.round(canvas.right - nameCard.left + gap))
+    pad.top = Math.max(pad.top, Math.round(nameCard.bottom - canvas.top + gap))
+  }
+  if (bottomSheet) {
+    pad.bottom = Math.max(
+      pad.bottom,
+      Math.round(canvas.bottom - bottomSheet.top + gap),
+    )
+  }
+  return pad
+}
+
+/**
+ * Reserve space for dual panels so the summit centers in the open map.
+ * Desktop: left trip + right dossier. Mobile: measure left controls, name card,
+ * and collapsed trip sheet (same 900px breakpoint as the CSS layout).
+ */
+export function peakFramePadding(): CameraPadding {
+  if (typeof window === 'undefined' || typeof document === 'undefined') {
+    return PEAK_FRAME_PAD_WIDE
+  }
+  if (!window.matchMedia(MOBILE_MAP_MQ).matches) {
+    return PEAK_FRAME_PAD_WIDE
+  }
+
+  const canvasEl = document.querySelector('.map-stage .atlas-map-wrap')
+  if (!canvasEl) return PEAK_FRAME_PAD_NARROW
+  const canvas = canvasEl.getBoundingClientRect()
+
+  const leftEls = [
+    document.querySelector('.map-stage .maplibregl-ctrl-top-left'),
+    document.querySelector('.map-stage .peak-orbit-btn'),
+    document.querySelector('.map-stage .clear-markers-toggle'),
+  ].filter((el): el is Element => Boolean(el))
+
+  return peakFramePaddingFromRects(canvas, {
+    leftStack: unionRects(leftEls.map((el) => el.getBoundingClientRect())),
+    nameCard: document
+      .querySelector('.map-stage.is-peak-mode .peak-overlay-panel')
+      ?.getBoundingClientRect() ?? null,
+    bottomSheet: document
+      .querySelector('.map-stage.is-peak-mode .peak-trip-panel')
+      ?.getBoundingClientRect() ?? null,
+  })
 }
 
 /**
@@ -297,7 +376,7 @@ export function countryFramePadding(): {
 } {
   const narrow =
     typeof window !== 'undefined' &&
-    window.matchMedia('(max-width: 800px)').matches
+    window.matchMedia(MOBILE_MAP_MQ).matches
   if (narrow) {
     return {
       top: 88,

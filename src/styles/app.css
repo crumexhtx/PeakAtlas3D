@@ -2662,6 +2662,38 @@ a.trail-bubble-label-link:focus-visible {
   letter-spacing: 0.02em;
 }
 
+.atlas-map-deferred .atlas-map-fallback.is-retry {
+  position: absolute;
+  inset: 0;
+  z-index: 40;
+  background: rgba(7, 16, 24, 0.88);
+}
+
+.atlas-map-fallback-retry {
+  margin: 0;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(79, 195, 247, 0.16);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.atlas-map-fallback-retry:hover,
+.atlas-map-fallback-retry:focus-visible {
+  border-color: rgba(79, 195, 247, 0.55);
+  outline: none;
+}
+
+.atlas-map-deferred {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+}
+
 .map-missing-token code,
 .empty-state code {
   color: var(--accent);
@@ -2782,6 +2814,16 @@ a.trail-bubble-label-link:focus-visible {
     overflow: visible;
   }
 
+  .peak-overlay-panel .details-sheet-tab-sub {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .peak-trip-panel .details-sheet.is-collapsed {
     width: 100%;
     height: auto;
@@ -2816,10 +2858,10 @@ a.trail-bubble-label-link:focus-visible {
     height: auto;
   }
 
-  /* Peak controls: left stack under zoom — keeps Clear markers off the
-     top-right peak name card at ~375px widths. */
+  /* Peak controls sit under the measured MapLibre nav stack
+     (--map-nav-stack-bottom), not a magic rem that collides with compass. */
   .map-stage.is-peak-mode .peak-orbit-btn {
-    top: calc(5.6rem + var(--safe-top, 0px));
+    top: calc(var(--map-nav-stack-bottom, 6.4rem) + 0.4rem);
     left: calc(0.55rem + var(--safe-left, 0px));
     transform: none;
     padding: 0.4rem 0.7rem;
@@ -2827,7 +2869,7 @@ a.trail-bubble-label-link:focus-visible {
   }
 
   .map-stage.is-peak-mode .clear-markers-toggle {
-    top: calc(7.95rem + var(--safe-top, 0px));
+    top: calc(var(--map-nav-stack-bottom, 6.4rem) + 2.85rem);
     left: calc(0.55rem + var(--safe-left, 0px));
     right: auto;
   }
@@ -2871,37 +2913,46 @@ a.trail-bubble-label-link:focus-visible {
     animation: details-chevron-wiggle 0.45s ease-in-out 4;
   }
 
-  /* Animate reveal so a tap gives clear feedback (avoids instant snap that
-     feels like “nothing happened” and invites a second canceling tap).
-     Expanded: body flexes into the sheet’s fixed height so 1fr is definite
-     and .details-sheet-body-inner becomes the scroll owner (not the page). */
+  /* Collapsed sheets stay display:none so Chrome paints content immediately
+     on expand (grid 0fr→1fr over WebGL often left a blank panel until scroll). */
   .details-sheet-body {
-    display: grid;
-    grid-template-rows: 0fr;
+    display: none;
     flex: none;
     min-height: 0;
     overflow: hidden;
-    transition: grid-template-rows 0.3s ease;
   }
 
   .details-sheet-body-inner {
     overflow-y: auto;
     overflow-x: hidden;
     min-height: 0;
-    flex: unset;
+    flex: 1;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
   }
 
   .details-sheet.is-expanded .details-sheet-body {
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
     flex: 1 1 0;
     min-height: 0;
+    animation: details-sheet-reveal 0.22s ease;
+  }
+
+  @keyframes details-sheet-reveal {
+    from {
+      opacity: 0;
+      transform: translateY(0.4rem);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .details-sheet-body {
-      transition: none;
+    .details-sheet.is-expanded .details-sheet-body {
+      animation: none;
     }
   }
 

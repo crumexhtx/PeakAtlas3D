@@ -38,7 +38,7 @@ export function isConstrainedGlobeDevice(): boolean {
   if (conn?.saveData) return true
   const type = conn?.effectiveType
   if (type === 'slow-2g' || type === '2g') return true
-  if (window.matchMedia('(max-width: 800px)').matches) return true
+  if (window.matchMedia('(max-width: 900px)').matches) return true
   if (window.matchMedia('(pointer: coarse)').matches) return true
   return false
 }

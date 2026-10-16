@@ -44,6 +44,7 @@ export function DetailsSheet({
   /** Collapsible sheet UI only below 900px — desktop ignores expand state. */
   const [mobileSheet, setMobileSheet] = useState(false)
   const bodyId = useId()
+  const bodyInnerRef = useRef<HTMLDivElement>(null)
   /** iOS-over-WebGL: touch may fire pointer/touch without a following click. */
   const touchToggledRef = useRef(false)
 
@@ -69,6 +70,11 @@ export function DetailsSheet({
       window.clearTimeout(stop)
     }
   }, [resetKey])
+
+  useEffect(() => {
+    if (!expanded) return
+    bodyInnerRef.current?.scrollTo(0, 0)
+  }, [expanded, resetKey])
 
   function toggleExpanded() {
     setNudging(false)
@@ -145,7 +151,9 @@ export function DetailsSheet({
         // React 19 supports boolean `inert` for focus/interaction lock.
         inert={bodyCollapsed || undefined}
       >
-        <div className="details-sheet-body-inner">{children}</div>
+        <div ref={bodyInnerRef} className="details-sheet-body-inner">
+          {children}
+        </div>
       </div>
     </div>
   )

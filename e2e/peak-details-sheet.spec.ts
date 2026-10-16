@@ -18,22 +18,24 @@ test('collapsed peak tab expands on tap', async ({ page }) => {
     await skip.click()
   }
 
-  const tab = page.locator('.details-sheet-tab')
+  const tab = page.locator('.peak-overlay-panel .details-sheet-tab')
   await expect(tab).toBeVisible({ timeout: 30_000 })
   await expect(tab).toHaveAttribute('aria-expanded', 'false')
 
   await tab.tap()
   await expect(tab).toHaveAttribute('aria-expanded', 'true')
-  await expect(page.locator('.details-sheet-body')).toBeVisible()
+  await expect(page.locator('.peak-overlay-panel .details-sheet-body')).toBeVisible()
 
-  const sheet = page.locator('.details-sheet')
+  const sheet = page.locator('.peak-overlay-panel .details-sheet')
   await expect(sheet).toHaveClass(/is-expanded/)
 
   // Expanded sheet stays within a viewport budget; dossier scrolls inside.
   const metrics = await page.evaluate(() => {
-    const el = document.querySelector('.details-sheet') as HTMLElement | null
+    const el = document.querySelector(
+      '.peak-overlay-panel .details-sheet',
+    ) as HTMLElement | null
     const scroller = document.querySelector(
-      '.details-sheet-body-inner',
+      '.peak-overlay-panel .details-sheet-body-inner',
     ) as HTMLElement | null
     if (!el || !scroller) return null
     return {

@@ -30,6 +30,7 @@ import {
   TERRAIN_SOURCE_ID,
   WORLD_MAX_ZOOM,
 } from '../lib/maptiler'
+import { mapDebug } from '../lib/mapDebug'
 import {
   applyPeakAtmosphere,
   clearCameraPadding,
@@ -74,6 +75,8 @@ export type AtlasMapProps = {
   nationalParks?: NationalPark[]
   selectedPark?: NationalPark | null
   onSelectPark?: (park: NationalPark) => void
+  /** Fires once the MapLibre instance has loaded (DeferredAtlasMap ready timeout). */
+  onMapInteractive?: () => void
 }
 
 /**
@@ -199,6 +202,7 @@ export function AtlasMap({
   nationalParks = [],
   selectedPark = null,
   onSelectPark,
+  onMapInteractive,
 }: AtlasMapProps) {
   const mapRef = useRef<MapRef>(null)
   const idleTimerRef = useRef<number | null>(null)
@@ -223,6 +227,8 @@ export function AtlasMap({
 
   onCinematicChangeRef.current = onCinematicChange
   latestPeakIdRef.current = activePeak?.id ?? null
+  const onMapInteractiveRef = useRef(onMapInteractive)
+  onMapInteractiveRef.current = onMapInteractive
 
   // Cap HiDPI canvas fill-rate — recompute when DPR / viewport width changes.
   const [pixelRatio, setPixelRatio] = useState(() => cappedPixelRatio())
@@ -271,6 +277,37 @@ export function AtlasMap({
     ro.observe(wrap)
     return () => ro.disconnect()
   }, [mapReady])
+
+  // Publish nav-control height so Orbit / Clear sit under the compass on mobile.
+  useEffect(() => {
+    const wrap = wrapRef.current
+    const stage = wrap?.closest('.map-stage') as HTMLElement | null
+    if (!stage || !wrap) return
+    const apply = () => {
+      const nav = wrap.querySelector('.maplibregl-ctrl-top-left')
+      if (!nav) {
+        stage.style.removeProperty('--map-nav-stack-bottom')
+        return
+      }
+      const navRect = nav.getBoundingClientRect()
+      const origin = stage.getBoundingClientRect()
+      stage.style.setProperty(
+        '--map-nav-stack-bottom',
+        `${Math.max(0, Math.round(navRect.bottom - origin.top))}px`,
+      )
+    }
+    apply()
+    const ro =
+      typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(apply)
+    ro?.observe(wrap)
+    const mo = new MutationObserver(apply)
+    mo.observe(wrap, { childList: true, subtree: true })
+    return () => {
+      ro?.disconnect()
+      mo.disconnect()
+      stage.style.removeProperty('--map-nav-stack-bottom')
+    }
+  }, [mapReady, cinematic, earthOnly])
 
   // WebGL context loss / restore + map error visibility.
   const [mapFault, setMapFault] = useState<string | null>(null)
@@ -752,6 +789,7 @@ export function AtlasMap({
 
       // Paint settle before fly (style stays satellite — no basemap reload).
       await settleBasemap(map)
+      mapDebug('settleBasemap')
       if (!stillActive()) return
 
       // Enable terrain before the approach so DEM settle does not pop the
@@ -762,6 +800,7 @@ export function AtlasMap({
           exaggeration: HERO_TERRAIN_EXAGGERATION,
         })
         applyTerrainPitchClamp(map, true)
+        mapDebug('terrain set')
       } catch {
         // Source may still be attaching — fly without terrain.
       }
@@ -809,6 +848,7 @@ export function AtlasMap({
       }, 12_000)
 
       try {
+        mapDebug('fly-in start')
         await flyToAsync(map, {
           center: heroCenter,
           zoom: heroZoom,
@@ -827,6 +867,7 @@ export function AtlasMap({
         await waitForMapIdle(map, 500)
         if (!stillActive()) return
         clearCameraPadding(map)
+        mapDebug('fly-in end')
 
         setMapInteractive(map, true)
         onCinematicChangeRef.current({ active: false, status: '' })
@@ -1021,6 +1062,7 @@ export function AtlasMap({
             setMapInstance(map)
           }
           setMapReady(true)
+          onMapInteractiveRef.current?.()
         }}
       >
         <Source id={TERRAIN_SOURCE_ID} {...dem} />
