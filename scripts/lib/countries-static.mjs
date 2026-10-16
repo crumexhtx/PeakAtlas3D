@@ -26,6 +26,7 @@ export const COUNTRY_ISO = {
   Italy: 'it',
   Japan: 'jp',
   Kenya: 'ke',
+  Malaysia: 'my',
   Mexico: 'mx',
   Morocco: 'ma',
   Nepal: 'np',
@@ -36,6 +37,7 @@ export const COUNTRY_ISO = {
   Pakistan: 'pk',
   'Pakistan/China': 'pk',
   Peru: 'pe',
+  Philippines: 'ph',
   Russia: 'ru',
   Slovakia: 'sk',
   Slovenia: 'si',
@@ -44,6 +46,7 @@ export const COUNTRY_ISO = {
   Spain: 'es',
   Sweden: 'se',
   Switzerland: 'ch',
+  'Switzerland/Italy': 'ch',
   Tanzania: 'tz',
   Turkey: 'tr',
   'United Kingdom': 'gb',
@@ -56,6 +59,7 @@ const PRIMARY_LABEL = {
   pk: 'Pakistan',
   fi: 'Finland/Norway',
   us: 'USA',
+  ch: 'Switzerland',
 }
 
 export function countrySlug(name) {
@@ -69,7 +73,7 @@ export function countrySlug(name) {
 }
 
 function pickPrimaryLabel(labels, iso) {
-  if (iso && PRIMARY_LABEL[iso] && labels.includes(PRIMARY_LABEL[iso])) {
+  if (iso && PRIMARY_LABEL[iso]) {
     return PRIMARY_LABEL[iso]
   }
   const clean = labels.filter((l) => !l.includes('/'))

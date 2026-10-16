@@ -1,4 +1,6 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
@@ -20,6 +22,11 @@
     {
       "source": "/peak/citlaltepetl",
       "destination": "/peak/iztaccihuatl",
+      "permanent": true
+    },
+    {
+      "source": "/countries/switzerland-italy",
+      "destination": "/countries/switzerland",
       "permanent": true
     }
   ],

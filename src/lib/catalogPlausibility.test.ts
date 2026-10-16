@@ -163,4 +163,17 @@ describe('catalog issue scan', () => {
   it('treats K2 as a slug that matches its name', () => {
     expect(slugSharesNameToken({ id: 'k2', name: 'K2', aliases: [] })).toBe(true)
   })
+
+  it('errors when a country label has no ISO map', () => {
+    const { errors } = collectCatalogIssues([
+      {
+        id: 'apo',
+        name: 'Mount Apo',
+        country: 'Atlantis',
+        lat: 6.99,
+        lon: 125.27,
+      },
+    ])
+    expect(errors.some((e) => e.includes('missing-iso'))).toBe(true)
+  })
 })

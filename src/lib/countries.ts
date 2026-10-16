@@ -2,7 +2,7 @@ import type { PeakIndex } from '../types/peak'
 import type { CountrySummary } from '../types/country'
 
 /** Map PeakAtlas country labels to ISO 3166-1 alpha-2 codes for flag CDN. */
-const COUNTRY_ISO: Record<string, string> = {
+export const COUNTRY_ISO: Record<string, string> = {
   Antarctica: 'aq',
   Argentina: 'ar',
   Australia: 'au',
@@ -24,6 +24,7 @@ const COUNTRY_ISO: Record<string, string> = {
   Italy: 'it',
   Japan: 'jp',
   Kenya: 'ke',
+  Malaysia: 'my',
   Mexico: 'mx',
   Morocco: 'ma',
   Nepal: 'np',
@@ -34,6 +35,7 @@ const COUNTRY_ISO: Record<string, string> = {
   Pakistan: 'pk',
   'Pakistan/China': 'pk',
   Peru: 'pe',
+  Philippines: 'ph',
   Russia: 'ru',
   Slovakia: 'sk',
   Slovenia: 'si',
@@ -42,6 +44,7 @@ const COUNTRY_ISO: Record<string, string> = {
   Spain: 'es',
   Sweden: 'se',
   Switzerland: 'ch',
+  'Switzerland/Italy': 'ch',
   Tanzania: 'tz',
   Turkey: 'tr',
   'United Kingdom': 'gb',
@@ -74,6 +77,7 @@ const COUNTRY_CENTROID: Record<string, { lat: number; lon: number }> = {
   it: { lat: 41.9, lon: 12.6 },
   jp: { lat: 36.2, lon: 138.3 },
   ke: { lat: 0.0, lon: 37.9 },
+  my: { lat: 4.0, lon: 108.0 },
   mx: { lat: 23.6, lon: -102.6 },
   ma: { lat: 31.8, lon: -7.1 },
   np: { lat: 28.4, lon: 84.1 },
@@ -81,6 +85,7 @@ const COUNTRY_CENTROID: Record<string, { lat: number; lon: number }> = {
   no: { lat: 60.5, lon: 8.5 },
   pk: { lat: 30.4, lon: 69.3 },
   pe: { lat: -9.2, lon: -75.0 },
+  ph: { lat: 12.9, lon: 121.8 },
   ru: { lat: 61.5, lon: 105.3 },
   sk: { lat: 48.7, lon: 19.7 },
   si: { lat: 46.2, lon: 14.8 },
@@ -101,6 +106,7 @@ const PRIMARY_LABEL: Record<string, string> = {
   pk: 'Pakistan',
   fi: 'Finland/Norway',
   us: 'USA',
+  ch: 'Switzerland',
 }
 
 export function countryToIso(country: string): string | null {
@@ -136,7 +142,7 @@ function sphericalMean(peaks: PeakIndex[]): { lat: number; lon: number } {
 }
 
 function pickPrimaryLabel(labels: string[], iso: string | null): string {
-  if (iso && PRIMARY_LABEL[iso] && labels.includes(PRIMARY_LABEL[iso])) {
+  if (iso && PRIMARY_LABEL[iso]) {
     return PRIMARY_LABEL[iso]
   }
   // Prefer labels without a slash (single-country names).

@@ -28,6 +28,12 @@ jobs:
       - name: Validate catalog schema
         run: npm run validate:catalog
 
+      - name: Sitemap matches catalog
+        run: |
+          git ls-files --error-unmatch public/sitemap.xml public/robots.txt
+          npm run sitemap
+          git diff --exit-code -I '<lastmod>' -- public/sitemap.xml public/robots.txt
+
       - name: Validate peak photos (offline check)
         run: npm run validate:photos:check
 
@@ -54,6 +60,16 @@ jobs:
           grep -q '<h1 itemprop="name">Mt. Rainier</h1>' dist/peak/rainier/index.html
           grep -q '/peak/aconcagua' dist/index.html
           grep -q 'https://peakatlas3d.com/peaks' public/sitemap.xml
+          grep -q '/countries/philippines' public/sitemap.xml
+          grep -q '/countries/malaysia' public/sitemap.xml
+          grep -q '/peak/apo' public/sitemap.xml
+          grep -q '/peak/kinabalu' public/sitemap.xml
+          ! grep -q '/countries/switzerland-italy' public/sitemap.xml
+          test -f dist/countries/philippines/index.html
+          test -f dist/countries/malaysia/index.html
+          test -f dist/countries/switzerland/index.html
+          grep -q 'Philippines' dist/countries/philippines/index.html
+          grep -q 'Malaysia' dist/countries/malaysia/index.html
 
       - name: Install Playwright Chromium
         run: npx playwright install --with-deps chromium

@@ -1,6 +1,8 @@
 /**
  * Catalog plausibility helpers shared by validate-catalog.mjs and unit tests.
  */
+import { COUNTRY_ISO } from './countries-static.mjs'
+
 export function haversineMiles(lat1, lon1, lat2, lon2) {
   const toRad = (d) => (d * Math.PI) / 180
   const r = 3958.7613
@@ -190,6 +192,11 @@ export function collectCatalogIssues(peaks) {
     if (admin && townRegion && admin.toLowerCase() !== townRegion.toLowerCase()) {
       warnings.push(
         `admin-vs-town: ${peak.id} adminRegion="${admin}" vs nearestTown.region="${townRegion}"`,
+      )
+    }
+    if (peak.country && !COUNTRY_ISO[peak.country]) {
+      errors.push(
+        `missing-iso: ${peak.id} country="${peak.country}" has no COUNTRY_ISO map`,
       )
     }
   }

@@ -1,5 +1,13 @@
 import { describe, expect, it } from 'vitest'
-import { getCountryBounds, peaksForCountryFraming } from './countries'
+import { COUNTRY_ISO as STATIC_ISO } from '../../scripts/lib/countries-static.mjs'
+import { findCountrySummaryBySlug } from './countryPages'
+import {
+  COUNTRY_ISO,
+  buildCountrySummaries,
+  countryToIso,
+  getCountryBounds,
+  peaksForCountryFraming,
+} from './countries'
 import type { PeakIndex } from '../types/peak'
 
 function peak(
@@ -82,5 +90,48 @@ describe('getCountryBounds', () => {
     const fullSpanLon = 155.47 - 68.92
     const framedSpanLon = maxLon - minLon
     expect(framedSpanLon).toBeLessThan(fullSpanLon * 0.7)
+  })
+})
+
+describe('country ISO maps', () => {
+  it('keeps src and sitemap ISO tables in sync', () => {
+    expect(COUNTRY_ISO).toEqual(STATIC_ISO)
+  })
+
+  it('maps Philippines, Malaysia, and Switzerland/Italy', () => {
+    expect(countryToIso('Philippines')).toBe('ph')
+    expect(countryToIso('Malaysia')).toBe('my')
+    expect(countryToIso('Switzerland/Italy')).toBe('ch')
+  })
+
+  it('merges Switzerland/Italy into the Switzerland country page', () => {
+    const summaries = buildCountrySummaries([
+      {
+        ...peak('matterhorn', 7.66, 45.98),
+        country: 'Switzerland',
+      },
+      {
+        ...peak('monterosa', 7.87, 45.94),
+        country: 'Switzerland/Italy',
+      },
+      {
+        ...peak('etna', 15.0, 37.75),
+        country: 'Italy',
+      },
+    ])
+    const names = summaries.map((s) => s.name)
+    expect(names).toContain('Switzerland')
+    expect(names).toContain('Italy')
+    expect(names).not.toContain('Switzerland/Italy')
+
+    const switzerland = summaries.find((s) => s.name === 'Switzerland')
+    expect(switzerland?.peakCount).toBe(2)
+    expect(switzerland?.labels).toEqual(
+      expect.arrayContaining(['Switzerland', 'Switzerland/Italy']),
+    )
+    expect(findCountrySummaryBySlug('switzerland-italy', summaries)?.name).toBe(
+      'Switzerland',
+    )
+    expect(findCountrySummaryBySlug('philippines', summaries)).toBeUndefined()
   })
 })
