@@ -34,6 +34,10 @@ export type PeakPhoto = {
   credit: string
   license: string
   sourceUrl: string
+  lat?: number
+  lon?: number
+  width?: number
+  height?: number
 }
 
 /**

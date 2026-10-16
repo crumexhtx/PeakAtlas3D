@@ -11,6 +11,7 @@ Update this file when shipping notable changes (do not maintain an in-app releas
 - Photo matcher requires Commons geo (≤15 km) or an explicit allow-list; expanded reject patterns; `--check` stays offline and non-strict for CI
 - Merge duplicate Vinson (`rittenhouse` → `/peak/vinson`) and Monte Rosa (`dufourspitze` → `/peak/monterosa`); rename Iztaccíhuatl to `/peak/iztaccihuatl`
 - Fix Boundary Peak region (Nevada), Koshi Province labels, Everest prominence, and Mt. Townsend coordinates
+- Replace mismatched Commons stills (Kilimanjaro band, Langley street, Vinson maps, and other listed peaks); normalize photo thumbs to 960px
 
 ## 0.3.7 — 2026-08-01 — Faster satellite tiles
 

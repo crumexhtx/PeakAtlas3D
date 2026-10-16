@@ -31,8 +31,8 @@ export const PHOTO_ALLOWLIST = {
     'File:00 1286 New Zealand Alps - Mount Cook (Māori "Aoraki").jpg',
   ],
   washington: [
-    'File:2016-09-03 16 29 17 View north from the northeast side of the summit of Mount Washington in Sargent\'s Purchase Township, Coos County, New Hampshire.jpg',
-    'File:2016-09-03 16 29 19 View northeast from the northeast side of the summit of Mount Washington in Sargent\'s Purchase Township, Coos County, New Hampshire.jpg',
+    'File:The Mount Washington and the Presidential Range, Bretton Woods, White Mts., N. H (63848).jpg',
+    'File:Mount Washington Cog Railway October 2021 024.jpg',
   ],
   capitol: [
     'File:Mt. Daly and Capitol Peak.jpg',
@@ -54,8 +54,8 @@ export const PHOTO_ALLOWLIST = {
     'File:Meeker, Longs, Lady Washington.jpg',
   ],
   guadalupe: [
-    'File:Summit of the Guadalupe Peak DSC 5528 ad.JPG',
-    'File:Guadalupe peak from top.jpg',
+    'File:Guadalupe Mountains and El Capitan 2006.jpg',
+    'File:Guadalupe Peak and El Capitan from ridge.JPG',
   ],
   robson: [
     'File:Mount Robson 08122005.jpg',
@@ -114,8 +114,8 @@ export const PHOTO_ALLOWLIST = {
     'File:North-east face of Ben Nevis - geograph.org.uk - 7870856.jpg',
   ],
   snowdon: [
-    'File:Snowdon from Llyn Llydaw.jpg',
     'File:Yr Wyddfa (Snowdon) from Crib Goch, Parc Cenedlaethol Eryri National Park, Cymru (Wales) 03.jpg',
+    'File:Snowdon from Llyn Llydaw.jpg',
   ],
   scafellpike: [
     'File:Scafell Pike.jpg',
@@ -139,8 +139,8 @@ export const PHOTO_ALLOWLIST = {
     'File:2025-07-21 14 09 24 View west toward the summit of Slide Mountain from the Wittenberg-Cornell-Slide Trail (Burroughs Range Trail) just west of the summit of Cornell Mountain in Shandaken, Ulster County, New York.jpg',
   ],
   hunterny: [
-    'File:NY 214 mountainous scene.JPG',
-    'File:Southwest Hunter Mountain from Geiger Point, Hunter, NY.jpg',
+    'File:Hunter Mountain - from tower.jpg',
+    'File:Hunter Mountain Summit.jpg',
   ],
   blackdome: [
     'File:Eastern side of Black Dome.jpg',
@@ -153,6 +153,159 @@ export const PHOTO_ALLOWLIST = {
   westkill: [
     'File:West Kill and Spruceton Road.jpg',
     "File:Steep, rocky section of Devil's Path on West Kill Mountain, Spruceton, NY.jpg",
+  ],
+  kilimanjaro: [
+    'File:Kilimanjaro from Amboseli.jpg',
+    'File:Amboseli National Park and Mt. Kilimanjaro.jpg',
+  ],
+  langley: [
+    'File:MountLangley.jpg',
+    'File:Langley Cloud Kingdom (3854812689).jpg',
+  ],
+  aspiring: [
+    'File:Mount Aspiring, Otago, New Zealand, 22 July 2005.jpg',
+    'File:Mount Aspiring, New Zealand (Unsplash).jpg',
+  ],
+  gasherbrum2: [
+    'File:Gasherbrum group.JPG',
+    'File:Broad Peak and Gasherbrums from K2.jpg',
+  ],
+  vinson: [
+    'File:Mount Vinson from NW at Vinson Plateau by Christian Stangl (flickr).jpg',
+    'File:Vinson-Massif.jpg',
+  ],
+  mulhacen: [
+    'File:El Mulhacén desde el Veleta.JPG',
+    'File:Mulhacen north face.JPG',
+  ],
+  cadairidris: [
+    'File:Llyn Cau and Cadair Idris - geograph.org.uk - 2391358.jpg',
+    'File:Cadair Idris from Llyn Cau (geograph 3295810).jpg',
+  ],
+  sandia: [
+    'File:Sandia Mountain Peak.jpg',
+    'File:Sandia Crest, Albuquerque PP AB.JPG',
+  ],
+  gasherbrum1: [
+    'File:Gasherbrum I.jpg',
+    'File:Gasherbrum I SW.jpg',
+  ],
+  stok: [
+    'File:Stok Kangri western flank.jpg',
+    'File:StokKangri.jpg',
+  ],
+  galdhopiggen: [
+    'File:Svellnosbrean and Galdhøpiggen in Jotunheimen.jpg',
+    'File:Galdhopiggen 2004.jpg',
+  ],
+  olympus: [
+    'File:Mount Olympus from Litochoro.jpg',
+    'File:Mount Olympus, Greece.png',
+  ],
+  cloudpeak: [
+    'File:Cloud Peak from near Tensleep WY2.jpg',
+    'File:Cloud Peak from near Tensleep WY1.jpg',
+  ],
+  kosciuszko: [
+    'File:Looking Towarwards Mt. Kosciuszko from Charlotte\'s Pass.jpg',
+    'File:Mount Kosciuszko Summit walk, Kosciuszko National Park 02.jpg',
+  ],
+  kuwohi: [
+    'File:Clingmans Dome Sevierville TN.jpg',
+    "File:Clingman's Dome.JPG",
+  ],
+  hallasan: [
+    'File:Mount Hallasan.jpg',
+    'File:Hallasan Volcanic Crater.jpg',
+  ],
+  meru: [
+    'File:View of Mount Meru Arusha.jpg',
+    'File:Afternoon view of Mount Meru in Arusha.jpg',
+  ],
+  elbert: [
+    'File:Mount Elbert and horses.jpg',
+    'File:Mount Elbert and Surrounding Sawatch Range, Colorado (9179291029).jpg',
+  ],
+  leconte: [
+    'File:Mount LeConte viewed from Carlos Campbell Overlook, May 2017.jpg',
+    'File:Mount Le Conte (Great Smoky Mountains) 2012.jpg',
+  ],
+  teide: [
+    'File:Teide from Iguegue.jpg',
+    'File:Teide von Nordosten (Zuschnitt 1).jpg',
+  ],
+  popo: [
+    'File:Mexico-Popocatepetl.jpg',
+    'File:Popocatepetl Volcano - From Atlixco - Puebla - Mexico (52202390932).jpg',
+  ],
+  aconcagua: [
+    'File:Aconcagua (Mendoza) 2022-11 (2).jpg',
+    'File:Aconcagua (Mendoza) 2022-11 (1).jpg',
+  ],
+  charleston: [
+    'File:Charleston Peak from Griffith Peak 1.jpg',
+    'File:Mount Charleston in Spring Mountains.jpg',
+  ],
+  shishapangma: [
+    'File:Shishapangma in clouds.jpg',
+    'File:8,013m Shishapangma Tibet China 西藏 希夏邦马峰 - panoramio.jpg',
+  ],
+  rasdashen: [
+    'File:Ras Dejen Summit.JPG',
+    'File:Ras Dejen southward.JPG',
+  ],
+  montblanc: [
+    'File:Mont Blanc from Les Arcs 1950.jpg',
+    'File:Glacier du Mont Mallet (Glacier du Géant) & Mont Blanc, 2010 July.jpg',
+  ],
+  denali: [
+    'File:Wonder Lake, Denali.jpg',
+    'File:Denali National Park Wonder Lake 3264px.jpg',
+  ],
+  townsend: ['File:Kosciuszko Townsend.jpg'],
+  grossglockner: [
+    'File:Grossglockner and Pasterze glacier.jpg',
+    'File:Heiligenblut am Großglockner.jpg',
+  ],
+  fitzroy: [
+    'File:Los Glaciares - Fitz Roy 005.jpg',
+    'File:Laguna de los Tres color.jpg',
+  ],
+  benmacdui: [
+    'File:Ben Macdui from Derry Cairngorm.jpg',
+    'File:Ben Macdui and Derry Cairngorm from flanks of Beinn Mheadhoin - geograph.org.uk - 6062196.jpg',
+  ],
+  crestoneneedle: [
+    'File:Crestone Needle viewed from Humboldt Peak\'s West Ridge.jpg',
+    'File:Humboldt Peak & the Crestones - panoramio.jpg',
+  ],
+  k2: [
+    'File:K2 from Concordia.JPG',
+    'File:K2 from Concordia - 3.jpg',
+  ],
+  lonepeak: [
+    'File:Lone Peak from FrontRunner, Jul 16.jpg',
+    'File:North at Lone Peak in Utah, Aug 17.jpg',
+  ],
+  bluesky: [
+    'File:Road to the Mount Evans Summit. Overlook Echo Lake Park1.jpg',
+    'File:Road to the Mount Evans Summit. Overlook Echo Lake Park4.jpg',
+  ],
+  russell: [
+    'File:Mts. Russell and Carillon.jpg',
+    'File:Mt Russel from Whitney summit.jpg',
+  ],
+  sill: [
+    'File:Mount Sill, right.jpg',
+    'File:Mts. Jepson and Sill.jpg',
+  ],
+  pfeifferhorn: [
+    'File:PfeifferhornNearRidge.JPG',
+    'File:Little Cottonwood Ridgeline.jpg',
+  ],
+  quandary: [
+    'File:Quandary Peak, Colorado, USA (14382068790).jpg',
+    'File:Mountain goat Quandary Peak.jpg',
   ],
 }
 
@@ -187,6 +340,7 @@ const REJECT_TERMS = [
   'beschriftet',
   'satellite',
   'from space',
+  'view of earth',
   'salmon',
   'entrance',
   'headstone',
@@ -230,7 +384,12 @@ export function norm(s) {
 }
 
 function fileHay(photo) {
-  return norm(`${photo.url} ${photo.sourceUrl ?? ''} ${photo.title ?? ''}`)
+  // Long Commons filenames use a generic /960px-thumbnail.jpg thumb path;
+  // do not treat that MediaWiki quirk as a reject-term hit.
+  const url = String(photo.url ?? '')
+    .split('?')[0]
+    .replace(/\/\d+px-thumbnail\.[a-z0-9]+$/i, '')
+  return norm(`${url} ${photo.sourceUrl ?? ''} ${photo.title ?? ''}`)
 }
 
 export function matchRejectTerm(photo) {
@@ -331,8 +490,20 @@ export function photoMatchesPeak(peak, photo, opts = {}) {
   if (rejected) return { ok: false, reason: `reject-pattern: ${rejected}` }
 
   const coords = photoCoords(photo)
+  const km =
+    coords && Number.isFinite(peak.lat) && Number.isFinite(peak.lon)
+      ? haversineKm(peak.lat, peak.lon, coords.lat, coords.lon)
+      : undefined
+
+  // Curated filenames bypass the 15 km cap (famous viewpoints are often farther).
+  if (isAllowlisted(peak.id, photo)) {
+    if (opts.slot === 0 && isPortrait(photo)) {
+      return { ok: false, reason: 'portrait', km }
+    }
+    return { ok: true, reason: 'allow-list', km }
+  }
+
   if (coords && Number.isFinite(peak.lat) && Number.isFinite(peak.lon)) {
-    const km = haversineKm(peak.lat, peak.lon, coords.lat, coords.lon)
     if (km > GEO_MAX_KM) {
       return { ok: false, reason: `too-far: ${km.toFixed(0)} km`, km }
     }
@@ -340,13 +511,6 @@ export function photoMatchesPeak(peak, photo, opts = {}) {
       return { ok: false, reason: 'portrait', km }
     }
     return { ok: true, reason: 'geo', km }
-  }
-
-  if (isAllowlisted(peak.id, photo)) {
-    if (opts.slot === 0 && isPortrait(photo)) {
-      return { ok: false, reason: 'portrait' }
-    }
-    return { ok: true, reason: 'allow-list' }
   }
 
   return { ok: false, reason: 'no-coords' }
@@ -372,12 +536,20 @@ export function rankPhotos(peak, photos) {
 
 export function slimPhoto(ph) {
   const url = thumbUrl(ph.url)
-  return {
+  const coords = photoCoords(ph)
+  const out = {
     url,
     credit: ph.credit,
     license: ph.license,
     sourceUrl: ph.sourceUrl,
   }
+  if (coords) {
+    out.lat = coords.lat
+    out.lon = coords.lon
+  }
+  if (Number.isFinite(ph.width)) out.width = ph.width
+  if (Number.isFinite(ph.height)) out.height = ph.height
+  return out
 }
 
 export function thumbUrl(url, width = THUMB_WIDTH) {
@@ -385,8 +557,22 @@ export function thumbUrl(url, width = THUMB_WIDTH) {
   try {
     const u = new URL(url)
     u.search = ''
+    if (u.hostname === 'thumb.wikimedia.org') {
+      u.hostname = 'upload.wikimedia.org'
+    }
     let path = u.pathname
+    path = path.replace(
+      /(\/lossy-page\d+)-\d+px-([^/]+)$/i,
+      `$1-${width}px-$2`,
+    )
     path = path.replace(/\/\d+px-([^/]+)$/, `/${width}px-$1`)
+    const original = path.match(
+      /\/wikipedia\/commons\/([0-9a-f])\/([0-9a-f]{2})\/([^/]+)$/i,
+    )
+    if (original && !/\.(tif|tiff)$/i.test(original[3])) {
+      const file = original[3]
+      path = `/wikipedia/commons/thumb/${original[1]}/${original[2]}/${file}/${width}px-${file}`
+    }
     u.pathname = path
     return u.toString()
   } catch {
@@ -422,7 +608,7 @@ export function pageToPhoto(page) {
     meta.LicenseShortName?.value || meta.License?.value || 'Unknown',
   )
   const artist = stripHtml(meta.Artist?.value || 'Unknown')
-  return {
+  const photo = {
     url: info.thumburl || info.url,
     credit: artist.length > 80 ? `${artist.slice(0, 77)}…` : artist,
     license,
@@ -433,6 +619,12 @@ export function pageToPhoto(page) {
     extmetadata: meta,
     coordinates: page.coordinates,
   }
+  const coords = photoCoords(photo)
+  if (coords) {
+    photo.lat = coords.lat
+    photo.lon = coords.lon
+  }
+  return photo
 }
 
 const IMAGEINFO =
