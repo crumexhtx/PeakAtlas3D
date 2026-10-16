@@ -5,6 +5,7 @@
  * Resume-safe: skips peaks that already have OSM-sourced hotels
  * Force: node scripts/enrich-lodging.mjs --force
  * Limit: node scripts/enrich-lodging.mjs --limit=5
+ * Filter: node scripts/enrich-lodging.mjs --ids=zugspitze,acatenango
  */
 import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -15,6 +16,16 @@ const path = join(root, 'src', 'data', 'peaks.json')
 const force = process.argv.includes('--force')
 const limitArg = process.argv.find((a) => a.startsWith('--limit='))
 const limit = limitArg ? Number(limitArg.split('=')[1]) : Infinity
+const idsArg = process.argv.find((a) => a.startsWith('--ids='))
+const idFilter = idsArg
+  ? new Set(
+      idsArg
+        .slice('--ids='.length)
+        .split(',')
+        .map((s) => s.trim())
+        .filter(Boolean),
+    )
+  : null
 
 const UA = 'PeakAtlas3D/0.1 (https://peakatlas3d.com; lodging enrichment)'
 const OVERPASS_URLS = [
@@ -151,6 +162,7 @@ let empty = 0
 let processed = 0
 
 for (const peak of peaks) {
+  if (idFilter && !idFilter.has(peak.id)) continue
   if (processed >= limit) break
   if (!force && hasOsmLodging(peak)) {
     skipped += 1

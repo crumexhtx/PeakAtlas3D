@@ -111,6 +111,39 @@
       "pickA": "Pick Denali for Alaska Range expedition skills, cold, and National Park climbing registration.",
       "pickB": "Pick Everest for commercial 8000 m logistics, spring window planning, and the world’s high point.",
       "verdict": "Denali tests polar self-reliance; Everest tests altitude commerce and Himalayan logistics."
+    },
+    {
+      "slug": "puncakjaya-vs-vinson",
+      "aId": "puncakjaya",
+      "bId": "vinson",
+      "title": "Puncak Jaya vs Vinson Massif",
+      "query": "Puncak Jaya or Vinson for a Seven Summits expedition?",
+      "summary": "Puncak Jaya (Carstensz Pyramid) and Vinson are the two Seven Summits that are not walk-up treks. Vinson is a polar expedition to Antarctica’s high point with operator logistics from Union Glacier. Puncak Jaya is a technical limestone rock climb in Indonesian Papua with SIMAKSI / licensed-operator access. Both are expedition-budget trips; the skills and climates are opposite.",
+      "pickA": "Pick Puncak Jaya for the Messner-list Oceania high point — a technical equatorial rock climb with Indonesian permits.",
+      "pickB": "Pick Vinson for the Antarctic continent high point — polar camping, ski approaches, and IAATO-style operator logistics.",
+      "verdict": "Vinson is the cold logistics problem; Puncak Jaya is the rock-and-permit problem."
+    },
+    {
+      "slug": "breithorn-vs-montblanc",
+      "aId": "breithorn",
+      "bId": "montblanc",
+      "title": "Breithorn vs Mont Blanc",
+      "query": "Breithorn or Mont Blanc for a first Alps 4,000er?",
+      "summary": "Breithorn and Mont Blanc are the two 4,000ers people compare when they want a first Alpine high point. Breithorn is a short guided glacier climb from Klein Matterhorn above Zermatt — often called the easiest 4,000er. Mont Blanc is Western Europe’s high point: longer glacier travel, more altitude, and crowded normal routes from Chamonix or Courmayeur.",
+      "pickA": "Pick Breithorn for a guided glacier day from Zermatt with cable-car access and less altitude.",
+      "pickB": "Pick Mont Blanc for the Alps high point — a full glacier expedition with hut nights and bigger weather exposure.",
+      "verdict": "Breithorn is the accessible 4,000er; Mont Blanc is the altitude prize."
+    },
+    {
+      "slug": "merapeak-vs-island",
+      "aId": "merapeak",
+      "bId": "island",
+      "title": "Mera Peak vs Island Peak",
+      "query": "Mera Peak or Island Peak for a Nepal trekking peak?",
+      "summary": "Mera Peak and Island Peak (Imja Tse) are the two Khumbu trekking peaks most first-timers compare. Mera is higher (6,476 m) with a more walk-up glacier summit after a longer approach via Khare. Island Peak is lower but steeper, with a headwall and fixed-rope culture closer to Everest Base Camp. Both need NMA trekking-peak permits.",
+      "pickA": "Pick Mera Peak for more altitude on a less technical glacier, and Nepal’s busiest trekking-peak circuit.",
+      "pickB": "Pick Island Peak for a shorter Khumbu trip with more rope work and a closer view of the Everest group.",
+      "verdict": "Mera is the higher glacier tick; Island Peak is the steeper, more alpine-feeling introduction."
     }
   ]
 }

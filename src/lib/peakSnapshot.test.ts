@@ -106,7 +106,7 @@ describe('peakSnapshot', () => {
 
 describe('comparisons', () => {
   it('includes 10 high-intent pairs with catalog ids', () => {
-    expect(COMPARISON_PAIRS.length).toBe(10)
+    expect(COMPARISON_PAIRS.length).toBe(13)
     expect(getComparisonBySlug('whitney-vs-elbert')?.aId).toBe('whitney')
     expect(comparisonsForPeak('whitney').length).toBeGreaterThan(0)
   })

@@ -14,6 +14,7 @@ Update this file when shipping notable changes (do not maintain an in-app releas
 - Replace mismatched Commons stills (Kilimanjaro band, Langley street, Vinson maps, and other listed peaks); normalize photo thumbs to 960px
 - Country flags and pages for Philippines and Malaysia; merge Switzerland/Italy into Switzerland; Vercel runs `npm run build`; CI fails on a stale sitemap
 - Mobile map: Orbit sits under the compass, sheets paint on open, globe load retries, summit framing uses on-screen chrome
+- Add 20 peaks (Puncak Jaya through Mount Temple) plus Puncak Jaya vs Vinson, Breithorn vs Mont Blanc, and Mera Peak vs Island Peak comparisons
 
 ## 0.3.7 — 2026-08-01 — Faster satellite tiles
 

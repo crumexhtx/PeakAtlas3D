@@ -104,6 +104,19 @@ describe('country ISO maps', () => {
     expect(countryToIso('Switzerland/Italy')).toBe('ch')
   })
 
+  it('maps Phase 6 border and new-country labels to a primary ISO', () => {
+    expect(countryToIso('Indonesia')).toBe('id')
+    expect(countryToIso('Germany')).toBe('de')
+    expect(countryToIso('Iceland')).toBe('is')
+    expect(countryToIso('Cameroon')).toBe('cm')
+    expect(countryToIso('Guatemala')).toBe('gt')
+    expect(countryToIso('Chile/Argentina')).toBe('cl')
+    expect(countryToIso('Kyrgyzstan/Tajikistan')).toBe('kg')
+    expect(countryToIso('Poland/Slovakia')).toBe('pl')
+    expect(countryToIso('Uganda/DR Congo')).toBe('ug')
+    expect(countryToIso('Venezuela/Brazil/Guyana')).toBe('ve')
+  })
+
   it('merges Switzerland/Italy into the Switzerland country page', () => {
     const summaries = buildCountrySummaries([
       {

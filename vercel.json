@@ -28,6 +28,31 @@
       "source": "/countries/switzerland-italy",
       "destination": "/countries/switzerland",
       "permanent": true
+    },
+    {
+      "source": "/countries/chile-argentina",
+      "destination": "/countries/chile",
+      "permanent": true
+    },
+    {
+      "source": "/countries/kyrgyzstan-tajikistan",
+      "destination": "/countries/kyrgyzstan",
+      "permanent": true
+    },
+    {
+      "source": "/countries/poland-slovakia",
+      "destination": "/countries/poland",
+      "permanent": true
+    },
+    {
+      "source": "/countries/uganda-dr-congo",
+      "destination": "/countries/uganda",
+      "permanent": true
+    },
+    {
+      "source": "/countries/venezuela-brazil-guyana",
+      "destination": "/countries/venezuela",
+      "permanent": true
     }
   ],
   "rewrites": [

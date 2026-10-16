@@ -112,7 +112,7 @@
     "difficultyTier": "snow-glacier",
     "permitRequired": true,
     "permitStatus": "required",
-    "permitNotes": "Mount Rainier National Park climbing pass required for travel above 10,000 ft / on glaciers; wilderness camping permits for overnight high camps. Confirm current NPS rules before you go."
+    "permitNotes": "Mount Rainier National Park climbing pass + wilderness camping permits for overnight climbs."
   },
   {
     "id": "shasta",
@@ -241,7 +241,7 @@
     "difficultyTier": "snow-glacier",
     "permitRequired": true,
     "permitStatus": "required",
-    "permitNotes": "USFS summit pass required for travel above 10,000 ft on Mount Shasta. Wilderness and packing-out human-waste rules apply—buy the pass before you climb."
+    "permitNotes": "Summit pass required for climbs above 10,000 ft on Mount Shasta (USFS)."
   },
   {
     "id": "lassen",
@@ -279,7 +279,35 @@
         "lon": -121.595
       }
     ],
-    "hotels": [],
+    "hotels": [
+      {
+        "name": "Drakesbad Guest Ranch",
+        "category": "Guest house",
+        "note": "6.1 mi from summit",
+        "lat": 40.4437,
+        "lon": -121.40401,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2971081080"
+      },
+      {
+        "name": "The Village at Highlands Ranch",
+        "category": "Motel",
+        "note": "8.8 mi from summit",
+        "lat": 40.36156,
+        "lon": -121.49483,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/1088316525"
+      },
+      {
+        "name": "Highlands Ranch Resort",
+        "category": "Hotel",
+        "note": "8.9 mi from summit",
+        "lat": 40.35929,
+        "lon": -121.49394,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/10250725194"
+      }
+    ],
     "food": [
       {
         "name": "Mineral cafés",
@@ -358,7 +386,35 @@
         "lon": -116.712
       }
     ],
-    "hotels": [],
+    "hotels": [
+      {
+        "name": "Tahquitz Rock Lodge",
+        "category": "Chalet",
+        "note": "3.4 mi from summit",
+        "lat": 33.76587,
+        "lon": -116.68997,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4951711064"
+      },
+      {
+        "name": "Lily Cottage",
+        "category": "Chalet",
+        "note": "4.0 mi from summit",
+        "lat": 33.75832,
+        "lon": -116.69643,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4933630952"
+      },
+      {
+        "name": "Manzanita Cabins",
+        "category": "Guest house",
+        "note": "5.3 mi from summit",
+        "lat": 33.7453,
+        "lon": -116.7177,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1204112320"
+      }
+    ],
     "food": [
       {
         "name": "Palm Springs cafés",
@@ -429,7 +485,35 @@
         "lon": -116.925
       }
     ],
-    "hotels": [],
+    "hotels": [
+      {
+        "name": "Camp Metoche",
+        "category": "Hostel",
+        "note": "6.5 mi from summit",
+        "lat": 34.18197,
+        "lon": -116.88016,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3377394049"
+      },
+      {
+        "name": "Camp Wasewagan",
+        "category": "Hostel",
+        "note": "6.7 mi from summit",
+        "lat": 34.18179,
+        "lon": -116.88542,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3377394050"
+      },
+      {
+        "name": "Seven Oaks Mountain Resort",
+        "category": "Chalet",
+        "note": "8.2 mi from summit",
+        "lat": 34.18023,
+        "lon": -116.92927,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3377388424"
+      }
+    ],
     "food": [
       {
         "name": "Forest Falls cafés",
@@ -501,7 +585,35 @@
         "lon": -117.7198
       }
     ],
-    "hotels": [],
+    "hotels": [
+      {
+        "name": "Buckhorn Lodge",
+        "category": "Motel",
+        "note": "3.5 mi from summit",
+        "lat": 34.23847,
+        "lon": -117.65522,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/513269768"
+      },
+      {
+        "name": "Buckhorn Motel",
+        "category": "Motel",
+        "note": "3.6 mi from summit",
+        "lat": 34.23816,
+        "lon": -117.6563,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/513269766"
+      },
+      {
+        "name": "Holistic Health Lodging",
+        "category": "Motel",
+        "note": "5.5 mi from summit",
+        "lat": 34.36815,
+        "lon": -117.65445,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/11840436130"
+      }
+    ],
     "food": [
       {
         "name": "Mt. Baldy Village cafés",
@@ -648,7 +760,7 @@
     "difficultyTier": "snow-glacier",
     "permitRequired": false,
     "permitStatus": "not_required",
-    "permitNotes": "No general climbing permit for standard south-side routes. Wilderness regulations, seasonal closures, and Timberline ski-area rules still apply—check USFS and climb conditions before you go."
+    "permitNotes": "No general climbing permit for standard south-side routes; wilderness rules and seasonal restrictions still apply."
   },
   {
     "id": "southsister",
@@ -1667,7 +1779,7 @@
     "difficultyTier": "expedition",
     "permitRequired": true,
     "permitStatus": "required",
-    "permitNotes": "Denali National Park climbing registration and special-use rules apply for the West Buttress and other routes. Work with current NPS guidance and air-taxi operators out of Talkeetna."
+    "permitNotes": "Denali National Park climbing registration and special use requirements for the West Buttress and other routes."
   },
   {
     "id": "elbert",
@@ -2312,7 +2424,7 @@
     "difficultyTier": "day-hike",
     "permitRequired": true,
     "permitStatus": "required",
-    "permitNotes": "Inyo National Forest wilderness permit with quota for the Whitney Zone (overnight and many day approaches). Reserve early; day-use rules change by season—confirm recreation.gov before you go."
+    "permitNotes": "Inyo National Forest wilderness permit + quota for overnight; day-hike Whitney Portal corridor also regulated in peak season."
   },
   {
     "id": "split",
@@ -2332,7 +2444,7 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "Iconic Eastside 14er silhouette and a classic Sierra scramble above Bishop / Big Pine country.",
-    "seoMetaDescription": "Explore Split Mountain on a 3D map — Sierra Nevada 14er topography, Red Lake approaches, and Owens Valley staging.",
+    "seoMetaDescription": "Plan Split Mountain: Class 2–3 scramble — best Jun–Oct — Sierra Nevada, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Big Pine",
       "region": "California",
@@ -2402,7 +2514,7 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "One of the Sierra’s finest Class 3 ridges and a classic companion peak to Mount Whitney.",
-    "seoMetaDescription": "Explore Mount Russell on a 3D map — Sierra Nevada 14er topography, East Ridge context, and Lone Pine / Whitney Portal staging.",
+    "seoMetaDescription": "Plan Mount Russell: Class 3 scramble — best Jun–Oct — Sierra Nevada, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Lone Pine",
       "region": "California",
@@ -2484,7 +2596,7 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "Often called the easiest Sierra 14er and the southern end of California’s fourteeners.",
-    "seoMetaDescription": "Explore Mount Langley on a 3D map — southern Sierra 14er topography, Cottonwood Lakes approaches, and Lone Pine staging.",
+    "seoMetaDescription": "Plan Mount Langley: Class 1–2 hike — best Jun–Oct — Sierra Nevada, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Lone Pine",
       "region": "California",
@@ -2560,7 +2672,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Crown of the Palisades and one of the Sierra Nevada’s great technical 14ers.",
-    "seoMetaDescription": "Explore North Palisade on a 3D map — Sierra Palisades topography, glacier approaches, and Bishop / Big Pine staging.",
+    "seoMetaDescription": "Plan North Palisade: Technical rock — best Jun–Sep — Sierra Nevada, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Big Pine",
       "region": "California",
@@ -2630,7 +2742,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "Home of the Swiss Arete — one of the Sierra’s most celebrated alpine rock routes.",
-    "seoMetaDescription": "Explore Mount Sill on a 3D map — Sierra Palisades topography, Swiss Arete context, and Big Pine staging.",
+    "seoMetaDescription": "Plan Mount Sill: Technical rock — best Jun–Sep — Sierra Nevada, California — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Big Pine",
       "region": "California",
@@ -2947,7 +3059,7 @@
     "difficultyTier": "scramble",
     "permitRequired": true,
     "permitStatus": "required",
-    "permitNotes": "Yosemite Half Dome cables permit (preseason lottery and day-before releases) required when cables are up. Wilderness permits needed for overnight approaches—confirm NPS for the current season."
+    "permitNotes": "Yosemite Half Dome cables permit (lottery / day-of) required when cables are up."
   },
   {
     "id": "elcapitan",
@@ -4767,6 +4879,117 @@
     "permitNotes": "Mount Robson Provincial Park overnight camping / hut bookings are required for standard approaches. Confirm BC Parks reservations and current access rules."
   },
   {
+    "id": "temple",
+    "name": "Mount Temple",
+    "lat": 51.35056,
+    "lon": -116.20667,
+    "elevationFt": 11627,
+    "prominenceFt": 5066,
+    "range": "Bow Range",
+    "country": "Canada",
+    "adminRegion": "Alberta",
+    "description": "Highest peak in the Lake Louise group — Banff’s most popular big scramble via Sentinel Pass from Moraine Lake, with real rockfall and snow-slope hazard.",
+    "firstAscent": "1894",
+    "difficulty": "Class 3 scramble",
+    "difficultyTier": "scramble",
+    "aliases": [
+      "Mt. Temple"
+    ],
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Banff’s signature scramble: the high point above Lake Louise and Moraine Lake.",
+    "seoMetaDescription": "Mount Temple trip notes: Class 3 scramble, Jul–Sep, Parks Canada pass, Lake Louise / Moraine Lake staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Lake Louise",
+      "region": "Alberta",
+      "distanceMiles": 5,
+      "route": "Moraine Lake / Sentinel Pass",
+      "lat": 51.4254,
+      "lon": -116.1773
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Lake Louise",
+        "region": "Alberta",
+        "distanceMiles": 5,
+        "route": "Moraine Lake / Sentinel Pass",
+        "lat": 51.4254,
+        "lon": -116.1773
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No scrambling permit. Parks Canada discovery pass / Banff entry and Moraine Lake access rules apply — confirm current Parks Canada conditions.",
+    "hotels": [
+      {
+        "name": "Moraine Lake lodge",
+        "category": "Hotel",
+        "note": "1.9 mi from summit",
+        "lat": 51.32777,
+        "lon": -116.18254,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2956258930"
+      },
+      {
+        "name": "Neil Colgan Hut",
+        "category": "Alpine hut",
+        "note": "3.7 mi from summit",
+        "lat": 51.298,
+        "lon": -116.18786,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/317597563"
+      },
+      {
+        "name": "Deer Lodge",
+        "category": "Hotel",
+        "note": "4.6 mi from summit",
+        "lat": 51.41707,
+        "lon": -116.20936,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/128099231"
+      }
+    ],
+    "food": [
+      {
+        "name": "Lake Louise cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Lake Louise after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mt_Temple_summit.jpg/960px-Mt_Temple_summit.jpg",
+      "credit": "Khoshhat",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Temple_summit.jpg",
+      "lat": 51.350556,
+      "lon": -116.206667,
+      "width": 4032,
+      "height": 3024
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mt_Temple_summit.jpg/960px-Mt_Temple_summit.jpg",
+        "credit": "Khoshhat",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Temple_summit.jpg",
+        "lat": 51.350556,
+        "lon": -116.206667,
+        "width": 4032,
+        "height": 3024
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Valley_of_the_Ten_Peaks_2021.jpg/960px-Valley_of_the_Ten_Peaks_2021.jpg",
+        "credit": "Khoshhat",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valley_of_the_Ten_Peaks_2021.jpg",
+        "lat": 51.350556,
+        "lon": -116.206667,
+        "width": 4032,
+        "height": 3024
+      }
+    ]
+  },
+  {
     "id": "logan",
     "name": "Mt. Logan",
     "lat": 60.5671,
@@ -5529,6 +5752,341 @@
     "permitRequired": true,
     "permitStatus": "required",
     "permitNotes": "Aconcagua Provincial Park climbing permit required; medical check rules apply in season."
+  },
+  {
+    "id": "ojosdelsalado",
+    "name": "Ojos del Salado",
+    "lat": -27.10972,
+    "lon": -68.54139,
+    "elevationFt": 22615,
+    "prominenceFt": 12100,
+    "range": "Puna de Atacama",
+    "country": "Chile/Argentina",
+    "adminRegion": "Atacama",
+    "description": "Highest volcano on Earth and Chile’s high point — a high, arid Atacama massif usually approached as a non-technical high-altitude scramble from the Copiapó side.",
+    "firstAscent": "1937",
+    "difficulty": "High-altitude hike",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Nevado Ojos del Salado"
+    ],
+    "bestSeason": "Dec–Mar",
+    "whyNotable": "World’s highest volcano and a Volcanic Seven Summits objective on the Chile–Argentina border.",
+    "seoMetaDescription": "Ojos del Salado trip notes: high-altitude hike, Dec–Mar, CONAF / border permits, Copiapó staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Copiapó",
+      "region": "Atacama",
+      "distanceMiles": 111,
+      "route": "Ruta 31 / Laguna Verde",
+      "lat": -27.3665,
+      "lon": -70.3322
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Copiapó",
+        "region": "Atacama",
+        "distanceMiles": 111,
+        "route": "Ruta 31 / Laguna Verde",
+        "lat": -27.3665,
+        "lon": -70.3322
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Chilean CONAF access to Nevado Tres Cruces and border/DIFROL authorization typically apply on the Copiapó approach. Confirm current Chile/Argentina park and border rules.",
+    "hotels": [
+      {
+        "name": "Refugio Tejos",
+        "category": "Alpine hut",
+        "note": "1.5 mi from summit",
+        "lat": -27.08757,
+        "lon": -68.53816,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/411376934"
+      },
+      {
+        "name": "Atacama Refuge",
+        "category": "Wilderness hut",
+        "note": "3.5 mi from summit",
+        "lat": -27.05977,
+        "lon": -68.54761,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/639993032"
+      },
+      {
+        "name": "Refugio Murray",
+        "category": "Alpine hut",
+        "note": "12.7 mi from summit",
+        "lat": -26.93283,
+        "lon": -68.59685,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4541645135"
+      }
+    ],
+    "food": [
+      {
+        "name": "Copiapó cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Copiapó after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/HighCampOjosDelSalado2004.jpg/960px-HighCampOjosDelSalado2004.jpg",
+      "credit": "Albert Backer",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:HighCampOjosDelSalado2004.jpg",
+      "lat": -27.087635,
+      "lon": -68.538139,
+      "width": 1600,
+      "height": 1200
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/HighCampOjosDelSalado2004.jpg/960px-HighCampOjosDelSalado2004.jpg",
+        "credit": "Albert Backer",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:HighCampOjosDelSalado2004.jpg",
+        "lat": -27.087635,
+        "lon": -68.538139,
+        "width": 1600,
+        "height": 1200
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OjosDelSalado2004a.jpg/960px-OjosDelSalado2004a.jpg",
+        "credit": "Albert Backer",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:OjosDelSalado2004a.jpg",
+        "lat": -27.087635,
+        "lon": -68.538139,
+        "width": 1600,
+        "height": 1200
+      }
+    ]
+  },
+  {
+    "id": "villarrica",
+    "name": "Volcán Villarrica",
+    "lat": -39.420849,
+    "lon": -71.939371,
+    "elevationFt": 9383,
+    "prominenceFt": 5167,
+    "range": "Southern Andes",
+    "country": "Chile",
+    "adminRegion": "Araucanía",
+    "description": "An active crater volcano above Pucón — Chile’s most popular guided snow climb, with a separate CONAF crater-ascent pass on top of park entry.",
+    "firstAscent": "Unknown",
+    "difficulty": "Snow climb",
+    "difficultyTier": "snow-glacier",
+    "aliases": [
+      "Villarrica",
+      "Rucapillán"
+    ],
+    "bestSeason": "Nov–Mar",
+    "whyNotable": "One of South America’s most popular guided volcano climbs, with an open lava lake in the crater when conditions allow.",
+    "seoMetaDescription": "Volcán Villarrica trip notes: snow climb, Nov–Mar, CONAF crater pass, Pucón staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Pucón",
+      "region": "Araucanía",
+      "distanceMiles": 10,
+      "route": "Rucapillán ski area",
+      "lat": -39.282,
+      "lon": -71.954
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Pucón",
+        "region": "Araucanía",
+        "distanceMiles": 10,
+        "route": "Rucapillán ski area",
+        "lat": -39.282,
+        "lon": -71.954
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "CONAF requires a separate Villarrica crater-ascent pass (pasesparques.cl) in addition to park entry; most visitors must go with a licensed Pucón operator.",
+    "hotels": [
+      {
+        "name": "Hospedaje Sonia",
+        "category": "Hostel",
+        "note": "10.1 mi from summit",
+        "lat": -39.27789,
+        "lon": -71.9766,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/654671908"
+      },
+      {
+        "name": "Hotel del Volcan",
+        "category": "Hotel",
+        "note": "10.1 mi from summit",
+        "lat": -39.27702,
+        "lon": -71.97603,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/960788407"
+      },
+      {
+        "name": "Cabañas Arauco",
+        "category": "Hostel",
+        "note": "10.1 mi from summit",
+        "lat": -39.27636,
+        "lon": -71.97186,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1395482231"
+      }
+    ],
+    "food": [
+      {
+        "name": "Pucón cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Pucón after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cr%C3%A1ter_del_Volc%C3%A1n_Villarica%2C_Chile_-_panoramio.jpg/960px-Cr%C3%A1ter_del_Volc%C3%A1n_Villarica%2C_Chile_-_panoramio.jpg",
+      "credit": "rodoluca",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cr%C3%A1ter_del_Volc%C3%A1n_Villarica,_Chile_-_panoramio.jpg",
+      "lat": -39.421342,
+      "lon": -71.939678,
+      "width": 1704,
+      "height": 1032
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cr%C3%A1ter_del_Volc%C3%A1n_Villarica%2C_Chile_-_panoramio.jpg/960px-Cr%C3%A1ter_del_Volc%C3%A1n_Villarica%2C_Chile_-_panoramio.jpg",
+        "credit": "rodoluca",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cr%C3%A1ter_del_Volc%C3%A1n_Villarica,_Chile_-_panoramio.jpg",
+        "lat": -39.421342,
+        "lon": -71.939678,
+        "width": 1704,
+        "height": 1032
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Crater_volc%C3%A1n_Villarrica.jpg/960px-Crater_volc%C3%A1n_Villarrica.jpg",
+        "credit": "Maxcostas",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crater_volc%C3%A1n_Villarrica.jpg",
+        "lat": -39.419947,
+        "lon": -71.938877,
+        "width": 4000,
+        "height": 3000
+      }
+    ]
+  },
+  {
+    "id": "roraima",
+    "name": "Mount Roraima",
+    "lat": 5.14333,
+    "lon": -60.7625,
+    "elevationFt": 9219,
+    "prominenceFt": 7671,
+    "range": "Pacaraima",
+    "country": "Venezuela/Brazil/Guyana",
+    "adminRegion": "Bolívar",
+    "description": "The famous tepui on the Venezuela–Brazil–Guyana border — a multi-day plateau trek usually started from Paraitepuy with Inparques permits.",
+    "firstAscent": "1884",
+    "difficulty": "Strenuous day / overnight",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Monte Roraima",
+      "Tepuy Roraima"
+    ],
+    "bestSeason": "Dec–Mar",
+    "whyNotable": "The classic Guiana Shield tepui trek and a country high-point massif on a three-way border.",
+    "seoMetaDescription": "Plan Mount Roraima: Strenuous day / overnight — best Dec–Mar — Pacaraima, Bolívar — trip notes and 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Santa Elena de Uairén",
+      "region": "Bolívar",
+      "distanceMiles": 44,
+      "route": "Paraitepuy trailhead",
+      "lat": 4.602,
+      "lon": -61.11
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Santa Elena de Uairén",
+        "region": "Bolívar",
+        "distanceMiles": 44,
+        "route": "Paraitepuy trailhead",
+        "lat": 4.602,
+        "lon": -61.11
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Venezuela Inparques permits are required for the Roraima tepui trek (typically arranged from Santa Elena / Paraitepuy). Confirm current park and border rules.",
+    "hotels": [
+      {
+        "name": "Hotel Venezuela 2021",
+        "category": "Hotel",
+        "note": "43.6 mi from summit",
+        "lat": 4.60983,
+        "lon": -61.10165,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/13271409885"
+      },
+      {
+        "name": "Cabañas y Habitaciones Roraima",
+        "category": "Hostel",
+        "note": "43.9 mi from summit",
+        "lat": 4.61132,
+        "lon": -61.10989,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/11178855137"
+      },
+      {
+        "name": "Hotel José Gregorio Hernández",
+        "category": "Hotel",
+        "note": "43.9 mi from summit",
+        "lat": 4.60851,
+        "lon": -61.10705,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/13271075474"
+      }
+    ],
+    "food": [
+      {
+        "name": "Santa Elena de Uairén cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Santa Elena de Uairén after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Topo_do_monte_roraima.jpg/960px-Topo_do_monte_roraima.jpg",
+      "credit": "Edmilson sanches",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Topo_do_monte_roraima.jpg",
+      "lat": 5.143333,
+      "lon": -60.7625,
+      "width": 2560,
+      "height": 1920
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Topo_do_monte_roraima.jpg/960px-Topo_do_monte_roraima.jpg",
+        "credit": "Edmilson sanches",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Topo_do_monte_roraima.jpg",
+        "lat": 5.143333,
+        "lon": -60.7625,
+        "width": 2560,
+        "height": 1920
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Forma%C3%A7%C3%B5es_-monte_roraima.jpg/960px-Forma%C3%A7%C3%B5es_-monte_roraima.jpg",
+        "credit": "Edmilson sanches",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Forma%C3%A7%C3%B5es_-monte_roraima.jpg",
+        "lat": 5.141188,
+        "lon": -60.763674,
+        "width": 2560,
+        "height": 1920
+      }
+    ]
   },
   {
     "id": "huascaran",
@@ -6765,7 +7323,112 @@
     "difficultyTier": "alpine-technical",
     "permitRequired": false,
     "permitStatus": "not_required",
-    "permitNotes": "No general government climbing permit for the Hörnli. Hut bookings, guide requirements, and seasonal route conditions are the practical constraints—confirm with Zermatt guides / hut staff."
+    "permitNotes": "No general government climbing permit for the Hörnli; hut bookings and guide requirements are the practical gate."
+  },
+  {
+    "id": "breithorn",
+    "name": "Breithorn",
+    "lat": 45.9409,
+    "lon": 7.74763,
+    "elevationFt": 13688,
+    "prominenceFt": 1463,
+    "range": "Pennine Alps",
+    "country": "Switzerland/Italy",
+    "adminRegion": "Valais",
+    "description": "The most-climbed Alpine 4,000er from Zermatt — a short glacier climb from Klein Matterhorn / Matterhorn glacier paradise, typically with a UIAGM guide.",
+    "firstAscent": "1813",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "aliases": [
+      "Western Breithorn"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Often called the easiest 4,000 m peak in the Alps — a guided glacier day above Zermatt.",
+    "seoMetaDescription": "Breithorn trip notes: alpine glacier climb, Jun–Sep, Klein Matterhorn access, Zermatt staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Zermatt",
+      "region": "Valais",
+      "distanceMiles": 6,
+      "route": "Matterhorn glacier paradise",
+      "lat": 46.0207,
+      "lon": 7.7491
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Zermatt",
+        "region": "Valais",
+        "distanceMiles": 6,
+        "route": "Matterhorn glacier paradise",
+        "lat": 46.0207,
+        "lon": 7.7491
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general climbing permit. Glacier travel from Klein Matterhorn is the constraint — hut/cable-car tickets and seasonal route conditions apply.",
+    "hotels": [
+      {
+        "name": "Rifugio Guide d'Ayas",
+        "category": "Alpine hut",
+        "note": "1.7 mi from summit",
+        "lat": 45.9206,
+        "lon": 7.76714,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/353049786"
+      },
+      {
+        "name": "Rifugio Ottorino Mezzalama",
+        "category": "Alpine hut",
+        "note": "2.0 mi from summit",
+        "lat": 45.9137,
+        "lon": 7.75943,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/353049783"
+      },
+      {
+        "name": "Igludorf",
+        "category": "Hotel",
+        "note": "3.4 mi from summit",
+        "lat": 45.98868,
+        "lon": 7.76359,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/342765056"
+      }
+    ],
+    "food": [
+      {
+        "name": "Zermatt cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Zermatt after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Breithorn_north.jpg/960px-Breithorn_north.jpg",
+      "credit": "Laurent-34",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Breithorn_north.jpg",
+      "width": 1764,
+      "height": 930
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Breithorn_north.jpg/960px-Breithorn_north.jpg",
+        "credit": "Laurent-34",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Breithorn_north.jpg",
+        "width": 1764,
+        "height": 930
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Breithorn_mountain.jpg/960px-Breithorn_mountain.jpg",
+        "credit": "Victoria Lunyak",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Breithorn_mountain.jpg",
+        "width": 2470,
+        "height": 2717
+      }
+    ]
   },
   {
     "id": "grandcombin",
@@ -6785,7 +7448,7 @@
     ],
     "bestSeason": "Jun–Sep",
     "whyNotable": "One of the great Valais 4000-metre peaks and a classic Swiss glacier objective.",
-    "seoMetaDescription": "Explore Grand Combin on a 3D map — Valais Alps topography, glacier approaches, elevation stats, and Verbier / Bagnes staging.",
+    "seoMetaDescription": "Plan Grand Combin: Alpine glacier — best Jun–Sep — Pennine Alps, Valais — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Verbier",
       "region": "Valais",
@@ -6855,7 +7518,7 @@
     ],
     "bestSeason": "Jul–Sep",
     "whyNotable": "Classic Monte Rosa 4000er often climbed with neighboring Pollux.",
-    "seoMetaDescription": "Explore Castor on a 3D map — Pennine Alps / Monte Rosa topography, glacier approaches, and Zermatt staging.",
+    "seoMetaDescription": "Plan Castor: Alpine glacier — best Jul–Sep — Pennine Alps, Valais — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Zermatt",
       "region": "Valais",
@@ -7034,6 +7697,118 @@
     "permitNotes": "No general government climbing permit for the Jungfrau. Hut bookings and Jungfraujoch / regional transport logistics apply."
   },
   {
+    "id": "monch",
+    "name": "Mönch",
+    "lat": 46.55849,
+    "lon": 7.99725,
+    "elevationFt": 13484,
+    "prominenceFt": 1938,
+    "range": "Bernese Alps",
+    "country": "Switzerland",
+    "adminRegion": "Bern",
+    "description": "The middle summit of the Eiger–Mönch–Jungfrau trio — a guided snow arete from Jungfraujoch, popular as a first Bernese 4,000er.",
+    "firstAscent": "1857",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "aliases": [
+      "Moench",
+      "Monch"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Classic guided 4,000er beside Eiger and Jungfrau, climbed from the Jungfraujoch railway.",
+    "seoMetaDescription": "Mönch trip notes: alpine glacier climb, Jun–Sep, Jungfraujoch start, Grindelwald staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Grindelwald",
+      "region": "Bern",
+      "distanceMiles": 5,
+      "route": "Jungfraujoch railway",
+      "lat": 46.6242,
+      "lon": 8.0414
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Grindelwald",
+        "region": "Bern",
+        "distanceMiles": 5,
+        "route": "Jungfraujoch railway",
+        "lat": 46.6242,
+        "lon": 8.0414
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general climbing permit. Jungfraujoch access and glacier/route conditions are the practical gates — confirm with Grindelwald / Jungfrau guides.",
+    "hotels": [
+      {
+        "name": "Jungfraublick",
+        "category": "Chalet",
+        "note": "5.4 mi from summit",
+        "lat": 46.60559,
+        "lon": 7.90628,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/472674826"
+      },
+      {
+        "name": "Spielbodenalp",
+        "category": "Alpine hut",
+        "note": "5.9 mi from summit",
+        "lat": 46.54884,
+        "lon": 7.87391,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/454394987"
+      },
+      {
+        "name": "Rotstockhütte",
+        "category": "Alpine hut",
+        "note": "7.6 mi from summit",
+        "lat": 46.54516,
+        "lon": 7.83832,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/454394985"
+      }
+    ],
+    "food": [
+      {
+        "name": "Grindelwald cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Grindelwald after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/360_Jungfrau_M%C3%B6nch.jpg/960px-360_Jungfrau_M%C3%B6nch.jpg",
+      "credit": "Daniel Reust",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:360_Jungfrau_M%C3%B6nch.jpg",
+      "lat": 46.558542,
+      "lon": 7.997281,
+      "width": 17298,
+      "height": 8649
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/360_Jungfrau_M%C3%B6nch.jpg/960px-360_Jungfrau_M%C3%B6nch.jpg",
+        "credit": "Daniel Reust",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:360_Jungfrau_M%C3%B6nch.jpg",
+        "lat": 46.558542,
+        "lon": 7.997281,
+        "width": 17298,
+        "height": 8649
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Eiger%2C_M%C3%B6nch_und_Jungfrau.jpg/960px-Eiger%2C_M%C3%B6nch_und_Jungfrau.jpg",
+        "credit": "Steinmann",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eiger,_M%C3%B6nch_und_Jungfrau.jpg",
+        "lat": 46.61806,
+        "lon": 7.93806,
+        "width": 1600,
+        "height": 1200
+      }
+    ]
+  },
+  {
     "id": "eiger",
     "name": "Eiger",
     "lat": 46.5776,
@@ -7144,6 +7919,109 @@
     "permitRequired": false,
     "permitStatus": "not_required",
     "permitNotes": "No general government climbing permit for the Eiger. Hut bookings, guide requirements for some parties, and Jungfrau Region transport rules are the practical constraints."
+  },
+  {
+    "id": "zugspitze",
+    "name": "Zugspitze",
+    "lat": 47.42123,
+    "lon": 10.98632,
+    "elevationFt": 9717,
+    "prominenceFt": 5732,
+    "range": "Wetterstein",
+    "country": "Germany",
+    "adminRegion": "Bavaria",
+    "description": "Germany’s high point on the Austrian border — reached by cog railway, cable car, or the Höllental / Reintal trails with via ferrata sections on the classic routes.",
+    "firstAscent": "1820",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Highest mountain in Germany and a high-search Alpine day from Garmisch-Partenkirchen.",
+    "seoMetaDescription": "Zugspitze trip notes: strenuous day hike, Jun–Sep, no summit permit, Garmisch-Partenkirchen staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Garmisch-Partenkirchen",
+      "region": "Bavaria",
+      "distanceMiles": 7,
+      "route": "Bayerische Zugspitzbahn",
+      "lat": 47.492,
+      "lon": 11.095
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Garmisch-Partenkirchen",
+        "region": "Bavaria",
+        "distanceMiles": 7,
+        "route": "Bayerische Zugspitzbahn",
+        "lat": 47.492,
+        "lon": 11.095
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general summit climbing permit. Cable-car, cog railway, and trailhead rules apply; the Austrian border ridge is a walk-up / via ferrata mix.",
+    "hotels": [
+      {
+        "name": "Knorrhütte",
+        "category": "Alpine hut",
+        "note": "1.5 mi from summit",
+        "lat": 47.41001,
+        "lon": 11.01273,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/476498599"
+      },
+      {
+        "name": "Eriro",
+        "category": "Hotel",
+        "note": "2.7 mi from summit",
+        "lat": 47.38324,
+        "lon": 10.97372,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/292939930"
+      },
+      {
+        "name": "Höllentaleingangshütte",
+        "category": "Alpine hut",
+        "note": "3.3 mi from summit",
+        "lat": 47.44839,
+        "lon": 11.04449,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/357482706"
+      }
+    ],
+    "food": [
+      {
+        "name": "Garmisch-Partenkirchen cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Garmisch-Partenkirchen after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Blindsee_Zugspitze_1.jpg/960px-Blindsee_Zugspitze_1.jpg",
+      "credit": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blindsee_Zugspitze_1.jpg",
+      "width": 5400,
+      "height": 3600
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Blindsee_Zugspitze_1.jpg/960px-Blindsee_Zugspitze_1.jpg",
+        "credit": "kallerna",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blindsee_Zugspitze_1.jpg",
+        "width": 5400,
+        "height": 3600
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Zugspitze_2005.jpg/960px-Zugspitze_2005.jpg",
+        "credit": "No machine-readable author provided. Specialplant~commonswiki assumed (based …",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zugspitze_2005.jpg",
+        "width": 2048,
+        "height": 1536
+      }
+    ]
   },
   {
     "id": "grossglockner",
@@ -8422,6 +9300,224 @@
     "permitNotes": "Tanzanian park fees and a licensed operator / guide required for all standard routes."
   },
   {
+    "id": "margherita",
+    "name": "Margherita Peak",
+    "lat": 0.38583,
+    "lon": 29.87167,
+    "elevationFt": 16763,
+    "prominenceFt": 12874,
+    "range": "Rwenzori",
+    "country": "Uganda/DR Congo",
+    "adminRegion": "Western Region",
+    "description": "Highest point of Mount Stanley and the third-highest mountain in Africa — a glaciated rock climb on the Uganda–DRC border in the Rwenzori.",
+    "firstAscent": "1906",
+    "difficulty": "Technical alpine / glacier",
+    "difficultyTier": "snow-glacier",
+    "aliases": [
+      "Mount Stanley",
+      "Mount Ngaliema"
+    ],
+    "bestSeason": "Dec–Feb, Jun–Aug",
+    "whyNotable": "Africa’s third-highest summit and the high point of both Uganda and the DRC, on the classic Rwenzori trek.",
+    "seoMetaDescription": "Plan Margherita Peak: Technical alpine / glacier — best Dec–Feb, Jun–Aug — Rwenzori, Western Region — trip notes and 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Kasese",
+      "region": "Western Region",
+      "distanceMiles": 20,
+      "route": "Nyakalengija / Rwenzori",
+      "lat": 0.1833,
+      "lon": 30.0833
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Kasese",
+        "region": "Western Region",
+        "distanceMiles": 20,
+        "route": "Nyakalengija / Rwenzori",
+        "lat": 0.1833,
+        "lon": 30.0833
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Uganda Wildlife Authority (and ICCN on the DRC side) park and trekking permits are required for the Rwenzori / Margherita Peak route. Confirm current UWA / operator rules.",
+    "hotels": [
+      {
+        "name": "Guy Yeoman Hut",
+        "category": "Alpine hut",
+        "note": "4.8 mi from summit",
+        "lat": 0.34399,
+        "lon": 29.92758,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1394135573"
+      },
+      {
+        "name": "Nyabitaba Hut",
+        "category": "Alpine hut",
+        "note": "7.7 mi from summit",
+        "lat": 0.35813,
+        "lon": 29.97893,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1394135579"
+      },
+      {
+        "name": "Kikaro Camp",
+        "category": "Alpine hut",
+        "note": "7.7 mi from summit",
+        "lat": 0.29066,
+        "lon": 29.92938,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4036531587"
+      }
+    ],
+    "food": [
+      {
+        "name": "Kasese cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Kasese after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Alexandra_Peak_at_dawn.jpg/960px-Alexandra_Peak_at_dawn.jpg",
+      "credit": "Rafał Kozubek",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alexandra_Peak_at_dawn.jpg",
+      "lat": 0.385,
+      "lon": 29.87353,
+      "width": 3200,
+      "height": 2400
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Alexandra_Peak_at_dawn.jpg/960px-Alexandra_Peak_at_dawn.jpg",
+        "credit": "Rafał Kozubek",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alexandra_Peak_at_dawn.jpg",
+        "lat": 0.385,
+        "lon": 29.87353,
+        "width": 3200,
+        "height": 2400
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Stanley_Plateau_glacier_Alexandra_Margherita.jpg/960px-Stanley_Plateau_glacier_Alexandra_Margherita.jpg",
+        "credit": "Rafał Kozubek",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Plateau_glacier_Alexandra_Margherita.jpg",
+        "lat": 0.37537,
+        "lon": 29.87801,
+        "width": 5184,
+        "height": 3888
+      }
+    ]
+  },
+  {
+    "id": "cameroon",
+    "name": "Mount Cameroon",
+    "lat": 4.21667,
+    "lon": 9.1725,
+    "elevationFt": 13255,
+    "prominenceFt": 12799,
+    "range": "Cameroon Line",
+    "country": "Cameroon",
+    "adminRegion": "Southwest",
+    "description": "West Africa’s highest mountain — an active stratovolcano above Buea, climbed as a long hut-to-summit trek through Mount Cameroon National Park.",
+    "firstAscent": "1840s",
+    "difficulty": "Strenuous day / overnight",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Fako",
+      "Mongo ma Ndemi"
+    ],
+    "bestSeason": "Nov–Feb",
+    "whyNotable": "Highest peak in West Africa and a classic Buea-based volcano trek.",
+    "seoMetaDescription": "Plan Mount Cameroon: Strenuous day / overnight — best Nov–Feb — Cameroon Line, Southwest — trip notes and 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Buea",
+      "region": "Southwest",
+      "distanceMiles": 6,
+      "route": "Park trailheads",
+      "lat": 4.155,
+      "lon": 9.232
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Buea",
+        "region": "Southwest",
+        "distanceMiles": 6,
+        "route": "Park trailheads",
+        "lat": 4.155,
+        "lon": 9.232
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Mount Cameroon National Park entry and locally arranged guides from Buea are typically required. Confirm current park office rules.",
+    "hotels": [
+      {
+        "name": "Synode Office",
+        "category": "Guest house",
+        "note": "5.7 mi from summit",
+        "lat": 4.16045,
+        "lon": 9.23241,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3421959586"
+      },
+      {
+        "name": "Capitol Hotel Residence",
+        "category": "Hotel",
+        "note": "6.6 mi from summit",
+        "lat": 4.15119,
+        "lon": 9.24235,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/5570600737"
+      },
+      {
+        "name": "Hotel Mermoz",
+        "category": "Hotel",
+        "note": "6.8 mi from summit",
+        "lat": 4.14624,
+        "lon": 9.24086,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1033231153"
+      }
+    ],
+    "food": [
+      {
+        "name": "Buea cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Buea after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Landscape_of_Mount_Cameroon.jpg/960px-Landscape_of_Mount_Cameroon.jpg",
+      "credit": "Buma Peter",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Landscape_of_Mount_Cameroon.jpg",
+      "width": 1024,
+      "height": 576
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Landscape_of_Mount_Cameroon.jpg/960px-Landscape_of_Mount_Cameroon.jpg",
+        "credit": "Buma Peter",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Landscape_of_Mount_Cameroon.jpg",
+        "width": 1024,
+        "height": 576
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mount_Cameroon.jpg/960px-Mount_Cameroon.jpg",
+        "credit": "Daina",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Cameroon.jpg",
+        "width": 1944,
+        "height": 2592
+      }
+    ]
+  },
+  {
     "id": "kenya",
     "name": "Mt. Kenya",
     "lat": -0.1521,
@@ -9178,7 +10274,7 @@
     "difficultyTier": "expedition",
     "permitRequired": true,
     "permitStatus": "required",
-    "permitNotes": "Nepal or Tibet climbing permits via a licensed operator; Sagarmatha / Chinese agency fees and liaison requirements apply. Do not self-organize without current operator support."
+    "permitNotes": "Nepal (or Tibet) climbing permit via licensed operator; multiple agency fees apply."
   },
   {
     "id": "k2",
@@ -9291,6 +10387,190 @@
     "permitRequired": true,
     "permitStatus": "required",
     "permitNotes": "Pakistan climbing permit and licensed expedition operator required."
+  },
+  {
+    "id": "lenin",
+    "name": "Lenin Peak",
+    "lat": 39.3425,
+    "lon": 72.8775,
+    "elevationFt": 23406,
+    "prominenceFt": 9360,
+    "range": "Trans-Alay Range",
+    "country": "Kyrgyzstan/Tajikistan",
+    "adminRegion": "Osh",
+    "description": "The most-climbed 7,000 m peak — a glaciated Pamir expedition usually staged from Achik-Tash on the Kyrgyz side, with real altitude and avalanche hazard despite a “non-technical” reputation.",
+    "firstAscent": "1928",
+    "difficulty": "High-altitude expedition",
+    "difficultyTier": "expedition",
+    "aliases": [
+      "Ibn Sina Peak",
+      "Pik Lenin",
+      "Kaufmann Peak"
+    ],
+    "bestSeason": "Jul–Aug",
+    "whyNotable": "Classic first 7,000er: highest of the Trans-Alay and among the world’s most-ascended 7,000 m peaks.",
+    "seoMetaDescription": "Lenin Peak trip notes: high-altitude expedition, Jul–Aug, Kyrgyz border permits, Osh / Achik-Tash staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Osh",
+      "region": "Osh",
+      "distanceMiles": 82,
+      "route": "Achik-Tash road",
+      "lat": 40.5283,
+      "lon": 72.7985
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Osh",
+        "region": "Osh",
+        "distanceMiles": 82,
+        "route": "Achik-Tash road",
+        "lat": 40.5283,
+        "lon": 72.7985
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Kyrgyzstan OVIR/border-zone and mountaineering permits are required for Achik-Tash / Lenin Peak. Confirm current Kyrgyz tourism and border rules.",
+    "hotels": [],
+    "food": [
+      {
+        "name": "Osh cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Osh after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Lenini_m%C3%A4etipp.jpg/960px-Lenini_m%C3%A4etipp.jpg",
+      "credit": "PrtExtra",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lenini_m%C3%A4etipp.jpg",
+      "lat": 39.346944,
+      "lon": 72.879167,
+      "width": 4032,
+      "height": 2268
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Lenini_m%C3%A4etipp.jpg/960px-Lenini_m%C3%A4etipp.jpg",
+        "credit": "PrtExtra",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lenini_m%C3%A4etipp.jpg",
+        "lat": 39.346944,
+        "lon": 72.879167,
+        "width": 4032,
+        "height": 2268
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Lenin_Peak.jpg/960px-Lenin_Peak.jpg",
+        "credit": "Nihongarden",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lenin_Peak.jpg",
+        "width": 1440,
+        "height": 1080
+      }
+    ]
+  },
+  {
+    "id": "muztaghata",
+    "name": "Muztagh Ata",
+    "lat": 38.27611,
+    "lon": 75.11594,
+    "elevationFt": 24757,
+    "prominenceFt": 8973,
+    "range": "Kongur Shan",
+    "country": "China",
+    "adminRegion": "Xinjiang",
+    "description": "A broad 7,500 m ski-expedition peak above Karakul Lake — often called an “easy” 7,000er, still a full Chinese mountaineering-permit expedition from Kashgar.",
+    "firstAscent": "1956",
+    "difficulty": "High-altitude expedition",
+    "difficultyTier": "expedition",
+    "aliases": [
+      "Muztagata",
+      "Mustagh Ata"
+    ],
+    "bestSeason": "Jun–Aug",
+    "whyNotable": "Classic “easy” 7,000 m ski mountain of the Eastern Pamirs, with CMA / Xinjiang permit logistics.",
+    "seoMetaDescription": "Muztagh Ata trip notes: high-altitude expedition, Jun–Aug, CMA and Alien Travel permits, Kashgar staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Kashgar",
+      "region": "Xinjiang",
+      "distanceMiles": 95,
+      "route": "Karakoram Highway / Karakul",
+      "lat": 39.4704,
+      "lon": 75.9898
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Kashgar",
+        "region": "Xinjiang",
+        "distanceMiles": 95,
+        "route": "Karakoram Highway / Karakul",
+        "lat": 39.4704,
+        "lon": 75.9898
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "China mountaineering permits (CMA / Xinjiang association) plus an Alien Travel Permit for the Kashgar border area are required. Confirm current CXMA rules.",
+    "hotels": [
+      {
+        "name": "不周山营地",
+        "category": "Wilderness hut",
+        "note": "11.9 mi from summit",
+        "lat": 38.43885,
+        "lon": 75.04311,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/13129754746"
+      },
+      {
+        "name": "蒙古包",
+        "category": "Hostel",
+        "note": "12.6 mi from summit",
+        "lat": 38.45082,
+        "lon": 75.04787,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/6249483715"
+      }
+    ],
+    "food": [
+      {
+        "name": "Kashgar cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Kashgar after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Muztagh_Ata.jpg/960px-Muztagh_Ata.jpg",
+      "credit": "40thFrontier",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muztagh_Ata.jpg",
+      "lat": 38.336219,
+      "lon": 74.988883,
+      "width": 4032,
+      "height": 3024
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Muztagh_Ata.jpg/960px-Muztagh_Ata.jpg",
+        "credit": "40thFrontier",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muztagh_Ata.jpg",
+        "lat": 38.336219,
+        "lon": 74.988883,
+        "width": 4032,
+        "height": 3024
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Muztagh_Ata_Xinjiang_China.jpg/960px-Muztagh_Ata_Xinjiang_China.jpg",
+        "credit": "Jialiang Gao www.peace-on-earth.org",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muztagh_Ata_Xinjiang_China.jpg",
+        "width": 900,
+        "height": 573
+      }
+    ]
   },
   {
     "id": "kangchen",
@@ -10954,6 +12234,117 @@
     "permitNotes": "Nepal climbing / trekking-peak permit via a licensed operator; Sagarmatha National Park fees apply for the Island Peak (Imja Tse) approach."
   },
   {
+    "id": "merapeak",
+    "name": "Mera Peak",
+    "lat": 27.70916,
+    "lon": 86.868289,
+    "elevationFt": 21247,
+    "prominenceFt": 3488,
+    "range": "Mahalangur Himal",
+    "country": "Nepal",
+    "adminRegion": "Koshi",
+    "description": "Nepal’s most-climbed trekking peak — a glaciated 6,000 m objective south of Everest, usually approached via Khare with NMA permits.",
+    "firstAscent": "1953",
+    "difficulty": "Trekking peak",
+    "difficultyTier": "expedition",
+    "aliases": [
+      "Mera"
+    ],
+    "bestSeason": "Apr–May, Oct–Nov",
+    "whyNotable": "The standard “first 6,000er” for trekkers in the Khumbu, and Nepal’s busiest trekking peak.",
+    "seoMetaDescription": "Mera Peak trip notes: trekking peak, Apr–May and Oct–Nov, NMA permit, Lukla / Khare staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Lukla",
+      "region": "Koshi",
+      "distanceMiles": 9,
+      "route": "Mera Peak trek",
+      "lat": 27.687,
+      "lon": 86.731
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Lukla",
+        "region": "Koshi",
+        "distanceMiles": 9,
+        "route": "Mera Peak trek",
+        "lat": 27.687,
+        "lon": 86.731
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Nepal NMA trekking-peak permit plus TIMS / Khumbu rural municipality fees apply. Arrange through a licensed Nepal operator and confirm current NMA rules.",
+    "hotels": [
+      {
+        "name": "Lukla Lodge",
+        "category": "Guest house",
+        "note": "8.7 mi from summit",
+        "lat": 27.69345,
+        "lon": 86.72799,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/564122715"
+      },
+      {
+        "name": "Phakding",
+        "category": "Guest house",
+        "note": "9.8 mi from summit",
+        "lat": 27.74356,
+        "lon": 86.71285,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/564120295"
+      },
+      {
+        "name": "Phakding Star Lodge",
+        "category": "Guest house",
+        "note": "9.8 mi from summit",
+        "lat": 27.74377,
+        "lon": 86.71264,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1492311485"
+      }
+    ],
+    "food": [
+      {
+        "name": "Lukla cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Lukla after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Summit_of_Mera_peak.jpg/960px-Summit_of_Mera_peak.jpg",
+      "credit": "Sangyam adventurer",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Summit_of_Mera_peak.jpg",
+      "lat": 27.709,
+      "lon": 86.8683,
+      "width": 11323,
+      "height": 6049
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Summit_of_Mera_peak.jpg/960px-Summit_of_Mera_peak.jpg",
+        "credit": "Sangyam adventurer",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Summit_of_Mera_peak.jpg",
+        "lat": 27.709,
+        "lon": 86.8683,
+        "width": 11323,
+        "height": 6049
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/8th_Day_of_the_hike._Mera_Peak_-_last_few_meters_ascent_to_the_summit._-_panoramio.jpg/960px-8th_Day_of_the_hike._Mera_Peak_-_last_few_meters_ascent_to_the_summit._-_panoramio.jpg",
+        "credit": "Sergey Pashko",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:8th_Day_of_the_hike._Mera_Peak_-_last_few_meters_ascent_to_the_summit._-_panoramio.jpg",
+        "lat": 27.7089,
+        "lon": 86.868524,
+        "width": 1936,
+        "height": 1452
+      }
+    ]
+  },
+  {
     "id": "stok",
     "name": "Stok Kangri",
     "lat": 33.9861,
@@ -11474,7 +12865,7 @@
     "difficultyTier": "day-hike",
     "permitRequired": true,
     "permitStatus": "required",
-    "permitNotes": "Seasonal climbing fee / reservation rules apply on major trails (including Yoshida). Check current Yamanashi / Shizuoka prefecture guidance before you go; hut bookings are separate."
+    "permitNotes": "Seasonal climbing fee / reservation rules on the Yoshida trail and related approaches — check current prefecture guidance."
   },
   {
     "id": "yari",
@@ -11625,7 +13016,7 @@
     ],
     "bestSeason": "Feb–Apr",
     "whyNotable": "Borneo’s high point and one of Southeast Asia’s classic hut-to-summit climbs.",
-    "seoMetaDescription": "Explore Mount Kinabalu on a 3D map — Borneo’s highest summit, Kinabalu Park approaches, elevation stats, and Kota Kinabalu staging.",
+    "seoMetaDescription": "Plan Mount Kinabalu: Strenuous day / overnight — best Feb–Apr — Crocker Range, Sabah — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Kota Kinabalu",
       "region": "Sabah",
@@ -11696,7 +13087,7 @@
     ],
     "bestSeason": "Mar–May",
     "whyNotable": "Philippines high point and Mindanao’s iconic volcanic trek.",
-    "seoMetaDescription": "Explore Mount Apo on a 3D map — Philippines’ highest summit, Mount Apo Natural Park approaches, and Davao staging.",
+    "seoMetaDescription": "Plan Mount Apo: Strenuous day / overnight — best Mar–May — Apo–Talomo, Davao del Sur — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Davao City",
       "region": "Davao del Sur",
@@ -11745,6 +13136,229 @@
         "route": "Park trek trailheads",
         "lat": 7.1907,
         "lon": 125.4553
+      }
+    ]
+  },
+  {
+    "id": "puncakjaya",
+    "name": "Puncak Jaya",
+    "lat": -4.078531,
+    "lon": 137.158077,
+    "elevationFt": 16024,
+    "prominenceFt": 16024,
+    "range": "Sudirman Range",
+    "country": "Indonesia",
+    "adminRegion": "Central Papua",
+    "description": "Highest summit in Oceania (Messner Seven Summits) — a technical limestone pyramid in the Sudirman Range of New Guinea, climbed with licensed Indonesian operators.",
+    "firstAscent": "1962",
+    "difficulty": "Technical expedition",
+    "difficultyTier": "expedition",
+    "aliases": [
+      "Carstensz Pyramid",
+      "Mount Carstensz",
+      "Carstensz"
+    ],
+    "bestSeason": "Jun–Aug",
+    "whyNotable": "The missing Seven Summit on the Messner list — Oceania’s high point and the world’s highest island peak.",
+    "seoMetaDescription": "Puncak Jaya (Carstensz Pyramid) trip notes: technical expedition, Jun–Aug, Indonesian SIMAKSI permits, Timika staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Timika",
+      "region": "Central Papua",
+      "distanceMiles": 37,
+      "route": "Mine / expedition logistics",
+      "lat": -4.546,
+      "lon": 136.888
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Timika",
+        "region": "Central Papua",
+        "distanceMiles": 37,
+        "route": "Mine / expedition logistics",
+        "lat": -4.546,
+        "lon": 136.888
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Indonesian conservation (SIMAKSI) and local access permits are required; commercial teams use licensed PB-PJWA operators. Independent access is not practical — confirm current Papua / Mimika rules.",
+    "hotels": [
+      {
+        "name": "Rimba Papua Hotel",
+        "category": "Hotel",
+        "note": "35.5 mi from summit",
+        "lat": -4.51424,
+        "lon": 136.88425,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/458178318"
+      },
+      {
+        "name": "Rimba Papu Hotel",
+        "category": "Hotel",
+        "note": "35.6 mi from summit",
+        "lat": -4.51491,
+        "lon": 136.88469,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/816524912"
+      },
+      {
+        "name": "Rimba Papua Hotel",
+        "category": "Hotel",
+        "note": "35.6 mi from summit",
+        "lat": -4.51526,
+        "lon": 136.88459,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/458178317"
+      }
+    ],
+    "food": [
+      {
+        "name": "Timika cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Timika after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Carstensz_Pyramid.jpg/960px-Carstensz_Pyramid.jpg",
+      "credit": "Mário Simoes",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carstensz_Pyramid.jpg",
+      "lat": -4.082596,
+      "lon": 137.184219,
+      "width": 6000,
+      "height": 4246
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Carstensz_Pyramid.jpg/960px-Carstensz_Pyramid.jpg",
+        "credit": "Mário Simoes",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carstensz_Pyramid.jpg",
+        "lat": -4.082596,
+        "lon": 137.184219,
+        "width": 6000,
+        "height": 4246
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Puncakjaya.jpg/960px-Puncakjaya.jpg",
+        "credit": "Alfindra Primaldhi",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puncakjaya.jpg",
+        "width": 640,
+        "height": 480
+      }
+    ]
+  },
+  {
+    "id": "rinjani",
+    "name": "Mount Rinjani",
+    "lat": -8.410094,
+    "lon": 116.457867,
+    "elevationFt": 12224,
+    "prominenceFt": 12224,
+    "range": "Lombok",
+    "country": "Indonesia",
+    "adminRegion": "West Nusa Tenggara",
+    "description": "Lombok’s high point and one of Southeast Asia’s classic multi-day crater treks — summit push from the Segara Anak rim with licensed national-park operators.",
+    "firstAscent": "1847",
+    "difficulty": "Strenuous day / overnight",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Gunung Rinjani",
+      "Rinjani"
+    ],
+    "bestSeason": "May–Oct",
+    "whyNotable": "Lombok high point and a flagship Indonesian volcano trek above Segara Anak crater lake.",
+    "seoMetaDescription": "Plan Mount Rinjani: Strenuous day / overnight — best May–Oct — Lombok, West Nusa Tenggara — trip notes and 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Senaru",
+      "region": "West Nusa Tenggara",
+      "distanceMiles": 8,
+      "route": "Senaru trailhead",
+      "lat": -8.305,
+      "lon": 116.41
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Sembalun Lawang",
+        "region": "West Nusa Tenggara",
+        "distanceMiles": 6,
+        "route": "Sembalun trailhead",
+        "lat": -8.366,
+        "lon": 116.533
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Mount Rinjani National Park trekking passes are required and issued through licensed operators (e-SIMAKSI / TNGR). Independent trekking is not allowed.",
+    "hotels": [
+      {
+        "name": "nauli bungalow",
+        "category": "Guest house",
+        "note": "5.4 mi from summit",
+        "lat": -8.35332,
+        "lon": 116.51149,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4329167189"
+      },
+      {
+        "name": "Paer doe 2 homestay",
+        "category": "Guest house",
+        "note": "5.7 mi from summit",
+        "lat": -8.39714,
+        "lon": 116.53987,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/4333628795"
+      },
+      {
+        "name": "Paer Doe home stay",
+        "category": "Guest house",
+        "note": "5.9 mi from summit",
+        "lat": -8.38948,
+        "lon": 116.54202,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/3567725530"
+      }
+    ],
+    "food": [
+      {
+        "name": "Senaru cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Senaru after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Gunung_Rinjani.jpg/960px-Gunung_Rinjani.jpg",
+      "credit": "Ar09",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gunung_Rinjani.jpg",
+      "lat": -8.405681,
+      "lon": 116.454631,
+      "width": 6000,
+      "height": 4000
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Gunung_Rinjani.jpg/960px-Gunung_Rinjani.jpg",
+        "credit": "Ar09",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gunung_Rinjani.jpg",
+        "lat": -8.405681,
+        "lon": 116.454631,
+        "width": 6000,
+        "height": 4000
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Rinjani_Mount_and_its_reflection_in_the_morning.jpg/960px-Rinjani_Mount_and_its_reflection_in_the_morning.jpg",
+        "credit": "Lalujagat",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rinjani_Mount_and_its_reflection_in_the_morning.jpg",
+        "lat": -8.409886,
+        "lon": 116.458072,
+        "width": 3264,
+        "height": 2448
       }
     ]
   },
@@ -12019,6 +13633,230 @@
     "permitRequired": false,
     "permitStatus": "not_required",
     "permitNotes": "No general climbing permit for Aoraki / Mount Cook. Aoraki/Mount Cook National Park rules apply; DOC hut bookings and alpine skills are the real constraints — confirm current DOC avalanche / route advice."
+  },
+  {
+    "id": "ruapehu",
+    "name": "Mount Ruapehu",
+    "lat": -39.28945,
+    "lon": 175.56244,
+    "elevationFt": 9156,
+    "prominenceFt": 9156,
+    "range": "Tongariro",
+    "country": "New Zealand",
+    "adminRegion": "Manawatū-Whanganui",
+    "description": "North Island high point — an active andesite volcano whose Tahurangi summit is reached from the Turoa or Whakapapa ski fields when volcanic alert levels allow.",
+    "firstAscent": "1879",
+    "difficulty": "Snow / scramble",
+    "difficultyTier": "scramble",
+    "aliases": [
+      "Ruapehu",
+      "Tahurangi"
+    ],
+    "bestSeason": "Dec–Apr",
+    "whyNotable": "Highest peak on New Zealand’s North Island and the high point of Tongariro National Park.",
+    "seoMetaDescription": "Mount Ruapehu trip notes: snow scramble, Dec–Apr, Tongariro NP / volcanic alerts, Whakapapa staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Whakapapa Village",
+      "region": "Manawatū-Whanganui",
+      "distanceMiles": 6,
+      "route": "Bruce Road",
+      "lat": -39.202,
+      "lon": 175.54
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Whakapapa Village",
+        "region": "Manawatū-Whanganui",
+        "distanceMiles": 6,
+        "route": "Bruce Road",
+        "lat": -39.202,
+        "lon": 175.54
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general summit permit. Tongariro National Park entry and volcanic alert levels apply — check DOC and GNS Science before climbing Tahurangi.",
+    "hotels": [
+      {
+        "name": "Blyth Hut",
+        "category": "Wilderness hut",
+        "note": "3.5 mi from summit",
+        "lat": -39.33179,
+        "lon": 175.52504,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/170938559"
+      },
+      {
+        "name": "Lupton Hut",
+        "category": "Wilderness hut",
+        "note": "3.7 mi from summit",
+        "lat": -39.33277,
+        "lon": 175.52217,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/way/170938562"
+      },
+      {
+        "name": "Whakapapa Holiday Park cabins and lodge",
+        "category": "Wilderness hut",
+        "note": "6.2 mi from summit",
+        "lat": -39.20192,
+        "lon": 175.53887,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/9488819953"
+      }
+    ],
+    "food": [
+      {
+        "name": "Whakapapa Village cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Whakapapa Village after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Ruapehu_Crater_Panorama.jpg/960px-Ruapehu_Crater_Panorama.jpg",
+      "credit": "Xflo:w-BLN",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ruapehu_Crater_Panorama.jpg",
+      "lat": -39.289444,
+      "lon": 175.5625,
+      "width": 1450,
+      "height": 400
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Ruapehu_Crater_Panorama.jpg/960px-Ruapehu_Crater_Panorama.jpg",
+        "credit": "Xflo:w-BLN",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ruapehu_Crater_Panorama.jpg",
+        "lat": -39.289444,
+        "lon": 175.5625,
+        "width": 1450,
+        "height": 400
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Mount_Ruapehu.jpg/960px-Mount_Ruapehu.jpg",
+        "credit": "Javier Sánchez Portero",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Ruapehu.jpg",
+        "lat": -39.146435,
+        "lon": 175.58725,
+        "width": 3511,
+        "height": 2341
+      }
+    ]
+  },
+  {
+    "id": "taranaki",
+    "name": "Mount Taranaki",
+    "lat": -39.29607,
+    "lon": 174.06383,
+    "elevationFt": 8255,
+    "prominenceFt": 7576,
+    "range": "Taranaki",
+    "country": "New Zealand",
+    "adminRegion": "Taranaki",
+    "description": "The isolated cone of Te Papakura o Taranaki — a popular summer summit day from North Egmont when alpine conditions are stable.",
+    "firstAscent": "1839",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Taranaki Maunga",
+      "Mount Egmont"
+    ],
+    "bestSeason": "Dec–Mar",
+    "whyNotable": "Iconic North Island volcano and one of New Zealand’s most photographed summit days.",
+    "seoMetaDescription": "Mount Taranaki trip notes: strenuous day hike, Dec–Mar, no summit permit, New Plymouth staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "New Plymouth",
+      "region": "Taranaki",
+      "distanceMiles": 17,
+      "route": "Egmont Road / North Egmont",
+      "lat": -39.0556,
+      "lon": 174.0752
+    },
+    "nearbyPlaces": [
+      {
+        "name": "New Plymouth",
+        "region": "Taranaki",
+        "distanceMiles": 17,
+        "route": "Egmont Road / North Egmont",
+        "lat": -39.0556,
+        "lon": 174.0752
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general summit permit. Te Papakura o Taranaki (Egmont NP) track and weather rules apply — confirm current DOC alpine conditions.",
+    "hotels": [
+      {
+        "name": "Georges BnB",
+        "category": "Guest house",
+        "note": "6.9 mi from summit",
+        "lat": -39.19628,
+        "lon": 174.05782,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/5690193435"
+      },
+      {
+        "name": "Railway Hotel",
+        "category": "Hotel",
+        "note": "12.4 mi from summit",
+        "lat": -39.15629,
+        "lon": 174.20831,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1584237007"
+      },
+      {
+        "name": "Ahu Ahu Beach Villas",
+        "category": "Chalet",
+        "note": "14.2 mi from summit",
+        "lat": -39.11881,
+        "lon": 173.93043,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/6615952424"
+      }
+    ],
+    "food": [
+      {
+        "name": "New Plymouth cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in New Plymouth after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mount_Taranaki%2C_New_Zealand_%2808%29_-_Northern_Road_to_the_top.JPG/960px-Mount_Taranaki%2C_New_Zealand_%2808%29_-_Northern_Road_to_the_top.JPG",
+      "credit": "Michal Klajban",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Taranaki,_New_Zealand_(08)_-_Northern_Road_to_the_top.JPG",
+      "lat": -39.296453,
+      "lon": 174.063744,
+      "width": 3683,
+      "height": 2682
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mount_Taranaki%2C_New_Zealand_%2808%29_-_Northern_Road_to_the_top.JPG/960px-Mount_Taranaki%2C_New_Zealand_%2808%29_-_Northern_Road_to_the_top.JPG",
+        "credit": "Michal Klajban",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Taranaki,_New_Zealand_(08)_-_Northern_Road_to_the_top.JPG",
+        "lat": -39.296453,
+        "lon": 174.063744,
+        "width": 3683,
+        "height": 2682
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Mt._Taranaki%2C_New_Zealand.jpg/960px-Mt._Taranaki%2C_New_Zealand.jpg",
+        "credit": "Axelspace Corporation",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt._Taranaki,_New_Zealand.jpg",
+        "lat": -39.3,
+        "lon": 174.067,
+        "width": 2048,
+        "height": 1280
+      }
+    ]
   },
   {
     "id": "aspiring",
@@ -13213,6 +15051,113 @@
     "permitNotes": "No special summer summit permit for Mulhacén day hikes. Sierra Nevada National Park rules apply; seasonal vehicle / snow restrictions and occasional winter registration rules — confirm current park guidance."
   },
   {
+    "id": "aneto",
+    "name": "Aneto",
+    "lat": 42.631078,
+    "lon": 0.656636,
+    "elevationFt": 11168,
+    "prominenceFt": 9222,
+    "range": "Pyrenees",
+    "country": "Spain",
+    "adminRegion": "Aragon",
+    "description": "Highest peak in the Pyrenees — a glaciated normal route from Renclusa / Benasque that still needs an ice axe and crevasse awareness in season.",
+    "firstAscent": "1842",
+    "difficulty": "Snow / glacier climb",
+    "difficultyTier": "snow-glacier",
+    "aliases": [
+      "Pico de Aneto"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Pyrenees high point and Spain’s third-highest summit, with a classic glacier approach.",
+    "seoMetaDescription": "Aneto trip notes: snow/glacier climb, Jun–Sep, no summit permit, Benasque staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Benasque",
+      "region": "Aragon",
+      "distanceMiles": 7,
+      "route": "Renclusa / Posets-Maladeta",
+      "lat": 42.605,
+      "lon": 0.523
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Benasque",
+        "region": "Aragon",
+        "distanceMiles": 7,
+        "route": "Renclusa / Posets-Maladeta",
+        "lat": 42.605,
+        "lon": 0.523
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No general summit permit in Posets-Maladeta Natural Park. Glacier travel on the normal route still needs seasonal assessment — confirm park access rules.",
+    "hotels": [
+      {
+        "name": "Hostal Parque Natural",
+        "category": "Hotel",
+        "note": "5.8 mi from summit",
+        "lat": 42.62605,
+        "lon": 0.54262,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1369145933"
+      },
+      {
+        "name": "Apartahotel Prados de Velarta",
+        "category": "Hotel",
+        "note": "6.4 mi from summit",
+        "lat": 42.59459,
+        "lon": 0.54033,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1557110442"
+      },
+      {
+        "name": "Apartamentos Casa Pichuana",
+        "category": "Chalet",
+        "note": "6.9 mi from summit",
+        "lat": 42.60626,
+        "lon": 0.5242,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1905872171"
+      }
+    ],
+    "food": [
+      {
+        "name": "Benasque cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Benasque after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Cima_Pico_Aneto.jpg/960px-Cima_Pico_Aneto.jpg",
+      "credit": "Faras",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cima_Pico_Aneto.jpg",
+      "width": 1442,
+      "height": 934
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Cima_Pico_Aneto.jpg/960px-Cima_Pico_Aneto.jpg",
+        "credit": "Faras",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cima_Pico_Aneto.jpg",
+        "width": 1442,
+        "height": 934
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Grup_d%27alpinistes_al_cim_de_l%27Aneto.jpg/960px-Grup_d%27alpinistes_al_cim_de_l%27Aneto.jpg",
+        "credit": "Josep Domènech i Sàbat",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grup_d%27alpinistes_al_cim_de_l%27Aneto.jpg",
+        "lat": 42.631142,
+        "lon": 0.656505,
+        "width": 10866,
+        "height": 4928
+      }
+    ]
+  },
+  {
     "id": "teide",
     "name": "Teide",
     "lat": 28.2724,
@@ -13455,6 +15400,118 @@
     "permitRequired": true,
     "permitStatus": "required",
     "permitNotes": "Iztaccíhuatl access is managed under Izta-Popo park rules; registration / fees apply and volcanic closures can change access. Confirm current CONANP / park guidance."
+  },
+  {
+    "id": "acatenango",
+    "name": "Volcán Acatenango",
+    "lat": 14.50163,
+    "lon": -90.87549,
+    "elevationFt": 13041,
+    "prominenceFt": 6020,
+    "range": "Sierra Madre",
+    "country": "Guatemala",
+    "adminRegion": "Chimaltenango",
+    "description": "A popular overnight volcano hike from Antigua with tent camps facing active Volcán de Fuego — Pico Mayor is the high point of the Acatenango–Fuego complex.",
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day / overnight",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Acatenango",
+      "Pico Mayor"
+    ],
+    "bestSeason": "Nov–Apr",
+    "whyNotable": "Guatemala’s classic overnight volcano: camp opposite erupting Fuego, summit Acatenango at dawn.",
+    "seoMetaDescription": "Volcán Acatenango trip notes: strenuous overnight hike, Nov–Apr, agency/park access, Antigua staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Antigua Guatemala",
+      "region": "Sacatepéquez",
+      "distanceMiles": 10,
+      "route": "La Soledad trailhead",
+      "lat": 14.5586,
+      "lon": -90.7332
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Antigua Guatemala",
+        "region": "Sacatepéquez",
+        "distanceMiles": 10,
+        "route": "La Soledad trailhead",
+        "lat": 14.5586,
+        "lon": -90.7332
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Overnight Acatenango hikes are arranged through licensed Antigua agencies with park / INSIVUMEH access. Confirm current Fuego-hazard and permit rules.",
+    "hotels": [
+      {
+        "name": "Hotel Casa Blanca",
+        "category": "Hotel",
+        "note": "10.0 mi from summit",
+        "lat": 14.55803,
+        "lon": -90.73776,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/281793976"
+      },
+      {
+        "name": "Villa Esthela Hostel",
+        "category": "Hostel",
+        "note": "10.2 mi from summit",
+        "lat": 14.55194,
+        "lon": -90.73158,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1382336117"
+      },
+      {
+        "name": "Casa Bellona Guesthouse",
+        "category": "Hostel",
+        "note": "10.2 mi from summit",
+        "lat": 14.54962,
+        "lon": -90.73053,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1501646382"
+      }
+    ],
+    "food": [
+      {
+        "name": "Antigua Guatemala cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Antigua Guatemala after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Erupcion_-_panoramio.jpg/960px-Erupcion_-_panoramio.jpg",
+      "credit": "HyruleGt",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erupcion_-_panoramio.jpg",
+      "lat": 14.501499,
+      "lon": -90.875,
+      "width": 4608,
+      "height": 3456
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Erupcion_-_panoramio.jpg/960px-Erupcion_-_panoramio.jpg",
+        "credit": "HyruleGt",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erupcion_-_panoramio.jpg",
+        "lat": 14.501499,
+        "lon": -90.875,
+        "width": 4608,
+        "height": 3456
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sunset_over_Fuego_and_Acatenango_volcanoes_from_Antigua.jpg/960px-Sunset_over_Fuego_and_Acatenango_volcanoes_from_Antigua.jpg",
+        "credit": "Bex Walton",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunset_over_Fuego_and_Acatenango_volcanoes_from_Antigua.jpg",
+        "lat": 14.558386,
+        "lon": -90.734733,
+        "width": 3773,
+        "height": 2829
+      }
+    ]
   },
   {
     "id": "illampu",
@@ -13901,7 +15958,7 @@
     ],
     "bestSeason": "Nov–Jan",
     "whyNotable": "Continent high point of Antarctica and a Seven Summits objective.",
-    "seoMetaDescription": "Explore Vinson Massif on a 3D map — Antarctica’s highest summit, Sentinel Range topography, and polar expedition context.",
+    "seoMetaDescription": "Plan Mount Vinson: Polar expedition — best Nov–Jan — Sentinel Range, Ellsworth Land — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Union Glacier Camp",
       "region": "Ellsworth Land",
@@ -15334,7 +17391,7 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "One of the Wasatch’s most recognizable alpine summits and a favorite Salt Lake scramble.",
-    "seoMetaDescription": "Explore Pfeifferhorn on a 3D map — Wasatch Range topography, Red Pine Lake approaches, and Little Cottonwood staging.",
+    "seoMetaDescription": "Plan Pfeifferhorn: Class 3 scramble — best Jun–Oct — Wasatch Range, Utah — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Alta",
       "region": "Utah",
@@ -15414,7 +17471,7 @@
     ],
     "bestSeason": "Jun–Oct",
     "whyNotable": "Wasatch Range high point and a classic central Utah prominence peak.",
-    "seoMetaDescription": "Explore Mount Nebo on a 3D map — Wasatch high-point topography, Nebo Bench approaches, and Nephi staging.",
+    "seoMetaDescription": "Plan Mount Nebo: Class 2 hike — best Jun–Oct — Wasatch Range, Utah — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Nephi",
       "region": "Utah",
@@ -15560,7 +17617,7 @@
     ],
     "bestSeason": "May–Oct",
     "whyNotable": "Southern Nevada’s high point and a classic Las Vegas day-hike skyline peak.",
-    "seoMetaDescription": "Explore Charleston Peak on a 3D map — Spring Mountains topography, South Loop trail context, elevation, and Las Vegas staging.",
+    "seoMetaDescription": "Plan Charleston Peak: Strenuous day hike — best May–Oct — Spring Mountains, Nevada — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Mount Charleston",
       "region": "Nevada",
@@ -18414,6 +20471,117 @@
     ]
   },
   {
+    "id": "hvannadalshnukur",
+    "name": "Hvannadalshnúkur",
+    "lat": 64.01424,
+    "lon": -16.67718,
+    "elevationFt": 6919,
+    "prominenceFt": 6919,
+    "range": "Öræfajökull",
+    "country": "Iceland",
+    "adminRegion": "Austurland",
+    "description": "Iceland’s high point on the Öræfajökull ice cap — a guided glacier climb from the Skaftafell side of Vatnajökull National Park.",
+    "firstAscent": "Unknown",
+    "difficulty": "Glacier climb",
+    "difficultyTier": "snow-glacier",
+    "aliases": [
+      "Hvannadalshnjúkur"
+    ],
+    "bestSeason": "May–Sep",
+    "whyNotable": "Highest summit in Iceland and a classic guided glacier day on Vatnajökull.",
+    "seoMetaDescription": "Hvannadalshnúkur trip notes: glacier climb, May–Sep, Vatnajökull National Park, Skaftafell staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Höfn",
+      "region": "Austurland",
+      "distanceMiles": 47,
+      "route": "Skaftafell / Route 1",
+      "lat": 64.2536,
+      "lon": -15.2089
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Höfn",
+        "region": "Austurland",
+        "distanceMiles": 47,
+        "route": "Skaftafell / Route 1",
+        "lat": 64.2536,
+        "lon": -15.2089
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No separate summit climbing permit. Vatnajökull National Park access and guided glacier travel are the normal constraints — confirm current park / operator rules.",
+    "hotels": [
+      {
+        "name": "Smyrlabjörg",
+        "category": "Hotel",
+        "note": "32.2 mi from summit",
+        "lat": 64.21731,
+        "lon": -15.71788,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/451874500"
+      },
+      {
+        "name": "Skálafell",
+        "category": "Guest house",
+        "note": "33.9 mi from summit",
+        "lat": 64.24798,
+        "lon": -15.6871,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/2782543216"
+      },
+      {
+        "name": "Hólmur",
+        "category": "Guest house",
+        "note": "40.4 mi from summit",
+        "lat": 64.28083,
+        "lon": -15.48409,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/765397203"
+      }
+    ],
+    "food": [
+      {
+        "name": "Höfn cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Höfn after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/%C3%96r%C3%A6faj%C3%B6kull.jpg/960px-%C3%96r%C3%A6faj%C3%B6kull.jpg",
+      "credit": "Andrea Schaffer from Sydney, Australia",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C3%96r%C3%A6faj%C3%B6kull.jpg",
+      "lat": 64.02585,
+      "lon": -16.976966,
+      "width": 3038,
+      "height": 2025
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/%C3%96r%C3%A6faj%C3%B6kull.jpg/960px-%C3%96r%C3%A6faj%C3%B6kull.jpg",
+        "credit": "Andrea Schaffer from Sydney, Australia",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C3%96r%C3%A6faj%C3%B6kull.jpg",
+        "lat": 64.02585,
+        "lon": -16.976966,
+        "width": 3038,
+        "height": 2025
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Hvannadalshnj%C3%BAkur_volcano_%28Unsplash%29.jpg/960px-Hvannadalshnj%C3%BAkur_volcano_%28Unsplash%29.jpg",
+        "credit": "Alexandre Godreau alexandre_godreau",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hvannadalshnj%C3%BAkur_volcano_(Unsplash).jpg",
+        "lat": 64.01466,
+        "lon": -16.674888,
+        "width": 5184,
+        "height": 3456
+      }
+    ]
+  },
+  {
     "id": "benmacdui",
     "name": "Ben Macdui",
     "lat": 57.0704,
@@ -18431,7 +20599,7 @@
     ],
     "bestSeason": "May–Sep",
     "whyNotable": "Scotland’s #2 summit and the high point of the Cairngorm plateau.",
-    "seoMetaDescription": "Explore Ben Macdui on a 3D map — Cairngorms topography, plateau approaches, elevation stats, and Aviemore staging.",
+    "seoMetaDescription": "Plan Ben Macdui: Strenuous day hike — best May–Sep — Cairngorms, Highland — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Aviemore",
       "region": "Highland",
@@ -18635,7 +20803,7 @@
     "aliases": [],
     "bestSeason": "May–Sep",
     "whyNotable": "One of Wales’s classic scrambles and a signature Ogwen Valley skyline peak.",
-    "seoMetaDescription": "Explore Tryfan on a 3D map — Snowdonia topography, North Ridge scramble context, and Ogwen staging.",
+    "seoMetaDescription": "Plan Tryfan: Class 3 scramble — best May–Sep — Snowdonia, Gwynedd — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Bethesda",
       "region": "Gwynedd",
@@ -18706,7 +20874,7 @@
     ],
     "bestSeason": "May–Sep",
     "whyNotable": "Southern Snowdonia’s signature summit and one of Wales’s most popular mountain days outside Yr Wyddfa.",
-    "seoMetaDescription": "Explore Cadair Idris on a 3D map — Snowdonia topography, Minffordd Path approaches, and Dolgellau staging.",
+    "seoMetaDescription": "Plan Cadair Idris: Strenuous day hike — best May–Sep — Snowdonia, Gwynedd — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Dolgellau",
       "region": "Gwynedd",
@@ -18898,7 +21066,7 @@
     "aliases": [],
     "bestSeason": "May–Sep",
     "whyNotable": "Iconic Lake District ridge peak and one of England’s most popular mountain days.",
-    "seoMetaDescription": "Explore Helvellyn on a 3D map — Lake District topography, Striding Edge approaches, elevation stats, and Glenridding staging.",
+    "seoMetaDescription": "Plan Helvellyn: Class 2–3 scramble — best May–Sep — Lake District, Cumbria — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Glenridding",
       "region": "Cumbria",
@@ -19083,7 +21251,7 @@
     ],
     "bestSeason": "Apr–Oct",
     "whyNotable": "Leinster high point and the classic Wicklow Mountains summit day from Dublin.",
-    "seoMetaDescription": "Explore Lugnaquilla on a 3D map — Wicklow Mountains topography, Glenmalure approaches, and elevation stats near Dublin.",
+    "seoMetaDescription": "Plan Lugnaquilla: Strenuous day hike — best Apr–Oct — Wicklow Mountains, Wicklow — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Glendalough",
       "region": "Wicklow",
@@ -19154,7 +21322,7 @@
     ],
     "bestSeason": "Apr–Oct",
     "whyNotable": "Ireland’s #2 summit and a dramatic Atlantic pilgrimage mountain on the Dingle Peninsula.",
-    "seoMetaDescription": "Explore Mount Brandon on a 3D map — Dingle Peninsula topography, Pilgrim’s Path approaches, and elevation stats in County Kerry.",
+    "seoMetaDescription": "Plan Mount Brandon: Strenuous day hike — best Apr–Oct — Dingle Peninsula, Kerry — trip notes and 3D terrain on PeakAtlas3D.",
     "nearestTown": {
       "name": "Dingle",
       "region": "Kerry",
@@ -19319,6 +21487,111 @@
         "credit": "Kristo",
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gerlachovsky_stit_from_Velicka_dolina.jpg"
+      }
+    ]
+  },
+  {
+    "id": "rysy",
+    "name": "Rysy",
+    "lat": 49.17934,
+    "lon": 20.08847,
+    "elevationFt": 8204,
+    "prominenceFt": 538,
+    "range": "High Tatras",
+    "country": "Poland/Slovakia",
+    "adminRegion": "Lesser Poland",
+    "description": "Poland’s high point on the Slovak border — a very popular marked Tatra hike from Morskie Oko / Czarny Staw, with a slightly higher summit on the Slovak side.",
+    "firstAscent": "Unknown",
+    "difficulty": "Class 2–3 scramble",
+    "difficultyTier": "scramble",
+    "aliases": [],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Poland’s high point and one of the busiest High Tatras summit days from Zakopane.",
+    "seoMetaDescription": "Rysy trip notes: Class 2–3 scramble, Jun–Sep, Tatra National Park tickets, Zakopane staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Zakopane",
+      "region": "Lesser Poland",
+      "distanceMiles": 10,
+      "route": "Morskie Oko road",
+      "lat": 49.2992,
+      "lon": 19.9496
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Zakopane",
+        "region": "Lesser Poland",
+        "distanceMiles": 10,
+        "route": "Morskie Oko road",
+        "lat": 49.2992,
+        "lon": 19.9496
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Tatra National Park entry tickets are required on the Polish (TPN) and Slovak (TANAP) sides. Confirm current trail closures and ticket rules before you go.",
+    "hotels": [
+      {
+        "name": "Crocus",
+        "category": "Hotel",
+        "note": "4.3 mi from summit",
+        "lat": 49.11886,
+        "lon": 20.0631,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/306536104"
+      },
+      {
+        "name": "Grand Hotel Kempinski High Tatras",
+        "category": "Hotel",
+        "note": "4.4 mi from summit",
+        "lat": 49.11936,
+        "lon": 20.05893,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/944028881"
+      },
+      {
+        "name": "Rysy",
+        "category": "Hotel",
+        "note": "6.1 mi from summit",
+        "lat": 49.09162,
+        "lon": 20.07149,
+        "source": "OpenStreetMap",
+        "sourceUrl": "https://www.openstreetmap.org/node/1350671592"
+      }
+    ],
+    "food": [
+      {
+        "name": "Zakopane cafés",
+        "category": "Restaurant",
+        "note": "Easy refuel in Zakopane after the summit."
+      }
+    ],
+    "trails": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rysy.jpg/960px-Rysy.jpg",
+      "credit": "Krzysztof T. miw",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rysy.jpg",
+      "width": 800,
+      "height": 598
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rysy.jpg/960px-Rysy.jpg",
+        "credit": "Krzysztof T. miw",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rysy.jpg",
+        "width": 800,
+        "height": 598
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Gra%C5%84_Baszt_z_Rys%C3%B3w_R%2BNR2019.jpg/960px-Gra%C5%84_Baszt_z_Rys%C3%B3w_R%2BNR2019.jpg",
+        "credit": "Foto: Adam Opioła, opis: Jerzy Opioła",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gra%C5%84_Baszt_z_Rys%C3%B3w_R%2BNR2019.jpg",
+        "lat": 49.179362,
+        "lon": 20.088468,
+        "width": 2932,
+        "height": 1318
       }
     ]
   },
@@ -19568,10 +21841,10 @@
     "description": "Slide Mountain anchors the Burroughs Range in Catskill Park. The Wittenberg–Cornell–Slide Trail is the classic approach—a long forest hike with ledge views near the top. The true summit is wooded; ledges and openings nearby give the best vistas. Expect mud, roots, and busy weekends in leaf season.",
     "firstAscent": "unknown",
     "difficulty": "Class 1–2 hike",
-    "difficultyTier": "strenuous-hike",
+    "difficultyTier": "day-hike",
     "bestSeason": "May–Oct",
     "whyNotable": "Highest peak in the Catskills and the high point of Ulster County and the New York metro area.",
-    "seoMetaDescription": "Slide Mountain trip guide: Catskills high point, strenuous hike, Phoenicia staging, 3D terrain on PeakAtlas3D.",
+    "seoMetaDescription": "Plan Slide Mountain: Class 1–2 hike — best May–Oct — Catskills, New York — trip notes and 3D terrain on PeakAtlas3D.",
     "permitRequired": false,
     "permitStatus": "not_required",
     "permitNotes": "No summit permit. Catskill Forest Preserve rules apply (day-use, camping regs, Leave No Trace). Parking fills early at busy trailheads.",
@@ -19696,10 +21969,10 @@
     "description": "Hunter Mountain rises above the village of Hunter in Greene County. Hikers reach the fire-tower summit via Becker Hollow, Spruceton, or ski-area connectors. Winter brings deep snow and wind on the open tower; summer weekends are busy. The ski resort occupies the north face—stay on designated hiking routes.",
     "firstAscent": "unknown",
     "difficulty": "Class 1–2 hike",
-    "difficultyTier": "strenuous-hike",
+    "difficultyTier": "day-hike",
     "bestSeason": "May–Oct",
     "whyNotable": "Second-highest Catskill peak, topped by a restored fire tower with wide views over the range.",
-    "seoMetaDescription": "Hunter Mountain trip guide: Catskills fire tower, strenuous hike, Hunter NY staging, 3D terrain on PeakAtlas3D.",
+    "seoMetaDescription": "Plan Hunter Mountain: Class 1–2 hike — best May–Oct — Catskills, New York — trip notes and 3D terrain on PeakAtlas3D.",
     "permitRequired": false,
     "permitStatus": "not_required",
     "permitNotes": "No summit permit. Forest Preserve rules apply; respect ski-area closures and private land boundaries near the resort.",
@@ -19817,10 +22090,10 @@
     "description": "Black Dome sits between Thomas Cole and Blackhead on the Blackhead Range. The Black Dome Range Trail links the trio; most hikers stage from Big Hollow Road. Expect steep forest climbs, muddy cols, and limited summit views through the trees—better vistas open on ledges along the ridge.",
     "firstAscent": "unknown",
     "difficulty": "Class 1–2 hike",
-    "difficultyTier": "strenuous-hike",
+    "difficultyTier": "day-hike",
     "bestSeason": "May–Oct",
     "whyNotable": "Third-highest Catskill peak and the high point of the Blackhead Range above Big Hollow.",
-    "seoMetaDescription": "Black Dome trip guide: Blackhead Range, strenuous hike, Windham / Big Hollow staging, 3D terrain on PeakAtlas3D.",
+    "seoMetaDescription": "Plan Black Dome: Class 1–2 hike — best May–Oct — Catskills, New York — trip notes and 3D terrain on PeakAtlas3D.",
     "permitRequired": false,
     "permitStatus": "not_required",
     "permitNotes": "No summit permit. Catskill Forest Preserve day-use and camping rules apply; trailhead parking is limited.",
@@ -19932,10 +22205,10 @@
     "description": "Blackhead anchors the east end of the Blackhead Range and sits on the Escarpment / Long Path corridor. Approaches from Big Hollow or the Escarpment are steep; the eastern pitch can hold ice well into spring. Summit views are limited, but lookouts along the ridge open toward the Hudson Valley.",
     "firstAscent": "unknown",
     "difficulty": "Class 1–2 hike",
-    "difficultyTier": "strenuous-hike",
+    "difficultyTier": "day-hike",
     "bestSeason": "May–Oct",
     "whyNotable": "Eastern pillar of the Blackhead Range and one of four Catskill 3500 Club required winter peaks.",
-    "seoMetaDescription": "Blackhead Mountain trip guide: Escarpment Trail, Catskill 3500 winter peak, Windham staging, 3D terrain on PeakAtlas3D.",
+    "seoMetaDescription": "Plan Blackhead: Class 1–2 hike — best May–Oct — Catskills, New York — trip notes and 3D terrain on PeakAtlas3D.",
     "permitRequired": false,
     "permitStatus": "not_required",
     "permitNotes": "No summit permit. Forest Preserve rules apply; carry traction in shoulder seasons on the east face.",
@@ -20048,10 +22321,10 @@
     "description": "West Kill Mountain is the western crown of the Devil’s Path above Spruceton Valley. The Diamond Notch / Devil’s Path approach is steep and often wet, with Buck Ridge Lookout as the signature viewpoint. Expect a full day, scarce water on the ridge, and quieter crowds than Slide or Hunter.",
     "firstAscent": "unknown",
     "difficulty": "Class 1–2 hike",
-    "difficultyTier": "strenuous-hike",
+    "difficultyTier": "day-hike",
     "bestSeason": "May–Oct",
     "whyNotable": "High point of the Devil’s Path west of Stony Clove—steep, rooty, and classic Catskills ridge hiking.",
-    "seoMetaDescription": "West Kill Mountain trip guide: Devil’s Path, strenuous hike, Spruceton staging, 3D terrain on PeakAtlas3D.",
+    "seoMetaDescription": "Plan West Kill Mountain: Class 1–2 hike — best May–Oct — Catskills, New York — trip notes and 3D terrain on PeakAtlas3D.",
     "permitRequired": false,
     "permitStatus": "not_required",
     "permitNotes": "No summit permit. Forest Preserve rules apply; Spruceton / Diamond Notch parking is limited on peak weekends.",

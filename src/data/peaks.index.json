@@ -1348,6 +1348,33 @@
     }
   },
   {
+    "id": "temple",
+    "name": "Mount Temple",
+    "lat": 51.35056,
+    "lon": -116.20667,
+    "elevationFt": 11627,
+    "prominenceFt": 5066,
+    "range": "Bow Range",
+    "country": "Canada",
+    "adminRegion": "Alberta",
+    "aliases": [
+      "Mt. Temple"
+    ],
+    "firstAscent": "1894",
+    "difficulty": "Class 3 scramble",
+    "difficultyTier": "scramble",
+    "bestSeason": "Jul–Sep",
+    "whyNotable": "Banff’s signature scramble: the high point above Lake Louise and Moraine Lake.",
+    "description": "Highest peak in the Lake Louise group — Banff’s most popular big scramble via Sentinel Pass from Moraine Lake, with real rockfall and snow-slope hazard.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Lake Louise",
+      "region": "Alberta",
+      "distanceMiles": 5
+    }
+  },
+  {
     "id": "logan",
     "name": "Mt. Logan",
     "lat": 60.5671,
@@ -1517,6 +1544,89 @@
       "name": "Mendoza",
       "region": "Mendoza",
       "distanceMiles": 110
+    }
+  },
+  {
+    "id": "ojosdelsalado",
+    "name": "Ojos del Salado",
+    "lat": -27.10972,
+    "lon": -68.54139,
+    "elevationFt": 22615,
+    "prominenceFt": 12100,
+    "range": "Puna de Atacama",
+    "country": "Chile/Argentina",
+    "adminRegion": "Atacama",
+    "aliases": [
+      "Nevado Ojos del Salado"
+    ],
+    "firstAscent": "1937",
+    "difficulty": "High-altitude hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Dec–Mar",
+    "whyNotable": "World’s highest volcano and a Volcanic Seven Summits objective on the Chile–Argentina border.",
+    "description": "Highest volcano on Earth and Chile’s high point — a high, arid Atacama massif usually approached as a non-technical high-altitude scramble from the Copiapó side.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Copiapó",
+      "region": "Atacama",
+      "distanceMiles": 111
+    }
+  },
+  {
+    "id": "villarrica",
+    "name": "Volcán Villarrica",
+    "lat": -39.420849,
+    "lon": -71.939371,
+    "elevationFt": 9383,
+    "prominenceFt": 5167,
+    "range": "Southern Andes",
+    "country": "Chile",
+    "adminRegion": "Araucanía",
+    "aliases": [
+      "Villarrica",
+      "Rucapillán"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Snow climb",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Nov–Mar",
+    "whyNotable": "One of South America’s most popular guided volcano climbs, with an open lava lake in the crater when conditions allow.",
+    "description": "An active crater volcano above Pucón — Chile’s most popular guided snow climb, with a separate CONAF crater-ascent pass on top of park entry.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Pucón",
+      "region": "Araucanía",
+      "distanceMiles": 10
+    }
+  },
+  {
+    "id": "roraima",
+    "name": "Mount Roraima",
+    "lat": 5.14333,
+    "lon": -60.7625,
+    "elevationFt": 9219,
+    "prominenceFt": 7671,
+    "range": "Pacaraima",
+    "country": "Venezuela/Brazil/Guyana",
+    "adminRegion": "Bolívar",
+    "aliases": [
+      "Monte Roraima",
+      "Tepuy Roraima"
+    ],
+    "firstAscent": "1884",
+    "difficulty": "Strenuous day / overnight",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Dec–Mar",
+    "whyNotable": "The classic Guiana Shield tepui trek and a country high-point massif on a three-way border.",
+    "description": "The famous tepui on the Venezuela–Brazil–Guyana border — a multi-day plateau trek usually started from Paraitepuy with Inparques permits.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Santa Elena de Uairén",
+      "region": "Bolívar",
+      "distanceMiles": 44
     }
   },
   {
@@ -1775,6 +1885,33 @@
     }
   },
   {
+    "id": "breithorn",
+    "name": "Breithorn",
+    "lat": 45.9409,
+    "lon": 7.74763,
+    "elevationFt": 13688,
+    "prominenceFt": 1463,
+    "range": "Pennine Alps",
+    "country": "Switzerland/Italy",
+    "adminRegion": "Valais",
+    "aliases": [
+      "Western Breithorn"
+    ],
+    "firstAscent": "1813",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Often called the easiest 4,000 m peak in the Alps — a guided glacier day above Zermatt.",
+    "description": "The most-climbed Alpine 4,000er from Zermatt — a short glacier climb from Klein Matterhorn / Matterhorn glacier paradise, typically with a UIAGM guide.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Zermatt",
+      "region": "Valais",
+      "distanceMiles": 6
+    }
+  },
+  {
     "id": "grandcombin",
     "name": "Grand Combin",
     "lat": 45.9375,
@@ -1850,6 +1987,34 @@
     }
   },
   {
+    "id": "monch",
+    "name": "Mönch",
+    "lat": 46.55849,
+    "lon": 7.99725,
+    "elevationFt": 13484,
+    "prominenceFt": 1938,
+    "range": "Bernese Alps",
+    "country": "Switzerland",
+    "adminRegion": "Bern",
+    "aliases": [
+      "Moench",
+      "Monch"
+    ],
+    "firstAscent": "1857",
+    "difficulty": "Alpine glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Classic guided 4,000er beside Eiger and Jungfrau, climbed from the Jungfraujoch railway.",
+    "description": "The middle summit of the Eiger–Mönch–Jungfrau trio — a guided snow arete from Jungfraujoch, popular as a first Bernese 4,000er.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Grindelwald",
+      "region": "Bern",
+      "distanceMiles": 5
+    }
+  },
+  {
     "id": "eiger",
     "name": "Eiger",
     "lat": 46.5776,
@@ -1870,6 +2035,30 @@
       "name": "Grindelwald",
       "region": "Bern",
       "distanceMiles": 5
+    }
+  },
+  {
+    "id": "zugspitze",
+    "name": "Zugspitze",
+    "lat": 47.42123,
+    "lon": 10.98632,
+    "elevationFt": 9717,
+    "prominenceFt": 5732,
+    "range": "Wetterstein",
+    "country": "Germany",
+    "adminRegion": "Bavaria",
+    "firstAscent": "1820",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Highest mountain in Germany and a high-search Alpine day from Garmisch-Partenkirchen.",
+    "description": "Germany’s high point on the Austrian border — reached by cog railway, cable car, or the Höllental / Reintal trails with via ferrata sections on the classic routes.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Garmisch-Partenkirchen",
+      "region": "Bavaria",
+      "distanceMiles": 7
     }
   },
   {
@@ -2128,6 +2317,62 @@
     }
   },
   {
+    "id": "margherita",
+    "name": "Margherita Peak",
+    "lat": 0.38583,
+    "lon": 29.87167,
+    "elevationFt": 16763,
+    "prominenceFt": 12874,
+    "range": "Rwenzori",
+    "country": "Uganda/DR Congo",
+    "adminRegion": "Western Region",
+    "aliases": [
+      "Mount Stanley",
+      "Mount Ngaliema"
+    ],
+    "firstAscent": "1906",
+    "difficulty": "Technical alpine / glacier",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Dec–Feb, Jun–Aug",
+    "whyNotable": "Africa’s third-highest summit and the high point of both Uganda and the DRC, on the classic Rwenzori trek.",
+    "description": "Highest point of Mount Stanley and the third-highest mountain in Africa — a glaciated rock climb on the Uganda–DRC border in the Rwenzori.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Kasese",
+      "region": "Western Region",
+      "distanceMiles": 20
+    }
+  },
+  {
+    "id": "cameroon",
+    "name": "Mount Cameroon",
+    "lat": 4.21667,
+    "lon": 9.1725,
+    "elevationFt": 13255,
+    "prominenceFt": 12799,
+    "range": "Cameroon Line",
+    "country": "Cameroon",
+    "adminRegion": "Southwest",
+    "aliases": [
+      "Fako",
+      "Mongo ma Ndemi"
+    ],
+    "firstAscent": "1840s",
+    "difficulty": "Strenuous day / overnight",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Nov–Feb",
+    "whyNotable": "Highest peak in West Africa and a classic Buea-based volcano trek.",
+    "description": "West Africa’s highest mountain — an active stratovolcano above Buea, climbed as a long hut-to-summit trek through Mount Cameroon National Park.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Buea",
+      "region": "Southwest",
+      "distanceMiles": 6
+    }
+  },
+  {
     "id": "kenya",
     "name": "Mt. Kenya",
     "lat": -0.1521,
@@ -2313,6 +2558,63 @@
       "name": "Skardu",
       "region": "Gilgit-Baltistan",
       "distanceMiles": 120
+    }
+  },
+  {
+    "id": "lenin",
+    "name": "Lenin Peak",
+    "lat": 39.3425,
+    "lon": 72.8775,
+    "elevationFt": 23406,
+    "prominenceFt": 9360,
+    "range": "Trans-Alay Range",
+    "country": "Kyrgyzstan/Tajikistan",
+    "adminRegion": "Osh",
+    "aliases": [
+      "Ibn Sina Peak",
+      "Pik Lenin",
+      "Kaufmann Peak"
+    ],
+    "firstAscent": "1928",
+    "difficulty": "High-altitude expedition",
+    "difficultyTier": "expedition",
+    "bestSeason": "Jul–Aug",
+    "whyNotable": "Classic first 7,000er: highest of the Trans-Alay and among the world’s most-ascended 7,000 m peaks.",
+    "description": "The most-climbed 7,000 m peak — a glaciated Pamir expedition usually staged from Achik-Tash on the Kyrgyz side, with real altitude and avalanche hazard despite a “non-technical” reputation.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Osh",
+      "region": "Osh",
+      "distanceMiles": 82
+    }
+  },
+  {
+    "id": "muztaghata",
+    "name": "Muztagh Ata",
+    "lat": 38.27611,
+    "lon": 75.11594,
+    "elevationFt": 24757,
+    "prominenceFt": 8973,
+    "range": "Kongur Shan",
+    "country": "China",
+    "adminRegion": "Xinjiang",
+    "aliases": [
+      "Muztagata",
+      "Mustagh Ata"
+    ],
+    "firstAscent": "1956",
+    "difficulty": "High-altitude expedition",
+    "difficultyTier": "expedition",
+    "bestSeason": "Jun–Aug",
+    "whyNotable": "Classic “easy” 7,000 m ski mountain of the Eastern Pamirs, with CMA / Xinjiang permit logistics.",
+    "description": "A broad 7,500 m ski-expedition peak above Karakul Lake — often called an “easy” 7,000er, still a full Chinese mountaineering-permit expedition from Kashgar.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Kashgar",
+      "region": "Xinjiang",
+      "distanceMiles": 95
     }
   },
   {
@@ -2678,6 +2980,33 @@
     }
   },
   {
+    "id": "merapeak",
+    "name": "Mera Peak",
+    "lat": 27.70916,
+    "lon": 86.868289,
+    "elevationFt": 21247,
+    "prominenceFt": 3488,
+    "range": "Mahalangur Himal",
+    "country": "Nepal",
+    "adminRegion": "Koshi",
+    "aliases": [
+      "Mera"
+    ],
+    "firstAscent": "1953",
+    "difficulty": "Trekking peak",
+    "difficultyTier": "expedition",
+    "bestSeason": "Apr–May, Oct–Nov",
+    "whyNotable": "The standard “first 6,000er” for trekkers in the Khumbu, and Nepal’s busiest trekking peak.",
+    "description": "Nepal’s most-climbed trekking peak — a glaciated 6,000 m objective south of Everest, usually approached via Khare with NMA permits.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Lukla",
+      "region": "Koshi",
+      "distanceMiles": 9
+    }
+  },
+  {
     "id": "stok",
     "name": "Stok Kangri",
     "lat": 33.9861,
@@ -2864,6 +3193,63 @@
     }
   },
   {
+    "id": "puncakjaya",
+    "name": "Puncak Jaya",
+    "lat": -4.078531,
+    "lon": 137.158077,
+    "elevationFt": 16024,
+    "prominenceFt": 16024,
+    "range": "Sudirman Range",
+    "country": "Indonesia",
+    "adminRegion": "Central Papua",
+    "aliases": [
+      "Carstensz Pyramid",
+      "Mount Carstensz",
+      "Carstensz"
+    ],
+    "firstAscent": "1962",
+    "difficulty": "Technical expedition",
+    "difficultyTier": "expedition",
+    "bestSeason": "Jun–Aug",
+    "whyNotable": "The missing Seven Summit on the Messner list — Oceania’s high point and the world’s highest island peak.",
+    "description": "Highest summit in Oceania (Messner Seven Summits) — a technical limestone pyramid in the Sudirman Range of New Guinea, climbed with licensed Indonesian operators.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Timika",
+      "region": "Central Papua",
+      "distanceMiles": 37
+    }
+  },
+  {
+    "id": "rinjani",
+    "name": "Mount Rinjani",
+    "lat": -8.410094,
+    "lon": 116.457867,
+    "elevationFt": 12224,
+    "prominenceFt": 12224,
+    "range": "Lombok",
+    "country": "Indonesia",
+    "adminRegion": "West Nusa Tenggara",
+    "aliases": [
+      "Gunung Rinjani",
+      "Rinjani"
+    ],
+    "firstAscent": "1847",
+    "difficulty": "Strenuous day / overnight",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "May–Oct",
+    "whyNotable": "Lombok high point and a flagship Indonesian volcano trek above Segara Anak crater lake.",
+    "description": "Lombok’s high point and one of Southeast Asia’s classic multi-day crater treks — summit push from the Segara Anak rim with licensed national-park operators.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Senaru",
+      "region": "West Nusa Tenggara",
+      "distanceMiles": 8
+    }
+  },
+  {
     "id": "hallasan",
     "name": "Hallasan",
     "lat": 33.3617,
@@ -2915,6 +3301,62 @@
       "name": "Mount Cook Village",
       "region": "Canterbury",
       "distanceMiles": 5
+    }
+  },
+  {
+    "id": "ruapehu",
+    "name": "Mount Ruapehu",
+    "lat": -39.28945,
+    "lon": 175.56244,
+    "elevationFt": 9156,
+    "prominenceFt": 9156,
+    "range": "Tongariro",
+    "country": "New Zealand",
+    "adminRegion": "Manawatū-Whanganui",
+    "aliases": [
+      "Ruapehu",
+      "Tahurangi"
+    ],
+    "firstAscent": "1879",
+    "difficulty": "Snow / scramble",
+    "difficultyTier": "scramble",
+    "bestSeason": "Dec–Apr",
+    "whyNotable": "Highest peak on New Zealand’s North Island and the high point of Tongariro National Park.",
+    "description": "North Island high point — an active andesite volcano whose Tahurangi summit is reached from the Turoa or Whakapapa ski fields when volcanic alert levels allow.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Whakapapa Village",
+      "region": "Manawatū-Whanganui",
+      "distanceMiles": 6
+    }
+  },
+  {
+    "id": "taranaki",
+    "name": "Mount Taranaki",
+    "lat": -39.29607,
+    "lon": 174.06383,
+    "elevationFt": 8255,
+    "prominenceFt": 7576,
+    "range": "Taranaki",
+    "country": "New Zealand",
+    "adminRegion": "Taranaki",
+    "aliases": [
+      "Taranaki Maunga",
+      "Mount Egmont"
+    ],
+    "firstAscent": "1839",
+    "difficulty": "Strenuous day hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Dec–Mar",
+    "whyNotable": "Iconic North Island volcano and one of New Zealand’s most photographed summit days.",
+    "description": "The isolated cone of Te Papakura o Taranaki — a popular summer summit day from North Egmont when alpine conditions are stable.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "New Plymouth",
+      "region": "Taranaki",
+      "distanceMiles": 17
     }
   },
   {
@@ -3174,6 +3616,33 @@
     }
   },
   {
+    "id": "aneto",
+    "name": "Aneto",
+    "lat": 42.631078,
+    "lon": 0.656636,
+    "elevationFt": 11168,
+    "prominenceFt": 9222,
+    "range": "Pyrenees",
+    "country": "Spain",
+    "adminRegion": "Aragon",
+    "aliases": [
+      "Pico de Aneto"
+    ],
+    "firstAscent": "1842",
+    "difficulty": "Snow / glacier climb",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Pyrenees high point and Spain’s third-highest summit, with a classic glacier approach.",
+    "description": "Highest peak in the Pyrenees — a glaciated normal route from Renclusa / Benasque that still needs an ice axe and crevasse awareness in season.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Benasque",
+      "region": "Aragon",
+      "distanceMiles": 7
+    }
+  },
+  {
     "id": "teide",
     "name": "Teide",
     "lat": 28.2724,
@@ -3225,6 +3694,34 @@
       "name": "Amecameca",
       "region": "Mexico State",
       "distanceMiles": 18
+    }
+  },
+  {
+    "id": "acatenango",
+    "name": "Volcán Acatenango",
+    "lat": 14.50163,
+    "lon": -90.87549,
+    "elevationFt": 13041,
+    "prominenceFt": 6020,
+    "range": "Sierra Madre",
+    "country": "Guatemala",
+    "adminRegion": "Chimaltenango",
+    "aliases": [
+      "Acatenango",
+      "Pico Mayor"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Strenuous day / overnight",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Nov–Apr",
+    "whyNotable": "Guatemala’s classic overnight volcano: camp opposite erupting Fuego, summit Acatenango at dawn.",
+    "description": "A popular overnight volcano hike from Antigua with tent camps facing active Volcán de Fuego — Pico Mayor is the high point of the Acatenango–Fuego complex.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Antigua Guatemala",
+      "region": "Sacatepéquez",
+      "distanceMiles": 10
     }
   },
   {
@@ -4538,6 +5035,33 @@
     }
   },
   {
+    "id": "hvannadalshnukur",
+    "name": "Hvannadalshnúkur",
+    "lat": 64.01424,
+    "lon": -16.67718,
+    "elevationFt": 6919,
+    "prominenceFt": 6919,
+    "range": "Öræfajökull",
+    "country": "Iceland",
+    "adminRegion": "Austurland",
+    "aliases": [
+      "Hvannadalshnjúkur"
+    ],
+    "firstAscent": "Unknown",
+    "difficulty": "Glacier climb",
+    "difficultyTier": "snow-glacier",
+    "bestSeason": "May–Sep",
+    "whyNotable": "Highest summit in Iceland and a classic guided glacier day on Vatnajökull.",
+    "description": "Iceland’s high point on the Öræfajökull ice cap — a guided glacier climb from the Skaftafell side of Vatnajökull National Park.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Höfn",
+      "region": "Austurland",
+      "distanceMiles": 47
+    }
+  },
+  {
     "id": "benmacdui",
     "name": "Ben Macdui",
     "lat": 57.0704,
@@ -4793,6 +5317,30 @@
     }
   },
   {
+    "id": "rysy",
+    "name": "Rysy",
+    "lat": 49.17934,
+    "lon": 20.08847,
+    "elevationFt": 8204,
+    "prominenceFt": 538,
+    "range": "High Tatras",
+    "country": "Poland/Slovakia",
+    "adminRegion": "Lesser Poland",
+    "firstAscent": "Unknown",
+    "difficulty": "Class 2–3 scramble",
+    "difficultyTier": "scramble",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Poland’s high point and one of the busiest High Tatras summit days from Zakopane.",
+    "description": "Poland’s high point on the Slovak border — a very popular marked Tatra hike from Morskie Oko / Czarny Staw, with a slightly higher summit on the Slovak side.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Zakopane",
+      "region": "Lesser Poland",
+      "distanceMiles": 10
+    }
+  },
+  {
     "id": "etna",
     "name": "Mount Etna",
     "lat": 37.751,
@@ -4859,7 +5407,7 @@
     ],
     "firstAscent": "unknown",
     "difficulty": "Class 1–2 hike",
-    "difficultyTier": "strenuous-hike",
+    "difficultyTier": "day-hike",
     "bestSeason": "May–Oct",
     "whyNotable": "Highest peak in the Catskills and the high point of Ulster County and the New York metro area.",
     "description": "Slide Mountain anchors the Burroughs Range in Catskill Park. The Wittenberg–Cornell–Slide Trail is the classic approach—a long forest hike with ledge views near the top. The true summit is wooded; ledges and openings nearby give the best vistas. Expect mud, roots, and busy weekends in leaf season.",
@@ -4886,7 +5434,7 @@
     ],
     "firstAscent": "unknown",
     "difficulty": "Class 1–2 hike",
-    "difficultyTier": "strenuous-hike",
+    "difficultyTier": "day-hike",
     "bestSeason": "May–Oct",
     "whyNotable": "Second-highest Catskill peak, topped by a restored fire tower with wide views over the range.",
     "description": "Hunter Mountain rises above the village of Hunter in Greene County. Hikers reach the fire-tower summit via Becker Hollow, Spruceton, or ski-area connectors. Winter brings deep snow and wind on the open tower; summer weekends are busy. The ski resort occupies the north face—stay on designated hiking routes.",
@@ -4912,7 +5460,7 @@
     ],
     "firstAscent": "unknown",
     "difficulty": "Class 1–2 hike",
-    "difficultyTier": "strenuous-hike",
+    "difficultyTier": "day-hike",
     "bestSeason": "May–Oct",
     "whyNotable": "Third-highest Catskill peak and the high point of the Blackhead Range above Big Hollow.",
     "description": "Black Dome sits between Thomas Cole and Blackhead on the Blackhead Range. The Black Dome Range Trail links the trio; most hikers stage from Big Hollow Road. Expect steep forest climbs, muddy cols, and limited summit views through the trees—better vistas open on ledges along the ridge.",
@@ -4938,7 +5486,7 @@
     ],
     "firstAscent": "unknown",
     "difficulty": "Class 1–2 hike",
-    "difficultyTier": "strenuous-hike",
+    "difficultyTier": "day-hike",
     "bestSeason": "May–Oct",
     "whyNotable": "Eastern pillar of the Blackhead Range and one of four Catskill 3500 Club required winter peaks.",
     "description": "Blackhead anchors the east end of the Blackhead Range and sits on the Escarpment / Long Path corridor. Approaches from Big Hollow or the Escarpment are steep; the eastern pitch can hold ice well into spring. Summit views are limited, but lookouts along the ridge open toward the Hudson Valley.",
@@ -4965,7 +5513,7 @@
     ],
     "firstAscent": "unknown",
     "difficulty": "Class 1–2 hike",
-    "difficultyTier": "strenuous-hike",
+    "difficultyTier": "day-hike",
     "bestSeason": "May–Oct",
     "whyNotable": "High point of the Devil’s Path west of Stony Clove—steep, rooty, and classic Catskills ridge hiking.",
     "description": "West Kill Mountain is the western crown of the Devil’s Path above Spruceton Valley. The Diamond Notch / Devil’s Path approach is steep and often wet, with Buck Ridge Lookout as the signature viewpoint. Expect a full day, scarce water on the ridge, and quieter crowds than Slide or Hunter.",

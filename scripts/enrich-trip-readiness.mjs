@@ -408,6 +408,126 @@ const PERMIT_BY_ID = {
     permitNotes:
       'No summit permit. Forest Preserve rules apply; Spruceton / Diamond Notch parking is limited on peak weekends.',
   },
+  puncakjaya: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Indonesian conservation (SIMAKSI) and local access permits are required; commercial teams use licensed PB-PJWA operators. Independent access is not practical — confirm current Papua / Mimika rules.',
+  },
+  ojosdelsalado: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Chilean CONAF access to Nevado Tres Cruces and border/DIFROL authorization typically apply on the Copiapó approach. Confirm current Chile/Argentina park and border rules.',
+  },
+  rinjani: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Mount Rinjani National Park trekking passes are required and issued through licensed operators (e-SIMAKSI / TNGR). Independent trekking is not allowed.',
+  },
+  merapeak: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Nepal NMA trekking-peak permit plus TIMS / Khumbu rural municipality fees apply. Arrange through a licensed Nepal operator and confirm current NMA rules.',
+  },
+  lenin: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Kyrgyzstan OVIR/border-zone and mountaineering permits are required for Achik-Tash / Lenin Peak. Confirm current Kyrgyz tourism and border rules.',
+  },
+  muztaghata: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'China mountaineering permits (CMA / Xinjiang association) plus an Alien Travel Permit for the Kashgar border area are required. Confirm current CXMA rules.',
+  },
+  zugspitze: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No general summit climbing permit. Cable-car, cog railway, and trailhead rules apply; the Austrian border ridge is a walk-up / via ferrata mix.',
+  },
+  breithorn: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No general climbing permit. Glacier travel from Klein Matterhorn is the constraint — hut/cable-car tickets and seasonal route conditions apply.',
+  },
+  monch: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No general climbing permit. Jungfraujoch access and glacier/route conditions are the practical gates — confirm with Grindelwald / Jungfrau guides.',
+  },
+  aneto: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No general summit permit in Posets-Maladeta Natural Park. Glacier travel on the normal route still needs seasonal assessment — confirm park access rules.',
+  },
+  rysy: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Tatra National Park entry tickets are required on the Polish (TPN) and Slovak (TANAP) sides. Confirm current trail closures and ticket rules before you go.',
+  },
+  hvannadalshnukur: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No separate summit climbing permit. Vatnajökull National Park access and guided glacier travel are the normal constraints — confirm current park / operator rules.',
+  },
+  ruapehu: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No general summit permit. Tongariro National Park entry and volcanic alert levels apply — check DOC and GNS Science before climbing Tahurangi.',
+  },
+  taranaki: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No general summit permit. Te Papakura o Taranaki (Egmont NP) track and weather rules apply — confirm current DOC alpine conditions.',
+  },
+  cameroon: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Mount Cameroon National Park entry and locally arranged guides from Buea are typically required. Confirm current park office rules.',
+  },
+  margherita: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Uganda Wildlife Authority (and ICCN on the DRC side) park and trekking permits are required for the Rwenzori / Margherita Peak route. Confirm current UWA / operator rules.',
+  },
+  roraima: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Venezuela Inparques permits are required for the Roraima tepui trek (typically arranged from Santa Elena / Paraitepuy). Confirm current park and border rules.',
+  },
+  villarrica: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'CONAF requires a separate Villarrica crater-ascent pass (pasesparques.cl) in addition to park entry; most visitors must go with a licensed Pucón operator.',
+  },
+  acatenango: {
+    permitRequired: true,
+    permitStatus: 'required',
+    permitNotes:
+      'Overnight Acatenango hikes are arranged through licensed Antigua agencies with park / INSIVUMEH access. Confirm current Fuego-hazard and permit rules.',
+  },
+  temple: {
+    permitRequired: false,
+    permitStatus: 'not_required',
+    permitNotes:
+      'No scrambling permit. Parks Canada discovery pass / Banff entry and Moraine Lake access rules apply — confirm current Parks Canada conditions.',
+  },
 }
 
 function clipSeo(text, max = 155) {
@@ -479,6 +599,11 @@ for (const peak of peaks) {
     peak.permitRequired = curated.permitRequired
     peak.permitStatus = curated.permitStatus
     if (curated.permitNotes) peak.permitNotes = curated.permitNotes
+  } else if (
+    peak.permitStatus === 'required' ||
+    peak.permitStatus === 'not_required'
+  ) {
+    // Later batches already curated these — do not wipe them to unsourced.
   } else {
     peak.permitRequired = null
     peak.permitStatus = 'unsourced'

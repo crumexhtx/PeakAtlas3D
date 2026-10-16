@@ -307,6 +307,47 @@ export const PHOTO_ALLOWLIST = {
     'File:Quandary Peak, Colorado, USA (14382068790).jpg',
     'File:Mountain goat Quandary Peak.jpg',
   ],
+  puncakjaya: [
+    'File:Puncakjaya.jpg',
+    'File:Carstensz Pyramid.jpg',
+  ],
+  muztaghata: [
+    'File:Muztagh Ata.jpg',
+    'File:Muztagh Ata Xinjiang China.jpg',
+  ],
+  zugspitze: [
+    'File:Zugspitze.jpg',
+    'File:Blindsee Zugspitze 1.jpg',
+    'File:Zugspitze 2005.jpg',
+  ],
+  breithorn: [
+    'File:Breithorn.jpg',
+    'File:Breithorn north.jpg',
+    'File:Breithorn mountain.jpg',
+  ],
+  monch: [
+    'File:Eiger, Mönch und Jungfrau.jpg',
+    'File:360 Jungfrau Mönch.jpg',
+  ],
+  aneto: ['File:Aneto.jpg', 'File:Aneto 01.jpg', 'File:Cima Pico Aneto.jpg'],
+  rysy: ['File:Rysy.jpg', 'File:Rysy from Morskie Oko.jpg'],
+  ruapehu: [
+    'File:Mount Ruapehu.jpg',
+    'File:Ruapehu Crater Panorama.jpg',
+  ],
+  cameroon: [
+    'File:Landscape of Mount Cameroon.jpg',
+    'File:Mount Cameroon.jpg',
+  ],
+  acatenango: [
+    'File:Sunset over Fuego and Acatenango volcanoes from Antigua.jpg',
+    'File:Erupcion_-_panoramio.jpg',
+  ],
+  temple: [
+    'File:Mt Temple summit.jpg',
+    'File:Valley of the Ten Peaks 2021.jpg',
+  ],
+  lenin: ['File:Lenin Peak.jpg', 'File:Lenini mäetipp.jpg'],
 }
 
 export const ALLOW_SINGLE = new Set(['gannett'])
@@ -361,6 +402,10 @@ const REJECT_TERMS = [
   'statue',
   'chapel',
   'museum',
+  'inaturalist',
+  'caldo',
+  'gipfelkreuz',
+  'arum',
 ]
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
