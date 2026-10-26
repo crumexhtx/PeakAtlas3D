@@ -2,6 +2,45 @@
  * Keep in sync with src/lib/seasonMonths.ts (validator / prerender).
  */
 
+export const MONTH_SLUGS = [
+  'january',
+  'february',
+  'march',
+  'april',
+  'may',
+  'june',
+  'july',
+  'august',
+  'september',
+  'october',
+  'november',
+  'december',
+]
+
+export const MONTH_LABELS = {
+  january: 'January',
+  february: 'February',
+  march: 'March',
+  april: 'April',
+  may: 'May',
+  june: 'June',
+  july: 'July',
+  august: 'August',
+  september: 'September',
+  october: 'October',
+  november: 'November',
+  december: 'December',
+}
+
+export function monthSlugFromNumber(month) {
+  return MONTH_SLUGS[month - 1] ?? null
+}
+
+export function monthNumberFromSlug(slug) {
+  const index = MONTH_SLUGS.indexOf(String(slug).toLowerCase())
+  return index >= 0 ? index + 1 : null
+}
+
 const MONTH_NAME_TO_NUM = {
   january: 1,
   jan: 1,

@@ -1,16 +1,25 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { peaksIndex } from '../data/catalog'
+import {
+  MONTH_LABELS,
+  MONTH_SLUGS,
+  bestPeaksHref,
+  monthNumberFromSlug,
+  type MonthSlug,
+} from '../lib/bestPeaks'
 import { buildCountrySummaries } from '../lib/countries'
 import { countryHref, peaksForCountry } from '../lib/countryPages'
 import { applyDocumentMeta } from '../lib/documentMeta'
 import { formatElevation } from '../lib/geo'
 import { peakHref } from '../lib/routes'
+import { resolvePeakSeason } from '../lib/seasonMonths'
 import { useUnits } from '../context/UnitsContext'
 
 /** Crawl hub — every peak as a real <a href> for Search Console indexing. */
 export function PeaksPage() {
   const { units } = useUnits()
+  const [monthFilter, setMonthFilter] = useState<MonthSlug | ''>('')
 
   useEffect(() => {
     applyDocumentMeta({
@@ -22,13 +31,23 @@ export function PeaksPage() {
   }, [])
 
   const summaries = useMemo(() => buildCountrySummaries(peaksIndex), [])
+  const monthNumber = monthFilter ? monthNumberFromSlug(monthFilter) : null
 
   const byCountry = useMemo(() => {
-    return summaries.map((summary) => ({
-      summary,
-      peaks: peaksForCountry(peaksIndex, summary.name, summaries),
-    }))
-  }, [summaries])
+    return summaries
+      .map((summary) => {
+        const peaks = peaksForCountry(
+          peaksIndex,
+          summary.name,
+          summaries,
+        ).filter((peak) => {
+          if (monthNumber == null) return true
+          return resolvePeakSeason(peak).months.includes(monthNumber)
+        })
+        return { summary, peaks }
+      })
+      .filter((group) => group.peaks.length > 0)
+  }, [summaries, monthNumber])
 
   return (
     <article className="content-article peaks-directory-article">
@@ -41,7 +60,33 @@ export function PeaksPage() {
       </p>
       <p className="peaks-directory-atlas-link">
         <Link to="/">Open the 3D atlas</Link>
+        {' · '}
+        <Link to={bestPeaksHref()}>Best peaks by month</Link>
       </p>
+
+      <div className="peaks-directory-filters">
+        <label className="peaks-month-filter">
+          Month
+          <select
+            value={monthFilter}
+            onChange={(e) =>
+              setMonthFilter((e.target.value || '') as MonthSlug | '')
+            }
+          >
+            <option value="">All months</option>
+            {MONTH_SLUGS.map((slug) => (
+              <option key={slug} value={slug}>
+                {MONTH_LABELS[slug]}
+              </option>
+            ))}
+          </select>
+        </label>
+        {monthFilter ? (
+          <Link to={bestPeaksHref(monthFilter)} className="peaks-month-filter-link">
+            See all peaks for {MONTH_LABELS[monthFilter]}
+          </Link>
+        ) : null}
+      </div>
 
       {byCountry.map(({ summary, peaks }) => (
         <section

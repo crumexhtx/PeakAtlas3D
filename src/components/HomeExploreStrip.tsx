@@ -47,6 +47,12 @@ export function HomeExploreStrip({
         <Link to="/peaks" className="home-explore-chip home-explore-chip-link">
           All peaks
         </Link>
+        <Link
+          to="/best-peaks"
+          className="home-explore-chip home-explore-chip-link"
+        >
+          Best by month
+        </Link>
       </nav>
 
       <nav className="home-explore-featured" aria-label="Featured peaks">

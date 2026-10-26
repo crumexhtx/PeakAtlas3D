@@ -85,7 +85,8 @@ export function AtlasLayout() {
     let cancelled = false
     setPeakLoading(true)
     setPeakMissing(false)
-    setActivePeak(null)
+    // Keep the previous summit until the next dossier hydrates so peak→peak
+    // search does not drop the camera into world/country framing.
 
     getPeakById(peakId)
       .then((peak) => {
@@ -278,9 +279,14 @@ export function AtlasLayout() {
 
   const openPeak = useCallback(
     (peak: PeakIndex) => {
-      navigate(peakHref(peak.id, selectedCountry))
+      const country =
+        selectedCountry &&
+        peakMatchesCountry(peak, selectedCountry, countrySummaries)
+          ? selectedCountry
+          : null
+      navigate(peakHref(peak.id, country))
     },
-    [navigate, selectedCountry],
+    [countrySummaries, navigate, selectedCountry],
   )
 
   const onCinematicChange = useCallback(
@@ -356,6 +362,7 @@ export function AtlasLayout() {
           peaks={peaksIndex}
           showBack={onPeakRoute}
           atlasHref={onPeakRoute ? backHref : '/'}
+          activePeakId={peakId}
           onSelectPeak={openPeak}
         />
 

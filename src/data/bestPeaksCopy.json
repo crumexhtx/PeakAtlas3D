@@ -1,0 +1,86 @@
+{
+  "january": {
+    "paragraphs": [
+      "January in this catalog is a Southern Hemisphere and equatorial window: Aconcagua and Ojos del Salado sit in their high season, New Zealand’s volcanoes and Southern Alps are in austral summer, and Kilimanjaro plus Kenya still show as in season.",
+      "Mexican volcanoes (Orizaba, Iztaccíhuatl, Popocatépetl) and a handful of USA winter-access peaks round out the list. Antarctica’s Vinson season is already open from the November start in the catalog — treat it as an expedition calendar, not a casual hike.",
+      "Use the groups below as planning filters, then open each peak for permits, staging, and the 3D map. Always confirm the current season on the official land-manager page."
+    ]
+  },
+  "february": {
+    "paragraphs": [
+      "February keeps the austral-summer Andes and New Zealand lists open: Aconcagua, Ojos del Salado, Patagonian granite, and Aoraki / Mt. Cook remain in the catalog’s in-season set.",
+      "East African walk-ups (Kilimanjaro, Kenya, Meru) and Mexico’s high volcanoes are still tagged for this month. Northern Rockies and Sierra entries here are the year-round or winter-tolerant exceptions, not a USA summer season.",
+      "If you are shopping a first big trip, compare Kilimanjaro vs Aconcagua on difficulty and permits before you pick a hemisphere."
+    ]
+  },
+  "march": {
+    "paragraphs": [
+      "March is a shoulder between austral summer and the Himalayan pre-monsoon. Ojos del Salado, New Zealand, and Kilimanjaro still appear; Aconcagua has usually dropped off this catalog’s window.",
+      "Mexico’s volcanoes stay in season, and a few USA peaks with long or year-round access show up. Cotopaxi remains on the equatorial list.",
+      "Treat March as a bridge month: good for volcanoes and Southern Alps, thin for North American high-country walk-ups that want July snow-free trails."
+    ]
+  },
+  "april": {
+    "paragraphs": [
+      "April is when the Nepal/China 8000 m list lights up in this catalog — Everest, Lhotse, Makalu, Cho Oyu — alongside Annapurna, Manaslu, and other Nepal objectives in their pre-monsoon window.",
+      "USA coverage jumps as desert and lower peaks enter spring. Kinabalu, Irish hills, and Cotopaxi also remain. Southern Hemisphere high Andes are mostly out except a couple of New Zealand volcanoes.",
+      "This is a permit-heavy month in the Himalaya: the peak pages carry the access notes, not live lottery dates."
+    ]
+  },
+  "may": {
+    "paragraphs": [
+      "May is the catalog’s first big Northern Hemisphere expansion: dozens of USA peaks, UK and Irish hills, and the Nepal 8000 m list still in its pre-monsoon window.",
+      "Bolivian Cordillera peaks (Illimani, Sajama, Huayna Potosí) appear on the austral dry-season side of the calendar — winter there, not summer. Half Dome’s cables window is marked as a shoulder approximation (late May–early October).",
+      "If you want snow-free Sierra or Colorado trails, May is early; if you want Everest-region logistics, it is prime."
+    ]
+  },
+  "june": {
+    "paragraphs": [
+      "June opens the USA high-country majority and the Karakoram 8000 m window (K2, Broad Peak, the Gasherbrums, Nanga Parbat) in this catalog.",
+      "Alps and Pyrenees start to fill in. Equatorial and Indonesian volcanoes (Kilimanjaro, Rinjani, Puncak Jaya) stay in season. Andean entries such as Huascarán are austral-winter climbing windows, not Southern Hemisphere summer.",
+      "This is the month the atlas looks most like a global menu: Rockies, Sierra, Alps, Karakoram, and a thinner Southern list."
+    ]
+  },
+  "july": {
+    "paragraphs": [
+      "July is the densest month in the catalog — US 14ers, Cascades, Alps (Matterhorn, Mont Blanc, Eiger), Canada, and the Karakoram remain in season.",
+      "Do not read this as global summer: Huascarán, Illimani, and Sajama are on their Andean dry-season / austral-winter side. Kilimanjaro and Puncak Jaya are equatorial exceptions, not a July heat wave at 6,000 m.",
+      "If you want a classic Northern Hemisphere walk-up or alpine ridge, July is the default window this dataset encodes."
+    ]
+  },
+  "august": {
+    "paragraphs": [
+      "August stays close to July’s Northern Hemisphere peak: USA, Swiss and Italian Alps, UK hills, and Karakoram expeditions still dominate the counts.",
+      "East African and New Guinea objectives remain. Andean dry-season peaks continue; they are not midsummer outings south of the equator.",
+      "Late-August plans should still check snow on north-facing alpine routes and monsoon remnants on Nepal peaks that have already left this month’s list."
+    ]
+  },
+  "september": {
+    "paragraphs": [
+      "September keeps most USA and Alps peaks in season while the Nepal 8000 m post-monsoon list returns (Everest through Annapurna).",
+      "It is still a Northern Hemisphere high-country month in this catalog, with Bolivian and East African peaks continuing on their own calendars.",
+      "Shoulder labels appear on cables-season and “early September” windows — those are approximate, not a guaranteed snow-free date."
+    ]
+  },
+  "october": {
+    "paragraphs": [
+      "October thins the USA list to peaks with longer seasons and keeps the Nepal post-monsoon 8000 m set. Kilimanjaro and Meru remain on the equatorial side.",
+      "Alps and Rockies high routes that were July–September only have largely dropped. Half Dome’s cables window is still an approximate shoulder through early October.",
+      "This is a Himalaya-and-volcano month more than a Colorado 14er month in the catalog."
+    ]
+  },
+  "november": {
+    "paragraphs": [
+      "November flips toward austral spring and polar season: New Zealand, Patagonia granite, Table Mountain, and Antarctica (Vinson, Sidley) enter the in-season set.",
+      "Nepal trekking peaks (Ama Dablam, Mera, Island Peak) and Mexican volcanoes also show. USA coverage is the short-season leftover, not a fall 14er rush.",
+      "If you want ice and expedition logistics, this is the start of the Antarctic and Southern Alps chapter — not Northern Hemisphere summer."
+    ]
+  },
+  "december": {
+    "paragraphs": [
+      "December is austral summer in the catalog: Aconcagua, Ojos del Salado, New Zealand, Patagonia, and Ecuadorian volcanoes sit alongside Mexican high volcanoes.",
+      "Antarctica remains in season from the November open. USA peaks here are winter or year-round listings. Margherita and other equatorial African entries appear on their own windows.",
+      "Pair this month with the January page if you are choosing an Andes vs Kilimanjaro vs NZ trip over the holidays."
+    ]
+  }
+}

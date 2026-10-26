@@ -12,6 +12,7 @@ export function peakHref(peakId: string, country?: string | null): string {
 
 export { countryHref } from './countryPages'
 export { comparisonHref } from './comparisons'
+export { bestPeaksHref } from './bestPeaks'
 
 /** Camera handoff from atlas → peak page for a continuous zoom-in. */
 export type PeakEntryState = {

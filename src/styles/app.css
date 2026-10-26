@@ -373,6 +373,12 @@ a {
   color: var(--muted);
 }
 
+.search-empty {
+  padding: 0.7rem 0.85rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .unit-toggle {
   display: inline-flex;
   border: 1px solid var(--border);

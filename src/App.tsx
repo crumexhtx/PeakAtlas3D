@@ -38,6 +38,16 @@ const CompareIndexPage = lazy(() =>
 const ComparePage = lazy(() =>
   import('./pages/ComparePage').then((m) => ({ default: m.ComparePage })),
 )
+const BestPeaksIndexPage = lazy(() =>
+  import('./pages/BestPeaksIndexPage').then((m) => ({
+    default: m.BestPeaksIndexPage,
+  })),
+)
+const BestPeaksMonthPage = lazy(() =>
+  import('./pages/BestPeaksMonthPage').then((m) => ({
+    default: m.BestPeaksMonthPage,
+  })),
+)
 
 function RouteFallback() {
   return (
@@ -63,6 +73,11 @@ export default function App() {
               <Route path="peaks" element={<PeaksPage />} />
               <Route path="compare" element={<CompareIndexPage />} />
               <Route path="compare/:compareSlug" element={<ComparePage />} />
+              <Route path="best-peaks" element={<BestPeaksIndexPage />} />
+              <Route
+                path="best-peaks/:monthSlug"
+                element={<BestPeaksMonthPage />}
+              />
               <Route path="countries/:countrySlug" element={<CountryPage />} />
               <Route path="contact" element={<ContactPage />} />
             </Route>

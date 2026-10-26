@@ -38,6 +38,41 @@ describe('searchPeaks', () => {
   it('returns empty for blank query', () => {
     expect(searchPeaks(sample, '   ')).toEqual([])
   })
+
+  it('folds accents so monch matches Mönch', () => {
+    const monch: PeakIndex = {
+      id: 'monch',
+      name: 'Mönch',
+      lat: 46.56,
+      lon: 8.0,
+      elevationFt: 13474,
+      prominenceFt: 1938,
+      range: 'Bernese Alps',
+      country: 'Switzerland',
+    }
+    expect(searchPeaks([monch], 'monch').map((p) => p.id)).toEqual(['monch'])
+  })
+
+  it('ranks name matches ahead of country matches', () => {
+    const elbertonia: PeakIndex = {
+      ...sample[1]!,
+      id: 'other',
+      name: 'Mount Other',
+      country: 'Elbertonia',
+      elevationFt: 20000,
+    }
+    const elbert: PeakIndex = {
+      ...sample[0]!,
+      id: 'elbert',
+      name: 'Mt. Elbert',
+      country: 'USA',
+      elevationFt: 14440,
+    }
+    expect(searchPeaks([elbertonia, elbert], 'elbert').map((p) => p.id)).toEqual([
+      'elbert',
+      'other',
+    ])
+  })
 })
 
 describe('filterPeaks', () => {

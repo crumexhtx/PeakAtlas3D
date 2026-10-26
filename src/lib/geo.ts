@@ -31,17 +31,33 @@ export function formatCoordinates(lat: number, lon: number): string {
   return `${Math.abs(lat).toFixed(4)}° ${latHem}, ${Math.abs(lon).toFixed(4)}° ${lonHem}`
 }
 
+function foldSearchText(value: string): string {
+  return value
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+}
+
+function searchRank(peak: PeakIndex, q: string): number {
+  const name = foldSearchText(peak.name)
+  const aliases = peak.aliases?.map(foldSearchText) ?? []
+  if (name === q || aliases.includes(q)) return 0
+  if (name.startsWith(q) || aliases.some((a) => a.startsWith(q))) return 1
+  if (name.includes(q) || aliases.some((a) => a.includes(q))) return 2
+  if (foldSearchText(peak.range).includes(q)) return 3
+  if (foldSearchText(peak.country).includes(q)) return 4
+  return 5
+}
+
 /** Search mountain peaks only (name / alias / range / country). */
 export function searchPeaks(peaks: PeakIndex[], query: string): PeakIndex[] {
-  const q = query.trim().toLowerCase()
+  const q = foldSearchText(query.trim())
   if (!q) return []
-  return peaks.filter(
-    (p) =>
-      p.name.toLowerCase().includes(q) ||
-      p.range.toLowerCase().includes(q) ||
-      p.country.toLowerCase().includes(q) ||
-      (p.aliases?.some((a) => a.toLowerCase().includes(q)) ?? false),
-  )
+  return peaks
+    .map((peak) => ({ peak, rank: searchRank(peak, q) }))
+    .filter(({ rank }) => rank < 5)
+    .sort((a, b) => a.rank - b.rank || b.peak.elevationFt - a.peak.elevationFt)
+    .map(({ peak }) => peak)
 }
 
 export function filterPeaks(peaks: PeakIndex[], browse: PeakBrowseFilters): PeakIndex[] {

@@ -22,6 +22,13 @@ import {
   comparePageHtml,
   peakSnapshotHtml,
 } from './lib/peak-snapshot.mjs'
+import {
+  MONTH_SLUGS,
+  bestPeaksIndexHtml,
+  bestPeaksMonthHtml,
+  metaForBestPeaksIndex,
+  metaForBestPeaksMonth,
+} from './lib/best-peaks.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const distDir = join(root, 'dist')
@@ -375,7 +382,7 @@ function homeCrawlableBody(peaks) {
         <h1>PeakAtlas3D — Trip-Ready Peak Guides</h1>
         <p>${escapeHtml(DEFAULT_DESCRIPTION)}</p>
         <p><strong>${escapeHtml(statsLine)}</strong></p>
-        <p><a href="${escapeAttr(siteUrl)}/peaks">Browse all ${sorted.length} peaks</a> · <a href="${escapeAttr(siteUrl)}/about">About</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
+        <p><a href="${escapeAttr(siteUrl)}/peaks">Browse all ${sorted.length} peaks</a> · <a href="${escapeAttr(siteUrl)}/best-peaks">Best peaks by month</a> · <a href="${escapeAttr(siteUrl)}/about">About</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
         <section aria-label="Featured peaks">
           <h2>Featured peaks</h2>
           <p>Handpicked summits — famous icons and a few gems worth the detour.</p>
@@ -420,7 +427,7 @@ function peaksIndexBody(peaks, countrySummaries) {
   return wrapCrawlableBody(`<main style="font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem;">
         <h1>All peaks — PeakAtlas3D</h1>
         <p>Trip-ready guides for ${peaks.length} summits across ${countrySummaries.length} countries — difficulty, season, permits, and 3D terrain.</p>
-        <p><a href="${escapeAttr(siteUrl)}/">Open the 3D atlas</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
+        <p><a href="${escapeAttr(siteUrl)}/">Open the 3D atlas</a> · <a href="${escapeAttr(siteUrl)}/best-peaks">Best peaks by month</a> · <a href="${escapeAttr(siteUrl)}/contact">Contact</a></p>
         ${sections}
       </main>`)
 }
@@ -629,6 +636,17 @@ const staticPages = [
     image: '',
     bodyHtml: compareIndexHtml(siteUrl),
   },
+  (() => {
+    const meta = metaForBestPeaksIndex()
+    const { inner, extraHead } = bestPeaksIndexHtml(peaks, siteUrl)
+    return {
+      path: meta.path,
+      title: meta.title,
+      description: meta.description,
+      image: '',
+      bodyHtml: wrapCrawlableBody(inner, extraHead),
+    }
+  })(),
 ]
 
 // Root index keeps home meta + crawlable peak directory.
@@ -686,6 +704,22 @@ for (const pair of COMPARISON_PAIRS) {
   })
 }
 
+for (const slug of MONTH_SLUGS) {
+  const meta = metaForBestPeaksMonth(peaks, slug)
+  const { inner, extraHead } = bestPeaksMonthHtml(
+    peaks,
+    slug,
+    siteUrl,
+    primaryByLabel,
+  )
+  writeRoute(template, meta.path, {
+    title: meta.title,
+    description: meta.description,
+    image: '',
+    bodyHtml: wrapCrawlableBody(inner, extraHead),
+  })
+}
+
 console.log(
-  `Prerendered meta HTML for ${staticPages.length} pages + ${countrySummaries.length} countries + ${peaks.length} peaks + ${COMPARISON_PAIRS.length} comparisons → ${siteUrl}`,
+  `Prerendered meta HTML for ${staticPages.length} pages + ${countrySummaries.length} countries + ${peaks.length} peaks + ${COMPARISON_PAIRS.length} comparisons + ${MONTH_SLUGS.length} month pages → ${siteUrl}`,
 )

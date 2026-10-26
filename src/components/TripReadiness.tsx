@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { Peak } from '../types/peak'
+import { BestMonthsStrip } from './BestMonthsStrip'
 import { formatDistance } from '../lib/geo'
 import {
   DIFFICULTY_TIER_LABELS,
@@ -86,7 +87,10 @@ export function TripReadiness({ peak }: TripReadinessProps) {
         </div>
         <div>
           <dt>Best season</dt>
-          <dd>{peak.bestSeason}</dd>
+          <dd>
+            {peak.bestSeason}
+            <BestMonthsStrip peak={peak} />
+          </dd>
         </div>
         <div>
           <dt>Access / staging</dt>
