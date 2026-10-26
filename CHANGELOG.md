@@ -6,6 +6,7 @@ Update this file when shipping notable changes (do not maintain an in-app releas
 
 ## Unreleased
 
+- Parse `bestSeason` into calendar months (`parseBestSeason`); curated `bestMonths` required when the text cannot be parsed
 - Catalog validator reports proximity duplicates, name/alias collisions, slug mismatches, and stale admin names (warnings until `--strict`)
 - Peak location prefers optional `adminRegion` (summit state/province) over nearest-town region
 - Photo matcher requires Commons geo (≤15 km) or an explicit allow-list; expanded reject patterns; `--check` stays offline and non-strict for CI

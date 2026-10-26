@@ -10,6 +10,7 @@ import {
   checkTownDistancePlausible,
   collectCatalogIssues,
 } from './lib/catalog-plausibility.mjs'
+import { resolvePeakSeason } from './lib/season-months.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const peaksPath = join(root, 'src', 'data', 'peaks.json')
@@ -113,6 +114,24 @@ for (let i = 0; i < peaks.length; i++) {
   if (!isNonEmptyString(peak.difficulty)) fail(`${where}.difficulty`)
   if (!isNonEmptyString(peak.bestSeason)) {
     fail(`${where}.bestSeason (required for trip readiness)`)
+  }
+  if (peak.bestMonths != null) {
+    if (!Array.isArray(peak.bestMonths) || peak.bestMonths.length === 0) {
+      fail(`${where}.bestMonths must be a non-empty array of months 1–12`)
+    }
+    for (const month of peak.bestMonths) {
+      if (!Number.isInteger(month) || month < 1 || month > 12) {
+        fail(`${where}.bestMonths invalid month: ${month}`)
+      }
+    }
+  }
+  {
+    const season = resolvePeakSeason(peak)
+    if (!season.months.length) {
+      fail(
+        `${where} has no season months (unparsed bestSeason and no bestMonths): ${JSON.stringify(peak.bestSeason)}`,
+      )
+    }
   }
   // Trip readiness requires difficulty + bestSeason together (both must be present).
   if (!isNonEmptyString(peak.difficulty) || !isNonEmptyString(peak.bestSeason)) {

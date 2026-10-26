@@ -4823,6 +4823,15 @@
     "difficulty": "Class 2–3 scramble / permit climb",
     "difficultyTier": "scramble",
     "bestSeason": "Late spring–early fall for summit climbs",
+    "bestMonths": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
     "whyNotable": "The 1980 eruption reshaped the mountain and made it a living laboratory of volcanic recovery.",
     "description": "A Cascade stratovolcano remade by the 1980 eruption, with a breached crater, lava dome, and recovering forests around Spirit Lake.",
     "permitStatus": "required",

@@ -35,6 +35,9 @@ const index = peaks.map((peak) => {
   if (peak.difficulty) row.difficulty = peak.difficulty
   if (peak.difficultyTier) row.difficultyTier = peak.difficultyTier
   if (peak.bestSeason) row.bestSeason = peak.bestSeason
+  if (Array.isArray(peak.bestMonths) && peak.bestMonths.length) {
+    row.bestMonths = peak.bestMonths
+  }
   if (peak.whyNotable) row.whyNotable = peak.whyNotable
   if (peak.description) row.description = peak.description
   if (peak.permitStatus) row.permitStatus = peak.permitStatus

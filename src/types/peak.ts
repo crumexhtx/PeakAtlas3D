@@ -72,6 +72,11 @@ export type PeakIndex = {
   difficultyTier?: DifficultyTier
   /** Typical climbing or visiting window (plain language). */
   bestSeason?: string
+  /**
+   * Calendar months (1–12) when the peak is in season.
+   * Overrides `parseBestSeason(bestSeason)` when present.
+   */
+  bestMonths?: number[]
   /** One-line hook for why the peak matters in the atlas. */
   whyNotable?: string
   /** Short atlas blurb (optional on the index; required on full Peak). */
@@ -105,6 +110,11 @@ export type Peak = PeakIndex & {
   difficultyTier: DifficultyTier
   /** Typical climbing or visiting window (required for trip-readiness). */
   bestSeason: string
+  /**
+   * Calendar months (1–12) when the peak is in season.
+   * Overrides `parseBestSeason(bestSeason)` when present.
+   */
+  bestMonths?: number[]
   /**
    * Whether a permit/reservation is required when known.
    * `null` means unsourced — do not treat as “no permit.”
