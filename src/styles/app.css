@@ -3761,6 +3761,205 @@ a.trail-bubble-label-link:focus-visible {
   text-underline-offset: 2px;
 }
 
+.peaks-directory-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.1rem;
+  margin: 0 0 1.4rem;
+}
+
+.peaks-month-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.peaks-month-filter select {
+  margin: 0;
+  padding: 0.35rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+  font: inherit;
+}
+
+.peaks-month-filter-link {
+  color: #c9d7e8;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.best-peaks-intro {
+  margin: 0 0 0.85rem;
+  max-width: 42rem;
+  line-height: 1.55;
+}
+
+.best-peaks-month-index {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+  gap: 0.55rem;
+}
+
+.best-peaks-month-card a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: inherit;
+  text-decoration: none;
+}
+
+.best-peaks-month-card a:hover,
+.best-peaks-month-card a:focus-visible {
+  border-color: rgba(79, 195, 247, 0.45);
+  background: var(--accent-soft);
+  outline: none;
+}
+
+.best-peaks-month-card.is-now a {
+  border-color: rgba(79, 195, 247, 0.55);
+}
+
+.best-peaks-month-name {
+  font-weight: 700;
+}
+
+.month-switcher {
+  margin: 0 0 1.4rem;
+}
+
+.month-switcher-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.month-switcher-list a {
+  display: inline-flex;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: #c9d7e8;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.month-switcher-list a:hover,
+.month-switcher-list a:focus-visible,
+.month-switcher-list a.is-current {
+  border-color: rgba(79, 195, 247, 0.55);
+  background: rgba(79, 195, 247, 0.12);
+  color: #e8f0fa;
+  outline: none;
+}
+
+.best-peaks-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.best-peaks-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.35rem 0.75rem;
+  align-items: start;
+}
+
+.best-peaks-country {
+  margin-top: 0.45rem;
+  color: #c9d7e8;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.best-peaks-country:hover,
+.best-peaks-country:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
+.best-peaks-shoulder {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(232, 196, 104, 0.45);
+  color: #e8c468;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+}
+
+.best-months-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 0.45rem;
+}
+
+.best-months-strip-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.best-months-strip-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.best-months-pill {
+  display: inline-flex;
+  padding: 0.12rem 0.38rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+a.best-months-pill.is-in-season {
+  border-color: rgba(79, 195, 247, 0.5);
+  background: rgba(79, 195, 247, 0.12);
+  color: #d7eef8;
+}
+
+a.best-months-pill.is-in-season:hover,
+a.best-months-pill.is-in-season:focus-visible {
+  border-color: rgba(79, 195, 247, 0.8);
+  outline: none;
+}
+
 @media (max-width: 720px) {
   .site-nav-compact {
     gap: 0.42rem;
