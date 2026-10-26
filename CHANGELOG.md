@@ -6,6 +6,7 @@ Update this file when shipping notable changes (do not maintain an in-app releas
 
 ## Unreleased
 
+- Permit & lottery catalog (`permits.json`) sourced from official agency pages, with a build validator for missing sources, unknown peaks, and stale windows
 - Best-peaks calendar pages at `/best-peaks` and `/best-peaks/{month}`, with month filter on `/peaks` and in-season month pills on each peak
 - Parse `bestSeason` into calendar months (`parseBestSeason`); curated `bestMonths` required when the text cannot be parsed
 - Catalog validator reports proximity duplicates, name/alias collisions, slug mismatches, and stale admin names (warnings until `--strict`)

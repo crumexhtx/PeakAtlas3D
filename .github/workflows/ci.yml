@@ -28,6 +28,9 @@ jobs:
       - name: Validate catalog schema
         run: npm run validate:catalog
 
+      - name: Validate permits catalog
+        run: npm run validate:permits
+
       - name: Sitemap matches catalog
         run: |
           git ls-files --error-unmatch public/sitemap.xml public/robots.txt

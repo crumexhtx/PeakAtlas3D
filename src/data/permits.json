@@ -1,0 +1,326 @@
+[
+  {
+    "id": "whitney-lottery",
+    "name": "Mt. Whitney Lottery",
+    "peakIds": ["whitney"],
+    "agency": "Inyo National Forest",
+    "type": "lottery",
+    "bookingUrl": "https://www.recreation.gov/permits/445860",
+    "sourceUrl": "https://www.fs.usda.gov/r05/inyo/wilderness/mount-whitney",
+    "verifiedOn": "2026-10-26",
+    "season": "2027",
+    "windows": [
+      {
+        "label": "Lottery application",
+        "opens": "2027-02-01",
+        "closes": "2027-03-01",
+        "approximate": false
+      },
+      {
+        "label": "Lottery results posted",
+        "opens": "2027-03-15",
+        "closes": "2027-03-15",
+        "approximate": false
+      },
+      {
+        "label": "Winners must claim and pay",
+        "opens": "2027-03-15",
+        "closes": "2027-04-21",
+        "approximate": false
+      },
+      {
+        "label": "Remaining dates open (first come)",
+        "opens": "2027-04-22",
+        "closes": "2027-11-01",
+        "approximate": false
+      }
+    ],
+    "summary": "Quota-season day and overnight Whitney Zone permits are awarded by lottery on Recreation.gov. One application per group or household; winners pay $15 per person and must complete checkout by 9 p.m. Pacific on April 21 or the award is revoked. Quota season is May 1–November 1 (100 day-use and 60 overnight people per day).",
+    "feesNote": "$15 per person reservation fee to claim a lottery win (Inyo NF / Recreation.gov).",
+    "status": "verified"
+  },
+  {
+    "id": "half-dome-lottery",
+    "name": "Half Dome Cables Lottery",
+    "peakIds": ["halfdome"],
+    "agency": "Yosemite National Park",
+    "type": "lottery",
+    "bookingUrl": "https://www.recreation.gov/permits/234652",
+    "sourceUrl": "https://www.nps.gov/yose/planyourvisit/hdpermits.htm",
+    "verifiedOn": "2026-10-26",
+    "season": "2027",
+    "windows": [
+      {
+        "label": "Preseason lottery (Eastern time)",
+        "opens": "2027-03-01",
+        "closes": "2027-03-31",
+        "approximate": false
+      }
+    ],
+    "summary": "A permit is required seven days a week when the cables are up. Day-hiker permits are issued by a March preseason lottery (results mid-April) plus a daily lottery two days before the hike (midnight–4 p.m. Pacific). About 225 day-hiker permits per day in the preseason lottery; backpackers request Half Dome with a wilderness permit instead.",
+    "feesNote": "$10 non-refundable application fee per lottery application; $10 recreation fee per hiker if awarded (Recreation.gov).",
+    "status": "verified"
+  },
+  {
+    "id": "rainier-climbing",
+    "name": "Mount Rainier Climbing Fee & Permit",
+    "peakIds": ["rainier"],
+    "agency": "Mount Rainier National Park",
+    "type": "advance-reservation",
+    "bookingUrl": "https://www.recreation.gov/permits/4675317",
+    "sourceUrl": "https://www.nps.gov/mora/planyourvisit/climbing-fee-faqs.htm",
+    "verifiedOn": "2026-10-26",
+    "season": "2027",
+    "windows": [
+      {
+        "label": "Early-access lottery applications",
+        "opens": "2027-02-15",
+        "closes": "2027-03-07",
+        "approximate": true
+      },
+      {
+        "label": "General on-sale of remaining wilderness/climbing inventory",
+        "opens": "2027-04-25",
+        "closes": "2027-10-12",
+        "approximate": true
+      }
+    ],
+    "summary": "Anyone traveling on glaciers, attempting the summit, or going above high camps must pay the climbing special-use fee before registering, then register in person (or self-register in the off-season at Paradise Old Station). Overnight climbs also need a wilderness permit; two-thirds of peak-season inventory is reservable on Recreation.gov.",
+    "feesNote": "Climbing fee for 2026 was $82 per person per climb, indexed annually — confirm the 2027 amount on the NPS climbing-fee page. Wilderness permit $12 per person per night in 2026 plus a $6 Recreation.gov application fee.",
+    "status": "verified"
+  },
+  {
+    "id": "st-helens-climbing",
+    "name": "Mount St. Helens Climbing Permit",
+    "peakIds": ["sthelens"],
+    "agency": "Gifford Pinchot National Forest",
+    "type": "advance-reservation",
+    "bookingUrl": "https://www.recreation.gov/permits/4675309",
+    "sourceUrl": "https://www.fs.usda.gov/r06/giffordpinchot/recreation/mount-st-helens-summit",
+    "verifiedOn": "2026-10-26",
+    "season": "2027",
+    "windows": [
+      {
+        "label": "April quota permits released",
+        "opens": "2027-03-01",
+        "closes": "2027-04-30",
+        "approximate": false
+      }
+    ],
+    "summary": "A climbing permit is required year-round above 4,800 ft. April 1–October 31 permits are sold online first-come on Recreation.gov, released one month at a time at 7:00 a.m. Pacific on the first of the preceding month. November 1–March 31 permits are free and self-issued at the trailhead. Daily quota is 350 (Apr 1–May 14) then 110 (May 15–Oct 31).",
+    "feesNote": "$20 per climber per day in the quota season plus a $6 non-refundable Recreation.gov reservation fee.",
+    "status": "verified"
+  },
+  {
+    "id": "shasta-summit-pass",
+    "name": "Mt. Shasta Summit Pass",
+    "peakIds": ["shasta"],
+    "agency": "Shasta-Trinity National Forest",
+    "type": "fee-only",
+    "bookingUrl": "https://www.fs.usda.gov/r05/shasta-trinity/recreation/mt-shasta-wilderness",
+    "sourceUrl": "https://www.fs.usda.gov/r05/shasta-trinity/recreation/mt-shasta-wilderness",
+    "verifiedOn": "2026-10-26",
+    "season": "2027",
+    "windows": [],
+    "summary": "A free wilderness permit is required year-round to enter Mt. Shasta Wilderness (no quota). Climbs above 10,000 ft also need a Summit Pass. People under 16 do not need a Summit Pass. There is no lottery.",
+    "feesNote": "Standard Summit Pass $25 per person, valid up to 3 days; Annual Summit Pass $30, valid through December 31 of the calendar year purchased (USFS, page updated 1 Oct 2026).",
+    "status": "verified"
+  },
+  {
+    "id": "denali-registration",
+    "name": "Denali / Foraker Mountaineering Registration",
+    "peakIds": ["denali"],
+    "agency": "Denali National Park & Preserve",
+    "type": "registration",
+    "bookingUrl": "https://www.pay.gov/public/form/start/16355280/",
+    "sourceUrl": "https://www.nps.gov/dena/planyourvisit/mountaineering.htm",
+    "verifiedOn": "2026-10-26",
+    "season": "2027",
+    "windows": [
+      {
+        "label": "2027 season registration opens",
+        "opens": "2027-01-01",
+        "closes": "2027-12-31",
+        "approximate": false
+      }
+    ],
+    "summary": "Climbs of Denali (Mount McKinley) or Mount Foraker require 60-day advance registration: pay the special-use fee on Pay.gov, then email a signed Special Use Permit application to the Talkeetna ranger station. Guided climbers register through one of the seven authorized concessions. All teams must attend an in-person orientation in Talkeetna.",
+    "feesNote": "$475 per climber for 2027 ($375 if age 24 or younger on the start date). Park entrance fee $15 unless covered by an Interagency or Denali Annual Pass.",
+    "status": "verified"
+  },
+  {
+    "id": "rmnp-timed-entry",
+    "name": "Rocky Mountain NP Timed Entry (Longs Peak access)",
+    "peakIds": ["longs"],
+    "agency": "Rocky Mountain National Park",
+    "type": "advance-reservation",
+    "bookingUrl": "https://www.nps.gov/romo/planyourvisit/timed-entry-permit-system.htm",
+    "sourceUrl": "https://www.nps.gov/romo/planyourvisit/timed-entry-permit-system.htm",
+    "verifiedOn": "2026-10-26",
+    "season": "2027",
+    "windows": [
+      {
+        "label": "2027 timed-entry season (dates not yet posted; 2026 ran 22 May–12 Oct)",
+        "opens": "2027-05-22",
+        "closes": "2027-10-12",
+        "approximate": true
+      }
+    ],
+    "summary": "A timed-entry reservation is required to enter all park areas — including the Longs Peak trailhead — between 9 a.m. and 2 p.m. in the summer system. You can enter before 9 a.m. or after 2 p.m. without one. A wilderness overnight permit counts as timed entry for that trip. 2027 dates had not been posted as of verification; the window below copies the 2026 calendar.",
+    "feesNote": "Timed-entry reservation plus the park entrance fee or pass. Confirm 2027 fees on Recreation.gov / NPS.",
+    "status": "verified"
+  },
+  {
+    "id": "fuji-yoshida",
+    "name": "Mt. Fuji Yoshida Trail Reservation",
+    "peakIds": ["fuji"],
+    "agency": "Yamanashi Prefecture",
+    "type": "advance-reservation",
+    "bookingUrl": "https://www.fujisan-climb.jp/en/",
+    "sourceUrl": "https://www.pref.yamanashi.jp/fujisan/siyouryou.html",
+    "verifiedOn": "2026-10-26",
+    "season": "2027",
+    "windows": [
+      {
+        "label": "2027 Yoshida-trail season (2026 was 1 Jul–10 Sep; 2027 not announced)",
+        "opens": "2027-07-01",
+        "closes": "2027-09-10",
+        "approximate": true
+      }
+    ],
+    "summary": "On the Yoshida trail, Yamanashi collects a passage fee and caps day-trippers during the summer climbing season, with the Fifth Station gate closed 14:00–03:00 except for hut guests. Advance reservation is recommended; same-day booking is allowed if capacity remains. 2027 dates and fees had not been announced after the 2026 season closed.",
+    "feesNote": "2026 passage fee was ¥4,000 per person per climb (Yamanashi Prefecture). Confirm 2027 on the official Fuji climbing site.",
+    "status": "verified"
+  },
+  {
+    "id": "kinabalu-climbing",
+    "name": "Mount Kinabalu Climbing Permit",
+    "peakIds": ["kinabalu"],
+    "agency": "Sabah Parks",
+    "type": "advance-reservation",
+    "bookingUrl": "https://reservation.sabahparks.org.my/",
+    "sourceUrl": "https://sabahparks.org.my/services/mount-kinabalu-climbing",
+    "verifiedOn": "2026-10-26",
+    "season": "2027",
+    "windows": [
+      {
+        "label": "2027 bookings (2026 season opened 1 Dec 2025; 2027 not open as of 19 Sep 2026)",
+        "opens": "2026-12-01",
+        "closes": "2027-12-31",
+        "approximate": true
+      }
+    ],
+    "summary": "Summit climbs are booked online only as a package that includes one night at Lemaing or Panalaban hostel, meals, the climbing permit, and insurance. Name changes are not allowed; unpaid reservations cancel when the checkout timer expires. As of 19 September 2026, Sabah Parks had not opened 2027 dates.",
+    "feesNote": "Panalaban international adult package RM 1,043.25 per person (includes 7% service charge) on the official Sabah Parks guide. Conservation fees are paid at the park.",
+    "status": "verified"
+  },
+  {
+    "id": "gouter-hut",
+    "name": "Mont Blanc Goûter Hut Reservation",
+    "peakIds": ["montblanc"],
+    "agency": "FFCAM",
+    "type": "advance-reservation",
+    "bookingUrl": "https://montblanc.ffcam.fr/GB_home.html",
+    "sourceUrl": "https://montblanc.ffcam.fr/GB_home.html",
+    "verifiedOn": "2026-10-26",
+    "season": "2027",
+    "windows": [],
+    "summary": "The Goûter, Tête Rousse, and Nid d'Aigle huts on the Mont Blanc normal route use a single FFCAM booking portal with named participants. FFCAM states that 2027 guarded-season booking is not yet open and that it will not publish a precise opening date — monitor the portal. Reservations cannot be resold.",
+    "feesNote": "Booking basket fee €5; non-compliant bookings may forfeit €15 per person per night administrative fees (FFCAM public booking page).",
+    "status": "verified"
+  },
+  {
+    "id": "hornli-hut",
+    "name": "Matterhorn Hörnli Hut Booking",
+    "peakIds": ["matterhorn"],
+    "agency": "Hörnlihütte Zermatt",
+    "type": "advance-reservation",
+    "bookingUrl": "https://hoernlihuette.ch/reservation-form-for-beds/?lang=en",
+    "sourceUrl": "https://hoernlihuette.ch/?lang=en",
+    "verifiedOn": "2026-10-26",
+    "season": "2027",
+    "windows": [
+      {
+        "label": "Guarded hut season 2027",
+        "opens": "2027-06-25",
+        "closes": "2027-09-20",
+        "approximate": false
+      }
+    ],
+    "summary": "The Hörnlihütte (3,260 m) is the standard overnight for the Hörnli ridge. The hut’s own site lists the 2027 guarded season as 25 June–20 September. Book online on the hut site up to three days before arrival; after that, call. The emergency shelter cannot be reserved.",
+    "feesNote": "Public dormitory CHF 150 per person including breakfast and dinner; CHF 50 per person per night deposit at booking, non-refundable (hut terms).",
+    "status": "verified"
+  },
+  {
+    "id": "aconcagua-permit",
+    "name": "Aconcagua Provincial Park Climbing Permit",
+    "peakIds": ["aconcagua"],
+    "agency": "Mendoza Dirección de Áreas Protegidas",
+    "type": "advance-reservation",
+    "bookingUrl": "https://informacionoficial.mendoza.gob.ar/energiayambiente/aconcagua/",
+    "sourceUrl": "https://informacionoficial.mendoza.gob.ar/energiayambiente/aconcagua/",
+    "verifiedOn": "2026-10-26",
+    "season": "2026-27",
+    "windows": [
+      {
+        "label": "2026-27 summer climbing season",
+        "opens": "2026-11-01",
+        "closes": "2027-04-30",
+        "approximate": false
+      }
+    ],
+    "summary": "Aconcagua Provincial Park requires a named climbing or trekking permit. The 2026-27 summer season runs 1 November–30 April. Mendoza authorized advance sales of Ascenso and Trekking Largo permits only through awarded service providers (Aconpass) in September 2026; in-season permits still go through the park / authorized operators. Medical check and evacuation-insurance rules apply.",
+    "status": "verified"
+  },
+  {
+    "id": "kilimanjaro-tanapa",
+    "name": "Kilimanjaro National Park Fees",
+    "peakIds": ["kilimanjaro"],
+    "agency": "Tanzania National Parks (TANAPA)",
+    "type": "guide-required",
+    "bookingUrl": "https://www.tanzaniaparks.go.tz/kilimanjaro/visitor-guide",
+    "sourceUrl": "https://www.tanzaniaparks.go.tz/kilimanjaro/visitor-guide",
+    "verifiedOn": "2026-10-26",
+    "season": "2026-27",
+    "windows": [
+      {
+        "label": "Current TANAPA tariff year",
+        "opens": "2026-07-01",
+        "closes": "2027-06-30",
+        "approximate": false
+      }
+    ],
+    "summary": "All Kilimanjaro climbs must be guided by a licensed operator; solo trekking is not permitted. Park entry and related fees are paid through TANAPA / the operator. Stay on marked routes and follow ranger instructions.",
+    "feesNote": "Non-resident adult entry listed at TZS 178,850 per day for 1 Jul 2026–30 Jun 2027 on the TANAPA reservation system. Conservation, camping/hut, and rescue fees also apply — confirm the current Kilimanjaro tariff before you book.",
+    "status": "verified"
+  },
+  {
+    "id": "nepal-expedition-permits",
+    "name": "Nepal Expedition Permits (DoT)",
+    "peakIds": ["everest", "ama"],
+    "agency": "Nepal Department of Tourism",
+    "type": "guide-required",
+    "bookingUrl": "https://mountain.dot.gov.np/",
+    "sourceUrl": "https://tourismdepartment.gov.np/pages/mountaineering-fee/",
+    "verifiedOn": "2026-10-26",
+    "season": "2026-27",
+    "windows": [],
+    "summary": "Expedition permits for Everest, Ama Dablam, and other DoT peaks are issued through licensed Nepali agencies on the Himal Mountaineering Permit System (MEPS). Independent applications are not the usual path. Royalties in the table below are per foreign climber and have been in force since 1 September 2025.",
+    "feesNote": "Everest normal route: USD 15,000 spring / 7,500 autumn / 3,750 winter-summer. Ama Dablam (6,812 m): USD 1,000 spring (DoT royalty table). Garbage-management deposits are additional.",
+    "status": "verified"
+  },
+  {
+    "id": "nepal-nma-trekking-peaks",
+    "name": "Nepal NMA Trekking Peak Permits",
+    "peakIds": ["island", "merapeak"],
+    "agency": "Nepal Mountaineering Association",
+    "type": "guide-required",
+    "bookingUrl": "https://nepalmountaineering.org/rules-and-guidelines",
+    "sourceUrl": "https://nepalmountaineering.org/rules-and-guidelines",
+    "verifiedOn": "2026-10-26",
+    "season": "2026-27",
+    "windows": [],
+    "summary": "Island Peak and Mera Peak are on the NMA trekking-peak list. Permits are issued by NMA through a registered agency, generally for one month above base camp, with a Sirdar/Guide required. Maximum group size 12.",
+    "status": "verified"
+  }
+]
