@@ -284,6 +284,7 @@ export function AppHeader({
         <NavLink to="/about">About</NavLink>
         <NavLink to="/peaks">Peaks</NavLink>
         <NavLink to="/best-peaks">By month</NavLink>
+        <NavLink to="/permits">Permits</NavLink>
         <NavLink to="/compare">Compare</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>

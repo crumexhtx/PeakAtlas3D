@@ -96,6 +96,8 @@ export function BestPeaksIndexPage() {
       <p className="peaks-directory-atlas-link">
         <Link to="/peaks">All peaks</Link>
         {' · '}
+        <Link to="/permits">Permit calendar</Link>
+        {' · '}
         <Link to="/">Open the 3D atlas</Link>
       </p>
     </article>

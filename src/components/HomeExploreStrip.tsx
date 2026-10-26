@@ -53,6 +53,12 @@ export function HomeExploreStrip({
         >
           Best by month
         </Link>
+        <Link
+          to="/permits"
+          className="home-explore-chip home-explore-chip-link"
+        >
+          Permits
+        </Link>
       </nav>
 
       <nav className="home-explore-featured" aria-label="Featured peaks">

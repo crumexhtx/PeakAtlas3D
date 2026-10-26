@@ -19,6 +19,7 @@ import {
   peaksInMonth,
   type MonthSlug,
 } from '../lib/bestPeaks'
+import { alsoThisMonthLinks } from '../lib/permitsCalendar'
 import { applyDocumentMeta, SITE_ORIGIN } from '../lib/documentMeta'
 import { formatElevation } from '../lib/geo'
 import { upsertJsonLd } from '../lib/jsonLd'
@@ -48,6 +49,10 @@ export function BestPeaksMonthPage() {
   const summaries = useMemo(() => buildCountrySummaries(peaksIndex), [])
   const intros = valid ? monthIntro(slug) : []
   const headlines = useMemo(() => headlinePeakNames(rows, 3), [rows])
+  const permitLinks = useMemo(
+    () => (month ? alsoThisMonthLinks(month) : []),
+    [month],
+  )
   const countriesInSeason = useMemo(() => {
     const seen = new Map<string, string>()
     for (const { peak } of rows) {
@@ -175,10 +180,25 @@ export function BestPeaksMonthPage() {
         </section>
       ))}
 
+      {permitLinks.length > 0 ? (
+        <section className="content-section" aria-label="Permits this month">
+          <h2>Permits</h2>
+          <ul className="permit-also-list">
+            {permitLinks.map((item) => (
+              <li key={item.href}>
+                <Link to={item.href}>{item.text}</Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
       <p className="peaks-directory-atlas-link">
         <Link to="/peaks">All peaks</Link>
         {' · '}
         <Link to={bestPeaksHref()}>All months</Link>
+        {' · '}
+        <Link to="/permits">Permit calendar</Link>
         {' · '}
         <Link to="/">Open the 3D atlas</Link>
       </p>

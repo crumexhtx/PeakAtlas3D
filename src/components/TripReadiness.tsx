@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react'
 import type { Peak } from '../types/peak'
+import { permitsForPeak } from '../data/permits'
 import { BestMonthsStrip } from './BestMonthsStrip'
+import { PermitCard } from './PermitCard'
 import { formatDistance } from '../lib/geo'
 import {
   DIFFICULTY_TIER_LABELS,
@@ -52,6 +54,7 @@ export function TripReadiness({ peak }: TripReadinessProps) {
   const tier = resolveDifficultyTier(peak.difficulty, peak.difficultyTier)
   const gear = gearChecklistForTier(tier)
   const permit = permitLabel(peak)
+  const permitSystemsForPeak = permitsForPeak(peak.id)
   const town = peak.nearestTown
 
   const accessLine = useMemo(() => {
@@ -104,6 +107,14 @@ export function TripReadiness({ peak }: TripReadinessProps) {
           </dd>
         </div>
       </dl>
+
+      {permitSystemsForPeak.length > 0 ? (
+        <div className="trip-readiness-permit-cards">
+          {permitSystemsForPeak.map((system) => (
+            <PermitCard key={system.id} system={system} />
+          ))}
+        </div>
+      ) : null}
 
       <div className="trip-readiness-gear">
         <button

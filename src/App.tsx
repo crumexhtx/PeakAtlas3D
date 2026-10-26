@@ -48,6 +48,14 @@ const BestPeaksMonthPage = lazy(() =>
     default: m.BestPeaksMonthPage,
   })),
 )
+const PermitsIndexPage = lazy(() =>
+  import('./pages/PermitsIndexPage').then((m) => ({
+    default: m.PermitsIndexPage,
+  })),
+)
+const PermitPage = lazy(() =>
+  import('./pages/PermitPage').then((m) => ({ default: m.PermitPage })),
+)
 
 function RouteFallback() {
   return (
@@ -78,6 +86,8 @@ export default function App() {
                 path="best-peaks/:monthSlug"
                 element={<BestPeaksMonthPage />}
               />
+              <Route path="permits" element={<PermitsIndexPage />} />
+              <Route path="permits/:permitId" element={<PermitPage />} />
               <Route path="countries/:countrySlug" element={<CountryPage />} />
               <Route path="contact" element={<ContactPage />} />
             </Route>

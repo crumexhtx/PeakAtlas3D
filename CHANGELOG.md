@@ -6,6 +6,7 @@ Update this file when shipping notable changes (do not maintain an in-app releas
 
 ## Unreleased
 
+- Permit & lottery calendar pages at `/permits` and `/permits/{id}`, with peak-page cards, month-page “also this month” links, prerendered HTML, and sitemap entries
 - Permit & lottery catalog (`permits.json`) sourced from official agency pages, with a build validator for missing sources, unknown peaks, and stale windows
 - Best-peaks calendar pages at `/best-peaks` and `/best-peaks/{month}`, with month filter on `/peaks` and in-season month pills on each peak
 - Parse `bestSeason` into calendar months (`parseBestSeason`); curated `bestMonths` required when the text cannot be parsed

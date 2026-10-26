@@ -14,6 +14,7 @@ import {
   parseBestSeason,
   resolvePeakSeason,
 } from './season-months.mjs'
+import { alsoThisMonthHtml } from './permits.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '../..')
 const copy = JSON.parse(
@@ -175,7 +176,7 @@ export function bestPeaksIndexHtml(peaks, siteUrl) {
           <ul>${monthCards}</ul>
         </section>
         ${monthSwitcherHtml(siteUrl, null, counts)}
-        <p><a href="${escapeAttr(siteUrl)}/peaks">All peaks</a> · <a href="${escapeAttr(siteUrl)}/">Open the 3D atlas</a></p>
+        <p><a href="${escapeAttr(siteUrl)}/peaks">All peaks</a> · <a href="${escapeAttr(siteUrl)}/permits">Permit calendar</a> · <a href="${escapeAttr(siteUrl)}/">Open the 3D atlas</a></p>
       </main>`
 
   const extraHead = `<script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>
@@ -271,7 +272,8 @@ export function bestPeaksMonthHtml(peaks, slug, siteUrl, primaryByLabel) {
           <ul>${countryList}</ul>
         </section>
         ${sections}
-        <p><a href="${escapeAttr(siteUrl)}/peaks">All peaks</a> · <a href="${escapeAttr(siteUrl)}/best-peaks">All months</a> · <a href="${escapeAttr(siteUrl)}/">Open the 3D atlas</a></p>
+        ${month ? alsoThisMonthHtml(month, siteUrl) : ''}
+        <p><a href="${escapeAttr(siteUrl)}/peaks">All peaks</a> · <a href="${escapeAttr(siteUrl)}/best-peaks">All months</a> · <a href="${escapeAttr(siteUrl)}/permits">Permit calendar</a> · <a href="${escapeAttr(siteUrl)}/">Open the 3D atlas</a></p>
       </main>`
 
   const extraHead = `<script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>

@@ -40,6 +40,7 @@ export function ContentLayout() {
           <NavLink to="/about">About</NavLink>
           <NavLink to="/peaks">Peaks</NavLink>
           <NavLink to="/best-peaks">Best peaks</NavLink>
+          <NavLink to="/permits">Permits</NavLink>
           <NavLink to="/compare">Compare</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </nav>
@@ -51,6 +52,7 @@ export function ContentLayout() {
         <nav className="content-footer-nav" aria-label="Footer">
           <Link to="/compare">Peak comparisons</Link>
           <Link to="/best-peaks">Best peaks by month</Link>
+          <Link to="/permits">Permit calendar</Link>
           <Link to="/peaks">All peaks</Link>
           <Link to="/">Atlas</Link>
         </nav>
