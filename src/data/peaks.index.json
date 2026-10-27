@@ -1276,6 +1276,58 @@
     }
   },
   {
+    "id": "emory",
+    "name": "Emory Peak",
+    "lat": 29.2459,
+    "lon": -103.3051,
+    "elevationFt": 7825,
+    "prominenceFt": 4485,
+    "range": "Chisos Mountains",
+    "country": "USA",
+    "adminRegion": "Texas",
+    "firstAscent": "Not recorded",
+    "difficulty": "Strenuous hike with a short exposed scramble",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Nov–Apr",
+    "whyNotable": "Big Bend National Park’s high point and the most prominent peak in Texas.",
+    "description": "Highest peak in the Chisos Mountains and in Big Bend National Park. The NPS rates the 10-mile round-trip hike from the Chisos Basin trailhead as strenuous: 3.5 miles up the Pinnacles Trail, then a 1.5-mile spur whose last 25 feet are a scramble up an exposed rock face.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Terlingua",
+      "region": "Texas",
+      "distanceMiles": 17
+    }
+  },
+  {
+    "id": "enchantedrock",
+    "name": "Enchanted Rock",
+    "lat": 30.5066,
+    "lon": -98.8189,
+    "elevationFt": 1825,
+    "prominenceFt": 427,
+    "range": "Llano Uplift",
+    "country": "USA",
+    "adminRegion": "Texas",
+    "aliases": [
+      "E-Rock",
+      "Enchanted Rock State Natural Area"
+    ],
+    "firstAscent": "Not recorded (used by Native peoples for thousands of years)",
+    "difficulty": "Short granite-dome hike",
+    "difficultyTier": "day-hike",
+    "bestSeason": "Oct–Apr",
+    "whyNotable": "Texas Hill Country’s signature granite dome and a National Natural Landmark inside an International Dark Sky Park.",
+    "description": "A 425-foot pink granite dome in Enchanted Rock State Natural Area, about 17 miles north of Fredericksburg in the Texas Hill Country. The Summit Trail climbs the bare granite; the dome is the largest pink granite monadnock in the United States.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Fredericksburg",
+      "region": "Texas",
+      "distanceMiles": 17
+    }
+  },
+  {
     "id": "blackelk",
     "name": "Black Elk Peak",
     "lat": 43.8661,
@@ -4775,6 +4827,35 @@
       "name": "Hilo",
       "region": "Hawaii",
       "distanceMiles": 35
+    }
+  },
+  {
+    "id": "diamondhead",
+    "name": "Diamond Head",
+    "lat": 21.26194,
+    "lon": -157.80556,
+    "elevationFt": 762,
+    "prominenceFt": 596,
+    "range": "Hawaiian Islands",
+    "country": "USA",
+    "adminRegion": "Hawaii",
+    "aliases": [
+      "Lēʻahi",
+      "Leahi",
+      "Diamond Head Crater"
+    ],
+    "firstAscent": "Not recorded (summit trail built 1908)",
+    "difficulty": "Short, steep trail hike",
+    "difficultyTier": "day-hike",
+    "bestSeason": "Year-round (weather dependent)",
+    "whyNotable": "Hawaiʻi’s most recognized landmark and a Waikīkī backdrop, with an easy-to-reach summit trail in a State Monument.",
+    "description": "Lēʻahi, the volcanic tuff cone above Waikīkī on Oʻahu. A 0.8-mile state-monument trail climbs about 560 feet from the crater floor, up steep stairs and a lit 225-foot tunnel, to a 1911 fire-control station at the summit.",
+    "permitStatus": "required",
+    "permitRequired": true,
+    "nearestTown": {
+      "name": "Honolulu",
+      "region": "Hawaii",
+      "distanceMiles": 4
     }
   },
   {

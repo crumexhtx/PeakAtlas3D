@@ -22,9 +22,9 @@ Format: `- [ ] Name — Country/State — note`. If a peak is already in the cat
 - [ ] Cayambe — Ecuador
 
 ## Priority 2 — short, famous US summit hikes
-- [ ] Diamond Head — Hawaii
-- [ ] Enchanted Rock — Texas
-- [ ] Emory Peak — Texas
+- [x] Diamond Head — Hawaii
+- [x] Enchanted Rock — Texas
+- [x] Emory Peak — Texas
 - [ ] Mount Tamalpais — California
 - [ ] Camelback Mountain — Arizona
 

@@ -7,6 +7,8 @@ export type ComparisonPairDef = {
   aId: string
   bId: string
   title: string
+  seoTitle?: string
+  seoDescription?: string
   query: string
   summary: string
   pickA: string
@@ -15,6 +17,16 @@ export type ComparisonPairDef = {
 }
 
 export const COMPARISON_PAIRS = comparisonsData.pairs as ComparisonPairDef[]
+
+export function comparisonMeta(def: ComparisonPairDef): {
+  title: string
+  description: string
+} {
+  return {
+    title: def.seoTitle ?? `${def.title} — Peak comparison | PeakAtlas3D`,
+    description: def.seoDescription ?? def.summary.slice(0, 300),
+  }
+}
 
 export function comparisonHref(slug: string): string {
   return `/compare/${slug}`

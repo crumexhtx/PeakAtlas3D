@@ -4600,6 +4600,170 @@
     "permitNotes": "No special summit permit for the Guadalupe Peak Trail. Guadalupe Mountains National Park entry fees apply; overnight wilderness camping needs a separate NPS permit."
   },
   {
+    "id": "emory",
+    "name": "Emory Peak",
+    "lat": 29.2459,
+    "lon": -103.3051,
+    "elevationFt": 7825,
+    "prominenceFt": 4485,
+    "range": "Chisos Mountains",
+    "country": "USA",
+    "adminRegion": "Texas",
+    "description": "Highest peak in the Chisos Mountains and in Big Bend National Park. The NPS rates the 10-mile round-trip hike from the Chisos Basin trailhead as strenuous: 3.5 miles up the Pinnacles Trail, then a 1.5-mile spur whose last 25 feet are a scramble up an exposed rock face.",
+    "firstAscent": "Not recorded",
+    "difficulty": "Strenuous hike with a short exposed scramble",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [],
+    "bestSeason": "Nov–Apr",
+    "whyNotable": "Big Bend National Park’s high point and the most prominent peak in Texas.",
+    "seoMetaDescription": "Emory Peak trip guide: 10-mile strenuous hike with a short scramble, Nov–Apr busy season, Big Bend backcountry permits, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Terlingua",
+      "region": "Texas",
+      "distanceMiles": 17,
+      "route": "TX-118 / Basin Road",
+      "lat": 29.2992,
+      "lon": -103.5794
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Study Butte",
+        "region": "Texas",
+        "distanceMiles": 16,
+        "route": "TX-118",
+        "lat": 29.335,
+        "lon": -103.5422
+      }
+    ],
+    "trails": [
+      {
+        "name": "Emory Peak Trail"
+      },
+      {
+        "name": "Pinnacles Trail"
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No permit for the day hike. Big Bend National Park requires a backcountry permit for any overnight stay in the Chisos Mountains, plus the park entrance fee. Big Bend’s busy season is generally November through April.",
+    "hotels": [],
+    "food": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Emory_Peak%27s_summit.jpg/960px-Emory_Peak%27s_summit.jpg",
+      "credit": "Sefor4",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emory_Peak%27s_summit.jpg",
+      "lat": 29.2459,
+      "lon": -103.3051,
+      "width": 11776,
+      "height": 2062
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Emory_Peak%27s_summit.jpg/960px-Emory_Peak%27s_summit.jpg",
+        "credit": "Sefor4",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emory_Peak%27s_summit.jpg",
+        "lat": 29.2459,
+        "lon": -103.3051,
+        "width": 11776,
+        "height": 2062
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Emory_Peak_in_fog_2008.jpg/960px-Emory_Peak_in_fog_2008.jpg",
+        "credit": "Leaflet",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emory_Peak_in_fog_2008.jpg",
+        "lat": 29.2459,
+        "lon": -103.3051,
+        "width": 2816,
+        "height": 2112
+      }
+    ]
+  },
+  {
+    "id": "enchantedrock",
+    "name": "Enchanted Rock",
+    "lat": 30.5066,
+    "lon": -98.8189,
+    "elevationFt": 1825,
+    "prominenceFt": 427,
+    "range": "Llano Uplift",
+    "country": "USA",
+    "adminRegion": "Texas",
+    "description": "A 425-foot pink granite dome in Enchanted Rock State Natural Area, about 17 miles north of Fredericksburg in the Texas Hill Country. The Summit Trail climbs the bare granite; the dome is the largest pink granite monadnock in the United States.",
+    "firstAscent": "Not recorded (used by Native peoples for thousands of years)",
+    "difficulty": "Short granite-dome hike",
+    "difficultyTier": "day-hike",
+    "aliases": [
+      "E-Rock",
+      "Enchanted Rock State Natural Area"
+    ],
+    "bestSeason": "Oct–Apr",
+    "whyNotable": "Texas Hill Country’s signature granite dome and a National Natural Landmark inside an International Dark Sky Park.",
+    "seoMetaDescription": "Enchanted Rock trip guide: Summit Trail hike, Oct–Apr, day-pass entry, Fredericksburg staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Fredericksburg",
+      "region": "Texas",
+      "distanceMiles": 17,
+      "route": "Ranch Road 965",
+      "lat": 30.2639,
+      "lon": -98.8747
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Llano",
+        "region": "Texas",
+        "distanceMiles": 19,
+        "route": "Ranch Road 965 / TX-16",
+        "lat": 30.7478,
+        "lon": -98.6758
+      }
+    ],
+    "trails": [
+      {
+        "name": "Summit Trail"
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit. A daily entrance fee applies, and Texas Parks & Wildlife advises reserving a day pass online to guarantee entry (busy season is September through May; July average high is 95°F). The Summit Trail can close in wet weather; the backcountry area needs a permit from park headquarters.",
+    "hotels": [],
+    "food": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Enchanted_Rock_Summit.jpg/960px-Enchanted_Rock_Summit.jpg",
+      "credit": "Urban Versis 32",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enchanted_Rock_Summit.jpg",
+      "lat": 30.5065,
+      "lon": -98.8187,
+      "width": 4000,
+      "height": 3000
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Enchanted_Rock_Summit.jpg/960px-Enchanted_Rock_Summit.jpg",
+        "credit": "Urban Versis 32",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enchanted_Rock_Summit.jpg",
+        "lat": 30.5065,
+        "lon": -98.8187,
+        "width": 4000,
+        "height": 3000
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Paige_1912_EnchantedRock.jpg/960px-Paige_1912_EnchantedRock.jpg",
+        "credit": "Sidney Paige",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paige_1912_EnchantedRock.jpg",
+        "lat": 30.5064,
+        "lon": -98.8187,
+        "width": 4501,
+        "height": 3109
+      }
+    ]
+  },
+  {
     "id": "blackelk",
     "name": "Black Elk Peak",
     "lat": 43.8661,
@@ -19343,6 +19507,89 @@
     "permitRequired": true,
     "permitStatus": "required",
     "permitNotes": "Hawaii Volcanoes National Park entry applies. Overnight trips need wilderness camping permits; check NPS for Mauna Loa trail and road status after eruptions."
+  },
+  {
+    "id": "diamondhead",
+    "name": "Diamond Head",
+    "lat": 21.26194,
+    "lon": -157.80556,
+    "elevationFt": 762,
+    "prominenceFt": 596,
+    "range": "Hawaiian Islands",
+    "country": "USA",
+    "adminRegion": "Hawaii",
+    "description": "Lēʻahi, the volcanic tuff cone above Waikīkī on Oʻahu. A 0.8-mile state-monument trail climbs about 560 feet from the crater floor, up steep stairs and a lit 225-foot tunnel, to a 1911 fire-control station at the summit.",
+    "firstAscent": "Not recorded (summit trail built 1908)",
+    "difficulty": "Short, steep trail hike",
+    "difficultyTier": "day-hike",
+    "aliases": [
+      "Lēʻahi",
+      "Leahi",
+      "Diamond Head Crater"
+    ],
+    "bestSeason": "Year-round (weather dependent)",
+    "whyNotable": "Hawaiʻi’s most recognized landmark and a Waikīkī backdrop, with an easy-to-reach summit trail in a State Monument.",
+    "seoMetaDescription": "Diamond Head (Lēʻahi) trip guide: 0.8-mile summit trail, year-round access, non-resident entry reservations, Honolulu staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Honolulu",
+      "region": "Hawaii",
+      "distanceMiles": 4,
+      "route": "Diamond Head Rd / Monsarrat Ave",
+      "lat": 21.3,
+      "lon": -157.85
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Waikīkī",
+        "region": "Hawaii",
+        "distanceMiles": 2,
+        "route": "Kalākaua Ave",
+        "lat": 21.2752,
+        "lon": -157.8312
+      }
+    ],
+    "trails": [
+      {
+        "name": "Diamond Head Summit Trail"
+      }
+    ],
+    "permitRequired": true,
+    "permitStatus": "required",
+    "permitNotes": "Hawaiʻi DLNR State Parks requires entry and parking reservations for non-residents; Hawaiʻi residents enter free with ID. Last entry 4:30 pm, gates close 6 pm, closed Christmas and New Year’s Day — confirm current rules at gostateparks.hawaii.gov.",
+    "hotels": [],
+    "food": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/2022_Diamond_Head_Crater_16.jpg/960px-2022_Diamond_Head_Crater_16.jpg",
+      "credit": "Farragutful",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Diamond_Head_Crater_16.jpg",
+      "lat": 21.261944,
+      "lon": -157.805556,
+      "width": 6000,
+      "height": 4000
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/2022_Diamond_Head_Crater_16.jpg/960px-2022_Diamond_Head_Crater_16.jpg",
+        "credit": "Farragutful",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Diamond_Head_Crater_16.jpg",
+        "lat": 21.261944,
+        "lon": -157.805556,
+        "width": 6000,
+        "height": 4000
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/2022_Diamond_Head_Crater_05.jpg/960px-2022_Diamond_Head_Crater_05.jpg",
+        "credit": "Farragutful",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Diamond_Head_Crater_05.jpg",
+        "lat": 21.261944,
+        "lon": -157.805556,
+        "width": 6000,
+        "height": 4000
+      }
+    ]
   },
   {
     "id": "haleakala",

@@ -717,8 +717,8 @@ for (const pair of COMPARISON_PAIRS) {
     continue
   }
   writeRoute(template, `/compare/${pair.slug}`, {
-    title: `${pair.title} — Peak comparison | PeakAtlas3D`,
-    description: pair.summary.slice(0, 300),
+    title: pair.seoTitle ?? `${pair.title} — Peak comparison | PeakAtlas3D`,
+    description: pair.seoDescription ?? pair.summary.slice(0, 300),
     image: peakImage(a) || peakImage(b),
     bodyHtml: comparePageHtml(pair, a, b, siteUrl),
   })
