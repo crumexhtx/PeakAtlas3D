@@ -1,5 +1,5 @@
 # Search Console summary — 2026-10-18 to 2026-10-24
-Compared with 2026-10-11 to 2026-10-17. Generated 2026-10-27T14:57:17.672Z.
+Compared with 2026-10-11 to 2026-10-17. Generated 2026-10-27T15:10:21.950Z.
 
 ## Totals
 | Metric | This week | Last week | Change |
