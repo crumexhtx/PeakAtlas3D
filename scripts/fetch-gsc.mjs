@@ -149,9 +149,11 @@ async function main() {
   const end = addDays(new Date(), -LAG_DAYS)
   const cur = { start: iso(addDays(end, -6)), end: iso(end) }
   const prev = { start: iso(addDays(end, -13)), end: iso(addDays(end, -7)) }
+  // Candidate lists use 28 days: one week of a small site is too sparse.
+  const win28 = { start: iso(addDays(end, -27)), end: iso(end) }
 
   const token = await accessToken()
-  const [curDate, prevDate, curQuery, prevQuery, curPage, prevPage, curQP, curDevice] =
+  const [curDate, prevDate, curQuery, prevQuery, curPage, prevPage, curQP, curDevice, page28, qp28] =
     await Promise.all([
       query(token, cur.start, cur.end, ['date']),
       query(token, prev.start, prev.end, ['date']),
@@ -161,32 +163,36 @@ async function main() {
       query(token, prev.start, prev.end, ['page']),
       query(token, cur.start, cur.end, ['query', 'page']),
       query(token, cur.start, cur.end, ['device']),
+      query(token, win28.start, win28.end, ['page']),
+      query(token, win28.start, win28.end, ['query', 'page']),
     ])
 
   const totals = { current: sum(curDate), previous: sum(prevDate) }
   const intent = { current: intentShare(curQuery), previous: intentShare(prevQuery) }
   const pagesCur = rollupPages(curPage)
   const pagesPrev = new Map(rollupPages(prevPage).map((p) => [p.page, p]))
+  const pages28 = rollupPages(page28)
 
-  // Page 1 but barely clicked → title/description rewrite candidates.
-  const ctrCandidates = pagesCur
-    .filter((p) => p.position != null && p.position <= 10 && p.impressions >= 15 && p.ctr < 0.03)
+  const topQueriesFor = (page) =>
+    qp28
+      .filter((r) => cleanPage(r.keys[1]) === page)
+      .sort((a, b) => b.impressions - a.impressions)
+      .slice(0, 5)
+      .map((r) => `${r.keys[0]} (${r.impressions} impr, pos ${n1(r.position)})`)
+
+  // Page 1 but barely clicked (last 28 days) → title/description rewrite candidates.
+  const ctrCandidates = pages28
+    .filter((p) => p.position != null && p.position <= 10 && p.impressions >= 20 && p.ctr < 0.03)
     .sort((a, b) => b.impressions - a.impressions)
     .slice(0, 10)
-    .map((p) => ({
-      ...p,
-      topQueries: curQP
-        .filter((r) => cleanPage(r.keys[1]) === p.page)
-        .sort((a, b) => b.impressions - a.impressions)
-        .slice(0, 5)
-        .map((r) => `${r.keys[0]} (${r.impressions} impr, pos ${n1(r.position)})`),
-    }))
+    .map((p) => ({ ...p, topQueries: topQueriesFor(p.page) }))
 
-  // Positions 11–20 with real impressions → "nearly page 1" content-improvement candidates.
-  const nearPage1 = pagesCur
-    .filter((p) => p.position != null && p.position > 10 && p.position <= 20 && p.impressions >= 10)
+  // Positions 11–20 (last 28 days) → "nearly page 1" content-improvement candidates.
+  const nearPage1 = pages28
+    .filter((p) => p.position != null && p.position > 10 && p.position <= 20 && p.impressions >= 15)
     .sort((a, b) => b.impressions - a.impressions)
     .slice(0, 10)
+    .map((p) => ({ ...p, topQueries: topQueriesFor(p.page) }))
 
   const movers = pagesCur
     .map((p) => ({ ...p, prevImpr: pagesPrev.get(p.page)?.impressions || 0 }))
@@ -197,7 +203,7 @@ async function main() {
   const raw = {
     generatedAt: new Date().toISOString(),
     site: SITE,
-    ranges: { current: cur, previous: prev },
+    ranges: { current: cur, previous: prev, last28Days: win28 },
     totals,
     intent,
     ctrCandidates,
@@ -211,6 +217,8 @@ async function main() {
       previousPages: prevPage,
       currentQueryPage: curQP,
       currentDevice: curDevice,
+      pages28Days: page28,
+      queryPage28Days: qp28,
     },
   }
 
@@ -231,7 +239,7 @@ async function main() {
     `- Trip searches (climb/hike/permit/best time…): **${pct(intent.current.tripShare)}** (last week ${pct(intent.previous.tripShare)}) — goal 15–20% by mid-2027`,
     `- Map/location searches: ${pct(intent.current.mapShare)} (last week ${pct(intent.previous.mapShare)})`,
     '',
-    '## Page 1, low click rate — title/description rewrite candidates',
+    `## Page 1, low click rate — title/description rewrite candidates (last 28 days: ${win28.start} to ${win28.end})`,
     ...(ctrCandidates.length
       ? ctrCandidates.map(
           (p) =>
@@ -239,10 +247,13 @@ async function main() {
         )
       : ['- none this week']),
     '',
-    '## Positions 11–20 — content-improvement candidates',
+    `## Positions 11–20 — content-improvement candidates (last 28 days)`,
     ...(nearPage1.length
-      ? nearPage1.map((p) => `- ${p.page} — ${p.impressions} impr, pos ${n1(p.position)}`)
-      : ['- none this week']),
+      ? nearPage1.map(
+          (p) =>
+            `- ${p.page} — ${p.impressions} impr, pos ${n1(p.position)}\n  - top queries: ${p.topQueries.join('; ') || 'n/a'}`,
+        )
+      : ['- none in the last 28 days']),
     '',
     '## Biggest gainers (impressions vs last week)',
     ...(gainers.length ? gainers.map((p) => `- ${p.page} — ${p.prevImpr} → ${p.impressions}`) : ['- none']),

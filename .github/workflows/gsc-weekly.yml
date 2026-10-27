@@ -1,11 +1,11 @@
 # Weekly Search Console export for the Cursor Automation.
-# Runs Monday 11:00 UTC (6:00 CDT / 5:00 CST) — before the 9:00 Central agent run.
+# Runs Friday 11:00 UTC (6:00 CDT / 5:00 CST) — before the 10:00 Central agent run.
 # Data is pushed to the separate `gsc-data` branch so `main` (and Vercel prod) never changes.
 name: GSC weekly export
 
 on:
   schedule:
-        - cron: '0 11 * * 5'
+    - cron: '0 11 * * 5'
   workflow_dispatch: {}
 
 permissions:
@@ -19,9 +19,9 @@ jobs:
   export:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
 
