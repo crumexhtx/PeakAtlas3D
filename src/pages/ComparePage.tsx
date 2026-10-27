@@ -4,6 +4,7 @@ import { loadFullCatalog } from '../data/catalog'
 import { applyDocumentMeta } from '../lib/documentMeta'
 import {
   comparisonHref,
+  comparisonMeta,
   getComparisonBySlug,
   resolveComparison,
 } from '../lib/comparisons'
@@ -41,9 +42,10 @@ export function ComparePage() {
       })
       return
     }
+    const meta = comparisonMeta(def)
     applyDocumentMeta({
-      title: `${def.title} — Peak comparison | PeakAtlas3D`,
-      description: def.summary.slice(0, 300),
+      title: meta.title,
+      description: meta.description,
       path: comparisonHref(def.slug),
     })
   }, [def, compareSlug])
