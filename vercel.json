@@ -3,6 +3,11 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
+  "git": {
+    "deploymentEnabled": {
+      "gsc-data": false
+    }
+  },
   "redirects": [
     {
       "source": "/releases",

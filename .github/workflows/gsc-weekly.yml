@@ -1,0 +1,52 @@
+# Weekly Search Console export for the Cursor Automation.
+# Runs Monday 11:00 UTC (6:00 CDT / 5:00 CST) — before the 9:00 Central agent run.
+# Data is pushed to the separate `gsc-data` branch so `main` (and Vercel prod) never changes.
+name: GSC weekly export
+
+on:
+  schedule:
+    - cron: '0 11 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gsc-weekly
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch Search Console data
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE: sc-domain:peakatlas3d.com
+          GSC_OUT_DIR: ${{ runner.temp }}/gsc
+        run: node scripts/fetch-gsc.mjs
+
+      - name: Push to gsc-data branch
+        env:
+          SRC: ${{ runner.temp }}/gsc
+        run: |
+          git config user.name "gsc-export-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin gsc-data >/dev/null 2>&1; then
+            git fetch origin gsc-data
+            git worktree add "$RUNNER_TEMP/wt" gsc-data
+          else
+            git worktree add --orphan -b gsc-data "$RUNNER_TEMP/wt"
+          fi
+          mkdir -p "$RUNNER_TEMP/wt/data/gsc"
+          cp "$SRC"/* "$RUNNER_TEMP/wt/data/gsc/"
+          cd "$RUNNER_TEMP/wt"
+          git add data/gsc
+          git commit -m "GSC export $(date -u +%F)" || echo "No changes"
+          git push origin gsc-data
