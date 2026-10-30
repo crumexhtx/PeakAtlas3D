@@ -25,8 +25,8 @@ Format: `- [ ] Name — Country/State — note`. If a peak is already in the cat
 - [x] Diamond Head — Hawaii
 - [x] Enchanted Rock — Texas
 - [x] Emory Peak — Texas
-- [ ] Mount Tamalpais — California
-- [ ] Camelback Mountain — Arizona
+- [x] Mount Tamalpais — California
+- [x] Camelback Mountain — Arizona
 
 ## Priority 3 — complete the Colorado 14ers
 - [ ] Mount Lincoln
@@ -38,17 +38,17 @@ Format: `- [ ] Name — Country/State — note`. If a peak is already in the cat
 - [ ] Missouri Mountain
 - [ ] Mount Antero
 - [ ] Mount Shavano
-- [ ] Tabeguache Peak
+- [x] Tabeguache Peak
 - [ ] La Plata Peak
 - [ ] Castle Peak
 - [ ] Snowmass Mountain
 - [ ] Wetterhorn Peak
 - [ ] Redcloud Peak
 - [ ] Sunshine Peak
-- [ ] San Luis Peak
+- [x] San Luis Peak
 - [ ] Humboldt Peak
-- [ ] Kit Carson Peak
-- [ ] Challenger Point
+- [x] Kit Carson Peak
+- [x] Challenger Point
 - [ ] Ellingwood Point
 - [ ] Little Bear Peak
 - [ ] Mount Lindsey

@@ -244,6 +244,104 @@
     "permitNotes": "Summit pass required for climbs above 10,000 ft on Mount Shasta (USFS)."
   },
   {
+    "id": "tamalpais",
+    "name": "Mount Tamalpais",
+    "lat": 37.9291,
+    "lon": -122.5778,
+    "elevationFt": 2579,
+    "prominenceFt": 2456,
+    "range": "California Coast Ranges",
+    "country": "USA",
+    "adminRegion": "California",
+    "description": "Mount Tam, often considered the symbol of Marin County, north of San Francisco. Most of the mountain is protected, including Mount Tamalpais State Park. East Peak (2,571 ft) has a summit parking lot, a 0.75-mile paved loop (Verna Dunshee Trail) and a steep quarter-mile Plank Trail to Gardner Lookout; West Peak, where the radar dome stands, is reached on foot.",
+    "firstAscent": "1830s (first recorded ascent, Jacob P. Leese)",
+    "difficulty": "Easy summit loop; longer trail hikes available",
+    "difficultyTier": "day-hike",
+    "aliases": [
+      "Mount Tam",
+      "Mt. Tam",
+      "Mt Tam",
+      "Mt. Tamalpais"
+    ],
+    "bestSeason": "Year-round (weather dependent)",
+    "whyNotable": "The Bay Area’s signature peak, with more than 60 miles of trails in the state park and views over San Francisco Bay.",
+    "seoMetaDescription": "Mount Tamalpais trip guide: East Peak summit loop, 60+ miles of trails, year-round access, Mill Valley staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Mill Valley",
+      "region": "California",
+      "distanceMiles": 2,
+      "route": "Panoramic Hwy",
+      "lat": 37.9061,
+      "lon": -122.545
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Stinson Beach",
+        "region": "California",
+        "distanceMiles": 4,
+        "route": "CA-1 / Panoramic Hwy",
+        "lat": 37.9006,
+        "lon": -122.6444
+      },
+      {
+        "name": "San Francisco",
+        "region": "California",
+        "distanceMiles": 14,
+        "route": "US-101",
+        "lat": 37.7775,
+        "lon": -122.4164
+      }
+    ],
+    "trails": [
+      {
+        "name": "Verna Dunshee Trail"
+      },
+      {
+        "name": "Plank Trail to Gardner Lookout"
+      },
+      {
+        "name": "Railroad Grade fire trail"
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit and no park entrance fee. California State Parks lists day-use hours of 7 a.m. to sunset year-round, and the East Peak, Pantoll and Bootjack lots charge a parking fee (Friends of Mt. Tam lists $8 per vehicle; confirm at parks.ca.gov). Dogs are not allowed on trails or dirt roads in the state park.",
+    "hotels": [],
+    "food": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/View_of_Mt._Tamalpais%27_East_Peak._The_Old_Railroad_Grade_fire_road_is_visible_below_Ridgecrest_Blvd_-_Bolinas_Ridge_Road._-_panoramio.jpg/960px-View_of_Mt._Tamalpais%27_East_Peak._The_Old_Railroad_Grade_fire_road_is_visible_below_Ridgecrest_Blvd_-_Bolinas_Ridge_Road._-_panoramio.jpg",
+      "credit": "Richard Wood",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Mt._Tamalpais%27_East_Peak._The_Old_Railroad_Grade_fire_road_is_visible_below_Ridgecrest_Blvd_-_Bolinas_Ridge_Road._-_panoramio.jpg",
+      "lat": 37.924099,
+      "lon": -122.595192,
+      "width": 1600,
+      "height": 1200
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/View_of_Mt._Tamalpais%27_East_Peak._The_Old_Railroad_Grade_fire_road_is_visible_below_Ridgecrest_Blvd_-_Bolinas_Ridge_Road._-_panoramio.jpg/960px-View_of_Mt._Tamalpais%27_East_Peak._The_Old_Railroad_Grade_fire_road_is_visible_below_Ridgecrest_Blvd_-_Bolinas_Ridge_Road._-_panoramio.jpg",
+        "credit": "Richard Wood",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Mt._Tamalpais%27_East_Peak._The_Old_Railroad_Grade_fire_road_is_visible_below_Ridgecrest_Blvd_-_Bolinas_Ridge_Road._-_panoramio.jpg",
+        "lat": 37.924099,
+        "lon": -122.595192,
+        "width": 1600,
+        "height": 1200
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Tiburon_and_Mount_Tamalpais_in_2016.jpg/960px-Tiburon_and_Mount_Tamalpais_in_2016.jpg",
+        "credit": "Frank Schulenburg",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tiburon_and_Mount_Tamalpais_in_2016.jpg",
+        "lat": 37.885918,
+        "lon": -122.474383,
+        "width": 5383,
+        "height": 3028
+      }
+    ]
+  },
+  {
     "id": "lassen",
     "name": "Lassen Peak",
     "lat": 40.4882,
@@ -2221,6 +2319,87 @@
     "permitRequired": false,
     "permitStatus": "not_required",
     "permitNotes": "No special 14er permit on standard routes; check seasonal road closures and Leave No Trace."
+  },
+  {
+    "id": "tabeguache",
+    "name": "Tabeguache Peak",
+    "lat": 38.6255,
+    "lon": -106.2509,
+    "elevationFt": 14157,
+    "prominenceFt": 455,
+    "range": "Sawatch Range",
+    "country": "USA",
+    "adminRegion": "Colorado",
+    "description": "A southern Sawatch fourteener northwest of Mount Shavano, in the Salida Ranger District. Wikipedia lists the easiest route as a Class 2 hike via Mount Shavano; the Forest Service says to follow the ridge northwest from Shavano’s summit, and warns hikers descending Tabeguache not to drop into McCoy Gulch, where lost hikers have needed rescues.",
+    "firstAscent": "Not recorded",
+    "difficulty": "Class 2 hike via Mount Shavano",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Tabeguache"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "A short ridge add-on to Mount Shavano, with a Forest Service warning about the wrong descent into McCoy Gulch.",
+    "seoMetaDescription": "Tabeguache Peak trip guide: Class 2 fourteener via Mount Shavano, Jun–Sep season, McCoy Gulch warning, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Poncha Springs",
+      "region": "Colorado",
+      "distanceMiles": 10,
+      "route": "US-50 / CR 250",
+      "lat": 38.5094,
+      "lon": -106.1256
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Salida",
+        "region": "Colorado",
+        "distanceMiles": 15,
+        "route": "US-50",
+        "lat": 38.5311,
+        "lon": -106.0033
+      }
+    ],
+    "trails": [
+      {
+        "name": "Via Mount Shavano"
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit is listed by the Forest Service. Special use permits apply to commercial activities and groups of 75 or more. Use the Shavano/Tabeguache trailhead (CR 250 to Forest Road 252). Do not descend into McCoy Gulch from Tabeguache; many disoriented hikers have done so, with rescues, injuries and deaths (Forest Service).",
+    "hotels": [],
+    "food": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Tabeguache_Peak%2C_Sawatch_Range%2C_Chaffee_County%2C_Colorado%2C_USA_01.jpg/960px-Tabeguache_Peak%2C_Sawatch_Range%2C_Chaffee_County%2C_Colorado%2C_USA_01.jpg",
+      "credit": "John Sowell",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tabeguache_Peak,_Sawatch_Range,_Chaffee_County,_Colorado,_USA_01.jpg",
+      "lat": 38.6312,
+      "lon": -106.29,
+      "width": 1600,
+      "height": 1200
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Tabeguache_Peak%2C_Sawatch_Range%2C_Chaffee_County%2C_Colorado%2C_USA_01.jpg/960px-Tabeguache_Peak%2C_Sawatch_Range%2C_Chaffee_County%2C_Colorado%2C_USA_01.jpg",
+        "credit": "John Sowell",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tabeguache_Peak,_Sawatch_Range,_Chaffee_County,_Colorado,_USA_01.jpg",
+        "lat": 38.6312,
+        "lon": -106.29,
+        "width": 1600,
+        "height": 1200
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Tabeguache_Peak%2C_Sawatch_Range%2C_Chaffee_County%2C_Colorado%2C_USA_02.jpg/960px-Tabeguache_Peak%2C_Sawatch_Range%2C_Chaffee_County%2C_Colorado%2C_USA_02.jpg",
+        "credit": "John Sowell",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tabeguache_Peak,_Sawatch_Range,_Chaffee_County,_Colorado,_USA_02.jpg",
+        "lat": 38.6461,
+        "lon": -106.2979,
+        "width": 1200,
+        "height": 900
+      }
+    ]
   },
   {
     "id": "yale",
@@ -4678,6 +4857,98 @@
         "lon": -103.3051,
         "width": 2816,
         "height": 2112
+      }
+    ]
+  },
+  {
+    "id": "camelback",
+    "name": "Camelback Mountain",
+    "lat": 33.5145,
+    "lon": -111.9616,
+    "elevationFt": 2706,
+    "prominenceFt": 1334,
+    "range": "Phoenix Mountains",
+    "country": "USA",
+    "adminRegion": "Arizona",
+    "description": "Phoenix’s landmark hump of Precambrian granite and red sandstone, the highest peak in the Phoenix metro area, with trails maintained by the City of Phoenix. Two summit trails climb about 1,280 feet: Echo Canyon (1.14 miles, with handrails) and Cholla (1.4 miles). The city rates both Extremely Difficult, fully exposed and steep.",
+    "firstAscent": "Not recorded",
+    "difficulty": "Short, steep, rocky trail hike (rated Extremely Difficult by the City of Phoenix)",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Echo Canyon Recreation Area"
+    ],
+    "bestSeason": "Oct–Apr",
+    "whyNotable": "The highest peak in the Phoenix metro area, a Phoenix Point of Pride with two city-maintained summit trails.",
+    "seoMetaDescription": "Camelback Mountain trip guide: Echo Canyon and Cholla trails, Oct–Apr season, heat-warning closures, Phoenix staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Phoenix",
+      "region": "Arizona",
+      "distanceMiles": 8,
+      "route": "McDonald Dr / Tatum Blvd",
+      "lat": 33.4483,
+      "lon": -112.0739
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Paradise Valley",
+        "region": "Arizona",
+        "distanceMiles": 2,
+        "route": "McDonald Dr",
+        "lat": 33.5311,
+        "lon": -111.9428
+      },
+      {
+        "name": "Scottsdale",
+        "region": "Arizona",
+        "distanceMiles": 3,
+        "route": "Invergordon Rd",
+        "lat": 33.4931,
+        "lon": -111.9261
+      }
+    ],
+    "trails": [
+      {
+        "name": "Echo Canyon Trail"
+      },
+      {
+        "name": "Cholla Trail"
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No summit permit listed by the City of Phoenix. On days the National Weather Service issues an Extreme Heat Warning, the Echo Canyon and Cholla trails are restricted from 8 a.m. to 5 p.m. The Echo Canyon lot is typically full from late morning on weekdays and all day on weekends, with the gate closed at capacity; Cholla has limited designated street parking. Dogs are prohibited on all Camelback trails year-round. Trailheads are open sunrise to sunset.",
+    "hotels": [],
+    "food": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Camelback_Mountain-1.jpg/960px-Camelback_Mountain-1.jpg",
+      "credit": "Visitor7",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camelback_Mountain-1.jpg",
+      "lat": 33.523052,
+      "lon": -112.026678,
+      "width": 5472,
+      "height": 3648
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Camelback_Mountain-1.jpg/960px-Camelback_Mountain-1.jpg",
+        "credit": "Visitor7",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camelback_Mountain-1.jpg",
+        "lat": 33.523052,
+        "lon": -112.026678,
+        "width": 5472,
+        "height": 3648
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Phoenix_AZ_camel_back_-_panoramio.jpg/960px-Phoenix_AZ_camel_back_-_panoramio.jpg",
+        "credit": "UncleVinny",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phoenix_AZ_camel_back_-_panoramio.jpg",
+        "lat": 33.529617,
+        "lon": -111.885463,
+        "width": 1320,
+        "height": 990
       }
     ]
   },
@@ -18787,6 +19058,175 @@
     "permitNotes": "No special summit permit; Sangre de Cristo wilderness rules apply on overnight trips."
   },
   {
+    "id": "kitcarson",
+    "name": "Kit Carson Peak",
+    "lat": 37.9797,
+    "lon": -105.6025,
+    "elevationFt": 14165,
+    "prominenceFt": 1025,
+    "range": "Sangre de Cristo Range",
+    "country": "USA",
+    "adminRegion": "Colorado",
+    "description": "The main summit of the Kit Carson Mountain massif in the Crestones, 5.2 miles east-southeast of the town of Crestone, in the Sangre de Cristo Wilderness of Rio Grande National Forest. The popular west-side route starts at Willow Creek Trailhead (8,900 ft), climbs Challenger Point first, then crosses the ledge known as Kit Carson Avenue: about 6,250 feet of gain over 14 miles round trip, and Wikipedia lists the easiest route as a Class 3 scramble. The complex terrain has misled climbers.",
+    "firstAscent": "Not recorded",
+    "difficulty": "Class 3 scramble via Challenger Point",
+    "difficultyTier": "scramble",
+    "aliases": [
+      "Kit Carson Mountain",
+      "Kit Carson"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "One of the Crestones, a cluster of high Sangre de Cristo summits, and the peak behind the exposed ledge route called Kit Carson Avenue.",
+    "seoMetaDescription": "Kit Carson Peak trip guide: Class 3 fourteener via Challenger Point, Jun–Sep, Willow Creek trailhead, Crestone, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Crestone",
+      "region": "Colorado",
+      "distanceMiles": 5,
+      "route": "Galena St / FR 949",
+      "lat": 37.9944,
+      "lon": -105.6961
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Moffat",
+        "region": "Colorado",
+        "distanceMiles": 17,
+        "route": "CR T / CO-17",
+        "lat": 37.9989,
+        "lon": -105.9056
+      }
+    ],
+    "trails": [
+      {
+        "name": "Willow Lake Trail #865"
+      },
+      {
+        "name": "Kit Carson Avenue"
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No individual summit permit is listed by the Forest Service, and Willow Creek Trailhead (Forest Road 949, near Crestone) has no listed day-use fee. Sangre de Cristo Wilderness rules apply under an order in effect through July 31, 2027: groups of no more than 15 people, no camping or campfires within 100 ft of streams or 300 ft of lakes unless a posted site allows it, and dogs leashed or under verbal control. From Crestone, 2WD vehicles can park about 1.5 miles up the gravel road; 4WD vehicles can go another 0.75 miles to the trailhead.",
+    "hotels": [],
+    "food": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Kit_Carson_Peak.JPG/960px-Kit_Carson_Peak.JPG",
+      "credit": "Fredlyfish4",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kit_Carson_Peak.JPG",
+      "lat": 37.990667,
+      "lon": -105.604833,
+      "width": 3400,
+      "height": 1898
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Kit_Carson_Peak.JPG/960px-Kit_Carson_Peak.JPG",
+        "credit": "Fredlyfish4",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kit_Carson_Peak.JPG",
+        "lat": 37.990667,
+        "lon": -105.604833,
+        "width": 3400,
+        "height": 1898
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kit_Carson_Mountain_-_panoramio.jpg/960px-Kit_Carson_Mountain_-_panoramio.jpg",
+        "credit": "Fredlyfish4",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kit_Carson_Mountain_-_panoramio.jpg",
+        "lat": 37.993795,
+        "lon": -105.60492,
+        "width": 4399,
+        "height": 1782
+      }
+    ]
+  },
+  {
+    "id": "challenger",
+    "name": "Challenger Point",
+    "lat": 37.9803,
+    "lon": -105.6067,
+    "elevationFt": 14085,
+    "prominenceFt": 301,
+    "range": "Sangre de Cristo Range",
+    "country": "USA",
+    "adminRegion": "Colorado",
+    "description": "A fourteener on the northwest shoulder of Kit Carson Mountain in the Crestones, a subpeak of Kit Carson. It was renamed in memory of the seven astronauts killed in the Space Shuttle Challenger accident on January 28, 1986, and a memorial plaque was placed on the summit in July 1987. Wikipedia lists the North Slope from Willow Creek Trailhead (8,900 ft) as a difficult Class 2 hike.",
+    "firstAscent": "Not recorded",
+    "difficulty": "Difficult Class 2 hike (North Slope)",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Challenger"
+    ],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Named in memory of the crew of Space Shuttle Challenger, with a memorial plaque on the summit.",
+    "seoMetaDescription": "Challenger Point trip guide: Class 2 fourteener from Willow Creek, Jun–Sep season, Crestone staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Crestone",
+      "region": "Colorado",
+      "distanceMiles": 5,
+      "route": "Galena St / FR 949",
+      "lat": 37.9944,
+      "lon": -105.6961
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Moffat",
+        "region": "Colorado",
+        "distanceMiles": 16,
+        "route": "CR T / CO-17",
+        "lat": 37.9989,
+        "lon": -105.9056
+      }
+    ],
+    "trails": [
+      {
+        "name": "Willow Lake Trail #865"
+      },
+      {
+        "name": "North Slope"
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No individual summit permit is listed by the Forest Service, and Willow Creek Trailhead (Forest Road 949, near Crestone) has no listed day-use fee. Sangre de Cristo Wilderness rules apply under an order in effect through July 31, 2027: groups of no more than 15 people, no camping or campfires within 100 ft of streams or 300 ft of lakes unless a posted site allows it, and dogs leashed or under verbal control. From Crestone, 2WD vehicles can park about 1.5 miles up the gravel road; 4WD vehicles can go another 0.75 miles to the trailhead.",
+    "hotels": [],
+    "food": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Challenger_Point_from_Kit_Carson.JPG/960px-Challenger_Point_from_Kit_Carson.JPG",
+      "credit": "Fredlyfish4",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Challenger_Point_from_Kit_Carson.JPG",
+      "lat": 37.9797,
+      "lon": -105.6024,
+      "width": 3264,
+      "height": 2448
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Challenger_Point_from_Kit_Carson.JPG/960px-Challenger_Point_from_Kit_Carson.JPG",
+        "credit": "Fredlyfish4",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Challenger_Point_from_Kit_Carson.JPG",
+        "lat": 37.9797,
+        "lon": -105.6024,
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Challenger_%26_Kit_Carson.JPG/960px-Challenger_%26_Kit_Carson.JPG",
+        "credit": "Fredlyfish4",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Challenger_%26_Kit_Carson.JPG",
+        "lat": 37.991,
+        "lon": -105.604,
+        "width": 6840,
+        "height": 2139
+      }
+    ]
+  },
+  {
     "id": "capitol",
     "name": "Capitol Peak",
     "lat": 39.1503,
@@ -19307,6 +19747,88 @@
     "permitRequired": false,
     "permitStatus": "not_required",
     "permitNotes": "No special 14er permit on standard American Basin approaches; high-clearance road access varies."
+  },
+  {
+    "id": "sanluis",
+    "name": "San Luis Peak",
+    "lat": 37.9868,
+    "lon": -106.9313,
+    "elevationFt": 14020,
+    "prominenceFt": 3113,
+    "range": "San Juan Mountains",
+    "country": "USA",
+    "adminRegion": "Colorado",
+    "description": "The only fourteener in the La Garita Wilderness, in the Gunnison National Forest portion about 10 miles north of Creede. It sits well east of the other San Juan fourteeners and has more of a wilderness setting. Wikipedia describes a relatively straightforward climb with two hiking routes: the Northeast Ridge from Stewart Creek Trailhead (13.5 miles round trip) and the South Ridge from West Willow Creek Trailhead (12.3 miles round trip, almost entirely above treeline).",
+    "firstAscent": "Not recorded",
+    "difficulty": "Long, straightforward hike",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [],
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "The single fourteener of the La Garita Wilderness, with views over the upper Rio Grande valley and the San Luis Valley.",
+    "seoMetaDescription": "San Luis Peak trip guide: 12–14 mile fourteener hike, Jun–Sep season, La Garita Wilderness, Creede staging, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "Creede",
+      "region": "Colorado",
+      "distanceMiles": 10,
+      "route": "CO-149",
+      "lat": 37.8456,
+      "lon": -106.9253
+    },
+    "nearbyPlaces": [
+      {
+        "name": "Gunnison",
+        "region": "Colorado",
+        "distanceMiles": 39,
+        "route": "US-50 / CO-114",
+        "lat": 38.548,
+        "lon": -106.9247
+      }
+    ],
+    "trails": [
+      {
+        "name": "Stewart Creek Trail #470"
+      },
+      {
+        "name": "South Ridge from West Willow Creek"
+      }
+    ],
+    "permitRequired": false,
+    "permitStatus": "not_required",
+    "permitNotes": "No individual summit permit is listed by the Forest Service. La Garita Wilderness rules apply under an order in effect May 14, 2026 through May 14, 2029: groups of no more than 15 people, no camping or campfires within 100 ft of trails and water, no campfires above tree line, and dogs leashed or under direct verbal control. The Stewart Creek trailhead is reached by a long Forest Service road (FSR 794) from the Gunnison side.",
+    "hotels": [],
+    "food": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/San_Luis_Peak%2C_San_Juan_Mountains%2C_Saguache_County%2C_Colorado%2C_USA_03.jpg/960px-San_Luis_Peak%2C_San_Juan_Mountains%2C_Saguache_County%2C_Colorado%2C_USA_03.jpg",
+      "credit": "John Sowell",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Luis_Peak,_San_Juan_Mountains,_Saguache_County,_Colorado,_USA_03.jpg",
+      "lat": 37.984,
+      "lon": -106.9653,
+      "width": 2592,
+      "height": 1944
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/San_Luis_Peak%2C_San_Juan_Mountains%2C_Saguache_County%2C_Colorado%2C_USA_03.jpg/960px-San_Luis_Peak%2C_San_Juan_Mountains%2C_Saguache_County%2C_Colorado%2C_USA_03.jpg",
+        "credit": "John Sowell",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Luis_Peak,_San_Juan_Mountains,_Saguache_County,_Colorado,_USA_03.jpg",
+        "lat": 37.984,
+        "lon": -106.9653,
+        "width": 2592,
+        "height": 1944
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/San_Luis_Peak%2C_San_Juan_Mountains%2C_Saguache_County%2C_Colorado%2C_USA_01.jpg/960px-San_Luis_Peak%2C_San_Juan_Mountains%2C_Saguache_County%2C_Colorado%2C_USA_01.jpg",
+        "credit": "John Sowell",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Luis_Peak,_San_Juan_Mountains,_Saguache_County,_Colorado,_USA_01.jpg",
+        "lat": 37.9914,
+        "lon": -106.9213,
+        "width": 2576,
+        "height": 1932
+      }
+    ]
   },
   {
     "id": "maunakea",
