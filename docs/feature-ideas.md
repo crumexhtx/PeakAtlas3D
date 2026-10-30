@@ -27,6 +27,27 @@ Ranked by expected impact ÷ effort (2026-10-27 run).
    - Risks: do not store or send dates or group sizes anywhere; no tracking parameters beyond the card state; keep gear lists to existing sourced checklists.
    - Measure: events `trip_card_created` and `trip_card_shared` (Vercel Analytics), and returning direct visits to `/trip` links, after 4 weeks.
 
+Ranked by expected impact ÷ effort (2026-10-30 run).
+
+1. **Large-image meta + terrain-render fallback image** (2026-10-30, goal: clicks, effort: M) — add `max-image-preview:large` and a 16:9 social image to every prerendered page, and use a still render of the 3D terrain when a peak has no usable photo. Owner note:
+   - Why here: this week 7 researched peaks (Huron, Belford, Oxford, Missouri, Antero, Shavano, La Plata) could not be added because the catalog rule needs 2 geotagged Commons photos within 15 km. A terrain image would let those pages ship without photos, and it would give every page a distinctive search and share image. Mobile CTR is 6.9% vs desktop 2.2% (GSC summary 2026-10-18 to 2026-10-24), and mobile results are image-heavy. A grep of `index.html`, `src/` and `scripts/` finds no `max-image-preview` robots directive today.
+   - Trend: Google's Discover guidance asks for large images at least 1200 px wide and `max-image-preview:large`, and its case study reports CTR gains from large images ([Google Search Central](https://developers.google.com/search/docs/appearance/google-discover)). PeakVisor keeps investing in 3D panoramas and destination pages ([PeakVisor app updates](https://peakvisor.com/en/news/app-updates.html)).
+   - Build: add the robots meta directive in `scripts/prerender-meta.mjs` (the `og:image` code is near line 531); a build-time or one-off render script writes `public/og/{peakId}.jpg` (1200x675) from the existing terrain data; the prerender uses it when `photos` is empty. Peak pages must still say the image is a terrain render, not a photo. The photo validator would need owner approval to accept a no-photo peak, since the agent may not edit validators.
+   - Risks: render cost and file size (cap at about 120 KB each); a render must not be mistaken for a photo; do not change URLs or slugs.
+   - Measure: impressions and CTR for peak pages in Search Console after 4-6 weeks; Vercel Analytics event `og_image_variant_shown` is not possible server-side, so compare Search Console image and Discover rows instead.
+2. **"Save for the trailhead" offline trip guide** (2026-10-30, goal: engagement, effort: M) — a button on each peak page that caches the trip summary (route, permits, season, nearest town, gear list) for offline use, so a reader has it with no signal. Owner note:
+   - Why here: map-style searches are about 30% of intent and mobile CTR is already 3x desktop, so mobile readers are the audience that is most likely to be at a trailhead. Trip pages end with no next step today.
+   - Trend: AllTrails added offline mode with automatic downloads in April 2026 ([AllTrails what's new](https://www.alltrails.com/whats-new)).
+   - Build: a small service worker (new file, scoped to a cache name for trip pages only) and a button in `src/components/TripReadiness.tsx`; cache only the prerendered HTML and the JSON for that peak; no account and no stored personal data.
+   - Risks: stale permit data offline, so show the "last updated" date and a "check the official page before you go" line; service workers need care with the existing deploy setup, and `vercel.json` must not be touched by the agent.
+   - Measure: event `trip_saved_offline` (Vercel Analytics) per peak, and repeat visits to the saved pages over 4 weeks.
+3. **Linked-summit day pages** (2026-10-30, goal: impressions, effort: M) — one guide for peaks climbed together (Shavano + Tabeguache, Kit Carson + Challenger Point, Belford + Oxford + Missouri) that links each peak page and shows a combined 3D view. Owner note:
+   - Why here: this week's new peaks include Kit Carson and Challenger Point (0.37 km apart), and trip searches are only 12.2% of query impressions against a 15-20% goal. Searchers for these peaks ask for the combined day ("kit carson challenger point route"), which no page here answers.
+   - Trend: PeakVisor's 28 Oct 2026 update added a heatmap of where people actually go ([PeakVisor app updates](https://peakvisor.com/en/news/app-updates.html)), which shows demand for route-level, not only peak-level, content.
+   - Build: a curated `src/data/linkedSummits.json` and a page like `src/pages/CompareIndexPage.tsx` renders; prerender and sitemap read the new file the same way they read `comparisons.json`; start with 3 groups, each with written trip-day text from official sources.
+   - Risks: thin pages if the text is not written by hand; keep every number from existing peak fields; avoid cannibalising the single-peak pages by linking both ways.
+   - Measure: impressions and clicks for the new URLs in Search Console after 6 weeks; event `linked_summit_click` (Vercel Analytics) on peak pages.
+
 ## Approved / planned
 - **Best peaks by month pages + month filter** — `/best-peaks/{month}` from `bestSeason` data. (CURSOR_PROMPT_2)
 - **Permit & lottery calendar + email reminders** — `/permits`, per-permit pages, double opt-in signup. (CURSOR_PROMPT_2)
