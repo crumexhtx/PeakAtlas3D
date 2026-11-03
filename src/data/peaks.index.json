@@ -52,6 +52,36 @@
     }
   },
   {
+    "id": "tamalpais",
+    "name": "Mount Tamalpais",
+    "lat": 37.9291,
+    "lon": -122.5778,
+    "elevationFt": 2579,
+    "prominenceFt": 2456,
+    "range": "California Coast Ranges",
+    "country": "USA",
+    "adminRegion": "California",
+    "aliases": [
+      "Mount Tam",
+      "Mt. Tam",
+      "Mt Tam",
+      "Mt. Tamalpais"
+    ],
+    "firstAscent": "1830s (first recorded ascent, Jacob P. Leese)",
+    "difficulty": "Easy summit loop; longer trail hikes available",
+    "difficultyTier": "day-hike",
+    "bestSeason": "Year-round (weather dependent)",
+    "whyNotable": "The Bay Area’s signature peak, with more than 60 miles of trails in the state park and views over San Francisco Bay.",
+    "description": "Mount Tam, often considered the symbol of Marin County, north of San Francisco. Most of the mountain is protected, including Mount Tamalpais State Park. East Peak (2,571 ft) has a summit parking lot, a 0.75-mile paved loop (Verna Dunshee Trail) and a steep quarter-mile Plank Trail to Gardner Lookout; West Peak, where the radar dome stands, is reached on foot.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Mill Valley",
+      "region": "California",
+      "distanceMiles": 2
+    }
+  },
+  {
     "id": "lassen",
     "name": "Lassen Peak",
     "lat": 40.4882,
@@ -619,6 +649,33 @@
     "permitRequired": false,
     "nearestTown": {
       "name": "Buena Vista",
+      "region": "Colorado",
+      "distanceMiles": 10
+    }
+  },
+  {
+    "id": "tabeguache",
+    "name": "Tabeguache Peak",
+    "lat": 38.6255,
+    "lon": -106.2509,
+    "elevationFt": 14157,
+    "prominenceFt": 455,
+    "range": "Sawatch Range",
+    "country": "USA",
+    "adminRegion": "Colorado",
+    "aliases": [
+      "Tabeguache"
+    ],
+    "firstAscent": "Not recorded",
+    "difficulty": "Class 2 hike via Mount Shavano",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "A short ridge add-on to Mount Shavano, with a Forest Service warning about the wrong descent into McCoy Gulch.",
+    "description": "A southern Sawatch fourteener northwest of Mount Shavano, in the Salida Ranger District. Wikipedia lists the easiest route as a Class 2 hike via Mount Shavano; the Forest Service says to follow the ridge northwest from Shavano’s summit, and warns hikers descending Tabeguache not to drop into McCoy Gulch, where lost hikers have needed rescues.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Poncha Springs",
       "region": "Colorado",
       "distanceMiles": 10
     }
@@ -1297,6 +1354,33 @@
       "name": "Terlingua",
       "region": "Texas",
       "distanceMiles": 17
+    }
+  },
+  {
+    "id": "camelback",
+    "name": "Camelback Mountain",
+    "lat": 33.5145,
+    "lon": -111.9616,
+    "elevationFt": 2706,
+    "prominenceFt": 1334,
+    "range": "Phoenix Mountains",
+    "country": "USA",
+    "adminRegion": "Arizona",
+    "aliases": [
+      "Echo Canyon Recreation Area"
+    ],
+    "firstAscent": "Not recorded",
+    "difficulty": "Short, steep, rocky trail hike (rated Extremely Difficult by the City of Phoenix)",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Oct–Apr",
+    "whyNotable": "The highest peak in the Phoenix metro area, a Phoenix Point of Pride with two city-maintained summit trails.",
+    "description": "Phoenix’s landmark hump of Precambrian granite and red sandstone, the highest peak in the Phoenix metro area, with trails maintained by the City of Phoenix. Two summit trails climb about 1,280 feet: Echo Canyon (1.14 miles, with handrails) and Cholla (1.4 miles). The city rates both Extremely Difficult, fully exposed and steep.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Phoenix",
+      "region": "Arizona",
+      "distanceMiles": 8
     }
   },
   {
@@ -4628,6 +4712,61 @@
     }
   },
   {
+    "id": "kitcarson",
+    "name": "Kit Carson Peak",
+    "lat": 37.9797,
+    "lon": -105.6025,
+    "elevationFt": 14165,
+    "prominenceFt": 1025,
+    "range": "Sangre de Cristo Range",
+    "country": "USA",
+    "adminRegion": "Colorado",
+    "aliases": [
+      "Kit Carson Mountain",
+      "Kit Carson"
+    ],
+    "firstAscent": "Not recorded",
+    "difficulty": "Class 3 scramble via Challenger Point",
+    "difficultyTier": "scramble",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "One of the Crestones, a cluster of high Sangre de Cristo summits, and the peak behind the exposed ledge route called Kit Carson Avenue.",
+    "description": "The main summit of the Kit Carson Mountain massif in the Crestones, 5.2 miles east-southeast of the town of Crestone, in the Sangre de Cristo Wilderness of Rio Grande National Forest. The popular west-side route starts at Willow Creek Trailhead (8,900 ft), climbs Challenger Point first, then crosses the ledge known as Kit Carson Avenue: about 6,250 feet of gain over 14 miles round trip, and Wikipedia lists the easiest route as a Class 3 scramble. The complex terrain has misled climbers.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Crestone",
+      "region": "Colorado",
+      "distanceMiles": 5
+    }
+  },
+  {
+    "id": "challenger",
+    "name": "Challenger Point",
+    "lat": 37.9803,
+    "lon": -105.6067,
+    "elevationFt": 14085,
+    "prominenceFt": 301,
+    "range": "Sangre de Cristo Range",
+    "country": "USA",
+    "adminRegion": "Colorado",
+    "aliases": [
+      "Challenger"
+    ],
+    "firstAscent": "Not recorded",
+    "difficulty": "Difficult Class 2 hike (North Slope)",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "Named in memory of the crew of Space Shuttle Challenger, with a memorial plaque on the summit.",
+    "description": "A fourteener on the northwest shoulder of Kit Carson Mountain in the Crestones, a subpeak of Kit Carson. It was renamed in memory of the seven astronauts killed in the Space Shuttle Challenger accident on January 28, 1986, and a memorial plaque was placed on the summit in July 1987. Wikipedia lists the North Slope from Willow Creek Trailhead (8,900 ft) as a difficult Class 2 hike.",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Crestone",
+      "region": "Colorado",
+      "distanceMiles": 5
+    }
+  },
+  {
     "id": "capitol",
     "name": "Capitol Peak",
     "lat": 39.1503,
@@ -4776,6 +4915,30 @@
       "name": "Lake City",
       "region": "Colorado",
       "distanceMiles": 20
+    }
+  },
+  {
+    "id": "sanluis",
+    "name": "San Luis Peak",
+    "lat": 37.9868,
+    "lon": -106.9313,
+    "elevationFt": 14020,
+    "prominenceFt": 3113,
+    "range": "San Juan Mountains",
+    "country": "USA",
+    "adminRegion": "Colorado",
+    "firstAscent": "Not recorded",
+    "difficulty": "Long, straightforward hike",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Jun–Sep",
+    "whyNotable": "The single fourteener of the La Garita Wilderness, with views over the upper Rio Grande valley and the San Luis Valley.",
+    "description": "The only fourteener in the La Garita Wilderness, in the Gunnison National Forest portion about 10 miles north of Creede. It sits well east of the other San Juan fourteeners and has more of a wilderness setting. Wikipedia describes a relatively straightforward climb with two hiking routes: the Northeast Ridge from Stewart Creek Trailhead (13.5 miles round trip) and the South Ridge from West Willow Creek Trailhead (12.3 miles round trip, almost entirely above treeline).",
+    "permitStatus": "not_required",
+    "permitRequired": false,
+    "nearestTown": {
+      "name": "Creede",
+      "region": "Colorado",
+      "distanceMiles": 10
     }
   },
   {
