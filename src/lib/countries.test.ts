@@ -117,6 +117,10 @@ describe('country ISO maps', () => {
     expect(countryToIso('Venezuela/Brazil/Guyana')).toBe('ve')
   })
 
+  it('maps the Chile/Bolivia border label to the Chile country page', () => {
+    expect(countryToIso('Chile/Bolivia')).toBe('cl')
+  })
+
   it('merges Switzerland/Italy into the Switzerland country page', () => {
     const summaries = buildCountrySummaries([
       {

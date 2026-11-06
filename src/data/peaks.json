@@ -6300,6 +6300,87 @@
     ]
   },
   {
+    "id": "licancabur",
+    "name": "Licancabur",
+    "lat": -22.8339,
+    "lon": -67.8836,
+    "elevationFt": 19409,
+    "prominenceFt": 4678,
+    "range": "Andes",
+    "country": "Chile/Bolivia",
+    "adminRegion": "Antofagasta/Potosí",
+    "description": "A symmetrical stratovolcano on the Bolivia–Chile border, capped by a 400–500 m wide crater that holds one of the highest lakes in the world. Wikipedia says it can be seen from San Pedro de Atacama and that climbers typically approach from the Bolivian side. Ascents take about six hours up and about half that down, and weather can turn quickly on the unstable upper cone. Inca ceremonial structures survive on the summit and at its northeastern foot.",
+    "firstAscent": "Inca or Atacameño people; first documented ascent by Severo Titichoca, November 1884",
+    "difficulty": "Non-technical high-altitude hike (about 6 hours up)",
+    "difficultyTier": "strenuous-hike",
+    "aliases": [
+      "Volcán Licancabur",
+      "Licancáguar",
+      "Tata Likanku"
+    ],
+    "bestSeason": "Year-round (weather dependent)",
+    "whyNotable": "A cone-shaped border volcano above Laguna Verde, with Inca ruins and a crater lake near the summit.",
+    "seoMetaDescription": "Licancabur trip guide: 19,409 ft Chile–Bolivia border volcano, non-technical climb, year-round with winter caution, San Pedro de Atacama, 3D terrain on PeakAtlas3D.",
+    "nearestTown": {
+      "name": "San Pedro de Atacama",
+      "region": "Antofagasta Region",
+      "distanceMiles": 21,
+      "lat": -22.9108,
+      "lon": -68.2001
+    },
+    "nearbyPlaces": [
+      {
+        "name": "San Pedro de Atacama",
+        "region": "Antofagasta Region",
+        "distanceMiles": 21,
+        "lat": -22.9108,
+        "lon": -68.2001
+      }
+    ],
+    "trails": [
+      {
+        "name": "Bolivian-side route to the summit crater"
+      }
+    ],
+    "permitRequired": null,
+    "permitStatus": "unsourced",
+    "permitNotes": "Permit and access rules were not verified from an official source. The summit sits on the Chile–Bolivia border, and Wikipedia says climbers typically approach from the Bolivian side. Check current entry, guide and border-zone rules with the Bolivian protected-area service (SERNAP), Chilean authorities (CONAF and DIFROL for border areas) and a local operator before you go.",
+    "hotels": [],
+    "food": [],
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Licancabur_LagunaVerde.jpg/960px-Licancabur_LagunaVerde.jpg",
+      "credit": "Albert Backer",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Licancabur_LagunaVerde.jpg",
+      "lat": -22.786944,
+      "lon": -67.822723,
+      "width": 3648,
+      "height": 2056
+    },
+    "photos": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Licancabur_LagunaVerde.jpg/960px-Licancabur_LagunaVerde.jpg",
+        "credit": "Albert Backer",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Licancabur_LagunaVerde.jpg",
+        "lat": -22.786944,
+        "lon": -67.822723,
+        "width": 3648,
+        "height": 2056
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Licancabur_and_Laguna_Verde_%289466138491%29.jpg/960px-Licancabur_and_Laguna_Verde_%289466138491%29.jpg",
+        "credit": "Madeleine Deaton",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Licancabur_and_Laguna_Verde_(9466138491).jpg",
+        "lat": -22.806567,
+        "lon": -67.840576,
+        "width": 3776,
+        "height": 2520
+      }
+    ]
+  },
+  {
     "id": "villarrica",
     "name": "Volcán Villarrica",
     "lat": -39.420849,
