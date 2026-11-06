@@ -15,6 +15,7 @@ export const COUNTRY_ISO = {
   Canada: 'ca',
   Chile: 'cl',
   'Chile/Argentina': 'cl',
+  'Chile/Bolivia': 'cl',
   China: 'cn',
   Ecuador: 'ec',
   Ethiopia: 'et',

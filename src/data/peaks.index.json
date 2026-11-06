@@ -1710,6 +1710,35 @@
     }
   },
   {
+    "id": "licancabur",
+    "name": "Licancabur",
+    "lat": -22.8339,
+    "lon": -67.8836,
+    "elevationFt": 19409,
+    "prominenceFt": 4678,
+    "range": "Andes",
+    "country": "Chile/Bolivia",
+    "adminRegion": "Antofagasta/Potosí",
+    "aliases": [
+      "Volcán Licancabur",
+      "Licancáguar",
+      "Tata Likanku"
+    ],
+    "firstAscent": "Inca or Atacameño people; first documented ascent by Severo Titichoca, November 1884",
+    "difficulty": "Non-technical high-altitude hike (about 6 hours up)",
+    "difficultyTier": "strenuous-hike",
+    "bestSeason": "Year-round (weather dependent)",
+    "whyNotable": "A cone-shaped border volcano above Laguna Verde, with Inca ruins and a crater lake near the summit.",
+    "description": "A symmetrical stratovolcano on the Bolivia–Chile border, capped by a 400–500 m wide crater that holds one of the highest lakes in the world. Wikipedia says it can be seen from San Pedro de Atacama and that climbers typically approach from the Bolivian side. Ascents take about six hours up and about half that down, and weather can turn quickly on the unstable upper cone. Inca ceremonial structures survive on the summit and at its northeastern foot.",
+    "permitStatus": "unsourced",
+    "permitRequired": null,
+    "nearestTown": {
+      "name": "San Pedro de Atacama",
+      "region": "Antofagasta Region",
+      "distanceMiles": 21
+    }
+  },
+  {
     "id": "villarrica",
     "name": "Volcán Villarrica",
     "lat": -39.420849,

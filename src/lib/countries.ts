@@ -13,6 +13,7 @@ export const COUNTRY_ISO: Record<string, string> = {
   Canada: 'ca',
   Chile: 'cl',
   'Chile/Argentina': 'cl',
+  'Chile/Bolivia': 'cl',
   China: 'cn',
   Ecuador: 'ec',
   Ethiopia: 'et',

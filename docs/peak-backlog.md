@@ -16,7 +16,7 @@ Format: `- [ ] Name — Country/State — note`. If a peak is already in the cat
 - [ ] Mount Sinai — Egypt
 - [ ] Stromboli — Italy
 - [ ] Huangshan (Lotus Peak) — China
-- [ ] Licancabur — Chile/Bolivia
+- [x] Licancabur — Chile/Bolivia
 - [ ] El Misti — Peru
 - [ ] Nevado de Toluca — Mexico
 - [ ] Cayambe — Ecuador
